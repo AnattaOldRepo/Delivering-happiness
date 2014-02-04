@@ -1,0 +1,57 @@
+//
+// Variables for Delivering Happiness
+// --------------------------------------------------
+
+// Brand colors
+// -------------------------
+
+$Black: black !default;
+$Gray: lighten($Black, 40%); // #666666
+$LightGray: #efefef;
+$White: white !default;
+$OffWhite :#fbf9fa !default;
+$Purple: #793cbd !default;
+$Green: #00af42 !default;
+$Orange: #ff671b !default;
+$Yellow: #fec627 !default;
+$LightBlue: #84cce5 !default;
+$Blue: #0198cf !default;
+$DarkCyan: #00a0ae !default;
+$StrongYellow: #b6bc00 !default;
+$SoftYellow: #ede9b9 !default;
+// Scaffolding
+// -------------------------
+
+$body-bg: white !default;
+$text-color: $Gray;
+$site-width: 1170px;
+
+// Links
+// -------------------------
+
+$link-color: red;
+
+// Typography
+// -------------------------
+
+$font-family-sans-serif: "Museo Slab", arial !default;
+$font-family-base: $font-family-sans-serif !default;
+$font-size-base: 16px !default;
+
+// Image directory
+// -------------------------
+
+$imagedir: "../images/global";
+
+// Sprites
+// -------------------------
+
+@import "nav/*.png"; // Sprites image for main navigation  
+@include all-nav-sprites; // Generator Sprites for main navigation 
+
+@import "happiness/*.png"; // Sprites image for happiness section
+@include all-happiness-sprites; // Generator Sprites for happiness section
+
+
+@import "social/*.png"; // Sprites image for social icons
+@include all-social-sprites; // Generator Sprites for social icons

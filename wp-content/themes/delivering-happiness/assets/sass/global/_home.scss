@@ -1,0 +1,196 @@
+//
+// Home page 
+// --------------------------------------------------
+.home {
+    .hero_banner {
+        @include bg-img(home_hero_banner, jpg, no-repeat, center, top);
+        height: 546px;
+        .wrapper {
+            padding: 136px 0 0 105px;
+        }
+        h2 {
+            @extend %heading-level-1;
+            @include text-shadow(rgba(black, 0.3) 1px 1px 0);
+            color: $White;
+            padding-bottom: 57px;
+            letter-spacing: -1px;
+            span {
+                @extend %heading-level-7;
+                font-style: italic;
+            }
+        }
+        .button {
+            margin-left: 86px;
+        }
+    }
+    .happier-world {
+        .left-col {
+            width: 520px;
+        }
+        .right-col {
+            width: 395px;
+            margin-top: -10px;
+        }
+        h2 {
+            margin-bottom: 25px;
+            span {
+                line-height: 19px;
+            }
+        }
+        .button {
+            margin: 22px 0 0 94px;
+        }
+    }
+    .happiness {
+        &.two-column {
+            h2 {
+                margin-left: -40px;
+            }
+            .left-col {
+                .content {
+                    padding: 66px 0px 66px 60px;
+                }
+            }
+        }
+        .content {
+            height: 545px;
+            text-align: center;
+            padding: 69px 79px;
+            h3 {
+                font-size: 50px;
+                color: $White;
+            }
+            img {
+                margin-top: 55px;
+                margin-bottom: 34px;
+            }
+            &.winky {
+                background: $Blue;
+            }
+        }
+    }
+    .core-values {
+        text-align: center;
+        .wrapper {
+            padding-top: 66px;
+            padding-bottom: 55px;
+        }
+        h2 {
+            @extend %heading-level-7;
+        }
+        .cta {
+            color: $DarkCyan;
+            font-style: italic;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    .get-involved {
+        .work-survey {
+            .content {
+                @include bg-img-only(notepad, png, no-repeat, center, center);
+            }
+        }
+        .schedule-call {
+            .content {
+                @include bg-img-only(phone, png, no-repeat, center, center);
+            }
+        }
+    }
+    .inspiration {
+        .content {
+            padding: 118px 43px 46px 66px;
+            letter-spacing: -1px;
+            h3 {
+                @extend %heading-level-1;
+                color: $White;
+                margin-bottom: 75px;
+                span {
+                    @extend %heading-level-7;
+                    color: $SoftYellow;
+                    font-style: italic;
+                    display: block;
+                    margin-top: 18px;
+                    line-height: 39px;
+                }
+            }
+            .button {
+                padding: 19px 34px;
+                margin-left: 115px;
+            }
+        }
+        .left-col {
+            background: $StrongYellow;
+        }
+    }
+    .blog {
+        .content {
+            h3 {
+                @extend %pharagraph-level-1;
+            }
+        }
+    }
+    .over-the-globe {
+        text-align: center;
+        .left-col {
+            background: $OffWhite;
+            .content {
+                padding: 76px 0 0 0px;
+                img {
+                    margin-left: -16px;
+                }
+                h2 {
+                    line-height: 35px;
+                    letter-spacing: -1px;
+                    margin-bottom: 18px;
+                }
+            }
+        }
+        .right-col {
+            background: $Yellow;
+            .media {
+                padding-top: 66px;
+                padding-bottom: 44px;
+            }
+            .content {
+                padding: 0 90px;
+                p {
+                    padding-bottom: 34px;
+                }
+                .button {
+                    padding: 19px 48px;
+                }
+            }
+        }
+    }
+    .calculation {
+        text-align: center;
+        .wrapper {
+            padding-top: 62px;
+            padding-bottom: 66px;
+        }
+        .right-col {
+            margin-right: 49px;
+            margin-top: 3px;
+        }
+        .floated-holder {
+            @include clearfix;
+            margin-bottom: 19px;
+        }
+        .content {
+            text-align: left;
+            padding-top: 56px;
+            h2 {
+                line-height: 44px;
+                span {
+                    padding-bottom: 13px;
+                }
+            }
+        }
+        .button {
+            margin: 0px auto;
+            padding: 18px 28px;
+        }
+    }
+}

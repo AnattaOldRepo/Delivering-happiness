@@ -1,0 +1,16 @@
+//
+// Fonts
+// --------------------------------------------------
+
+@mixin font-face-src($name, $file) {
+  font-family: '#{$name}';
+  src: url('../fonts/#{$file}.eot?') format('eot'), url('../fonts/#{$file}.ttf') format('woff'), url('../fonts/#{$file}.woff') format('woff'), url('../fonts/#{$file}.ttf') format('truetype');
+}
+
+
+@font-face {
+  @include font-face-src('Museo Slab', 'Museo_Slab_500');
+}
+%museo_slab{
+	font-family:"Museo Slab";
+}

@@ -1,0 +1,120 @@
+//
+// Header
+// --------------------------------------------------
+
+.site-footer {
+    a {
+        color: $text-color;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .bar {
+        height: 95px;
+        background: $Blue;
+        color: $White;
+        text-transform: uppercase;
+        .wrapper {
+            padding-left: 212px;
+            padding-top: 8px;
+        }
+        img {
+            vertical-align: top;
+        }
+        span {
+            display: inline-block;
+            padding: 31px 51px 0 36px;
+            letter-spacing: 1px;
+        }
+        a {
+            color: $White;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    .all-links {
+        .wrapper {
+            padding: 59px 0 0 80px;
+            @include clearfix;
+        }
+        h4 {
+            text-transform: uppercase;
+            margin-bottom: 33px;
+            letter-spacing: 1px;
+        }
+        .block {
+            @extend %pull-left;
+            p {
+                font-size: 14px;
+                font-style: italic;
+            }
+            &.company {
+                width: 203px;
+            }
+            &.resources {
+                width: 264px;
+            }
+            &.the-book {
+                width: 246px;
+            }
+            &.keep-in-touch {
+                width: 300px;
+            }
+            .signup {
+                @include clearfix;
+                margin-top: 16px;
+                margin-bottom: 25px;
+                input {
+                    @extend %pull-left;
+                }
+                input[type="text"] {
+                    @include size(197px, 35px);
+                    padding-left: 13px;
+                    background-color: rgba($Blue, 0.2);
+                    border: none;
+                    color: $Blue;
+                    font-style: italic;
+                    @include input-placeholder {
+                        color: $Blue;
+                        font-style: italic;
+                        font-size: 12px;
+                    }
+                }
+                .button {
+                    padding: 6px 16px;
+                    margin-left: 10px;
+                    background-color: rgba($Blue, 0.2);
+                    cursor: pointer;
+                }
+            }
+            .social {
+                a {
+                    @extend %pull-left;
+                    width: 137px;
+                    padding-left: 27px;
+                    padding-bottom: 11px;
+                    margin-bottom: 7px;
+                }
+            }
+        }
+        ul {
+            li {
+                margin-bottom: 12px;
+            }
+        }
+    }
+    .end-bar {
+        .wrapper {
+            padding: 97px 86px 50px 70px;
+            @include clearfix;
+        }
+        p {
+            @extend %pull-left;
+        }
+        img {
+            @extend %pull-right;
+            margin-top: -18px;
+        }
+    }
+}

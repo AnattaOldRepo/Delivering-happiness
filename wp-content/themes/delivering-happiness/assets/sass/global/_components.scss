@@ -1,0 +1,295 @@
+//
+// Components
+// --------------------------------------------------
+
+%pull-none {
+    float: none;
+}
+
+%pull-left {
+    float: left;
+}
+
+%pull-right {
+    float: right;
+}
+
+%text-left {
+    text-align: left;
+}
+
+%text-right {
+    text-align: right;
+}
+
+%text-center {
+    text-align: center;
+}
+
+%block-center {
+    margin: 0px auto;
+}
+
+.blue-area {
+    background: $Blue;
+}
+
+.strongyellow-area {
+    background: $StrongYellow;
+}
+
+.yellow-area {
+    background: $Yellow;
+}
+
+.offwhite-area {
+    background: $OffWhite;
+}
+
+a {
+    text-decoration: none;
+}
+
+.arrow-right {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid $White;
+}
+
+.button {
+    @include border_radius(13px);
+    @include transition(all 0.3s ease);
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 2px solid $White;
+    font-size: 13px;
+    padding: 17px 41px;
+    text-align: center;
+    color: $White;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: inline-block;
+    &:hover {
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+    &.arrow {
+        position: relative;
+        &:before {
+            position: absolute;
+            top: 16px;
+            left: 20px;
+            @extend .arrow-right;
+            content: '';
+        }
+    }
+    &.blue {
+        border: 1px solid $Blue;
+        background-color: rgba($Blue, 0.1);
+        color: $Blue;
+        &:hover {
+            background-color: rgba($Blue, 0.2);
+        }
+    }
+    &.softyellow {
+        background-color: rgba($White, 0.7);
+        color: $StrongYellow;
+        &:hover {
+            background-color: rgba($White, 0.8);
+        }
+    }
+    &.yellow {
+        background-color: rgba($White, 0.7);
+        color: $Yellow;
+        &:hover {
+            background-color: rgba($White, 0.9);
+        }
+    }
+    &.transparent {
+        border: 1px solid $White;
+        background-color: rgba($White, 0);
+        &:hover {
+            background-color: rgba($White, 0.3);
+        }
+    }
+}
+
+.rounded-block {
+    background-color: $LightGray;
+    .wrapper {
+        padding: 59px 59px 63px 59px;
+        .container {
+            @include clearfix;
+            @include border_radius(20px);
+            border: 5px solid darken($LightGray, 6.2%);
+            // #dfdfdf
+            background-color: $White;
+            padding: 41px 36px;
+        }
+    }
+    h2 {
+        @extend %heading-level-4;
+        line-height: 57px;
+        span {
+            @extend %heading-level-12;
+            color: $LightBlue;
+            font-style: italic;
+            display: block;
+        }
+    }
+    p {
+        line-height: 28px;
+        padding-bottom: 17px;
+        &:last-child {
+            padding-bottom: 0;
+        }
+    }
+    .left-col {
+        @extend %pull-left;
+    }
+    .right-col {
+        @extend %pull-right;
+    }
+}
+
+.two-column {
+    @include clearfix;
+    h2 {
+        @extend %heading-level-7;
+        text-align: center;
+        font-style: italic;
+        margin-bottom: 54px;
+    }
+    p {
+        color: $White;
+        line-height: 28px;
+        font-style: italic;
+    }
+    .left-expanded {
+        width: 50%;
+        @extend %pull-left;
+    }
+    .right-expanded {
+        width: 50%;
+        @extend %pull-right;
+    }
+    .left-col {
+        @extend %pull-right;
+        @include size(585px, 545px);
+    }
+    .right-col {
+        @extend %pull-left;
+        @include size(585px, 545px);
+    }
+}
+
+.coin-animation {
+    @include clearfix;
+    .coin {
+        @include square(130px);
+        @extend %pull-left;
+        position: relative;
+        margin: 0 35px 24px 0;
+        &.left-pull {
+            margin-left: 84px;
+        }
+        .front {
+            position: absolute;
+            @include size(100%, 130px);
+            z-index: 2;
+        }
+        .back {
+            position: absolute;
+            @include size(100%, 130px);
+            z-index: 1;
+        }
+        &:hover {
+            cursor: pointer;
+            .front {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+.horizontal-slider {
+    text-align: center;
+    .slide {
+        height: 285px;
+        display: table-cell;
+        vertical-align: middle;
+        width: 986px;
+    }
+    .pager {
+        margin-bottom: 32px;
+        a {
+            @extend %pharagraph-level-1;
+            @include transition(all 0.3s ease);
+            @include border_radius(100%);
+            @include square(44px);
+            color: $White;
+            display: inline-block;
+            line-height: 44px;
+            background-color: darken($LightGray, 6.2%);
+            // #dfdfdf
+            margin-right: 14px;
+            &:hover {
+                background-color: $DarkCyan;
+            }
+        }
+    }
+}
+
+.three-column {
+    text-align: center;
+    .wrapper {
+        @include clearfix;
+        padding: 68px 61px 124px 61px;
+    }
+    h2 {
+        @extend %heading-level-7;
+        font-style: italic;
+        margin-bottom: 38px;
+    }
+    .col {
+        @include square(336px);
+        position: relative;
+    }
+    .left-col {
+        @extend %pull-left;
+    }
+    .middel-col {
+        @extend %pull-left;
+        margin-left: 20px;
+    }
+    .right-col {
+        @extend %pull-right;
+    }
+    .content {
+        @include square(336px);
+        position: absolute;
+        bottom: 0px;
+        background-color: $Blue;
+        h3 {
+            @extend %heading-level-4;
+            color: $White;
+            line-height: 43px;
+        }
+        .v-aling {
+            @include square(336px);
+            vertical-align: middle;
+            display: table-cell;
+        }
+        &.small {
+            height: 85px;
+            .v-aling {
+                height: 85px;
+            }
+        }
+    }
+    &.blue {
+        .content {
+            background-color: $Blue;
+        }
+    }
+}
