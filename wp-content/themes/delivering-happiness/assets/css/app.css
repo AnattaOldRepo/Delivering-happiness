@@ -146,14 +146,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   background-position: 0 -390px;
 }
 
-/* line 66, social/*.png */
-.social-sprite, .social-facebook, .social-instagram, .social-twitter, .social-youtube {
-  background: url('../images/social-s99bc1a677b.png') no-repeat;
+/* line 74, social/*.png */
+.social-sprite, .social-facebbok, .social-facebook, .social-instagram, .social-twitter, .social-youtube {
+  background: url('../images/social-sd37b49cc2b.png') no-repeat;
+}
+
+/* line 60, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
+.social-facebbok {
+  background-position: 0 -90px;
 }
 
 /* line 60, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
 .social-facebook {
-  background-position: 0 -90px;
+  background-position: 0 -120px;
 }
 
 /* line 60, ../../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/utilities/sprites/_base.scss */
@@ -372,22 +377,22 @@ a {
 .rounded-block .wrapper .container:after {
   clear: both;
 }
-/* line 129, ../sass/global/_components.scss */
+/* line 130, ../sass/global/_components.scss */
 .rounded-block h2 {
   line-height: 57px;
 }
-/* line 132, ../sass/global/_components.scss */
+/* line 133, ../sass/global/_components.scss */
 .rounded-block h2 span {
   color: #84cce5;
   font-style: italic;
   display: block;
 }
-/* line 139, ../sass/global/_components.scss */
+/* line 140, ../sass/global/_components.scss */
 .rounded-block p {
   line-height: 28px;
   padding-bottom: 17px;
 }
-/* line 142, ../sass/global/_components.scss */
+/* line 143, ../sass/global/_components.scss */
 .rounded-block p:last-child {
   padding-bottom: 0;
 }
@@ -403,32 +408,32 @@ a {
 .two-column:after {
   clear: both;
 }
-/* line 156, ../sass/global/_components.scss */
+/* line 157, ../sass/global/_components.scss */
 .two-column h2 {
   text-align: center;
   font-style: italic;
   margin-bottom: 54px;
 }
-/* line 162, ../sass/global/_components.scss */
+/* line 163, ../sass/global/_components.scss */
 .two-column p {
   color: white;
   line-height: 28px;
   font-style: italic;
 }
-/* line 167, ../sass/global/_components.scss */
+/* line 168, ../sass/global/_components.scss */
 .two-column .left-expanded {
   width: 50%;
 }
-/* line 171, ../sass/global/_components.scss */
+/* line 172, ../sass/global/_components.scss */
 .two-column .right-expanded {
   width: 50%;
 }
-/* line 175, ../sass/global/_components.scss */
+/* line 176, ../sass/global/_components.scss */
 .two-column .left-col {
   width: 585px;
   height: 545px;
 }
-/* line 179, ../sass/global/_components.scss */
+/* line 180, ../sass/global/_components.scss */
 .two-column .right-col {
   width: 585px;
   height: 545px;
@@ -445,36 +450,36 @@ a {
 .coin-animation:after {
   clear: both;
 }
-/* line 187, ../sass/global/_components.scss */
+/* line 188, ../sass/global/_components.scss */
 .coin-animation .coin {
   width: 130px;
   height: 130px;
   position: relative;
   margin: 0 35px 24px 0;
 }
-/* line 192, ../sass/global/_components.scss */
+/* line 193, ../sass/global/_components.scss */
 .coin-animation .coin.left-pull {
   margin-left: 84px;
 }
-/* line 195, ../sass/global/_components.scss */
+/* line 196, ../sass/global/_components.scss */
 .coin-animation .coin .front {
   position: absolute;
   width: 100%;
   height: 130px;
   z-index: 2;
 }
-/* line 200, ../sass/global/_components.scss */
+/* line 201, ../sass/global/_components.scss */
 .coin-animation .coin .back {
   position: absolute;
   width: 100%;
   height: 130px;
   z-index: 1;
 }
-/* line 205, ../sass/global/_components.scss */
+/* line 206, ../sass/global/_components.scss */
 .coin-animation .coin:hover {
   cursor: pointer;
 }
-/* line 207, ../sass/global/_components.scss */
+/* line 208, ../sass/global/_components.scss */
 .coin-animation .coin:hover .front {
   visibility: hidden;
 }
@@ -510,16 +515,16 @@ a {
   background-color: #dfdfdf;
   margin-right: 14px;
 }
-/* line 235, ../sass/global/_components.scss */
+/* line 236, ../sass/global/_components.scss */
 .horizontal-slider .pager a:hover {
   background-color: #00a0ae;
 }
 
-/* line 244, ../sass/global/_components.scss */
+/* line 243, ../sass/global/_components.scss */
 .three-column {
   text-align: center;
 }
-/* line 246, ../sass/global/_components.scss */
+/* line 245, ../sass/global/_components.scss */
 .three-column .wrapper {
   padding: 68px 61px 124px 61px;
 }
@@ -534,22 +539,22 @@ a {
 .three-column .wrapper:after {
   clear: both;
 }
-/* line 250, ../sass/global/_components.scss */
+/* line 249, ../sass/global/_components.scss */
 .three-column h2 {
   font-style: italic;
   margin-bottom: 38px;
 }
-/* line 255, ../sass/global/_components.scss */
+/* line 254, ../sass/global/_components.scss */
 .three-column .col {
   width: 336px;
   height: 336px;
   position: relative;
 }
-/* line 262, ../sass/global/_components.scss */
+/* line 261, ../sass/global/_components.scss */
 .three-column .middel-col {
   margin-left: 20px;
 }
-/* line 269, ../sass/global/_components.scss */
+/* line 268, ../sass/global/_components.scss */
 .three-column .content {
   width: 336px;
   height: 336px;
@@ -557,27 +562,27 @@ a {
   bottom: 0px;
   background-color: #0198cf;
 }
-/* line 274, ../sass/global/_components.scss */
+/* line 273, ../sass/global/_components.scss */
 .three-column .content h3 {
   color: white;
   line-height: 43px;
 }
-/* line 279, ../sass/global/_components.scss */
+/* line 278, ../sass/global/_components.scss */
 .three-column .content .v-aling {
   width: 336px;
   height: 336px;
   vertical-align: middle;
   display: table-cell;
 }
-/* line 284, ../sass/global/_components.scss */
+/* line 283, ../sass/global/_components.scss */
 .three-column .content.small {
   height: 85px;
 }
-/* line 286, ../sass/global/_components.scss */
+/* line 285, ../sass/global/_components.scss */
 .three-column .content.small .v-aling {
   height: 85px;
 }
-/* line 292, ../sass/global/_components.scss */
+/* line 291, ../sass/global/_components.scss */
 .three-column.blue .content {
   background-color: #0198cf;
 }
@@ -726,33 +731,38 @@ a {
   clear: both;
 }
 /* line 41, ../sass/global/_footer.scss */
+.site-footer .all-links a {
+  color: #999999;
+}
+/* line 44, ../sass/global/_footer.scss */
 .site-footer .all-links h4 {
+  color: #666666;
   text-transform: uppercase;
   margin-bottom: 33px;
   letter-spacing: 1px;
 }
-/* line 48, ../sass/global/_footer.scss */
+/* line 52, ../sass/global/_footer.scss */
 .site-footer .all-links .block p {
   font-size: 14px;
   font-style: italic;
 }
-/* line 52, ../sass/global/_footer.scss */
+/* line 56, ../sass/global/_footer.scss */
 .site-footer .all-links .block.company {
   width: 203px;
 }
-/* line 55, ../sass/global/_footer.scss */
+/* line 59, ../sass/global/_footer.scss */
 .site-footer .all-links .block.resources {
   width: 264px;
 }
-/* line 58, ../sass/global/_footer.scss */
+/* line 62, ../sass/global/_footer.scss */
 .site-footer .all-links .block.the-book {
   width: 246px;
 }
-/* line 61, ../sass/global/_footer.scss */
+/* line 65, ../sass/global/_footer.scss */
 .site-footer .all-links .block.keep-in-touch {
   width: 300px;
 }
-/* line 64, ../sass/global/_footer.scss */
+/* line 68, ../sass/global/_footer.scss */
 .site-footer .all-links .block .signup {
   margin-top: 16px;
   margin-bottom: 25px;
@@ -768,7 +778,7 @@ a {
 .site-footer .all-links .block .signup:after {
   clear: both;
 }
-/* line 71, ../sass/global/_footer.scss */
+/* line 75, ../sass/global/_footer.scss */
 .site-footer .all-links .block .signup input[type="text"] {
   width: 197px;
   height: 35px;
@@ -796,25 +806,25 @@ a {
   font-style: italic;
   font-size: 12px;
 }
-/* line 84, ../sass/global/_footer.scss */
+/* line 88, ../sass/global/_footer.scss */
 .site-footer .all-links .block .signup .button {
   padding: 6px 16px;
   margin-left: 10px;
   background-color: rgba(1, 152, 207, 0.2);
   cursor: pointer;
 }
-/* line 92, ../sass/global/_footer.scss */
+/* line 96, ../sass/global/_footer.scss */
 .site-footer .all-links .block .social a {
   width: 137px;
   padding-left: 27px;
   padding-bottom: 11px;
   margin-bottom: 7px;
 }
-/* line 102, ../sass/global/_footer.scss */
+/* line 106, ../sass/global/_footer.scss */
 .site-footer .all-links ul li {
   margin-bottom: 12px;
 }
-/* line 108, ../sass/global/_footer.scss */
+/* line 112, ../sass/global/_footer.scss */
 .site-footer .end-bar .wrapper {
   padding: 97px 86px 50px 70px;
 }
@@ -829,7 +839,7 @@ a {
 .site-footer .end-bar .wrapper:after {
   clear: both;
 }
-/* line 115, ../sass/global/_footer.scss */
+/* line 119, ../sass/global/_footer.scss */
 .site-footer .end-bar img {
   margin-top: -18px;
 }
@@ -878,96 +888,96 @@ body {
 .home .hero_banner .button {
   margin-left: 86px;
 }
-/* line 28, ../sass/global/_home.scss */
+/* line 27, ../sass/global/_home.scss */
 .home .happier-world .left-col {
   width: 520px;
 }
-/* line 31, ../sass/global/_home.scss */
+/* line 30, ../sass/global/_home.scss */
 .home .happier-world .right-col {
   width: 395px;
   margin-top: -10px;
 }
-/* line 35, ../sass/global/_home.scss */
+/* line 34, ../sass/global/_home.scss */
 .home .happier-world h2 {
   margin-bottom: 25px;
 }
-/* line 37, ../sass/global/_home.scss */
+/* line 36, ../sass/global/_home.scss */
 .home .happier-world h2 span {
   line-height: 19px;
 }
-/* line 41, ../sass/global/_home.scss */
+/* line 40, ../sass/global/_home.scss */
 .home .happier-world .button {
   margin: 22px 0 0 94px;
 }
-/* line 48, ../sass/global/_home.scss */
+/* line 46, ../sass/global/_home.scss */
 .home .happiness.two-column h2 {
   margin-left: -40px;
 }
-/* line 52, ../sass/global/_home.scss */
+/* line 50, ../sass/global/_home.scss */
 .home .happiness.two-column .left-col .content {
   padding: 66px 0px 66px 60px;
 }
-/* line 57, ../sass/global/_home.scss */
+/* line 55, ../sass/global/_home.scss */
 .home .happiness .content {
   height: 545px;
   text-align: center;
   padding: 69px 79px;
 }
-/* line 61, ../sass/global/_home.scss */
+/* line 59, ../sass/global/_home.scss */
 .home .happiness .content h3 {
   font-size: 50px;
   color: white;
 }
-/* line 65, ../sass/global/_home.scss */
+/* line 63, ../sass/global/_home.scss */
 .home .happiness .content img {
   margin-top: 55px;
   margin-bottom: 34px;
 }
-/* line 69, ../sass/global/_home.scss */
+/* line 67, ../sass/global/_home.scss */
 .home .happiness .content.winky {
   background: #0198cf;
 }
-/* line 75, ../sass/global/_home.scss */
+/* line 72, ../sass/global/_home.scss */
 .home .core-values {
   text-align: center;
 }
-/* line 77, ../sass/global/_home.scss */
+/* line 74, ../sass/global/_home.scss */
 .home .core-values .wrapper {
   padding-top: 66px;
   padding-bottom: 55px;
 }
-/* line 84, ../sass/global/_home.scss */
+/* line 81, ../sass/global/_home.scss */
 .home .core-values .cta {
   color: #00a0ae;
   font-style: italic;
 }
-/* line 87, ../sass/global/_home.scss */
+/* line 84, ../sass/global/_home.scss */
 .home .core-values .cta:hover {
   text-decoration: underline;
 }
-/* line 95, ../sass/global/_home.scss */
+/* line 91, ../sass/global/_home.scss */
 .home .get-involved .work-survey .content {
   background-image: url("../images/global/notepad.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 100, ../sass/global/_home.scss */
+/* line 96, ../sass/global/_home.scss */
 .home .get-involved .schedule-call .content {
   background-image: url("../images/global/phone.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
-/* line 107, ../sass/global/_home.scss */
+/* line 102, ../sass/global/_home.scss */
 .home .inspiration .content {
   padding: 118px 43px 46px 66px;
   letter-spacing: -1px;
 }
-/* line 110, ../sass/global/_home.scss */
+/* line 105, ../sass/global/_home.scss */
 .home .inspiration .content h3 {
   color: white;
   margin-bottom: 75px;
 }
-/* line 114, ../sass/global/_home.scss */
+/* line 109, ../sass/global/_home.scss */
 .home .inspiration .content h3 span {
   color: #ede9b9;
   font-style: italic;
@@ -975,73 +985,73 @@ body {
   margin-top: 18px;
   line-height: 39px;
 }
-/* line 123, ../sass/global/_home.scss */
+/* line 118, ../sass/global/_home.scss */
 .home .inspiration .content .button {
   padding: 19px 34px;
   margin-left: 115px;
 }
-/* line 128, ../sass/global/_home.scss */
+/* line 123, ../sass/global/_home.scss */
 .home .inspiration .left-col {
   background: #b6bc00;
 }
-/* line 141, ../sass/global/_home.scss */
+/* line 134, ../sass/global/_home.scss */
 .home .over-the-globe {
   text-align: center;
 }
-/* line 143, ../sass/global/_home.scss */
+/* line 136, ../sass/global/_home.scss */
 .home .over-the-globe .left-col {
   background: #fbf9fa;
 }
-/* line 145, ../sass/global/_home.scss */
+/* line 138, ../sass/global/_home.scss */
 .home .over-the-globe .left-col .content {
   padding: 76px 0 0 0px;
 }
-/* line 147, ../sass/global/_home.scss */
+/* line 140, ../sass/global/_home.scss */
 .home .over-the-globe .left-col .content img {
   margin-left: -16px;
 }
-/* line 150, ../sass/global/_home.scss */
+/* line 143, ../sass/global/_home.scss */
 .home .over-the-globe .left-col .content h2 {
   line-height: 35px;
   letter-spacing: -1px;
   margin-bottom: 18px;
 }
-/* line 157, ../sass/global/_home.scss */
+/* line 150, ../sass/global/_home.scss */
 .home .over-the-globe .right-col {
   background: #fec627;
 }
-/* line 159, ../sass/global/_home.scss */
+/* line 152, ../sass/global/_home.scss */
 .home .over-the-globe .right-col .media {
   padding-top: 66px;
   padding-bottom: 44px;
 }
-/* line 163, ../sass/global/_home.scss */
+/* line 156, ../sass/global/_home.scss */
 .home .over-the-globe .right-col .content {
   padding: 0 90px;
 }
-/* line 165, ../sass/global/_home.scss */
+/* line 158, ../sass/global/_home.scss */
 .home .over-the-globe .right-col .content p {
   padding-bottom: 34px;
 }
-/* line 168, ../sass/global/_home.scss */
+/* line 161, ../sass/global/_home.scss */
 .home .over-the-globe .right-col .content .button {
   padding: 19px 48px;
 }
-/* line 175, ../sass/global/_home.scss */
+/* line 167, ../sass/global/_home.scss */
 .home .calculation {
   text-align: center;
 }
-/* line 177, ../sass/global/_home.scss */
+/* line 169, ../sass/global/_home.scss */
 .home .calculation .wrapper {
   padding-top: 62px;
   padding-bottom: 66px;
 }
-/* line 181, ../sass/global/_home.scss */
+/* line 173, ../sass/global/_home.scss */
 .home .calculation .right-col {
   margin-right: 49px;
   margin-top: 3px;
 }
-/* line 185, ../sass/global/_home.scss */
+/* line 177, ../sass/global/_home.scss */
 .home .calculation .floated-holder {
   margin-bottom: 19px;
 }
@@ -1056,20 +1066,20 @@ body {
 .home .calculation .floated-holder:after {
   clear: both;
 }
-/* line 189, ../sass/global/_home.scss */
+/* line 181, ../sass/global/_home.scss */
 .home .calculation .content {
   text-align: left;
   padding-top: 56px;
 }
-/* line 192, ../sass/global/_home.scss */
+/* line 184, ../sass/global/_home.scss */
 .home .calculation .content h2 {
   line-height: 44px;
 }
-/* line 194, ../sass/global/_home.scss */
+/* line 186, ../sass/global/_home.scss */
 .home .calculation .content h2 span {
   padding-bottom: 13px;
 }
-/* line 199, ../sass/global/_home.scss */
+/* line 191, ../sass/global/_home.scss */
 .home .calculation .button {
   margin: 0px auto;
   padding: 18px 28px;

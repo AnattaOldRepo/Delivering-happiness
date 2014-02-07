@@ -38,7 +38,11 @@
             padding: 59px 0 0 80px;
             @include clearfix;
         }
+        a{
+            color: #999999;
+        }
         h4 {
+            color: $Gray;
             text-transform: uppercase;
             margin-bottom: 33px;
             letter-spacing: 1px;
