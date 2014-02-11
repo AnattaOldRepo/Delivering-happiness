@@ -50,6 +50,10 @@
     background: $ModerateViolet;
 }
 
+.green-area{
+    background: $Green;
+}
+
 a {
     text-decoration: none;
 }
@@ -122,6 +126,14 @@ a {
         color: $ModerateViolet;
         &:hover {
             background-color: rgba($ModerateViolet, 0.5);
+        }
+    }
+    &.green {
+        background-color: rgba($Green, 0.3);
+        border-color: $Green;
+        color: $Green;
+        &:hover {
+            background-color: rgba($Green, 0.5);
         }
     }
 }
@@ -325,6 +337,11 @@ a {
             background-color: $ModerateViolet;
         }
     }
+    &.green {
+        .content {
+            background-color: $Green;
+        }
+    }
 }
 
 .four-column {
@@ -415,6 +432,11 @@ a {
             @include bg-img-only(become-partner-bg, png, no-repeat, center, center);
         }
     }
+    .become-partner-product{
+        .content{
+            @include bg-img-only(product-graphic, png, no-repeat, center, center);
+        }
+    }
 }
 
 .over-the-globe {
@@ -481,3 +503,16 @@ a {
             background: $StrongYellow;
         }
     }
+
+.products-animation {
+    text-align: center;
+    .wrapper {
+        @include clearfix;
+        padding: 70px 0 0 0;
+    }
+    h2 {
+        @extend %heading-level-7;
+        font-style: italic;
+        margin-bottom: 20px;
+    }
+} 

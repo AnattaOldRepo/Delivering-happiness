@@ -1,0 +1,83 @@
+//
+// shop page 
+// --------------------------------------------------
+
+.shop {
+    .hero {
+        .content {
+            padding: 93px 0px 105px 59px;
+            letter-spacing: -1.5px;
+        }
+        blockquote {
+            @extend %heading-level-1;
+            color: $White;
+            line-height: 50px;
+        }
+        span {
+            color: $LightGreen;
+            @extend %heading-level-7;
+            display: block;
+            margin-bottom: 130px;
+            font-style: italic;
+            line-height: 40px;
+            margin-top: 11px;
+        }
+        .button {
+            background-color: rgba($White, 0.6);
+            color: $Green;
+            padding: 19px 32px;
+            margin-left: 109px;
+            &:hover {
+                background-color: rgba($White, 0.8);
+            }
+        }
+    }
+    .happy-work {
+        .wrapper {
+            padding-bottom: 60px;
+        }
+        .container {
+            padding: 33px 79px 74px 79px;
+            position: relative;
+        }
+        .button {
+            position: absolute;
+            top: 143px;
+            right: 98px;
+            padding: 18px 31px;
+        }
+        .content {
+            h2 {
+                line-height: 57px;
+                margin-bottom: 21px;
+                span {
+                    color: $Green;
+                }
+            }
+            img {
+                margin: 18px 0 0 12px;
+            }
+        }
+    }
+    .inspiration {
+        .right-col {
+            background: $StrongYellow;
+        }
+        .content {
+            padding: 48px 43px 46px 65px;
+            p{
+                letter-spacing: 0;
+            }
+            .button{
+                padding: 19px 37px;
+                margin-left: 115px;
+                margin-top: 37px;
+            }
+        }
+        h3{
+            margin-bottom: 59px;
+            line-height: 47px;
+        }
+    }
+
+}
