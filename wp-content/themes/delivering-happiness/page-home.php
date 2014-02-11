@@ -119,7 +119,7 @@ get_header();
 				</div>
 			</div>
 		</div>
-		<div class="col middel-col">
+		<div class="col middle-col">
 			<div class="shop">
 				<div class="media">
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/shop-graphic.jpg" alt="" />
@@ -174,7 +174,7 @@ get_header();
 				</article>
 			</div>
 		</div>
-		<div class="col middel-col">
+		<div class="col middle-col">
 			<div class="post-2">
 				<div class="media">
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/post-2.jpg" alt="" />

@@ -47,3 +47,18 @@
 %pharagraph-level-1{
 	@include font-shorthand(18px, normal, normal);
 }
+%pharagraph-level-2{
+	@include font-shorthand(17px, normal, normal);
+}
+%pharagraph-level-3{
+	@include font-shorthand(16px, normal, normal);
+}
+%pharagraph-level-4{
+	@include font-shorthand(15px, normal, normal);
+}
+%pharagraph-level-5{
+	@include font-shorthand(14px, normal, normal);
+}
+%pharagraph-level-6{
+	@include font-shorthand(13px, normal, normal);
+}

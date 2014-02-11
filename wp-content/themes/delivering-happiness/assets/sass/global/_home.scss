@@ -86,111 +86,11 @@
             }
         }
     }
-    .get-involved {
-        .work-survey {
-            .content {
-                @include bg-img-only(notepad, png, no-repeat, center, center);
-            }
-        }
-        .schedule-call {
-            .content {
-                @include bg-img-only(phone, png, no-repeat, center, center);
-            }
-        }
-    }
-    .inspiration {
-        .content {
-            padding: 118px 43px 46px 66px;
-            letter-spacing: -1px;
-            h3 {
-                @extend %heading-level-1;
-                color: $White;
-                margin-bottom: 75px;
-                span {
-                    @extend %heading-level-7;
-                    color: $SoftYellow;
-                    font-style: italic;
-                    display: block;
-                    margin-top: 18px;
-                    line-height: 39px;
-                }
-            }
-            .button {
-                padding: 19px 34px;
-                margin-left: 115px;
-            }
-        }
-        .left-col {
-            background: $StrongYellow;
-        }
-    }
     .blog {
         .content {
             h3 {
                 @extend %pharagraph-level-1;
             }
-        }
-    }
-    .over-the-globe {
-        text-align: center;
-        .left-col {
-            background: $OffWhite;
-            .content {
-                padding: 76px 0 0 0px;
-                img {
-                    margin-left: -16px;
-                }
-                h2 {
-                    line-height: 35px;
-                    letter-spacing: -1px;
-                    margin-bottom: 18px;
-                }
-            }
-        }
-        .right-col {
-            background: $Yellow;
-            .media {
-                padding-top: 66px;
-                padding-bottom: 44px;
-            }
-            .content {
-                padding: 0 90px;
-                p {
-                    padding-bottom: 34px;
-                }
-                .button {
-                    padding: 19px 48px;
-                }
-            }
-        }
-    }
-    .calculation {
-        text-align: center;
-        .wrapper {
-            padding-top: 62px;
-            padding-bottom: 66px;
-        }
-        .right-col {
-            margin-right: 49px;
-            margin-top: 3px;
-        }
-        .floated-holder {
-            @include clearfix;
-            margin-bottom: 19px;
-        }
-        .content {
-            text-align: left;
-            padding-top: 56px;
-            h2 {
-                line-height: 44px;
-                span {
-                    padding-bottom: 13px;
-                }
-            }
-        }
-        .button {
-            margin: 0px auto;
-            padding: 18px 28px;
         }
     }
 }

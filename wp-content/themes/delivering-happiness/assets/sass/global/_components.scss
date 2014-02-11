@@ -46,6 +46,10 @@
     background: $OffWhite;
 }
 
+.oderate-violet-area {
+    background: $ModerateViolet;
+}
+
 a {
     text-decoration: none;
 }
@@ -110,6 +114,14 @@ a {
         background-color: rgba($White, 0);
         &:hover {
             background-color: rgba($White, 0.3);
+        }
+    }
+    &.moderateviolet {
+        background-color: rgba($ModerateViolet, 0.3);
+        border-color: $ModerateViolet;
+        color: $ModerateViolet;
+        &:hover {
+            background-color: rgba($ModerateViolet, 0.5);
         }
     }
 }
@@ -258,7 +270,7 @@ a {
     .left-col {
         @extend %pull-left;
     }
-    .middel-col {
+    .middle-col {
         @extend %pull-left;
         margin-left: 20px;
     }
@@ -286,10 +298,186 @@ a {
                 height: 85px;
             }
         }
+        span{   
+            display: block;
+            text-align: left;
+            padding-top: 4px;
+            padding-left: 23px;
+            letter-spacing: 1px;
+            &.date{
+                @extend %heading-level-12;
+                color: $White;
+
+            }
+            &.location{
+                @extend %pharagraph-level-4;
+                color: $LightModerateViolet;
+            }
+        }
     }
     &.blue {
         .content {
             background-color: $Blue;
         }
     }
+    &.oderate-violet {
+        .content {
+            background-color: $ModerateViolet;
+        }
+    }
 }
+
+.four-column {
+    background-color: $LightGray;
+    .wrapper {
+        @include clearfix;
+        padding: 50px 61px 78px 82px;
+    }
+    h2 {
+        @extend %heading-level-7;
+        font-style: italic;
+        margin-bottom: 38px;
+        text-align: center;
+    }
+    .col {
+        @include square(226px);
+        position: relative;
+        margin-right: 34px;
+        margin-bottom: 32px;
+        &.last {
+            margin-right: 0;
+        }
+    }
+    .left-col {
+        @extend %pull-left;
+    }
+    .content {
+        @include square(226px);
+        position: absolute;
+        bottom: 0px;
+        h3 {
+            color: $White;
+            @extend %heading-level-10;
+            text-align: center;
+            line-height: 27px;
+        }
+        span {
+            @extend %pharagraph-level-6;
+            color: lighten($Black, 60%);
+            // #666666
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        .v-aling {
+            @include square(226px);
+            vertical-align: middle;
+            display: table-cell;
+        }
+        &.small {
+            height: 55px;
+            background: rgba($Black, 0.7);
+            padding-left: 18px;
+            h3 {
+                @extend %pharagraph-level-2;
+                text-align: left;
+            }
+            .v-aling {
+                height: 55px;
+            }
+        }
+    }
+    .more-team {
+        .content {
+            background-color: $ModerateViolet;
+            @include bg-img-only(more_team, png, no-repeat, center, center);
+        }
+    }
+}
+
+.get-involved {
+    .work-survey {
+        .content {
+            @include bg-img-only(notepad, png, no-repeat, center, center);
+        }
+    }
+    .schedule-call {
+        .content {
+            @include bg-img-only(phone, png, no-repeat, center, center);
+        }
+    }
+    .calculate {
+        .content {
+            @include bg-img-only(calculater, png, no-repeat, center, center);
+        }
+    }
+    .become-partner {
+        .content {
+            @include bg-img-only(become-partner-bg, png, no-repeat, center, center);
+        }
+    }
+}
+
+.over-the-globe {
+    text-align: center;
+    .left-col {
+        background: $OffWhite;
+    }
+    .right-col {
+        background: $Yellow;
+    }
+    .offwhite-area{
+        .content {
+            padding: 76px 0 0 0px;
+            img {
+                margin-left: -16px;
+            }
+            h2 {
+                line-height: 35px;
+                letter-spacing: -1px;
+                margin-bottom: 18px;
+            }
+        }
+    }
+    .yellow-area{
+        .media {
+            padding-top: 66px;
+            padding-bottom: 44px;
+        }
+        .content {
+            padding: 0 90px;
+            p {
+                padding-bottom: 34px;
+            }
+            .button {
+                padding: 19px 48px;
+            }
+        }
+    }
+}
+
+    .inspiration {
+        .content {
+            padding: 118px 43px 46px 66px;
+            letter-spacing: -1px;
+            h3 {
+                @extend %heading-level-1;
+                color: $White;
+                margin-bottom: 75px;
+                span {
+                    @extend %heading-level-7;
+                    color: $SoftYellow;
+                    font-style: italic;
+                    display: block;
+                    margin-top: 18px;
+                    line-height: 39px;
+                }
+            }
+            .button {
+                padding: 19px 34px;
+                margin-left: 115px;
+            }
+        }
+        .left-col {
+            background: $StrongYellow;
+        }
+    }
