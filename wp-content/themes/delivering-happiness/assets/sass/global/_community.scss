@@ -1,0 +1,134 @@
+//
+// Community page
+// --------------------------------------------------
+
+.community {
+    .hero {
+        .content {
+            padding: 139px 0px 105px 66px;
+            letter-spacing: -1.5px;
+        }
+        blockquote {
+            @extend %heading-level-1;
+            color: $White;
+        }
+        span {
+            color: $LightOrange;
+            @extend %heading-level-7;
+            display: block;
+            margin-bottom: 81px;
+            font-style: italic;
+            line-height: 35px;
+        }
+        .button {
+            background-color: rgba($White, 0.6);
+            color: $Orange;
+            padding: 19px 28px;
+            margin-left: 139px;
+            &:hover {
+                background-color: rgba($White, 0.8);
+            }
+        }
+    }
+    .happier-world {
+        .container {
+            padding: 35px 38px 42px 38px;
+        }
+        .left-col {
+            width: 541px;
+        }
+        .right-col {
+            width: 395px;
+            img {
+                margin-top: 32px;
+                margin-left: -20px;
+            }
+        }
+        .content {
+            h2 {
+                margin-bottom: 34px;
+                span {
+                    line-height: 26px;
+                    color: #ffb68d;
+                    margin-top: 48px;
+                }
+            }
+            p {
+                padding-bottom: 28px;
+            }
+            .button {
+                margin: 1px 0 0 101px;
+                padding: 18px 32px;
+            }
+        }
+    }
+    .clients {
+        h2 {
+            margin-bottom: 50px;
+        }
+        .coin,
+        .front,
+        .back {
+            @include square(85px);
+        }
+        .coin {
+            margin: 0 71px 62px 0;
+            &.last {
+                margin-right: 0px;
+            }
+        }
+        .all-coins {
+            padding-left: 38px;
+        }
+    }
+    .movements {
+        .all-coins {
+            padding-left: 102px;
+        }
+        .coin {
+            margin: 0 94px 39px 0;
+        }
+        .left-col {
+            .content {
+                padding: 70px 0 0 0;
+                h2 {
+                    margin-bottom: 44px;
+                }
+            }
+        }
+        .right-col {
+            .content {
+                padding: 145px 80px 0 65px;
+                padding-right: 80px;
+                text-align: center;
+                h3 {
+                    font-size: 50px;
+                    color: $White;
+                    margin-bottom: 47px;
+                }
+                p {
+                    margin-bottom: 50px;
+                }
+                .button {
+                    padding: 17px 24px;
+                }
+            }
+        }
+        .inspire {
+            background-color: $SoftCyan;
+        }
+    }
+    .instagram {
+        text-align: center;
+        background-color: $LightGray;
+        .wrapper {
+            padding: 71px 0 104px 0;
+            letter-spacing: -2px;
+        }
+        h2 {
+            @extend %heading-level-7;
+            font-style: italic;
+            margin-bottom: 66px;
+        }
+    }
+}

@@ -56,61 +56,6 @@
             }
         }
     }
-    .clients {
-        .media {
-            @include clearfix;
-            padding: 63px;
-            letter-spacing: -1px;
-            .all-coins {
-                padding-left: 82px;
-            }
-            .coin {
-                margin: 0 35px 30px 0;
-                .left-pull {
-                    margin-left: 0px;
-                }
-            }
-        }
-        .content {
-            padding: 0 67px;
-            color: $White;
-            text-align: center;
-            .v-aling {
-                @include size(585px, 545px);
-                display: table-cell;
-                vertical-align: middle;
-            }
-            blockquote {
-                @extend %pharagraph-level-3;
-                font-style: italic;
-                position: relative;
-                line-height: 30px;
-                &:before,
-                &:after {
-                    @include size(47px, 37px);
-                    position: absolute;
-                    content: '';
-                    left: 50%;
-                    margin-left: -28px;
-                }
-                &:before {
-                    @include bg-img-only(quote-top, png, no-repeat, center, center);
-                    top: -85px;
-                }
-                &:after {
-                    @include bg-img-only(quote-bottom, png, no-repeat, center, center);
-                    bottom: -130px;
-                }
-            }
-            span {
-                text-transform: uppercase;
-                display: block;
-                margin-top: 31px;
-                color: #c5e7f1;
-                letter-spacing: 1px;
-            }
-        }
-    }
     .call-dh {
         .container {
             padding: 32px 77px 55px 77px;

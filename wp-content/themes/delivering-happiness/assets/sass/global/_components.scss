@@ -50,8 +50,12 @@
     background: $ModerateViolet;
 }
 
-.green-area{
+.green-area {
     background: $Green;
+}
+
+.orange-area {
+    background: $Orange;
 }
 
 a {
@@ -134,6 +138,14 @@ a {
         color: $Green;
         &:hover {
             background-color: rgba($Green, 0.5);
+        }
+    }
+    &.orange {
+        background-color: rgba($Orange, 0.5);
+        border-color: $Orange;
+        color: $Orange;
+        &:hover {
+            background-color: rgba($Orange, 0.7);
         }
     }
 }
@@ -310,18 +322,17 @@ a {
                 height: 85px;
             }
         }
-        span{   
+        span {
             display: block;
             text-align: left;
             padding-top: 4px;
             padding-left: 23px;
             letter-spacing: 1px;
-            &.date{
+            &.date {
                 @extend %heading-level-12;
                 color: $White;
-
             }
-            &.location{
+            &.location {
                 @extend %pharagraph-level-4;
                 color: $LightModerateViolet;
             }
@@ -432,8 +443,8 @@ a {
             @include bg-img-only(become-partner-bg, png, no-repeat, center, center);
         }
     }
-    .become-partner-product{
-        .content{
+    .become-partner-product {
+        .content {
             @include bg-img-only(product-graphic, png, no-repeat, center, center);
         }
     }
@@ -447,7 +458,7 @@ a {
     .right-col {
         background: $Yellow;
     }
-    .offwhite-area{
+    .offwhite-area {
         .content {
             padding: 76px 0 0 0px;
             img {
@@ -460,7 +471,7 @@ a {
             }
         }
     }
-    .yellow-area{
+    .yellow-area {
         .media {
             padding-top: 66px;
             padding-bottom: 44px;
@@ -477,32 +488,32 @@ a {
     }
 }
 
-    .inspiration {
-        .content {
-            padding: 118px 43px 46px 66px;
-            letter-spacing: -1px;
-            h3 {
-                @extend %heading-level-1;
-                color: $White;
-                margin-bottom: 75px;
-                span {
-                    @extend %heading-level-7;
-                    color: $SoftYellow;
-                    font-style: italic;
-                    display: block;
-                    margin-top: 18px;
-                    line-height: 39px;
-                }
-            }
-            .button {
-                padding: 19px 34px;
-                margin-left: 115px;
+.inspiration {
+    .content {
+        padding: 118px 43px 46px 66px;
+        letter-spacing: -1px;
+        h3 {
+            @extend %heading-level-1;
+            color: $White;
+            margin-bottom: 75px;
+            span {
+                @extend %heading-level-7;
+                color: $SoftYellow;
+                font-style: italic;
+                display: block;
+                margin-top: 18px;
+                line-height: 39px;
             }
         }
-        .left-col {
-            background: $StrongYellow;
+        .button {
+            padding: 19px 34px;
+            margin-left: 115px;
         }
     }
+    .left-col {
+        background: $StrongYellow;
+    }
+}
 
 .products-animation {
     text-align: center;
@@ -515,4 +526,60 @@ a {
         font-style: italic;
         margin-bottom: 20px;
     }
-} 
+}
+
+.clients {
+    .media {
+        @include clearfix;
+        padding: 63px;
+        letter-spacing: -1px;
+        .all-coins {
+            padding-left: 82px;
+        }
+        .coin {
+            margin: 0 35px 30px 0;
+            .left-pull {
+                margin-left: 0px;
+            }
+        }
+    }
+    .content {
+        padding: 0 67px;
+        color: $White;
+        text-align: center;
+        .v-aling {
+            @include size(585px, 545px);
+            display: table-cell;
+            vertical-align: middle;
+        }
+        blockquote {
+            @extend %pharagraph-level-3;
+            font-style: italic;
+            position: relative;
+            line-height: 30px;
+            &:before,
+            &:after {
+                @include size(47px, 37px);
+                position: absolute;
+                content: '';
+                left: 50%;
+                margin-left: -28px;
+            }
+            &:before {
+                @include bg-img-only(quote-top, png, no-repeat, center, center);
+                top: -85px;
+            }
+            &:after {
+                @include bg-img-only(quote-bottom, png, no-repeat, center, center);
+                bottom: -130px;
+            }
+        }
+        span {
+            text-transform: uppercase;
+            display: block;
+            margin-top: 31px;
+            color: #c5e7f1;
+            letter-spacing: 1px;
+        }
+    }
+}
