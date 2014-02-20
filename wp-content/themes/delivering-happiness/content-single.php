@@ -4,12 +4,12 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" class="post detail">
 	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<h2 class="entry-title"><?php the_title(); ?></h2>
 
 		<div class="entry-meta">
-			<?php delivering_happiness_posted_on(); ?>
+			<?php the_category(','); ?> | <?php delivering_happiness_posted_on(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 
@@ -23,7 +23,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-	<footer class="entry-meta">
+	<footer class="entry-meta" style="display:none;">
 		<?php
 			/* translators: used between list items, there is a space after the comma */
 			$category_list = get_the_category_list( __( ', ', 'delivering-happiness' ) );

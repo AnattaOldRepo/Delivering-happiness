@@ -9,14 +9,10 @@
 
 get_header(); ?>
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<header class="page-header">
-				<h1 class="page-title">
-					<?php
+<div class="happiness-page">
+	<div class="wrapper">
+		<div class="page-header">
+			<h1>Blog > <?php
 						if ( is_category() ) :
 							single_cat_title();
 
@@ -66,16 +62,11 @@ get_header(); ?>
 							_e( 'Archives', 'delivering-happiness' );
 
 						endif;
-					?>
-				</h1>
-				<?php
-					// Show an optional term description.
-					$term_description = term_description();
-					if ( ! empty( $term_description ) ) :
-						printf( '<div class="taxonomy-description">%s</div>', $term_description );
-					endif;
-				?>
-			</header><!-- .page-header -->
+					?> </h1>
+		</div>
+		<div id="primary" class="content-area left-col">
+			<main id="main" class="site-main" role="main">
+		<?php if ( have_posts() ) : ?>
 
 			<?php /* Start the Loop */ ?>
 			<?php while ( have_posts() ) : the_post(); ?>
@@ -98,8 +89,10 @@ get_header(); ?>
 
 		<?php endif; ?>
 
-		</main><!-- #main -->
-	</section><!-- #primary -->
+			</main><!-- #main -->
+		</div><!-- #primary -->
+		<?php get_sidebar(); ?>
+	</div>
+</div>
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

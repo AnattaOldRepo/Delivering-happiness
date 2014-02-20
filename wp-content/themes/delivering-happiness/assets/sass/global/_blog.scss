@@ -1,0 +1,265 @@
+//
+// Blog page
+// --------------------------------------------------
+
+.happiness-page {
+    padding-bottom:50px;
+    .nav-links{
+        display: none;
+    }
+    background: #f5f4f2;
+    .left-col {
+        @extend %pull-left;
+        width: 698px;
+    }
+    .right-col {
+        @extend %pull-right;
+        width: 256px;
+    }
+    .wrapper {
+        @include clearfix;
+        padding: 47px 103px 0 46px;
+    }
+    .page-header {
+        padding-left: 13px;
+        padding-bottom: 54px;
+        @include clearfix;
+        h1 {
+            color: $Blue;
+            @extend %heading-level-12;
+            @extend %pull-left;
+            font-style: italic;
+        }
+        .all-categories {
+            padding-top: 13px;
+            @extend %pull-right;
+            a {
+                color: $Gray;
+                @extend %pharagraph-level-6;
+                text-transform: uppercase;
+                margin-left: 20px;
+                letter-spacing: 2px;
+                &:hover{
+                   color: $Blue; 
+                }
+            }
+        }
+    }
+    .post {
+        @include border_radius(20px);
+        @include clearfix;
+        padding: 32px 20px 25px 20px;
+        border: 5px solid darken($LightGray, 6.2%);
+        background: $White;
+        margin-bottom: 40px;
+        .media {
+            @extend %pull-left;
+        }
+        .entry-header {
+            h2 {
+                @extend %heading-level-10;
+                line-height: 28px;
+                margin-bottom: 6px;
+                a {
+                    color: $Blue;
+                }
+            }
+            .entry-meta {
+                letter-spacing: 1px;
+                margin-bottom: 14px;
+                text-transform: uppercase;
+                @extend %pharagraph-level-7;
+                color: lighten($Black, 60%);
+                // #999
+                a {
+                    color: lighten($Black, 60%);
+                    // #999
+               
+                }
+            }
+        }
+        .content {
+            &.expaned {
+                float: none;
+                width: auto;
+                padding-left: 0px;
+            }
+            @extend %pull-left;
+            width: 400px;
+            padding-left: 18px;
+            p {
+                @extend %pharagraph-level-5;
+                line-height: 23px;
+                padding-bottom: 10px;
+            }
+            .cta {
+                color: $Blue;
+                font-style: italic;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        &.detail{
+            padding: 25px 35px 25px 35px;
+            .entry-header {
+                h2{
+                    @extend %heading-level-7;
+                    color: $Blue;
+                    line-height: 35px;
+                    
+                }
+            }
+            .entry-meta {
+                font-size: 13px;
+                margin-bottom: 25px;
+            }
+            p{
+                @extend %pharagraph-level-5;
+                line-height: 1.7em;
+                padding-bottom: 25px;
+            }
+            li{
+                color: $Blue;
+                font-style: italic;
+                margin-bottom: 10px;
+            }
+            ol,ul{
+                margin-bottom: 25px;
+            }
+            ol {
+                list-style-type: decimal;
+                margin-left: 20px;
+            }
+            h1, h2, h3, h4, h5, h6{
+                line-height: 1.5em;
+                margin-bottom: 5px;
+            }
+            h1{
+                @extend %heading-level-10;
+            }
+            h2{
+                @extend %heading-level-11;
+            }
+            h3{
+                @extend %heading-level-12;
+            }
+            h4{
+                @extend %pharagraph-level-1;
+            }
+            h5{
+                @extend %pharagraph-level-2;
+            }
+            h6{
+                @extend %pharagraph-level-3;
+            }
+            .alignleft{
+                @extend %pull-left;
+            }
+            .alignright{
+                @extend %pull-right;
+            }
+            .wp-caption{
+                font-style: italic;
+                color: lighten($Gray, 20%);
+            }
+            blockquote{
+               @extend %pharagraph-level-1;
+               text-transform: uppercase; 
+               color: lighten($Gray, 20%);
+            }
+        }
+    }
+    .sidebar {
+        .widget{
+            background-color: $White;
+            border: 1px solid darken($LightGray, 6.2%);
+            padding: 10px;
+        }
+        .become-a-vhp {
+            background: $Blue;
+            color: $White;
+            text-align: center;
+            padding: 19px 30px 18px 30px;
+            margin-bottom: 19px;
+            h3 {
+                @extend %heading-level-10;
+                line-height: 1.5em;
+                span {
+                    @extend %pharagraph-level-5;
+                    display: block;
+                    line-height: 10px;
+                }
+            }
+            p {
+                @extend %pharagraph-level-7;
+                color: #9ed4ee;
+                padding: 16px 16px 20px 16px;
+                line-height: 17px;
+            }
+            input[type="text"] {
+                @include size(100%, 35px);
+                padding-left: 13px;
+                background-color: rgba($White, 0.8);
+                border: none;
+                color: $Blue;
+                font-style: italic;
+                border: 2px solid $White;
+                margin-bottom: 11px;
+                @include input-placeholder {
+                    color: $Blue;
+                    font-style: italic;
+                    font-size: 12px;
+                }
+            }
+            .button {
+                padding: 8px 25px;
+                margin-left: 10px;
+                background-color: rgba($White, 0.8);
+                cursor: pointer;
+                color: $Blue;
+                border: none;
+                &:hover{
+                    background-color: rgba($White, 0.6); 
+                }
+            }
+        }
+        .wfu{
+            height: 75px;
+            margin-bottom: 40px;
+            @include bg-img-only(wfu-g, png, no-repeat, center, center);
+            background-color: $ModerateViolet;
+            color: $White;
+            text-align: center;
+            h3{
+                @extend %heading-level-10; 
+                line-height: 3em;
+            }
+        }
+        .fp{
+            margin-bottom: 40px;
+            hr{
+                @include bg-img-only(w-hr, gif, no-repeat, center, center);
+                height: 16px;
+                border: none;
+            }
+            h3{
+                color: $Gray;
+                letter-spacing: 1px;
+                margin: 20px 0 33px 0;
+            }
+            a{
+                display: block;
+                color: $Blue;
+                margin-bottom: 20px;
+                line-height: 22px;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .twitter{
+            margin-bottom: 19px;;
+        }
+    }
+}
