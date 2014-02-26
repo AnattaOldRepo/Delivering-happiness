@@ -10,13 +10,13 @@
         }
     }
     .bar {
-        height: 95px;
-        background: $Blue;
         color: $White;
         text-transform: uppercase;
         .wrapper {
             padding-left: 212px;
             padding-top: 8px;
+            height: 95px;
+            background: $Blue;
         }
         img {
             vertical-align: top;

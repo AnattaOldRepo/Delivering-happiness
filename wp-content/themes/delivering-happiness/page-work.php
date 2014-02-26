@@ -9,16 +9,14 @@ get_header();
 <!-- Work page-->
 <div class="work">
 	<section class="two-column hero">
-		<div class="left-expanded oderate-violet-area">
-			<div class="left-col">
+		<div class="wrapper">
+			<div class="left-col oderate-violet-area">
 				<article class="content">
 					<blockquote>“Get the culture right,<br/>&nbsp;and everything<br/>&nbsp;else just falls into place.” </blockquote>
 					<span>~ Tony Hsieh</span>
 					<a href="#" class="button">SCHEDULE A Free Culture Call</a>
 				</article>
 			</div>
-		</div>
-		<div class="right-expanded" style="background:#dde6ef;/* It will be removed */"> 
 			<div class="right-col">
 				<div class="media">
 					<img src="<?php bloginfo('template_url')?>/assets/images/global/work_hero.jpg" alt="" />
@@ -40,13 +38,19 @@ get_header();
 		</div>
 	</section>
 
-	<section class="three-column oderate-violet get-involved">
+	<section class="three-column oderate-violet get-involved cross-fade">
 		<div class="wrapper">
 			<h2>Get involved:</h2>
 			<div class="col left-col">
 				<div class="work-survey">
 					<div class="content">
 						<div class="v-aling"><h3>Take the<br/>happiness at<br/>work survey</h3></div>
+					</div>
+				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+						<a href="#" class="button moderateviolet">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
@@ -56,6 +60,12 @@ get_header();
 						<div class="v-aling"><h3>Schedule<br/>a free<br/>culture call</h3></div>
 					</div>
 				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+						<a href="#" class="button moderateviolet">LET’S GO!</a>
+					</div>
+				</div>
 			</div>
 			<div class="col right-col">
 				<div class="calculate">
@@ -63,11 +73,17 @@ get_header();
 						<div class="v-aling"><h3>Calculate<br/>your<br/>happiness</h3></div>
 					</div>
 				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+						<a href="#" class="button moderateviolet">LET’S GO!</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
-	<section class="four-column">
+	<section class="four-column cross-fade">
 		<div class="wrapper">
 			<h2>Coaches and speakers:</h2>
 			<div class="col left-col">
@@ -80,6 +96,11 @@ get_header();
 							<h3>Jenn Lim</h3>
 							<span class="job-title">CEO/CHO/SPEAKER</span>
 						</div>
+					</div>
+				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<a href="#" class="button">Read Bio</a>
 					</div>
 				</div>
 			</div>
@@ -95,6 +116,11 @@ get_header();
 						</div>
 					</div>
 				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<a href="#" class="button">Read Bio</a>
+					</div>
+				</div>
 			</div>
 			<div class="col left-col">
 				<div class="team-member">
@@ -106,6 +132,11 @@ get_header();
 							<h3>Mark Rowland</h3>
 							<span class="job-title">STRATEGY LEAD & COACH</span>
 						</div>
+					</div>
+				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<a href="#" class="button">Read Bio</a>
 					</div>
 				</div>
 			</div>
@@ -121,6 +152,11 @@ get_header();
 						</div>
 					</div>
 				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<a href="#" class="button">Read Bio</a>
+					</div>
+				</div>
 			</div>
 			<div class="col left-col">
 				<div class="team-member">
@@ -132,6 +168,11 @@ get_header();
 							<h3>Carlos Piera</h3>
 							<span class="job-title">SPAIN COACH/SPEAKER</span>
 						</div>
+					</div>
+				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<a href="#" class="button">Read Bio</a>
 					</div>
 				</div>
 			</div>
@@ -147,6 +188,11 @@ get_header();
 						</div>
 					</div>
 				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<a href="#" class="button">Read Bio</a>
+					</div>
+				</div>
 			</div>
 			<div class="col left-col">
 				<div class="team-member">
@@ -160,6 +206,11 @@ get_header();
 						</div>
 					</div>
 				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<a href="#" class="button">Read Bio</a>
+					</div>
+				</div>
 			</div>
 			<div class="col left-col last">
 				<div class="more-team">
@@ -169,41 +220,62 @@ get_header();
 						</div>
 					</div>
 				</div>
-			</div>
-		</div>
-	</section>
-	<section class="two-column coin-animation clients">
-		<div class="left-expanded">
-			<div class="left-col">
-				<div class="media">
-					<h2>Kudos from our clients:</h2>
-					<div class="all-coins">
-						<div class="coin">
-							<div class="front clients-hp"></div>
-							<div class="back clients-hp-selected"></div>
-						</div>
-						<div class="coin">
-							<div class="front clients-aetna"></div>
-							<div class="back clients-aetna-selected"></div>
-						</div>
-						<div class="coin">
-							<div class="front clients-r"></div>
-							<div class="back clients-r-selected"></div>
-						</div>
-						<div class="coin left-pull">
-							<div class="front clients-lost"></div>
-							<div class="back clients-lost-selected"></div>
-						</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<a href="#" class="button">Read More</a>
 					</div>
 				</div>
 			</div>
 		</div>
-		<div class="right-expanded blue-area">
-			<div class="right-col">
-				<article class="content">
+	</section>
+	<section class="two-column coin-animation clients flip">
+		<div class="wrapper">
+			<div class="left-col">
+				<div class="media">
+					<h2>Kudos from our clients:</h2>
+					<div class="all-coins">
+						<div class="coin active">
+							<div class="coin-side front clients-hp"></div>
+							<div class="coin-side back clients-hp-selected"></div>
+						</div>
+						<div class="coin">
+							<div class="coin-side front clients-aetna"></div>
+							<div class="coin-side back clients-aetna-selected"></div>
+						</div>
+						<div class="coin">
+							<div class="coin-side front clients-r"></div>
+							<div class="coin-side back clients-r-selected"></div>
+						</div>
+						<div class="coin left-pull">
+							<div class="coin-side front clients-lost"></div>
+							<div class="coin-side back clients-lost-selected"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-col blue-area">
+				<article class="content active">
 					<div class="v-aling">
 						<blockquote>This was an awesome experience! The best part for me was seeing the correlation between happiness at work and increased production/profit. I think it drove home how important happiness is and how easily happiness can be accomplished</blockquote>
+						<span> HP, June 2013</span>
+					</div>
+				</article>
+				<article class="content">
+					<div class="v-aling">
+						<blockquote>This was an awesome experience! The best part for me was seeing. I think it drove home how important happiness is and how easily happiness can be accomplished</blockquote>
 						<span> Aetna, June 2013</span>
+					</div>
+				</article>
+				<article class="content">
+					<div class="v-aling">
+						<blockquote>This was an awesome experience!.it drove home how important happiness is and how easily happiness can be accomplished</blockquote>
+						<span> R, June 2013</span>
+					</div>
+				</article>
+				<article class="content">
+					<div class="v-aling">
+						<blockquote>This was an awesome experience! The best part for me was The best part for me was seeing the correlation between happiness at work and increased production/profit. I think it drove home how important happiness is and how easily happiness can be accomplished</blockquote>
+						<span> Lost, June 2013</span>
 					</div>
 				</article>
 			</div>
@@ -227,8 +299,8 @@ get_header();
 	</section>
 
 	<section class="two-column over-the-globe">
-		<div class="left-expanded yellow-area">
-			<div class="left-col">
+		<div class="wrapper">
+			<div class="left-col yellow-area">
 				<div class="media">
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/companies.jpg" alt="" />
 				</div>
@@ -237,9 +309,7 @@ get_header();
 					<a href="#" class="button yellow">Learn more</a>
 				</article>
 			</div>
-		</div>
-		<div class="right-expanded offwhite-area">
-			<div class="right-col">
+			<div class="right-col offwhite-area">
 				<div class="content">
 					<h2>We’ve inspired businesses<br/>all over the globe.</h2>
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/global.png" alt="" />
@@ -248,7 +318,7 @@ get_header();
 		</div>
 	</section>
 
-	<section class="three-column oderate-violet get-involved">
+	<section class="three-column oderate-violet get-involved cross-fade">
 		<div class="wrapper">
 			<h2>Work with us:</h2>
 			<div class="col left-col">
@@ -259,6 +329,12 @@ get_header();
 							<span class="date">MARCH 2</span>
 							<span class="location">SAN FRANCISCO</span>
 						</div>
+					</div>
+				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+						<a href="#" class="button moderateviolet">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
@@ -272,6 +348,12 @@ get_header();
 						</div>
 					</div>
 				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+						<a href="#" class="button moderateviolet">LET’S GO!</a>
+					</div>
+				</div>
 			</div>
 			<div class="col right-col">
 				<div class="become-partner">
@@ -279,20 +361,24 @@ get_header();
 						<div class="v-aling"><h3>Become<br/>a<br/>partner</h3></div>
 					</div>
 				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+						<a href="#" class="button moderateviolet">LET’S GO!</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</section>
 
 	<section class="two-column inspiration">
-		<div class="left-expanded offwhite-area">
+		<div class="wrapper">
 			<div class="left-col">
 				<div class="media">
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/become-a-partner.jpg" alt="" />
 				</div>
 			</div>
-		</div>
-		<div class="right-expanded strongyellow-area">
-			<div class="right-col">
+			<div class="right-col strongyellow-area">
 				<div class="content">
 					<h3>Partner with us.<span>Interested in being a DH partner?<br/>you’re in the right place. </span></h3>
 					<p>We’re on a mission to share the science of happiness<br/>and impact workplace cultures around the world. To do<br/>that, we’ve created a partner program.  Whether you’re<br/>a company or a self-employed coach, let us know what<br/>your vision is in changing the world. </p>

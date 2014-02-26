@@ -1,0 +1,126 @@
+//
+// Animations
+// --------------------------------------------------
+
+.flip{
+    .right-col{
+        position: relative;
+        .content{
+            position:absolute;
+            top: 0px;
+            left: 0px;
+            @include transition(all 1s ease);
+            @include opacity(0);
+            @include scale(0);
+
+            &.active{
+                @include opacity(1); 
+                @include scale(1);
+                z-index: 10!important; 
+            }
+        }
+    }
+    .all-coins {
+        .coin {
+            -webkit-perspective: 600px;
+            -moz-perspective: 600px;
+            perspective: 600px;
+            &.active,
+            &:hover {
+                cursor: pointer;
+                .front {
+                    -webkit-transform: rotateX(-180deg);
+                    -moz-transform: rotateX(-180deg);
+                    transform: rotateX(-180deg);
+                }
+                .back {
+                    -webkit-transform: rotateX(0deg);
+                    -moz-transform: rotateX(0deg);
+                    transform: rotateX(0deg);
+                }
+            }
+        }
+        .coin-side {
+            -webkit-transform-style: preserve-3d;
+            -moz-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            -webkit-backface-visibility: hidden;
+            -moz-backface-visibility: hidden;
+            backface-visibility: hidden;
+            -webkit-transition: all .4s ease-in-out;
+            transition: all .4s ease-in-out;
+        }
+        .front {
+            -webkit-transform: rotateX(0deg);
+            -moz-transform: rotateX(0deg);
+            transform: rotateX(0deg);
+        }
+        .back {
+            -webkit-transform: rotateX(-180deg);
+            -moz-transform: rotateX(-180deg);
+            transform: rotateX(-180deg);
+        }
+    }
+}
+
+.cross-fade{
+    .hover-content{
+        background-color: $White;
+        @include translate(0, 30px);
+        @include transition(all .5s ease);
+        @include opacity(0);
+        @include square(336px);
+        position: absolute; 
+        top: -336px;
+        left: 0px;
+        font-style: italic;
+        line-height: 1.8em;
+        .v-aling{
+            @include square(336px);
+            display: table-cell;
+            vertical-align: middle;
+            padding: 0px 20px;
+        }
+    }
+    &.four-column{
+        .hover-content{
+            background-color: rgba(120, 60, 189, .8);
+            @include square(226px);
+            top: -226px;
+            .v-aling{
+                @include square(226px);  
+                .button{
+                    background-color: lighten($ModerateViolet, 35%);
+                    border-width:1px;
+                    border-color: $ModerateViolet;
+                    padding: 12px 0;
+                    width: 160px;
+                    margin: 0 auto;
+                    color: $ModerateViolet;
+                    display: block;
+                    &:hover{
+                        background-color: lighten($ModerateViolet, 55%);   
+                    }
+                }
+            }
+        }  
+    }
+}
+
+// Show content on hover for three and four columns
+.three-column,
+.four-column{
+    .col{
+        &:hover{
+            .hover-content{
+                @include opacity(10);
+                top: -30px;
+            }
+            .team-member{
+                .content{
+                    bottom:-60px;
+                }
+            }
+        }
+    }
+}

@@ -85,6 +85,7 @@
           transform: translate($x, $y);
 }
 
+
 // Linear Gradient
 @mixin linear-gradient($fromColor, $toColor) {
   background-color: $toColor; /* Fallback Color */

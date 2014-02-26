@@ -47,13 +47,18 @@
                 margin-left: -40px;
             }
             .left-col {
-                .content {
+                .media {
                     padding: 66px 0px 66px 60px;
                 }
+            }
+            .right-col{
+                 position: relative;
             }
         }
         .content {
             height: 545px;
+            position: absolute;
+            left: 0px;
             text-align: center;
             padding: 69px 79px;
             h3 {
@@ -66,6 +71,23 @@
             }
             &.winky {
                 background: $Blue;
+                z-index: 1;
+            }
+            &.sandels{
+                background: $Orange;
+                z-index: 2;
+            }
+            &.mountain{
+                background: $DarkCyan;
+                z-index: 3;
+            }
+            &.lilly{
+                background: $LimeGreen;
+                z-index: 4;
+            }
+            &.heart{
+                background: $StrongMagenta;
+                z-index: 5;
             }
         }
     }

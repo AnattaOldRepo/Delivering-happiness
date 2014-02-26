@@ -10,16 +10,14 @@ get_header();
 <div class="shop">
 
 	<section class="two-column hero">
-		<div class="left-expanded green-area">
-			<div class="left-col">
+		<div class="wrapper">
+			<div class="left-col green-area">
 				<article class="content">
 					<blockquote>Too much of this is a<br/>good thing.</blockquote>
 					<span>Created with love, made with care,<br/>infused with joy.</span>
 					<a href="#" class="button">SHOP THE COLLECTION</a>
 				</article>
 			</div>
-		</div>
-		<div class="right-expanded" style="background:#dde6ef;/* It will be removed */"> 
 			<div class="right-col">
 				<div class="media">
 					<img src="<?php bloginfo('template_url')?>/assets/images/global/shop-hero.jpg" alt="" />
@@ -42,15 +40,13 @@ get_header();
 	</section>
 
 	<section class="two-column inspiration">
-		<div class="left-expanded offwhite-area">
+		<div class="wrapper">
 			<div class="left-col">
 				<div class="media">
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/customized-products.jpg" alt="" />
 				</div>
 			</div>
-		</div>
-		<div class="right-expanded strongyellow-area">
-			<div class="right-col">
+			<div class="right-col strongyellow-areal">
 				<div class="content">
 					<h3>Inspire others with<br/>customized products.<span>We have dozens of items<br/>available for your company,<br/>team, or yourself. Get in touch<br/>and we’ll design something<br/>special, just for you</span></h3>
 					<a href="#" class="button softyellow">Share the photo</a>
@@ -62,11 +58,20 @@ get_header();
 	<section class="products-animation">
 		<div class="wrapper">
 			<h2>Our collection has style:</h2>
-			<img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" />
+			<div class="card active"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
 		</div>
 	</section>
 
-	<section class="three-column green get-involved">
+	<section class="three-column green get-involved cross-fade">
 		<div class="wrapper">
 			<h2>Show how happy you are:</h2>
 			<div class="col left-col">
@@ -78,11 +83,23 @@ get_header();
 						<div class="v-aling"><h3>Corporate gifts</h3></div>
 					</div>
 				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+						<a href="#" class="button green">LET’S GO!</a>
+					</div>
+				</div>
 			</div>
 			<div class="col middle-col">
 				<div class="become-partner-product">
 					<div class="content">
 						<div class="v-aling"><h3>Become a<br/>partner</h3></div>
+					</div>
+				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+						<a href="#" class="button green">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
@@ -93,6 +110,12 @@ get_header();
 					</div>
 					<div class="content small">
 						<div class="v-aling"><h3>Retailers</h3></div>
+					</div>
+				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+						<a href="#" class="button green">LET’S GO!</a>
 					</div>
 				</div>
 			</div>

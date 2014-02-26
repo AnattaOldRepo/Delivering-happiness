@@ -38,38 +38,56 @@ get_header();
 <!-- /Happier world section-->
 
 <!-- Happiness section-->
-<section class="two-column coin-animation happiness">
-	<div class="left-expanded">
+<section class="two-column coin-animation happiness flip">
+	<div class="wrapper">
 		<div class="left-col">
-			<div class="content">
+			<div class="media">
 				<h2>The effects of happiness:</h2>
 				<div class="all-coins">
-					<div class="coin">
-						<div class="front happiness-sandels"></div>
-						<div class="back happiness-sandels-selected"></div>
+					<div class="coin active">
+						<div class="coin-side front happiness-sandels"></div>
+						<div class="coin-side back happiness-sandels-selected"></div>
 					</div>
 					<div class="coin">
-						<div class="front happiness-heart"></div>
-						<div class="back happiness-heart-selected"></div>
+						<div class="coin-side front happiness-heart"></div>
+						<div class="coin-side back happiness-heart-selected"></div>
 					</div>
 					<div class="coin">
-						<div class="front happiness-mountain"></div>
-						<div class="back happiness-mountain-selected"></div>
+						<div class="coin-side front happiness-mountain"></div>
+						<div class="coin-side back happiness-mountain-selected"></div>
 					</div>
 					<div class="coin left-pull">
-						<div class="front happiness-lilly"></div>
-						<div class="back happiness-lilly-selected"></div>
+						<div class="coin-side front happiness-lilly"></div>
+						<div class="coin-side back happiness-lilly-selected"></div>
 					</div>
 					<div class="coin">
-						<div class="front happiness-winky"></div>
-						<div class="back happiness-winky-selected"></div>
+						<div class="coin-side front happiness-winky"></div>
+						<div class="coin-side back happiness-winky-selected"></div>
 					</div>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="right-expanded blue-area">
 		<div class="right-col">
+			<article class="content sandels active">
+				<h3>Changes Lives</h3>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winky-large.png" alt="" />
+				<p>Deciding to be happier will change your life for the better. Working toward a happiness goal generates its own payoff as you tip the scales toward a happier life. And when you’re being true to your (weird) self, you’ll inspire others toward their own personal happiness. </p>
+			</article>
+			<article class="content heart">
+				<h3>Changes Lives</h3>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winky-large.png" alt="" />
+				<p>Deciding to be happier will change your life for the better. Working toward a happiness goal generates its own payoff as you tip the scales toward a happier life. And when you’re being true to your (weird) self, you’ll inspire others toward their own personal happiness. </p>
+			</article>
+			<article class="content mountain">
+				<h3>Changes Lives</h3>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winky-large.png" alt="" />
+				<p>Deciding to be happier will change your life for the better. Working toward a happiness goal generates its own payoff as you tip the scales toward a happier life. And when you’re being true to your (weird) self, you’ll inspire others toward their own personal happiness. </p>
+			</article>
+			<article class="content lilly">
+				<h3>Changes Lives</h3>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winky-large.png" alt="" />
+				<p>Deciding to be happier will change your life for the better. Working toward a happiness goal generates its own payoff as you tip the scales toward a happier life. And when you’re being true to your (weird) self, you’ll inspire others toward their own personal happiness. </p>
+			</article>
 			<article class="content winky">
 				<h3>Changes Lives</h3>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winky-large.png" alt="" />
@@ -86,20 +104,19 @@ get_header();
 		<div class="container">
 			<h2>Our core values:</h2>
 			<div class="horizontal-slider">
-				<div class="slide">
+				<div class="slide cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="2000" data-cycle-pager="#custom-pager" data-cycle-pager-template="<a href=#> {{slideNum}} </a>">
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
 				</div>
-				<div class="pager">
-					<a href="#">1</a>
-					<a href="#">2</a>
-					<a href="#">3</a>
-					<a href="#">4</a>
-					<a href="#">5</a>
-					<a href="#">6</a>
-					<a href="#">7</a>
-					<a href="#">8</a>
-					<a href="#">9</a>
-					<a href="#">10</a>
+				<div id="custom-pager" class="pager cycle-pager">
 				</div>
 			</div>
 			<a href="#" class="cta">Download the poster for free!</a>
@@ -109,13 +126,19 @@ get_header();
 <!-- /Core values section-->
 
 <!-- Get involved section-->
-<section class="three-column blue get-involved">
+<section class="three-column blue get-involved cross-fade">
 	<div class="wrapper">
 		<h2>Get involved:</h2>
 		<div class="col left-col">
 			<div class="work-survey">
 				<div class="content">
 					<div class="v-aling"><h3>Take the<br/>happiness at<br/>work survey</h3></div>
+				</div>
+			</div>
+			<div class="hover-content">
+				<div class="v-aling">
+					<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+					<a href="#" class="button blue">LET’S GO!</a>
 				</div>
 			</div>
 		</div>
@@ -128,11 +151,23 @@ get_header();
 					<div class="v-aling"><h3>Shop</h3></div>
 				</div>
 			</div>
+			<div class="hover-content">
+				<div class="v-aling">
+					<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+					<a href="#" class="button blue">LET’S GO!</a>
+				</div>
+			</div>
 		</div>
 		<div class="col right-col">
 			<div class="schedule-call">
 				<div class="content">
 					<div class="v-aling"><h3>Schedule<br/>a free<br/>culture call</h3></div>
+				</div>
+			</div>
+			<div class="hover-content">
+				<div class="v-aling">
+					<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+					<a href="#" class="button blue">LET’S GO!</a>
 				</div>
 			</div>
 		</div>
@@ -142,15 +177,13 @@ get_header();
 
 <!-- Inspiration section-->
 <section class="two-column inspiration">
-	<div class="left-expanded strongyellow-area">
+	<div class="wrapper">
 		<div class="left-col">
 			<div class="content">
 				<h3>Shop@DH – created to<br/>inspire.<span>Share your inspiration and<br/>save 20%.</span></h3>
 				<a href="#" class="button softyellow">Share your story</a>
 			</div>
 		</div>
-	</div>
-	<div class="right-expanded offwhite-area">
 		<div class="right-col">
 			<div class="media">
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/inspired-graphic.jpg" alt="" />
@@ -161,7 +194,7 @@ get_header();
 <!-- Inspiration section-->
 
 <!-- Blog section-->
-<section class="three-column blue blog">
+<section class="three-column blue blog cross-fade">
 	<div class="wrapper">
 		<h2>New on our blog:</h2>
 		<div class="col left-col">
@@ -172,6 +205,12 @@ get_header();
 				<article class="content small">
 					<div class="v-aling"><h3>The Business of Giving</h3></div>
 				</article>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+						<a href="#" class="button blue">LET’S GO!</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col middle-col">
@@ -182,6 +221,12 @@ get_header();
 				<article class="content small">
 					<div class="v-aling"><h3>Wisdom for a Happy Life:<br/>Lessons from Sports</h3></div>
 				</article>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+						<a href="#" class="button blue">LET’S GO!</a>
+					</div>
+				</div>
 			</div>
 		</div>
 		<div class="col right-col">
@@ -192,6 +237,12 @@ get_header();
 				<article class="content small">
 					<div class="v-aling"><h3>Happiness Increased by<br/>Lunching Outside the Office</h3></div>
 				</article>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+						<a href="#" class="button blue">LET’S GO!</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -200,16 +251,14 @@ get_header();
 
 <!-- Over the globe section-->
 <section class="two-column over-the-globe">
-	<div class="left-expanded offwhite-area">
-		<div class="left-col">
+	<div class="wrapper">
+		<div class="left-col offwhite-area">
 			<div class="content">
 				<h2>We’ve inspired businesses<br/>all over the globe.</h2>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/global.png" alt="" />
 			</div>
 		</div>
-	</div>
-	<div class="right-expanded yellow-area">
-		<div class="right-col">
+		<div class="right-col yellow-area">
 			<div class="media">
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/companies.jpg" alt="" />
 			</div>
@@ -238,7 +287,6 @@ get_header();
 			</div>
 			<a href="#" class="button blue">Calculate your happiness ROI</a>
 		</div>
-		
 	</div>
 </section>
 <!-- /Calculation graph section-->
