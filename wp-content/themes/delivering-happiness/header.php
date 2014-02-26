@@ -28,10 +28,10 @@
 		<div class="wrapper">
 			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a></h1>
 			<menu class="site-navigation">
-				<li class="nav-work"><a href="#">WORK</a></li>
-				<li class="nav-shop"><a href="#">SHOP</a></li>
-				<li class="nav-community"><a href="#">COMMUNITY</a></li>
-				<li class="nav-happiness"><a href="#">HAPPINESS 101</a></li>
+				<li class="nav-work"><a href="/work">WORK</a></li>
+				<li class="nav-shop"><a href="/shop">SHOP</a></li>
+				<li class="nav-community"><a href="/community">COMMUNITY</a></li>
+				<li class="nav-happiness"><a href="/happiness">HAPPINESS 101</a></li>
 			</menu>
 		</div>
 	</header>
