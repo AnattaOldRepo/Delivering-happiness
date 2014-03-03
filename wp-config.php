@@ -57,7 +57,7 @@ if ( ! defined( 'NONCE_SALT' ) )
  * prefix. Only numbers, letters, and underscores please!
  */
 
-$table_prefix  = 'd3fe6_';
+$table_prefix  = 'wp_';
 
 /**
  * WordPress Localized Language, defaults to English.
