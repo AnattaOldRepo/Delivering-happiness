@@ -197,18 +197,20 @@ get_header();
 <section class="three-column blue blog cross-fade">
 	<div class="wrapper">
 		<h2>New on our blog:</h2>
+		<?php $blog_posts = get_posts( array( 'posts_per_page' => 3 ) ); ?>
 		<div class="col left-col">
 			<div class="post-1">
 				<div class="media">
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/post-1.jpg" alt="" />
+					<?php if ( has_post_thumbnail( $blog_posts[0]->ID ) ) echo get_the_post_thumbnail( $blog_posts[0]->ID ); ?>
 				</div>
 				<article class="content small">
-					<div class="v-aling"><h3>The Business of Giving</h3></div>
+					<div class="v-aling"><h3><?php echo get_the_title( $blog_posts[0]->ID ); ?></h3></div>
 				</article>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
-						<a href="#" class="button blue">LET’S GO!</a>
+						<?php echo substr( strip_tags( $blog_posts[0]->post_content ), 0, 80 ); ?>
+						<br />
+						<a href="<?php echo get_permalink( $blog_posts[0]->ID ); ?>" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
@@ -216,15 +218,16 @@ get_header();
 		<div class="col middle-col">
 			<div class="post-2">
 				<div class="media">
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/post-2.jpg" alt="" />
+					<?php if ( has_post_thumbnail( $blog_posts[1]->ID ) ) echo get_the_post_thumbnail( $blog_posts[1]->ID ); ?>
 				</div>
 				<article class="content small">
-					<div class="v-aling"><h3>Wisdom for a Happy Life:<br/>Lessons from Sports</h3></div>
+					<div class="v-aling"><h3><?php echo get_the_title( $blog_posts[1]->ID ); ?></h3></div>
 				</article>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
-						<a href="#" class="button blue">LET’S GO!</a>
+						<?php echo substr( strip_tags( $blog_posts[1]->post_content ), 0, 80 ); ?>
+						<br />
+						<a href="<?php echo get_permalink( $blog_posts[1]->ID ); ?>" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
@@ -232,15 +235,16 @@ get_header();
 		<div class="col right-col">
 			<div class="post-3">
 				<div class="media">
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/post-3.jpg" alt="" />
+					<?php if ( has_post_thumbnail( $blog_posts[2]->ID ) ) echo get_the_post_thumbnail( $blog_posts[2]->ID ); ?>
 				</div>
 				<article class="content small">
-					<div class="v-aling"><h3>Happiness Increased by<br/>Lunching Outside the Office</h3></div>
+					<div class="v-aling"><h3><?php echo get_the_title( $blog_posts[2]->ID ); ?></h3></div>
 				</article>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
-						<a href="#" class="button blue">LET’S GO!</a>
+						<?php echo substr( strip_tags( $blog_posts[2]->post_content ), 0, 80 ); ?>
+						<br />
+						<a href="<?php echo get_permalink( $blog_posts[2]->ID ); ?>" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
