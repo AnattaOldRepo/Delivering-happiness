@@ -630,8 +630,8 @@ a {
 
 .products-animation{
     .card{
-        @extend %pull-left;
         @include transition(all .5s ease);
+        @extend %pull-left;
         overflow: hidden;
         @include size(84px, 412px);
         &.active{
@@ -645,27 +645,13 @@ a {
         @include size(1170px, 546px);
         position: relative;
         overflow: hidden;
-        .wrapper, .video{
-             @include transition(all 1.5s ease);
-        }
-        .wrapper{
-            position: absolute;
-            left: 0px;
-            top: 0px;
-        }
         .video{
             @include size(1170px, 546px);
             position: absolute;
             left: 0px;
-            top: -550px;
-        }
-    }
-    &.video-playing{
-        .video{
             top: 0px;
-        }
-        .wrapper{
-            top: 550px;   
+            display: none;
+            z-index: 10;
         }
     }
 }

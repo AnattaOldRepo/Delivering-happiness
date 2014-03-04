@@ -20,7 +20,7 @@
   			}
 		);
     $('.video-container .button').click(function() {
-        $(this).parents('.video-container').addClass('video-playing');
+        $(this).parents('.video-container').find('.video').show();
     });
 	});
 })(jQuery);

@@ -50,7 +50,6 @@
                 span {
                     line-height: 26px;
                     color: #ffb68d;
-                    margin-top: 48px;
                 }
             }
             p {
@@ -98,10 +97,10 @@
         }
         .right-col {
             .content {
+                @include size(100%, 545px);
                 padding: 120px 80px 0 65px;
                 padding-right: 80px;
                 text-align: center;
-                height: 545px;
                 h3 {
                     font-size: 50px;
                     color: $White;
