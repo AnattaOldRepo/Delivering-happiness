@@ -65,3 +65,76 @@
 %pharagraph-level-7{
 	@include font-shorthand(12px, normal, normal);
 }
+
+
+%typography{
+    padding: 25px 35px 25px 35px;
+    .entry-header {
+        h2{
+            @extend %heading-level-7;
+            color: $Blue;
+            line-height: 35px;
+            
+        }
+    }
+    .entry-meta {
+        font-size: 13px;
+        margin-bottom: 25px;
+    }
+    p{
+        @extend %pharagraph-level-5;
+        line-height: 1.7em;
+        padding-bottom: 25px;
+    }
+    li{
+        color: $Blue;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+    ol,ul{
+        margin-bottom: 25px;
+    }
+    ol {
+        list-style-type: decimal;
+        margin-left: 20px;
+    }
+    h1, h2, h3, h4, h5, h6{
+        line-height: 1.5em;
+        margin-bottom: 5px;
+    }
+    h1{
+        @extend %heading-level-10;
+    }
+    h2{
+        @extend %heading-level-11;
+    }
+    h3{
+        @extend %heading-level-12;
+    }
+    h4{
+        @extend %pharagraph-level-1;
+    }
+    h5{
+        @extend %pharagraph-level-2;
+    }
+    h6{
+        @extend %pharagraph-level-3;
+    }
+    .alignleft{
+        @extend %pull-left;
+        margin-right: 15px;
+    }
+    .alignright{
+        @extend %pull-right;
+        margin-left: 15px;
+    }
+    .wp-caption{
+        font-style: italic;
+        color: lighten($Gray, 20%);
+    }
+    blockquote{
+       @extend %pharagraph-level-1;
+       text-transform: uppercase; 
+       color: lighten($Gray, 20%);
+    }
+}

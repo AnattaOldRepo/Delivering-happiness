@@ -1,0 +1,19 @@
+//
+// One column page
+// --------------------------------------------------
+
+.one-column-template {
+    .wrapper{
+        padding: 47px 103px 0 46px;
+        background-color: $LightGray;
+    }
+    .page-header{
+    	@extend %heading-level-1;
+    	color: $Blue;
+    }
+    .four-column{
+    	.wrapper{
+    		padding: 47px 0 0 46px;
+    	}
+    }
+}

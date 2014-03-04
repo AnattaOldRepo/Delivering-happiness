@@ -7,24 +7,18 @@
 
 get_header(); ?>
 
-<div class="happiness-page">
+<div class="one-column-template">
 	<div class="wrapper">
 		<div class="page-header">
-			<h1>Blog > <?php the_title() ?></h1>
-			<div class="all-categories">
-				<?php $all_categories = get_categories();
-				foreach ( $all_categories as $category ) {
-					echo '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a>';
-				} ?>
-			</div>
+			<h1><?php the_title() ?></h1>
 		</div>
-		<div id="primary" class="content-area left-col">
+	</div>
+	<div id="primary" class="content-area">
+		<div class="wrapper">
 			<main id="main" class="site-main" role="main">
 				<?php if ( have_posts() ) : ?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
-
-						<?php the_title(); ?>
 
 						<?php the_field( 'designation' ); ?>
 
@@ -46,9 +40,8 @@ get_header(); ?>
 
 				<?php endif; ?>
 			</main><!-- #main -->
-		</div><!-- #primary -->
-		<?php get_sidebar(); ?>
-	</div>
+		</div>
+	</div><!-- #primary -->
 </div>
 
 <?php get_footer();
