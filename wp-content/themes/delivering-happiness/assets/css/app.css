@@ -2474,7 +2474,7 @@ body {
   background-color: rgba(120, 60, 189, 0.8);
   width: 226px;
   height: 226px;
-  top: -226px;
+  top: -260px;
 }
 /* line 96, ../sass/global/_animations.scss */
 .cross-fade.four-column .hover-content .v-aling {
