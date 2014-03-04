@@ -86,132 +86,36 @@ get_header();
 	<section class="four-column cross-fade">
 		<div class="wrapper">
 			<h2>Coaches and speakers:</h2>
-			<div class="col left-col">
-				<div class="team-member">
-					<div class="media">
-						<img src="<?php bloginfo('template_url') ?>/assets/images/global/jenn.jpg" alt="" />
+			<?php
+			$team_members = get_posts(
+				array(
+					'post_type' => 'team_member',
+					'posts_per_page' => 7
+				)
+			);
+			?>
+
+			<?php foreach ( $team_members as $key => $team_member ) { ?>
+				<div class="col left-col <?php if ( $key % 4 == 0 ) echo 'last'; ?>">
+					<div class="team-member">
+						<div class="media">
+							<img src="<?php $user_image = get_field( 'image', $team_member->ID ); echo $user_image['url']; ?>" alt="<?php echo get_the_title( $team_member->ID ); ?>" />
+						</div>
+						<div class="content small">
+							<div class="v-aling">
+								<h3><?php echo get_the_title( $team_member->ID ); ?></h3>
+								<span class="job-title"><?php echo get_field( 'designation', $team_member->ID ); ?></span>
+							</div>
+						</div>
 					</div>
-					<div class="content small">
+					<div class="hover-content">
 						<div class="v-aling">
-							<h3>Jenn Lim</h3>
-							<span class="job-title">CEO/CHO/SPEAKER</span>
+							<a href="<?php echo get_permalink( $team_member->ID ); ?>" class="button">Read Bio</a>
 						</div>
 					</div>
 				</div>
-				<div class="hover-content">
-					<div class="v-aling">
-						<a href="#" class="button">Read Bio</a>
-					</div>
-				</div>
-			</div>
-			<div class="col left-col">
-				<div class="team-member">
-					<div class="media">
-						<img src="<?php bloginfo('template_url') ?>/assets/images/global/sunny.jpg" alt="" />
-					</div>
-					<div class="content small">
-						<div class="v-aling">
-							<h3>Sunny Grosso</h3>
-							<span class="job-title">SPEAKER & COACH</span>
-						</div>
-					</div>
-				</div>
-				<div class="hover-content">
-					<div class="v-aling">
-						<a href="#" class="button">Read Bio</a>
-					</div>
-				</div>
-			</div>
-			<div class="col left-col">
-				<div class="team-member">
-					<div class="media">
-						<img src="<?php bloginfo('template_url') ?>/assets/images/global/mark.jpg" alt="" />
-					</div>
-					<div class="content small">
-						<div class="v-aling">
-							<h3>Mark Rowland</h3>
-							<span class="job-title">STRATEGY LEAD & COACH</span>
-						</div>
-					</div>
-				</div>
-				<div class="hover-content">
-					<div class="v-aling">
-						<a href="#" class="button">Read Bio</a>
-					</div>
-				</div>
-			</div>
-			<div class="col left-col last">
-				<div class="team-member">
-					<div class="media">
-						<img src="<?php bloginfo('template_url') ?>/assets/images/global/shereen.jpg" alt="" />
-					</div>
-					<div class="content small">
-						<div class="v-aling">
-							<h3>Shereen Etlogby </h3>
-							<span class="job-title">SPEAKER & COACH</span>
-						</div>
-					</div>
-				</div>
-				<div class="hover-content">
-					<div class="v-aling">
-						<a href="#" class="button">Read Bio</a>
-					</div>
-				</div>
-			</div>
-			<div class="col left-col">
-				<div class="team-member">
-					<div class="media">
-						<img src="<?php bloginfo('template_url') ?>/assets/images/global/carlos.jpg" alt="" />
-					</div>
-					<div class="content small">
-						<div class="v-aling">
-							<h3>Carlos Piera</h3>
-							<span class="job-title">SPAIN COACH/SPEAKER</span>
-						</div>
-					</div>
-				</div>
-				<div class="hover-content">
-					<div class="v-aling">
-						<a href="#" class="button">Read Bio</a>
-					</div>
-				</div>
-			</div>
-			<div class="col left-col">
-				<div class="team-member">
-					<div class="media">
-						<img src="<?php bloginfo('template_url') ?>/assets/images/global/ron.jpg" alt="" />
-					</div>
-					<div class="content small">
-						<div class="v-aling">
-							<h3>Ron Mandel</h3>
-							<span class="job-title">COACH</span>
-						</div>
-					</div>
-				</div>
-				<div class="hover-content">
-					<div class="v-aling">
-						<a href="#" class="button">Read Bio</a>
-					</div>
-				</div>
-			</div>
-			<div class="col left-col">
-				<div class="team-member">
-					<div class="media">
-						<img src="<?php bloginfo('template_url') ?>/assets/images/global/jamie.jpg" alt="" />
-					</div>
-					<div class="content small">
-						<div class="v-aling">
-							<h3>Jamie Naughton</h3>
-							<span class="job-title">SPEAKER</span>
-						</div>
-					</div>
-				</div>
-				<div class="hover-content">
-					<div class="v-aling">
-						<a href="#" class="button">Read Bio</a>
-					</div>
-				</div>
-			</div>
+			<?php } ?>
+
 			<div class="col left-col last">
 				<div class="more-team">
 					<div class="content moderateViolet">
@@ -222,7 +126,7 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<a href="#" class="button">Read More</a>
+						<a href="/team" class="button">Read More</a>
 					</div>
 				</div>
 			</div>
