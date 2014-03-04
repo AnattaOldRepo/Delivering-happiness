@@ -49,7 +49,6 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
 						<a href="#" class="button moderateviolet">LET’S GO!</a>
 					</div>
 				</div>
@@ -62,8 +61,7 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
-						<a href="#" class="button moderateviolet">LET’S GO!</a>
+						<a href="#" class="button moderateviolet">LET’S TALK!</a>
 					</div>
 				</div>
 			</div>
@@ -75,8 +73,8 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
-						<a href="#" class="button moderateviolet">LET’S GO!</a>
+						<p>Unhappy employees cost the U.S. $350 billion a year (Gallup). How much could happiness save you?</p>
+						<a href="#" class="button moderateviolet">LET’S CALCULATE!</a>
 					</div>
 				</div>
 			</div>
@@ -160,26 +158,26 @@ get_header();
 			<div class="right-col blue-area">
 				<article class="content active">
 					<div class="v-aling">
-						<blockquote>This was an awesome experience! The best part for me was seeing the correlation between happiness at work and increased production/profit. I think it drove home how important happiness is and how easily happiness can be accomplished</blockquote>
-						<span> HP, June 2013</span>
+						<blockquote>This was insightful, inspiring, and applicable in real ways.  Sharing ideas and practices with other organizations was invaluable.  They understand how to use happiness to improve culture and productivity.</blockquote>
+						<span>~ Martin Tracey, VP of HR</span>
 					</div>
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>This was an awesome experience! The best part for me was seeing. I think it drove home how important happiness is and how easily happiness can be accomplished</blockquote>
-						<span> Aetna, June 2013</span>
+						<blockquote>This was an awesome experience! The best part for me was seeing the correlation between happiness at work and increased production/profit. I think it drove home how important happiness is and how easily happiness can be accomplished.</blockquote>
+						<span>~ Aetna, June 2013 </span>
 					</div>
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>This was an awesome experience!.it drove home how important happiness is and how easily happiness can be accomplished</blockquote>
-						<span> R, June 2013</span>
+						<blockquote>Delivering Happiness has had a great impact directly and indirectly on virtually all aspects of our business from how to interact with customers, our partners and each other.  Focusing on our culture has increased sales, increased the bottom line and most importantly allowed us to better serve our mission</blockquote>
+						<span>~ Scotty Bintz, CEO, RealTruck</span>
 					</div>
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>This was an awesome experience! The best part for me was The best part for me was seeing the correlation between happiness at work and increased production/profit. I think it drove home how important happiness is and how easily happiness can be accomplished</blockquote>
-						<span> Lost, June 2013</span>
+						<blockquote>DH changed the way I think about successfully managing a business. It helped catapult me out of an old fashion top down style, to an inclusive, engaged process that is ultimately more rewarding to everyone at our company. If you are interested in the same old, same old, DON'T go to DH. You won't be able to leave unchanged. </blockquote>
+						<span>~ Ra'uf Glasgow, Producer, West Wind Media, former producer of LOST (TV Show)</span>
 					</div>
 				</article>
 			</div>
@@ -230,15 +228,15 @@ get_header();
 					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/wwus_graphic_2.jpg" alt="" /></div>
 					<div class="content small">
 						<div class="v-aling">
-							<span class="date">MARCH 2</span>
-							<span class="location">SAN FRANCISCO</span>
+							<span class="date">March 4, 2014</span>
+							<span class="location">Seaside</span>
 						</div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
-						<a href="#" class="button moderateviolet">LET’S GO!</a>
+						<p><span>Delivering Happiness at the Oregon Festivals and Events Association</span>DHW keynote on happiness, profits, passion and purpose</p>
+						<a href="#" class="button moderateviolet">learn more</a>
 					</div>
 				</div>
 			</div>
@@ -247,15 +245,15 @@ get_header();
 					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/wwus_graphic_1.jpg" alt="" /></div>
 					<div class="content small">
 						<div class="v-aling">
-							<span class="date">MARCH 12</span>
-							<span class="location">SAN FRANCISCO</span>
+							<span class="date">May 2014</span>
+							<span class="location">Ecuador</span>
 						</div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
-						<a href="#" class="button moderateviolet">LET’S GO!</a>
+						<p><span>Delivering Happiness at Work at the Arco Estrategias Leadership Event</span>The scientific base and case studies on how happiness builds a company from values, to culture to profits.</p>
+						<a href="#" class="button moderateviolet">learn more</a>
 					</div>
 				</div>
 			</div>
@@ -267,8 +265,7 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
-						<a href="#" class="button moderateviolet">LET’S GO!</a>
+						<a href="#" class="button moderateviolet">Become partner</a>
 					</div>
 				</div>
 			</div>

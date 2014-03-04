@@ -6,7 +6,7 @@
 (function($){
 	$( document ).ready(function() {
 		$('.flip .coin').click(function() {
-			$(this).parents('.all-coins').find('.coin').removeClass('active');
+		        $(this).parents('.all-coins').find('.coin').removeClass('active');
            	$(this).addClass('active');
             $(this).parents('.wrapper').find('.right-col .content').removeClass('active');
             $('.right-col .content:eq('+$('.flip .coin').index(this)+')').toggleClass('active');
@@ -19,5 +19,8 @@
     			$( this ).removeClass('active');
   			}
 		);
+    $('.video-container .button').click(function() {
+        $(this).parents('.video-container').addClass('video-playing');
+    });
 	});
 })(jQuery);

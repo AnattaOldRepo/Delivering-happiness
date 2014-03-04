@@ -9,13 +9,14 @@ get_header();
 <!-- Work page-->
 <div class="community">
 
-<section class="two-column hero">
+<section class="two-column hero video-container">
+	<div class="onload-container">
 		<div class="wrapper">
 			<div class="left-col orange-area">
 				<article class="content">
 					<blockquote>Delivering Happiness.</blockquote>
 					<span>A global  movement,<br/>fueled by you.</span>
-					<a href="#" class="button">FIND OUT HOW</a>
+					<a href="#" class="button arrow">FIND OUT HOW</a>
 				</article>
 			</div>
 			<div class="right-col">
@@ -24,6 +25,10 @@ get_header();
 				</div>
 			</div>
 		</div>
+		<div class="video">
+			<iframe width="1170" height="546" src="///www.youtube.com/embed/nfdvNo8R3Ks" frameborder="0" allowfullscreen></iframe>
+		</div>
+	</div>
 </section>
 
 <section class="happier-world rounded-block">
@@ -151,24 +156,22 @@ get_header();
 			</div>
 			<div class="right-col">
 				<article class="content chat active">
-					<h3>Happiness 101.</h3>
-					<p>Ria doluptiis preperempe num quateceratas sint, odis pro beriam fugit de volore eatatur aut aut alicto ipsae. Xeresed quam ut dolo custi nihil inveliae. Ut expla doluptam ducieni magnam volut as rerum</p>
-					<a href="#" class="button">READ OUR BLOG</a>
+					<h3>Happiness 101</h3>
+					<a href="#" class="button">intro to blog and invitation to read</a>
 				</article>
 				<article class="content inspire">
-					<h3>Happiness 101.</h3>
-					<p>Ria doluptiis preperempe num quateceratas sint, odis pro beriam fugit de volore eatatur aut aut alicto ipsae. Xeresed quam ut dolo custi nihil inveliae. Ut expla doluptam ducieni magnam volut as rerum</p>
-					<a href="#" class="button">READ OUR BLOG</a>
+					<h3>Inspire! and Be Inspired</h3>
+					<a href="#" class="button">what it is and how you can get involved</a>
 				</article>
 				<article class="content write">
-					<h3>Happiness 101.</h3>
-					<p>Ria doluptiis preperempe num quateceratas sint, odis pro beriam fugit de volore eatatur aut aut alicto ipsae. Xeresed quam ut dolo custi nihil inveliae. Ut expla doluptam ducieni magnam volut as rerum</p>
-					<a href="#" class="button">READ OUR BLOG</a>
+					<h3>Share Your Story</h3>
+					<p>What's your story? Share how you're spreading happiness at home, at work or in your community. We'll not only hook you up with a whopping 20% off shop coupon for it, we may also publish it for others who might be inspired to take your lead.</p>
+					<a href="#" class="button">Share Your Story</a>
 				</article>
 				<article class="content cal">
-					<h3>Happiness 101.</h3>
-					<p>Ria doluptiis preperempe num quateceratas sint, odis pro beriam fugit de volore eatatur aut aut alicto ipsae. Xeresed quam ut dolo custi nihil inveliae. Ut expla doluptam ducieni magnam volut as rerum</p>
-					<a href="#" class="button">READ OUR BLOG</a>
+					<h3>Calculate Your Happiness ROI</h3>
+					<p>A decade of research shows that happiness is seriously good for business. Happy employees are more committed, drive higher sales and are more productive than their unhappy counterparts. How much could a happier organization save you?</p>
+					<a href="#" class="button">Crunch Some Numbers</a>
 				</article>
 			</div>
 		</div>

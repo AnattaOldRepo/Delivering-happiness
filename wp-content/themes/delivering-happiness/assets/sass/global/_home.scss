@@ -3,10 +3,10 @@
 // --------------------------------------------------
 .home {
     .hero_banner {
-        @include bg-img(home_hero_banner, jpg, no-repeat, center, top);
-        height: 546px;
         .wrapper {
             padding: 136px 0 0 105px;
+            height: 546px;
+            @include bg-img(home_hero_banner, jpg, no-repeat, center, top);
         }
         h2 {
             @extend %heading-level-1;
@@ -61,12 +61,18 @@
             left: 0px;
             text-align: center;
             padding: 69px 79px;
+            span{
+                display: block;
+                text-transform: uppercase;
+                font-style: normal;
+                padding-top: 5px;
+            }
             h3 {
                 font-size: 50px;
                 color: $White;
             }
             img {
-                margin-top: 55px;
+                margin-top: 40px;
                 margin-bottom: 34px;
             }
             &.winky {

@@ -28,10 +28,22 @@
 		<div class="wrapper">
 			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a></h1>
 			<menu class="site-navigation">
-				<li class="nav-work"><a href="/work">WORK</a></li>
-				<li class="nav-shop"><a href="/shop">SHOP</a></li>
-				<li class="nav-community"><a href="/community">COMMUNITY</a></li>
-				<li class="nav-happiness"><a href="/happiness">HAPPINESS 101</a></li>
+				<li class="nav-work">
+					<a href="/work">WORK</a>
+					<div class="message">Coaching and Speaking to Make Happy Work(TM)</div>
+				</li>
+				<li class="nav-shop">
+					<a href="/shop">SHOP</a>
+					<div class="message">Discover the movement, join our community</div>
+				</li>
+				<li class="nav-community">
+					<a href="/community">COMMUNITY</a>
+					<div class="message">Goods and gear to inspire, connect and educate.</div>
+				</li>
+				<li class="nav-happiness">
+					<a href="/happiness">HAPPINESS 101</a>
+					<div class="message">How you can make the world a happier place.</div>
+				</li>
 			</menu>
 		</div>
 	</header>

@@ -7,10 +7,15 @@ get_header();
 ?>
 
 <!-- Hero section-->
-<section class="hero_banner">
-	<div class="wrapper">
-		<h2>We’re changing the<br/>world with happiness.<br/><span>Sound fluffy? Not anymore.<span></h2>
-		<a href="#" class="button arrow">GET ON BOARD</a>
+<section class="hero_banner video-container">
+	<div class="onload-container">
+		<div class="wrapper">
+			<h2>We’re changing the<br/>world with happiness.<br/><span>Sound fluffy? Not anymore.<span></h2>
+			<a href="#" class="button arrow">GET ON BOARD</a>
+		</div>
+		<div class="video">
+			<iframe width="1170" height="546" src="//www.youtube.com/embed/4teXtmYyzxA" frameborder="0" allowfullscreen></iframe>
+		</div>
 	</div>
 </section>
 <!-- /Hero section-->
@@ -69,28 +74,28 @@ get_header();
 		</div>
 		<div class="right-col">
 			<article class="content sandels active">
-				<h3>Changes Lives</h3>
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winky-large.png" alt="" />
-				<p>Deciding to be happier will change your life for the better. Working toward a happiness goal generates its own payoff as you tip the scales toward a happier life. And when you’re being true to your (weird) self, you’ll inspire others toward their own personal happiness. </p>
+				<h3>Lower stress.</h3>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/sandels-l.png" alt="" />
+				<p>Working overtime? Got cut off on the freeway? Things happen out of our control all the time but what we CAN control is what makes us happy.<span>~ The Happiness Advantage, Shawn Achor</span></p>
 			</article>
 			<article class="content heart">
-				<h3>Changes Lives</h3>
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winky-large.png" alt="" />
-				<p>Deciding to be happier will change your life for the better. Working toward a happiness goal generates its own payoff as you tip the scales toward a happier life. And when you’re being true to your (weird) self, you’ll inspire others toward their own personal happiness. </p>
+				<h3>Improves health.</h3>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/heart-l.png" alt="" />
+				<p>Exercise helps, but did you know? Happy people have more energy and activity, a bolstered immune system, and even longevity.<span>~ Pursuing Happiness, Lyubomirsky, Sheldon and Schkade</span></p>
 			</article>
 			<article class="content mountain">
-				<h3>Changes Lives</h3>
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winky-large.png" alt="" />
-				<p>Deciding to be happier will change your life for the better. Working toward a happiness goal generates its own payoff as you tip the scales toward a happier life. And when you’re being true to your (weird) self, you’ll inspire others toward their own personal happiness. </p>
+				<h3>Redefines Success</h3>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/mountain-l.png" alt="" />
+				<p>It’s easy to see that success can lead to happiness, but studies also show the opposite. Happy individuals are more likely to be successful across multiple life domains than their less happy peers. </p>
 			</article>
 			<article class="content lilly">
-				<h3>Changes Lives</h3>
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winky-large.png" alt="" />
-				<p>Deciding to be happier will change your life for the better. Working toward a happiness goal generates its own payoff as you tip the scales toward a happier life. And when you’re being true to your (weird) self, you’ll inspire others toward their own personal happiness. </p>
+				<h3>Brings Meaning</h3>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/lilly-l.png" alt="" />
+				<p>Research shows that having a higher purpose — being a part of something bigger than yourself — will not only bring you the longest lasting happiness, but meaningful happiness to boot.<span>~ Authentic Happiness, Martin E. P. Seligman</span></p>
 			</article>
 			<article class="content winky">
 				<h3>Changes Lives</h3>
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winky-large.png" alt="" />
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winkey-l.png" alt="" />
 				<p>Deciding to be happier will change your life for the better. Working toward a happiness goal generates its own payoff as you tip the scales toward a happier life. And when you’re being true to your (weird) self, you’ll inspire others toward their own personal happiness. </p>
 			</article>
 		</div>
@@ -104,17 +109,17 @@ get_header();
 		<div class="container">
 			<h2>Our core values:</h2>
 			<div class="horizontal-slider">
-				<div class="slide cycle-slideshow" data-cycle-fx="fade" data-cycle-timeout="2000" data-cycle-pager="#custom-pager" data-cycle-pager-template="<a href=#> {{slideNum}} </a>">
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/c-_graphic.png" alt="placeholder" />
+				<div class="slide cycle-slideshow" data-cycle-fx="fade" data-cycle-slides="> div" data-cycle-timeout="2000" data-cycle-pager="#custom-pager" data-cycle-pager-template="<a href=#> {{slideNum}} </a>">
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-1.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-2.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-3.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-4.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-5.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-6.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-7.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-8.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-09.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-10.png" alt="placeholder" /></div>
 				</div>
 				<div id="custom-pager" class="pager cycle-pager">
 				</div>
@@ -137,7 +142,7 @@ get_header();
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
-					<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+					<p>Are you happy at work? The results will show what you like and what needs to change.</p>
 					<a href="#" class="button blue">LET’S GO!</a>
 				</div>
 			</div>
@@ -153,7 +158,7 @@ get_header();
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
-					<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+					<p>Inspire. Connect. Educate and Experience. Products that remind us of why happiness isn’t a fleeting thought, it’s a way to live.</p>
 					<a href="#" class="button blue">LET’S GO!</a>
 				</div>
 			</div>
@@ -166,7 +171,7 @@ get_header();
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
-					<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
+					<p>Start the conversation, and find inspiration for free. Schedule a free 30-minute culture call (or discovery call) with us.</p>
 					<a href="#" class="button blue">LET’S GO!</a>
 				</div>
 			</div>
@@ -212,8 +217,7 @@ get_header();
 				</article>
 				<div class="hover-content">
 					<div class="v-aling">
-						<?php echo substr( strip_tags( $blog_posts[0]->post_content ), 0, 80 ); ?>
-						<br />
+						<p><?php echo substr( strip_tags( $blog_posts[0]->post_content ), 0, 80 ); ?></p>
 						<a href="<?php echo get_permalink( $blog_posts[0]->ID ); ?>" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
@@ -233,8 +237,7 @@ get_header();
 				</article>
 				<div class="hover-content">
 					<div class="v-aling">
-						<?php echo substr( strip_tags( $blog_posts[1]->post_content ), 0, 80 ); ?>
-						<br />
+						<p><?php echo substr( strip_tags( $blog_posts[1]->post_content ), 0, 80 ); ?></p>
 						<a href="<?php echo get_permalink( $blog_posts[1]->ID ); ?>" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
@@ -254,8 +257,7 @@ get_header();
 				</article>
 				<div class="hover-content">
 					<div class="v-aling">
-						<?php echo substr( strip_tags( $blog_posts[2]->post_content ), 0, 80 ); ?>
-						<br />
+						<p><?php echo substr( strip_tags( $blog_posts[2]->post_content ), 0, 80 ); ?></p>
 						<a href="<?php echo get_permalink( $blog_posts[2]->ID ); ?>" class="button blue">LET’S GO!</a>
 					</div>
 				</div>

@@ -235,10 +235,17 @@ a {
 .horizontal-slider {
     text-align: center;
     .slide {    
-        @include size(550px, 285px);
+        @include size(100%, 285px);
         @extend %block-center;
         text-center: center;
         img{
+            top: 50px!important;
+            margin: auto;
+            max-width: 700px;
+        }
+        .cycle-slide{
+            @extend %text-center;
+            @include size(100%, 205px);
             top: 50px!important;
         }
     }
@@ -351,6 +358,14 @@ a {
         .hover-content{
             background-color: lighten($ModerateViolet, 30%);
             color: $White;
+            p{
+                span{
+                    display: block;
+                    text-transform: uppercase;
+                    color: $ModerateViolet;
+                    font-style: normal;
+                }
+            }
             .button{
                 background: rgba(255, 255, 255, .4);
                 border-width:1px;
@@ -615,13 +630,42 @@ a {
 
 .products-animation{
     .card{
-        border: 1px solid black;
         @extend %pull-left;
         @include transition(all .5s ease);
         overflow: hidden;
         @include size(84px, 412px);
         &.active{
              @include size(412px, 412px); 
+        }
+    }
+}
+.video-container{
+    .onload-container{
+        @extend %block-center;
+        @include size(1170px, 546px);
+        position: relative;
+        overflow: hidden;
+        .wrapper, .video{
+             @include transition(all 1.5s ease);
+        }
+        .wrapper{
+            position: absolute;
+            left: 0px;
+            top: 0px;
+        }
+        .video{
+            @include size(1170px, 546px);
+            position: absolute;
+            left: 0px;
+            top: -550px;
+        }
+    }
+    &.video-playing{
+        .video{
+            top: 0px;
+        }
+        .wrapper{
+            top: 550px;   
         }
     }
 }

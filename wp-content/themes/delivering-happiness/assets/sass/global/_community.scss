@@ -23,7 +23,7 @@
         .button {
             background-color: rgba($White, 0.6);
             color: $Orange;
-            padding: 19px 28px;
+            padding: 19px 46px;
             margin-left: 139px;
             &:hover {
                 background-color: rgba($White, 0.8);
@@ -98,7 +98,7 @@
         }
         .right-col {
             .content {
-                padding: 145px 80px 0 65px;
+                padding: 120px 80px 0 65px;
                 padding-right: 80px;
                 text-align: center;
                 height: 545px;
@@ -126,6 +126,7 @@
         }
         .cal {
             background-color: $ModerateViolet;
+            padding-top:80px!important;
         }
     }
     .instagram {

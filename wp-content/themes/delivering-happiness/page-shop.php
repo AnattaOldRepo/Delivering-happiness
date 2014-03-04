@@ -58,16 +58,16 @@ get_header();
 	<section class="products-animation">
 		<div class="wrapper">
 			<h2>Our collection has style:</h2>
-			<div class="card active"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
+			<div class="card active"><a href="http://shop.deliveringhappiness.com/products/womens-afloat-tee-bahama-sky" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/smile_w_afloat_bahamasky_1.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-take-flight-tee-sunshine" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/smile_w_takeflight_sunshine_1.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-winkey-love-sweatshirt-peach" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/smile_w_winkeylove_peach_2.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-mandala-tee-ash" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/smile_w_mandala_ash_1.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-rose-garden-dress-mint" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/smile_w_rosegardendress_mint_0.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-otha-buttah-sweatshirt-vintage-black" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/DH_w_othabuttah_vintageblack_0.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-ninja-cardigan-chili-red" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/dh_w_ninjacardigan_chilired_0.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-visionary-skirt-cloud" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/DH_w_visionaryskirt_cloud_1.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-maxi-ish-dress-chili-red" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/DH_w_maxiish_chilired_0.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-shinny-up-sweatshirt-ivory" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/smile_w_shinnyup_ivory_0_grande.jpg" alt="" /></a></div>
 		</div>
 	</section>
 
@@ -80,26 +80,26 @@ get_header();
 				</div>
 				<div class="gifts">
 					<div class="content small">
-						<div class="v-aling"><h3>Corporate gifts</h3></div>
+						<div class="v-aling"><h3>Custom Products</h3></div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
-						<a href="#" class="button green">LET’S GO!</a>
+						<p>Our design team can work with you to create custom, private label and/or co-branded products that'll impress the socks off of your employees, colleagues and customers.</p>
+						<a href="#" class="button green">Find more</a>
 					</div>
 				</div>
 			</div>
 			<div class="col middle-col">
 				<div class="become-partner-product">
 					<div class="content">
-						<div class="v-aling"><h3>Become a<br/>partner</h3></div>
+						<div class="v-aling"><h3>Become a<br/>Retailer</h3></div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
-						<a href="#" class="button green">LET’S GO!</a>
+						<p>Want to make your shop a happier place? We're looking for qualified retailers to help spread happiness.</p>
+						<a href="#" class="button green">get in touch</a>
 					</div>
 				</div>
 			</div>
@@ -109,13 +109,17 @@ get_header();
 						<img src="<?php bloginfo('template_url') ?>/assets/images/global/retailers.jpg" alt="" />
 					</div>
 					<div class="content small">
-						<div class="v-aling"><h3>Retailers</h3></div>
+						<div class="v-aling"><h3>Where to Buy</h3></div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Delivering Happiness Workshop (DHW) keynote on happiness, profits, passion and purpose.</p>
-						<a href="#" class="button green">LET’S GO!</a>
+						<p>We're making our way into shops throughout the US, starting with these fine <br/>
+							- Modern Mouse (Alameda, CA)<br/>
+							- Treasure Island (Las Vegas, NV)<br/>
+							- Zappos.com<br/>
+						</p>
+						<a href="#" class="button green">LET’S Buy!</a>
 					</div>
 				</div>
 			</div>

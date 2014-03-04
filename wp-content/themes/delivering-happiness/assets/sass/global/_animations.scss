@@ -79,7 +79,10 @@
             @include square(336px);
             display: table-cell;
             vertical-align: middle;
-            padding: 0px 20px;
+            padding: 0px 40px;
+        }
+        p{
+            @extend %text-left;
         }
     }
     &.four-column{
