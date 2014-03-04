@@ -2514,11 +2514,6 @@ body {
   opacity: 10;
   top: -30px;
 }
-/* line 126, ../sass/global/_animations.scss */
-.three-column .col:hover .team-member .content,
-.four-column .col:hover .team-member .content {
-  bottom: -60px;
-}
 
 /* line 6, ../sass/global/_1column.scss */
 .one-column-template .wrapper {
