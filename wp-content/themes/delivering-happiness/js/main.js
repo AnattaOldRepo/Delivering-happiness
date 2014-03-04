@@ -14,6 +14,7 @@
         });
 		$( ".products-animation .card" ).hover(
   			function() {
+          $('.products-animation .card').removeClass('active');
     			$( this ).addClass('active');
   			}, function() {
     			$( this ).removeClass('active');
