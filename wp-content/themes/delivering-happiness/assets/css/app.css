@@ -1339,52 +1339,52 @@ a {
 .global-header .site-navigation li.nav-work .message {
   background: #793cbd;
 }
-/* line 62, ../sass/global/_header.scss */
-.global-header .site-navigation li.nav-work:hover {
+/* line 63, ../sass/global/_header.scss */
+.global-header .site-navigation li.nav-work.active, .global-header .site-navigation li.nav-work:hover {
   border-bottom-color: #793cbd;
 }
-/* line 66, ../sass/global/_header.scss */
+/* line 67, ../sass/global/_header.scss */
 .global-header .site-navigation li.nav-shop {
   margin-right: 124px;
 }
-/* line 67, ../sass/global/_header.scss */
+/* line 68, ../sass/global/_header.scss */
 .global-header .site-navigation li.nav-shop .message {
   background: #00af42;
 }
-/* line 69, ../sass/global/_header.scss */
+/* line 70, ../sass/global/_header.scss */
 .global-header .site-navigation li.nav-shop a {
   padding-left: 34px;
 }
-/* line 72, ../sass/global/_header.scss */
-.global-header .site-navigation li.nav-shop:hover {
+/* line 74, ../sass/global/_header.scss */
+.global-header .site-navigation li.nav-shop.active, .global-header .site-navigation li.nav-shop:hover {
   border-bottom-color: #00af42;
 }
-/* line 76, ../sass/global/_header.scss */
+/* line 78, ../sass/global/_header.scss */
 .global-header .site-navigation li.nav-community {
   margin-right: 95px;
 }
-/* line 77, ../sass/global/_header.scss */
+/* line 79, ../sass/global/_header.scss */
 .global-header .site-navigation li.nav-community .message {
   background: #ff671b;
 }
-/* line 79, ../sass/global/_header.scss */
+/* line 81, ../sass/global/_header.scss */
 .global-header .site-navigation li.nav-community a {
   padding-left: 29px;
 }
-/* line 82, ../sass/global/_header.scss */
-.global-header .site-navigation li.nav-community:hover {
+/* line 85, ../sass/global/_header.scss */
+.global-header .site-navigation li.nav-community.active, .global-header .site-navigation li.nav-community:hover {
   border-bottom-color: #ff671b;
 }
-/* line 87, ../sass/global/_header.scss */
+/* line 90, ../sass/global/_header.scss */
 .global-header .site-navigation li.nav-happiness .message {
   background: #fec627;
 }
-/* line 88, ../sass/global/_header.scss */
+/* line 91, ../sass/global/_header.scss */
 .global-header .site-navigation li.nav-happiness a {
   padding-left: 33px;
 }
-/* line 91, ../sass/global/_header.scss */
-.global-header .site-navigation li.nav-happiness:hover {
+/* line 95, ../sass/global/_header.scss */
+.global-header .site-navigation li.nav-happiness.active, .global-header .site-navigation li.nav-happiness:hover {
   border-bottom-color: #fec627;
 }
 

@@ -59,6 +59,7 @@
             &.nav-work {
                 .message{ background: $Purple;}
                 margin-right: 118px;
+                &.active,
                 &:hover {
                     border-bottom-color: $Purple;
                 }
@@ -69,6 +70,7 @@
                 a{
                     padding-left:34px;
                 }
+                &.active,
                 &:hover {
                     border-bottom-color: $Green;
                 }
@@ -79,6 +81,7 @@
                 a{
                     padding-left:29px;
                 }
+                &.active,
                 &:hover {
                     border-bottom-color: $Orange;
                 }
@@ -88,6 +91,7 @@
                 a{
                     padding-left:33px;
                 }
+                &.active,
                 &:hover {
                     border-bottom-color: $Yellow;
                 }
