@@ -201,7 +201,11 @@ get_header();
 		<div class="col left-col">
 			<div class="post-1">
 				<div class="media">
-					<?php if ( has_post_thumbnail( $blog_posts[0]->ID ) ) echo get_the_post_thumbnail( $blog_posts[0]->ID ); ?>
+					<?php if ( has_post_thumbnail( $blog_posts[0]->ID ) ) { ?>
+						<?php echo get_the_post_thumbnail( $blog_posts[0]->ID ); ?>
+					<?php } else if ( function_exists( 'get_the_image' ) ) { ?>
+						<?php echo get_the_image( array( 'post_id' => $blog_posts[0]->ID, 'image_scan' => true) ); ?>
+					<?php } ?>
 				</div>
 				<article class="content small">
 					<div class="v-aling"><h3><?php echo get_the_title( $blog_posts[0]->ID ); ?></h3></div>
@@ -218,7 +222,11 @@ get_header();
 		<div class="col middle-col">
 			<div class="post-2">
 				<div class="media">
-					<?php if ( has_post_thumbnail( $blog_posts[1]->ID ) ) echo get_the_post_thumbnail( $blog_posts[1]->ID ); ?>
+					<?php if ( has_post_thumbnail( $blog_posts[1]->ID ) ) { ?>
+						<?php echo get_the_post_thumbnail( $blog_posts[1]->ID ); ?>
+					<?php } else if ( function_exists( 'get_the_image' ) ) { ?>
+						<?php echo get_the_image( array( 'post_id' => $blog_posts[1]->ID, 'image_scan' => true) ); ?>
+					<?php } ?>
 				</div>
 				<article class="content small">
 					<div class="v-aling"><h3><?php echo get_the_title( $blog_posts[1]->ID ); ?></h3></div>
@@ -235,7 +243,11 @@ get_header();
 		<div class="col right-col">
 			<div class="post-3">
 				<div class="media">
-					<?php if ( has_post_thumbnail( $blog_posts[2]->ID ) ) echo get_the_post_thumbnail( $blog_posts[2]->ID ); ?>
+					<?php if ( has_post_thumbnail( $blog_posts[2]->ID ) ) { ?>
+						<?php echo get_the_post_thumbnail( $blog_posts[2]->ID ); ?>
+					<?php } else if ( function_exists( 'get_the_image' ) ) { ?>
+						<?php echo get_the_image( array( 'post_id' => $blog_posts[2]->ID, 'image_scan' => true ) ); ?>
+					<?php } ?>
 				</div>
 				<article class="content small">
 					<div class="v-aling"><h3><?php echo get_the_title( $blog_posts[2]->ID ); ?></h3></div>
