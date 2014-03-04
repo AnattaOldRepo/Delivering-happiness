@@ -94,7 +94,7 @@ get_header();
 			?>
 
 			<?php foreach ( $team_members as $key => $team_member ) { ?>
-				<div class="col left-col <?php if ( $key % 4 == 0 ) echo 'last'; ?>">
+				<div class="col left-col <?php if ( ($key + 1) % 4 == 0 ) echo 'last'; ?>">
 					<div class="team-member">
 						<div class="media">
 							<img src="<?php $user_image = get_field( 'image', $team_member->ID ); echo $user_image['url']; ?>" alt="<?php echo get_the_title( $team_member->ID ); ?>" />
