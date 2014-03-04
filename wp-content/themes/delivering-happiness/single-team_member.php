@@ -12,9 +12,7 @@ get_header(); ?>
 		<div class="page-header">
 			<h1><?php the_title() ?></h1>
 		</div>
-	</div>
-	<div id="primary" class="content-area">
-		<div class="wrapper">
+		<div id="primary" class="page-content">
 			<main id="main" class="site-main" role="main">
 				<?php if ( have_posts() ) : ?>
 
@@ -40,8 +38,8 @@ get_header(); ?>
 
 				<?php endif; ?>
 			</main><!-- #main -->
-		</div>
-	</div><!-- #primary -->
+		</div><!-- #primary -->
+	</div>
 </div>
 
 <?php get_footer();

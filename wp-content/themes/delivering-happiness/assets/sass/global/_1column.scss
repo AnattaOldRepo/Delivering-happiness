@@ -4,7 +4,7 @@
 
 .one-column-template {
     .wrapper{
-        padding: 47px 103px 0 46px;
+        padding: 47px 73px 47px 73px;
         background-color: $LightGray;
     }
     .page-header{
@@ -15,5 +15,9 @@
     	.wrapper{
     		padding: 47px 0 0 46px;
     	}
+    }
+    .page-content{
+    	@extend %typography;
+    	padding:0px;
     }
 }

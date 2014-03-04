@@ -12,8 +12,14 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+
+<div class="one-column-template">
+	<div class="wrapper">
+		<div class="page-header">
+			<h1><?php the_title() ?></h1>
+		</div>
+		<div id="primary" class="page-content">
+			<main id="main" class="site-main" role="main">
 
 			<?php while ( have_posts() ) : the_post(); ?>
 
@@ -21,15 +27,15 @@ get_header(); ?>
 
 				<?php
 					// If comments are open or we have at least one comment, load up the comment template
-					if ( comments_open() || '0' != get_comments_number() ) :
-						comments_template();
-					endif;
+					//if ( comments_open() || '0' != get_comments_number() ) :
+					//	comments_template();
+					//endif;
 				?>
 
 			<?php endwhile; // end of the loop. ?>
+			</main><!-- #main -->
+		</div><!-- #primary -->
+	</div>
+</div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
-
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>

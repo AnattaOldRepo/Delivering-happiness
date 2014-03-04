@@ -81,6 +81,9 @@
         font-size: 13px;
         margin-bottom: 25px;
     }
+    a{
+    	color: $Blue;
+    }
     p{
         @extend %pharagraph-level-5;
         line-height: 1.7em;
