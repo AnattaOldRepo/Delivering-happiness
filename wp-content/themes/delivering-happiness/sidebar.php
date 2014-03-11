@@ -12,7 +12,7 @@
 				<h3>Become a VHP<span>(Very Happy Person)</a></h3>
 				<p>Get happiness delivered to your inbox. No third party sharing, we promise.</p>
 				<input type="text" placeholder="your email address" />
-				<input type="submit" value="signup" class="button" />
+				<input type="submit" value="sign up" class="button" />
 			</aside>
 			<aside class="wfu">
 				<h3>Write for us</h3>

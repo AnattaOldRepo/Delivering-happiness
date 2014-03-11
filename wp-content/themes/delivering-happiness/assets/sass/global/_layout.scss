@@ -21,3 +21,7 @@ body{
 *{
 	@include box-sizing(border-box);
 }
+
+#content{
+	padding-top:81px;
+}

@@ -24,21 +24,21 @@
 	<?php do_action( 'before' ); ?>
 	
 	<!-- Header -->
-	<header class="global-header">
+	<header class="global-header sticky">
 		<div class="wrapper">
 			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a></h1>
 			<menu class="site-navigation">
 				<li class="nav-work <?php if(is_page('work')) { ?>active <?php } ?>">
 					<a href="/work">WORK</a>
-					<div class="message">Coaching and Speaking to Make Happy Work(TM)</div>
+					<div class="message">Coaching and speaking to Make Happy Work™.</div>
 				</li>
 				<li class="nav-shop <?php if(is_page('shop')) { ?>active <?php } ?>">
 					<a href="/shop">SHOP</a>
-					<div class="message">Discover the movement, join our community</div>
+					<div class="message">Goods and gear to inspire, connect and educate.</div>
 				</li>
 				<li class="nav-community <?php if(is_page('community')) { ?>active <?php } ?>">
 					<a href="/community">COMMUNITY</a>
-					<div class="message">Goods and gear to inspire, connect and educate.</div>
+					<div class="message">Discover the movement, join our community.</div>
 				</li>
 				<li class="nav-happiness <?php if(is_page('happiness')) { ?>active <?php } ?>">
 					<a href="/happiness">HAPPINESS 101</a>
@@ -48,4 +48,5 @@
 		</div>
 	</header>
 	<!-- Header -->
+	<div id="content">
 

@@ -16,7 +16,7 @@ get_header();
 				<article class="content">
 					<blockquote>Delivering Happiness.</blockquote>
 					<span>A global  movement,<br/>fueled by you.</span>
-					<a href="#" class="button arrow">FIND OUT HOW</a>
+					<a href="#" class="button arrow">See How it Begins</a>
 				</article>
 			</div>
 			<div class="right-col">
@@ -26,7 +26,7 @@ get_header();
 			</div>
 		</div>
 		<div class="video">
-			<iframe width="1170" height="546" src="///www.youtube.com/embed/nfdvNo8R3Ks" frameborder="0" allowfullscreen></iframe>
+			<iframe width="1170" height="546" src="///www.youtube.com/embed/nfdvNo8R3Ks?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 </section>
@@ -37,8 +37,8 @@ get_header();
 			<div class="left-col">
 				<article class="content">
 					<h2>The Change Starts Here.<span>At work, in our communities, and in our every-<br/>day lives.</span></h2>
-					<p>Backed by scince, business sense, and common sense, we know<br/>that living a purposeful life is what really matters. So come along<br/>and join the movement. As our CEO says it all begins with you.</p>
-					<p>It can be as simple as passing out balloons to strangers, or breaking<br/>out your best dance moves at the next company party. Or, make a<br/>bigger impact by hosting an Inspire! event in yuour company or<br/>community. How will you pay happiness forward? How will you<br/>change the world?</p>
+					<p>Backed by scince, business sense, and common sense, we know<br/>that living a purposeful life is what really matters. So come along<br/>and join the movement. As our CEO says, it all begins with you.</p>
+					<p>It can be as simple as passing out balloons to strangers, or breaking<br/>out your best dance moves at the next company party. Or, make a<br/>bigger impact by hosting an Inspire! event in your company or<br/>community. How will you pay happiness forward? How will you<br/>change the world?</p>
 					<a href="#" class="button orange">Tell me more</a>
 				</article>
 			</div>
@@ -157,11 +157,13 @@ get_header();
 			<div class="right-col">
 				<article class="content chat active">
 					<h3>Happiness 101</h3>
-					<a href="#" class="button">intro to blog and invitation to read</a>
+					<p>Loved the book? Come love the blog! Discover a wealth of resources to continue your happiness education.</p>
+					<a href="#" class="button">Read and Enjoy</a>
 				</article>
 				<article class="content inspire">
 					<h3>Inspire! and Be Inspired</h3>
-					<a href="#" class="button">what it is and how you can get involved</a>
+					<p>Take the stage to share your inspiration at Inspire!, a story-worthy event series featuring speakers from your local community.</p>
+					<a href="#" class="button">Find an Event</a>
 				</article>
 				<article class="content write">
 					<h3>Share Your Story</h3>
@@ -169,9 +171,9 @@ get_header();
 					<a href="#" class="button">Share Your Story</a>
 				</article>
 				<article class="content cal">
-					<h3>Calculate Your Happiness ROI</h3>
-					<p>A decade of research shows that happiness is seriously good for business. Happy employees are more committed, drive higher sales and are more productive than their unhappy counterparts. How much could a happier organization save you?</p>
-					<a href="#" class="button">Crunch Some Numbers</a>
+					<h3>Be a Happiness Ambassador</h3>
+					<p>Join our community of movers and shakers collaborating, encouraging and sharing how they're growing happiness in their lives and communities. </p>
+					<a href="#" class="button">Become a VHP</a>
 				</article>
 			</div>
 		</div>

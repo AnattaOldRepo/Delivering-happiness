@@ -239,14 +239,15 @@ a {
         @extend %block-center;
         text-center: center;
         img{
-            top: 50px!important;
             margin: auto;
-            max-width: 700px;
+            height: 100px;
+            
         }
         .cycle-slide{
             @extend %text-center;
             @include size(100%, 205px);
-            top: 50px!important;
+            top: 50%!important;
+            margin-top: -45px;
         }
     }
     .pager {

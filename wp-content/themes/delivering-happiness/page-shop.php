@@ -31,8 +31,8 @@ get_header();
 			<div class="container">
 				<article class="content">
 					<h2>Do Good, Feel Good.<span>We design products to Inspire, Connect, Educate and Experience.</span></h2>
-					<p>shop@DH goods spread and inspire happiness at home, at work, in our<br/>communities, and in our everyday lives. They aspire to make people feel a<br/>certain way. Like they just discovered their car can fly—and now spend their<br/>work commutes soaring over traffic jams, listening to fun music and eating </p>
-					<a href="#" class="button green">Visit the shop</a>
+					<p>shop@DH goods spread and inspire happiness at home, at work, in our<br/>communities, and in our everyday lives. They aspire to make people feel a<br/>certain way. Like they just discovered their car can fly—and now spend their<br/>work commutes soaring over traffic jams, listening to fun music and eating delicious pastries.</p>
+					<a href="/shop" class="button green">Visit the shop</a>
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/go-good-feel-good.jpg" alt="" />
 				</article>
 			</div>
@@ -48,8 +48,8 @@ get_header();
 			</div>
 			<div class="right-col strongyellow-areal">
 				<div class="content">
-					<h3>Inspire others with<br/>customized products.<span>We have dozens of items<br/>available for your company,<br/>team, or yourself. Get in touch<br/>and we’ll design something<br/>special, just for you</span></h3>
-					<a href="#" class="button softyellow">Share the photo</a>
+					<h3>Inspire others with<br/>customized products.<span>We have dozens of items<br/>available for your company,<br/>team, or yourself. Get in touch<br/>and we’ll design something<br/>special, just for you.</span></h3>
+					<a href="#" class="button softyellow">Find Out More</a>
 				</div>
 			</div>
 		</div>
@@ -86,7 +86,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Our design team can work with you to create custom, private label and/or co-branded products that'll impress the socks off of your employees, colleagues and customers.</p>
-						<a href="#" class="button green">Find more</a>
+						<a href="#" class="button green">Find Out More</a>
 					</div>
 				</div>
 			</div>
@@ -98,8 +98,8 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Want to make your shop a happier place? We're looking for qualified retailers to help spread happiness.</p>
-						<a href="#" class="button green">get in touch</a>
+						<p>We're making our way into shops throughout the US, starting with these fine stores.</p>
+						<a href="#" class="button green">Find a Store</a>
 					</div>
 				</div>
 			</div>

@@ -6,6 +6,12 @@
     @include clearfix;
     font-size: 13px;
     padding-bottom: 10px;
+    &.sticky{
+        width: 100%;
+        position: fixed;
+        background: $White;
+        z-index: 9999;
+    }
     .wrapper {
         padding: 10px 0 0 71px;
         position: relative;

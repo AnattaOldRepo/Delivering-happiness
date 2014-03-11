@@ -14,7 +14,7 @@ get_header();
 			<a href="#" class="button arrow">GET ON BOARD</a>
 		</div>
 		<div class="video">
-			<iframe width="1170" height="546" src="//www.youtube.com/embed/4teXtmYyzxA" frameborder="0" allowfullscreen></iframe>
+			<iframe width="1170" height="546" src="//www.youtube.com/embed/4teXtmYyzxA?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
 </section>
@@ -30,8 +30,8 @@ get_header();
 					<p>Science tells us that people are bad at predicting what keeps us happy. It also says that focusing on our passions and purpose can create sustainable happiness. Yet, here we are, a global society of people that are unhappy (or think they could be happier) in life.</p>
 					<p>Simply put, everyone wants to be a part of something bigger than ourselves. To have a higher purpose. That’s where we come in. 
 					We believe by prioritizing happiness in work and life, together we 
-					can create change  in the world more than we ever thought</p>
-					<a href="#" class="button blue">Tell me more</a>
+					can create change in the world more than we ever thought possible.</p>
+					<a href="/community" class="button blue">Tell me more</a>
 				</article>
 			</div>
 			<div class="right-col">
@@ -143,7 +143,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-					<a href="#" class="button blue">LET’S GO!</a>
+					<a href="/shop" class="button blue">LET’S GO!</a>
 				</div>
 			</div>
 		</div>
@@ -159,7 +159,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Inspire. Connect. Educate and Experience. Products that remind us of why happiness isn’t a fleeting thought, it’s a way to live.</p>
-					<a href="#" class="button blue">LET’S GO!</a>
+					<a href="/shop" class="button blue">Let's Shop!</a>
 				</div>
 			</div>
 		</div>
@@ -172,7 +172,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Start the conversation, and find inspiration for free. Schedule a free 30-minute culture call (or discovery call) with us.</p>
-					<a href="#" class="button blue">LET’S GO!</a>
+					<a href="/shop" class="button blue">Let's Talk!</a>
 				</div>
 			</div>
 		</div>

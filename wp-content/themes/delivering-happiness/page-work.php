@@ -29,7 +29,7 @@ get_header();
 		<div class="wrapper">
 			<div class="container">
 				<article class="content">
-					<h2>Let’s make Happy Work™. <span>Ready to plan your journey?</span></h2>
+					<h2>Let’s Make Happy Work™. <span>Ready to plan your journey?</span></h2>
 					<p>We believe happiness at work is a journey. Here is your roadmap. These simple<br/>five steps combine the science of happiness and the experience of Zappos and<br/>other leading companies to help your organization create its own unique work<br/>culture,  increase happiness and build success. </p>
 					<a href="#" class="button moderateviolet">DOWNLOAD ROADMAP</a>
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/work-animation-demo.png" alt="" />
@@ -49,6 +49,7 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
+						<p>Are you happy at work? The results will show what you like and what needs to change.</p>
 						<a href="#" class="button moderateviolet">LET’S GO!</a>
 					</div>
 				</div>
@@ -61,6 +62,7 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
+						<p>Start the conversation, and find inspiration for free. Schedule a free 30-minute culture call (or discovery call) with us.</p>
 						<a href="#" class="button moderateviolet">LET’S TALK!</a>
 					</div>
 				</div>
@@ -208,7 +210,7 @@ get_header();
 				</div>
 				<article class="content">
 					<p>We help organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success.</p>
-					<a href="#" class="button yellow">Learn more</a>
+					<a href="#" class="button yellow">Download Roadmap</a>
 				</article>
 			</div>
 			<div class="right-col offwhite-area">
