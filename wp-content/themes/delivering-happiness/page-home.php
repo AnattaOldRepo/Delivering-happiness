@@ -221,8 +221,9 @@ get_header();
 				<div class="media">
 					<?php if ( has_post_thumbnail( $blog_posts[0]->ID ) ) { ?>
 						<?php echo get_the_post_thumbnail( $blog_posts[0]->ID ); ?>
-					<?php } else if ( function_exists( 'get_the_image' ) ) { ?>
-						<?php echo get_the_image( array( 'post_id' => $blog_posts[0]->ID, 'image_scan' => true) ); ?>
+					<?php } else if ( function_exists( 'get_the_image_by_scan' ) ) { ?>
+						<?php $image = get_the_image_by_scan( array( 'post_id' => $blog_posts[0]->ID ) ); ?>
+						<img src="<?php echo $image['src']; ?>" alt="featured-thumbnail" />
 					<?php } ?>
 				</div>
 				<article class="content small">
@@ -241,8 +242,9 @@ get_header();
 				<div class="media">
 					<?php if ( has_post_thumbnail( $blog_posts[1]->ID ) ) { ?>
 						<?php echo get_the_post_thumbnail( $blog_posts[1]->ID ); ?>
-					<?php } else if ( function_exists( 'get_the_image' ) ) { ?>
-						<?php echo get_the_image( array( 'post_id' => $blog_posts[1]->ID, 'image_scan' => true) ); ?>
+					<?php } else if ( function_exists( 'get_the_image_by_scan' ) ) { ?>
+						<?php $image = get_the_image_by_scan( array( 'post_id' => $blog_posts[1]->ID ) ); ?>
+						<img src="<?php echo $image['src']; ?>" alt="featured-thumbnail" />
 					<?php } ?>
 				</div>
 				<article class="content small">
@@ -261,8 +263,9 @@ get_header();
 				<div class="media">
 					<?php if ( has_post_thumbnail( $blog_posts[2]->ID ) ) { ?>
 						<?php echo get_the_post_thumbnail( $blog_posts[2]->ID ); ?>
-					<?php } else if ( function_exists( 'get_the_image' ) ) { ?>
-						<?php echo get_the_image( array( 'post_id' => $blog_posts[2]->ID, 'image_scan' => true ) ); ?>
+					<?php } else if ( function_exists( 'get_the_image_by_scan' ) ) { ?>
+						<?php $image = get_the_image_by_scan( array( 'post_id' => $blog_posts[2]->ID ) ); ?>
+						<img src="<?php echo $image['src']; ?>" alt="featured-thumbnail" />
 					<?php } ?>
 				</div>
 				<article class="content small">
