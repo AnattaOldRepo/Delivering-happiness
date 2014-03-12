@@ -202,7 +202,20 @@ get_header();
 <section class="three-column blue blog cross-fade">
 	<div class="wrapper">
 		<h2>New on our blog:</h2>
-		<?php $blog_posts = get_posts( array( 'posts_per_page' => 3 ) ); ?>
+		<?php
+		$blog_posts = get_posts(
+			array(
+				'posts_per_page' => 3,
+				'meta_query' => array(
+					array(
+						'key' => 'featured',
+						'value' => '1',
+						'compare' => '='
+					)
+				)
+			)
+		);
+		?>
 		<div class="col left-col">
 			<div class="post-1">
 				<div class="media">
