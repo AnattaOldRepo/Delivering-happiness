@@ -1147,8 +1147,13 @@ a {
   font-style: italic;
   margin-bottom: 20px;
 }
+/* line 574, ../sass/global/_components.scss */
+.products-animation img {
+  width: 412px;
+  height: 412px;
+}
 
-/* line 577, ../sass/global/_components.scss */
+/* line 581, ../sass/global/_components.scss */
 .clients .media {
   padding: 63px;
   letter-spacing: -1px;
@@ -1164,38 +1169,38 @@ a {
 .clients .media:after {
   clear: both;
 }
-/* line 581, ../sass/global/_components.scss */
+/* line 585, ../sass/global/_components.scss */
 .clients .media .all-coins {
   padding-left: 82px;
 }
-/* line 584, ../sass/global/_components.scss */
+/* line 588, ../sass/global/_components.scss */
 .clients .media .coin {
   margin: 0 35px 30px 0;
 }
-/* line 586, ../sass/global/_components.scss */
+/* line 590, ../sass/global/_components.scss */
 .clients .media .coin .left-pull {
   margin-left: 0px;
 }
-/* line 591, ../sass/global/_components.scss */
+/* line 595, ../sass/global/_components.scss */
 .clients .content {
   padding: 0 67px;
   color: white;
   text-align: center;
 }
-/* line 595, ../sass/global/_components.scss */
+/* line 599, ../sass/global/_components.scss */
 .clients .content .v-aling {
   width: 585px;
   height: 545px;
   display: table-cell;
   vertical-align: middle;
 }
-/* line 600, ../sass/global/_components.scss */
+/* line 604, ../sass/global/_components.scss */
 .clients .content blockquote {
   font-style: italic;
   position: relative;
   line-height: 30px;
 }
-/* line 606, ../sass/global/_components.scss */
+/* line 610, ../sass/global/_components.scss */
 .clients .content blockquote:before, .clients .content blockquote:after {
   width: 47px;
   height: 37px;
@@ -1204,21 +1209,21 @@ a {
   left: 50%;
   margin-left: -28px;
 }
-/* line 613, ../sass/global/_components.scss */
+/* line 617, ../sass/global/_components.scss */
 .clients .content blockquote:before {
   background-image: url("../images/global/quote-top.png");
   background-repeat: no-repeat;
   background-position: center center;
   top: -85px;
 }
-/* line 617, ../sass/global/_components.scss */
+/* line 621, ../sass/global/_components.scss */
 .clients .content blockquote:after {
   background-image: url("../images/global/quote-bottom.png");
   background-repeat: no-repeat;
   background-position: center center;
   bottom: -130px;
 }
-/* line 622, ../sass/global/_components.scss */
+/* line 626, ../sass/global/_components.scss */
 .clients .content span {
   text-transform: uppercase;
   display: block;
@@ -1227,7 +1232,7 @@ a {
   letter-spacing: 1px;
 }
 
-/* line 633, ../sass/global/_components.scss */
+/* line 637, ../sass/global/_components.scss */
 .products-animation .card {
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -1236,20 +1241,20 @@ a {
   width: 84px;
   height: 412px;
 }
-/* line 638, ../sass/global/_components.scss */
+/* line 642, ../sass/global/_components.scss */
 .products-animation .card.active {
   width: 412px;
   height: 412px;
 }
 
-/* line 644, ../sass/global/_components.scss */
+/* line 648, ../sass/global/_components.scss */
 .video-container .onload-container {
   width: 1170px;
   height: 546px;
   position: relative;
   overflow: hidden;
 }
-/* line 649, ../sass/global/_components.scss */
+/* line 653, ../sass/global/_components.scss */
 .video-container .onload-container .video {
   width: 1170px;
   height: 546px;

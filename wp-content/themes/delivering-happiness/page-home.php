@@ -124,7 +124,7 @@ get_header();
 				<div id="custom-pager" class="pager cycle-pager">
 				</div>
 			</div>
-			<a href="#" class="cta">Download the poster for free!</a>
+			<a href="<?php bloginfo('template_url') ?>/assets/images/global/values-posters.pdf" target="_blank" class="cta">Download the poster for free!</a>
 		</div>
 	</div>
 </section>

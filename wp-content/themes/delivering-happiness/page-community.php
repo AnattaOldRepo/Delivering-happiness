@@ -181,16 +181,16 @@ get_header();
 	<section class="products-animation" style="margin-bottom:50px;">
 		<div class="wrapper">
 			<h2>Our Facebook is full of inspiration:</h2>
-			<div class="card active"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/demo-products.jpg" alt="" /></div>
+			<div class="card active"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card1.png" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card2.png" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card3.jpg" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card4.png" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card6.png" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card7.jpg" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card8.jpg" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card5.png" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card9.png" alt="" /></div>
+			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card10.jpg" alt="" /></div>
 		</div>
 	</section>
 
