@@ -87,9 +87,9 @@ function delivering_happiness_scripts() {
 add_action( 'wp_enqueue_scripts', 'delivering_happiness_scripts' );
 
 /**
- * Implement the Custom Header feature.
+ * Storify Class
  */
-//require get_template_directory() . '/inc/custom-header.php';
+require get_template_directory() . '/inc/storify.php';
 
 /**
  * Custom template tags for this theme.
