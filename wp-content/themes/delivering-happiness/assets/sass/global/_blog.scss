@@ -54,6 +54,10 @@
         margin-bottom: 40px;
         .media {
             @extend %pull-left;
+            width: 205px;
+            img{
+                width: 185px;
+            }
         }
         .entry-header {
             h2 {

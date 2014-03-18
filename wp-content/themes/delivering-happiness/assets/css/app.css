@@ -2237,58 +2237,66 @@ body {
 .happiness-page .post:after {
   clear: both;
 }
-/* line 59, ../sass/global/_blog.scss */
+/* line 55, ../sass/global/_blog.scss */
+.happiness-page .post .media {
+  width: 205px;
+}
+/* line 58, ../sass/global/_blog.scss */
+.happiness-page .post .media img {
+  width: 185px;
+}
+/* line 63, ../sass/global/_blog.scss */
 .happiness-page .post .entry-header h2 {
   line-height: 28px;
   margin-bottom: 6px;
 }
-/* line 63, ../sass/global/_blog.scss */
+/* line 67, ../sass/global/_blog.scss */
 .happiness-page .post .entry-header h2 a {
   color: #0198cf;
 }
-/* line 67, ../sass/global/_blog.scss */
+/* line 71, ../sass/global/_blog.scss */
 .happiness-page .post .entry-header .entry-meta {
   letter-spacing: 1px;
   margin-bottom: 14px;
   text-transform: uppercase;
   color: #999999;
 }
-/* line 74, ../sass/global/_blog.scss */
+/* line 78, ../sass/global/_blog.scss */
 .happiness-page .post .entry-header .entry-meta a {
   color: #999999;
 }
-/* line 81, ../sass/global/_blog.scss */
+/* line 85, ../sass/global/_blog.scss */
 .happiness-page .post .content {
   width: 400px;
   padding-left: 18px;
 }
-/* line 82, ../sass/global/_blog.scss */
+/* line 86, ../sass/global/_blog.scss */
 .happiness-page .post .content.expaned {
   float: none;
   width: auto;
   padding-left: 0px;
 }
-/* line 90, ../sass/global/_blog.scss */
+/* line 94, ../sass/global/_blog.scss */
 .happiness-page .post .content p {
   line-height: 23px;
   padding-bottom: 10px;
 }
-/* line 95, ../sass/global/_blog.scss */
+/* line 99, ../sass/global/_blog.scss */
 .happiness-page .post .content .cta {
   color: #0198cf;
   font-style: italic;
 }
-/* line 98, ../sass/global/_blog.scss */
+/* line 102, ../sass/global/_blog.scss */
 .happiness-page .post .content .cta:hover {
   text-decoration: underline;
 }
-/* line 108, ../sass/global/_blog.scss */
+/* line 112, ../sass/global/_blog.scss */
 .happiness-page .sidebar .widget {
   background-color: white;
   border: 1px solid #dfdfdf;
   padding: 10px;
 }
-/* line 113, ../sass/global/_blog.scss */
+/* line 117, ../sass/global/_blog.scss */
 .happiness-page .sidebar .become-a-vhp {
   background: #0198cf;
   color: white;
@@ -2296,22 +2304,22 @@ body {
   padding: 19px 30px 18px 30px;
   margin-bottom: 19px;
 }
-/* line 119, ../sass/global/_blog.scss */
+/* line 123, ../sass/global/_blog.scss */
 .happiness-page .sidebar .become-a-vhp h3 {
   line-height: 1.5em;
 }
-/* line 122, ../sass/global/_blog.scss */
+/* line 126, ../sass/global/_blog.scss */
 .happiness-page .sidebar .become-a-vhp h3 span {
   display: block;
   line-height: 10px;
 }
-/* line 128, ../sass/global/_blog.scss */
+/* line 132, ../sass/global/_blog.scss */
 .happiness-page .sidebar .become-a-vhp p {
   color: #9ed4ee;
   padding: 16px 16px 20px 16px;
   line-height: 17px;
 }
-/* line 134, ../sass/global/_blog.scss */
+/* line 138, ../sass/global/_blog.scss */
 .happiness-page .sidebar .become-a-vhp input[type="text"] {
   width: 100%;
   height: 35px;
@@ -2341,7 +2349,7 @@ body {
   font-style: italic;
   font-size: 12px;
 }
-/* line 149, ../sass/global/_blog.scss */
+/* line 153, ../sass/global/_blog.scss */
 .happiness-page .sidebar .become-a-vhp .button {
   padding: 8px 25px;
   margin-left: 10px;
@@ -2350,11 +2358,11 @@ body {
   color: #0198cf;
   border: none;
 }
-/* line 156, ../sass/global/_blog.scss */
+/* line 160, ../sass/global/_blog.scss */
 .happiness-page .sidebar .become-a-vhp .button:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
-/* line 161, ../sass/global/_blog.scss */
+/* line 165, ../sass/global/_blog.scss */
 .happiness-page .sidebar .wfu {
   height: 75px;
   margin-bottom: 40px;
@@ -2365,15 +2373,15 @@ body {
   color: white;
   text-align: center;
 }
-/* line 168, ../sass/global/_blog.scss */
+/* line 172, ../sass/global/_blog.scss */
 .happiness-page .sidebar .wfu h3 {
   line-height: 3em;
 }
-/* line 173, ../sass/global/_blog.scss */
+/* line 177, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp {
   margin-bottom: 40px;
 }
-/* line 175, ../sass/global/_blog.scss */
+/* line 179, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp hr {
   background-image: url("../images/global/w-hr.gif");
   background-repeat: no-repeat;
@@ -2381,24 +2389,24 @@ body {
   height: 16px;
   border: none;
 }
-/* line 180, ../sass/global/_blog.scss */
+/* line 184, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp h3 {
   color: #666666;
   letter-spacing: 1px;
   margin: 20px 0 33px 0;
 }
-/* line 185, ../sass/global/_blog.scss */
+/* line 189, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp a {
   display: block;
   color: #0198cf;
   margin-bottom: 20px;
   line-height: 22px;
 }
-/* line 190, ../sass/global/_blog.scss */
+/* line 194, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp a:hover {
   text-decoration: underline;
 }
-/* line 195, ../sass/global/_blog.scss */
+/* line 199, ../sass/global/_blog.scss */
 .happiness-page .sidebar .twitter {
   margin-bottom: 19px;
 }

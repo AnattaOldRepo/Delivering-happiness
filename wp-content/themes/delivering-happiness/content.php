@@ -20,7 +20,7 @@
 				<img src="<?php echo $image['src']; ?>" alt="featured-thumbnail" />
 			<?php } ?>
 		</div>
-		<div class="content <?php if ( !has_post_thumbnail() ) { ?>expaned<?php  } ?>">
+		<div class="content">
 			<header class="entry-header">
 				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
 
