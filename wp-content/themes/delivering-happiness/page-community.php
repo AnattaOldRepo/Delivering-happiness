@@ -126,7 +126,6 @@ get_header();
 	<section class="instagram">
 		<div class="wrapper">
 			<h2>#deliveringhappiness:</h2>
-			<img src="<?php bloginfo('template_url') ?>/assets/images/global/placeholder-instragram.jpg" alt="" />
 			<?php $instagram_pics = AnattaDesign_Storify::getInstagram( get_field( 'instagram_storify_json_url', 'option' ) ); ?>
 			<?php foreach ( $instagram_pics as $instagram_pic ) { ?>
 				<img src="<?php echo $instagram_pic['src']; ?>" alt="instagram pic" />

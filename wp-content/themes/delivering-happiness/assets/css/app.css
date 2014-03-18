@@ -453,7 +453,7 @@ body {
 }
 
 /* line 9, ../sass/global/_components.scss */
-.happiness-page .post.detail .alignleft, .one-column-template .page-content .alignleft, .rounded-block .left-col, .two-column .left-col, .two-column .right-col, .coin-animation .coin, .three-column .left-col, .three-column .middle-col, .four-column .left-col, .products-animation .card, .global-header .logo, .global-header .site-navigation, .global-header .site-navigation li, .site-footer .all-links .block, .site-footer .all-links .block .signup input, .site-footer .all-links .block .social a, .site-footer .end-bar p, .work .call-dh .content, .happiness-page .left-col, .happiness-page .page-header h1, .happiness-page .post .media, .happiness-page .post .content {
+.happiness-page .post.detail .alignleft, .one-column-template .page-content .alignleft, .rounded-block .left-col, .two-column .left-col, .two-column .right-col, .coin-animation .coin, .three-column .left-col, .three-column .middle-col, .four-column .left-col, .products-animation .card, .global-header .logo, .global-header .site-navigation, .global-header .site-navigation li, .site-footer .all-links .block, .site-footer .all-links .block .signup input, .site-footer .all-links .block .social a, .site-footer .end-bar p, .work .call-dh .content, .community .instagram img, .happiness-page .left-col, .happiness-page .page-header h1, .happiness-page .post .media, .happiness-page .post .content {
   float: left;
 }
 
@@ -2120,17 +2120,32 @@ body {
 /* line 131, ../sass/global/_community.scss */
 .community .instagram {
   text-align: center;
-  background-color: #efefef;
 }
-/* line 134, ../sass/global/_community.scss */
+/* line 133, ../sass/global/_community.scss */
 .community .instagram .wrapper {
-  padding: 71px 0 104px 0;
+  background-color: #efefef;
+  padding: 71px 134px 104px 134px;
   letter-spacing: -2px;
 }
-/* line 138, ../sass/global/_community.scss */
+/* line 9, ../sass/global/_mixin.scss */
+.community .instagram .wrapper:before, .community .instagram .wrapper:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+/* line 13, ../sass/global/_mixin.scss */
+.community .instagram .wrapper:after {
+  clear: both;
+}
+/* line 139, ../sass/global/_community.scss */
 .community .instagram h2 {
   font-style: italic;
   margin-bottom: 66px;
+}
+/* line 144, ../sass/global/_community.scss */
+.community .instagram img {
+  width: 150px;
 }
 
 /* line 5, ../sass/global/_blog.scss */

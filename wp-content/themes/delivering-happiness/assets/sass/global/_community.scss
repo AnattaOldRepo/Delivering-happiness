@@ -130,15 +130,20 @@
     }
     .instagram {
         text-align: center;
-        background-color: $LightGray;
         .wrapper {
-            padding: 71px 0 104px 0;
+            background-color: $LightGray;
+            padding: 71px 134px 104px 134px;
             letter-spacing: -2px;
+            @include clearfix();
         }
         h2 {
             @extend %heading-level-7;
             font-style: italic;
             margin-bottom: 66px;
+        }
+        img{
+            width: 150px;
+            @extend %pull-left;
         }
     }
 }
