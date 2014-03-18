@@ -12,11 +12,14 @@
 	</div><!-- .entry-summary -->
 	<?php else : ?>
 	<div class="entry-content">
-		<?php if ( has_post_thumbnail() ) { ?>
 		<div class="media">
-			<?php the_post_thumbnail(); ?>
+			<?php if ( has_post_thumbnail() ) { ?>
+				<?php echo get_the_post_thumbnail(); ?>
+			<?php } else if ( function_exists( 'get_the_image_by_scan' ) ) { ?>
+				<?php $image = get_the_image_by_scan( array( 'post_id' => get_the_ID() ) ); ?>
+				<img src="<?php echo $image['src']; ?>" alt="featured-thumbnail" />
+			<?php } ?>
 		</div>
-		<?php  } ?>
 		<div class="content <?php if ( !has_post_thumbnail() ) { ?>expaned<?php  } ?>">
 			<header class="entry-header">
 				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
