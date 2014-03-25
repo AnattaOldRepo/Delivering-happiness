@@ -660,3 +660,46 @@ a {
         }
     }
 }
+
+.post-navigation,
+.paging-navigation{
+    .screen-reader-text{
+        display: none;
+    }
+    a{
+        @include border_radius(13px);
+        @include transition(all 0.3s ease);
+        @extend %text-center;
+        width: 146px;
+        padding: 15px 25px;
+        margin-left: 10px;;
+        cursor: pointer;
+        color: $Blue;
+        border: none;
+        border: 1px solid $Blue;
+        background-color: rgba($Blue, 0.1);
+        color: $Blue;
+        text-transform: uppercase;
+        display: block;
+
+        &:hover {
+            background-color: rgba($Blue, 0.2);
+        }
+    }
+    .nav-previous{
+        @extend %pull-right;
+    }
+    .nav-next{
+        @extend %pull-left;
+    }
+}
+.post-navigation{
+    .nav-previous{
+        float: left!important; 
+    }
+    .nav-next{
+        float: right!important; 
+    }
+
+}
+

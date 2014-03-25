@@ -5,7 +5,7 @@
 .happiness-page {
     padding-bottom:50px;
     .nav-links{
-        display: none;
+        
     }
     background: #f5f4f2;
     .left-col {
@@ -109,10 +109,72 @@
         }
     }
     .sidebar {
-        .widget{
+        .twitter,
+        .widget_polls-widget{
             background-color: $White;
             border: 1px solid darken($LightGray, 6.2%);
             padding: 10px;
+        }
+        .widget_polls-widget{
+            padding: 10px;
+            @extend %text-left;
+            .widget-title{
+                @extend %text-center;
+                text-transform: uppercase;
+                padding: 18px 0;
+            }
+            .wp-polls-ul{
+                color: $Blue;
+                padding-top:20px;
+                li{
+                    padding:5px;
+                    padding-bottom: 10px;
+                    label{
+                        padding-left: 10px;
+                    }
+                }
+            }
+            .Buttons{
+                @include border_radius(13px);
+                @include transition(all 0.3s ease);
+                @extend %text-center;
+                padding: 6px 0px;
+                cursor: pointer;
+                color: $Blue;
+                border: none;
+                border: 1px solid $Blue;
+                background-color: rgba($Blue, 0.1);
+                color: $Blue;
+                text-transform: uppercase;
+                display: block;
+                font-size:14px;
+                width: 82px;
+                margin: 0px auto;
+                letter-spacing: 1px;
+                &:hover {
+                    background-color: rgba($Blue, 0.2);
+                }
+            }
+            p{
+                text-align: left!important;
+                line-height: 25px;
+                a{
+                    @extend %text-center;
+                    color: $Blue;
+                    display: block;
+                }
+            }
+            li{
+                padding-top:25px;
+                padding-bottom:10px;
+                a{
+                    @extend %text-center;
+                    display: block;
+                    font-size: 13px;
+                    text-transform: uppercase;
+                    color: #999999;
+                }
+            }
         }
         .become-a-vhp {
             background: $Blue;

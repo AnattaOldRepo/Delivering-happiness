@@ -19,20 +19,20 @@
 				<div class="block company">
 					<h4>Company</h4>
 					<ul>
-						<li><a href="#">Team</a></li>
+						<li><a href="/team">Team</a></li>
 						<li><a href="#">Advisors</a></li>
 						<li><a href="#">Partners</a></li>
-						<li><a href="#">Values</a></li>
-						<li><a href="#">Press</a></li>
+						<li><a href="core-values-2/">Values</a></li>
+						<li><a href="about-us/press/">Press</a></li>
 					</ul>
 				</div>
 				<div class="block resources">
 					<h4>Resources</h4>
 					<ul>
-						<li><a href="#">ROI Calculator</a></li>
-						<li><a href="#">Happiness at Work Survey</a></li>
-						<li><a href="#">Request Presentation</a></li>
-						<li><a href="#">Book Recommendations</a></li>
+						<li><a href="/roi-calculator">ROI Calculator</a></li>
+						<li><a href="https://app.happinessatworksurvey.com/?a=dh" target="_blank">Happiness at Work Survey</a></li>
+						<li><a href="/powerpoint">Request Presentation</a></li>
+						<li><a href="/books">Book Recommendations</a></li>
 						<li><a href="#">Free Consultation</a></li>
 						<li><a href="#">Online Training</a></li>
 					</ul>
@@ -40,10 +40,10 @@
 				<div class="block the-book">
 					<h4>The book</h4>
 					<ul>
-						<li><a href="#">About the Author</a></li>
-						<li><a href="#">FAQs</a></li>
-						<li><a href="#">Reviews</a></li>
-						<li><a href="#">From the Book</a></li>
+						<li><a href="about-us/about-the-author/">About the Author</a></li>
+						<li><a href="about-us/frequently-asked-questions-answered-by-tony/">FAQs</a></li>
+						<li><a href="about-2/reviews/">Reviews</a></li>
+						<li><a href="about-us/about-2/from-the-book/">From the Book</a></li>
 					</ul>
 				</div>
 				<div class="block keep-in-touch">
@@ -54,8 +54,8 @@
 						<input type="button" value="signup" class="button blue" />
 					</div>
 					<div class="social">
-						<a href="#" class="social-facebook">Facebook</a>
-						<a href="#" class="social-twitter">Twitter</a>
+						<a href="https://www.facebook.com/deliveringhappiness" target="_blank" class="social-facebook">Facebook</a>
+						<a href="https://twitter.com/dhmovement" target="_blank" class="social-twitter">Twitter</a>
 						<a href="#" class="social-instagram">Instagram</a>
 						<a href="#" class="social-youtube">YouTube</a>
 					</div>

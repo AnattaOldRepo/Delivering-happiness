@@ -75,7 +75,7 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Unhappy employees cost the U.S. $350 billion a year (Gallup). How much could happiness save you?</p>
+						<p>Unhappy employees cost the U.S. $550 billion a year (Gallup). How much could happiness save you?</p>
 						<a href="#" class="button moderateviolet">LET’S CALCULATE!</a>
 					</div>
 				</div>
