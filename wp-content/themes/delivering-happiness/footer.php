@@ -47,12 +47,7 @@
 					</ul>
 				</div>
 				<div class="block keep-in-touch">
-					<h4>Keep in touch</h4>
-					<p>Get happiness delivered to your inbox.</p>
-					<div class="signup">
-						<input type="text" placeholder="your email address" />
-						<input type="button" value="signup" class="button blue" />
-					</div>
+					<?php gravity_form(2, true, true, false, null, true); ?>
 					<div class="social">
 						<a href="https://www.facebook.com/deliveringhappiness" target="_blank" class="social-facebook">Facebook</a>
 						<a href="https://twitter.com/dhmovement" target="_blank" class="social-twitter">Twitter</a>
