@@ -261,5 +261,25 @@
         .twitter{
             margin-bottom: 19px;;
         }
+        .popular-posts{
+            @include bg-img-only(w-hr, gif, no-repeat, top, center);
+            margin-bottom: 40px;
+            margin-top: 40px;
+            padding-top: 15px;
+            h1{
+                color: $Gray;
+                letter-spacing: 1px;
+                margin: 20px 0 33px 0;
+            }
+            a{
+                display: block;
+                color: $Blue;
+                margin-bottom: 20px;
+                line-height: 22px;
+                &:hover{
+                    text-decoration: underline;
+                }  
+            }
+        }
     }
 }

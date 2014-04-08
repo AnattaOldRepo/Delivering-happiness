@@ -90,9 +90,13 @@
         padding-bottom: 25px;
     }
     li{
-        color: $Blue;
         font-style: italic;
         margin-bottom: 10px;
+        @extend %pharagraph-level-5;
+        line-height: 1.7em;
+        a{
+            color: $Blue;  
+        }
     }
     ol,ul{
         margin-bottom: 25px;

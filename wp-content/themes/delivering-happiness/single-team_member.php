@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div class="one-column-template">
+<div class="one-column-template team-template">
 	<div class="wrapper">
 		<div class="page-header">
 			<h1><?php the_title() ?></h1>
@@ -17,17 +17,16 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
-
-						<?php the_field( 'designation' ); ?>
-
-						<?php the_content(); ?>
-
-						<img src="<?php $image = get_field( 'image' ); echo $image['url']; ?>" alt="<?php the_title(); ?>" />
-
-						<?php the_field( 'facebook' ); ?>
-
-						<?php the_field( 'twitter' ); ?>
-
+						<p class="designation"><?php the_field( 'designation' ); ?></p>
+						<div class="media">
+							<img src="<?php $image = get_field( 'image' ); echo $image['url']; ?>" alt="<?php the_title(); ?>" />
+						</div>
+						<div class="content">
+							<?php the_field( 'facebook' ); ?>
+							<?php the_field( 'twitter' ); ?>
+							<?php the_content(); ?>
+						</div>
+						
 					<?php endwhile; ?>
 
 					<?php delivering_happiness_paging_nav(); ?>
