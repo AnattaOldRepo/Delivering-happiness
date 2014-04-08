@@ -85,38 +85,44 @@ get_header();
 			<div class="right-col blue-area">
 				<article class="content active">
 					<div class="v-aling">
-						<blockquote>Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod.</blockquote>
-						<span> Aetna, June 2013</span>
+						<blockquote>After reading "Delivering Happiness" at the end of last year it has made a change with how I approach my relationship with customers. I also believe it's the beginning of a journey in discovering a higher purpose in life. I have made it my mission to continue to bring happiness to every educator I get a chance to talk to. In turn, hopefully they can bring happiness to their customers who are the children of the world. </blockquote>
+						<span>Alan Lin (San Francisco, California)</span>
 					</div>
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod.</blockquote>
-						<span> Aetna, June 2013</span>
+						<blockquote>First off, wow. I am still riding on a natural high from your keynote.  It truly was motivating, inspiring and humbling. The way you approach happiness in life is spectacular. I took so many notes to keep reminding myself all the unique ways to keep it in perspective. Thank you again for sharing your wisdom, stories and quest for being bigger than ourselves through fun and a little weirdness.</blockquote>
+						<span>Mackenzie Nurse (Wakefield, Massachusetts)</span>
 					</div>
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod.</blockquote>
-						<span> Aetna, June 2013</span>
+						<blockquote>I may sound hokey with this, but the Delivering Happiness team is making a believer out of me. Per your mention of being a tight-knit community, you all really do more than talk. I have to admit that the greatest and most positive effect is being acknowledged by such a humble and purpose-driven group.
+</blockquote>
+						<span>Ron Navaro (Montreal, Canada)</span>
 					</div>
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod.</blockquote>
-						<span> Aetna, June 2013</span>
+						<blockquote> came across your website and especially your tools regarding happiness@work and your community and I am truly impressed. Being a consultant in Australia, I can see how CEO's are starting to recognize the benefits of investing and keeping their people happy. Keep inspiring the world. 
+</blockquote>
+						<span> Marite Metsla (Melbourne, Australia)</span>
 					</div>
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod.</blockquote>
-						<span> Aetna, June 2013</span>
+						<blockquote>It’s nice to know there is a revolution starting in businesses thanks to your work and the work of other thought leaders. I read the full report that Gallup came out last year about productivity and culture—I think it’s the most important work a company can do, and find it incredibly validating to see books and companies like yours out there helping to tell the story in a way where business leaders will listen! 
+</blockquote>
+						<span>Char-Lynn Griffiths (Atlanta, Georgia)
+</span>
 					</div>
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Etiam porta sem malesuada magna mollis euismod.</blockquote>
-						<span> Aetna, June 2013</span>
+						<blockquote>I just listened to the EntreLeadership podcast with Jenn and was so inspired to hear what she had to say. At my new company, we have been so intentional about the integrity and culture surrounding our health food products that it only makes sense to build a strong culture as we grow our business. Your work inspired us to become a Certified B Corp. and partner with 1% for the Planet. Thank you for leading the change you wish to see.
+</blockquote>
+						<span>Catherine Mangan Walsh (New York, New York) 
+</span>
 					</div>
 				</article>
 			</div>
@@ -185,16 +191,16 @@ get_header();
 	<section class="products-animation" style="margin-bottom:50px;">
 		<div class="wrapper">
 			<h2>Our Facebook is full of inspiration:</h2>
-			<div class="card active"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card1.png" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card2.png" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card3.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card4.png" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card6.png" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card7.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card8.jpg" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card5.png" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card9.png" alt="" /></div>
-			<div class="card"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card10.jpg" alt="" /></div>
+			<div class="card active"><a href="https://www.facebook.com/deliveringhappiness/photos/a.478453395550.385890.460305775550/10152598661165551/?type=1" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card1.png" alt="" /></a></div>
+			<div class="card"><a href="https://www.facebook.com/deliveringhappiness/photos/a.478453395550.385890.460305775550/10152566977070551/?type=1" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card2.png" alt="" /></a></div>
+			<div class="card"><a href="https://www.facebook.com/deliveringhappiness/photos/a.478453395550.385890.460305775550/10152625431485551/?type=1" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card3.jpg" alt="" /></a></div>
+			<div class="card"><a href="https://www.facebook.com/deliveringhappiness/photos/a.478453395550.385890.460305775550/10152575803860551/?type=1" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card4.png" alt="" /></a></div>
+			<div class="card"><a href="https://www.facebook.com/deliveringhappiness/photos/a.478453395550.385890.460305775550/10152661387470551/?type=1" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card6.png" alt="" /></a></div>
+			<div class="card"><a href="https://www.facebook.com/deliveringhappiness/photos/a.478453395550.385890.460305775550/10152704828360551/?type=1" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card7.jpg" alt="" /></a></div>
+			<div class="card"><a href="https://www.facebook.com/deliveringhappiness/photos/a.478453395550.385890.460305775550/10152683686200551/?type=1" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card8.jpg" alt="" /></a></div>
+			<div class="card"><a href="https://www.facebook.com/deliveringhappiness/photos/a.478453395550.385890.460305775550/10152667196285551/?type=1" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card5.png" alt="" /></a></div>
+			<div class="card"><a href="https://www.facebook.com/deliveringhappiness/photos/a.478453395550.385890.460305775550/10152761020320551/?type=1" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card9.png" alt="" /></a></div>
+			<div class="card"><a href="https://www.facebook.com/photo.php?fbid=10153188754245551&set=a.478453395550.385890.460305775550&type=1" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card10.jpg" alt="" /></a></div>
 		</div>
 	</section>
 

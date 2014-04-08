@@ -12,6 +12,12 @@
       $(this).parents('.wrapper').find('.right-col .content:eq('+$(this).parents('.all-coins').find('.coin').index(this)+')').toggleClass('active');
       return false;
     });
+    $( ".products-animation" ).hover(
+        function() {
+        }, function() {
+          $( this ).find('.card').eq(0).addClass('active');
+        }
+    );
 		$( ".products-animation .card" ).hover(
   			function() {
           $('.products-animation .card').removeClass('active');

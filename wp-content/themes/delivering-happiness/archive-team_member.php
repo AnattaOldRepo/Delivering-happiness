@@ -25,7 +25,7 @@
 						</div>
 						<div class="hover-content">
 							<div class="v-aling">
-								<a href="#" class="button">Read Bio</a>
+								<a href="<?php the_permalink(); ?>" class="button">Read Bio</a>
 							</div>
 						</div>
 					</div>

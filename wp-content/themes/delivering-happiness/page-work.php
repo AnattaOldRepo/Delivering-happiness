@@ -167,7 +167,7 @@ get_header();
 				<article class="content">
 					<div class="v-aling">
 						<blockquote>This was an awesome experience! The best part for me was seeing the correlation between happiness at work and increased production/profit. I think it drove home how important happiness is and how easily happiness can be accomplished.</blockquote>
-						<span>~ Aetna, June 2013 </span>
+						<span>~ Danielle Crescentini, Project Manager, Aetna </span>
 					</div>
 				</article>
 				<article class="content">
@@ -228,34 +228,34 @@ get_header();
 			<div class="col left-col">
 				<div class="poster-1">
 					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/wwus_graphic_2.jpg" alt="" /></div>
-					<div class="content small">
+					<div class="content small medium">
 						<div class="v-aling">
-							<span class="date">March 4, 2014</span>
-							<span class="location">Seaside</span>
+							<span class="date">15th Annual Call Center Week</span>
+							<span class="location">JUNE 9 - 13, 2014, Las Vegas, Nevada</span>
 						</div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p><span>Delivering Happiness at the Oregon Festivals and Events Association</span>DHW keynote on happiness, profits, passion and purpose</p>
-						<a href="#" class="button moderateviolet">learn more</a>
+						<p>This event joins call center leaders and gurus for a week of unforgettable knowledge-sharing and networking, including 10+ chief officers sharing how customer service is driving their business forward.</p>
+						<a href="http://www.callcenterweek.com/" target="_blank" class="button moderateviolet">learn more</a>
 					</div>
 				</div>
 			</div>
 			<div class="col middle-col">
 				<div class="poster-2">
 					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/wwus_graphic_1.jpg" alt="" /></div>
-					<div class="content small">
+					<div class="content small medium">
 						<div class="v-aling">
-							<span class="date">May 2014</span>
-							<span class="location">Ecuador</span>
+							<span class="date">Leadership for a Better World Global Summit</span>
+							<span class="location">June 17-18, 2014 in Madison, Wisconsin</span>
 						</div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p><span>Delivering Happiness at Work at the Arco Estrategias Leadership Event</span>The scientific base and case studies on how happiness builds a company from values, to culture to profits.</p>
-						<a href="#" class="button moderateviolet">learn more</a>
+						<p>Join other innovators and catalysts to help shape the next evolution in leadership at this two-day summit.</p>
+						<a target="_blank" href="http://inclusiveleadership.wisconsin.edu/global-summit/" class="button moderateviolet">learn more</a>
 					</div>
 				</div>
 			</div>
@@ -267,7 +267,7 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<a href="#" class="button moderateviolet">Become partner</a>
+						<a href="/become-a-partner/" class="button moderateviolet">Become partner</a>
 					</div>
 				</div>
 			</div>
