@@ -227,7 +227,7 @@ get_header();
 			<h2>Work with us:</h2>
 			<div class="col left-col">
 				<div class="poster-1">
-					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/wwus_graphic_2.jpg" alt="" /></div>
+					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/15-annual-call.gif" alt="" /></div>
 					<div class="content small medium">
 						<div class="v-aling">
 							<span class="date">15th Annual Call Center Week</span>
@@ -244,7 +244,7 @@ get_header();
 			</div>
 			<div class="col middle-col">
 				<div class="poster-2">
-					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/wwus_graphic_1.jpg" alt="" /></div>
+					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/world_global_submit.gif" alt="" /></div>
 					<div class="content small medium">
 						<div class="v-aling">
 							<span class="date">Leadership for a Better World Global Summit</span>
