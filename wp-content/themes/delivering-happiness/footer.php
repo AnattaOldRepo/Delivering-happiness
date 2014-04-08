@@ -40,10 +40,10 @@
 				<div class="block the-book">
 					<h4>The book</h4>
 					<ul>
-						<li><a href="about-us/about-the-author/">About the Author</a></li>
-						<li><a href="about-us/frequently-asked-questions-answered-by-tony/">FAQs</a></li>
-						<li><a href="about-2/reviews/">Reviews</a></li>
-						<li><a href="about-us/about-2/from-the-book/">From the Book</a></li>
+						<li><a href="/about-us/about-the-author/">About the Author</a></li>
+						<li><a href="/about-us/frequently-asked-questions-answered-by-tony/">FAQs</a></li>
+						<li><a href="/about-2/reviews/">Reviews</a></li>
+						<li><a href="/about-us/about-2/from-the-book/">From the Book</a></li>
 					</ul>
 				</div>
 				<div class="block keep-in-touch">
