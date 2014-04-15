@@ -25,35 +25,35 @@ to no.
 ----------------------------------------------------------------
 */
 
-.gform_wrapper {
+.page-content .gform_wrapper {
 	overflow: inherit;
 	margin: 10px 0;
 	max-width: 98%
 }
 
-.gform_wrapper h1,
-.gform_wrapper h2,
-.gform_wrapper h3 {
+.page-content .gform_wrapper h1,
+.page-content .gform_wrapper h2,
+.page-content .gform_wrapper h3 {
 	font-weight: normal;
 	border: none;
 	outline: none;
 	background: none;
 }
 
-.gform_wrapper :focus {
+.page-content .gform_wrapper :focus {
 	outline: 0;
 }
 
-.gform_wrapper form {
+.page-content .gform_wrapper form {
 	text-align: left;
 }
 
-.gform_wrapper input[type=text],
-.gform_wrapper input[type=url],
-.gform_wrapper input[type=email],
-.gform_wrapper input[type=tel],
-.gform_wrapper input[type=number],
-.gform_wrapper input[type=password] {
+.page-content .gform_wrapper input[type=text],
+.page-content .gform_wrapper input[type=url],
+.page-content .gform_wrapper input[type=email],
+.page-content .gform_wrapper input[type=tel],
+.page-content .gform_wrapper input[type=number],
+.page-content .gform_wrapper input[type=password] {
 	outline-style: none;
 	font-size: 11px;
 	font-family: inherit;
@@ -61,13 +61,13 @@ to no.
 	letter-spacing: normal;
 }
 
-.gform_wrapper input[type=image] {
+.page-content .gform_wrapper input[type=image] {
 	border: none !important;
 	padding: 0 !important;
 	width: auto !important;
 }
 
-.gform_wrapper textarea {
+.page-content .gform_wrapper textarea {
 	outline-style: none;
 	font-size: 11px;
 	font-family: inherit;
@@ -76,18 +76,18 @@ to no.
 	resize: none;
 }
 
-.gform_wrapper ul {
+.page-content .gform_wrapper ul {
 	margin: 0 !important;
 	list-style-type: none;
 }
 
 html>body .entry ul,
-.gform_wrapper ul {
+.page-content .gform_wrapper ul {
 	text-indent: 0;
 }
 
-.gform_wrapper li,
-.gform_wrapper form li {
+.page-content .gform_wrapper li,
+.page-content .gform_wrapper form li {
 	margin-left: 0 !important;
 	list-style-type: none !important;
 	list-style-image: none !important;
@@ -95,67 +95,67 @@ html>body .entry ul,
 	overflow: visible;
 }
 
-.gform_wrapper ul li.gfield {
+.page-content .gform_wrapper ul li.gfield {
 	clear: both;
 }
 
-.gform_wrapper ul.gfield_radio li,
-.gform_wrapper ul.gfield_checkbox li {
+.page-content .gform_wrapper ul.gfield_radio li,
+.page-content .gform_wrapper ul.gfield_checkbox li {
 	overflow: hidden;
 }
 
-.gform_wrapper ul.right_label li,
-.gform_wrapper form ul.right_label li,
-.gform_wrapper ul.left_label li,
-.gform_wrapper form ul.left_label li {
+.page-content .gform_wrapper ul.right_label li,
+.page-content .gform_wrapper form ul.right_label li,
+.page-content .gform_wrapper ul.left_label li,
+.page-content .gform_wrapper form ul.left_label li {
 	margin-bottom: 14px;
 }
 
-.gform_wrapper ul.right_label li ul.gfield_radio li,
-.gform_wrapper form ul.right_label li ul.gfield_radio li,
-.gform_wrapper ul.left_label li ul.gfield_radio li,
-.gform_wrapper form ul.left_label li ul.gfield_radio li,
-.gform_wrapper ul.right_label li ul.gfield_checkbox li,
-.gform_wrapper form ul.right_label li ul.gfield_checkbox li,
-.gform_wrapper ul.left_label li ul.gfield_checkbox li,
-.gform_wrapper form ul.left_label li ul.gfield_checkbox li {
+.page-content .gform_wrapper ul.right_label li ul.gfield_radio li,
+.page-content .gform_wrapper form ul.right_label li ul.gfield_radio li,
+.page-content .gform_wrapper ul.left_label li ul.gfield_radio li,
+.page-content .gform_wrapper form ul.left_label li ul.gfield_radio li,
+.page-content .gform_wrapper ul.right_label li ul.gfield_checkbox li,
+.page-content .gform_wrapper form ul.right_label li ul.gfield_checkbox li,
+.page-content .gform_wrapper ul.left_label li ul.gfield_checkbox li,
+.page-content .gform_wrapper form ul.left_label li ul.gfield_checkbox li {
 	margin-bottom: 10px;
 }
 
-.gform_wrapper ul li:before,
-.gform_wrapper ul li:after,
-.gform_wrapper ul.gform_fields {
+.page-content .gform_wrapper ul li:before,
+.page-content .gform_wrapper ul li:after,
+.page-content .gform_wrapper ul.gform_fields {
 	padding: 0;
 	margin: 0;
 	overflow: visible;
 }
 
-.gform_wrapper select {
+.page-content .gform_wrapper select {
 	font-size: 11px;
 	font-family: inherit;
 	padding: 5px 0 5px 0;
 	letter-spacing: normal;
 }
 
-.gform_wrapper select option {
+.page-content .gform_wrapper select option {
 	padding: 2px 2px;
 	display: block;
 }
 
-.gform_wrapper .inline {
+.page-content .gform_wrapper .inline {
 	display: inline !important;
 }
 
-.gform_wrapper .gform_heading {
+.page-content .gform_wrapper .gform_heading {
 	width: 98%;
 	margin-bottom: 18px;
 }
 
-.gform_wrapper .gfield_time_hour,
-.gform_wrapper .gfield_time_minute,
-.gform_wrapper .gfield_date_month,
-.gform_wrapper .gfield_date_day,
-.gform_wrapper .gfield_date_year {
+.page-content .gform_wrapper .gfield_time_hour,
+.page-content .gform_wrapper .gfield_time_minute,
+.page-content .gform_wrapper .gfield_date_month,
+.page-content .gform_wrapper .gfield_date_day,
+.page-content .gform_wrapper .gfield_date_year {
 	width: 70px;
 	vertical-align: top;
 	display: -moz-inline-stack;
@@ -163,183 +163,183 @@ html>body .entry ul,
 	zoom: 1;
 }
 
-.gform_wrapper .gfield_date_month,
-.gform_wrapper .gfield_date_day,
-.gform_wrapper .gfield_date_year {
+.page-content .gform_wrapper .gfield_date_month,
+.page-content .gform_wrapper .gfield_date_day,
+.page-content .gform_wrapper .gfield_date_year {
 	margin-right: 12px;
 }
 
-.gform_wrapper .gfield_date_dropdown_month,
-.gform_wrapper .gfield_date_dropdown_day,
-.gform_wrapper .gfield_date_dropdown_year {
+.page-content .gform_wrapper .gfield_date_dropdown_month,
+.page-content .gform_wrapper .gfield_date_dropdown_day,
+.page-content .gform_wrapper .gfield_date_dropdown_year {
 	vertical-align: top;
 	display: -moz-inline-stack;
 	display: inline-block;
 	zoom: 1;
 }
 
-.gform_wrapper .gfield_date_dropdown_month,
-.gform_wrapper .gfield_date_dropdown_day,
-.gform_wrapper .gfield_date_dropdown_year {
+.page-content .gform_wrapper .gfield_date_dropdown_month,
+.page-content .gform_wrapper .gfield_date_dropdown_day,
+.page-content .gform_wrapper .gfield_date_dropdown_year {
 	margin-right: 6px;
 }
 
-.gform_wrapper .gfield_time_ampm {
+.page-content .gform_wrapper .gfield_time_ampm {
 	vertical-align: top;
 	display: -moz-inline-stack;
 	display: inline-block;
 	zoom: 1;
 }
 
-.gform_wrapper .gfield_time_ampm select {
+.page-content .gform_wrapper .gfield_time_ampm select {
 	width: 60px !important;
 }
 
-.gform_wrapper .gfield_time_hour input,
-.gform_wrapper .gfield_time_minute input,
-.gform_wrapper .gfield_date_month input,
-.gform_wrapper .gfield_date_day input,
-.gform_wrapper .gfield_date_year input {
+.page-content .gform_wrapper .gfield_time_hour input,
+.page-content .gform_wrapper .gfield_time_minute input,
+.page-content .gform_wrapper .gfield_date_month input,
+.page-content .gform_wrapper .gfield_date_day input,
+.page-content .gform_wrapper .gfield_date_year input {
 	width: 70% !important;
 }
 
-.gform_wrapper .gfield_date_month,
-.gform_wrapper .gfield_date_day,
-.gform_wrapper .gfield_date_year {
+.page-content .gform_wrapper .gfield_date_month,
+.page-content .gform_wrapper .gfield_date_day,
+.page-content .gform_wrapper .gfield_date_year {
 	width: 50px;
 	float: left;
 }
 
-.gform_wrapper .gfield_date_month input,
-.gform_wrapper .gfield_date_day input,
-.gform_wrapper .gfield_date_year input {
+.page-content .gform_wrapper .gfield_date_month input,
+.page-content .gform_wrapper .gfield_date_day input,
+.page-content .gform_wrapper .gfield_date_year input {
 	width: 85% !important;
 }
 
-.gform_wrapper .field_hover {
+.page-content .gform_wrapper .field_hover {
 	border: 1px dashed #2175A9;
 	cursor: pointer;
 }
 
-.gform_wrapper .field_selected {
+.page-content .gform_wrapper .field_selected {
 	background-color: #DFEFFF;
 	border: 1px solid #C2D7EF;
 }
 
-.gform_wrapper .field_name_first,
-.gform_wrapper .field_name_last {
+.page-content .gform_wrapper .field_name_first,
+.page-content .gform_wrapper .field_name_last {
 	width: 50%;
 	float: left;
 }
 
-.gform_wrapper .ginput_complex {
+.page-content .gform_wrapper .ginput_complex {
 	overflow: hidden;
 }
 
-.gform_wrapper .ginput_left input:focus+label,
-.gform_wrapper .ginput_right input:focus+label,
-.gform_wrapper .ginput_full input:focus+label {
+.page-content .gform_wrapper .ginput_left input:focus+label,
+.page-content .gform_wrapper .ginput_right input:focus+label,
+.page-content .gform_wrapper .ginput_full input:focus+label {
 	font-weight: bold;
 }
 
-.gform_wrapper .field_name_first input,
-.gform_wrapper .ginput_complex .ginput_left input {
+.page-content .gform_wrapper .field_name_first input,
+.page-content .gform_wrapper .ginput_complex .ginput_left input {
 	width: 95% !important;
 }
 
-.gform_wrapper .field_name_last input {
+.page-content .gform_wrapper .field_name_last input {
 	width: 93% !important;
 }
 
-.gform_wrapper .datepicker {
+.page-content .gform_wrapper .datepicker {
 	width: 100px !important;
 }
 
-.gform_wrapper .ginput_complex .ginput_left  {
+.page-content .gform_wrapper .ginput_complex .ginput_left  {
 	width: 50%;
 	float: left;
 }
 
-.gform_wrapper .ginput_complex .ginput_right {
+.page-content .gform_wrapper .ginput_complex .ginput_right {
 	width: 49%;
 	float: right;
 }
 
-.gform_wrapper .gfield_error .ginput_complex .ginput_left,
-.gform_wrapper .gfield_error .ginput_complex .ginput_right {
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_left,
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_right {
 	width: 50%;
 }
 
-.gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=text],
-.gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=url],
-.gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=email],
-.gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=tel],
-.gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=number],
-.gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=password] {
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=text],
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=url],
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=email],
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=tel],
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=number],
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_left input[type=password] {
 	width: 90% !important;
 }
 
-.gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=text],
-.gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=url],
-.gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=email],
-.gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=tel],
-.gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=number],
-.gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=password] {
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=text],
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=url],
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=email],
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=tel],
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=number],
+.page-content .gform_wrapper .gfield_error .ginput_complex .ginput_right input[type=password] {
 	width: 95% !important;
 }
 
-.gform_wrapper .ginput_complex input[type=text],
-.gform_wrapper .ginput_complex input[type=url],
-.gform_wrapper .ginput_complex input[type=email],
-.gform_wrapper .ginput_complex input[type=tel],
-.gform_wrapper .ginput_complex input[type=number],
-.gform_wrapper .ginput_complex input[type=password],
-.gform_wrapper .ginput_complex select {
+.page-content .gform_wrapper .ginput_complex input[type=text],
+.page-content .gform_wrapper .ginput_complex input[type=url],
+.page-content .gform_wrapper .ginput_complex input[type=email],
+.page-content .gform_wrapper .ginput_complex input[type=tel],
+.page-content .gform_wrapper .ginput_complex input[type=number],
+.page-content .gform_wrapper .ginput_complex input[type=password],
+.page-content .gform_wrapper .ginput_complex select {
 	width: 95% !important;
 }
 
-.gform_wrapper .ginput_complex .ginput_right input[type=text],
-.gform_wrapper .ginput_complex .ginput_right input[type=url],
-.gform_wrapper .ginput_complex .ginput_right input[type=email],
-.gform_wrapper .ginput_complex .ginput_right input[type=tel],
-.gform_wrapper .ginput_complex .ginput_right input[type=number],
-.gform_wrapper .ginput_complex .ginput_right input[type=password],
-.gform_wrapper .ginput_complex .ginput_right select {
+.page-content .gform_wrapper .ginput_complex .ginput_right input[type=text],
+.page-content .gform_wrapper .ginput_complex .ginput_right input[type=url],
+.page-content .gform_wrapper .ginput_complex .ginput_right input[type=email],
+.page-content .gform_wrapper .ginput_complex .ginput_right input[type=tel],
+.page-content .gform_wrapper .ginput_complex .ginput_right input[type=number],
+.page-content .gform_wrapper .ginput_complex .ginput_right input[type=password],
+.page-content .gform_wrapper .ginput_complex .ginput_right select {
 	width: 95% !important;
 }
 
-.gform_wrapper .ginput_complex label,
-.gform_wrapper .gfield_time_hour label,
-.gform_wrapper .gfield_time_minute label,
-.gform_wrapper .gfield_date_month label,
-.gform_wrapper .gfield_date_day label,
-.gform_wrapper .gfield_date_year label,
-.gform_wrapper .instruction {
+.page-content .gform_wrapper .ginput_complex label,
+.page-content .gform_wrapper .gfield_time_hour label,
+.page-content .gform_wrapper .gfield_time_minute label,
+.page-content .gform_wrapper .gfield_date_month label,
+.page-content .gform_wrapper .gfield_date_day label,
+.page-content .gform_wrapper .gfield_date_year label,
+.page-content .gform_wrapper .instruction {
 	display: block;
 	margin: 3px 0;
 	font-size: 11px;
 	letter-spacing: 0.5pt;
 }
 
-.gform_wrapper .ginput_complex .name_prefix {
+.page-content .gform_wrapper .ginput_complex .name_prefix {
 	float: left;
 	width: 30px !important;
 	margin-right: 14px;
 }
 
-.gform_wrapper .ginput_complex .name_suffix {
+.page-content .gform_wrapper .ginput_complex .name_suffix {
 	float: left;
 	width: 30px !important;
 }
 
-.gform_wrapper .ginput_complex .name_first,
-.gform_wrapper .ginput_complex .name_last {
+.page-content .gform_wrapper .ginput_complex .name_first,
+.page-content .gform_wrapper .ginput_complex .name_last {
 	float: left;
 	width: 100px;
 	margin-right: 8px;
 }
 
-.gform_wrapper .top_label .gfield_label {
+.page-content .gform_wrapper .top_label .gfield_label {
 	margin: 10px 0 4px 0;
 	font-weight: bold;
 	display: -moz-inline-stack;
@@ -348,14 +348,14 @@ html>body .entry ul,
 	clear: both;
 }
 
-.gform_wrapper .left_label .gfield_label {
+.page-content .gform_wrapper .left_label .gfield_label {
 	float: left;
 	margin: 0 15px 0 0;
 	width: 29%;
 	font-weight: bold;
 }
 
-.gform_wrapper .right_label .gfield_label {
+.page-content .gform_wrapper .right_label .gfield_label {
 	float: left;
 	margin: 0 15px 0 0;
 	width: 29%;
@@ -363,117 +363,117 @@ html>body .entry ul,
 	text-align: right;
 }
 
-.gform_wrapper .left_label ul.gfield_checkbox,
-.gform_wrapper .right_label ul.gfield_checkbox,
-.gform_wrapper .left_label ul.gfield_radio,
-.gform_wrapper .right_label ul.gfield_radio {
+.page-content .gform_wrapper .left_label ul.gfield_checkbox,
+.page-content .gform_wrapper .right_label ul.gfield_checkbox,
+.page-content .gform_wrapper .left_label ul.gfield_radio,
+.page-content .gform_wrapper .right_label ul.gfield_radio {
 	margin-left: 32%;
 	overflow: hidden;
 }
 
-.gform_wrapper .top_label input.small,
-.gform_wrapper .top_label select.small {
+.page-content .gform_wrapper .top_label input.small,
+.page-content .gform_wrapper .top_label select.small {
 	width: 25%;
 }
 
-.gform_wrapper .top_label input.medium,
-.gform_wrapper .top_label select.medium {
+.page-content .gform_wrapper .top_label input.medium,
+.page-content .gform_wrapper .top_label select.medium {
 	width: 47%;
 }
 
-.gform_wrapper .top_label input.medium {
+.page-content .gform_wrapper .top_label input.medium {
 	padding-right: 2px;
 }
 
-.gform_wrapper .top_label input.large,
-.gform_wrapper .top_label select.large,
-.gform_wrapper .top_label textarea.textarea {
+.page-content .gform_wrapper .top_label input.large,
+.page-content .gform_wrapper .top_label select.large,
+.page-content .gform_wrapper .top_label textarea.textarea {
 	width: 99.2%;
 }
 
-.gform_wrapper .right_label input.small,
-.gform_wrapper .right_label select.small,
-.gform_wrapper .left_label input.small,
-.gform_wrapper .left_label select.small {
+.page-content .gform_wrapper .right_label input.small,
+.page-content .gform_wrapper .right_label select.small,
+.page-content .gform_wrapper .left_label input.small,
+.page-content .gform_wrapper .left_label select.small {
 	width: 15%;
 }
 
-.gform_wrapper .right_label input.medium,
-.gform_wrapper .right_label select.medium,
-.gform_wrapper .left_label input.medium,
-.gform_wrapper .left_label select.medium {
+.page-content .gform_wrapper .right_label input.medium,
+.page-content .gform_wrapper .right_label select.medium,
+.page-content .gform_wrapper .left_label input.medium,
+.page-content .gform_wrapper .left_label select.medium {
 	width: 35%;
 }
 
-.gform_wrapper .right_label input.large,
-.gform_wrapper .right_label select.large,
-.gform_wrapper .left_label input.large,
-.gform_wrapper .left_label select.large,
-.gform_wrapper textarea.textarea {
+.page-content .gform_wrapper .right_label input.large,
+.page-content .gform_wrapper .right_label select.large,
+.page-content .gform_wrapper .left_label input.large,
+.page-content .gform_wrapper .left_label select.large,
+.page-content .gform_wrapper textarea.textarea {
 	width: 63%;
 }
 
-.gform_wrapper .right_label div.ginput_complex,
-.gform_wrapper .left_label div.ginput_complex {
+.page-content .gform_wrapper .right_label div.ginput_complex,
+.page-content .gform_wrapper .left_label div.ginput_complex {
 	width: 64%;
 }
 
-.gform_wrapper h2.gsection_title {
+.page-content .gform_wrapper h2.gsection_title {
 	margin: 0 !important;
 	padding: 0 !important;
 	letter-spacing: normal !important;
 }
 
-.gform_wrapper .gsection .gfield_label,
-.gform_wrapper h2.gsection_title,
-.gform_wrapper h3.gform_title {
+.page-content .gform_wrapper .gsection .gfield_label,
+.page-content .gform_wrapper h2.gsection_title,
+.page-content .gform_wrapper h3.gform_title {
 	font-weight: bold;
 	font-size: 1.3em;
 }
 
-.gform_wrapper h3.gform_title {
+.page-content .gform_wrapper h3.gform_title {
 	letter-spacing: normal !important;
 	margin: 10px 0 6px 0;
 }
 
-.gform_wrapper span.gform_description {
+.page-content .gform_wrapper span.gform_description {
 	font-weight: normal;
 }
 
-.gform_wrapper h2.gsection_title,
-.gform_wrapper .gsection_description,
-.gform_wrapper h3.gform_title {
+.page-content .gform_wrapper h2.gsection_title,
+.page-content .gform_wrapper .gsection_description,
+.page-content .gform_wrapper h3.gform_title {
 	width: 98%;
 }
 
-.gform_wrapper .gsection {
+.page-content .gform_wrapper .gsection {
 	border-bottom: 1px dotted #CCC;
 	padding: 0 0 8px 0;
 	margin: 16px 0;
 	clear: both;
 }
 
-.gform_wrapper ul.gfield_checkbox li input[type=checkbox],
-.gform_wrapper ul.gfield_radio li input[type=radio] {
+.page-content .gform_wrapper ul.gfield_checkbox li input[type=checkbox],
+.page-content .gform_wrapper ul.gfield_radio li input[type=radio] {
 	width: auto !important;
 }
 
 /* radio and checkbox styling - justifies lenghty labels ------------------------------------------------------*/
 
 
-.gform_wrapper .gfield_checkbox li,
-.gform_wrapper .gfield_radio li {
+.page-content .gform_wrapper .gfield_checkbox li,
+.page-content .gform_wrapper .gfield_radio li {
 	position: relative;
 }
 
-.gform_wrapper ul.gfield_checkbox,
-.gform_wrapper ul.gfield_radio {
+.page-content .gform_wrapper ul.gfield_checkbox,
+.page-content .gform_wrapper ul.gfield_radio {
 	margin: 6px 0;
 	padding: 0;
 }
 
-.gform_wrapper .gfield_checkbox li label,
-.gform_wrapper .gfield_radio li label {
+.page-content .gform_wrapper .gfield_checkbox li label,
+.page-content .gform_wrapper .gfield_radio li label {
 	display: block;
 	margin: 0 0 0 24px;
 	padding: 0;
@@ -482,17 +482,17 @@ html>body .entry ul,
 	vertical-align: top;
 }
 
-.gform_wrapper .gfield_checkbox li input[type=checkbox],
-.gform_wrapper .gfield_radio li input[type=radio],
-.gform_wrapper .gfield_checkbox li input {
+.page-content .gform_wrapper .gfield_checkbox li input[type=checkbox],
+.page-content .gform_wrapper .gfield_radio li input[type=radio],
+.page-content .gform_wrapper .gfield_checkbox li input {
 	float: left;
 	margin-top: 2px;
 }
 
-.gform_wrapper .description,
-.gform_wrapper .gfield_description,
-.gform_wrapper .gsection_description,
-.gform_wrapper .instruction {
+.page-content .gform_wrapper .description,
+.page-content .gform_wrapper .gfield_description,
+.page-content .gform_wrapper .gsection_description,
+.page-content .gform_wrapper .instruction {
 	font-size: 0.85em;
 	line-height: 1.5em;
 	clear: both;
@@ -500,23 +500,23 @@ html>body .entry ul,
 	letter-spacing: normal;
 }
 
-.gform_wrapper .description,
-.gform_wrapper .gfield_description,
-.gform_wrapper .gsection_description {
+.page-content .gform_wrapper .description,
+.page-content .gform_wrapper .gfield_description,
+.page-content .gform_wrapper .gsection_description {
 	padding: 4px 0 8px 0;
 }
 
-.gform_wrapper .gfield_description {
+.page-content .gform_wrapper .gfield_description {
 	padding: 10px 0 0 0;
 	width: 99.8%;
 }
 
-.gform_wrapper .left_label .gfield_description,
-.gform_wrapper .right_label .gfield_description {
+.page-content .gform_wrapper .left_label .gfield_description,
+.page-content .gform_wrapper .right_label .gfield_description {
 	width: 63%;
 }
 
-.gform_wrapper .description_above .gfield_description {
+.page-content .gform_wrapper .description_above .gfield_description {
 	padding: 0 0 10px 0;
 }
 
@@ -524,40 +524,40 @@ html>body .entry ul,
 	padding: 0;
 }
 
-.gform_wrapper .right_label .gfield_description,
-.gform_wrapper .left_label .gfield_description,
-.gform_wrapper .left_label .instruction,
-.gform_wrapper .right_label .instruction {
+.page-content .gform_wrapper .right_label .gfield_description,
+.page-content .gform_wrapper .left_label .gfield_description,
+.page-content .gform_wrapper .left_label .instruction,
+.page-content .gform_wrapper .right_label .instruction {
 	margin-left: 31%;
 }
 
-.gform_wrapper .left_label .gsection .gsection_description,
-.gform_wrapper .right_label .gsection .gsection_description {
+.page-content .gform_wrapper .left_label .gsection .gsection_description,
+.page-content .gform_wrapper .right_label .gsection .gsection_description {
 	margin-left: 0;
 	padding-top: 4px;
 	padding-left: 0;
 	line-height: 1.5em;
 }
 
-.gform_wrapper .gfield_required {
+.page-content .gform_wrapper .gfield_required {
 	color: #790000;
 	margin-left: 4px;
 }
 
-.gform_wrapper textarea.small {
+.page-content .gform_wrapper textarea.small {
 	height: 80px;
 }
 
-.gform_wrapper textarea.medium {
+.page-content .gform_wrapper textarea.medium {
 	height: 150px;
 }
 
-.gform_wrapper textarea.large {
+.page-content .gform_wrapper textarea.large {
 	height: 250px;
 }
 
-.gform_wrapper li.gfield.gfield_error,
-.gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
+.page-content .gform_wrapper li.gfield.gfield_error,
+.page-content .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
 	background-color: #FFDFE0;
 	margin-bottom: 6px !important;
 	padding: 6px 6px 4px 6px !important;
@@ -565,13 +565,13 @@ html>body .entry ul,
 	border-bottom: 1px solid #C89797;
 }
 
-.gform_wrapper li.gfield.gfield_creditcard_warning {
+.page-content .gform_wrapper li.gfield.gfield_creditcard_warning {
 	margin-bottom: 6px !important;
 	padding: 6px 6px 4px 6px !important;
 	border: 1px dashed #C89797;
 }
 
-.gform_wrapper li.gfield.gfield_creditcard_warning div.gfield_creditcard_warning_message {
+.page-content .gform_wrapper li.gfield.gfield_creditcard_warning div.gfield_creditcard_warning_message {
 	font-size:1em;
 	font-family: "Lucida Grande", "Lucida Sans", "Lucida Sans Unicode", "DejaVu Sans", "Bitstream Vera Sans", "Liberation Sans", Verdana, "Verdana Ref", sans-serif;
 	padding: 10px 20px 10px 45px;
@@ -591,52 +591,52 @@ li.gfield + li.gfield.gfield_creditcard_warning {
 	margin-top: 14px !important;
 }
 
-.gform_wrapper .top_label .gfield_error .ginput_container {
+.page-content .gform_wrapper .top_label .gfield_error .ginput_container {
 	max-width: 99%;
 }
 
-.gform_wrapper .top_label .gfield_error {
+.page-content .gform_wrapper .top_label .gfield_error {
 	width: 97%;
 }
 
-.gform_wrapper .top_label .gfield_error input.large,
-.gform_wrapper .top_label .gfield_error select.large,
-.gform_wrapper .top_label .gfield_error textarea.textarea {
+.page-content .gform_wrapper .top_label .gfield_error input.large,
+.page-content .gform_wrapper .top_label .gfield_error select.large,
+.page-content .gform_wrapper .top_label .gfield_error textarea.textarea {
 	width: 100%;
 }
 
-.gform_wrapper .right_label .gfield_error input.large,
-.gform_wrapper .right_label .gfield_error select.large,
-.gform_wrapper .right_label .gfield_error textarea.textarea,
-.gform_wrapper .left_label .gfield_error input.large,
-.gform_wrapper .left_label .gfield_error select.large,
-.gform_wrapper .left_label .gfield_error textarea.textarea {
+.page-content .gform_wrapper .right_label .gfield_error input.large,
+.page-content .gform_wrapper .right_label .gfield_error select.large,
+.page-content .gform_wrapper .right_label .gfield_error textarea.textarea,
+.page-content .gform_wrapper .left_label .gfield_error input.large,
+.page-content .gform_wrapper .left_label .gfield_error select.large,
+.page-content .gform_wrapper .left_label .gfield_error textarea.textarea {
 	width: 66%;
 }
 
-.gform_wrapper .gfield_error .gfield_label {
+.page-content .gform_wrapper .gfield_error .gfield_label {
 	color: #790000;
 }
 
-.gform_wrapper li.gfield.gfield_error.gfield_contains_required {
+.page-content .gform_wrapper li.gfield.gfield_error.gfield_contains_required {
 	margin-top: 12px;
 	margin-bottom: 12px !important;
 	padding-left: 10px !important;
 }
 
-.gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label,
-.gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container  {
+.page-content .gform_wrapper li.gfield.gfield_error.gfield_contains_required label.gfield_label,
+.page-content .gform_wrapper li.gfield.gfield_error.gfield_contains_required div.ginput_container  {
 	margin-top: 12px;
 }
 
-.gform_wrapper div.validation_error {
+.page-content .gform_wrapper div.validation_error {
 	color: #790000;
 	font-size: 1.2em;
 	font-weight: bold;
 	margin-bottom: 1.6em;
 }
 
-.gform_wrapper div.validation_error {
+.page-content .gform_wrapper div.validation_error {
 	color: #790000;
 	font-size: 1.2em;
 	font-weight: bold;
@@ -646,7 +646,7 @@ div.gf_page_steps+div.validation_error {
 	margin-top: 16px;
 }
 
-.gform_wrapper div.gfield_description.validation_error {
+.page-content .gform_wrapper div.gfield_description.validation_error {
 	color: #790000;
 	font-weight: bold;
 	font-size: 14px;
@@ -654,80 +654,80 @@ div.gf_page_steps+div.validation_error {
 	margin-bottom: 16px;
 }
 
-.gform_wrapper .validation_message {
+.page-content .gform_wrapper .validation_message {
 	color: #790000;
 	font-weight: bold;
 	letter-spacing: normal;
 }
 
-.gform_wrapper li.gfield_error input[type=text],
-.gform_wrapper li.gfield_error input[type=url],
-.gform_wrapper li.gfield_error input[type=email],
-.gform_wrapper li.gfield_error input[type=tel],
-.gform_wrapper li.gfield_error input[type=number],
-.gform_wrapper li.gfield_error input[type=password],
-.gform_wrapper li.gfield_error textarea {
+.page-content .gform_wrapper li.gfield_error input[type=text],
+.page-content .gform_wrapper li.gfield_error input[type=url],
+.page-content .gform_wrapper li.gfield_error input[type=email],
+.page-content .gform_wrapper li.gfield_error input[type=tel],
+.page-content .gform_wrapper li.gfield_error input[type=number],
+.page-content .gform_wrapper li.gfield_error input[type=password],
+.page-content .gform_wrapper li.gfield_error textarea {
 	border: 1px solid #790000;
 }
 
-.gform_wrapper li.gfield_error div.ginput_complex.ginput_container label,
-.gform_wrapper li.gfield_error ul.gfield_checkbox,
-.gform_wrapper li.gfield_error ul.gfield_radio {
+.page-content .gform_wrapper li.gfield_error div.ginput_complex.ginput_container label,
+.page-content .gform_wrapper li.gfield_error ul.gfield_checkbox,
+.page-content .gform_wrapper li.gfield_error ul.gfield_radio {
 	color: #790000;
 }
 
-.gform_wrapper .gform_footer {
+.page-content .gform_wrapper .gform_footer {
 	padding: 16px 0 10px 0;
 	margin: 16px 0 0 0;
 	clear: both;
 }
 
-.gform_wrapper .gform_footer.right_label,
-.gform_wrapper .gform_footer.left_label {
+.page-content .gform_wrapper .gform_footer.right_label,
+.page-content .gform_wrapper .gform_footer.left_label {
 	padding: 16px 0 10px 31%;
 }
 
-.gform_wrapper .gform_footer input.button,
-.gform_wrapper .gform_footer input[type=submit] {
+.page-content .gform_wrapper .gform_footer input.button,
+.page-content .gform_wrapper .gform_footer input[type=submit] {
 	font-size: 1em;
 }
 
-.gform_wrapper .gform_footer input[type=image] {
+.page-content .gform_wrapper .gform_footer input[type=image] {
 	padding: 0;
 	width: auto !important;
 	background: none !important;
 	border: none !important;
 }
 
-.gform_wrapper .ginput_complex .ginput_left,
-.gform_wrapper .ginput_complex .ginput_right,
-.gform_wrapper .ginput_complex .ginput_full {
+.page-content .gform_wrapper .ginput_complex .ginput_left,
+.page-content .gform_wrapper .ginput_complex .ginput_right,
+.page-content .gform_wrapper .ginput_complex .ginput_full {
 	min-height: 43px;
 	display: block;
 	overflow: hidden;
 }
 
-.gform_wrapper .ginput_complex .ginput_full input[type=text],
-.gform_wrapper .ginput_complex .ginput_full input[type=url],
-.gform_wrapper .ginput_complex .ginput_full input[type=email],
-.gform_wrapper .ginput_complex .ginput_full input[type=tel],
-.gform_wrapper .ginput_complex .ginput_full input[type=number],
-.gform_wrapper .ginput_complex .ginput_full input[type=password] {
+.page-content .gform_wrapper .ginput_complex .ginput_full input[type=text],
+.page-content .gform_wrapper .ginput_complex .ginput_full input[type=url],
+.page-content .gform_wrapper .ginput_complex .ginput_full input[type=email],
+.page-content .gform_wrapper .ginput_complex .ginput_full input[type=tel],
+.page-content .gform_wrapper .ginput_complex .ginput_full input[type=number],
+.page-content .gform_wrapper .ginput_complex .ginput_full input[type=password] {
 	width: 97% !important;
 }
 
-.gform_wrapper .gfield_checkbox li,
-.gform_wrapper .gfield_radio li {
+.page-content .gform_wrapper .gfield_checkbox li,
+.page-content .gform_wrapper .gfield_radio li {
 	margin: 0 0 8px 0;
 	line-height: 1.3em;
 }
 
-.gform_wrapper ul.gfield_radio li input[type="radio"]:checked+label,
-.gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked+label {
+.page-content .gform_wrapper ul.gfield_radio li input[type="radio"]:checked+label,
+.page-content .gform_wrapper ul.gfield_checkbox li input[type="checkbox"]:checked+label {
     font-weight: bold;
 }
 
-.gform_wrapper input.datepicker.datepicker_with_icon {
+.page-content .gform_wrapper input.datepicker.datepicker_with_icon {
 	margin-right: 4px !important;
 	display: -moz-inline-stack;
 	display: inline-block;
@@ -737,75 +737,75 @@ div.gf_page_steps+div.validation_error {
 /* tame those pesky hidden fields ------------------------------------------------------*/
 
 
-.gform_wrapper input[type=hidden],
-.gform_wrapper input.gform_hidden,
-.gform_wrapper .gform_hidden,
-.gform_wrapper .gf_hidden {
+.page-content .gform_wrapper input[type=hidden],
+.page-content .gform_wrapper input.gform_hidden,
+.page-content .gform_wrapper .gform_hidden,
+.page-content .gform_wrapper .gf_hidden {
 	display: none !important;
 	max-height: 1px !important;
 	overflow: hidden;
 }
 
-.gform_wrapper .ginput_full br,
-.gform_wrapper .ginput_left br,
-.gform_wrapper .ginput_right br {
+.page-content .gform_wrapper .ginput_full br,
+.page-content .gform_wrapper .ginput_left br,
+.page-content .gform_wrapper .ginput_right br {
 	display: none !important;
 }
 
 /* additional spacing and padding tweaks ------------------------------------------------------*/
 
 
-.gform_wrapper ul.gfield_checkbox li,
-.gform_wrapper ul.gfield_radio li {
+.page-content .gform_wrapper ul.gfield_checkbox li,
+.page-content .gform_wrapper ul.gfield_radio li {
 	padding: 0 !important;
 }
 
-.gform_wrapper ul.gfield_radio li input+input {
+.page-content .gform_wrapper ul.gfield_radio li input+input {
 	margin-left: 4px;
 }
 
-.gform_wrapper ul.gfield_radio li input[value=gf_other_choice] {
+.page-content .gform_wrapper ul.gfield_radio li input[value=gf_other_choice] {
 	margin-right: 6px;
 	margin-top: 4px;
 }
 
-.gform_wrapper .top_label .gfield_description, {
+.page-content .gform_wrapper .top_label .gfield_description, {
 	padding: 10px 0 0 0;
 }
 
-.gform_wrapper .top_label .gfield_description.validation_message,
-.gform_wrapper .gfield_description.validation_message {
+.page-content .gform_wrapper .top_label .gfield_description.validation_message,
+.page-content .gform_wrapper .gfield_description.validation_message {
 	padding: 10px 0 !important;
 }
 
-.gform_wrapper .ginput_container + .gfield_description.validation_message {
+.page-content .gform_wrapper .ginput_container + .gfield_description.validation_message {
 	margin-top: 6px;
 }
 
-.gform_wrapper .gfield_description + .gform_wrapper .gfield_description.validation_message {
+.page-content .gform_wrapper .gfield_description + .page-content .gform_wrapper .gfield_description.validation_message {
 	margin-top: 6px;
 }
 
-.gform_wrapper .ginput_container.ginput_list + .gfield_description.validation_message {
+.page-content .gform_wrapper .ginput_container.ginput_list + .gfield_description.validation_message {
 	margin-top: 0;
 }
 
 /* HTML field default margins -----------------------------------------------------*/
 
 
-.gform_wrapper .left_label li.gfield_html_formatted,
-.gform_wrapper .right_label li.gfield_html_formatted {
+.page-content .gform_wrapper .left_label li.gfield_html_formatted,
+.page-content .gform_wrapper .right_label li.gfield_html_formatted {
 	margin-left: 32%;
 }
 
-.gform_wrapper .gfield_html.gfield_no_follows_desc {
+.page-content .gform_wrapper .gfield_html.gfield_no_follows_desc {
 	margin-top: 10px;
 }
 
 /* ajax forms ------------------------------------------------------*/
 
 
-.gform_wrapper .gform_ajax_spinner {
+.page-content .gform_wrapper .gform_ajax_spinner {
 	padding-left: 10px;
 }
 
@@ -813,10 +813,10 @@ div.gf_page_steps+div.validation_error {
 
 
 .gform_validation_container,
-.gform_wrapper .gform_validation_container,
-body .gform_wrapper li.gform_validation_container,
-body .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container,
-body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
+.page-content .gform_wrapper .gform_validation_container,
+body .page-content .gform_wrapper li.gform_validation_container,
+body .page-content .gform_wrapper .gform_body ul.gform_fields li.gfield.gform_validation_container,
+body .page-content .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 	display: none !important;
 	position: absolute !important;
 	left: -9000px;
@@ -825,32 +825,32 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 /* Really Simple Captcha ------------------------------------------------------*/
 
 
-.gform_wrapper .gfield_captcha_input_container {
+.page-content .gform_wrapper .gfield_captcha_input_container {
 	padding-top: 3px;
 }
 
-.gform_wrapper .simple_captcha_small input {
+.page-content .gform_wrapper .simple_captcha_small input {
 	width: 100px;
 }
 
-.gform_wrapper .simple_captcha_medium input {
+.page-content .gform_wrapper .simple_captcha_medium input {
 	width: 150px;
 }
 
-.gform_wrapper .simple_captcha_large input {
+.page-content .gform_wrapper .simple_captcha_large input {
 	width: 200px;
 }
 
-.gform_wrapper .gform_wrapper .left_label .simple_captcha_small,
-.gform_wrapper .right_label .simple_captcha_small,
-.gform_wrapper .left_label .simple_captcha_medium,
-.gform_wrapper .right_label .simple_captcha_medium,
-.gform_wrapper .left_label .simple_captcha_large,
-.gform_wrapper .right_label .simple_captcha_large {
+.page-content .gform_wrapper .page-content .gform_wrapper .left_label .simple_captcha_small,
+.page-content .gform_wrapper .right_label .simple_captcha_small,
+.page-content .gform_wrapper .left_label .simple_captcha_medium,
+.page-content .gform_wrapper .right_label .simple_captcha_medium,
+.page-content .gform_wrapper .left_label .simple_captcha_large,
+.page-content .gform_wrapper .right_label .simple_captcha_large {
 	margin-left: 32%;
 }
 
-.gform_wrapper .gfield_captcha_container img.gfield_captcha {
+.page-content .gform_wrapper .gfield_captcha_container img.gfield_captcha {
 	border: none !important;
 	background: none !important;
 	float: none !important;
@@ -861,31 +861,31 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 /* math challenge ------------------------------------------------------*/
 
 
-.gform_wrapper .math_small input {
+.page-content .gform_wrapper .math_small input {
 	width: 69px;
 }
 
-.gform_wrapper .math_medium input {
+.page-content .gform_wrapper .math_medium input {
 	width: 90px;
 }
 
-.gform_wrapper .math_large input {
+.page-content .gform_wrapper .math_large input {
 	width: 108px;
 }
 
-.gform_wrapper .left_label .math_small,
-.gform_wrapper .right_label .math_small,
-.gform_wrapper .left_label .math_medium,
-.gform_wrapper .right_label .math_medium,
-.gform_wrapper .left_label .math_large,
-.gform_wrapper .right_label .math_large {
+.page-content .gform_wrapper .left_label .math_small,
+.page-content .gform_wrapper .right_label .math_small,
+.page-content .gform_wrapper .left_label .math_medium,
+.page-content .gform_wrapper .right_label .math_medium,
+.page-content .gform_wrapper .left_label .math_large,
+.page-content .gform_wrapper .right_label .math_large {
 	margin-left: 32%;
 }
 
 /* textarea character counter ------------------------------------------------------*/
 
 
-.gform_wrapper div.charleft {
+.page-content .gform_wrapper div.charleft {
 	font-size: 11px;
 	margin-top: 4px;
 	color: #B7B7B7;
@@ -893,20 +893,20 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 	white-space: nowrap !important;
 }
 
-.gform_wrapper div.charleft[style] {
+.page-content .gform_wrapper div.charleft[style] {
 	width: 92% !important;
 }
 
-.gform_wrapper .left_label div.charleft,
-.gform_wrapper .right_label div.charleft {
+.page-content .gform_wrapper .left_label div.charleft,
+.page-content .gform_wrapper .right_label div.charleft {
 	margin-left: 32%;
 }
 
-.gform_wrapper div.charleft.warningTextareaInfo {
+.page-content .gform_wrapper div.charleft.warningTextareaInfo {
 	color: #A1A1A1;
 }
 
-.gform_wrapper li.gf_hide_charleft div.charleft  {
+.page-content .gform_wrapper li.gf_hide_charleft div.charleft  {
 	display: none !important;
 }
 
@@ -920,56 +920,56 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 /* pricing fields ------------------------------------------------------*/
 
 
-.gform_wrapper .ginput_price {
+.page-content .gform_wrapper .ginput_price {
 	filter: alpha(opacity=70);
 	-moz-opacity: 0.7;
 	-khtml-opacity: 0.7;
 	opacity: 0.7;
 }
 
-.gform_wrapper span.ginput_total {
+.page-content .gform_wrapper span.ginput_total {
 	color: #060;
 	font-size: 1.2em;
 }
 
-.gform_wrapper .top_label span.ginput_total {
+.page-content .gform_wrapper .top_label span.ginput_total {
 	margin: 8px 0;
 }
 
-.gform_wrapper span.ginput_product_price_label {
+.page-content .gform_wrapper span.ginput_product_price_label {
 	margin-right: 2px;
 }
 
-.gform_wrapper span.ginput_product_price {
+.page-content .gform_wrapper span.ginput_product_price {
 	color: #900
 }
 
-.gform_wrapper span.ginput_quantity_label {
+.page-content .gform_wrapper span.ginput_quantity_label {
 	margin-left: 10px;
 	margin-right: 2px;
 }
 
-.gform_wrapper input.ginput_quantity {
+.page-content .gform_wrapper input.ginput_quantity {
 	width: 40px;
 }
 
 /* multi-page form paging ------------------------------------------------------*/
 
-.gform_wrapper .gform_page_footer {
+.page-content .gform_wrapper .gform_page_footer {
 	margin: 20px 0;
 	width: 99%;
 	border-top: 1px dotted #CCC;
 	padding: 16px 0 0 0;
 }
 
-.gform_wrapper .gform_page_footer .button.gform_button  {
+.page-content .gform_wrapper .gform_page_footer .button.gform_button  {
 	margin-right: 10px;
 }
 
 /* multi-page progress bar  ------------------------------------------------------*/
 
 
-.gform_wrapper .gf_progressbar_wrapper {
+.page-content .gform_wrapper .gf_progressbar_wrapper {
 	clear: both;
 	width: 99%;
 	margin: 0 0 8px 0;
@@ -977,7 +977,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 	border-bottom: 1px dotted #CCC;
 }
 
-.gform_wrapper .gf_progressbar_wrapper h3.gf_progressbar_title {
+.page-content .gform_wrapper .gf_progressbar_wrapper h3.gf_progressbar_title {
 	font-size: 13px;
 	line-height: 1em !important;
 	margin: 0 0 6px 0 !important;
@@ -989,7 +989,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 	opacity: 0.6;
 }
 
-.gform_wrapper .gf_progressbar {
+.page-content .gform_wrapper .gf_progressbar {
 	width: 99%;
 	height: 20px;
 	overflow: hidden;
@@ -1007,7 +1007,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 	box-shadow: 0 0 4px 0 rgba(0,0,0,0.2);
 }
 
-.gform_wrapper .gf_progressbar_percentage {
+.page-content .gform_wrapper .gf_progressbar_percentage {
 	height: 20px;
 	text-align: right;
 	font-family: helvetica,arial,sans-serif;
@@ -1015,7 +1015,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 	text-shadow: 0 1px 1px rgba(0,0,0,0.50);
 }
 
-.gform_wrapper .gf_progressbar_percentage span {
+.page-content .gform_wrapper .gf_progressbar_percentage span {
 	display: block;
 	width: auto;
 	float: right;
@@ -1023,47 +1023,47 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 	margin-left: 5px;
 }
 
-.gform_wrapper .gf_progressbar_percentage.percentbar_0 span {
+.page-content .gform_wrapper .gf_progressbar_percentage.percentbar_0 span {
 	color: #959595;
 	text-shadow: none;
 }
 
-.gform_wrapper .percentbar_blue {
+.page-content .gform_wrapper .percentbar_blue {
 	background-image: url(../images/gf-percentbar-blue.png);
 	background-repeat: repeat-x;
 	background-color: #0072BC;
 	color: #FFF;
 }
 
-.gform_wrapper .percentbar_gray {
+.page-content .gform_wrapper .percentbar_gray {
 	background-image: url(../images/gf-percentbar-gray.png);
 	background-repeat: repeat-x;
 	background-color: #666;
 	color: #FFF;
 }
 
-.gform_wrapper .percentbar_green {
+.page-content .gform_wrapper .percentbar_green {
 	background-image: url(../images/gf-percentbar-green.png);
 	background-repeat: repeat-x;
 	background-color: #94DC21;
 	color: #FFF;
 }
 
-.gform_wrapper .percentbar_orange {
+.page-content .gform_wrapper .percentbar_orange {
 	background-image: url(../images/gf-percentbar-orange.png);
 	background-repeat: repeat-x;
 	background-color: #DC7021;
 	color: #FFF;
 }
 
-.gform_wrapper .percentbar_red {
+.page-content .gform_wrapper .percentbar_red {
 	background-image: url(../images/gf-percentbar-red.png);
 	background-repeat: repeat-x;
 	background-color: #DC2521;
 	color: #FFF;
 }
 
-.gform_wrapper .percentbar_custom {
+.page-content .gform_wrapper .percentbar_custom {
 	background-image: url(../images/gf-percentbar-custom.png);
 	background-repeat: repeat-x;
 }
@@ -1071,14 +1071,14 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 /* multi-page steps ------------------------------------------------------*/
 
 
-.gform_wrapper .gf_page_steps {
+.page-content .gform_wrapper .gf_page_steps {
 	width: 99%;
 	margin: 0 0 8px 0;
 	padding: 0 0 4px 0;
 	border-bottom: 1px dotted #CCC;
 }
 
-.gform_wrapper .gf_step {
+.page-content .gform_wrapper .gf_step {
 	width: auto !important;
 	margin: 0 10px 10px 0;
 	font-size: 14px;
@@ -1094,20 +1094,20 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 	zoom: 1;
 }
 
-.gform_wrapper .gf_step span.gf_step_number {
+.page-content .gform_wrapper .gf_step span.gf_step_number {
 	font-size: 20px;
 	float: left;
 	font-family: arial,sans-serif;
 }
 
-.gform_wrapper .gf_step.gf_step_active {
+.page-content .gform_wrapper .gf_step.gf_step_active {
 	filter: alpha(opacity=100);
 	-moz-opacity: 1.0;
 	-khtml-opacity: 1.0;
 	opacity: 1.0;
 }
 
-.gform_wrapper .gf_step_clear {
+.page-content .gform_wrapper .gf_step_clear {
 	display: block;
 	clear: both;
 	height: 1px;
@@ -1117,7 +1117,7 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 /* password strength indicator -----------------------------------------------------------------*/
 
 
-.gform_wrapper .gfield_password_strength {
+.page-content .gform_wrapper .gfield_password_strength {
 	border: 1px solid #DDD;
 	margin: 0;
 	padding: 3px 5px;
@@ -1126,23 +1126,23 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 	background-color: #EEE;
 }
 
-.gform_wrapper .gfield_password_strength.bad {
+.page-content .gform_wrapper .gfield_password_strength.bad {
 	background-color: #FFB78C;
 	border-color: #FF853C;
 }
 
-.gform_wrapper .gfield_password_strength.good {
+.page-content .gform_wrapper .gfield_password_strength.good {
 	background-color: #FFEC8b;
 	border-color: #FC0;
 }
 
-.gform_wrapper .gfield_password_strength.short,
-.gform_wrapper .gfield_password_strength.mismatch {
+.page-content .gform_wrapper .gfield_password_strength.short,
+.page-content .gform_wrapper .gfield_password_strength.mismatch {
 	background-color: #FFA0A0;
 	border-color: #f04040;
 }
 
-.gform_wrapper .gfield_password_strength.strong {
+.page-content .gform_wrapper .gfield_password_strength.strong {
 	background-color: #C3FF88;
 	border-color: #8DFF1C;
 }
@@ -1150,74 +1150,74 @@ body .gform_wrapper ul.gform_fields li.gfield.gform_validation_container {
 /* reset the default list styles for the HTML blocks -----------------------------------------------------------------*/
 
 
-body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ul li,
-body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul li {
+body .page-content .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ul li,
+body .page-content .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul li {
 	list-style-type: disc !important;
 	margin: 0 0 0.5em;
 	overflow: visible;
 	padding-left: 0;
 }
 
-body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ul,
-body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul {
+body .page-content .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ul,
+body .page-content .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ul {
 	list-style-type: disc !important;
 	margin: 1em 0 1em 1.5em;
 	padding-left: 0;
 }
 
-body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ol li,
-body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ol li {
+body .page-content .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ol li,
+body .page-content .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ol li {
 	list-style-type: decimal!important;
 	overflow:visible;
 	margin: 0 0 0.5em;
 	padding-left: 0;
 }
 
-body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ol,
-body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ol {
+body .page-content .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ol,
+body .page-content .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ol {
 	list-style-type: decimal!important;
 	margin: 1em 0 1.5em 2.0em;
 	padding-left: 0;
 }
 
-body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ol li ul,
-body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ol li ul li {
+body .page-content .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ol li ul,
+body .page-content .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ol li ul li {
     list-style-type: disc !important;
     padding-left: 0;
 }
 
-body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ol li ul {
+body .page-content .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html ol li ul {
 	margin: 1em 0 1em 1.5em;
 }
 
-body .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ol li ul li {
+body .page-content .gform_wrapper form div.gform_body ul.gform_fields li.gfield.gfield_html ol li ul li {
 	margin: 0 0 0.5em;
 }
 
-body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl {
+body .page-content .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl {
 	margin: 0 0 1.5em 0;
 	padding-left: 0;
 }
 
-body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dt {
+body .page-content .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dt {
 	font-weight: bold;
 }
 
-body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
+body .page-content .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	margin: 0 0 1em 1.5em;
 }
 
 /* list fields added in v.1.6 -----------------------------------------------------------------*/
 
 
-.gform_wrapper table.gfield_list,
-.gform_wrapper table.gfield_list caption,
-.gform_wrapper table.gfield_list tbody,
-.gform_wrapper table.gfield_list tfoot,
-.gform_wrapper table.gfield_list thead,
-.gform_wrapper table.gfield_list tr,
-.gform_wrapper table.gfield_list th,
-.gform_wrapper table.gfield_list td {
+.page-content .gform_wrapper table.gfield_list,
+.page-content .gform_wrapper table.gfield_list caption,
+.page-content .gform_wrapper table.gfield_list tbody,
+.page-content .gform_wrapper table.gfield_list tfoot,
+.page-content .gform_wrapper table.gfield_list thead,
+.page-content .gform_wrapper table.gfield_list tr,
+.page-content .gform_wrapper table.gfield_list th,
+.page-content .gform_wrapper table.gfield_list td {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -1226,53 +1226,53 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	vertical-align: baseline;
 }
 
-.gform_wrapper table.gfield_list {
+.page-content .gform_wrapper table.gfield_list {
 	border-spacing: 0;
 	border-collapse:collapse;
 }
 
-.gform_wrapper table.gfield_list thead th {
+.page-content .gform_wrapper table.gfield_list thead th {
 	font-weight: bold;
 	text-align: left;
 }
 
-.gform_wrapper li.gfield.gfield_error table.gfield_list thead th {
+.page-content .gform_wrapper li.gfield.gfield_error table.gfield_list thead th {
 	color: #790000;
 }
 
-.gform_wrapper table.gfield_list thead,
-.gform_wrapper table.gfield_list tr {
+.page-content .gform_wrapper table.gfield_list thead,
+.page-content .gform_wrapper table.gfield_list tr {
 	padding: 0;
 	margin: 0;
 }
 
-.gform_wrapper table.gfield_list th,
-.gform_wrapper table.gfield_list td {
+.page-content .gform_wrapper table.gfield_list th,
+.page-content .gform_wrapper table.gfield_list td {
 	padding:0 0 0.5em 0;
 }
 
-.gform_wrapper table.gfield_list th + th,
-.gform_wrapper table.gfield_list td + td {
+.page-content .gform_wrapper table.gfield_list th + th,
+.page-content .gform_wrapper table.gfield_list td + td {
 	padding:0 0 0.5em 0.7em;
 }
 
-.gform_wrapper .left_label .gfield_list, .gform_wrapper .right_label .gfield_list {
+.page-content .gform_wrapper .left_label .gfield_list, .page-content .gform_wrapper .right_label .gfield_list {
 	width: 64%;
 }
 
-.gform_wrapper .top_label .gfield_list {
+.page-content .gform_wrapper .top_label .gfield_list {
 	width: 99%;
 }
 
-.gform_wrapper .left_label .gf_list_one_column, .gform_wrapper .right_label .gf_list_one_column {
+.page-content .gform_wrapper .left_label .gf_list_one_column, .page-content .gform_wrapper .right_label .gf_list_one_column {
 	width: 45%;
 }
 
-.gform_wrapper .top_label .gf_list_one_column {
+.page-content .gform_wrapper .top_label .gf_list_one_column {
 	width: 46%;
 }
 
-.gform_wrapper .gfield_list input{
+.page-content .gform_wrapper .gfield_list input{
 	width: 98%;
 }
 
@@ -1284,20 +1284,20 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	opacity: 0.6;
 }
 
-.gform_wrapper table.gfield_list td.gfield_list_icons {
+.page-content .gform_wrapper table.gfield_list td.gfield_list_icons {
 	min-width: 45px !important;
 }
 
 /* enhanced UI/select styles added in v.1.6 -----------------------------------------------------------------*/
 
 
-.gform_wrapper select.chzn-select {
+.page-content .gform_wrapper select.chzn-select {
 	visibility: hidden;
 	height: 28px !important;
 	min-height: 28px !important;
 }
 
-.gform_wrapper .chzn-container {
+.page-content .gform_wrapper .chzn-container {
 	font-size: 13px;
 	position: relative;
 	margin-bottom: 4px;
@@ -1305,7 +1305,7 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	zoom: 1;
 }
 
-.gform_wrapper .chzn-container .chzn-drop {
+.page-content .gform_wrapper .chzn-container .chzn-drop {
 	background-color: #FFF;
 	border: 1px solid #AAA;
 	border-top: 0;
@@ -1319,7 +1319,7 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	z-index: 999;
 }
 
-.gform_wrapper .chzn-container-single .chzn-single {
+.page-content .gform_wrapper .chzn-container-single .chzn-single {
 	background-color: #FFF;
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, #EEE), color-stop(0.5, white));
 	background-image: -webkit-linear-gradient(center bottom, #EEE 0%, white 50%);
@@ -1344,7 +1344,7 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	text-decoration: none;
 }
 
-.gform_wrapper .chzn-container-single .chzn-single span {
+.page-content .gform_wrapper .chzn-container-single .chzn-single span {
 	margin-right: 26px;
 	display: block;
 	overflow: hidden;
@@ -1354,7 +1354,7 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	text-overflow: ellipsis;
 }
 
-.gform_wrapper .chzn-container-single .chzn-single div {
+.page-content .gform_wrapper .chzn-container-single .chzn-single div {
 	-webkit-border-radius: 0 4px 4px 0;
 	-moz-border-radius: 0 4px 4px 0;
 	border-radius: 0 4px 4px 0;
@@ -1378,7 +1378,7 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	width: 18px;
 }
 
-.gform_wrapper .chzn-container-single .chzn-single div b {
+.page-content .gform_wrapper .chzn-container-single .chzn-single div b {
 	background-image: url(../images/chosen-sprite.png);
 	background-position:  0 1px;
 	background-repeat: no-repeat;
@@ -1387,13 +1387,13 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	height: 100%;
 }
 
-.gform_wrapper .chzn-container-single .chzn-search {
+.page-content .gform_wrapper .chzn-container-single .chzn-search {
 	padding: 3px 4px;
 	margin: 0;
 	white-space: nowrap;
 }
 
-.gform_wrapper .chzn-container-single .chzn-search input {
+.page-content .gform_wrapper .chzn-container-single .chzn-search input {
 	background: #FFF url(../images/chosen-sprite.png) 100% -20px no-repeat;
 	background: url(../images/chosen-sprite.png) 100% -20px no-repeat, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #EEE));
 	background: url(../images/chosen-sprite.png) 100% -20px no-repeat, -webkit-linear-gradient(center bottom, white 85%, #EEE 99%);
@@ -1410,7 +1410,7 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	font-size: 1em;
 }
 
-.gform_wrapper .chzn-container-single .chzn-drop {
+.page-content .gform_wrapper .chzn-container-single .chzn-drop {
 	-webkit-border-radius: 0 0 4px 4px;
 	-moz-border-radius: 0 0 4px 4px;
 	border-radius: 0 0 4px 4px;
@@ -1419,7 +1419,7 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	background-clip: padding-box;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-choices {
+.page-content .gform_wrapper .chzn-container-multi .chzn-choices {
 	background-color: #FFF;
 	background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #EEE));
 	background-image: -webkit-linear-gradient(center bottom, white 85%, #EEE 99%);
@@ -1437,18 +1437,18 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	height: 1%; position: relative;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-choices li {
+.page-content .gform_wrapper .chzn-container-multi .chzn-choices li {
 	float: left;
 	list-style: none;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-choices .search-field {
+.page-content .gform_wrapper .chzn-container-multi .chzn-choices .search-field {
 	white-space: nowrap;
 	margin: 0;
 	padding: 0;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-choices .search-field input {
+.page-content .gform_wrapper .chzn-container-multi .chzn-choices .search-field input {
 	color: #666;
 	background: transparent !important;
 	border: 0 !important;
@@ -1461,11 +1461,11 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	box-shadow: none;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-choices .search-field .default {
+.page-content .gform_wrapper .chzn-container-multi .chzn-choices .search-field .default {
 	color: #999;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-choices .search-choice {
+.page-content .gform_wrapper .chzn-container-multi .chzn-choices .search-choice {
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
 	border-radius: 3px;
@@ -1488,15 +1488,15 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	position: relative;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-choices .search-choice span {
+.page-content .gform_wrapper .chzn-container-multi .chzn-choices .search-choice span {
 	cursor: default;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-choices .search-choice-focus {
+.page-content .gform_wrapper .chzn-container-multi .chzn-choices .search-choice-focus {
 	background-color: #D4D4D4;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-choices .search-choice .search-choice-close {
+.page-content .gform_wrapper .chzn-container-multi .chzn-choices .search-choice .search-choice-close {
 	display: block;
 	position: absolute;
 	right: 5px;
@@ -1509,15 +1509,15 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	background-repeat: no-repeat;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover {
+.page-content .gform_wrapper .chzn-container-multi .chzn-choices .search-choice .search-choice-close:hover {
 	background-position: right -9px;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close {
+.page-content .gform_wrapper .chzn-container-multi .chzn-choices .search-choice-focus .search-choice-close {
 	background-position: right -9px;
 }
 
-.gform_wrapper .chzn-container .chzn-results {
+.page-content .gform_wrapper .chzn-container .chzn-results {
 	margin: 0 4px 4px 0;
 	max-height: 190px;
 	padding: 0 0 0 4px;
@@ -1526,12 +1526,12 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	overflow-y: auto;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-results {
+.page-content .gform_wrapper .chzn-container-multi .chzn-results {
 	margin: -1px 0 0;
 	padding: 0;
 }
 
-.gform_wrapper .chzn-container .chzn-results li {
+.page-content .gform_wrapper .chzn-container .chzn-results li {
     display:none;
 	line-height: 80%;
 	padding: 7px 7px 8px;
@@ -1539,50 +1539,50 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	list-style: none;
 }
 
-.gform_wrapper .chzn-container .chzn-results .active-result {
+.page-content .gform_wrapper .chzn-container .chzn-results .active-result {
 	cursor: pointer;
 	display: list-item;
 }
 
-.gform_wrapper .chzn-container .chzn-results .highlighted {
+.page-content .gform_wrapper .chzn-container .chzn-results .highlighted {
 	background-color: #F0F0F0;
 }
 
-.gform_wrapper .chzn-container .chzn-results li em {
+.page-content .gform_wrapper .chzn-container .chzn-results li em {
 	background-color: #FEFFDE;
 	font-style: normal;
 }
 
-.gform_wrapper .chzn-container .chzn-results .highlighted em {
+.page-content .gform_wrapper .chzn-container .chzn-results .highlighted em {
 	background: transparent;
 }
 
-.gform_wrapper .chzn-container .chzn-results .no-results {
+.page-content .gform_wrapper .chzn-container .chzn-results .no-results {
 	background-color: #F4F4F4;
 }
 
-.gform_wrapper .chzn-container .chzn-results .group-result {
+.page-content .gform_wrapper .chzn-container .chzn-results .group-result {
 	cursor: default;
 	color: #999;
 	font-weight: bold;
 }
 
-.gform_wrapper .chzn-container .chzn-results .group-option {
+.page-content .gform_wrapper .chzn-container .chzn-results .group-option {
 	padding-left: 20px;
 }
 
-.gform_wrapper .chzn-container-multi .chzn-drop .result-selected {
+.page-content .gform_wrapper .chzn-container-multi .chzn-drop .result-selected {
 	display: none;
 }
 
-.gform_wrapper .chzn-container-active .chzn-single {
+.page-content .gform_wrapper .chzn-container-active .chzn-single {
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
 	-moz-box-shadow: 0 0 5px rgba(0,0,0,.3);
 	-o-box-shadow: 0 0 5px rgba(0,0,0,.3);
 	box-shadow: 0 0 5px rgba(0,0,0,.3);
 }
 
-.gform_wrapper .chzn-container-active .chzn-single-with-drop {
+.page-content .gform_wrapper .chzn-container-active .chzn-single-with-drop {
 	border: 1px solid #AAA;
 	-webkit-box-shadow: 0 1px 0 #FFF inset;
 	-moz-box-shadow: 0 1px 0 #FFF inset;
@@ -1604,42 +1604,42 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	border-bottom-right-radius: 0;
 }
 
-.gform_wrapper .chzn-container-active .chzn-single-with-drop div {
+.page-content .gform_wrapper .chzn-container-active .chzn-single-with-drop div {
 	background: transparent;
 	border-left: none;
 }
 
-.gform_wrapper .chzn-container-active .chzn-single-with-drop div b {
+.page-content .gform_wrapper .chzn-container-active .chzn-single-with-drop div b {
 	background-position: -18px 1px;
 }
 
-.gform_wrapper .chzn-container-active .chzn-choices {
+.page-content .gform_wrapper .chzn-container-active .chzn-choices {
 	-webkit-box-shadow: 0 0 5px rgba(0,0,0,.3);
 	-moz-box-shadow: 0 0 5px rgba(0,0,0,.3);
 	-o-box-shadow: 0 0 5px rgba(0,0,0,.3);
 	box-shadow: 0 0 5px rgba(0,0,0,.3);
 }
 
-.gform_wrapper .chzn-container-active .chzn-choices .search-field input {
+.page-content .gform_wrapper .chzn-container-active .chzn-choices .search-field input {
 	color: #111 !important;
 }
 
-.gform_wrapper .chzn-rtl {
+.page-content .gform_wrapper .chzn-rtl {
 	direction: rtl;
 	text-align: right;
 }
 
-.gform_wrapper .chzn-rtl .chzn-single {
+.page-content .gform_wrapper .chzn-rtl .chzn-single {
 	padding-left: 0;
 	padding-right: 8px;
 }
 
-.gform_wrapper .chzn-rtl .chzn-single span {
+.page-content .gform_wrapper .chzn-rtl .chzn-single span {
 	margin-left: 26px;
 	margin-right: 0;
 }
 
-.gform_wrapper .chzn-rtl .chzn-single div {
+.page-content .gform_wrapper .chzn-rtl .chzn-single div {
 	left: 0;
 	right: auto;
 	border-left: none;
@@ -1649,38 +1649,38 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	border-radius: 4px 0 0 4px;
 }
 
-.gform_wrapper .chzn-rtl .chzn-choices li {
+.page-content .gform_wrapper .chzn-rtl .chzn-choices li {
 	float: right;
 }
 
-.gform_wrapper .chzn-rtl .chzn-choices .search-choice {
+.page-content .gform_wrapper .chzn-rtl .chzn-choices .search-choice {
 	padding: 3px 6px 3px 19px;
 	margin: 3px 5px 3px 0;
 }
 
-.gform_wrapper .chzn-rtl .chzn-choices .search-choice .search-choice-close {
+.page-content .gform_wrapper .chzn-rtl .chzn-choices .search-choice .search-choice-close {
 	left: 5px;
 	right: auto;
 	background-position: right top;
 }
 
-.gform_wrapper .chzn-rtl.chzn-container-single .chzn-results {
+.page-content .gform_wrapper .chzn-rtl.chzn-container-single .chzn-results {
 	margin-left: 4px;
 	margin-right: 0;
 	padding-left: 0;
 	padding-right: 4px;
 }
 
-.gform_wrapper .chzn-rtl .chzn-results .group-option {
+.page-content .gform_wrapper .chzn-rtl .chzn-results .group-option {
 	padding-left: 0;
 	padding-right: 20px;
 }
 
-.gform_wrapper .chzn-rtl.chzn-container-active .chzn-single-with-drop div {
+.page-content .gform_wrapper .chzn-rtl.chzn-container-active .chzn-single-with-drop div {
 	border-right: none;
 }
 
-.gform_wrapper .chzn-rtl .chzn-search input {
+.page-content .gform_wrapper .chzn-rtl .chzn-search input {
 	background: url(../images/chosen-sprite.png) -38px -20px no-repeat, #FFF;
 	background: url(../images/chosen-sprite.png) -38px -20px no-repeat, -webkit-gradient(linear, left bottom, left top, color-stop(0.85, white), color-stop(0.99, #EEE));
 	background: url(../images/chosen-sprite.png) -38px -20px no-repeat, -webkit-linear-gradient(center bottom, white 85%, #EEE 99%);
@@ -1695,12 +1695,12 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 /* credit card icons ------------------------------------------------------*/
 
 
-.gform_wrapper .gform_card_icon_container {
+.page-content .gform_wrapper .gform_card_icon_container {
 	margin: 8px 0 6px 0;
 	height: 32px;
 }
 
-.gform_wrapper div.gform_card_icon {
+.page-content .gform_wrapper div.gform_card_icon {
 	margin-right: 4px;
 	text-indent: -9000px;
 	background-image: url(../images/gf-creditcard-icons.png);
@@ -1710,147 +1710,147 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	float: left;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_visa {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_visa {
 	background-position: 0 0;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_visa {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_visa {
 	background-position: 0 -32px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_visa {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_visa {
 	background-position: 0 -64px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_mastercard {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_mastercard {
 	background-position: -36px 0;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_mastercard {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_mastercard {
 	background-position: -36px -32px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_mastercard {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_mastercard {
 	background-position: -36px -64px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_amex {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_amex {
 	background-position: -72px 0;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_amex {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_amex {
 	background-position: -72px -32px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_amex {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_amex {
 	background-position: -72px -64px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_discover {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_discover {
 	background-position: -108px 0;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_discover {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_discover {
 	background-position: -108px -32px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_discover {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_discover {
 	background-position: -108px -64px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_maestro {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_maestro {
 	background-position: -144px 0;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_maestro {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_maestro {
 	background-position: -144px -32px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_maestro {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_maestro {
 	background-position: -144px -64px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_jcb {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_jcb {
 	background-position: -180px 0;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_jcb {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_jcb {
 	background-position: -180px -32px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_jcb {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style1 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_jcb {
 	background-position: -180px -64px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_visa {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_visa {
 	background-position: 0 -192px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_visa {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_visa {
 	background-position: 0 -224px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_visa {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_visa {
 	background-position: 0 -256px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_mastercard {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_mastercard {
 	background-position: -36px -192px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_mastercard {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_mastercard {
 	background-position: -36px -224px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_mastercard {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_mastercard {
 	background-position: -36px -256px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_amex {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_amex {
 	background-position: -72px -192px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_amex {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_amex {
 	background-position: -72px -224px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_amex {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_amex {
 	background-position: -72px -256px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_discover {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_discover {
 	background-position: -108px -192px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_discover {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_discover {
 	background-position: -108px -224px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_discover {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_discover {
 	background-position: -108px -256px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_maestro {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_maestro {
 	background-position: -144px -192px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_maestro {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_maestro {
 	background-position: -144px -224px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_maestro {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_maestro {
 	background-position: -144px -256px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_jcb {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_jcb {
 	background-position: -180px -192px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_jcb {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_selected.gform_card_icon_jcb {
 	background-position: -180px -224px;
 }
 
-.gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_jcb {
+.page-content .gform_wrapper .gform_card_icon_container.gform_card_icon_style2 div.gform_card_icon.gform_card_icon_inactive.gform_card_icon_jcb {
 	background-position: -180px -256px;
 }
 
@@ -1863,55 +1863,55 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	top: 4px!important
 }
 
-.gform_wrapper .ginput_complex .ginput_cardinfo_left,
-.gform_wrapper .ginput_complex .ginput_cardinfo_right {
+.page-content .gform_wrapper .ginput_complex .ginput_cardinfo_left,
+.page-content .gform_wrapper .ginput_complex .ginput_cardinfo_right {
 	min-height: 43px;
 	position: relative;
 	float: left;
 }
 
-.gform_wrapper .ginput_complex .ginput_cardinfo_left {
+.page-content .gform_wrapper .ginput_complex .ginput_cardinfo_left {
 	width: 50%;
 	margin-right: 1%;
 }
 
-.gform_wrapper .ginput_complex .ginput_cardinfo_right {
+.page-content .gform_wrapper .ginput_complex .ginput_cardinfo_right {
 	min-width: 85px !important;
 }
 
-.gform_wrapper .ginput_complex .ginput_cardinfo_left label,
-.gform_wrapper .ginput_complex .ginput_cardinfo_right label {
+.page-content .gform_wrapper .ginput_complex .ginput_cardinfo_left label,
+.page-content .gform_wrapper .ginput_complex .ginput_cardinfo_right label {
 	white-space: nowrap !important;
 }
 
-.gform_wrapper .ginput_complex span.ginput_cardextras {
+.page-content .gform_wrapper .ginput_complex span.ginput_cardextras {
 	display: block;
 	overflow: hidden;
 }
 
-.gform_wrapper .ginput_complex .ginput_cardinfo_left span.ginput_card_expiration_container {
+.page-content .gform_wrapper .ginput_complex .ginput_cardinfo_left span.ginput_card_expiration_container {
 	position: relative;
 	display: block;
 	min-width: 160px !important;
 }
 
-.gform_wrapper .ginput_complex select.ginput_card_expiration.ginput_card_expiration_month,
-.gform_wrapper .ginput_complex select.ginput_card_expiration.ginput_card_expiration_year {
+.page-content .gform_wrapper .ginput_complex select.ginput_card_expiration.ginput_card_expiration_month,
+.page-content .gform_wrapper .ginput_complex select.ginput_card_expiration.ginput_card_expiration_year {
 	width: 48% !important;
 	display: -moz-inline-stack;
 	display: inline-block;
 	zoom: 1;
 }
 
-.gform_wrapper .ginput_complex .ginput_cardinfo_left select.ginput_card_expiration.ginput_card_expiration_month {
+.page-content .gform_wrapper .ginput_complex .ginput_cardinfo_left select.ginput_card_expiration.ginput_card_expiration_month {
 	margin-right: 4px;
 }
 
-.gform_wrapper .ginput_complex .ginput_cardinfo_right input.ginput_card_security_code {
+.page-content .gform_wrapper .ginput_complex .ginput_cardinfo_right input.ginput_card_security_code {
 	max-width: 50% !important;
 }
 
-.gform_wrapper .ginput_complex .ginput_cardinfo_right span.ginput_card_security_code_icon {
+.page-content .gform_wrapper .ginput_complex .ginput_cardinfo_right span.ginput_card_security_code_icon {
 	width: 32px;
 	height: 23px;
 	background-image: url(../images/gf-creditcard-icons.png);
@@ -1925,7 +1925,7 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 	zoom: 1;
 }
 
-.gform_wrapper .gform_fileupload_multifile .gform_drop_area {
+.page-content .gform_wrapper .gform_fileupload_multifile .gform_drop_area {
 	padding: 25px;
 	border: 2px dashed #ddd;
 	text-align: center;
@@ -1945,7 +1945,14 @@ body .gform_wrapper div.gform_body ul.gform_fields li.gfield.gfield_html dl dd {
 
 /* fix recaptcha line height issue ------------------------------------------------------*/
 
-body #content .entry-content .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container #recaptcha_widget_div #recaptcha_area .recaptchatable tbody tr td .recaptcha_input_area,
-body .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container #recaptcha_widget_div #recaptcha_area .recaptchatable tbody tr td .recaptcha_input_area {
+body #content .entry-content .page-content .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container #recaptcha_widget_div #recaptcha_area .recaptchatable tbody tr td .recaptcha_input_area,
+body .page-content .gform_wrapper form .gform_body .gform_fields .gfield .ginput_container #recaptcha_widget_div #recaptcha_area .recaptchatable tbody tr td .recaptcha_input_area {
 	line-height: 1em !important;
+}
+
+.page-content .gform_wrapper .button{
+	border: 1px solid #0198cf;
+	color: #0198cf;
+	background-color: rgba(1, 152, 207, 0.2);
+	cursor: pointer;
 }

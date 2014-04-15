@@ -41,6 +41,7 @@
         a{
             color: #999999;
         }
+        h3,
         h4 {
             color: $Gray;
             text-transform: uppercase;
@@ -49,6 +50,7 @@
         }
         .block {
             @extend %pull-left;
+            .gform_description,
             p {
                 font-size: 14px;
                 font-style: italic;
@@ -72,25 +74,6 @@
                 input {
                     @extend %pull-left;
                 }
-                input[type="text"] {
-                    @include size(197px, 35px);
-                    padding-left: 13px;
-                    background-color: rgba($Blue, 0.2);
-                    border: none;
-                    color: $Blue;
-                    font-style: italic;
-                    @include input-placeholder {
-                        color: $Blue;
-                        font-style: italic;
-                        font-size: 12px;
-                    }
-                }
-                .button {
-                    padding: 6px 16px;
-                    margin-left: 10px;
-                    background-color: rgba($Blue, 0.2);
-                    cursor: pointer;
-                }
             }
             .social {
                 a {
@@ -106,6 +89,46 @@
             li {
                 margin-bottom: 12px;
             }
+        }
+        .gform_heading{
+            display: block;
+        }
+        .gform_body,
+        .gform_footer{
+            @extend %pull-left;
+        }
+        .gform_footer{
+            margin-top: 16px;
+            margin-bottom: 25px;
+            .button {
+                padding: 6px 16px;
+                margin-left: 10px;
+                background-color: rgba($Blue, 0.2);
+                cursor: pointer;
+                border: 1px solid #0198cf;
+                color: #0198cf;
+            }
+        }
+        .gform_body{
+            margin-top: 16px;
+            margin-bottom: 25px;
+            input[type="text"] {
+                @include size(197px, 35px);
+                padding-left: 13px;
+                background-color: rgba($Blue, 0.2);
+                border: none;
+                color: $Blue;
+                font-style: italic;
+                @include input-placeholder {
+                    color: $Blue;
+                    font-style: italic;
+                    font-size: 12px;
+                }
+            }
+        }
+        .validation_message,
+        .validation_error{
+            padding-bottom: 0px;
         }
     }
     .end-bar {

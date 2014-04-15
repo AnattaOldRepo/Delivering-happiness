@@ -384,7 +384,8 @@ body {
 }
 
 /* line 65, ../sass/global/_typography.scss */
-.happiness-page .post .entry-header .entry-meta, .happiness-page .sidebar .become-a-vhp p {
+.happiness-page .post .entry-header .entry-meta, .happiness-page .sidebar .become-a-vhp .gform_description,
+.happiness-page .sidebar .become-a-vhp p {
   font-size: 12px;
   font-weight: normal;
   line-height: normal;
@@ -458,7 +459,8 @@ body {
 
 /* line 9, ../sass/global/_components.scss */
 .happiness-page .post.detail .alignleft, .one-column-template .page-content .alignleft, .rounded-block .left-col, .two-column .left-col, .two-column .right-col, .coin-animation .coin, .three-column .left-col, .three-column .middle-col, .four-column .left-col, .products-animation .card, .post-navigation .nav-next,
-.paging-navigation .nav-next, .global-header .logo, .global-header .site-navigation, .global-header .site-navigation li, .site-footer .all-links .block, .site-footer .all-links .block .signup input, .site-footer .all-links .block .social a, .site-footer .end-bar p, .work .call-dh .content, .community .instagram img, .happiness-page .left-col, .happiness-page .page-header h1, .happiness-page .post .media, .happiness-page .post .content, .one-column-template .page-content .media {
+.paging-navigation .nav-next, .global-header .logo, .global-header .site-navigation, .global-header .site-navigation li, .site-footer .all-links .block, .site-footer .all-links .block .signup input, .site-footer .all-links .block .social a, .site-footer .all-links .gform_body,
+.site-footer .all-links .gform_footer, .site-footer .end-bar p, .work .call-dh .content, .community .instagram img, .happiness-page .left-col, .happiness-page .page-header h1, .happiness-page .post .media, .happiness-page .post .content, .one-column-template .page-content .media {
   float: left;
 }
 
@@ -1317,6 +1319,21 @@ a {
   float: right !important;
 }
 
+/* line 710, ../sass/global/_components.scss */
+.gform_confirmation_message,
+.validation_message,
+.validation_error {
+  font-size: 12px;
+  padding: 10px 0;
+  color: red;
+  line-height: normal;
+}
+
+/* line 716, ../sass/global/_components.scss */
+.gform_confirmation_message {
+  color: green;
+}
+
 /* line 5, ../sass/global/_header.scss */
 .global-header {
   font-size: 13px;
@@ -1509,35 +1526,37 @@ a {
 .site-footer .all-links a {
   color: #999999;
 }
-/* line 44, ../sass/global/_footer.scss */
+/* line 45, ../sass/global/_footer.scss */
+.site-footer .all-links h3,
 .site-footer .all-links h4 {
   color: #666666;
   text-transform: uppercase;
   margin-bottom: 33px;
   letter-spacing: 1px;
 }
-/* line 52, ../sass/global/_footer.scss */
+/* line 54, ../sass/global/_footer.scss */
+.site-footer .all-links .block .gform_description,
 .site-footer .all-links .block p {
   font-size: 14px;
   font-style: italic;
 }
-/* line 56, ../sass/global/_footer.scss */
+/* line 58, ../sass/global/_footer.scss */
 .site-footer .all-links .block.company {
   width: 203px;
 }
-/* line 59, ../sass/global/_footer.scss */
+/* line 61, ../sass/global/_footer.scss */
 .site-footer .all-links .block.resources {
   width: 264px;
 }
-/* line 62, ../sass/global/_footer.scss */
+/* line 64, ../sass/global/_footer.scss */
 .site-footer .all-links .block.the-book {
   width: 246px;
 }
-/* line 65, ../sass/global/_footer.scss */
+/* line 67, ../sass/global/_footer.scss */
 .site-footer .all-links .block.keep-in-touch {
   width: 300px;
 }
-/* line 68, ../sass/global/_footer.scss */
+/* line 70, ../sass/global/_footer.scss */
 .site-footer .all-links .block .signup {
   margin-top: 16px;
   margin-bottom: 25px;
@@ -1553,8 +1572,42 @@ a {
 .site-footer .all-links .block .signup:after {
   clear: both;
 }
-/* line 75, ../sass/global/_footer.scss */
-.site-footer .all-links .block .signup input[type="text"] {
+/* line 79, ../sass/global/_footer.scss */
+.site-footer .all-links .block .social a {
+  width: 137px;
+  padding-left: 27px;
+  padding-bottom: 11px;
+  margin-bottom: 7px;
+}
+/* line 89, ../sass/global/_footer.scss */
+.site-footer .all-links ul li {
+  margin-bottom: 12px;
+}
+/* line 93, ../sass/global/_footer.scss */
+.site-footer .all-links .gform_heading {
+  display: block;
+}
+/* line 100, ../sass/global/_footer.scss */
+.site-footer .all-links .gform_footer {
+  margin-top: 16px;
+  margin-bottom: 25px;
+}
+/* line 103, ../sass/global/_footer.scss */
+.site-footer .all-links .gform_footer .button {
+  padding: 6px 16px;
+  margin-left: 10px;
+  background-color: rgba(1, 152, 207, 0.2);
+  cursor: pointer;
+  border: 1px solid #0198cf;
+  color: #0198cf;
+}
+/* line 112, ../sass/global/_footer.scss */
+.site-footer .all-links .gform_body {
+  margin-top: 16px;
+  margin-bottom: 25px;
+}
+/* line 115, ../sass/global/_footer.scss */
+.site-footer .all-links .gform_body input[type="text"] {
   width: 197px;
   height: 35px;
   padding-left: 13px;
@@ -1564,42 +1617,29 @@ a {
   font-style: italic;
 }
 /* line 110, ../sass/global/_mixin.scss */
-.site-footer .all-links .block .signup input[type="text"]::-moz-placeholder {
+.site-footer .all-links .gform_body input[type="text"]::-moz-placeholder {
   color: #0198cf;
   font-style: italic;
   font-size: 12px;
 }
 /* line 111, ../sass/global/_mixin.scss */
-.site-footer .all-links .block .signup input[type="text"]::-webkit-input-placeholder {
+.site-footer .all-links .gform_body input[type="text"]::-webkit-input-placeholder {
   color: #0198cf;
   font-style: italic;
   font-size: 12px;
 }
 /* line 112, ../sass/global/_mixin.scss */
-.site-footer .all-links .block .signup input[type="text"]:-ms-input-placeholder {
+.site-footer .all-links .gform_body input[type="text"]:-ms-input-placeholder {
   color: #0198cf;
   font-style: italic;
   font-size: 12px;
 }
-/* line 88, ../sass/global/_footer.scss */
-.site-footer .all-links .block .signup .button {
-  padding: 6px 16px;
-  margin-left: 10px;
-  background-color: rgba(1, 152, 207, 0.2);
-  cursor: pointer;
+/* line 130, ../sass/global/_footer.scss */
+.site-footer .all-links .validation_message,
+.site-footer .all-links .validation_error {
+  padding-bottom: 0px;
 }
-/* line 96, ../sass/global/_footer.scss */
-.site-footer .all-links .block .social a {
-  width: 137px;
-  padding-left: 27px;
-  padding-bottom: 11px;
-  margin-bottom: 7px;
-}
-/* line 106, ../sass/global/_footer.scss */
-.site-footer .all-links ul li {
-  margin-bottom: 12px;
-}
-/* line 112, ../sass/global/_footer.scss */
+/* line 135, ../sass/global/_footer.scss */
 .site-footer .end-bar .wrapper {
   padding: 97px 86px 50px 70px;
 }
@@ -1614,7 +1654,7 @@ a {
 .site-footer .end-bar .wrapper:after {
   clear: both;
 }
-/* line 119, ../sass/global/_footer.scss */
+/* line 142, ../sass/global/_footer.scss */
 .site-footer .end-bar img {
   margin-top: -18px;
 }
@@ -2433,13 +2473,15 @@ body {
   display: block;
   line-height: 10px;
 }
-/* line 194, ../sass/global/_blog.scss */
+/* line 195, ../sass/global/_blog.scss */
+.happiness-page .sidebar .become-a-vhp .gform_description,
 .happiness-page .sidebar .become-a-vhp p {
   color: #9ed4ee;
   padding: 16px 16px 20px 16px;
   line-height: 17px;
+  display: block;
 }
-/* line 200, ../sass/global/_blog.scss */
+/* line 202, ../sass/global/_blog.scss */
 .happiness-page .sidebar .become-a-vhp input[type="text"] {
   width: 100%;
   height: 35px;
@@ -2469,7 +2511,7 @@ body {
   font-style: italic;
   font-size: 12px;
 }
-/* line 215, ../sass/global/_blog.scss */
+/* line 217, ../sass/global/_blog.scss */
 .happiness-page .sidebar .become-a-vhp .button {
   padding: 8px 25px;
   margin-left: 10px;
@@ -2478,11 +2520,26 @@ body {
   color: #0198cf;
   border: none;
 }
-/* line 222, ../sass/global/_blog.scss */
+/* line 224, ../sass/global/_blog.scss */
 .happiness-page .sidebar .become-a-vhp .button:hover {
   background-color: rgba(255, 255, 255, 0.6);
 }
-/* line 227, ../sass/global/_blog.scss */
+/* line 229, ../sass/global/_blog.scss */
+.happiness-page .sidebar .become-a-vhp .validation_message,
+.happiness-page .sidebar .become-a-vhp .validation_error {
+  color: #a80303;
+  padding-top: 0px;
+}
+/* line 234, ../sass/global/_blog.scss */
+.happiness-page .sidebar .become-a-vhp .gform_confirmation_message {
+  color: white;
+  padding-top: 0px;
+}
+/* line 238, ../sass/global/_blog.scss */
+.happiness-page .sidebar .become-a-vhp .gform_heading {
+  display: block;
+}
+/* line 242, ../sass/global/_blog.scss */
 .happiness-page .sidebar .wfu {
   height: 75px;
   margin-bottom: 40px;
@@ -2493,15 +2550,15 @@ body {
   color: white;
   text-align: center;
 }
-/* line 234, ../sass/global/_blog.scss */
+/* line 249, ../sass/global/_blog.scss */
 .happiness-page .sidebar .wfu h3 {
   line-height: 3em;
 }
-/* line 239, ../sass/global/_blog.scss */
+/* line 254, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp {
   margin-bottom: 40px;
 }
-/* line 241, ../sass/global/_blog.scss */
+/* line 256, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp hr {
   background-image: url("../images/global/w-hr.gif");
   background-repeat: no-repeat;
@@ -2509,28 +2566,28 @@ body {
   height: 16px;
   border: none;
 }
-/* line 246, ../sass/global/_blog.scss */
+/* line 261, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp h3 {
   color: #666666;
   letter-spacing: 1px;
   margin: 20px 0 33px 0;
 }
-/* line 251, ../sass/global/_blog.scss */
+/* line 266, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp a {
   display: block;
   color: #0198cf;
   margin-bottom: 20px;
   line-height: 22px;
 }
-/* line 256, ../sass/global/_blog.scss */
+/* line 271, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp a:hover {
   text-decoration: underline;
 }
-/* line 261, ../sass/global/_blog.scss */
+/* line 276, ../sass/global/_blog.scss */
 .happiness-page .sidebar .twitter {
   margin-bottom: 19px;
 }
-/* line 264, ../sass/global/_blog.scss */
+/* line 279, ../sass/global/_blog.scss */
 .happiness-page .sidebar .popular-posts {
   background-image: url("../images/global/w-hr.gif");
   background-repeat: no-repeat;
@@ -2539,20 +2596,20 @@ body {
   margin-top: 40px;
   padding-top: 15px;
 }
-/* line 269, ../sass/global/_blog.scss */
+/* line 284, ../sass/global/_blog.scss */
 .happiness-page .sidebar .popular-posts h1 {
   color: #666666;
   letter-spacing: 1px;
   margin: 20px 0 33px 0;
 }
-/* line 274, ../sass/global/_blog.scss */
+/* line 289, ../sass/global/_blog.scss */
 .happiness-page .sidebar .popular-posts a {
   display: block;
   color: #0198cf;
   margin-bottom: 20px;
   line-height: 22px;
 }
-/* line 279, ../sass/global/_blog.scss */
+/* line 294, ../sass/global/_blog.scss */
 .happiness-page .sidebar .popular-posts a:hover {
   text-decoration: underline;
 }
@@ -2730,4 +2787,33 @@ body {
 /* line 31, ../sass/global/_1column.scss */
 .one-column-template .page-content .media {
   margin-right: 30px;
+}
+
+/* line 5, ../sass/global/_gform.scss */
+.gfield {
+  overflow: hidden;
+}
+
+/* line 9, ../sass/global/_gform.scss */
+.gform_heading {
+  display: none;
+}
+
+/* line 13, ../sass/global/_gform.scss */
+.gfield_label {
+  font-style: normal !important;
+  font-weight: bold;
+}
+
+/* line 20, ../sass/global/_gform.scss */
+.ginput_container input {
+  height: 30px;
+  line-height: 30px;
+  padding: 10px;
+  border: 2px solid #cbcbcb;
+  outline: none;
+}
+/* line 27, ../sass/global/_gform.scss */
+.ginput_container textarea {
+  border: 2px solid #cbcbcb;
 }
