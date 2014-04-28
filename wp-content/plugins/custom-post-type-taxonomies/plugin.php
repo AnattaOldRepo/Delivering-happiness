@@ -48,7 +48,8 @@ class Custom_Post_Types_Taxonomies {
 			'menu_position'      => 5,
 			'supports'           => array(
 				'title',
-				'editor'
+				'editor',
+				'page-attributes'
 			),
 			'has_archive'        => 'team'
 		);
