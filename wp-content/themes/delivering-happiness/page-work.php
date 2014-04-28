@@ -92,7 +92,23 @@ get_header();
 					'post_type' => 'team_member',
 					'posts_per_page' => 7,
 				    'order'=>'ASC',
-				    'orderby'=>'menu_order title'
+				    'orderby'=>'menu_order title',
+				    'meta_query' => array(
+					    'relation' => 'OR',
+					    array(
+						    'key'   => '_dh_location',
+						    'value' => DH_Metabox::TEAM_LOCATION_EVERYWHERE
+					    ),
+					    array(
+						    'key'   => '_dh_location',
+						    'value' => DH_Metabox::TEAM_LOCATION_WORK
+					    ),
+					    array(
+						    'key'     => '_dh_location',
+						    'value'   => 'fake value due to bug #23268 in wordpress core',
+						    'compare' => 'NOT EXISTS'
+					    )
+				    )
 				)
 			);
 			?>
