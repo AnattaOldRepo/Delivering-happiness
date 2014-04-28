@@ -87,3 +87,12 @@ function delivering_happiness_setup_author() {
 	}
 }
 add_action( 'wp', 'delivering_happiness_setup_author' );
+
+function delivering_happiness_sort_team_members( $query ) {
+	/** @var WP_Query $query */
+	if( $query->is_main_query() && $query->is_post_type_archive( 'team_member' ) ) {
+		$query->set( 'order', 'ASC' );
+		$query->set( 'orderby', 'menu_order title' );
+	}
+}
+add_action( 'pre_get_posts', 'delivering_happiness_sort_team_members' );

@@ -90,7 +90,9 @@ get_header();
 			$team_members = get_posts(
 				array(
 					'post_type' => 'team_member',
-					'posts_per_page' => 7
+					'posts_per_page' => 7,
+				    'order'=>'ASC',
+				    'orderby'=>'menu_order title'
 				)
 			);
 			?>
