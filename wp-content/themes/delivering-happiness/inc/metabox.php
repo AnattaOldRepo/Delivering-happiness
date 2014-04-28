@@ -24,10 +24,10 @@ class DH_Metabox {
 		$value = absint( get_post_meta( $post->ID, '_dh_location', true ) );
 		?>
 		<select id="dh_location" name="dh_location">
-			<option value="<?php echo self::TEAM_LOCATION_EVERYWHERE; ?>"<?php checked( $value, self::TEAM_LOCATION_EVERYWHERE ); ?>>Display Everywhere</option>
-			<option value="<?php echo self::TEAM_LOCATION_WORK; ?>"<?php checked( $value, self::TEAM_LOCATION_WORK ); ?>>Display only on the work page</option>
-			<option value="<?php echo self::TEAM_LOCATION_LIST; ?>"<?php checked( $value, self::TEAM_LOCATION_LIST ); ?>>Display only on the team listing page</option>
-			<option value="<?php echo self::TEAM_LOCATION_NONE; ?>"<?php checked( $value, self::TEAM_LOCATION_NONE ); ?>>Don't display on the site</option>
+			<option value="<?php echo self::TEAM_LOCATION_EVERYWHERE; ?>"<?php selected( $value, self::TEAM_LOCATION_EVERYWHERE ); ?>>Display Everywhere</option>
+			<option value="<?php echo self::TEAM_LOCATION_WORK; ?>"<?php selected( $value, self::TEAM_LOCATION_WORK ); ?>>Display only on the work page</option>
+			<option value="<?php echo self::TEAM_LOCATION_LIST; ?>"<?php selected( $value, self::TEAM_LOCATION_LIST ); ?>>Display only on the team listing page</option>
+			<option value="<?php echo self::TEAM_LOCATION_NONE; ?>"<?php selected( $value, self::TEAM_LOCATION_NONE ); ?>>Don't display on the site</option>
 		</select>
 	<?php
 	}
