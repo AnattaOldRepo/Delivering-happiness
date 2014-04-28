@@ -124,6 +124,7 @@ function delivering_happiness_sort_team_members( $query ) {
 		$query->set( 'meta_query', $meta_query );
 		$query->set( 'order', 'ASC' );
 		$query->set( 'orderby', 'menu_order title' );
+		$query->set( 'posts_per_page', -1 );
 	}
 }
 add_action( 'pre_get_posts', 'delivering_happiness_sort_team_members' );
