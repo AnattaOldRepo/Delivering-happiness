@@ -78,7 +78,8 @@ function delivering_happiness_scripts() {
 	wp_enqueue_script( 'delivering-happiness-navigation', get_template_directory_uri() . '/js/main.js', array(jquery), '20120206', true );
 	wp_enqueue_script( 'cycle-plugin', get_template_directory_uri() . '/js/libraries/jquery.cycle2.js', array(jquery), '20120206', true );
 	
-
+	// Enqueue Google Analytics to the footer
+	add_action('wp_footer', create_function('', 'get_template_part(\'inc/google_analytics.js\');'), 50);
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
