@@ -191,11 +191,13 @@
                     line-height: 10px;
                 }
             }
+            .gform_description,
             p {
                 @extend %pharagraph-level-7;
                 color: #9ed4ee;
                 padding: 16px 16px 20px 16px;
                 line-height: 17px;
+                display: block;
             }
             input[type="text"] {
                 @include size(100%, 35px);
@@ -222,6 +224,19 @@
                 &:hover{
                     background-color: rgba($White, 0.6); 
                 }
+            }
+            .validation_message,
+            .validation_error{
+
+                color: #a80303;
+                padding-top:0px;
+            }
+            .gform_confirmation_message{
+                color: white;
+                padding-top:0px;
+            }
+            .gform_heading{
+                display: block;
             }
         }
         .wfu{

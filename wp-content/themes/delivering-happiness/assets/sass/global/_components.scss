@@ -705,4 +705,14 @@ a {
     }
 
 }
-
+.gform_confirmation_message,
+.validation_message,
+.validation_error{
+    font-size: 12px;
+    padding:10px 0;
+    color: red;
+    line-height: normal;
+}
+.gform_confirmation_message{
+    color: green;
+}

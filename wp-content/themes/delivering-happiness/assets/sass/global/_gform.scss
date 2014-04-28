@@ -1,0 +1,30 @@
+//
+// Gfrom styling
+// --------------------------------------------------
+
+.gfield{
+    overflow: hidden;
+}
+
+.gform_heading{
+    display: none;
+}
+
+.gfield_label{
+    font-style: normal!important;
+    font-weight: bold;
+}
+
+.ginput_container{
+
+    input{
+        height: 30px;
+        line-height: 30px;
+        padding: 10px;
+        border: 2px solid #cbcbcb;
+        outline: none;
+    }
+    textarea{
+        border: 2px solid #cbcbcb;
+    }
+}
