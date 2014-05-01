@@ -14,7 +14,7 @@ get_header();
 				<article class="content">
 					<blockquote>“Get the culture right,<br/>&nbsp;and everything<br/>&nbsp;else just falls into place.” </blockquote>
 					<span>~ Tony Hsieh</span>
-					<a href="#" class="button">SCHEDULE A Free Culture Call</a>
+					<a href="/work/culture-call/" class="button">SCHEDULE A Free Culture Call</a>
 				</article>
 			</div>
 			<div class="right-col">
@@ -50,7 +50,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-						<a href="#" class="button moderateviolet">LET’S GO!</a>
+						<a href="https://app.happinessatworksurvey.com/?a=dh" target="_blank" class="button moderateviolet">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
@@ -63,7 +63,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Start the conversation, and find inspiration for free. Schedule a free 30-minute culture call (or discovery call) with us.</p>
-						<a href="#" class="button moderateviolet">LET’S TALK!</a>
+						<a href="/work/culture-call/" class="button moderateviolet">LET’S TALK!</a>
 					</div>
 				</div>
 			</div>
@@ -76,7 +76,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Unhappy employees cost the U.S. $550 billion a year (Gallup). How much could happiness save you?</p>
-						<a href="#" class="button moderateviolet">LET’S CALCULATE!</a>
+						<a href="/work/roi-calculator" class="button moderateviolet">LET’S CALCULATE!</a>
 					</div>
 				</div>
 			</div>
@@ -161,7 +161,7 @@ get_header();
 				<article class="content active">
 					<div class="v-aling">
 						<blockquote>This was insightful, inspiring, and applicable in real ways.  Sharing ideas and practices with other organizations was invaluable.  They understand how to use happiness to improve culture and productivity.</blockquote>
-						<span>~ Martin Tracey, VP of HR</span>
+						<span>~ MARTIN TRACEY, VP OF HR, HP</span>
 					</div>
 				</article>
 				<article class="content">
@@ -172,7 +172,7 @@ get_header();
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>Delivering Happiness has had a great impact directly and indirectly on virtually all aspects of our business from how to interact with customers, our partners and each other.  Focusing on our culture has increased sales, increased the bottom line and most importantly allowed us to better serve our mission</blockquote>
+						<blockquote>Delivering Happiness has had a great impact directly and indirectly on virtually all aspects of our business from how to interact with customers, our partners and each other.  Focusing on our culture has increased sales, increased the bottom line and most importantly allowed us to better serve our mission.</blockquote>
 						<span>~ Scotty Bintz, CEO, RealTruck</span>
 					</div>
 				</article>
@@ -197,7 +197,7 @@ get_header();
 					</article>
 					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/callon.png" alt="" /></div>
 				</div>
-				<div class="cta"><a href="#" class="button moderateviolet">SCHEDULE A Free Culture Call</a></div>
+				<div class="cta"><a href="/work/culture-call/ " class="button moderateviolet">SCHEDULE A Free Culture Call</a></div>
 			</div>
 		</div>
 	</section>
@@ -262,12 +262,13 @@ get_header();
 			<div class="col right-col">
 				<div class="become-partner">
 					<div class="content">
+						<p>If you’re a company or self-employed coach who shares our vision of impacting workplace cultures around the world, let’s talk! Our Global Partner Program may be just the thing for you.</p>
 						<div class="v-aling"><h3>Become<br/>a<br/>partner</h3></div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<a href="/become-a-partner/" class="button moderateviolet">Become partner</a>
+						<a href="/become-a-partner/" class="button moderateviolet">Find Out More</a>
 					</div>
 				</div>
 			</div>
