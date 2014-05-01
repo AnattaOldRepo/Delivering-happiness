@@ -262,12 +262,12 @@ get_header();
 			<div class="col right-col">
 				<div class="become-partner">
 					<div class="content">
-						<p>If you’re a company or self-employed coach who shares our vision of impacting workplace cultures around the world, let’s talk! Our Global Partner Program may be just the thing for you.</p>
 						<div class="v-aling"><h3>Become<br/>a<br/>partner</h3></div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
+						<p>If you’re a company or self-employed coach who shares our vision of impacting workplace cultures around the world, let’s talk! Our Global Partner Program may be just the thing for you.</p>
 						<a href="/become-a-partner/" class="button moderateviolet">Find Out More</a>
 					</div>
 				</div>

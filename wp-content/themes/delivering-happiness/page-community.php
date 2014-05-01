@@ -37,9 +37,9 @@ get_header();
 			<div class="left-col">
 				<article class="content">
 					<h2>The Change Starts Here.<span>At work, in our communities, and in our every-<br/>day lives.</span></h2>
-					<p>Backed by scince, business sense, and common sense, we know<br/>that living a purposeful life is what really matters. So come along<br/>and join the movement. As our CEO says, it all begins with you.</p>
+					<p>Backed by science, business sense, and common sense, we know<br/>that living a purposeful life is what really matters. So come along<br/>and join the movement. As our CEO says, it all begins with you.</p>
 					<p>It can be as simple as passing out balloons to strangers, or breaking<br/>out your best dance moves at the next company party. Or, make a<br/>bigger impact by hosting an Inspire! event in your company or<br/>community. How will you pay happiness forward? How will you<br/>change the world?</p>
-					<a href="#" class="button orange">Tell me more</a>
+					<a href="/community/change-starts-here/" class="button orange">Tell me more</a>
 				</article>
 			</div>
 			<div class="right-col">
@@ -97,14 +97,14 @@ get_header();
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>I may sound hokey with this, but the Delivering Happiness team is making a believer out of me. Per your mention of being a tight-knit community, you all really do more than talk. I have to admit that the greatest and most positive effect is being acknowledged by such a humble and purpose-driven group.
+						<blockquote>Thank you for sharing your message of inspiration today at Toyota. I am a corporate trainer at the University of Toyota and positive psychology is a passion of mine. I have read Tony’s book and am now reading Shawn Achor’s book, this movement is so exciting! I enjoyed every moment of [Jenn’s] presentation and thank you for taking the time to be here to share it with us.
 </blockquote>
-						<span>Ron Navaro (Montreal, Canada)</span>
+						<span>Karin Accomando (Torrance, California)</span>
 					</div>
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote> came across your website and especially your tools regarding happiness@work and your community and I am truly impressed. Being a consultant in Australia, I can see how CEO's are starting to recognize the benefits of investing and keeping their people happy. Keep inspiring the world. 
+						<blockquote>I came across your website and especially your tools regarding happiness@work and your community and I am truly impressed. Being a consultant in Australia, I can see how CEO's are starting to recognize the benefits of investing and keeping their people happy. Keep inspiring the world. 
 </blockquote>
 						<span> Marite Metsla (Melbourne, Australia)</span>
 					</div>
@@ -131,7 +131,7 @@ get_header();
 
 	<section class="instagram">
 		<div class="wrapper">
-			<h2>#deliveringhappiness:</h2>
+			<h2>Share a smile at #DHsmile</h2>
 			<?php $instagram_pics = AnattaDesign_Storify::getInstagram( get_field( 'instagram_storify_json_url', 'option' ) ); ?>
 			<?php foreach ( $instagram_pics as $instagram_pic ) { ?>
 				<img src="<?php echo $instagram_pic['src']; ?>" alt="instagram pic" />
@@ -168,7 +168,7 @@ get_header();
 				<article class="content chat active">
 					<h3>Happiness 101</h3>
 					<p>Loved the book? Come love the blog! Discover a wealth of resources to continue your happiness education.</p>
-					<a href="#" class="button">Read and Enjoy</a>
+					<a href="/happiness-101/" class="button">Read and Enjoy</a>
 				</article>
 				<article class="content inspire">
 					<h3>Inspire! and Be Inspired</h3>

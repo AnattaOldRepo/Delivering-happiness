@@ -15,7 +15,7 @@ get_header();
 				<article class="content">
 					<blockquote>Too much of this is a<br/>good thing.</blockquote>
 					<span>Created with love, made with care,<br/>infused with joy.</span>
-					<a href="#" class="button">SHOP THE COLLECTION</a>
+					<a href="http://shop.deliveringhappiness.com" class="button">SHOP THE COLLECTION</a>
 				</article>
 			</div>
 			<div class="right-col">
@@ -32,7 +32,7 @@ get_header();
 				<article class="content">
 					<h2>Do Good, Feel Good.<span>We design products to Inspire, Connect, Educate and Experience.</span></h2>
 					<p>shop@DH goods spread and inspire happiness at home, at work, in our<br/>communities, and in our everyday lives. They aspire to make people feel a<br/>certain way. Like they just discovered their car can fly—and now spend their<br/>work commutes soaring over traffic jams, listening to fun music and eating delicious pastries.</p>
-					<a href="/shop" class="button green">Visit the shop</a>
+					<a href="http://shop.deliveringhappiness.com" class="button green">Visit the shop</a>
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/go-good-feel-good.jpg" alt="" />
 				</article>
 			</div>
@@ -49,7 +49,7 @@ get_header();
 			<div class="right-col strongyellow-areal">
 				<div class="content">
 					<h3>Inspire others with<br/>customized products.<span>We have dozens of items<br/>available for your company,<br/>team, or yourself. Get in touch<br/>and we’ll design something<br/>special, just for you.</span></h3>
-					<a href="#" class="button softyellow">Find Out More</a>
+					<a href="/shop/custom/" class="button softyellow">Find Out More</a>
 				</div>
 			</div>
 		</div>
@@ -62,12 +62,12 @@ get_header();
 			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-take-flight-tee-sunshine" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/smile_w_takeflight_sunshine_1.jpg" alt="" /></a></div>
 			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-winkey-love-sweatshirt-peach" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/smile_w_winkeylove_peach_2.jpg" alt="" /></a></div>
 			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-mandala-tee-ash" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/smile_w_mandala_ash_1.jpg" alt="" /></a></div>
-			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-rose-garden-dress-mint" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/6_smile_w_shinnyup_mint_1_grande.jpg" alt="" /></a></div>
-			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-otha-buttah-sweatshirt-vintage-black" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/7_smile_w_inspirebeinspired_ivory_1_grande.jpg" alt="" /></a></div>
-			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-ninja-cardigan-chili-red" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/8_Accessories_armycap_olive_0_grande.jpg" alt="" /></a></div>
-			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-visionary-skirt-cloud" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/9_smile_m_mountaineer_ash_6_grande.jpg" alt="" /></a></div>
-			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-maxi-ish-dress-chili-red" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/10_shopify-halffull-water-m-bahamasky_grande.jpg" alt="" /></a></div>
-			<div class="card"><a href="http://shop.deliveringhappiness.com/products/womens-shinny-up-sweatshirt-ivory" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/smile_w_shinnyup_ivory_0_grande.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/collections/women/products/womens-shinny-up-sweatshirt-mint" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/6_smile_w_shinnyup_mint_1_grande.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/collections/women/products/womens-inspire-be-inspire-tee-ivory" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/7_smile_w_inspirebeinspired_ivory_1_grande.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/collections/gifts-accessories/products/unisex-winkey-cap-olive-blue-winkey" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/8_Accessories_armycap_olive_0_grande.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/collections/men/products/mens-the-mountaineer-tee-ash" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/9_smile_m_mountaineer_ash_6_grande.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/collections/men/products/mens-half-full-tee-bahama-sky" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/10_shopify-halffull-water-m-bahamasky_grande.jpg" alt="" /></a></div>
+			<div class="card"><a href="http://shop.deliveringhappiness.com/collections/women/products/womens-take-flight-tee-ivory" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/smile_w_shinnyup_ivory_0_grande.jpg" alt="" /></a></div>
 		</div>
 	</section>
 
@@ -93,13 +93,14 @@ get_header();
 			<div class="col middle-col">
 				<div class="become-partner-product">
 					<div class="content">
+						<p>Want to make your shop a happier place? We’re looking for qualified retailers to help spread happiness.</p>
 						<div class="v-aling"><h3>Become a<br/>Retailer</h3></div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>We're making our way into shops throughout the US, starting with these fine stores.</p>
-						<a href="#" class="button green">Find a Store</a>
+						<a href="http://shop.deliveringhappiness.com" class="button green">Find a Store</a>
 					</div>
 				</div>
 			</div>
