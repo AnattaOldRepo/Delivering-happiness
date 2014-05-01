@@ -74,12 +74,12 @@ get_header();
 		</div>
 		<div class="right-col">
 			<article class="content sandels active">
-				<h3>Lower stress.</h3>
+				<h3>Lowers Stress</h3>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/sandels-l.png" alt="" />
 				<p>Working overtime? Got cut off on the freeway? Things happen out of our control all the time but what we CAN control is what makes us happy.<span>~ The Happiness Advantage, Shawn Achor</span></p>
 			</article>
 			<article class="content heart">
-				<h3>Improves health.</h3>
+				<h3>Improves Health</h3>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/heart-l.png" alt="" />
 				<p>Exercise helps, but did you know? Happy people have more energy and activity, a bolstered immune system, and even longevity.<span>~ Pursuing Happiness, Lyubomirsky, Sheldon and Schkade</span></p>
 			</article>
@@ -103,32 +103,26 @@ get_header();
 </section>
 <!-- /Happiness section-->
 
-<!-- Core values section-->
-<section class="rounded-block core-values">
+<!-- Calculation graph section-->
+<section class="rounded-block calculation">
 	<div class="wrapper">
 		<div class="container">
-			<h2>Our core values:</h2>
-			<div class="horizontal-slider">
-				<div class="slide cycle-slideshow" data-cycle-fx="fade" data-cycle-slides="> div" data-cycle-timeout="2000" data-cycle-pager="#custom-pager" data-cycle-pager-template="<a href=#> {{slideNum}} </a>">
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-1.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-2.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-3.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-4.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-5.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-6.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-7.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-8.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-09.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-10.png" alt="placeholder" /></div>
+			<div class="floated-holder">
+				<div class="left-col">
+					<article class="content">
+						<h2><span>How much could happiness save you?</span>Companies with a<br/>higher sense of purpose<br/>outperformed those<br/>without by 400%.</h2>
+					</article>
 				</div>
-				<div id="custom-pager" class="pager cycle-pager">
+				<div class="right-col">
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/chart.png" alt="placeholder" />
 				</div>
 			</div>
-			<a href="<?php bloginfo('template_url') ?>/assets/images/global/values-posters.pdf" target="_blank" class="cta">Download the poster for free!</a>
+			<a href="/work/roi-calculator" class="button blue">Calculate your happiness ROI</a>
 		</div>
 	</div>
 </section>
-<!-- /Core values section-->
+<!-- /Calculation graph section-->
+
 
 <!-- Get involved section-->
 <section class="three-column blue get-involved cross-fade">
@@ -143,7 +137,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-					<a href="/shop" class="button blue">LET’S GO!</a>
+					<a href="/work/roi-calculator" class="button blue">LET’S GO!</a>
 				</div>
 			</div>
 		</div>
@@ -172,7 +166,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Start the conversation, and find inspiration for free. Schedule a free 30-minute culture call (or discovery call) with us.</p>
-					<a href="/shop" class="button blue">Let's Talk!</a>
+					<a href="/work/culture-call/" class="button blue">Let's Talk!</a>
 				</div>
 			</div>
 		</div>
@@ -180,23 +174,27 @@ get_header();
 </section>
 <!-- /Get involved section-->
 
-<!-- Inspiration section-->
-<section class="two-column inspiration">
+<!-- Over the globe section-->
+<section class="two-column over-the-globe">
 	<div class="wrapper">
-		<div class="left-col">
+		<div class="left-col offwhite-area">
 			<div class="content">
-				<h3>Shop@DH – created to<br/>inspire.<span>Share your inspiration and<br/>save 20%.</span></h3>
-				<a href="#" class="button softyellow">Share your story</a>
+				<h2>We’ve inspired businesses<br/>all over the globe.</h2>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/global.png" alt="" />
 			</div>
 		</div>
-		<div class="right-col">
+		<div class="right-col yellow-area">
 			<div class="media">
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/inspired-graphic.jpg" alt="" />
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/companies.jpg" alt="" />
 			</div>
+			<article class="content">
+				<p>We help organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success.</p>
+				<a href="/work" class="button yellow">Learn more</a>
+			</article>
 		</div>
 	</div>
 </section>
-<!-- Inspiration section-->
+<!-- /Over the globe section-->
 
 <!-- Blog section-->
 <section class="three-column blue blog cross-fade">
@@ -283,47 +281,52 @@ get_header();
 </section>
 <!-- /Blog section-->
 
-<!-- Over the globe section-->
-<section class="two-column over-the-globe">
-	<div class="wrapper">
-		<div class="left-col offwhite-area">
-			<div class="content">
-				<h2>We’ve inspired businesses<br/>all over the globe.</h2>
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/global.png" alt="" />
-			</div>
-		</div>
-		<div class="right-col yellow-area">
-			<div class="media">
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/companies.jpg" alt="" />
-			</div>
-			<article class="content">
-				<p>We help organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success.</p>
-				<a href="#" class="button yellow">Learn more</a>
-			</article>
-		</div>
-	</div>
-</section>
-<!-- /Over the globe section-->
 
-<!-- Calculation graph section-->
-<section class="rounded-block calculation">
+
+<!-- Core values section-->
+<section class="rounded-block core-values">
 	<div class="wrapper">
 		<div class="container">
-			<div class="floated-holder">
-				<div class="left-col">
-					<article class="content">
-						<h2><span>How much could happiness save you?</span>Companies with a<br/>higher sense of purpose<br/>outperformed those<br/>without by 400%.</h2>
-					</article>
+			<h2>Our core values:</h2>
+			<div class="horizontal-slider">
+				<div class="slide cycle-slideshow" data-cycle-fx="fade" data-cycle-slides="> div" data-cycle-timeout="2000" data-cycle-pager="#custom-pager" data-cycle-pager-template="<a href=#> {{slideNum}} </a>">
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-1.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-2.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-3.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-4.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-5.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-6.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-7.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-8.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-09.png" alt="placeholder" /></div>
+					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-10.png" alt="placeholder" /></div>
 				</div>
-				<div class="right-col">
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/chart.png" alt="placeholder" />
+				<div id="custom-pager" class="pager cycle-pager">
 				</div>
 			</div>
-			<a href="#" class="button blue">Calculate your happiness ROI</a>
+			<a href="<?php bloginfo('template_url') ?>/assets/images/global/values-posters.pdf" target="_blank" class="cta">Download the poster for free!</a>
 		</div>
 	</div>
 </section>
-<!-- /Calculation graph section-->
+<!-- /Core values section-->
+
+<!-- Inspiration section-->
+<section class="two-column inspiration">
+	<div class="wrapper">
+		<div class="left-col">
+			<div class="content">
+				<h3>Shop@DH – created to<br/>inspire.<span>Share your inspiration and<br/>save 20%.</span></h3>
+				<a href="#" class="button softyellow">Share your story</a>
+			</div>
+		</div>
+		<div class="right-col">
+			<div class="media">
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/inspired-graphic.jpg" alt="" />
+			</div>
+		</div>
+	</div>
+</section>
+<!-- Inspiration section-->
 
 
 <?php get_footer(); ?>
