@@ -10,13 +10,13 @@ get_header(); ?>
 <div class="happiness-page">
 	<div class="wrapper">
 		<div class="page-header">
-			<h1>Blog > <?php the_title() ?></h1>
 			<div class="all-categories">
 				<?php $all_categories = get_categories();
 				foreach ( $all_categories as $category ) {
 					echo '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a>';
 				} ?>
 			</div>
+			<h1>Blog > <?php the_title() ?></h1>
 		</div>
 		<div id="primary" class="content-area left-col">
 			<main id="main" class="site-main" role="main">
