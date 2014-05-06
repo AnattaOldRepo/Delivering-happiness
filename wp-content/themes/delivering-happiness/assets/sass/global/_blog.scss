@@ -30,6 +30,9 @@
             @extend %pull-left;
             font-style: italic;
         }
+        a{
+            color: $Blue;
+        }
         .all-categories {
             padding-top: 13px;
             padding-bottom: 15px;
@@ -120,6 +123,7 @@
         }
         .widget_polls-widget{
             padding: 10px;
+            margin-bottom: 18px;
             @extend %text-left;
             .widget-title{
                 @extend %text-center;
