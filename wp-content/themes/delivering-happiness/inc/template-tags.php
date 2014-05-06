@@ -122,3 +122,7 @@ function delivering_happiness_category_transient_flusher() {
 }
 add_action( 'edit_category', 'delivering_happiness_category_transient_flusher' );
 add_action( 'save_post',     'delivering_happiness_category_transient_flusher' );
+
+function delivering_happiness_blog_link() {
+	return get_option( 'page_for_posts' ) ? get_permalink( get_option( 'page_for_posts' ) ) : home_url( '/' );
+}
