@@ -16,7 +16,8 @@ get_header(); ?>
 					echo '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a>';
 				} ?>
 			</div>
-			<h1>Blog > <?php the_title() ?></h1>
+			<?php $category = reset(get_the_category()); ?>
+			<h1><a href="<?php echo delivering_happiness_blog_link(); ?>">Blog</a> > <?php echo $category ? ( '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a>' ) : get_the_title(); ?></h1>
 		</div>
 		<div id="primary" class="content-area left-col">
 			<main id="main" class="site-main" role="main">
