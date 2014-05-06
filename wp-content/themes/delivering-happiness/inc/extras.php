@@ -87,3 +87,44 @@ function delivering_happiness_setup_author() {
 	}
 }
 add_action( 'wp', 'delivering_happiness_setup_author' );
+
+function delivering_happiness_sort_team_members( $query ) {
+	/** @var WP_Query $query */
+	if( $query->is_main_query() && $query->is_post_type_archive( 'team_member' ) ) {
+		$meta_query = $query->get( 'meta_query' );
+		if( empty( $meta_query ) ) {
+			$meta_query = array();
+		}
+		if( $query->get( 'meta_key' ) ) {
+			$meta_query[] = array(
+				'key'     => $query->get( 'meta_key' ),
+				'value'   => $query->get( 'meta_value' ) ? $query->get( 'meta_value' ) : $query->get( 'meta_value_num' ),
+				'compare' => $query->get( 'meta_compare' ),
+				'type'    => $query->get( 'meta_value' ) ? '' : 'NUMERIC'
+			);
+		}
+		$meta_query = array_merge( $meta_query,
+			array(
+			     'relation' => 'OR',
+			     array(
+				     'key'   => '_dh_location',
+				     'value' => DH_Metabox::TEAM_LOCATION_EVERYWHERE
+			     ),
+			     array(
+				     'key'   => '_dh_location',
+				     'value' => DH_Metabox::TEAM_LOCATION_LIST
+			     ),
+			     array(
+				     'key'     => '_dh_location',
+				     'value'   => 'fake value due to bug #23268 in wordpress core',
+				     'compare' => 'NOT EXISTS'
+			     )
+			)
+		);
+		$query->set( 'meta_query', $meta_query );
+		$query->set( 'order', 'ASC' );
+		$query->set( 'orderby', 'menu_order title' );
+		$query->set( 'posts_per_page', -1 );
+	}
+}
+add_action( 'pre_get_posts', 'delivering_happiness_sort_team_members' );
