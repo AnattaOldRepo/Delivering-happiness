@@ -1338,6 +1338,11 @@ a {
   color: green;
 }
 
+/* line 719, ../sass/global/_components.scss */
+.flare {
+  top: 140px !important;
+}
+
 /* line 5, ../sass/global/_header.scss */
 .global-header {
   font-size: 13px;
