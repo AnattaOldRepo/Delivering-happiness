@@ -14,7 +14,8 @@
 	<div class="entry-content">
 		<div class="media">
 			<?php if ( has_post_thumbnail() ) { ?>
-				<?php echo get_the_post_thumbnail(); ?>
+				<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id() ); ?>
+				<img src="<?php echo $image[0]; ?>" alt="featured-thumbnail" />
 			<?php } else if ( function_exists( 'get_the_image_by_scan' ) ) { ?>
 				<?php $image = get_the_image_by_scan( array( 'post_id' => get_the_ID() ) ); ?>
 				<img src="<?php echo $image['src']; ?>" alt="featured-thumbnail" />
