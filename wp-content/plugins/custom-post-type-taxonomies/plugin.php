@@ -55,6 +55,19 @@ class Custom_Post_Types_Taxonomies {
 		);
 
 		register_post_type( 'team_member', $args );
+
+		$labels = array(
+			'name'          => _x( 'Categories', 'Team Member', 'dh_cpt' ),
+			'singular_name' => _x( 'Category', 'Team Member', 'dh_cpt' )
+		);
+
+		$args = array(
+			'labels'            => $labels,
+			'show_admin_column' => true,
+			'hierarchical'      => true
+		);
+
+		register_taxonomy( 'team_category', 'team_member', $args );
 	}
 }
 
