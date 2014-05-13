@@ -95,6 +95,15 @@ get_header();
 			$team_members = get_posts(
 				array(
 					'post_type' => 'team_member',
+					'tax_query' => array(
+						'relation' => 'AND',
+						array(
+							'taxonomy' => 'team_category',
+							'field'    => 'slug',
+							'terms'    => array( 'partner', 'advisor' ),
+							'operator' => 'NOT IN'
+						),
+					),
 					'posts_per_page' => 7,
 				    'order'=>'ASC',
 				    'orderby'=>'meta_value_num menu_order title',
