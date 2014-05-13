@@ -100,19 +100,10 @@ get_header();
 				    'orderby'=>'meta_value_num menu_order title',
 				    'meta_key'=>'_dh_work_order',
 				    'meta_query' => array(
-					    'relation' => 'OR',
-					    array(
-						    'key'   => '_dh_location',
-						    'value' => DH_Metabox::TEAM_LOCATION_EVERYWHERE
-					    ),
-					    array(
-						    'key'   => '_dh_location',
-						    'value' => DH_Metabox::TEAM_LOCATION_WORK
-					    ),
 					    array(
 						    'key'     => '_dh_location',
-						    'value'   => 'fake value due to bug #23268 in wordpress core',
-						    'compare' => 'NOT EXISTS'
+						    'value'   => array( DH_Metabox::TEAM_LOCATION_EVERYWHERE, DH_Metabox::TEAM_LOCATION_WORK ),
+						    'compare' => 'IN'
 					    )
 				    )
 				)
