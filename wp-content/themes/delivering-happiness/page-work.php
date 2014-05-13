@@ -97,7 +97,8 @@ get_header();
 					'post_type' => 'team_member',
 					'posts_per_page' => 7,
 				    'order'=>'ASC',
-				    'orderby'=>'menu_order title',
+				    'orderby'=>'meta_value_num menu_order title',
+				    'meta_key'=>'_dh_work_order',
 				    'meta_query' => array(
 					    'relation' => 'OR',
 					    array(

@@ -9,6 +9,7 @@ class DH_Metabox {
 
 	function __construct() {
 		add_action( 'add_meta_boxes_team_member', array( $this, 'add_team_member_meta_box' ) );
+		add_action( 'add_meta_boxes_team_member', array( $this, 'add_work_order_meta_box' ) );
 		add_action( 'save_post_team_member', array( $this, 'save_team_member' ) );
 	}
 
@@ -32,14 +33,24 @@ class DH_Metabox {
 	<?php
 	}
 
+	function add_work_order_meta_box() {
+		add_meta_box( 'dh_work_order_metabox',
+			'Work Page Order',
+			array( $this, 'work_order_meta_box' )
+		);
+	}
+
+	function work_order_meta_box( $post ) {
+		wp_nonce_field( 'dh_work_order_metabox', 'dh_work_order_metabox_nonce' );
+		$value = absint( get_post_meta( $post->ID, '_dh_work_order', true ) );
+		?>
+		<input id="dh_work_order" name="dh_work_order" value="<?php echo $value; ?>"/>
+	<?php
+	}
+
 	function save_team_member( $id ) {
 		// If this is an autosave, our form has not been submitted, so we don't want to do anything.
 		if( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE ) {
-			return;
-		}
-
-		// Verify that the nonce is valid.
-		if( !isset( $_POST['dh_location_meta_box_nonce'] ) || !wp_verify_nonce( $_POST['dh_location_meta_box_nonce'], 'dh_location_meta_box' ) ) {
 			return;
 		}
 
@@ -48,14 +59,23 @@ class DH_Metabox {
 			return;
 		}
 
-		if( isset( $_POST['dh_location'] ) && in_array( absint( $_POST['dh_location'] ), array( self::TEAM_LOCATION_WORK, self::TEAM_LOCATION_LIST, self::TEAM_LOCATION_NONE ), true ) ) {
-			$location = absint( $_POST['dh_location'] );
-		} else {
-			$location = self::TEAM_LOCATION_EVERYWHERE;
+		if( isset( $_POST['dh_location_meta_box_nonce'] ) && wp_verify_nonce( $_POST['dh_location_meta_box_nonce'], 'dh_location_meta_box' ) ) {
+			if( isset( $_POST['dh_location'] ) && in_array( absint( $_POST['dh_location'] ), array( self::TEAM_LOCATION_WORK, self::TEAM_LOCATION_LIST, self::TEAM_LOCATION_NONE ), true ) ) {
+				$location = absint( $_POST['dh_location'] );
+			} else {
+				$location = self::TEAM_LOCATION_EVERYWHERE;
+			}
+
+			// Update the meta field in the database.
+			update_post_meta( $id, '_dh_location', $location );
 		}
 
-		// Update the meta field in the database.
-		update_post_meta( $id, '_dh_location', $location );
+		if( isset( $_POST['dh_work_order_metabox_nonce'] ) && wp_verify_nonce( $_POST['dh_work_order_metabox_nonce'], 'dh_work_order_metabox' ) && isset( $_POST['dh_work_order'] ) ) {
+			$order = absint( $_POST['dh_work_order'] );
+
+			// Update the meta field in the database.
+			update_post_meta( $id, '_dh_work_order', $order );
+		}
 	}
 }
 
