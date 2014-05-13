@@ -727,3 +727,47 @@ a {
 .flare{
     top: 140px!important;
 }
+.modal-box{
+    @include border_radius(10px);
+    @include absolute-valing($pos: fixed, $width: 350px, $height: auto, $ptop: 40%);
+    border: 5px solid #666666;
+    background: white;
+    z-index: 999999;
+    padding: 30px;
+    text-align: center;
+    .gform_wrapper{
+        .gfield_label{
+            display: none;
+        }
+        .ginput_container input{
+            width: 226px;
+        }
+        .button{
+            padding: 9px 29px!important;
+            position: static!important;
+            cursor: pointer;
+            background-color: rgba($ModerateViolet, 0.3)!important;
+            border-color: $ModerateViolet!important;
+            color: $ModerateViolet!important;
+            margin-top: 15px;
+            margin-bottom: 20px;
+            &:hover {
+                background-color: rgba($ModerateViolet, 0.5)!important;
+            }
+        }
+    }
+    .close{
+        color: $Blue;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+.faded{
+    display: none;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    z-index: 99999;
+}

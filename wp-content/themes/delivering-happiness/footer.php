@@ -68,6 +68,6 @@
 </div>
 
 <?php wp_footer(); ?>
-
+<div class="faded"></div>
 </body>
 </html>

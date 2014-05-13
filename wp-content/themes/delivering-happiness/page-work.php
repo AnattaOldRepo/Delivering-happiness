@@ -27,14 +27,16 @@ get_header();
 
 	<section class="rounded-block happy-work">
 		<div class="wrapper">
-			<div id="download_roadmap_form" style="display:none;">
+			<div class="modal-box" id="download_roadmap_form" style="display:none;">
+				<p>Please enter your email to download Roadmap.</p>
 				<?php gravity_form(6, true, true, false, null, true); ?>
+				<span class="close">close</span>
 			</div>
 			<div class="container">
 				<article class="content">
 					<h2>Let’s Make Happy Work™. <span>Ready to plan your journey?</span></h2>
 					<p>We believe happiness at work is a journey. Here is your roadmap. These simple<br/>five steps combine the science of happiness and the experience of Zappos and<br/>other leading companies to help your organization create its own unique work<br/>culture,  increase happiness and build success. </p>
-					<a href="#" class="button moderateviolet" onclick="jQuery('#download_roadmap_form').show();return false;">DOWNLOAD ROADMAP</a>
+					<a href="#" class="button moderateviolet modal-box-handler" onclick="jQuery('#download_roadmap_form').show();return false;">DOWNLOAD ROADMAP</a>
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/work-animation-demo.png" alt="" />
 				</article>
 			</div>

@@ -111,3 +111,13 @@
   &::-webkit-input-placeholder { @content };
   &:-ms-input-placeholder { @content };
 }
+
+@mixin absolute-valing($pos: absolute, $pleft: 50%, $ptop: 50%, $width: auto, $height: auto) {
+    width: $width;
+    height: $height;
+    position: $pos;
+    left: $pleft;
+    top: $ptop;
+    margin-left: -($width / 2);
+    margin-top: -($height / 2);
+}

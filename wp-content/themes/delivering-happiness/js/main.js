@@ -5,6 +5,18 @@
 
 (function($){
 	$( document ).ready(function() {
+
+    // Modal box 
+    $('.faded').height($(document).height());
+    $('.modal-box-handler').click(function(){
+      $('.faded').show();
+    });
+    $('.modal-box').find('.close').click(function(){
+      $('.faded').hide();
+      $(this).parent().hide();
+    });
+
+    // Flip animation 
 		$('.flip .coin').click(function() {
       $(this).parents('.all-coins').find('.coin').removeClass('active');
      	$(this).addClass('active');
