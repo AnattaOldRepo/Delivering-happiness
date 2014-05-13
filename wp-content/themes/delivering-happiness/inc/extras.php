@@ -91,22 +91,24 @@ add_action( 'wp', 'delivering_happiness_setup_author' );
 function delivering_happiness_sort_team_members( $query ) {
 	/** @var WP_Query $query */
 	if( $query->is_main_query() && ( $query->is_post_type_archive( 'team_member' ) || $query->is_tax( 'team_category' ) ) ) {
-		$tax_query = $query->get( 'tax_query' );
-		if( empty( $tax_query ) ) {
-			$tax_query = array();
+		if( !$query->is_tax( 'team_category' ) ) {
+			$tax_query = $query->get( 'tax_query' );
+			if( empty( $tax_query ) ) {
+				$tax_query = array();
+			}
+			$tax_query = array_merge( $tax_query,
+				array(
+				     'relation' => 'AND',
+				     array(
+					     'taxonomy' => 'team_category',
+					     'field'    => 'slug',
+					     'terms'    => array( 'partner', 'advisor' ),
+					     'operator' => 'NOT IN'
+				     )
+				)
+			);
+			$query->set( 'tax_query', $tax_query );
 		}
-		$tax_query = array_merge( $tax_query,
-			array(
-			     'relation' => 'AND',
-			     array(
-				     'taxonomy' => 'team_category',
-				     'field'    => 'slug',
-				     'terms'    => array( 'partner', 'advisor' ),
-				     'operator' => 'NOT IN'
-			     )
-			)
-		);
-		$query->set( 'tax_query', $tax_query );
 		$meta_query = $query->get( 'meta_query' );
 		if( empty( $meta_query ) ) {
 			$meta_query = array();
