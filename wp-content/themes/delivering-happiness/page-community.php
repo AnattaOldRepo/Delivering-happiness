@@ -56,28 +56,28 @@ get_header();
 					<h2>Very Happy People:</h2>
 					<div class="all-coins">
 						<div class="coin active">
-							<div class="coin-side front happy-people-p"></div>
-							<div class="coin-side back happy-people-p-selected"></div>
+							<div class="coin-side front happy-people-hp-1"></div>
+							<div class="coin-side back happy-people-hp-1-selected"></div>
 						</div>
 						<div class="coin">
-							<div class="coin-side front happy-people-p"></div>
-							<div class="coin-side back happy-people-p-selected"></div>
+							<div class="coin-side front happy-people-hp-6"></div>
+							<div class="coin-side back happy-people-hp-6-selected"></div>
 						</div>
 						<div class="coin last">
-							<div class="coin-side front happy-people-p "></div>
-							<div class="coin-side back happy-people-p-selected"></div>
+							<div class="coin-side front happy-people-hp-4 "></div>
+							<div class="coin-side back happy-people-hp-4-selected"></div>
 						</div>
 						<div class="coin">
-							<div class="coin-side front happy-people-p"></div>
-							<div class="coin-side back happy-people-p-selected"></div>
+							<div class="coin-side front happy-people-hp-5"></div>
+							<div class="coin-side back happy-people-hp-5-selected"></div>
 						</div>
 						<div class="coin">
-							<div class="coin-side front happy-people-p"></div>
-							<div class="coin-side back happy-people-p-selected"></div>
+							<div class="coin-side front happy-people-hp-3"></div>
+							<div class="coin-side back happy-people-hp-3-selected"></div>
 						</div>
 						<div class="coin last">
-							<div class="coin-side front happy-people-p"></div>
-							<div class="coin-side back happy-people-p-selected"></div>
+							<div class="coin-side front happy-people-hp-2"></div>
+							<div class="coin-side back happy-people-hp-2-selected"></div>
 						</div>
 					</div>
 				</div>

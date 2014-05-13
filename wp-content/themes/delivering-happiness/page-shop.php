@@ -15,7 +15,7 @@ get_header();
 				<article class="content">
 					<blockquote>Too much of this is a<br/>good thing.</blockquote>
 					<span>Created with love, made with care,<br/>infused with joy.</span>
-					<a href="http://shop.deliveringhappiness.com" class="button">SHOP THE COLLECTION</a>
+					<a href="http://shop.deliveringhappiness.com" target="_blank" class="button">SHOP THE COLLECTION</a>
 				</article>
 			</div>
 			<div class="right-col">
@@ -32,7 +32,7 @@ get_header();
 				<article class="content">
 					<h2>Do Good, Feel Good.<span>We design products to Inspire, Connect, Educate and Experience.</span></h2>
 					<p>shop@DH goods spread and inspire happiness at home, at work, in our<br/>communities, and in our everyday lives. They aspire to make people feel a<br/>certain way. Like they just discovered their car can fly—and now spend their<br/>work commutes soaring over traffic jams, listening to fun music and eating delicious pastries.</p>
-					<a href="http://shop.deliveringhappiness.com" class="button green">Visit the shop</a>
+					<a href="http://shop.deliveringhappiness.com" target="_blank" class="button green">Visit the shop</a>
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/go-good-feel-good.jpg" alt="" />
 				</article>
 			</div>
@@ -86,21 +86,20 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Our design team can work with you to create custom, private label and/or co-branded products that'll impress the socks off of your employees, colleagues and customers.</p>
-						<a href="#" class="button green">Find Out More</a>
+						<a href="/shop/custom" class="button green">Find Out More</a>
 					</div>
 				</div>
 			</div>
 			<div class="col middle-col">
 				<div class="become-partner-product">
 					<div class="content">
-						<p>Want to make your shop a happier place? We’re looking for qualified retailers to help spread happiness.</p>
 						<div class="v-aling"><h3>Become a<br/>Retailer</h3></div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>We're making our way into shops throughout the US, starting with these fine stores.</p>
-						<a href="http://shop.deliveringhappiness.com" class="button green">Find a Store</a>
+						<p>Want to make your shop a happier place? We’re looking for qualified retailers to help spread happiness.</p>
+						<a href="http://shop.deliveringhappiness.com/pages/be-a-happiness-retailer" target="_blank" class="button green">Find a Store</a>
 					</div>
 				</div>
 			</div>
@@ -115,12 +114,8 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>We're making our way into shops throughout the US, starting with these fine <br/>
-							- Modern Mouse (Alameda, CA)<br/>
-							- Treasure Island (Las Vegas, NV)<br/>
-							- Zappos.com<br/>
-						</p>
-						<a href="#" class="button green">LET’S Buy!</a>
+						<p>We're making our way into shops throughout the US, starting with these fine stores.</p>
+						<a href="http://shop.deliveringhappiness.com/pages/retailers" target="_blank" class="button green">LET’S Buy!</a>
 					</div>
 				</div>
 			</div>

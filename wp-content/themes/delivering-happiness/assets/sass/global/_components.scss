@@ -399,6 +399,14 @@ a {
             }
         }
     }
+    &.blog{
+        .media{
+            img{
+                max-width: 336px;
+                height: auto;
+            }
+        }
+    }
 }
 
 .four-column {

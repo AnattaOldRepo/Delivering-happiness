@@ -137,7 +137,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-					<a href="/work/roi-calculator" class="button blue">LET’S GO!</a>
+					<a href="https://app.happinessatworksurvey.com/?a=dh" class="button blue">LET’S GO!</a>
 				</div>
 			</div>
 		</div>
@@ -280,53 +280,5 @@ get_header();
 	</div>
 </section>
 <!-- /Blog section-->
-
-
-
-<!-- Core values section-->
-<section class="rounded-block core-values">
-	<div class="wrapper">
-		<div class="container">
-			<h2>Our core values:</h2>
-			<div class="horizontal-slider">
-				<div class="slide cycle-slideshow" data-cycle-fx="fade" data-cycle-slides="> div" data-cycle-timeout="2000" data-cycle-pager="#custom-pager" data-cycle-pager-template="<a href=#> {{slideNum}} </a>">
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-1.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-2.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-3.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-4.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-5.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-6.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-7.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-8.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-09.png" alt="placeholder" /></div>
-					<div><img src="<?php bloginfo('template_url') ?>/assets/images/global/corevalues-ind-10.png" alt="placeholder" /></div>
-				</div>
-				<div id="custom-pager" class="pager cycle-pager">
-				</div>
-			</div>
-			<a href="<?php bloginfo('template_url') ?>/assets/images/global/values-posters.pdf" target="_blank" class="cta">Download the poster for free!</a>
-		</div>
-	</div>
-</section>
-<!-- /Core values section-->
-
-<!-- Inspiration section-->
-<section class="two-column inspiration">
-	<div class="wrapper">
-		<div class="left-col">
-			<div class="content">
-				<h3>Shop@DH – created to<br/>inspire.<span>Share your inspiration and<br/>save 20%.</span></h3>
-				<a href="#" class="button softyellow">Share your story</a>
-			</div>
-		</div>
-		<div class="right-col">
-			<div class="media">
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/inspired-graphic.jpg" alt="" />
-			</div>
-		</div>
-	</div>
-</section>
-<!-- Inspiration section-->
-
 
 <?php get_footer(); ?>

@@ -289,7 +289,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>If you’re a company or self-employed coach who shares our vision of impacting workplace cultures around the world, let’s talk! Our Global Partner Program may be just the thing for you.</p>
-						<a href="/become-a-partner/" class="button moderateviolet">Find Out More</a>
+						<a href="/work/become-a-partner" class="button moderateviolet">Find Out More</a>
 					</div>
 				</div>
 			</div>
@@ -307,7 +307,7 @@ get_header();
 				<div class="content">
 					<h3>Partner with us.<span>Interested in being a DH partner?<br/>you’re in the right place. </span></h3>
 					<p>We’re on a mission to share the science of happiness<br/>and impact workplace cultures around the world. To do<br/>that, we’ve created a partner program.  Whether you’re<br/>a company or a self-employed coach, let us know what<br/>your vision is in changing the world. </p>
-					<a href="#" class="button softyellow">APPLY TO BE A PARTNER</a>
+					<a href="/work/become-a-partner" class="button softyellow">APPLY TO BE A PARTNER</a>
 				</div>
 			</div>
 		</div>
@@ -328,7 +328,7 @@ get_header();
 						<img src="<?php bloginfo('template_url') ?>/assets/images/global/chart.png" alt="placeholder" />
 					</div>
 				</div>
-				<a href="#" class="button blue">Calculate your happiness ROI</a>
+				<a href="/work/roi-calculator" class="button blue">Calculate your happiness ROI</a>
 			</div>
 			
 		</div>
