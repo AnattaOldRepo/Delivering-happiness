@@ -229,7 +229,11 @@ get_header();
 				</article>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p><?php echo substr( strip_tags( $blog_posts[0]->post_content ), 0, 80 ); ?></p>
+						<?php if( has_excerpt( $blog_posts[0]->ID ) ) : ?>
+							<p><?php echo $blog_posts[0]->post_excerpt; ?></p>
+						<?php else : ?>
+							<p><?php echo substr( strip_tags( $blog_posts[0]->post_content ), 0, 80 ); ?></p>
+						<?php endif; ?>
 						<a href="<?php echo get_permalink( $blog_posts[0]->ID ); ?>" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
@@ -250,7 +254,11 @@ get_header();
 				</article>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p><?php echo substr( strip_tags( $blog_posts[1]->post_content ), 0, 80 ); ?></p>
+						<?php if( has_excerpt( $blog_posts[1]->ID ) ) : ?>
+							<p><?php echo $blog_posts[1]->post_excerpt; ?></p>
+						<?php else : ?>
+							<p><?php echo substr( strip_tags( $blog_posts[1]->post_content ), 0, 80 ); ?></p>
+						<?php endif; ?>
 						<a href="<?php echo get_permalink( $blog_posts[1]->ID ); ?>" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
@@ -271,7 +279,11 @@ get_header();
 				</article>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p><?php echo substr( strip_tags( $blog_posts[2]->post_content ), 0, 80 ); ?></p>
+						<?php if( has_excerpt( $blog_posts[2]->ID ) ) : ?>
+							<p><?php echo $blog_posts[2]->post_excerpt; ?></p>
+						<?php else : ?>
+							<p><?php echo substr( strip_tags( $blog_posts[2]->post_content ), 0, 80 ); ?></p>
+						<?php endif; ?>
 						<a href="<?php echo get_permalink( $blog_posts[2]->ID ); ?>" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
