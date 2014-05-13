@@ -90,7 +90,7 @@ add_action( 'wp', 'delivering_happiness_setup_author' );
 
 function delivering_happiness_sort_team_members( $query ) {
 	/** @var WP_Query $query */
-	if( $query->is_main_query() && ( $query->is_post_type_archive( 'team_member' ) || $query->is_tax( 'team_category' ) ) ) {
+	if( $query->is_main_query() && !is_admin() && ( $query->is_post_type_archive( 'team_member' ) || $query->is_tax( 'team_category' ) ) ) {
 		if( !$query->is_tax( 'team_category' ) ) {
 			$tax_query = $query->get( 'tax_query' );
 			if( empty( $tax_query ) ) {
