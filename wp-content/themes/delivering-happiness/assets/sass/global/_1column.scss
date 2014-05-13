@@ -3,32 +3,32 @@
 // --------------------------------------------------
 
 .one-column-template {
-    &.team-template{
-        .page-header{
+    &.team-template {
+        .page-header {
             margin-bottom: 10px;
         }
-        p.designation{
+        p.designation {
             margin-bottom: 20px;
         }
     }
-    .wrapper{
+    .wrapper {
         padding: 47px 73px 47px 73px;
         background-color: $LightGray;
     }
-    .page-header{
-    	@extend %heading-level-1;
-    	color: $Blue;
+    .page-header {
+        @extend %heading-level-1;
+        color: $Blue;
         margin-bottom: 30px;
     }
-    .four-column{
-    	.wrapper{
-    		padding: 47px 0 0 46px;
-    	}
+    .four-column {
+        .wrapper {
+            padding: 47px 0 0 46px;
+        }
     }
-    .page-content{
-    	@extend %typography;
-    	padding:0px;
-        .media{
+    .page-content {
+        @extend %typography;
+        padding: 0px;
+        .media {
             @extend %pull-left;
             margin-right: 30px;
         }

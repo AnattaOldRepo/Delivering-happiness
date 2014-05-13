@@ -51,8 +51,8 @@
                     padding: 66px 0px 66px 60px;
                 }
             }
-            .right-col{
-                 position: relative;
+            .right-col {
+                position: relative;
             }
         }
         .content {
@@ -61,7 +61,7 @@
             left: 0px;
             text-align: center;
             padding: 69px 79px;
-            span{
+            span {
                 display: block;
                 text-transform: uppercase;
                 font-style: normal;
@@ -79,19 +79,19 @@
                 background: $Blue;
                 z-index: 1;
             }
-            &.sandels{
+            &.sandels {
                 background: $Orange;
                 z-index: 2;
             }
-            &.mountain{
+            &.mountain {
                 background: $DarkCyan;
                 z-index: 3;
             }
-            &.lilly{
+            &.lilly {
                 background: $LimeGreen;
                 z-index: 4;
             }
-            &.heart{
+            &.heart {
                 background: $StrongMagenta;
                 z-index: 5;
             }
@@ -120,5 +120,5 @@
                 @extend %pharagraph-level-1;
             }
         }
-    }   
+    }
 }

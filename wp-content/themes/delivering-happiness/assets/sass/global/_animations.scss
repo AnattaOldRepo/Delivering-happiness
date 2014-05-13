@@ -2,24 +2,23 @@
 // Animations
 // --------------------------------------------------
 
-.flip{
-    .right-col{
+.flip {
+    .right-col {
         position: relative;
         overflow: hidden;
-        .content{
-            position:absolute;
+        .content {
+            position: absolute;
             top: 0px;
             left: 0px;
             @include transition(all 1s ease);
             @include opacity(0);
             @include scale(5);
             overflow: hidden;
-
-            &.active{
-                @include opacity(1); 
+            &.active {
+                @include opacity(1);
                 @include transition(opacity 2s ease);
                 @include scale(1);
-                z-index: 10!important; 
+                z-index: 10 !important;
             }
         }
     }
@@ -66,59 +65,60 @@
     }
 }
 
-.cross-fade{
-    .hover-content{
+.cross-fade {
+    .hover-content {
         background-color: $White;
         @include translate(0, 30px);
-        @include transition(all .5s ease);
+        @include transition(all 0.5s ease);
         @include opacity(1);
         @include square(336px);
-        position: absolute; 
+        position: absolute;
         top: -370px;
         left: 0px;
         font-style: italic;
         line-height: 1.8em;
-        .v-aling{
+        .v-aling {
             @include square(336px);
             display: table-cell;
             vertical-align: middle;
             padding: 0px 40px;
         }
-        p{
+        p {
             @extend %text-left;
         }
     }
-    &.four-column{
-        .hover-content{
-            background-color: rgba(120, 60, 189, .8);
+    &.four-column {
+        .hover-content {
+            background-color: rgba(120, 60, 189, 0.8);
             @include square(226px);
             top: -260px;
-            .v-aling{
-                @include square(226px);  
-                .button{
+            .v-aling {
+                @include square(226px);
+                .button {
                     background-color: lighten($ModerateViolet, 35%);
-                    border-width:1px;
+                    border-width: 1px;
                     border-color: $ModerateViolet;
                     padding: 12px 0;
                     width: 160px;
                     margin: 0 auto;
                     color: $ModerateViolet;
                     display: block;
-                    &:hover{
-                        background-color: lighten($ModerateViolet, 55%);   
+                    &:hover {
+                        background-color: lighten($ModerateViolet, 55%);
                     }
                 }
             }
-        }  
+        }
     }
 }
 
 // Show content on hover for three and four columns
+
 .three-column,
-.four-column{
-    .col{
-        &:hover{
-            .hover-content{
+.four-column {
+    .col {
+        &:hover {
+            .hover-content {
                 @include opacity(10);
                 top: -30px;
             }

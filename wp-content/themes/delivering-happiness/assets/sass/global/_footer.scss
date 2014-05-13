@@ -38,7 +38,7 @@
             padding: 59px 0 0 80px;
             @include clearfix;
         }
-        a{
+        a {
             color: #999999;
         }
         h3,
@@ -47,6 +47,12 @@
             text-transform: uppercase;
             margin-bottom: 33px;
             letter-spacing: 1px;
+            a {
+                color: $Gray;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
         }
         .block {
             @extend %pull-left;
@@ -90,14 +96,14 @@
                 margin-bottom: 12px;
             }
         }
-        .gform_heading{
+        .gform_heading {
             display: block;
         }
         .gform_body,
-        .gform_footer{
+        .gform_footer {
             @extend %pull-left;
         }
-        .gform_footer{
+        .gform_footer {
             margin-top: 16px;
             margin-bottom: 25px;
             .button {
@@ -109,7 +115,7 @@
                 color: #0198cf;
             }
         }
-        .gform_body{
+        .gform_body {
             margin-top: 16px;
             margin-bottom: 25px;
             input[type="text"] {
@@ -127,7 +133,7 @@
             }
         }
         .validation_message,
-        .validation_error{
+        .validation_error {
             padding-bottom: 0px;
         }
     }

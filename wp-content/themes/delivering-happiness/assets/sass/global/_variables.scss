@@ -6,10 +6,12 @@
 // -------------------------
 
 $Black: black !default;
-$Gray: lighten($Black, 40%); // #666666
+$Gray: lighten($Black, 40%);
+
+// #666666
 $LightGray: #efefef;
 $White: white !default;
-$OffWhite :#fbf9fa !default;
+$OffWhite: #fbf9fa !default;
 $Purple: #793cbd !default;
 $Green: #00af42 !default;
 $LightGreen: #c3eacb !default;
@@ -55,20 +57,44 @@ $imagedir: "../images/global";
 // Sprites
 // -------------------------
 
-@import "nav/*.png"; // Sprites image for main navigation  
-@include all-nav-sprites; // Generator Sprites for main navigation 
+@import "nav/*.png";
 
-@import "happiness/*.png"; // Sprites image for happiness section
-@include all-happiness-sprites; // Generator Sprites for happiness section
+// Sprites image for main navigation
+@include all-nav-sprites;
 
-@import "social/*.png"; // Sprites image for social icons
-@include all-social-sprites; // Generator Sprites for social icons
+// Generator Sprites for main navigation
 
-@import "clients/*.png"; // Sprites image for client's list
-@include all-clients-sprites; // Generator Sprites for client's list
+@import "happiness/*.png";
 
-@import "happy-people/*.png"; // Sprites image for Quotes's list
-@include all-happy-people-sprites; // Generator Sprites for Quotes's list
+// Sprites image for happiness section
+@include all-happiness-sprites;
 
-@import "movements/*.png"; // Sprites image for Movements's list
-@include all-movements-sprites; // Generator Sprites for Movements's list
+// Generator Sprites for happiness section
+
+@import "social/*.png";
+
+// Sprites image for social icons
+@include all-social-sprites;
+
+// Generator Sprites for social icons
+
+@import "clients/*.png";
+
+// Sprites image for client's list
+@include all-clients-sprites;
+
+// Generator Sprites for client's list
+
+@import "happy-people/*.png";
+
+// Sprites image for Quotes's list
+@include all-happy-people-sprites;
+
+// Generator Sprites for Quotes's list
+
+@import "movements/*.png";
+
+// Sprites image for Movements's list
+@include all-movements-sprites;
+
+// Generator Sprites for Movements's list

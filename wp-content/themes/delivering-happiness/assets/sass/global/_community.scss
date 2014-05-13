@@ -125,7 +125,7 @@
         }
         .cal {
             background-color: $ModerateViolet;
-            padding-top:80px!important;
+            padding-top: 80px !important;
         }
     }
     .instagram {
@@ -134,14 +134,14 @@
             background-color: $LightGray;
             padding: 71px 134px 104px 134px;
             letter-spacing: -2px;
-            @include clearfix();
+            @include clearfix;
         }
         h2 {
             @extend %heading-level-7;
             font-style: italic;
             margin-bottom: 66px;
         }
-        img{
+        img {
             width: 150px;
             @extend %pull-left;
         }

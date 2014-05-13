@@ -234,19 +234,18 @@ a {
 
 .horizontal-slider {
     text-align: center;
-    .slide {    
+    .slide {
         @include size(100%, 285px);
         @extend %block-center;
         text-center: center;
-        img{
+        img {
             margin: auto;
             height: 100px;
-            
         }
-        .cycle-slide{
+        .cycle-slide {
             @extend %text-center;
             @include size(100%, 205px);
-            top: 50%!important;
+            top: 50% !important;
             margin-top: -45px;
         }
     }
@@ -297,7 +296,6 @@ a {
     .right-col {
         @extend %pull-right;
     }
-
     .content {
         @include square(336px);
         position: absolute;
@@ -319,7 +317,7 @@ a {
                 height: 85px;
             }
         }
-        &.medium{
+        &.medium {
             height: 100px;
         }
         span {
@@ -342,15 +340,15 @@ a {
         .content {
             background-color: $Blue;
         }
-        .hover-content{
+        .hover-content {
             background-color: lighten($Blue, 35%);
             color: $White;
-            .button{
-                background: rgba(255, 255, 255, .5);
+            .button {
+                background: rgba(255, 255, 255, 0.5);
                 padding: 10px 45px;
                 margin-top: 20px;
-                &:hover{
-                    background: rgba(255, 255, 255, .8);
+                &:hover {
+                    background: rgba(255, 255, 255, 0.8);
                 }
             }
         }
@@ -359,24 +357,24 @@ a {
         .content {
             background-color: $ModerateViolet;
         }
-        .hover-content{
+        .hover-content {
             background-color: lighten($ModerateViolet, 30%);
             color: $White;
-            p{
-                span{
+            p {
+                span {
                     display: block;
                     text-transform: uppercase;
                     color: $ModerateViolet;
                     font-style: normal;
                 }
             }
-            .button{
-                background: rgba(255, 255, 255, .4);
-                border-width:1px;
+            .button {
+                background: rgba(255, 255, 255, 0.4);
+                border-width: 1px;
                 padding: 10px 45px;
                 margin-top: 20px;
-                &:hover{
-                    background: rgba(255, 255, 255, .9);
+                &:hover {
+                    background: rgba(255, 255, 255, 0.9);
                 }
             }
         }
@@ -385,23 +383,24 @@ a {
         .content {
             background-color: $Green;
         }
-        .hover-content{
-            background-color: #7bda9d; // need to set variable
+        .hover-content {
+            background-color: #7bda9d;
+            // need to set variable
             color: $White;
-            .button{
-                background: rgba(255, 255, 255, .6);
-                border-width:1px;
+            .button {
+                background: rgba(255, 255, 255, 0.6);
+                border-width: 1px;
                 padding: 10px 45px;
                 margin-top: 20px;
-                &:hover{
-                    background: rgba(255, 255, 255, .9);
+                &:hover {
+                    background: rgba(255, 255, 255, 0.9);
                 }
             }
         }
     }
-    &.blog{
-        .media{
-            img{
+    &.blog {
+        .media {
+            img {
                 max-width: 336px;
                 height: auto;
             }
@@ -438,7 +437,7 @@ a {
         @include square(226px);
         position: absolute;
         bottom: 0px;
-        @include transition(all .5s ease);
+        @include transition(all 0.5s ease);
         h3 {
             color: $White;
             @extend %heading-level-10;
@@ -582,7 +581,7 @@ a {
         font-style: italic;
         margin-bottom: 20px;
     }
-    img{
+    img {
         width: 412px;
         height: 412px;
     }
@@ -644,24 +643,25 @@ a {
     }
 }
 
-.products-animation{
-    .card{
-        @include transition(all .5s ease);
+.products-animation {
+    .card {
+        @include transition(all 0.5s ease);
         @extend %pull-left;
         overflow: hidden;
         @include size(84px, 412px);
-        &.active{
-             @include size(412px, 412px); 
+        &.active {
+            @include size(412px, 412px);
         }
     }
 }
-.video-container{
-    .onload-container{
+
+.video-container {
+    .onload-container {
         @extend %block-center;
         @include size(1170px, 546px);
         position: relative;
         overflow: hidden;
-        .video{
+        .video {
             @include size(1170px, 546px);
             position: absolute;
             left: 0px;
@@ -673,17 +673,17 @@ a {
 }
 
 .post-navigation,
-.paging-navigation{
-    .screen-reader-text{
+.paging-navigation {
+    .screen-reader-text {
         display: none;
     }
-    a{
+    a {
         @include border_radius(13px);
         @include transition(all 0.3s ease);
         @extend %text-center;
         width: 146px;
         padding: 15px 25px;
-        margin-left: 10px;;
+        margin-left: 10px;
         cursor: pointer;
         color: $Blue;
         border: none;
@@ -692,42 +692,45 @@ a {
         color: $Blue;
         text-transform: uppercase;
         display: block;
-
         &:hover {
             background-color: rgba($Blue, 0.2);
         }
     }
-    .nav-previous{
+    .nav-previous {
         @extend %pull-right;
     }
-    .nav-next{
+    .nav-next {
         @extend %pull-left;
     }
 }
-.post-navigation{
-    .nav-previous{
-        float: left!important; 
-    }
-    .nav-next{
-        float: right!important; 
-    }
 
+.post-navigation {
+    .nav-previous {
+        float: left !important;
+    }
+    .nav-next {
+        float: right !important;
+    }
 }
+
 .gform_confirmation_message,
 .validation_message,
-.validation_error{
+.validation_error {
     font-size: 12px;
-    padding:10px 0;
+    padding: 10px 0;
     color: red;
     line-height: normal;
 }
-.gform_confirmation_message{
+
+.gform_confirmation_message {
     color: green;
 }
-.flare{
-    top: 140px!important;
+
+.flare {
+    top: 140px !important;
 }
-.modal-box{
+
+.modal-box {
     @include border_radius(10px);
     @include absolute-valing($pos: fixed, $width: 350px, $height: auto, $ptop: 40%);
     border: 5px solid #666666;
@@ -735,36 +738,37 @@ a {
     z-index: 999999;
     padding: 30px;
     text-align: center;
-    .gform_wrapper{
-        .gfield_label{
+    .gform_wrapper {
+        .gfield_label {
             display: none;
         }
-        .ginput_container input{
+        .ginput_container input {
             width: 226px;
         }
-        .button{
-            padding: 9px 29px!important;
-            position: static!important;
+        .button {
+            padding: 9px 29px !important;
+            position: static !important;
             cursor: pointer;
-            background-color: rgba($ModerateViolet, 0.3)!important;
-            border-color: $ModerateViolet!important;
-            color: $ModerateViolet!important;
+            background-color: rgba($ModerateViolet, 0.3) !important;
+            border-color: $ModerateViolet !important;
+            color: $ModerateViolet !important;
             margin-top: 15px;
             margin-bottom: 20px;
             &:hover {
-                background-color: rgba($ModerateViolet, 0.5)!important;
+                background-color: rgba($ModerateViolet, 0.5) !important;
             }
         }
     }
-    .close{
+    .close {
         color: $Blue;
         text-decoration: underline;
         cursor: pointer;
     }
 }
-.faded{
+
+.faded {
     display: none;
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 0.5);
     position: absolute;
     left: 0px;
     top: 0px;

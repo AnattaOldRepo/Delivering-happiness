@@ -9,45 +9,45 @@ get_header();
 <!-- Work page-->
 <div class="community">
 
-<section class="two-column hero video-container">
-	<div class="onload-container">
-		<div class="wrapper">
-			<div class="left-col orange-area">
-				<article class="content">
-					<blockquote>Delivering Happiness.</blockquote>
-					<span>A global  movement,<br/>fueled by you.</span>
-					<a href="#" class="button arrow">See How it Begins</a>
-				</article>
+	<section class="two-column hero video-container">
+		<div class="onload-container">
+			<div class="wrapper">
+				<div class="left-col orange-area">
+					<article class="content">
+						<blockquote>Delivering Happiness.</blockquote>
+						<span>A global  movement,<br/>fueled by you.</span>
+						<a href="#" class="button arrow">See How it Begins</a>
+					</article>
+				</div>
+				<div class="right-col">
+					<div class="media">
+						<img src="<?php bloginfo('template_url')?>/assets/images/global/community-hero.jpg" alt="" />
+					</div>
+				</div>
 			</div>
-			<div class="right-col">
-				<div class="media">
-					<img src="<?php bloginfo('template_url')?>/assets/images/global/community-hero.jpg" alt="" />
+			<div class="video">
+				<iframe width="1170" height="546" src="///www.youtube.com/embed/nfdvNo8R3Ks?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+	</section>
+
+	<section class="happier-world rounded-block">
+		<div class="wrapper">
+			<div class="container">
+				<div class="left-col">
+					<article class="content">
+						<h2>The Change Starts Here.<span>At work, in our communities, and in our every-<br/>day lives.</span></h2>
+						<p>Backed by science, business sense, and common sense, we know<br/>that living a purposeful life is what really matters. So come along<br/>and join the movement. As our CEO says, it all begins with you.</p>
+						<p>It can be as simple as passing out balloons to strangers, or breaking<br/>out your best dance moves at the next company party. Or, make a<br/>bigger impact by hosting an Inspire! event in your company or<br/>community. How will you pay happiness forward? How will you<br/>change the world?</p>
+						<a href="/community/change-starts-here/" class="button orange">Tell me more</a>
+					</article>
+				</div>
+				<div class="right-col">
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/globe.jpg" alt="placeholder" />
 				</div>
 			</div>
 		</div>
-		<div class="video">
-			<iframe width="1170" height="546" src="///www.youtube.com/embed/nfdvNo8R3Ks?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
-		</div>
-	</div>
-</section>
-
-<section class="happier-world rounded-block">
-	<div class="wrapper">
-		<div class="container">
-			<div class="left-col">
-				<article class="content">
-					<h2>The Change Starts Here.<span>At work, in our communities, and in our every-<br/>day lives.</span></h2>
-					<p>Backed by science, business sense, and common sense, we know<br/>that living a purposeful life is what really matters. So come along<br/>and join the movement. As our CEO says, it all begins with you.</p>
-					<p>It can be as simple as passing out balloons to strangers, or breaking<br/>out your best dance moves at the next company party. Or, make a<br/>bigger impact by hosting an Inspire! event in your company or<br/>community. How will you pay happiness forward? How will you<br/>change the world?</p>
-					<a href="/community/change-starts-here/" class="button orange">Tell me more</a>
-				</article>
-			</div>
-			<div class="right-col">
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/globe.jpg" alt="placeholder" />
-			</div>
-		</div>
-	</div>
-</section>
+	</section>
 
 	<section class="two-column coin-animation clients flip">
 		<div class="wrapper">
@@ -97,32 +97,26 @@ get_header();
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>Thank you for sharing your message of inspiration today at Toyota. I am a corporate trainer at the University of Toyota and positive psychology is a passion of mine. I have read Tony’s book and am now reading Shawn Achor’s book, this movement is so exciting! I enjoyed every moment of [Jenn’s] presentation and thank you for taking the time to be here to share it with us.
-</blockquote>
+						<blockquote>Thank you for sharing your message of inspiration today at Toyota. I am a corporate trainer at the University of Toyota and positive psychology is a passion of mine. I have read Tony’s book and am now reading Shawn Achor’s book, this movement is so exciting! I enjoyed every moment of [Jenn’s] presentation and thank you for taking the time to be here to share it with us.</blockquote>
 						<span>Karin Accomando (Torrance, California)</span>
 					</div>
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>I came across your website and especially your tools regarding happiness@work and your community and I am truly impressed. Being a consultant in Australia, I can see how CEO's are starting to recognize the benefits of investing and keeping their people happy. Keep inspiring the world. 
-</blockquote>
+						<blockquote>I came across your website and especially your tools regarding happiness@work and your community and I am truly impressed. Being a consultant in Australia, I can see how CEO's are starting to recognize the benefits of investing and keeping their people happy. Keep inspiring the world. </blockquote>
 						<span> Marite Metsla (Melbourne, Australia)</span>
 					</div>
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>It’s nice to know there is a revolution starting in businesses thanks to your work and the work of other thought leaders. I read the full report that Gallup came out last year about productivity and culture—I think it’s the most important work a company can do, and find it incredibly validating to see books and companies like yours out there helping to tell the story in a way where business leaders will listen! 
-</blockquote>
-						<span>Char-Lynn Griffiths (Atlanta, Georgia)
-</span>
+						<blockquote>It’s nice to know there is a revolution starting in businesses thanks to your work and the work of other thought leaders. I read the full report that Gallup came out last year about productivity and culture—I think it’s the most important work a company can do, and find it incredibly validating to see books and companies like yours out there helping to tell the story in a way where business leaders will listen! </blockquote>
+						<span>Char-Lynn Griffiths (Atlanta, Georgia)</span>
 					</div>
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>I just listened to the EntreLeadership podcast with Jenn and was so inspired to hear what she had to say. At my new company, we have been so intentional about the integrity and culture surrounding our health food products that it only makes sense to build a strong culture as we grow our business. Your work inspired us to become a Certified B Corp. and partner with 1% for the Planet. Thank you for leading the change you wish to see.
-</blockquote>
-						<span>Catherine Mangan Walsh (New York, New York) 
-</span>
+						<blockquote>I just listened to the EntreLeadership podcast with Jenn and was so inspired to hear what she had to say. At my new company, we have been so intentional about the integrity and culture surrounding our health food products that it only makes sense to build a strong culture as we grow our business. Your work inspired us to become a Certified B Corp. and partner with 1% for the Planet. Thank you for leading the change you wish to see.</blockquote>
+						<span>Catherine Mangan Walsh (New York, New York) </span>
 					</div>
 				</article>
 			</div>
@@ -139,6 +133,7 @@ get_header();
 			<?php } ?>
 		</div>
 	</section>
+
 	<section class="two-column coin-animation movements flip">
 		<div class="wrapper">
 			<div class="left-col">
@@ -188,6 +183,7 @@ get_header();
 			</div>
 		</div>
 	</section>
+	
 	<section class="products-animation" style="margin-bottom:50px;">
 		<div class="wrapper">
 			<h2>Our Facebook is full of inspiration:</h2>
@@ -203,7 +199,6 @@ get_header();
 			<div class="card"><a href="https://www.facebook.com/photo.php?fbid=10153188754245551&set=a.478453395550.385890.460305775550&type=1" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/card10.jpg" alt="" /></a></div>
 		</div>
 	</section>
-
 
 </div>
 <!-- /Work page-->

@@ -3,10 +3,8 @@
 // --------------------------------------------------
 
 .happiness-page {
-    padding-bottom:50px;
-    .nav-links{
-        
-    }
+    padding-bottom: 50px;
+    .nav-links {}
     background: #f5f4f2;
     .left-col {
         @extend %pull-left;
@@ -30,7 +28,7 @@
             @extend %pull-left;
             font-style: italic;
         }
-        a{
+        a {
             color: $Blue;
         }
         .all-categories {
@@ -43,13 +41,13 @@
                 text-transform: uppercase;
                 margin-left: 30px;
                 letter-spacing: 2px;
-                &:hover{
-                   color: $Blue; 
+                &:hover {
+                    color: $Blue;
                 }
             }
         }
     }
-    .post { 
+    .post {
         @include clearfix;
         padding: 32px 20px 25px 20px;
         border: 5px solid darken($LightGray, 6.2%);
@@ -58,7 +56,7 @@
         .media {
             @extend %pull-left;
             width: 205px;
-            img{
+            img {
                 width: 185px;
             }
         }
@@ -107,44 +105,44 @@
                 }
             }
         }
-        &.detail{
+        &.detail {
             @extend %typography;
-            strong, b{
+            strong, b {
                 font-weight: bold;
             }
-            img{
+            img {
                 max-width: 618px;
             }
         }
     }
     .sidebar {
         .twitter,
-        .widget_polls-widget{
+        .widget_polls-widget {
             background-color: $White;
             border: 1px solid darken($LightGray, 6.2%);
             padding: 10px;
         }
-        .widget_polls-widget{
+        .widget_polls-widget {
             padding: 10px;
             margin-bottom: 18px;
             @extend %text-left;
-            .widget-title{
+            .widget-title {
                 @extend %text-center;
                 text-transform: uppercase;
                 padding: 18px 0;
             }
-            .wp-polls-ul{
+            .wp-polls-ul {
                 color: $Blue;
-                padding-top:20px;
-                li{
-                    padding:5px;
+                padding-top: 20px;
+                li {
+                    padding: 5px;
                     padding-bottom: 10px;
-                    label{
+                    label {
                         padding-left: 10px;
                     }
                 }
             }
-            .Buttons{
+            .Buttons {
                 @include border_radius(13px);
                 @include transition(all 0.3s ease);
                 @extend %text-center;
@@ -157,7 +155,7 @@
                 color: $Blue;
                 text-transform: uppercase;
                 display: block;
-                font-size:14px;
+                font-size: 14px;
                 width: 82px;
                 margin: 0px auto;
                 letter-spacing: 1px;
@@ -165,19 +163,19 @@
                     background-color: rgba($Blue, 0.2);
                 }
             }
-            p{
-                text-align: left!important;
+            p {
+                text-align: left !important;
                 line-height: 25px;
-                a{
+                a {
                     @extend %text-center;
                     color: $Blue;
                     display: block;
                 }
             }
-            li{
-                padding-top:25px;
-                padding-bottom:10px;
-                a{
+            li {
+                padding-top: 25px;
+                padding-bottom: 10px;
+                a {
                     @extend %text-center;
                     display: block;
                     font-size: 13px;
@@ -231,79 +229,78 @@
                 cursor: pointer;
                 color: $Blue;
                 border: none;
-                &:hover{
-                    background-color: rgba($White, 0.6); 
+                &:hover {
+                    background-color: rgba($White, 0.6);
                 }
             }
             .validation_message,
-            .validation_error{
-
+            .validation_error {
                 color: #a80303;
-                padding-top:0px;
+                padding-top: 0px;
             }
-            .gform_confirmation_message{
+            .gform_confirmation_message {
                 color: white;
-                padding-top:0px;
+                padding-top: 0px;
             }
-            .gform_heading{
+            .gform_heading {
                 display: block;
             }
         }
-        .wfu{
+        .wfu {
             height: 75px;
             margin-bottom: 40px;
             @include bg-img-only(wfu-g, png, no-repeat, center, center);
             background-color: $ModerateViolet;
             color: $White;
             text-align: center;
-            h3{
-                @extend %heading-level-10; 
+            h3 {
+                @extend %heading-level-10;
                 line-height: 3em;
             }
         }
-        .fp{
+        .fp {
             margin-bottom: 40px;
-            hr{
+            hr {
                 @include bg-img-only(w-hr, gif, no-repeat, center, center);
                 height: 16px;
                 border: none;
             }
-            h3{
+            h3 {
                 color: $Gray;
                 letter-spacing: 1px;
                 margin: 20px 0 33px 0;
             }
-            a{
+            a {
                 display: block;
                 color: $Blue;
                 margin-bottom: 20px;
                 line-height: 22px;
-                &:hover{
+                &:hover {
                     text-decoration: underline;
                 }
             }
         }
-        .twitter{
-            margin-bottom: 19px;;
+        .twitter {
+            margin-bottom: 19px;
         }
-        .popular-posts{
+        .popular-posts {
             @include bg-img-only(w-hr, gif, no-repeat, top, center);
             margin-bottom: 40px;
             margin-top: 40px;
             padding-top: 15px;
-            h1{
+            h1 {
                 color: $Gray;
                 letter-spacing: 1px;
                 margin: 20px 0 33px 0;
             }
-            a{
+            a {
                 display: block;
                 color: $Blue;
                 margin-bottom: 20px;
                 line-height: 22px;
-                &:hover{
+                &:hover {
                     text-decoration: underline;
-                }  
+                }
             }
         }
     }
