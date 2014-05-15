@@ -8,34 +8,32 @@ Template Name: Team
 	<div class="one-column-template">
 		<div class="wrapper">
 			<div class="page-header">
-				<h1>Team Members</h1>
+				<h1><?php the_title() ?></h1>
 			</div>
-		</div>
-		<section class="four-column cross-fade">
-			<div class="wrapper">
+			<section class="four-column cross-fade">
 				<?php
 				$query = new WP_Query( array(
-				                            'post_type'      => 'team_member',
-				                            'tax_query'      => array(
-					                            'relation' => 'AND',
-					                            array(
-						                            'taxonomy' => 'team_category',
-						                            'field'    => 'slug',
-						                            'terms'    => array( 'partner', 'advisor' ),
-						                            'operator' => 'NOT IN'
-					                            ),
-				                            ),
-				                            'posts_per_page' => -1,
-				                            'order'          => 'ASC',
-				                            'orderby'        => 'menu_order title',
-				                            'meta_query'     => array(
-					                            array(
-						                            'key'     => '_dh_location',
-						                            'value'   => array( DH_Metabox::TEAM_LOCATION_EVERYWHERE, DH_Metabox::TEAM_LOCATION_LIST ),
-						                            'compare' => 'IN'
-					                            )
-				                            )
-				                       ) );
+                        'post_type'      => 'team_member',
+                        'tax_query'      => array(
+                            'relation' => 'AND',
+                            array(
+	                            'taxonomy' => 'team_category',
+	                            'field'    => 'slug',
+	                            'terms'    => array( 'partner', 'advisor' ),
+	                            'operator' => 'NOT IN'
+                            ),
+                        ),
+                        'posts_per_page' => -1,
+                        'order'          => 'ASC',
+                        'orderby'        => 'menu_order title',
+                        'meta_query'     => array(
+                            array(
+	                            'key'     => '_dh_location',
+	                            'value'   => array( DH_Metabox::TEAM_LOCATION_EVERYWHERE, DH_Metabox::TEAM_LOCATION_LIST ),
+	                            'compare' => 'IN'
+                            )
+                        )
+                   ) );
 				?>
 				<?php if ( $query->have_posts() ) : ?>
 
@@ -68,8 +66,8 @@ Template Name: Team
 					<?php get_template_part( 'content', 'none' ); ?>
 
 				<?php endif; ?>
-			</div>
-		</section>
+			</section>
+		</div>
 	</div>
 
 <?php get_footer();

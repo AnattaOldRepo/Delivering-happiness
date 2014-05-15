@@ -412,6 +412,7 @@ td{
 }
 
 .four-column {
+    overflow: hidden;
     .wrapper {
         @include clearfix;
         background-color: $LightGray;
