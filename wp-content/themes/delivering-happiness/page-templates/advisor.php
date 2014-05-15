@@ -10,8 +10,7 @@ Template Name: Advisor
 			<div class="page-header">
 				<h1><?php the_title() ?></h1>
 			</div>
-		<section class="four-column cross-fade">
-			<div class="wrapper">
+			<section class="four-column cross-fade">
 				<?php
 				$query = new WP_Query( array(
 	                    'post_type'      => 'team_member',
@@ -66,8 +65,7 @@ Template Name: Advisor
 					<?php get_template_part( 'content', 'none' ); ?>
 
 				<?php endif; ?>
-			</div>
-		</section>
+			</section>
 		</div>
 	</div>
 
