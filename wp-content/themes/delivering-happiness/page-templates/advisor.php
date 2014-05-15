@@ -8,7 +8,7 @@ Template Name: Advisor
 	<div class="one-column-template">
 		<div class="wrapper">
 			<div class="page-header">
-				<h1>Team Members</h1>
+				<h1><?php the_title() ?></h1>
 			</div>
 		</div>
 		<section class="four-column cross-fade">
