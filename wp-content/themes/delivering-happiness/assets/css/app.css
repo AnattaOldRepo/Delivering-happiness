@@ -2980,7 +2980,7 @@ body {
 }
 /* line 16, ../sass/global/_1column.scss */
 .one-column-template .wrapper {
-  padding: 50px 48px 78px 77px;
+  padding: 50px 48px 78px 68px;
   border: 5px solid #dfdfdf;
   background: white;
 }
