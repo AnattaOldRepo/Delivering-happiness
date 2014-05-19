@@ -94,6 +94,9 @@
     a {
         color: $Blue;
     }
+    strong{
+        font-weight: bold;
+    }
     p {
         @extend %pharagraph-level-5;
         line-height: 1.7em;
@@ -102,10 +105,25 @@
             text-align: center;
         }
     }
+    ol,ul,p{
+        a{
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }
     li {
-        font-style: italic;
-        margin-bottom: 10px;
+        &:before{
+            color: $Blue;
+            position: absolute;
+            left: -16px;
+            top: 0px;
+            font-size: 17px;
+        }
         @extend %pharagraph-level-5;
+        margin-bottom: 10px;
+        position: relative;
         line-height: 1.7em;
         a {
             color: $Blue;
@@ -115,8 +133,24 @@
         margin-bottom: 25px;
     }
     ol {
-        list-style-type: decimal;
+        counter-reset: item;
         margin-left: 20px;
+        li{
+            &:before{
+                content: counter(item) ". "; 
+                counter-increment: item;
+            }
+        }
+    }
+    ul {
+        margin-left: 21px;
+        li{
+            &:before {
+                content: "\2022";
+                font-weight: bold;
+                font-size: 17px;
+            }
+        }
     }
     h1, h2, h3, h4, h5, h6 {
         line-height: 1.5em;
@@ -156,5 +190,12 @@
         @extend %pharagraph-level-1;
         text-transform: uppercase;
         color: lighten($Gray, 20%);
+        border-left: 2px solid lighten($Gray, 20%);
+        padding-left:15px;
+        margin-left: 15px;
+        margin-bottom: 20px;
+        p{
+            padding: 0;
+        }
     }
 }

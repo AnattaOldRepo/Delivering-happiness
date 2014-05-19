@@ -470,55 +470,98 @@ body {
   color: #0198cf;
 }
 /* line 97, ../sass/global/_typography.scss */
+.happiness-page .post.detail strong, .one-column-template .page-content strong {
+  font-weight: bold;
+}
+/* line 100, ../sass/global/_typography.scss */
 .happiness-page .post.detail p, .one-column-template .page-content p {
   line-height: 1.7em;
   padding-bottom: 25px;
 }
-/* line 101, ../sass/global/_typography.scss */
+/* line 104, ../sass/global/_typography.scss */
 .happiness-page .post.detail p.wp-caption-text, .one-column-template .page-content p.wp-caption-text {
   text-align: center;
 }
-/* line 105, ../sass/global/_typography.scss */
+/* line 109, ../sass/global/_typography.scss */
+.happiness-page .post.detail ol a, .one-column-template .page-content ol a, .happiness-page .post.detail ul a, .one-column-template .page-content ul a, .happiness-page .post.detail p a, .one-column-template .page-content p a {
+  text-decoration: underline;
+}
+/* line 111, ../sass/global/_typography.scss */
+.happiness-page .post.detail ol a:hover, .one-column-template .page-content ol a:hover, .happiness-page .post.detail ul a:hover, .one-column-template .page-content ul a:hover, .happiness-page .post.detail p a:hover, .one-column-template .page-content p a:hover {
+  text-decoration: none;
+}
+/* line 116, ../sass/global/_typography.scss */
 .happiness-page .post.detail li, .one-column-template .page-content li {
-  font-style: italic;
   margin-bottom: 10px;
+  position: relative;
   line-height: 1.7em;
 }
-/* line 110, ../sass/global/_typography.scss */
+/* line 117, ../sass/global/_typography.scss */
+.happiness-page .post.detail li:before, .one-column-template .page-content li:before {
+  color: #0198cf;
+  position: absolute;
+  left: -16px;
+  top: 0px;
+  font-size: 17px;
+}
+/* line 128, ../sass/global/_typography.scss */
 .happiness-page .post.detail li a, .one-column-template .page-content li a {
   color: #0198cf;
 }
-/* line 114, ../sass/global/_typography.scss */
+/* line 132, ../sass/global/_typography.scss */
 .happiness-page .post.detail ol, .one-column-template .page-content ol, .happiness-page .post.detail ul, .one-column-template .page-content ul {
   margin-bottom: 25px;
 }
-/* line 117, ../sass/global/_typography.scss */
+/* line 135, ../sass/global/_typography.scss */
 .happiness-page .post.detail ol, .one-column-template .page-content ol {
-  list-style-type: decimal;
+  counter-reset: item;
   margin-left: 20px;
 }
-/* line 121, ../sass/global/_typography.scss */
+/* line 139, ../sass/global/_typography.scss */
+.happiness-page .post.detail ol li:before, .one-column-template .page-content ol li:before {
+  content: counter(item) ". ";
+  counter-increment: item;
+}
+/* line 145, ../sass/global/_typography.scss */
+.happiness-page .post.detail ul, .one-column-template .page-content ul {
+  margin-left: 21px;
+}
+/* line 148, ../sass/global/_typography.scss */
+.happiness-page .post.detail ul li:before, .one-column-template .page-content ul li:before {
+  content: "\2022";
+  font-weight: bold;
+  font-size: 17px;
+}
+/* line 155, ../sass/global/_typography.scss */
 .happiness-page .post.detail h1, .one-column-template .page-content h1, .happiness-page .post.detail h2, .one-column-template .page-content h2, .happiness-page .post.detail h3, .one-column-template .page-content h3, .happiness-page .post.detail h4, .one-column-template .page-content h4, .happiness-page .post.detail h5, .one-column-template .page-content h5, .happiness-page .post.detail h6, .one-column-template .page-content h6 {
   line-height: 1.5em;
   margin-bottom: 5px;
 }
-/* line 143, ../sass/global/_typography.scss */
+/* line 177, ../sass/global/_typography.scss */
 .happiness-page .post.detail .alignleft, .one-column-template .page-content .alignleft {
   margin-right: 15px;
 }
-/* line 147, ../sass/global/_typography.scss */
+/* line 181, ../sass/global/_typography.scss */
 .happiness-page .post.detail .alignright, .one-column-template .page-content .alignright {
   margin-left: 15px;
 }
-/* line 151, ../sass/global/_typography.scss */
+/* line 185, ../sass/global/_typography.scss */
 .happiness-page .post.detail .wp-caption, .one-column-template .page-content .wp-caption {
   font-style: italic;
   color: #999999;
 }
-/* line 155, ../sass/global/_typography.scss */
+/* line 189, ../sass/global/_typography.scss */
 .happiness-page .post.detail blockquote, .one-column-template .page-content blockquote {
   text-transform: uppercase;
   color: #999999;
+  border-left: 2px solid #999999;
+  padding-left: 15px;
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+/* line 197, ../sass/global/_typography.scss */
+.happiness-page .post.detail blockquote p, .one-column-template .page-content blockquote p {
+  padding: 0;
 }
 
 /* line 9, ../sass/global/_components.scss */
