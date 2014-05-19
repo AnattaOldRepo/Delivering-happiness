@@ -128,7 +128,7 @@ get_header();
 			<h2>Share a smile at #DHsmile</h2>
 			<?php $instagram_pics = AnattaDesign_Storify::getInstagram( get_field( 'instagram_storify_json_url', 'option' ) ); ?>
 			<?php foreach ( $instagram_pics as $instagram_pic ) { ?>
-				<img src="<?php echo $instagram_pic['src']; ?>" alt="instagram pic" />
+				<img src="<?php echo $instagram_pic['src']; ?>" alt="instagram pic" onerror="this.style.display='none';" />
 				<?php // available data =>a $instagram_pic['image'] $instagram_pic['name'] $instagram_pic['username'] $instagram_pic['link'] $instagram_pic['type'] $instagram_pic['src'] $instagram_pic['text'] $instagram_pic['time'] ?>
 			<?php } ?>
 		</div>
