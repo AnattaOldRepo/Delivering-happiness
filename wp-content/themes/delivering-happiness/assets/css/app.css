@@ -2922,33 +2922,39 @@ body {
   top: -30px;
 }
 
-/* line 7, ../sass/global/_1column.scss */
+/* line 5, ../sass/global/_1column.scss */
+.one-column-template {
+  background-color: #efefef;
+  padding: 50px 0;
+}
+/* line 9, ../sass/global/_1column.scss */
 .one-column-template.team-template .page-header {
   margin-bottom: 10px;
 }
-/* line 10, ../sass/global/_1column.scss */
+/* line 12, ../sass/global/_1column.scss */
 .one-column-template.team-template p.designation {
   margin-bottom: 20px;
 }
-/* line 14, ../sass/global/_1column.scss */
+/* line 16, ../sass/global/_1column.scss */
 .one-column-template .wrapper {
   padding: 50px 48px 78px 77px;
-  background-color: #efefef;
+  border: 5px solid #dfdfdf;
+  background: white;
 }
-/* line 18, ../sass/global/_1column.scss */
+/* line 21, ../sass/global/_1column.scss */
 .one-column-template .page-header {
   color: #0198cf;
   margin-bottom: 30px;
 }
-/* line 24, ../sass/global/_1column.scss */
+/* line 27, ../sass/global/_1column.scss */
 .one-column-template .four-column .wrapper {
   padding: 47px 0 0 46px;
 }
-/* line 28, ../sass/global/_1column.scss */
+/* line 31, ../sass/global/_1column.scss */
 .one-column-template .page-content {
   padding: 0px;
 }
-/* line 31, ../sass/global/_1column.scss */
+/* line 34, ../sass/global/_1column.scss */
 .one-column-template .page-content .media {
   margin-right: 20px;
 }
