@@ -11,7 +11,7 @@
 	<footer class="site-footer">
 		<div class="bar">
 			<div class="wrapper">
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/coupon.png" alt="" /><span>save 20% off our merchandise</span><a href="#" class="button transparent">share your story</a>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/coupon.png" alt="" /><span>save 20% off our merchandise</span><a href="/community/share-your-story" class="button transparent">share your story</a>
 			</div>
 		</div>
 		<div class="all-links">
@@ -19,7 +19,7 @@
 				<div class="block company">
 					<h4><a href="/company">Company</a></h4>
 					<ul>
-						<li><a href="/company/team">Team</a></li>
+						<li><a href="/company/team-members">Team</a></li>
 						<li><a href="/company/advisors">Advisors</a></li>
 						<li><a href="/company/partners">Partners</a></li>
 						<li><a href="/company/values">Values</a></li>
