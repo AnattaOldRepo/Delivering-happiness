@@ -27,3 +27,10 @@
         border: 2px solid #cbcbcb;
     }
 }
+
+.page-content .gform_wrapper .gform_footer input.button, .page-content .gform_wrapper .gform_footer input[type=submit]{
+    margin: 0px auto;
+    float: none;
+    width: auto;
+    display: block;
+}

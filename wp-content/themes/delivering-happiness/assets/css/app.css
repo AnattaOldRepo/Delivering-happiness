@@ -3037,3 +3037,11 @@ body {
 .ginput_container textarea {
   border: 2px solid #cbcbcb;
 }
+
+/* line 31, ../sass/global/_gform.scss */
+.page-content .gform_wrapper .gform_footer input.button, .page-content .gform_wrapper .gform_footer input[type=submit] {
+  margin: 0px auto;
+  float: none;
+  width: auto;
+  display: block;
+}
