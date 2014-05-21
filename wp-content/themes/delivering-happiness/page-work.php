@@ -300,18 +300,18 @@ get_header();
 		</div>
 	</section>
 
-	<section class="two-column inspiration">
+	<section class="two-column inspiration rtt">
 		<div class="wrapper">
 			<div class="left-col">
 				<div class="media">
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/become-a-partner.jpg" alt="" />
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/rtt.jpg" alt="" />
 				</div>
 			</div>
 			<div class="right-col strongyellow-area">
 				<div class="content">
-					<h3>Partner with us.<span>Interested in being a DH partner?<br/>you’re in the right place. </span></h3>
-					<p>We’re on a mission to share the science of happiness<br/>and impact workplace cultures around the world. To do<br/>that, we’ve created a partner program.  Whether you’re<br/>a company or a self-employed coach, let us know what<br/>your vision is in changing the world. </p>
-					<a href="/work/become-a-partner" class="button softyellow">APPLY TO BE A PARTNER</a>
+					<h3>Request a talk.<span>Make your next event memorable *and* inspirational.</span></h3>
+					<p>Our experienced keynote speakers have inspired countless companies around the world. Their talk will show your audience how a very different kind of corporate culture is a powerful model for achieving success — and how by concentrating on the happiness of those around you, you can dramatically increase your own.</p>
+					<a href="/work/become-a-partner" class="button softyellow">Get Inspired</a>
 				</div>
 			</div>
 		</div>

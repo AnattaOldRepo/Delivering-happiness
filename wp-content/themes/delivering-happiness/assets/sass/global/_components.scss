@@ -572,6 +572,17 @@ td{
     .left-col {
         background: $StrongYellow;
     }
+
+    &.rtt{
+        h3{
+            span{
+                color: white;
+            }
+        }
+        .button {
+            min-width: 235px;
+        }
+    }
 }
 
 .products-animation {
