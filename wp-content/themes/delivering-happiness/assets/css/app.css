@@ -3028,13 +3028,12 @@ body {
 
 /* line 20, ../sass/global/_gform.scss */
 .ginput_container input {
-  height: 30px;
   line-height: 30px;
   padding: 10px;
   border: 2px solid #cbcbcb;
   outline: none;
 }
-/* line 27, ../sass/global/_gform.scss */
+/* line 26, ../sass/global/_gform.scss */
 .ginput_container textarea {
   border: 2px solid #cbcbcb;
 }
