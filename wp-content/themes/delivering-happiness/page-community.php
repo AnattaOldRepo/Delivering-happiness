@@ -91,8 +91,8 @@ get_header();
 				</article>
 				<article class="content">
 					<div class="v-aling">
-						<blockquote>First off, wow. I am still riding on a natural high from your keynote.  It truly was motivating, inspiring and humbling. The way you approach happiness in life is spectacular. I took so many notes to keep reminding myself all the unique ways to keep it in perspective. Thank you again for sharing your wisdom, stories and quest for being bigger than ourselves through fun and a little weirdness.</blockquote>
-						<span>Mackenzie Nurse (Wakefield, Massachusetts)</span>
+						<blockquote>To inspire and be inspired...that's a tall order - (but) not for an organization who shares the importance of passion, purpose, and inspiration. "Delivering Happiness" was impactful because it goes back to the very core of what's important. Jenn Lim's presentation was an invitation to me to look at my life and evaluate and ask the important questions... so I am better equipped to inspire and be inspired from others.  </blockquote>
+						<span>MJ Tamayo (Torrance, California)</span>
 					</div>
 				</article>
 				<article class="content">
@@ -168,17 +168,17 @@ get_header();
 				<article class="content inspire">
 					<h3>Inspire! and Be Inspired</h3>
 					<p>Take the stage to share your inspiration at Inspire!, a story-worthy event series featuring speakers from your local community.</p>
-					<a href="#" class="button">Find an Event</a>
+					<a href="https://www.facebook.com/deliveringhappiness/events" target="_blank" class="button">Find an Event</a>
 				</article>
 				<article class="content write">
 					<h3>Share Your Story</h3>
 					<p>What's your story? Share how you're spreading happiness at home, at work or in your community. We'll not only hook you up with a whopping 20% off shop coupon for it, we may also publish it for others who might be inspired to take your lead.</p>
-					<a href="#" class="button">Share Your Story</a>
+					<a href="/community/share-your-story" class="button">Share Your Story</a>
 				</article>
 				<article class="content cal">
-					<h3>Be a Happiness Ambassador</h3>
+					<h3>Be a VHP (Very *Happy* Person)</h3>
 					<p>Join our community of movers and shakers collaborating, encouraging and sharing how they're growing happiness in their lives and communities. </p>
-					<a href="#" class="button">Become a VHP</a>
+					<a href="/community/become-a-vhp/" class="button">Become a VHP</a>
 				</article>
 			</div>
 		</div>

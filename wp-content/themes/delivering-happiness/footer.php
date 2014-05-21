@@ -52,8 +52,8 @@
 					<div class="social">
 						<a href="https://www.facebook.com/deliveringhappiness" target="_blank" class="social-facebook">Facebook</a>
 						<a href="https://twitter.com/dhmovement" target="_blank" class="social-twitter">Twitter</a>
-						<a href="#" class="social-instagram">Instagram</a>
-						<a href="#" class="social-youtube">YouTube</a>
+						<a href="http://instagram.com/DHmovement" target="_blank" class="social-instagram">Instagram</a>
+						<a href="https://www.youtube.com/user/DeliveringHappiness" target="_blank" class="social-youtube">YouTube</a>
 					</div>
 				</div>
 			</div>

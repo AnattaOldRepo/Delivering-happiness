@@ -1466,12 +1466,12 @@ td {
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  width: 350px;
+  width: 650px;
   height: auto;
   position: fixed;
   left: 50%;
   top: 40%;
-  margin-left: -175px;
+  margin-left: -325px;
   margin-top: -auto/2;
   border: 5px solid #666666;
   background: white;
@@ -1503,13 +1503,17 @@ td {
   background-color: rgba(120, 60, 189, 0.5) !important;
 }
 /* line 766, ../sass/global/_components.scss */
+.modal-box a {
+  color: #0198cf;
+}
+/* line 769, ../sass/global/_components.scss */
 .modal-box .close {
   color: #0198cf;
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 773, ../sass/global/_components.scss */
+/* line 776, ../sass/global/_components.scss */
 .faded {
   display: none;
   background: rgba(0, 0, 0, 0.5);
@@ -1791,7 +1795,7 @@ td {
 /* line 109, ../sass/global/_footer.scss */
 .site-footer .all-links .gform_footer .button {
   padding: 6px 16px;
-  margin-left: 10px;
+  margin-left: 6px;
   background-color: rgba(1, 152, 207, 0.2);
   cursor: pointer;
   border: 1px solid #0198cf;

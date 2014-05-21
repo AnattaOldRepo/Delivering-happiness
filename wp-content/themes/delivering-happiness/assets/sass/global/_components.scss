@@ -736,7 +736,7 @@ td{
 
 .modal-box {
     @include border_radius(10px);
-    @include absolute-valing($pos: fixed, $width: 350px, $height: auto, $ptop: 40%);
+    @include absolute-valing($pos: fixed, $width: 650px, $height: auto, $ptop: 40%);
     border: 5px solid #666666;
     background: white;
     z-index: 999999;
@@ -762,6 +762,9 @@ td{
                 background-color: rgba($ModerateViolet, 0.5) !important;
             }
         }
+    }
+    a{
+        color: $Blue;
     }
     .close {
         color: $Blue;
