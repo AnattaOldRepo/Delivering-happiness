@@ -44,7 +44,7 @@
 					<div class="message">Discover the movement, join our community.</div>
 				</li>
 				<li class="nav-happiness <?php if(is_home('happiness')) { ?>active <?php } ?>">
-					<a href="/happiness">HAPPINESS 101</a>
+					<a href="/blog">HAPPINESS 101</a>
 					<div class="message">How you can make the world a happier place.</div>
 				</li>
 			</menu>

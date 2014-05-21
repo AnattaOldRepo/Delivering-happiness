@@ -163,7 +163,7 @@ get_header();
 				<article class="content chat active">
 					<h3>Happiness 101</h3>
 					<p>Loved the book? Come love the blog! Discover a wealth of resources to continue your happiness education.</p>
-					<a href="/happiness-101/" class="button">Read and Enjoy</a>
+					<a href="/blog/" class="button">Read and Enjoy</a>
 				</article>
 				<article class="content inspire">
 					<h3>Inspire! and Be Inspired</h3>
