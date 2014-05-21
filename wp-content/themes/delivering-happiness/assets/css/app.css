@@ -352,7 +352,7 @@ body {
 }
 
 /* line 47, ../sass/global/_mixin.scss */
-.center-block-element {
+.center-block-element, .happiness-page .post.detail .aligncenter, .one-column-template .page-content .aligncenter {
   float: none;
   display: block;
   margin-left: auto;
@@ -546,11 +546,16 @@ body {
   margin-left: 15px;
 }
 /* line 185, ../sass/global/_typography.scss */
+.happiness-page .post.detail .aligncenter, .one-column-template .page-content .aligncenter {
+  width: auto !important;
+  float: none;
+}
+/* line 191, ../sass/global/_typography.scss */
 .happiness-page .post.detail .wp-caption, .one-column-template .page-content .wp-caption {
   font-style: italic;
   color: #999999;
 }
-/* line 189, ../sass/global/_typography.scss */
+/* line 195, ../sass/global/_typography.scss */
 .happiness-page .post.detail blockquote, .one-column-template .page-content blockquote {
   text-transform: uppercase;
   color: #999999;
@@ -559,7 +564,7 @@ body {
   margin-left: 15px;
   margin-bottom: 20px;
 }
-/* line 197, ../sass/global/_typography.scss */
+/* line 203, ../sass/global/_typography.scss */
 .happiness-page .post.detail blockquote p, .one-column-template .page-content blockquote p {
   padding: 0;
 }

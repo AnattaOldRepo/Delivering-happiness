@@ -182,6 +182,12 @@
         @extend %pull-right;
         margin-left: 15px;
     }
+    .aligncenter {
+        @extend .center-block-element;
+        width: auto!important;
+        float: none;
+
+    }
     .wp-caption {
         font-style: italic;
         color: lighten($Gray, 20%);
