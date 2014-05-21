@@ -151,7 +151,7 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<a href="/team" class="button">Meet the Team</a>
+						<a href="/team-members/" class="button">Meet the Team</a>
 					</div>
 				</div>
 			</div>
