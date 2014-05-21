@@ -12,7 +12,7 @@ get_header(); ?>
 <div class="happiness-page">
 	<div class="wrapper">
 		<div class="page-header">
-			<h1>Blog > <?php
+			<h1><a href="<?php echo delivering_happiness_blog_link(); ?>">Blog</a> > <?php
 						if ( is_category() ) :
 							single_cat_title();
 
