@@ -2765,11 +2765,15 @@ body {
 .happiness-page .sidebar .wfu h3 {
   line-height: 3em;
 }
-/* line 261, ../sass/global/_blog.scss */
+/* line 260, ../sass/global/_blog.scss */
+.happiness-page .sidebar .wfu a {
+  color: white;
+}
+/* line 264, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp {
   margin-bottom: 40px;
 }
-/* line 263, ../sass/global/_blog.scss */
+/* line 266, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp hr {
   background-image: url("../images/global/w-hr.gif");
   background-repeat: no-repeat;
@@ -2777,28 +2781,28 @@ body {
   height: 16px;
   border: none;
 }
-/* line 268, ../sass/global/_blog.scss */
+/* line 271, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp h3 {
   color: #666666;
   letter-spacing: 1px;
   margin: 20px 0 33px 0;
 }
-/* line 273, ../sass/global/_blog.scss */
+/* line 276, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp a {
   display: block;
   color: #0198cf;
   margin-bottom: 20px;
   line-height: 22px;
 }
-/* line 278, ../sass/global/_blog.scss */
+/* line 281, ../sass/global/_blog.scss */
 .happiness-page .sidebar .fp a:hover {
   text-decoration: underline;
 }
-/* line 283, ../sass/global/_blog.scss */
+/* line 286, ../sass/global/_blog.scss */
 .happiness-page .sidebar .twitter {
   margin-bottom: 19px;
 }
-/* line 286, ../sass/global/_blog.scss */
+/* line 289, ../sass/global/_blog.scss */
 .happiness-page .sidebar .popular-posts {
   background-image: url("../images/global/w-hr.gif");
   background-repeat: no-repeat;
@@ -2807,20 +2811,20 @@ body {
   margin-top: 40px;
   padding-top: 15px;
 }
-/* line 291, ../sass/global/_blog.scss */
+/* line 294, ../sass/global/_blog.scss */
 .happiness-page .sidebar .popular-posts h1 {
   color: #666666;
   letter-spacing: 1px;
   margin: 20px 0 33px 0;
 }
-/* line 296, ../sass/global/_blog.scss */
+/* line 299, ../sass/global/_blog.scss */
 .happiness-page .sidebar .popular-posts a {
   display: block;
   color: #0198cf;
   margin-bottom: 20px;
   line-height: 22px;
 }
-/* line 301, ../sass/global/_blog.scss */
+/* line 304, ../sass/global/_blog.scss */
 .happiness-page .sidebar .popular-posts a:hover {
   text-decoration: underline;
 }
