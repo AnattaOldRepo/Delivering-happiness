@@ -63,6 +63,12 @@ get_header(); ?>
 
 						endif;
 					?> </h1>
+			<div class="all-categories">
+				<?php $all_categories = get_categories();
+				foreach ( $all_categories as $category ) {
+					echo '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a>';
+				} ?>
+			</div>
 		</div>
 		<div id="primary" class="content-area left-col">
 			<main id="main" class="site-main" role="main">
