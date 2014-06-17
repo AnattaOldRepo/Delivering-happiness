@@ -105,7 +105,7 @@ get_header();
 <!-- /Happiness section-->
 
 <!-- Calculation graph section-->
-<section class="rounded-block calculation">
+<section class="rounded-block calculation" style="display:none;">
 	<div class="wrapper">
 		<div class="container">
 			<div class="floated-holder">
