@@ -1902,56 +1902,66 @@ body {
   padding: 136px 0 0 105px;
   height: 546px;
   background: url("../images/global/home_hero_banner.jpg") no-repeat center top;
+  position: relative;
 }
-/* line 11, ../sass/global/_home.scss */
+/* line 12, ../sass/global/_home.scss */
 .home .hero_banner h2 {
   text-shadow: rgba(0, 0, 0, 0.3) 1px 1px 0;
   color: white;
   padding-bottom: 57px;
   letter-spacing: -1px;
 }
-/* line 17, ../sass/global/_home.scss */
+/* line 18, ../sass/global/_home.scss */
 .home .hero_banner h2 span {
   font-style: italic;
 }
-/* line 22, ../sass/global/_home.scss */
+/* line 23, ../sass/global/_home.scss */
 .home .hero_banner .button {
   margin-left: 86px;
+  display: none;
 }
 /* line 27, ../sass/global/_home.scss */
+.home .hero_banner .cta {
+  width: 197px;
+  height: 57px;
+  position: absolute;
+  top: 380px;
+  right: 121px;
+}
+/* line 35, ../sass/global/_home.scss */
 .home .happier-world .left-col {
   width: 520px;
 }
-/* line 30, ../sass/global/_home.scss */
+/* line 38, ../sass/global/_home.scss */
 .home .happier-world .right-col {
   width: 395px;
   margin-top: -10px;
 }
-/* line 34, ../sass/global/_home.scss */
+/* line 42, ../sass/global/_home.scss */
 .home .happier-world h2 {
   margin-bottom: 25px;
 }
-/* line 36, ../sass/global/_home.scss */
+/* line 44, ../sass/global/_home.scss */
 .home .happier-world h2 span {
   line-height: 19px;
 }
-/* line 40, ../sass/global/_home.scss */
+/* line 48, ../sass/global/_home.scss */
 .home .happier-world .button {
   margin: 22px 0 0 94px;
 }
-/* line 46, ../sass/global/_home.scss */
+/* line 54, ../sass/global/_home.scss */
 .home .happiness.two-column h2 {
   margin-left: -40px;
 }
-/* line 50, ../sass/global/_home.scss */
+/* line 58, ../sass/global/_home.scss */
 .home .happiness.two-column .left-col .media {
   padding: 66px 0px 66px 60px;
 }
-/* line 54, ../sass/global/_home.scss */
+/* line 62, ../sass/global/_home.scss */
 .home .happiness.two-column .right-col {
   position: relative;
 }
-/* line 58, ../sass/global/_home.scss */
+/* line 66, ../sass/global/_home.scss */
 .home .happiness .content {
   height: 545px;
   position: absolute;
@@ -1959,63 +1969,63 @@ body {
   text-align: center;
   padding: 69px 79px;
 }
-/* line 64, ../sass/global/_home.scss */
+/* line 72, ../sass/global/_home.scss */
 .home .happiness .content span {
   display: block;
   text-transform: uppercase;
   font-style: normal;
   padding-top: 5px;
 }
-/* line 70, ../sass/global/_home.scss */
+/* line 78, ../sass/global/_home.scss */
 .home .happiness .content h3 {
   font-size: 50px;
   color: white;
 }
-/* line 74, ../sass/global/_home.scss */
+/* line 82, ../sass/global/_home.scss */
 .home .happiness .content img {
   margin-top: 40px;
   margin-bottom: 34px;
 }
-/* line 78, ../sass/global/_home.scss */
+/* line 86, ../sass/global/_home.scss */
 .home .happiness .content.winky {
   background: #0198cf;
   z-index: 1;
 }
-/* line 82, ../sass/global/_home.scss */
+/* line 90, ../sass/global/_home.scss */
 .home .happiness .content.sandels {
   background: #ff671b;
   z-index: 2;
 }
-/* line 86, ../sass/global/_home.scss */
+/* line 94, ../sass/global/_home.scss */
 .home .happiness .content.mountain {
   background: #00a0ae;
   z-index: 3;
 }
-/* line 90, ../sass/global/_home.scss */
+/* line 98, ../sass/global/_home.scss */
 .home .happiness .content.lilly {
   background: #00af40;
   z-index: 4;
 }
-/* line 94, ../sass/global/_home.scss */
+/* line 102, ../sass/global/_home.scss */
 .home .happiness .content.heart {
   background: #b318ac;
   z-index: 5;
 }
-/* line 100, ../sass/global/_home.scss */
+/* line 108, ../sass/global/_home.scss */
 .home .core-values {
   text-align: center;
 }
-/* line 102, ../sass/global/_home.scss */
+/* line 110, ../sass/global/_home.scss */
 .home .core-values .wrapper {
   padding-top: 66px;
   padding-bottom: 55px;
 }
-/* line 109, ../sass/global/_home.scss */
+/* line 117, ../sass/global/_home.scss */
 .home .core-values .cta {
   color: #00a0ae;
   font-style: italic;
 }
-/* line 112, ../sass/global/_home.scss */
+/* line 120, ../sass/global/_home.scss */
 .home .core-values .cta:hover {
   text-decoration: underline;
 }

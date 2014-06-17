@@ -7,6 +7,7 @@
             padding: 136px 0 0 105px;
             height: 546px;
             @include bg-img(home_hero_banner, jpg, no-repeat, center, top);
+            position: relative;
         }
         h2 {
             @extend %heading-level-1;
@@ -21,6 +22,13 @@
         }
         .button {
             margin-left: 86px;
+            display: none;
+        }
+        .cta{
+            @include size(197px, 57px);
+            position: absolute;
+            top: 380px;
+            right: 121px;
         }
     }
     .happier-world {
