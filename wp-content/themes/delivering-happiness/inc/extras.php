@@ -146,3 +146,10 @@ function delivering_happiness_sort_team_members( $query ) {
 	}
 }
 add_action( 'pre_get_posts', 'delivering_happiness_sort_team_members' );
+
+function dh_default_for_menu_order($data) {
+	if(0 == $data['menu_order'])
+		$data['menu_order'] = 100;
+	return $data;
+}
+add_filter('wp_insert_post_data', 'dh_default_for_menu_order');
