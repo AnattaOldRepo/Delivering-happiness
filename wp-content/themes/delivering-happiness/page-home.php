@@ -10,8 +10,8 @@ get_header();
 <section class="hero_banner video-container">
 	<div class="onload-container">
 		<div class="wrapper">
-			<h2>We’re changing the<br/>world with happiness.<br/><span>Sound fluffy? Not anymore.<span></h2>
-			<a href="#" class="button arrow">GET ON BOARD</a>
+			<h2 style="display:none;">We’re changing the<br/>world with happiness.<br/><span>Sound fluffy? Not anymore.<span></h2>
+			<a style="display:none;" href="#" class="button arrow">GET ON BOARD</a>
 			<a href="#" class="cta"></a>
 		</div>
 		<div class="video">
