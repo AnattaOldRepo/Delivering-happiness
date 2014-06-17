@@ -73,6 +73,10 @@ class DH_Metabox {
 		if( isset( $_POST['dh_work_order_metabox_nonce'] ) && wp_verify_nonce( $_POST['dh_work_order_metabox_nonce'], 'dh_work_order_metabox' ) && isset( $_POST['dh_work_order'] ) ) {
 			$order = absint( $_POST['dh_work_order'] );
 
+			if( 0 == $order ) {
+				$order = 100;
+			}
+
 			// Update the meta field in the database.
 			update_post_meta( $id, '_dh_work_order', $order );
 		}
