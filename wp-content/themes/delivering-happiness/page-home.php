@@ -12,7 +12,7 @@ get_header();
 		<div class="wrapper">
 			<h2 style="display:none;">We’re changing the<br/>world with happiness.<br/><span>Sound fluffy? Not anymore.<span></h2>
 			<a style="display:none;" href="#" class="button arrow">GET ON BOARD</a>
-			<a href="#" class="cta"></a>
+			<a href="/work" class="cta"></a>
 		</div>
 		<div class="video">
 			<iframe width="1170" height="546" src="//www.youtube.com/embed/4teXtmYyzxA?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>

@@ -311,7 +311,7 @@ get_header();
 				<div class="content">
 					<h3>Request a talk.<span>Make your next event memorable *and* inspirational.</span></h3>
 					<p>Our experienced keynote speakers have inspired countless companies around the world. Their talk will show your audience how a very different kind of corporate culture is a powerful model for achieving success — and how by concentrating on the happiness of those around you, you can dramatically increase your own.</p>
-					<a href="/work/become-a-partner" class="button softyellow">Get Inspired</a>
+					<a href="/work/speaking/" class="button softyellow">Get Inspired</a>
 				</div>
 			</div>
 		</div>
