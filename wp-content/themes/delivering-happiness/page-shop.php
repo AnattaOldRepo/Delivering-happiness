@@ -114,7 +114,7 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>We're making our way into shops throughout the US, starting with these fine stores.</p>
+						<p>We're making our way into shops throughout the United States, starting with these fine stores.</p>
 						<a href="http://shop.deliveringhappiness.com/pages/retailers" target="_blank" class="button green">LET’S Buy!</a>
 					</div>
 				</div>
