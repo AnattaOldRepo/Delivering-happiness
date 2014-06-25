@@ -9,7 +9,7 @@
 		<h2 class="entry-title"><?php the_title(); ?></h2>
 
 		<div class="entry-meta">
-			<?php the_category(', '); ?> | <?php delivering_happiness_posted_on(); ?>
+			<?php the_category(', '); ?> | <?php delivering_happiness_posted_on(); ?> | <?php the_author_posts_link(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
 

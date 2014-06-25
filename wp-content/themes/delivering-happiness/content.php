@@ -27,7 +27,7 @@
 
 				<?php if ( 'post' == get_post_type() ) : ?>
 				<div class="entry-meta">
-					<?php the_category(', '); ?> | <?php delivering_happiness_posted_on(); ?>
+					<?php the_category(', '); ?> | <?php delivering_happiness_posted_on(); ?> | <?php the_author_posts_link(); ?>
 				</div><!-- .entry-meta -->
 				<?php endif; ?>
 			</header><!-- .entry-header -->
