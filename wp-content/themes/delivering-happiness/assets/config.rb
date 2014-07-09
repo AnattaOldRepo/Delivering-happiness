@@ -15,7 +15,7 @@ javascripts_dir = "javascripts"
 
 # To disable debugging comments that display the original location of your selectors. Uncomment:
 line_comments = true
-output_style = :expanded
+output_style = :compressed
 relative_assets = true
 
 # If you prefer the indented syntax, you might want to regenerate this
