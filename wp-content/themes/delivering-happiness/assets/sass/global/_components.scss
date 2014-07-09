@@ -342,6 +342,11 @@ td{
     &.blue {
         .content {
             background-color: $Blue;
+            &.small{
+                .v-aling{
+                    padding: 0 20px;
+                }
+            }
         }
         .hover-content {
             background-color: lighten($Blue, 35%);
