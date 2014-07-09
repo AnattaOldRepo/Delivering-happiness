@@ -752,7 +752,7 @@ td{
 
 .modal-box {
     @include border_radius(10px);
-    @include absolute-valing($pos: fixed, $width: 650px, $height: auto, $ptop: 40%);
+    @include absolute-valing($pos: fixed, $width: 650px, $height: 600px, $ptop: 50%);
     border: 5px solid #666666;
     background: white;
     z-index: 999999;
@@ -764,6 +764,10 @@ td{
         }
         .ginput_container input {
             width: 226px;
+            line-height: 16px;
+            display: block;
+            margin: 0px auto;
+            margin-bottom: 10px;
         }
         .button {
             padding: 9px 29px !important;
@@ -777,6 +781,11 @@ td{
             &:hover {
                 background-color: rgba($ModerateViolet, 0.5) !important;
             }
+        }
+        .validation_error{
+            padding: 0;
+            margin-top: -5px;
+            margin-bottom: 10px;
         }
     }
     a{

@@ -1490,12 +1490,12 @@ td {
   -moz-border-radius: 10px;
   border-radius: 10px;
   width: 650px;
-  height: auto;
+  height: 600px;
   position: fixed;
   left: 50%;
-  top: 40%;
+  top: 50%;
   margin-left: -325px;
-  margin-top: -auto/2;
+  margin-top: -300px;
   border: 5px solid #666666;
   background: white;
   z-index: 999999;
@@ -1509,8 +1509,12 @@ td {
 /* line 765, ../sass/global/_components.scss */
 .modal-box .gform_wrapper .ginput_container input {
   width: 226px;
+  line-height: 16px;
+  display: block;
+  margin: 0px auto;
+  margin-bottom: 10px;
 }
-/* line 768, ../sass/global/_components.scss */
+/* line 772, ../sass/global/_components.scss */
 .modal-box .gform_wrapper .button {
   padding: 9px 29px !important;
   position: static !important;
@@ -1521,22 +1525,28 @@ td {
   margin-top: 15px;
   margin-bottom: 20px;
 }
-/* line 777, ../sass/global/_components.scss */
+/* line 781, ../sass/global/_components.scss */
 .modal-box .gform_wrapper .button:hover {
   background-color: rgba(120, 60, 189, 0.5) !important;
 }
-/* line 782, ../sass/global/_components.scss */
+/* line 785, ../sass/global/_components.scss */
+.modal-box .gform_wrapper .validation_error {
+  padding: 0;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+/* line 791, ../sass/global/_components.scss */
 .modal-box a {
   color: #0198cf;
 }
-/* line 785, ../sass/global/_components.scss */
+/* line 794, ../sass/global/_components.scss */
 .modal-box .close {
   color: #0198cf;
   text-decoration: underline;
   cursor: pointer;
 }
 
-/* line 792, ../sass/global/_components.scss */
+/* line 801, ../sass/global/_components.scss */
 .faded {
   display: none;
   background: rgba(0, 0, 0, 0.5);
