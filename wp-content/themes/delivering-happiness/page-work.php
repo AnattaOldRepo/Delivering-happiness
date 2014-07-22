@@ -36,7 +36,7 @@ get_header();
 			<div class="container">
 				<article class="content">
 					<h2>Let’s Make Happy Work™. <span>Ready to plan your journey?</span></h2>
-					<p>We believe happiness at work is a journey. Here is your roadmap. These simple<br/>five steps combine the science of happiness and the experience of Zappos and<br/>other leading companies to help your organization create its own unique work<br/>culture,  increase happiness and build success. </p>
+					<p>We believe happiness at work is a journey, and here's your roadmap. These simple<br/>five steps combine the science of happiness and the experience of Zappos and<br/>other leading companies to help your organization create its own unique work<br/>culture,  increase happiness and build success. </p>
 					<a href="#" class="button moderateviolet modal-box-handler" onclick="jQuery('#download_roadmap_form').show();return false;">DOWNLOAD ROADMAP</a>
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/work-animation-demo.png" alt="" />
 				</article>
@@ -46,7 +46,7 @@ get_header();
 
 	<section class="three-column oderate-violet get-involved cross-fade">
 		<div class="wrapper">
-			<h2>Get involved:</h2>
+			<h2>Take the first step:</h2>
 			<div class="col left-col">
 				<div class="work-survey">
 					<div class="content">
@@ -249,7 +249,7 @@ get_header();
 
 	<section class="three-column oderate-violet get-involved cross-fade">
 		<div class="wrapper">
-			<h2>Work with us:</h2>
+			<h2>Get involved:</h2>
 			<div class="col left-col">
 				<div class="poster-1">
 					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/15-annual-call.gif" alt="" /></div>
@@ -287,7 +287,7 @@ get_header();
 			<div class="col right-col">
 				<div class="become-partner">
 					<div class="content">
-						<div class="v-aling"><h3>Become<br/>a<br/>partner</h3></div>
+						<div class="v-aling"><h3>Work<br/>with<br/>us</h3></div>
 					</div>
 				</div>
 				<div class="hover-content">
