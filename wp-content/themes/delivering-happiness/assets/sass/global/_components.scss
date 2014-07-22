@@ -588,6 +588,21 @@ td{
             min-width: 235px;
         }
     }
+    &.updated{
+        h3{
+            span{
+                font-size: 25px;
+                margin-top: 7px
+            }
+            margin-bottom: 15px!important;
+        }
+
+        .content{
+            p{
+                line-height: 29px;
+            }
+        }
+    }
 }
 
 .products-animation {
@@ -678,11 +693,11 @@ td{
 .video-container {
     .onload-container {
         @extend %block-center;
-        @include size(1170px, 546px);
+        @include size(1170px, 510px);
         position: relative;
         overflow: hidden;
         .video {
-            @include size(1170px, 546px);
+            @include size(1170px, 510px);
             position: absolute;
             left: 0px;
             top: 0px;
