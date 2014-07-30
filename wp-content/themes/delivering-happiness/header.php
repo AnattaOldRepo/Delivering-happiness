@@ -32,19 +32,19 @@
 			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a></h1>
 			<menu class="site-navigation">
 				<li class="nav-work <?php if(is_page('work')) { ?>active <?php } ?>">
-					<a href="/work">WORK</a>
+					<a href="<?php echo home_url(); ?>/work">WORK</a>
 					<div class="message">Coaching and speaking to Make Happy Work™.</div>
 				</li>
 				<li class="nav-shop <?php if(is_page('shop')) { ?>active <?php } ?>">
-					<a href="/shop">SHOP</a>
+					<a href="<?php echo home_url(); ?>/shop">SHOP</a>
 					<div class="message">Goods and gear to inspire, connect and educate.</div>
 				</li>
 				<li class="nav-community <?php if(is_page('community')) { ?>active <?php } ?>">
-					<a href="/community">COMMUNITY</a>
+					<a href="<?php echo home_url(); ?>/community">COMMUNITY</a>
 					<div class="message">Discover the movement, join our community.</div>
 				</li>
 				<li class="nav-happiness <?php if(is_home('happiness')) { ?>active <?php } ?>">
-					<a href="/blog">HAPPINESS 101</a>
+					<a href="<?php echo home_url(); ?>/blog">HAPPINESS 101</a>
 					<div class="message">How you can make the world a happier place.</div>
 				</li>
 			</menu>
