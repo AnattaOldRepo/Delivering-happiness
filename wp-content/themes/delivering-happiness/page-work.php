@@ -89,6 +89,23 @@ get_header();
 		</div>
 	</section>
 
+	<section class="two-column inspiration rtt updated">
+		<div class="wrapper">
+			<div class="left-col">
+				<div class="media">
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/rtt.jpg" alt="" />
+				</div>
+			</div>
+			<div class="right-col strongyellow-area">
+				<div class="content">
+					<h3>Request a talk.<span>Make your next event memorable<br/>*and* inspirational.</span></h3>
+					<p>Our experienced keynote speakers have inspired countless<br/>companies around the world. Their talk will show your<br/>audience how a very different kind of corporate culture is<br/>a powerful model for achieving success — and how by<br/>concentrating on the happiness of those around you,<br/>you can dramatically increase your own.</p>
+					<a href="/work/speaking/" class="button softyellow">Get Inspired</a>
+				</div>
+			</div>
+		</div>
+	</section>
+
 	<section class="four-column cross-fade">
 		<div class="wrapper">
 			<h2>Coaches and speakers:</h2>
@@ -299,24 +316,6 @@ get_header();
 			</div>
 		</div>
 	</section>
-	
-	<section class="two-column inspiration rtt updated">
-		<div class="wrapper">
-			<div class="left-col">
-				<div class="media">
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/rtt.jpg" alt="" />
-				</div>
-			</div>
-			<div class="right-col strongyellow-area">
-				<div class="content">
-					<h3>Request a talk.<span>Make your next event memorable<br/>*and* inspirational.</span></h3>
-					<p>Our experienced keynote speakers have inspired countless<br/>companies around the world. Their talk will show your<br/>audience how a very different kind of corporate culture is<br/>a powerful model for achieving success — and how by<br/>concentrating on the happiness of those around you,<br/>you can dramatically increase your own.</p>
-					<a href="/work/speaking/" class="button softyellow">Get Inspired</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
 
 	<!-- Calculation graph section-->
 	<section class="rounded-block calculation">
