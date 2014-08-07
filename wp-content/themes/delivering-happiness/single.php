@@ -6,7 +6,6 @@
  */
 
 get_header(); ?>
-
 <div class="happiness-page">
 	<div class="wrapper">
 		<div class="page-header">

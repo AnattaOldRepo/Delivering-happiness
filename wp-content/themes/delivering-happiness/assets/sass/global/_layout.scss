@@ -16,6 +16,9 @@ body{
 .wrapper{
     width: $site-width;
     @extend %block-center;
+    .wp-caption {
+        text-align: center;
+    }
 }
 
 *{
