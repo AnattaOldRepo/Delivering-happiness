@@ -19,6 +19,7 @@
 				<div class="block company">
 					<h4><a href="<?php echo home_url(); ?>/company">Company</a></h4>
 					<ul>
+						<li><a href="<?php echo home_url(); ?>/company">About DH</a></li>
 						<li><a href="<?php echo home_url(); ?>/company/team-members">Team</a></li>
 						<li><a href="<?php echo home_url(); ?>/company/advisors">Advisors</a></li>
 						<li><a href="<?php echo home_url(); ?>/company/partners">Partners</a></li>
@@ -41,6 +42,7 @@
 				<div class="block the-book">
 					<h4><a href="<?php echo home_url(); ?>/book">The book</a></h4>
 					<ul>
+						<li><a href="<?php echo home_url(); ?>/book">About the Book</a></li>
 						<li><a href="<?php echo home_url(); ?>/book/about-the-author">About the Author</a></li>
 						<li><a href="<?php echo home_url(); ?>/book/faqs/">FAQs</a></li>
 						<li><a href="<?php echo home_url(); ?>/book/reviews">Reviews</a></li>
