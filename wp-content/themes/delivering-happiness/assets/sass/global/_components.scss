@@ -739,6 +739,10 @@ td{
         @extend %pull-left;
     }
 }
+.paging-navigation a{
+    margin: 0;
+
+}
 
 .post-navigation {
     .nav-previous {
