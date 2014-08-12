@@ -30,7 +30,7 @@
 					<h4><a href="<?php echo home_url(); ?>/resources">Resources</a></h4>
 					<ul>
 						<li><a href="<?php echo home_url(); ?>/work/roi-calculator">ROI Calculator</a></li>
-						<li><a href="https://app.happinessatworksurvey.com/?a=dh" target="_blank">Happiness at Work Survey</a></li>
+						<li><a href="https://dh.happinessatworksurvey.com/try" target="_blank">Happiness at Work Survey</a></li>
 						<li><a href="<?php echo home_url(); ?>/work/request-presentation">Request Presentation</a></li>
 						<li><a href="<?php echo home_url(); ?>/resources/books">Book Recommendations</a></li>
 						<li><a href="<?php echo home_url(); ?>/work/culture-call">Free Consultation</a></li>

@@ -56,7 +56,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-						<a href="https://app.happinessatworksurvey.com/?a=dh" target="_blank" class="button moderateviolet">LET’S GO!</a>
+						<a href="https://dh.happinessatworksurvey.com/try" target="_blank" class="button moderateviolet">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
