@@ -693,7 +693,7 @@ td{
 .video-container {
     .onload-container {
         @extend %block-center;
-        @include size(1170px, 510px);
+        @include size(1170px, 546px);
         position: relative;
         overflow: hidden;
         .video {

@@ -36,7 +36,7 @@ get_header();
 				</article>
 			</div>
 			<div class="right-col">
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/placeholder-h-g.jpg" alt="placeholder" />
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/placeholder-h-g.png" alt="placeholder" />
 			</div>
 		</div>
 	</div>
@@ -293,5 +293,4 @@ get_header();
 	</div>
 </section>
 <!-- /Blog section-->
-
 <?php get_footer(); ?>
