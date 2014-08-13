@@ -33,11 +33,11 @@
     }
     .happier-world {
         .left-col {
-            width: 520px;
+            width: 525px;
         }
         .right-col {
             width: 395px;
-            margin-top: -10px;
+            margin: 23px 20px 0 0;
         }
         h2 {
             margin-bottom: 25px;
@@ -46,7 +46,13 @@
             }
         }
         .button {
-            margin: 22px 0 0 94px;
+            margin: 10px auto;
+            display: table;
+        }
+        &.rounded-block {
+            .wrapper .container  {
+                padding: 17px 36px 28px;
+            }
         }
     }
     .happiness {
