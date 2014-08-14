@@ -17,7 +17,7 @@ get_header(); ?>
 				<?php if ( have_posts() ) : ?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
-						<p class="designation"><?php the_field( 'role' ); ?></p>
+						<p class="designation"><?php the_field( 'designation' ); ?><br/><?php the_field( 'role' ); ?></p>
 						<div class="media">
 							<img src="<?php $image = get_field( 'image' ); echo $image['url']; ?>" alt="<?php the_title(); ?>" />
 						</div>
