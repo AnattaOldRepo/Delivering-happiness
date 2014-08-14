@@ -49,7 +49,7 @@
 				</li>
 			</menu>
 			<div class="gtranslate">
-				<?php echo do_shortcode('[google-translator]'); //code for including google language translator?>
+				<?php //echo do_shortcode('[google-translator]'); //code for including google language translator?>
 			</div>
 		</div>
 
