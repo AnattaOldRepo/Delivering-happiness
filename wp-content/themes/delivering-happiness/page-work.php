@@ -145,7 +145,7 @@ get_header();
 						</div>
 						<div class="content small">
 							<div class="v-aling">
-								<h3><?php echo get_the_title( $team_member->ID ); ?></h3>
+								<h3><?php echo get_field( 'role', $team_member->ID ); ?></h3>
 								<span class="job-title"><?php echo get_field( 'designation', $team_member->ID ); ?></span>
 							</div>
 						</div>
