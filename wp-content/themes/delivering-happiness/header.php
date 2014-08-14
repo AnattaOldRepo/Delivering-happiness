@@ -48,7 +48,11 @@
 					<div class="message">How you can make the world a happier place.</div>
 				</li>
 			</menu>
+			<div class="gtranslate">
+				<?php echo do_shortcode('[google-translator]'); //code for including google language translator?>
+			</div>
 		</div>
+
 	</header>
 	<!-- Header -->
 	<div id="content">
