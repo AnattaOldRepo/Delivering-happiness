@@ -57,6 +57,13 @@
 						<a href="http://instagram.com/DHmovement" target="_blank" class="social-instagram">Instagram</a>
 						<a href="https://www.youtube.com/user/DeliveringHappiness" target="_blank" class="social-youtube">YouTube</a>
 					</div>
+					<div class="gtranslate">
+						<?php 
+						if(function_exists('register_foo_widget')) {
+							echo do_shortcode('[google-translator]'); //code for including google language translator
+						}
+						?>
+					</div>
 				</div>
 			</div>
 		</div>
