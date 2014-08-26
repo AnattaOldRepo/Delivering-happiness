@@ -39,7 +39,7 @@ get_header();
 						<h2>The Change Starts Here.<span>At work, in our communities, and in our every-<br/>day lives.</span></h2>
 						<p>Backed by science, business sense, and common sense, we know<br/>that living a purposeful life is what really matters. So come along<br/>and join the movement. As our CEO says, it all begins with you.</p>
 						<p>It can be as simple as passing out balloons to strangers, or breaking<br/>out your best dance moves at the next company party. Or, make a<br/>bigger impact by hosting an Inspire! event in your company or<br/>community. How will you pay happiness forward? How will you<br/>change the world?</p>
-						<a href="/community/change-starts-here/" class="button orange">Tell me more</a>
+						<a href="/change-your-world/" class="button orange">Tell me more</a>
 					</article>
 				</div>
 				<div class="right-col">
@@ -168,7 +168,7 @@ get_header();
 				<article class="content inspire">
 					<h3>Inspire! and Be Inspired</h3>
 					<p>Take the stage to share your inspiration at Inspire!, a story-worthy event series featuring speakers from your local community.</p>
-					<a href="https://www.facebook.com/deliveringhappiness/events" target="_blank" class="button">Find an Event</a>
+					<a href="http://deliveringhappiness.com/community/inspire/" class="button">Get Inspired</a>
 				</article>
 				<article class="content write">
 					<h3>Share Your Story</h3>
