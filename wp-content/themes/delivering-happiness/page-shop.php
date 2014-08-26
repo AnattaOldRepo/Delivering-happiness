@@ -99,7 +99,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Want to make your shop a happier place? We’re looking for qualified retailers to help spread happiness.</p>
-						<a href="http://shop.deliveringhappiness.com/pages/be-a-happiness-retailer" target="_blank" class="button green">Find a Store</a>
+						<a href="http://deliveringhappiness.com/shop/wholesale/" class="button green">Apply Now</a>
 					</div>
 				</div>
 			</div>

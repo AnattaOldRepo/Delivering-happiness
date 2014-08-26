@@ -21,7 +21,6 @@
 					<ul>
 						<li><a href="<?php echo home_url(); ?>/company">About DH</a></li>
 						<li><a href="<?php echo home_url(); ?>/company/team-members">Team</a></li>
-						<li><a href="<?php echo home_url(); ?>/company/advisors">Advisors</a></li>
 						<li><a href="<?php echo home_url(); ?>/company/partners">Partners</a></li>
 						<li><a href="<?php echo home_url(); ?>/company/values">Values</a></li>
 						<li><a href="<?php echo home_url(); ?>/company/press">Press</a></li>
