@@ -36,8 +36,8 @@ get_header();
 			<div class="container">
 				<article class="content">
 					<h2>Let’s Make Happy Work<sup>TM</sup>. <span>Ready to plan your journey?</span></h2>
-					<p>We believe happiness at work is a journey, and here's your roadmap. These simple<br/>five steps combine the science of happiness and the experience of Zappos and<br/>other leading companies to help your organization create its own unique work<br/>culture,  increase happiness and build success. </p>
-					<a href="#" class="button moderateviolet modal-box-handler" onclick="jQuery('#download_roadmap_form').show();return false;">DOWNLOAD ROADMAP</a>
+					<p><a href="#" class="button moderateviolet modal-box-handler" onclick="jQuery('#download_roadmap_form').show();return false;">DOWNLOAD ROADMAP</a>
+					We believe happiness at work is a journey, and here's your roadmap. These simple five steps combine the science of happiness and the experience of Zappos and other leading companies to help your organization create its own unique work culture,  increase happiness and build success. </p>
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/work-animation-demo.png" alt="" />
 				</article>
 			</div>

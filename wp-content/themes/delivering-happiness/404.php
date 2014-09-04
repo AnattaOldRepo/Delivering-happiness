@@ -16,7 +16,7 @@ get_header(); ?>
 					</div>
 					<div class="right-col">
 						<div class="page-content">
-							<h1 class="page-title"><?php _e( 'Whoops' ); ?></h1>
+							<h1 class="page-title"><?php _e( 'Whoops!' ); ?></h1>
 							<?php _e( '', 'delivering-happiness' ); ?>
 							<p>We don't think this is the happiness you were looking for, unless big white spaces make you happy? If so... well, sorry for cluttering this one all up!</p>
 							<p>If you're looking for some other kind of happiness:</p>

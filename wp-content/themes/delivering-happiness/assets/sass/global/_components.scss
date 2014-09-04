@@ -178,7 +178,9 @@ td{
     }
     p {
         line-height: 28px;
-        padding-bottom: 17px;
+        padding-bottom: 17px; 
+        //width: 74%;
+        @extend %pull-left;
         &:last-child {
             padding-bottom: 0;
         }
