@@ -16,6 +16,7 @@ get_header(); ?>
 	<div class="wrapper">
 		<div class="page-header">
 			<div class="all-categories">
+					
 				<?php $all_categories = get_categories();
 				foreach ( $all_categories as $category ) {
 					echo '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a>';

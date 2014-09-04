@@ -67,12 +67,14 @@ get_header(); ?>
 				<?php 
 					$cat = get_category( get_query_var( 'cat' ) );
 					$cat_slug = $cat->slug; //getting slug of selected category
-					
+
 				$all_categories = get_categories();
 				foreach ( $all_categories as $category ) {
 						$cslug = $category->slug;
 					if($cat_slug == $cslug) {
 						$class = 'active-cat';
+					} else {
+						$class='';
 					}
 					echo '<a href="' . get_category_link( $category->term_id ) . '" class="'.$class.'">' . $category->name . '</a>';
 				} ?>
