@@ -41,7 +41,7 @@
                 text-transform: uppercase;
                 margin-left: 30px;
                 letter-spacing: 2px;
-                &:hover {
+                &:hover, &.active-cat {
                     color: $Blue;
                 }
             }
