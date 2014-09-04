@@ -38,10 +38,12 @@
             position: relative;
         }
         .button {
-            position: absolute;
-            top: 143px;
-            right: 98px;
-            padding: 18px 16px;
+            //position: absolute;
+            //top: 143px;
+            //right: 98px;
+            @extend %pull-right;
+            margin: 0 18px 10px 10px;
+            padding: 10px 16px;
         }
         .content {
             h2 {
