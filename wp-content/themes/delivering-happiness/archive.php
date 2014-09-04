@@ -64,9 +64,17 @@ get_header(); ?>
 						endif;
 					?> </h1>
 			<div class="all-categories">
-				<?php $all_categories = get_categories();
+				<?php 
+					$cat = get_category( get_query_var( 'cat' ) );
+					$cat_slug = $cat->slug; //getting slug of selected category
+					
+				$all_categories = get_categories();
 				foreach ( $all_categories as $category ) {
-					echo '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a>';
+						$cslug = $category->slug;
+					if($cat_slug == $cslug) {
+						$class = 'active-cat';
+					}
+					echo '<a href="' . get_category_link( $category->term_id ) . '" class="'.$class.'">' . $category->name . '</a>';
 				} ?>
 			</div>
 		</div>
