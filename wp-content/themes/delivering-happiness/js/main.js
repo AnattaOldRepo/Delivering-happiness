@@ -13,8 +13,12 @@
     });
     $('.modal-box').find('.close').click(function(){
       $('.faded').hide();
-      $('.modal-box').hide();
       $(this).parent().hide();
+    });
+
+    //for closing keep in touch popup
+    $('.popups').find('.close').click(function(){
+      $('.popups').hide('slow');
     });
 
     // Flip animation 
