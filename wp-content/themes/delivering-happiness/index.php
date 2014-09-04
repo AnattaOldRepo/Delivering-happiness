@@ -15,7 +15,6 @@ get_header(); ?>
 <div class="happiness-page">
 	<div class="wrapper">
 		<div class="page-header">
-			<h1>Blog</h1>
 			<div class="all-categories">
 				<?php $all_categories = get_categories();
 				foreach ( $all_categories as $category ) {
