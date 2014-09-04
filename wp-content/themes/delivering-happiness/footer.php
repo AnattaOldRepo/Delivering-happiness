@@ -50,7 +50,7 @@
 				</div>
 				<div class="block keep-in-touch">
 					<article class="content">
-						<a href="#" class="button blue" onclick="jQuery('#signup_form').show();return false;">Sign Up</a>
+						<?php gravity_form(2, true, true, false, null, true); ?>
 					</article>
 					<br/>
 					<div class="social">
@@ -81,7 +81,7 @@
 	<div class="">
 		<div class="modal-box" id="signup_form" style="display:none;">
 			<p>Great! Your inbox is about to get a whole lot happier. Please enter your details, and find out how Delivering Happiness helps organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success. </p>
-			<?php gravity_form(2, true, true, false, null, true); ?>
+			
 			<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
 			<span class="close">close</span>
 		</div>
