@@ -31,8 +31,8 @@ get_header();
 			<div class="container">
 				<article class="content">
 					<h2>Do Good, Feel Good.<span>We design products to Inspire, Connect, Educate and Experience.</span></h2>
-					<p>shop@DH goods spread and inspire happiness at home, at work, in our<br/>communities, and in our everyday lives. They aspire to make people feel a<br/>certain way. Like they just discovered their car can fly—and now spend their<br/>work commutes soaring over traffic jams, listening to fun music and eating delicious pastries.</p>
-					<a href="http://shop.deliveringhappiness.com" target="_blank" class="button green">Visit the shop</a>
+					<p><a href="http://shop.deliveringhappiness.com" target="_blank" class="button green">Visit the shop</a> shop@DH goods spread and inspire happiness at home, at work, in our communities, and in our everyday lives. They aspire to make people feel a certain way. Like they just discovered their car can fly—and now spend their work commutes soaring over traffic jams, listening to fun music and eating delicious pastries.</p>
+					
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/go-good-feel-good.jpg" alt="" />
 				</article>
 			</div>
