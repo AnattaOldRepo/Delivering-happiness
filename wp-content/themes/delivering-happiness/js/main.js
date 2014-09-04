@@ -13,6 +13,7 @@
     });
     $('.modal-box').find('.close').click(function(){
       $('.faded').hide();
+      $('.modal-box').hide();
       $(this).parent().hide();
     });
 
