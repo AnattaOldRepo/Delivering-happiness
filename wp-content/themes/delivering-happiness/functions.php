@@ -75,8 +75,8 @@ add_action( 'widgets_init', 'delivering_happiness_widgets_init' );
 function delivering_happiness_scripts() {
 
 	wp_enqueue_style( 'delivering-happiness-style', get_template_directory_uri() . '/assets/css/app.css', array(), filemtime( get_template_directory() . '/assets/css/app.css' ) );
-	wp_enqueue_script( 'delivering-happiness-navigation', get_template_directory_uri() . '/js/main.js', array(jquery), '20120206', true );
-	wp_enqueue_script( 'cycle-plugin', get_template_directory_uri() . '/js/libraries/jquery.cycle2.js', array(jquery), '20120206', true );
+	wp_enqueue_script( 'delivering-happiness-navigation', get_template_directory_uri() . '/js/main.js', array('jquery'), '20120206', true );
+	wp_enqueue_script( 'cycle-plugin', get_template_directory_uri() . '/js/libraries/jquery.cycle2.js', array('jquery'), '20120206', true );
 	
 	// Enqueue Google Analytics to the footer
 	add_action('wp_footer', create_function('', 'get_template_part(\'inc/google_analytics.js\');'), 50);
