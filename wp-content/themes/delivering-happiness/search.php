@@ -6,33 +6,34 @@
  */
 
 get_header(); ?>
+<div class="happiness-page">
+	<div class="wrapper">
+		<div class="page-header">
+			<h1><?php printf( __( 'Search Results for: %s', 'delivering-happiness' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+		</div>
+		<div id="primary" class="content-area left-col">
+			<main id="main" class="site-main" role="main">
 
-	<section id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+			<?php if ( have_posts() ) : ?>
 
-		<?php if ( have_posts() ) : ?>
+				<?php /* Start the Loop */ ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<header class="page-header">
-				<h1 class="page-title"><?php printf( __( 'Search Results for: %s', 'delivering-happiness' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
-			</header><!-- .page-header -->
+					<?php get_template_part( 'content', 'search' ); ?>
 
-			<?php /* Start the Loop */ ?>
-			<?php while ( have_posts() ) : the_post(); ?>
+				<?php endwhile; ?>
 
-				<?php get_template_part( 'content', 'search' ); ?>
+				<?php delivering_happiness_paging_nav(); ?>
 
-			<?php endwhile; ?>
+			<?php else : ?>
 
-			<?php delivering_happiness_paging_nav(); ?>
+				<?php get_template_part( 'content', 'none' ); ?>
 
-		<?php else : ?>
+			<?php endif; ?>
 
-			<?php get_template_part( 'content', 'none' ); ?>
-
-		<?php endif; ?>
-
-		</main><!-- #main -->
-	</section><!-- #primary -->
-
-<?php get_sidebar(); ?>
+			</main><!-- #main -->
+		</div><!-- #primary -->
+		<?php get_sidebar(); ?>
+	</div>
+</div>
 <?php get_footer(); ?>
