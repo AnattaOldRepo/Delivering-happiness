@@ -6,6 +6,7 @@
     }
     .right-col {
         .page-content {
+            color: $Black;
             width: 375px;
             margin: 156px 0 0 10px;
             @extend %text-center;
