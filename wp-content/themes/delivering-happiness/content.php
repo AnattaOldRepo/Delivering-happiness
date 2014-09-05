@@ -7,9 +7,36 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
-	<div class="entry-summary">
-		<?php the_excerpt(); ?>
-	</div><!-- .entry-summary -->
+	<div class="entry-content">
+		<div class="media">
+			<?php if ( has_post_thumbnail() ) { ?>
+				<?php $image = wp_get_attachment_image_src( get_post_thumbnail_id() ); ?>
+				<img src="<?php echo $image[0]; ?>" alt="featured-thumbnail" />
+			<?php } else if ( function_exists( 'get_the_image_by_scan' ) ) { ?>
+				<?php $image = get_the_image_by_scan( array( 'post_id' => get_the_ID() ) ); ?>
+				<img src="<?php echo $image['src']; ?>" alt="featured-thumbnail" />
+			<?php } ?>
+		</div>
+		<div class="content">
+			<header class="entry-header">
+				<h2 class="entry-title"><a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
+
+				<?php if ( 'post' == get_post_type() ) : ?>
+				<div class="entry-meta">
+					<?php the_category(', '); ?> | <?php delivering_happiness_posted_on(); ?> | <?php the_author_posts_link(); ?>
+				</div><!-- .entry-meta -->
+				<?php endif; ?>
+			</header><!-- .entry-header -->
+			<?php the_Excerpt(); ?>
+			<a class="cta" href="<?php the_permalink() ?>">Read more</a>
+		</div>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'delivering-happiness' ),
+				'after'  => '</div>',
+			) );
+		?>
+	</div><!-- .entry-content -->
 	<?php else : ?>
 	<div class="entry-content">
 		<div class="media">
