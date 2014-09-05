@@ -1,0 +1,67 @@
+.error-404 {
+    .left-col {
+        img {
+            margin: 202px 0 0 152px;
+        }
+    }
+    .right-col {
+        .page-content {
+            width: 375px;
+            margin: 156px 0 0 10px;
+            @extend %text-center;
+            h1 {
+                color: $text-color1;
+                @extend %heading-level-7;
+            }
+            h3 {
+                margin: -4px 0 14px 0;
+                a {
+                    color: $text-color1;
+                    @extend %pharagraph-level-1;
+                }
+            }
+            p {
+                color: $Black;
+                font-style: normal;
+                margin-bottom: 20px;
+                @extend %pharagraph-level-5;
+            }
+            .search-form {
+                border: 3px solid $text-color1;
+                margin: 20px 0 0 63px;
+                @include size(256px, 44px);
+                span {
+                    display: none;
+                }
+                label {
+                    @extend %pull-left;
+                    margin-left: 5px;
+                }
+                .search-field {
+                    border: 0 none;
+                    //font-weight: bold;
+                    color: $text-color2;
+                    @extend %pharagraph-level-3;
+                    @extend %museo_slab;
+                    @include size(195px, 38px);
+                    &:focus {
+                        border: 0 none;
+                        outline: 0 none;
+                    }
+                }
+                .search-submit {
+                    text-indent: 9999px;
+                    border: 0 none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    padding: 0;
+                    border: 0 none !important;
+                    outline: 0 none !important;
+                    @extend %pull-left;
+                    @include bg-img-only(nerdywinkey, png, no-repeat, center, center);
+                    @include size(44px, 38px);
+                }
+            }
+        }
+    }
+}
