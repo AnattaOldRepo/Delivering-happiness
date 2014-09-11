@@ -153,3 +153,14 @@ function dh_default_for_menu_order($data) {
 	return $data;
 }
 add_filter('wp_insert_post_data', 'dh_default_for_menu_order');
+
+/*function for including Hello Bar code */
+function hellobar_scrpt(){ ?>
+
+	<script type="text/javascript" src="//www.hellobar.com/hellobar.js"></script>
+	<script type="text/javascript">
+    	new HelloBar(18996,118669);
+	</script>
+
+<?php }
+add_action('wp_footer', 'hellobar_scrpt' );
