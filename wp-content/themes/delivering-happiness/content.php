@@ -4,7 +4,7 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php if(is_search()) { echo "class='post'"; } else { post_class(); } ?>>
 
 	<?php if ( is_search() ) : // Only display Excerpts for Search ?>
 	<div class="entry-content">
