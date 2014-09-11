@@ -12,6 +12,13 @@
 			<?php the_category(', '); ?> | <?php delivering_happiness_posted_on(); ?> | <?php the_author_posts_link(); ?>
 		</div><!-- .entry-meta -->
 	</header><!-- .entry-header -->
+	<!--Share This Code-->
+	<div style="">
+		<span class='st_plusone_vcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+		<span st_username='dhmovement' class='st_twitter_vcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+		<span class='st_facebook_vcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+		<p></p>
+	</div>
 
 	<div class="entry-content">
 		<?php the_content(); ?>
