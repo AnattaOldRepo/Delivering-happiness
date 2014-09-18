@@ -1,13 +1,8 @@
 <?php
 
-/**
- * todo
- * - Support for Authorization header?
- * - Enforce maximum expiration?
- * - MVC pattern?
- * - support for JSONP
- * - API wrappers
- */
+if(!class_exists('GFForms')){
+    die();
+}
 
 
 if (!defined('GFWEBAPI_REQUIRE_SIGNATURE'))
@@ -1085,7 +1080,7 @@ if (class_exists("GFForms")) {
 
             $key = $this->get_results_cache_key_prefix($form_id);
 
-            $key = "%" . like_escape($key) . "%";
+            $key = "%" . GFCommon::esc_like( $key ) . "%";
 
             $sql = $wpdb->prepare("SELECT count(option_id) FROM $wpdb->options WHERE option_name LIKE %s", $key);
 
@@ -1104,7 +1099,7 @@ if (class_exists("GFForms")) {
 
             $key = $this->get_results_cache_key_prefix($form_id);
 
-            $key = "%" . like_escape($key) . "%";
+            $key = "%" . GFCommon::esc_like( $key ) . "%";
 
             $sql = $wpdb->prepare("DELETE FROM $wpdb->options WHERE option_name LIKE %s", $key);
 
@@ -1398,7 +1393,7 @@ if (class_exists("GFForms")) {
             if (time() >= $expires)
                 return false;
 
-            $is_valid = $signature == $calculated_sig;
+            $is_valid = $signature == $calculated_sig || $signature == rawurlencode($calculated_sig);
 
             return $is_valid;
         }
