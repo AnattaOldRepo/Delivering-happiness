@@ -63,7 +63,7 @@ get_header(); ?>
 
 						endif;
 					?> </h1>
-			<div class="all-categories"><a href="<?php echo home_url(); ?>/recent-entries">Recent Entries</a>
+			<div class="all-categories"><a href="<?php echo home_url(); ?>/blog">Recent Entries</a>
 				<?php 
 					$cat = get_category( get_query_var( 'cat' ) );
 					$cat_slug = $cat->slug; //getting slug of selected category
