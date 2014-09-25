@@ -12,9 +12,9 @@ get_header(); ?>
 <div class="happiness-page">
 	<div class="wrapper">
 		<div class="page-header">
-			<h1><a href="<?php echo delivering_happiness_blog_link(); ?>">Blog</a> > <?php
+			<h1><?php
 						if ( is_category() ) :
-							single_cat_title();
+							//single_cat_title();
 
 						elseif ( is_tag() ) :
 							single_tag_title();
@@ -63,10 +63,20 @@ get_header(); ?>
 
 						endif;
 					?> </h1>
-			<div class="all-categories">
-				<?php $all_categories = get_categories();
+			<div class="all-categories"><a href="<?php echo home_url(); ?>/blog">Recent Entries</a>
+				<?php 
+					$cat = get_category( get_query_var( 'cat' ) );
+					$cat_slug = $cat->slug; //getting slug of selected category
+
+				$all_categories = get_categories();
 				foreach ( $all_categories as $category ) {
-					echo '<a href="' . get_category_link( $category->term_id ) . '">' . $category->name . '</a>';
+						$cslug = $category->slug;
+					if($cat_slug == $cslug) {
+						$class = 'active-cat';
+					} else {
+						$class='';
+					}
+					echo '<a href="' . get_category_link( $category->term_id ) . '" class="'.$class.'">' . $category->name . '</a>';
 				} ?>
 			</div>
 		</div>
