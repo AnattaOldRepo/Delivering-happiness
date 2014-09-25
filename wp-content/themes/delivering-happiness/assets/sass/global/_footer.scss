@@ -113,13 +113,15 @@
                 cursor: pointer;
                 border: 1px solid #0198cf;
                 color: #0198cf;
+                outline: none;
             }
         }
         .gform_body {
             margin-top: 16px;
             margin-bottom: 25px;
-            input[type="text"] {
-                @include size(197px, 35px);
+            input[type="text"],
+            input[type="email"] {
+                @include size(195px, 35px);
                 padding-left: 13px;
                 background-color: rgba($Blue, 0.2);
                 border: none;
