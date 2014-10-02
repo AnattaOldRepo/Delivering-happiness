@@ -53,6 +53,7 @@
 					<label>
 						<input type="search" class="search-field" placeholder="Search our site..." value="" name="s" title="Search for:">
 					</label>
+					<input type="submit" value="Search" class="search-submit">
 				</form>
 			</div>
 		</div>
