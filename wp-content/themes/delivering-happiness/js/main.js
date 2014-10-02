@@ -16,6 +16,11 @@
       $(this).parent().hide();
     });
 
+    //for closing keep in touch popup
+    $('.popups').find('.close').click(function(){
+      $('.popups').hide('slow');
+    });
+
     // Flip animation 
 		$('.flip .coin').click(function() {
       $(this).parents('.all-coins').find('.coin').removeClass('active');
