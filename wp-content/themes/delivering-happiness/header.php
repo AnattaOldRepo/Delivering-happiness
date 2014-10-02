@@ -51,7 +51,7 @@
 			<div class="searchfrm">
 				<form role="search" method="get" class="search-form" action="<?php echo home_url();?>">
 					<label>
-						<input type="search" class="search-field" placeholder="Search our site..." value="" name="s" title="Search for:">
+						<input type="search" class="search-field" placeholder="Search our site..." value="" name="s" />
 					</label>
 					<input type="submit" value="Search" class="search-submit">
 				</form>
