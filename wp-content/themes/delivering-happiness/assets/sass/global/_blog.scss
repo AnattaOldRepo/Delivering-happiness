@@ -321,3 +321,21 @@
     box-sizing: unset;
     box-sizing: initial;
 }
+
+
+.entry-content {
+        .leadbox {
+            border: 1px solid #0099cc;
+            background-color: #e0edf0;
+            font-size: 18px;
+            line-height: 18px;
+            @include bg-img-only(leadbox_bg, png, no-repeat, right, bottom);
+            padding: 15px 77px 30px;
+            margin-bottom: 10px;
+            text-align: center;
+            a {
+                color: #0099cc;
+                text-decoration: none;
+            }
+        }
+    }

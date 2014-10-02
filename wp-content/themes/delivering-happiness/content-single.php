@@ -27,7 +27,7 @@
 			$include_lead_box = get_field('include_lead_box'); //getting radiobox value 
 		  	$post_lead_box = get_field('post_lead_box'); //getting post lead box
 		  	if( $include_lead_box == 'Yes' ) {
-		  		echo $post_lead_box ;
+		  		echo "<div class='leadbox'>" . $post_lead_box . "</div>" ;
 		  	}
 		?>
 		<!--Share This Code-->
