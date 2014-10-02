@@ -48,8 +48,12 @@
 					<div class="message">How you can make the world a happier place.</div>
 				</li>
 			</menu>
-			<div class="gtranslate">
-				<?php //echo do_shortcode('[google-translator]'); //code for including google language translator?>
+			<div class="searchfrm">
+				<form role="search" method="get" class="search-form" action="<?php echo $_SERVER['REQUEST_URI'];?>">
+					<label>
+						<input type="search" class="search-field" placeholder="Search our site..." value="" name="s" title="Search for:">
+					</label>
+				</form>
 			</div>
 		</div>
 
