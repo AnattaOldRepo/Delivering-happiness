@@ -49,7 +49,7 @@
 				</li>
 			</menu>
 			<div class="searchfrm">
-				<form role="search" method="get" class="search-form" action="<?php echo $_SERVER['REQUEST_URI'];?>">
+				<form role="search" method="get" class="search-form" action="<?php echo home_url();?>">
 					<label>
 						<input type="search" class="search-field" placeholder="Search our site..." value="" name="s" title="Search for:">
 					</label>
