@@ -119,13 +119,12 @@
                     background-color: #e0edf0;
                     margin-bottom: 10px;
                     @extend %text-center;
-                    @include bg-img-only(leadbox_bg, png, no-repeat, right, bottom);
-                    padding: 37px 58px;
+                    @include bg-img-only(leadbox_bg1, png, no-repeat, right, bottom);
+                    padding:30px 58px 25px 58px;
                     p {
                         padding: 0;
                         span {
-                            font-size: 16px;
-                            line-height: 18px;
+                            @include font-shorthand(15.4px, 500, 20px);
                             color: #777 !important ;
                             a {
                                 color: #0099cc;
