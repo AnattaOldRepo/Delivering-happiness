@@ -9,7 +9,7 @@ get_header(); ?>
 <div class="happiness-page">
 	<div class="wrapper">
 		<div class="page-header">
-			<h1><?php printf( __( 'Search Results for: %s', 'delivering-happiness' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
+			<h1><?php printf( __( 'Search results for: %s', 'delivering-happiness' ), '<span>' . get_search_query() . '</span>' ); ?></h1>
 		</div>
 		<div id="primary" class="content-area left-col">
 			<main id="main" class="site-main" role="main">
