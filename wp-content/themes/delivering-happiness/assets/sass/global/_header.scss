@@ -142,7 +142,7 @@
                     font-size: 12px; 
                     line-height: 12px;
                     font-style: italic;
-                     padding-top: 5px;
+                     padding-top: 3px;
                     @extend %museo_slab;
                     @include size(125px, 32px);
                     &:focus {
