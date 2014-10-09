@@ -8,7 +8,7 @@
     background: #f5f4f2;
     .left-col {
         @extend %pull-left;
-        width: 698px;
+        width: 864px;
     }
     .right-col {
         @extend %pull-right;
@@ -16,7 +16,7 @@
     }
     .wrapper {
         @include clearfix;
-        padding: 47px 103px 0 46px;
+        padding: 47px 0 0 0;
     }
     .page-header {
         padding-left: 13px;
