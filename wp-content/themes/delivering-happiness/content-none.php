@@ -20,7 +20,7 @@
 
 		<?php elseif ( is_search() ) : ?>
 
-			<p><?php _e( 'Hmm, we couldn\'t find anything that matched your search terms. Would you like to try again with a different keyword?', 'delivering-happiness' ); ?></p>
+			<p><?php _e( 'Hmm, we couldn\'t find anything that matched your search terms. Would you like to <br>try again with a different keyword?', 'delivering-happiness' ); ?></p>
 			<div class="searchfrm">
 				<form role="search" method="get" class="search-form" action="<?php echo home_url();?>">
 					<label>

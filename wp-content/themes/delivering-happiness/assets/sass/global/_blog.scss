@@ -120,16 +120,16 @@
                     margin-bottom: 10px;
                     @extend %text-center;
                     @include bg-img-only(leadbox_bg1, png, no-repeat, right, bottom);
-                    padding:30px 58px 25px 58px;
+                    padding: 30px 58px 25px 58px;
                     p {
                         padding: 0;
                         span {
                             @include font-shorthand(15.4px, 500, 20px);
-                            color: #777 !important ;
+                            color: #777 !important;
                             a {
                                 color: #0099cc;
                                 text-decoration: none;
-                                &:hover{
+                                &:hover {
                                     text-decoration: underline;
                                 }
                             }
@@ -281,7 +281,7 @@
                 @extend %heading-level-10;
                 line-height: 3em;
             }
-            a{
+            a {
                 color: white;
             }
         }
@@ -331,17 +331,93 @@
             }
         }
     }
+   
 }
+
 .status-publish {
     h2 {
         color: $Blue;
     }
 }
-.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices{
+
+.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices {
     height: 22px !important;
 }
 
 .no-break span {
     box-sizing: unset;
     box-sizing: initial;
+}
+
+.search-no-results {
+    .happiness-page {
+         .no-results {
+        .page-header {
+            padding:0;
+            h1 {
+                font-style: normal;
+            }
+        }
+        a {
+            color: $Blue;
+        }
+        //Search section
+        .searchfrm {
+            width: 180px;
+            margin: 14px 0;
+            background-color: $White;
+            .search-form {
+                border: 2px solid $bdr-color1;
+                margin: 0px 0 0 0;
+                @include size(180px, 38px);
+                span {
+                    display: none;
+                }
+                label {
+                    @extend %pull-left;
+                    margin-left: 5px;
+                }
+                .search-field {
+                    border: 0 none;
+                    //font-weight: bold;
+                    color: $text-color2;
+                    font-size: 12px;
+                    line-height: 12px;
+                    font-style: italic;
+                    padding-top: 3px;
+                    @extend %museo_slab;
+                    @include size(125px, 32px);
+                    &:focus {
+                        border: 0 none;
+                        outline: 0 none;
+                    }
+                }
+                .search-submit {
+                    text-indent: 9999px;
+                    border: 0 none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    padding: 0;
+                    border: 0 none !important;
+                    outline: 0 none !important;
+                    @extend %pull-left;
+                    @include bg-img-only(nerdywinkey, png, no-repeat, center, center);
+                    @include size(44px, 38px);
+                }
+            }
+        }
+    }
+        .page-header {
+            padding-bottom: 15px;
+            padding-left: 0;
+            h1 {
+                font-weight: 400px;
+            }
+        }
+        .page-content {
+            p {
+                @include font-shorthand(15.5px, normal, normal);
+            }
+        }
+    }
 }
