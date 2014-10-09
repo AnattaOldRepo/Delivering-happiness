@@ -13,7 +13,7 @@
         z-index: 9999;
     }
     .wrapper {
-        padding: 10px 0 0 71px;
+        padding: 10px 0 0 0;
         position: relative;
     }
     // Brand Logo
@@ -122,7 +122,7 @@
     .searchfrm {
         width: 180px;
         margin: 14px 0 0 55px;
-        @extend %pull-left;
+        @extend %pull-right;
         .search-form {
                 border: 2px solid $bdr-color1;
                 margin: 0px 0 0 0;
