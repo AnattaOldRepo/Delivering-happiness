@@ -35,5 +35,14 @@
             @extend %pull-left;
             margin-right: 20px;
         }
+        .entry-content {
+            ol {
+                ol {
+                    li {
+                        padding-left: 10px;
+                    }
+                }
+            }
+        }
     }
 }
