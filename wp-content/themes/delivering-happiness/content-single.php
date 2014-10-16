@@ -21,6 +21,21 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+		<!--Share This Code-->
+		<div class="no-break">
+			<span class='st_facebook_hcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+			<span st_username='dhmovement' class='st_twitter_hcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+			<span class='st_linkedin_hcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
+			<p></p>
+		</div>
+
+		<?php //displaying lead box code
+			$include_lead_box = get_field('include_lead_box'); //getting radiobox value 
+		  	$post_lead_box = get_field('post_lead_box'); //getting post lead box
+		  	if( $include_lead_box == 'Yes' ) {
+		  		echo "<div class='leadbox'>" . $post_lead_box . "</div>" ;
+		  	}
+		?>
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'delivering-happiness' ),
