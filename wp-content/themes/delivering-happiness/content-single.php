@@ -21,13 +21,6 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
-		<!--Share This Code-->
-		<div class="no-break">
-			<span class='st_facebook_hcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
-			<span st_username='dhmovement' class='st_twitter_hcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
-			<span class='st_linkedin_hcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
-			<p></p>
-		</div>
 
 		<?php //displaying lead box code
 			$include_lead_box = get_field('include_lead_box'); //getting radiobox value 
