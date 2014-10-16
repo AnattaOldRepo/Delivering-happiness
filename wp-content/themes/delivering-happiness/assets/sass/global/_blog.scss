@@ -113,6 +113,31 @@
             img {
                 max-width: 618px;
             }
+            .entry-content {
+                .leadbox {
+                    border: 1px solid #0099cc;
+                    background-color: #e0edf0;
+                    margin-bottom: 10px;
+                    @extend %text-center;
+                    @include bg-img-only(leadbox_bg, png, no-repeat, right, bottom);
+                    padding: 37px 58px;
+                    p {
+                        padding: 0;
+                        span {
+                            font-size: 16px;
+                            line-height: 18px;
+                            color: #777 !important ;
+                            a {
+                                color: #0099cc;
+                                text-decoration: none;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
     .sidebar {
