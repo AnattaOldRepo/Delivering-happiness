@@ -69,7 +69,7 @@
 		<div class="end-bar">
 			<div class="wrapper">
 				<p>&copy; 2014 Delivering Happiness&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?php echo home_url(); ?>/privacy/">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;<a href="<?php echo home_url(); ?>/terms/">Terms of Use</a></p>
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/impress-logo.png" alt="impress" />
+				<a href="http://doyouimpress.com/" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/impress-logo.png" alt="impress" /></a>
 			</div>
 		</div>
 	</footer>
