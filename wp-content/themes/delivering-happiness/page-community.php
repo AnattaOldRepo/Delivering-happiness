@@ -48,6 +48,61 @@ get_header();
 			</div>
 		</div>
 	</section>
+	<!-- Get involved section-->
+<section class="three-column blue get-involved cross-fade">
+	<div class="wrapper">
+		<h2>Get involved:</h2>
+		<div class="col left-col">
+			<div class="work-survey">
+				<div class="media">
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/img_4002.png" alt="" />
+				</div>
+				<div class="content small">
+					<div class="v-aling"><h3>Past Inspire!<br/> Events</h3></div>
+				</div>
+			</div>
+			<div class="hover-content">
+				<div class="v-aling">
+					<p>Everyone has a story to tell. What’s yours? Inspire! is a community-based speaker series, designed to facilitate thought-provoking, purpose-driven, and inspirational story sharing. Check out previous speakers.</p>
+					<a href="https://www.youtube.com/user/DeliveringHappiness/videos" target="_blank" class="button blue">Watch Inspire! talks</a>
+				</div>
+			</div>
+		</div>
+		<div class="col middle-col">
+			<div class="shop">
+				<div class="media">
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/img_4036.png" alt="" />
+				</div>
+				<div class="content small">
+					<div class="v-aling"><h3>Upcoming Inspire! Events</h3></div>
+				</div>
+			</div>
+			<div class="hover-content">
+				<div class="v-aling">
+					<p>Inspire! is a community-based speaker series currently based in downtown Las Vegas where we celebrate local changemakers and community leaders. Join us for our next Inspire! event.</p>
+					<a href="https://www.facebook.com/deliveringhappiness/events" class="button blue">Join us for Inspire! </a>
+				</div>
+			</div>
+		</div>
+		<div class="col right-col">
+			<div class="schedule-call">
+				<div class="media">
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/img_3947.png" alt="" />
+				</div>
+				<div class="content small">
+					<div class="v-aling"><h3>Share your Inspire! Story!</h3></div>
+				</div>
+			</div>
+			<div class="hover-content">
+				<div class="v-aling">
+					<p>Everyone has a story to tell. What’s yours?</p>
+					<a href="<?php echo home_url(); ?>/community/inspire/" class="button blue">Share your Inspire! story</a>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- /Get involved section-->
 
 	<section class="two-column coin-animation clients flip">
 		<div class="wrapper">
