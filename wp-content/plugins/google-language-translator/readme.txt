@@ -4,8 +4,8 @@ Donate link: http://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id
 Plugin link: http://www.studio88design.com/plugins/google-language-translator
 Tags: language translator, google translator, language translate, google, google language translator, translation, translate, multi language
 Requires at least: 2.9
-Tested up to: 3.9.1
-stable tag: 4.0.3
+Tested up to: 4.0
+stable tag: 4.0.5
 
 Welcome to Google Language Translator! This plugin allows you to insert the Google Language Translator tool anywhere on your website using shortcode.
 
@@ -26,6 +26,19 @@ Settings include: inline or vertical layout, show/hide specific languages, hide/
 == Frequently Asked Questions ==
 
 == Changelog ==
+
+4.0.5
+
+- Fixed: Display bug when using single language shortcode.
+- Added: New link on the Plugins menu page, which links directly to Google Language Translator settings.
+
+
+4.0.4
+
+- Added NEW shortcode!  Allows placement of single languages into the navigation menu, pages, and posts. See settings panel for usage details.
+- Re-factored code in googlelanguagetranslator.php which reduced code to around 950 lines.
+- Removed the "de-activation" hook, which previously deleted options when plugin de-activated.  Added "uninstall" hook instead, so that settings will be preserved only when user deletes the plugin completely. 
+- Updated CSS styles for the flags area to prevent themes from overriding layouts. 
 
 4.0.3
 

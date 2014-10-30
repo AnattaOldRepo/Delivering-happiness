@@ -32,6 +32,20 @@ if (! class_exists('SLP_BaseClass_AJAX')) {
          */
         protected $slplus;
 
+	    /**
+	     * What AJAX actions are valid for this add on to process?
+	     *
+	     * Override in the extended class if not serving the default SLP actions:
+	     * * csl_ajax_onload
+	     * * csl_ajax_search
+	     *
+	     * @var array
+	     */
+	    protected $valid_actions = array(
+		    'csl_ajax_onload',
+		    'csl_ajax_search'
+	    );
+
         //-------------------------------------
         // Methods : activity
         //-------------------------------------
@@ -60,5 +74,17 @@ if (! class_exists('SLP_BaseClass_AJAX')) {
         function do_ajax_startup() {
             
         }
+
+	    /**
+	     * Return true if the AJAX action is one we process.
+	     */
+	    function is_valid_ajax_action() {
+		    if ( ! isset( $_REQUEST['action'] ) ) { return false; }
+
+		    foreach ( $this->valid_actions as $valid_ajax_action ) {
+			    if ( $_REQUEST['action'] === $valid_ajax_action ) { return true; }
+		    }
+		    return false;
+	    }
     }
 }
