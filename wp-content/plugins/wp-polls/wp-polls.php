@@ -3,7 +3,7 @@
 Plugin Name: WP-Polls
 Plugin URI: http://lesterchan.net/portfolio/programming/php/
 Description: Adds an AJAX poll system to your WordPress blog. You can easily include a poll into your WordPress's blog post/page. WP-Polls is extremely customizable via templates and css styles and there are tons of options for you to choose to ensure that WP-Polls runs the way you wanted. It now supports multiple selection of answers.
-Version: 2.64
+Version: 2.67
 Author: Lester 'GaMerZ' Chan
 Author URI: http://lesterchan.net
 Text Domain: wp-polls
@@ -11,7 +11,7 @@ Text Domain: wp-polls
 
 
 /*
-	Copyright 2013  Lester Chan  (email : lesterchan@gmail.com)
+	Copyright 2014  Lester Chan  (email : lesterchan@gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -29,33 +29,34 @@ Text Domain: wp-polls
 */
 
 
+### Version
+define( 'WP_POLLS_VERSION', 2.67 );
+
+
 ### Create Text Domain For Translations
-add_action('init', 'polls_textdomain');
+add_action( 'plugins_loaded', 'polls_textdomain' );
 function polls_textdomain() {
-	load_plugin_textdomain('wp-polls', false, 'wp-polls');
+	load_plugin_textdomain( 'wp-polls', false, dirname( plugin_basename( __FILE__ ) ) );
 }
 
 
 ### Polls Table Name
 global $wpdb;
-$wpdb->pollsq = $wpdb->prefix.'pollsq';
-$wpdb->pollsa = $wpdb->prefix.'pollsa';
-$wpdb->pollsip	 = $wpdb->prefix.'pollsip';
+$wpdb->pollsq   = $wpdb->prefix.'pollsq';
+$wpdb->pollsa   = $wpdb->prefix.'pollsa';
+$wpdb->pollsip  = $wpdb->prefix.'pollsip';
 
 
 ### Function: Poll Administration Menu
 add_action('admin_menu', 'poll_menu');
 function poll_menu() {
-	if (function_exists('add_menu_page')) {
-		add_menu_page(__('Polls', 'wp-polls'), __('Polls', 'wp-polls'), 'manage_polls', 'wp-polls/polls-manager.php', '', plugins_url('wp-polls/images/poll.png'));
-	}
-	if (function_exists('add_submenu_page')) {
-		add_submenu_page('wp-polls/polls-manager.php', __('Manage Polls', 'wp-polls'), __('Manage Polls', 'wp-polls'), 'manage_polls', 'wp-polls/polls-manager.php');
-		add_submenu_page('wp-polls/polls-manager.php', __('Add Poll', 'wp-polls'), __('Add Poll', 'wp-polls'), 'manage_polls', 'wp-polls/polls-add.php');
-		add_submenu_page('wp-polls/polls-manager.php', __('Poll Options', 'wp-polls'), __('Poll Options', 'wp-polls'), 'manage_polls', 'wp-polls/polls-options.php');
-		add_submenu_page('wp-polls/polls-manager.php', __('Poll Templates', 'wp-polls'), __('Poll Templates', 'wp-polls'), 'manage_polls', 'wp-polls/polls-templates.php');
-		add_submenu_page('wp-polls/polls-manager.php', __('Uninstall WP-Polls', 'wp-polls'), __('Uninstall WP-Polls', 'wp-polls'), 'manage_polls', 'wp-polls/polls-uninstall.php');
-	}
+	add_menu_page(__('Polls', 'wp-polls'), __('Polls', 'wp-polls'), 'manage_polls', 'wp-polls/polls-manager.php', '', 'dashicons-chart-bar');
+
+	add_submenu_page('wp-polls/polls-manager.php', __('Manage Polls', 'wp-polls'), __('Manage Polls', 'wp-polls'), 'manage_polls', 'wp-polls/polls-manager.php');
+	add_submenu_page('wp-polls/polls-manager.php', __('Add Poll', 'wp-polls'), __('Add Poll', 'wp-polls'), 'manage_polls', 'wp-polls/polls-add.php');
+	add_submenu_page('wp-polls/polls-manager.php', __('Poll Options', 'wp-polls'), __('Poll Options', 'wp-polls'), 'manage_polls', 'wp-polls/polls-options.php');
+	add_submenu_page('wp-polls/polls-manager.php', __('Poll Templates', 'wp-polls'), __('Poll Templates', 'wp-polls'), 'manage_polls', 'wp-polls/polls-templates.php');
+	add_submenu_page('wp-polls/polls-manager.php', __('Uninstall WP-Polls', 'wp-polls'), __('Uninstall WP-Polls', 'wp-polls'), 'manage_polls', 'wp-polls/polls-uninstall.php');
 }
 
 
@@ -79,6 +80,7 @@ function get_poll($temp_poll_id = 0, $display = true) {
 		}
 	// Poll Is Enabled
 	} else {
+		do_action('wp_polls_get_poll');
 		// Hardcoded Poll ID Is Not Specified
 		switch($temp_poll_id) {
 			// Random Poll
@@ -198,22 +200,22 @@ add_action('wp_enqueue_scripts', 'poll_scripts');
 function poll_scripts() {
 	global $text_direction;
 	if(@file_exists(get_stylesheet_directory().'/polls-css.css')) {
-		wp_enqueue_style('wp-polls', get_stylesheet_directory_uri().'/polls-css.css', false, '2.63', 'all');
+		wp_enqueue_style('wp-polls', get_stylesheet_directory_uri().'/polls-css.css', false, WP_POLLS_VERSION, 'all');
 	} else {
-		wp_enqueue_style('wp-polls', plugins_url('wp-polls/polls-css.css'), false, '2.63', 'all');
+		wp_enqueue_style('wp-polls', plugins_url('wp-polls/polls-css.css'), false, WP_POLLS_VERSION, 'all');
 	}
 	if('rtl' == $text_direction) {
 		if(@file_exists(get_stylesheet_directory().'/polls-css-rtl.css')) {
-			wp_enqueue_style('wp-polls-rtl', get_stylesheet_directory_uri().'/polls-css-rtl.css', false, '2.63', 'all');
+			wp_enqueue_style('wp-polls-rtl', get_stylesheet_directory_uri().'/polls-css-rtl.css', false, WP_POLLS_VERSION, 'all');
 		} else {
-			wp_enqueue_style('wp-polls-rtl', plugins_url('wp-polls/polls-css-rtl.css'), false, '2.63', 'all');
+			wp_enqueue_style('wp-polls-rtl', plugins_url('wp-polls/polls-css-rtl.css'), false, WP_POLLS_VERSION, 'all');
 		}
 	}
 	$poll_ajax_style = get_option('poll_ajax_style');
 	$pollbar = get_option('poll_bar');
-	wp_enqueue_script('wp-polls', plugins_url('wp-polls/polls-js.js'), array('jquery'), '2.63', true);
+	wp_enqueue_script('wp-polls', plugins_url('wp-polls/polls-js.js'), array('jquery'), WP_POLLS_VERSION, true);
 	wp_localize_script('wp-polls', 'pollsL10n', array(
-		'ajax_url' => admin_url('admin-ajax.php', (is_ssl() ? 'https' : 'http')),
+		'ajax_url' => admin_url('admin-ajax.php'),
 		'text_wait' => __('Your last request is still being processed. Please wait a while ...', 'wp-polls'),
 		'text_valid' => __('Please choose a valid poll answer.', 'wp-polls'),
 		'text_multiple' => __('Maximum number of choices allowed: ', 'wp-polls'),
@@ -229,10 +231,10 @@ function poll_scripts_admin($hook_suffix) {
 	global $text_direction;
 	$poll_admin_pages = array('wp-polls/polls-manager.php', 'wp-polls/polls-add.php', 'wp-polls/polls-options.php', 'wp-polls/polls-templates.php', 'wp-polls/polls-uninstall.php');
 	if(in_array($hook_suffix, $poll_admin_pages)) {
-		wp_enqueue_style('wp-polls-admin', plugins_url('wp-polls/polls-admin-css.css'), false, '2.63', 'all');
-		wp_enqueue_script('wp-polls-admin', plugins_url('wp-polls/polls-admin-js.js'), array('jquery'), '2.63', true);
+		wp_enqueue_style('wp-polls-admin', plugins_url('wp-polls/polls-admin-css.css'), false, WP_POLLS_VERSION, 'all');
+		wp_enqueue_script('wp-polls-admin', plugins_url('wp-polls/polls-admin-js.js'), array('jquery'), WP_POLLS_VERSION, true);
 		wp_localize_script('wp-polls-admin', 'pollsAdminL10n', array(
-			'admin_ajax_url' => admin_url('admin-ajax.php', (is_ssl() ? 'https' : 'http')),
+			'admin_ajax_url' => admin_url('admin-ajax.php'),
 			'text_direction' => ('rtl' == $text_direction) ? 'left' : 'right',
 			'text_delete_poll' => __('Delete Poll', 'wp-polls'),
 			'text_no_poll_logs' => __('No poll logs available.', 'wp-polls'),
@@ -256,46 +258,20 @@ add_action('admin_footer-post.php', 'poll_footer_admin');
 add_action('admin_footer-page-new.php', 'poll_footer_admin');
 add_action('admin_footer-page.php', 'poll_footer_admin');
 function poll_footer_admin() {
-	// Javascript Code Courtesy Of WP-AddQuicktag (http://bueltge.de/wp-addquicktags-de-plugin/120/)
-	echo '<script type="text/javascript">'."\n";
-	echo '/* <![CDATA[ */'."\n";
-	echo "\t".'var pollsEdL10n = {'."\n";
-	echo "\t\t".'enter_poll_id: "'.esc_js(__('Enter Poll ID', 'wp-polls')).'",'."\n";
-	echo "\t\t".'enter_poll_id_again: "'.esc_js(__('Error: Poll ID must be numeric', 'wp-polls')).'\n\n'.esc_js(__('Please enter Poll ID again', 'wp-polls')).'",'."\n";
-	echo "\t\t".'poll: "'.esc_js(__('Poll', 'wp-polls')).'",'."\n";
-	echo "\t\t".'insert_poll: "'.esc_js(__('Insert Poll', 'wp-polls')).'"'."\n";
-	echo "\t".'};'."\n";
-	echo "\t".'function insertPoll(where, myField) {'."\n";
-	echo "\t\t".'var poll_id = jQuery.trim(prompt(pollsEdL10n.enter_poll_id));'."\n";
-	echo "\t\t".'while(isNaN(poll_id)) {'."\n";
-	echo "\t\t\t".'poll_id = jQuery.trim(prompt(pollsEdL10n.enter_poll_id_again));'."\n";
-	echo "\t\t".'}'."\n";
-	echo "\t\t".'if (poll_id >= -1 && poll_id != null && poll_id != "") {'."\n";
-	echo "\t\t\t".'if(where == \'code\') {'."\n";
-	echo "\t\t\t\t".'edInsertContent(myField, \'[poll id="\' + poll_id + \'"]\');'."\n";
-	echo "\t\t\t".'} else {'."\n";
-	echo "\t\t\t\t".'return \'[poll id="\' + poll_id + \'"]\';'."\n";
-	echo "\t\t\t".'}'."\n";
-	echo "\t\t".'}'."\n";
-	echo "\t".'}'."\n";
-	echo "\t".'if(document.getElementById("ed_toolbar")){'."\n";
-	echo "\t\t".'edButtons[edButtons.length] = new edButton("ed_poll",pollsEdL10n.poll, "", "","");'."\n";
-	echo "\t\t".'jQuery(document).ready(function($){'."\n";
-	echo "\t\t\t".'$(\'#qt_content_ed_poll\').replaceWith(\'<input type="button" id="qt_content_ed_poll" accesskey="" class="ed_button" onclick="insertPoll(\\\'code\\\', edCanvas);" value="\' + pollsEdL10n.poll + \'" title="\' + pollsEdL10n.insert_poll + \'" />\');'."\n";
-	echo "\t\t".'});'."\n";
-	echo "\t".'}'."\n";
-	echo '/* ]]> */'."\n";
-	echo '</script>'."\n";
+?>
+	<script type="text/javascript">
+		QTags.addButton('ed_wp_polls', '<?php echo esc_js(__('Poll', 'wp-polls')); ?>', function() {
+			var poll_id = jQuery.trim(prompt('<?php echo esc_js(__('Enter Poll ID', 'wp-polls')); ?>'));
+			while(isNaN(poll_id)) {
+				poll_id = jQuery.trim(prompt("<?php echo esc_js(__('Error: Poll ID must be numeric', 'wp-polls')); ?>\n\n<?php echo esc_js(__('Please enter Poll ID again', 'wp-polls')); ?>"));
+			}
+			if (poll_id >= -1 && poll_id != null && poll_id != "") {
+				QTags.insertContent('[poll id="' + poll_id + '"]');
+			}
+		});
+	</script>
+<?php
 }
-
-
-### Function: Add Favourite Actions >= WordPress 2.7
-add_filter('favorite_actions', 'poll_favorite_actions');
-function poll_favorite_actions($favorite_actions) {
-       $favorite_actions['admin.php?page=wp-polls/polls-add.php'] = array(__('Add Poll', 'wp-polls'), 'manage_polls');
-       return $favorite_actions;
-}
-
 
 ### Function: Add Quick Tag For Poll In TinyMCE >= WordPress 2.5
 add_action('init', 'poll_tinymce_addbuttons');
@@ -304,8 +280,9 @@ function poll_tinymce_addbuttons() {
 		return;
 	}
 	if(get_user_option('rich_editing') == 'true') {
-		add_filter("mce_external_plugins", "poll_tinymce_addplugin");
+		add_filter('mce_external_plugins', 'poll_tinymce_addplugin');
 		add_filter('mce_buttons', 'poll_tinymce_registerbutton');
+		add_filter('wp_mce_translation', 'poll_tinymce_translation');
 	}
 }
 function poll_tinymce_registerbutton($buttons) {
@@ -313,8 +290,19 @@ function poll_tinymce_registerbutton($buttons) {
 	return $buttons;
 }
 function poll_tinymce_addplugin($plugin_array) {
-	$plugin_array['polls'] = plugins_url('wp-polls/tinymce/plugins/polls/editor_plugin.js');
+	if(WP_DEBUG) {
+		$plugin_array['polls'] = plugins_url( 'wp-polls/tinymce/plugins/polls/plugin.js?v=' . WP_POLLS_VERSION );
+	} else {
+		$plugin_array['polls'] = plugins_url( 'wp-polls/tinymce/plugins/polls/plugin.min.js?v=' . WP_POLLS_VERSION );
+	}
 	return $plugin_array;
+}
+function poll_tinymce_translation($mce_translation) {
+	$mce_translation['Enter Poll ID'] = esc_js(__('Enter Poll ID', 'wp-polls'));
+	$mce_translation['Error: Poll ID must be numeric'] = esc_js(__('Error: Poll ID must be numeric', 'wp-polls'));
+	$mce_translation['Please enter Poll ID again'] = esc_js(__('Please enter Poll ID again', 'wp-polls'));
+	$mce_translation['Insert Poll'] = esc_js(__('Insert Poll', 'wp-polls'));
+	return $mce_translation;
 }
 
 
@@ -446,6 +434,7 @@ function poll_template_vote_markup($template, $poll_db_object, $variables) {
 
 ### Function: Display Voting Form
 function display_pollvote($poll_id, $display_loading = true) {
+	do_action('wp_polls_display_pollvote');
 	global $wpdb;
 	// Temp Poll Result
 	$temp_pollvote = '';
@@ -551,6 +540,7 @@ function display_pollvote($poll_id, $display_loading = true) {
 
 ### Function: Display Results Form
 function display_pollresult($poll_id, $user_voted = '', $display_loading = true) {
+	do_action('wp_polls_display_pollresult');
 	global $wpdb;
 	$poll_id = intval($poll_id);
 	// User Voted
@@ -749,18 +739,24 @@ function poll_page_shortcode($atts) {
 
 
 ### Function: Short Code For Inserting Polls Into Posts
-add_shortcode('poll', 'poll_shortcode');
+add_shortcode( 'poll', 'poll_shortcode' );
 function poll_shortcode($atts) {
-	extract(shortcode_atts(array('id' => 0, 'type' => 'vote'), $atts));
-	if(!is_feed()) {
-		$id = intval($id);
-		if($type == 'vote') {
-			return get_poll($id, false);
-		} elseif($type == 'result') {
-			return display_pollresult($id);
+	$attributes = shortcode_atts( array( 'id' => 0, 'type' => 'vote' ), $atts );
+	if( !is_feed() ) {
+		$id = intval( $attributes['id'] );
+
+		// To maintain backward compatibility with [poll=1]. Props @tz-ua
+		if( !$id ) {
+			$id = intval( trim( $atts[0], '="\'' ) );
+		}
+
+		if( $attributes['type'] === 'vote' ) {
+			return get_poll( $id, false );
+		} elseif( $attributes['type'] === 'result' ) {
+			return display_pollresult( $id );
 		}
 	} else {
-		return __('Note: There is a poll embedded within this post, please visit the site to participate in this post\'s poll.', 'wp-polls');
+		return __( 'Note: There is a poll embedded within this post, please visit the site to participate in this post\'s poll.', 'wp-polls' );
 	}
 }
 
@@ -874,13 +870,14 @@ function display_polls_archive_link($display = true) {
 
 ### Function: Display Polls Archive
 function polls_archive() {
+	do_action('wp_polls_polls_archive');
 	global $wpdb, $in_pollsarchive;
 	// Polls Variables
 	$in_pollsarchive = true;
-	$page = intval($_GET['poll_page']);
+	$page = isset($_GET['poll_page']) ? intval($_GET['poll_page']) : 0;
 	$polls_questions = array();
 	$polls_answers = array();
-	$polls_ip = array();
+	$polls_ips = array();
 	$polls_perpage = intval(get_option('poll_archive_perpage'));
 	$poll_questions_ids = '0';
 	$poll_voted = false;
@@ -1034,7 +1031,7 @@ function polls_archive() {
 				}
 			}
 			// Let User See What Options They Voted
-			if(in_array($polls_answer['aid'], check_voted_multiple($polls_question['id'], $polls_ips[$polls_question['id']]))) {
+			if(isset($polls_ips[$polls_question['id']]) && in_array($polls_answer['aid'], check_voted_multiple($polls_question['id'], $polls_ips[$polls_question['id']]))) {
 				// Results Body Variables
 				$template_answer = stripslashes(get_option('poll_template_resultbody2'));
 				$template_answer = str_replace("%POLL_ID%", $polls_question['id'], $template_answer);
@@ -1316,6 +1313,7 @@ function vote_poll() {
 		{
 			// Poll Vote
 			case 'process':
+				do_action('wp_polls_vote_poll');
 				$poll_aid = $_POST["poll_$poll_id"];
 				$poll_aid_array = array_unique(array_map('intval', explode(',', $poll_aid)));
 				if($poll_id > 0 && !empty($poll_aid_array) && check_allowtovote()) {
@@ -1339,7 +1337,7 @@ function vote_poll() {
 							if($cookie_expiry == 0) {
 								$cookie_expiry = 30000000;
 							}
-							$vote_cookie = setcookie('voted_'.$poll_id, $poll_aid, ($pollip_timestamp + $cookie_expiry), COOKIEPATH);
+							$vote_cookie = setcookie('voted_'.$poll_id, $poll_aid, ($pollip_timestamp + $cookie_expiry), apply_filters('wp_polls_cookiepath', SITECOOKIEPATH));
 						}
 						$i = 0;
 						foreach($poll_aid_array as $polla_aid) {
@@ -1634,7 +1632,7 @@ function create_poll_table() {
 	}
 	// Create Poll Tables (3 Tables)
 	$charset_collate = '';
-	if($wpdb->supports_collation()) {
+	if( $wpdb->has_cap( 'collation' ) ) {
 		if(!empty($wpdb->charset)) {
 			$charset_collate = "DEFAULT CHARACTER SET $wpdb->charset";
 		}
@@ -1669,8 +1667,9 @@ function create_poll_table() {
 									"pollip_user tinytext NOT NULL,".
 									"pollip_userid int(10) NOT NULL default '0',".
 									"PRIMARY KEY (pollip_id),".
-									"KEY pollip_ip (pollip_id),".
-									"KEY pollip_qid (pollip_qid)".
+									"KEY pollip_ip (pollip_ip),".
+									"KEY pollip_qid (pollip_qid),".
+									"KEY pollip_ip_qid (pollip_ip, pollip_qid)".
 									") $charset_collate;";
 	maybe_create_table($wpdb->pollsq, $create_table['pollsq']);
 	maybe_create_table($wpdb->pollsa, $create_table['pollsa']);
@@ -1754,9 +1753,25 @@ function create_poll_table() {
 	add_option('poll_template_pollarchivepagingfooter', '');
 	// Database Upgrade For WP-Polls 2.50
 	delete_option('poll_archive_show');
-	// Database Upgrade For WP-Polls 2.61
-	$wpdb->query("ALTER TABLE $wpdb->pollsip ADD INDEX pollip_ip (pollip_ip);");
-	$wpdb->query("ALTER TABLE $wpdb->pollsip ADD INDEX pollip_qid (pollip_qid);");
+
+	// Index
+	$index = $wpdb->get_results( "SHOW INDEX FROM $wpdb->pollsip;" );
+	$key_name = array();
+	if( sizeof( $index ) > 0 ) {
+		foreach( $index as $i ) {
+			$key_name[]= $i->Key_name;
+		}
+	}
+	if ( !in_array( 'pollip_ip', $key_name ) ) {
+		$wpdb->query( "ALTER TABLE $wpdb->pollsip ADD INDEX pollip_ip (pollip_ip);" );
+	}
+	if ( !in_array( 'pollip_qid', $key_name ) ) {
+		$wpdb->query( "ALTER TABLE $wpdb->pollsip ADD INDEX pollip_qid (pollip_qid);" );
+	}
+	if ( !in_array( 'pollip_ip_qid', $key_name ) ) {
+		$wpdb->query( "ALTER TABLE $wpdb->pollsip ADD INDEX pollip_ip_qid (pollip_ip, pollip_qid);" );
+	}
+
 	// Set 'manage_polls' Capabilities To Administrator
 	$role = get_role('administrator');
 	if(!$role->has_cap('manage_polls')) {

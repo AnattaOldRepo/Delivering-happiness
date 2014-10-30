@@ -85,6 +85,7 @@ jQuery(document).ready(function(){
   jQuery('#setting-error-settings_updated').addClass('notranslate');
   jQuery('.update-nag').addClass('notranslate');
   jQuery('title').addClass('notranslate');
+  jQuery('#footer-thankyou').addClass('notranslate');
 });
 
 
