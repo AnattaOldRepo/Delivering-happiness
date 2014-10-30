@@ -1,3 +1,8 @@
+#glt-footer,
+#glt-footer #google_language_translator {
+    display:none !important;
+}
+
 select.goog-te-combo { 
   width:143px !important;
   background:#fff;
@@ -9,7 +14,8 @@ select.goog-te-combo {
   border:1px solid lightgray !important; 
   border-radius:0px !important; 
   -webkit-border-radius:0px; 
-  -moz-border-radius:0px !important; 
+  -moz-border-radius:0px !important;
+  -o-border-radius:0px !important;
 }
 
 #flags ul {
@@ -17,11 +23,18 @@ select.goog-te-combo {
 }
 
 #flags li {
-  float:left;
-  margin-bottom:0;
-  padding:0;
-  border:none;
-  list-style:none;
+  float:left !important;
+  margin-bottom:0 !important;
+  padding:0 !important;
+  border:none !important;
+  list-style:none !important;
+  content:none !important;
+}
+
+#flags li:before {
+  content:none !important;
+  border:none !important;
+  background:none !important;
 }
 
 #flags a {
@@ -72,20 +85,20 @@ p.hello {
 }
 
 .flag{
-	font-size:16px;
-	padding:1px 0;
+    padding:1px 0;
 }
 
-.flag img,.alt_flag img{
-	border:0px !important;
-	margin-top:2px !important;
+.flag img,
+.alt_flag img{
+    border:0px !important;
+    margin-top:2px !important;
     padding:0px !important;
 }
 
 .attribution {
     width:152px; 
-	line-height:1em;
-	margin-top:4px;
+    line-height:1em;
+    margin-top:4px;
 }
 
 span.goog-branding {
@@ -102,7 +115,11 @@ span.goog-branding {
     float: right;
 }
 
-.goog-logo-link, .goog-logo-link:link, .goog-logo-link:visited, .goog-logo-link:hover, .goog-logo-link:active {
+.goog-logo-link, 
+.goog-logo-link:link, 
+.goog-logo-link:visited, 
+.goog-logo-link:hover, 
+.goog-logo-link:active {
     font-size: 12px;
     font-weight: bold;
     color: rgb(68, 68, 68);
@@ -135,7 +152,7 @@ span.vertical-translator {
 
 .tool-items .flag img {
     width:24px !important;
-	height:24px !important;
+    height:24px !important;
     margin-top:1px !important;
 }
 
@@ -145,4 +162,12 @@ span.vertical-translator {
 
 .tool-container { 
     line-height:1;
+}
+
+#footer-instance {
+    display:none !important;
+}
+
+code {
+    border:1px solid lightgray;
 }

@@ -2,7 +2,7 @@
 /*
 Plugin Name: Google Language Translator
 Plugin URI: http://www.studio88design.com/plugins/google-language-translator
-Version: 4.0.3
+Version: 4.0.5
 Description: The MOST SIMPLE Google Translator plugin.  This plugin adds Google Translator to your website by using a single shortcode, [google-translator]. Settings include: layout style, hide/show specific languages, hide/show Google toolbar, and hide/show Google branding. Add the shortcode to pages, posts, and widgets.
 Author: Rob Myrick
 Author URI: http://www.studio88design.com/
@@ -12,143 +12,77 @@ include( plugin_dir_path( __FILE__ ) . 'widget.php');
 
 class google_language_translator {
   
-  public $languages_array = array(
-	  'af' => 'Afrikaans',
-	  'sq' => 'Albanian',
-	  'ar' => 'Arabic',
-	  'hy' => 'Armenian',
-	  'az' => 'Azerbaijani',
-	  'eu' => 'Basque',
-	  'be' => 'Belarusian',
-	  'bn' => 'Bengali',
-	  'bs' => 'Bosnian',
-	  'bg' => 'Bulgarian',
-	  'ca' => 'Catalan',
-	  'ceb' => 'Cebuano',
-	  'zh-CN' => 'Chinese(Simplified)',
-	  'zh-TW' => 'Chinese(Traditional)',
-	  'hr' => 'Croatian',
-	  'cs' => 'Czech',
-	  'da' => 'Danish',
-	  'nl' => 'Dutch',
-	  'en' => 'English',
-	  'eo' => 'Esperanto',
-	  'et' => 'Estonian',
-	  'tl' => 'Filipino',
-	  'fi' => 'Finnish',
-	  'fr' => 'French',
-	  'gl' => 'Galician',
-	  'ka' => 'Georgian',
-	  'de' => 'German',
-	  'el' => 'Greek',
-	  'gu' => 'Gujarati',
-	  'ht' => 'Haitian',
-	  'ha' => 'Hausa',
-	  'iw' => 'Hebrew',
-	  'hi' => 'Hindi',
-	  'hmn' => 'Hmong',
-	  'hu' => 'Hungarian',
-	  'is' => 'Icelandic',
-	  'ig' => 'Igbo',
-	  'id' => 'Indonesian',
-	  'ga' => 'Irish',
-	  'it' => 'Italian',
-	  'ja' => 'Japanese',
-	  'jw' => 'Javanese',
-	  'kn' => 'Kannada',
-	  'km' => 'Khmer',
-	  'ko' => 'Korean',
-	  'lo' => 'Lao',
-	  'la' => 'Latin',
-	  'lv' => 'Latvian',
-	  'lt' => 'Lithuanian',
-	  'mk' => 'Macedonian',
-	  'ms' => 'Malay',
-	  'mt' => 'Maltese',
-	  'mi' => 'Maori',
-	  'mr' => 'Marathi',
-	  'mn' => 'Mongolian',
-	  'ne' => 'Nepali',
-	  'no' => 'Norwegian',
-	  'fa' => 'Persian',
-	  'pl' => 'Polish',
-	  'pt' => 'Portuguese',
-	  'pa' => 'Punjabi',
-	  'ro' => 'Romanian',
-	  'ru' => 'Russian',
-	  'sr' => 'Serbian',
-	  'sk' => 'Slovak',
-	  'sl' => 'Slovenian',
-	  'so' => 'Somali',
-	  'es' => 'Spanish',
-	  'sw' => 'Swahili',
-	  'sv' => 'Swedish',
-	  'ta' => 'Tamil',
-	  'te' => 'Telugu',
-	  'th' => 'Thai',
-	  'tr' => 'Turkish',
-	  'uk' => 'Ukranian',
-	  'ur' => 'Urdu',
-	  'vi' => 'Vietnamese',
-	  'cy' => 'Welsh',
-	  'yi' => 'Yiddish',
-	  'yo' => 'Yoruba',
-	  'zu' => 'Zulu'
-	);
+  public $languages_array = array (
+    'af' => 'Afrikaans','sq' => 'Albanian','ar' => 'Arabic','hy' => 'Armenian','az' => 'Azerbaijani','eu' => 'Basque','be' => 'Belarusian','bn' => 'Bengali','bs' => 'Bosnian','bg' => 'Bulgarian','ca' => 'Catalan','ceb' => 'Cebuano','zh-CN' => 'Chinese(Simplified)','zh-TW' => 'Chinese(Traditional)','hr' => 'Croatian','cs' => 'Czech','da' => 'Danish','nl' => 'Dutch','en' => 'English','eo' => 'Esperanto','et' => 'Estonian','tl' => 'Filipino','fi' => 'Finnish','fr' => 'French','gl' => 'Galician','ka' => 'Georgian','de' => 'German','el' => 'Greek','gu' => 'Gujarati','ht' => 'Haitian','ha' => 'Hausa','iw' => 'Hebrew','hi' => 'Hindi','hmn' => 'Hmong','hu' => 'Hungarian','is' => 'Icelandic','ig' => 'Igbo','id' => 'Indonesian','ga' => 'Irish','it' => 'Italian','ja' => 'Japanese','jw' => 'Javanese','kn' => 'Kannada','km' => 'Khmer','ko' => 'Korean','lo' => 'Lao','la' => 'Latin','lv' => 'Latvian','lt' => 'Lithuanian','mk' => 'Macedonian','ms' => 'Malay','mt' => 'Maltese','mi' => 'Maori','mr' => 'Marathi','mn' => 'Mongolian','ne' => 'Nepali','no' => 'Norwegian','fa' => 'Persian','pl' => 'Polish','pt' => 'Portuguese','pa' => 'Punjabi','ro' => 'Romanian','ru' => 'Russian','sr' => 'Serbian','sk' => 'Slovak','sl' => 'Slovenian','so' => 'Somali','es' => 'Spanish','sw' => 'Swahili','sv' => 'Swedish','ta' => 'Tamil','te' => 'Telugu','th' => 'Thai','tr' => 'Turkish','uk' => 'Ukranian','ur' => 'Urdu','vi' => 'Vietnamese','cy' => 'Welsh','yi' => 'Yiddish','yo' => 'Yoruba','zu' => 'Zulu'
+  );
   
   public function __construct(){
     register_activation_hook( __FILE__, array( &$this, 'glt_activate' ));
-	register_deactivation_hook( __FILE__, array( &$this, 'glt_deactivate' ));
-	add_action( 'admin_menu', array( &$this, 'add_my_admin_menus')); 
+    register_uninstall_hook( __FILE__, 'glt_deactivate' );
+    add_action( 'admin_menu', array( &$this, 'add_my_admin_menus')); 
     add_action('admin_init',array(&$this, 'initialize_settings')); 
-	add_action('wp_head',array(&$this, 'load_css'));
+    add_action('wp_head',array(&$this, 'load_css'));
+    add_action('wp_footer',array(&$this, 'footer_script'));
     add_shortcode( 'google-translator',array(&$this, 'google_translator_shortcode'));
+    add_shortcode( 'glt', array(&$this, 'google_translator_menu_language'));
     add_filter('widget_text','do_shortcode');
-
+    add_filter('walker_nav_menu_start_el', array(&$this,'menu_shortcodes') , 10 , 2);
+	add_filter( 'plugin_action_links_' . plugin_basename(__FILE__), array(&$this, 'glt_settings_link') );
+  
     if (!is_admin()) {
       add_action('init',array(&$this, 'flags'));
     }
   }
   
   public function glt_activate() {
-    update_option('googlelanguagetranslator_active', 1); 
-	update_option('googlelanguagetranslator_language','en'); 
-	update_option('googlelanguagetranslator_language_option','all'); 
-    update_option('language_display_settings',array ('en' => 1));
-    update_option('googlelanguagetranslator_flags','show_flags');
-    update_option('flag_display_settings',array ('flag-en' => 1)); 
-    update_option('googlelanguagetranslator_translatebox','yes'); 
-    update_option('googlelanguagetranslator_display','Vertical'); 
-    update_option('googlelanguagetranslator_toolbar','Yes'); 
-    update_option('googlelanguagetranslator_showbranding','Yes'); 
-    update_option('googlelanguagetranslator_flags_alignment','flags_left');   
-    update_option('googlelanguagetranslator_analytics',1);  
-    update_option('googlelanguagetranslator_manage_translations',0);
-    update_option('googlelanguagetranslator_multilanguage',0);
-    update_option('googlelanguagetranslator_floating_widget','yes');
-	update_option('googlelanguagetranslator_flag_size','18');
+    add_option('googlelanguagetranslator_active', 1);   
+    add_option('googlelanguagetranslator_language','en');
+    add_option('googlelanguagetranslator_language_option','all');
+    add_option('googlelanguagetranslator_flags','show_flags');
+    add_option('language_display_settings',array ('en' => 1));
+    add_option('flag_display_settings',array ('flag-en' => 1)); 
+    add_option('googlelanguagetranslator_translatebox','yes'); 
+    add_option('googlelanguagetranslator_display','Vertical'); 
+    add_option('googlelanguagetranslator_toolbar','Yes'); 
+    add_option('googlelanguagetranslator_showbranding','Yes'); 
+    add_option('googlelanguagetranslator_flags_alignment','flags_left');   
+    add_option('googlelanguagetranslator_analytics',1);  
+    add_option('googlelanguagetranslator_analytics_id','');
+    add_option('googlelanguagetranslator_css','');
+    add_option('googlelanguagetranslator_manage_translations',0);
+    add_option('googlelanguagetranslator_multilanguage',0);
+    add_option('googlelanguagetranslator_floating_widget','yes');
+    add_option('googlelanguagetranslator_flag_size','18');
+    add_option('googlelanguagetranslator_flags_order','');
   } 
   
   public function glt_deactivate() {
-	delete_option('googlelanguagetranslator_active'); 
-	delete_option('googlelanguagetranslator_language'); 
-	delete_option('googlelanguagetranslator_language_option'); 
-    delete_option('language_display_settings');
-    delete_option('googlelanguagetranslator_flags');
-    delete_option('flag_display_settings'); 
-    delete_option('googlelanguagetranslator_translatebox'); 
-    delete_option('googlelanguagetranslator_display'); 
-    delete_option('googlelanguagetranslator_toolbar'); 
-    delete_option('googlelanguagetranslator_showbranding'); 
-    delete_option('googlelanguagetranslator_flags_alignment');   
-    delete_option('googlelanguagetranslator_analytics');
-    delete_option('googlelanguagetranslator_manage_translations');
-    delete_option('googlelanguagetranslator_multilanguage');
-    delete_option('googlelanguagetranslator_floating_widget');
-	delete_option('googlelanguagetranslator_flag_size');
-	delete_option('googlelanguagetranslator_flags_order');
-	delete_option('googlelanguagetranslator_disable_mootools');
-	delete_option('googlelanguagetranslator_disable_modal');
+    delete_option('googlelanguagetranslator_active', 1);   
+    delete_option('googlelanguagetranslator_language','en');
+    delete_option('googlelanguagetranslator_language_option','all');
+    delete_option('googlelanguagetranslator_flags','show_flags');
+    delete_option('language_display_settings',array ('en' => 1));
+    delete_option('flag_display_settings',array ('flag-en' => 1)); 
+    delete_option('googlelanguagetranslator_translatebox','yes'); 
+    delete_option('googlelanguagetranslator_display','Vertical'); 
+    delete_option('googlelanguagetranslator_toolbar','Yes'); 
+    delete_option('googlelanguagetranslator_showbranding','Yes'); 
+    delete_option('googlelanguagetranslator_flags_alignment','flags_left');   
+    delete_option('googlelanguagetranslator_analytics',1);  
+    delete_option('googlelanguagetranslator_analytics_id','');
+    delete_option('googlelanguagetranslator_css','');
+    delete_option('googlelanguagetranslator_manage_translations',0);
+    delete_option('googlelanguagetranslator_multilanguage',0);
+    delete_option('googlelanguagetranslator_floating_widget','yes');
+    delete_option('googlelanguagetranslator_flag_size','18');
+    delete_option('googlelanguagetranslator_flags_order','');
+  }
+  
+  public function glt_settings_link ( $links ) {
+    $settings_link = array(
+      '<a href="' . admin_url( 'options-general.php?page=google_language_translator' ) . '">Settings</a>',
+    );
+   return array_merge( $links, $settings_link );
   }
   
   public function add_my_admin_menus(){
@@ -159,25 +93,26 @@ class google_language_translator {
 
   public function load_admin_js(){
     add_action( 'admin_enqueue_scripts', array(&$this, 'enqueue_admin_js' ));
+    add_action('admin_footer',array(&$this, 'footer_script'));
   }
 
   public function enqueue_admin_js(){
-	wp_enqueue_script( 'my-admin-script', plugins_url('js/admin.js',__FILE__), array('jquery'));
-	wp_enqueue_script( 'my-flag-script', plugins_url('js/flags.js',__FILE__), array('jquery'));
+    wp_enqueue_script( 'my-admin-script', plugins_url('js/admin.js',__FILE__), array('jquery'));
+    wp_enqueue_script( 'my-flag-script', plugins_url('js/flags.js',__FILE__), array('jquery'));
 		
     if (get_option ('googlelanguagetranslator_floating_widget') == 'yes') {
       wp_enqueue_script( 'my-toolbar-script', plugins_url('js/toolbar.js',__FILE__), array('jquery'));
       wp_enqueue_script( 'my-load-toolbar-script', plugins_url('js/load-toolbar.js',__FILE__), array('jquery'));
-	  wp_register_style( 'toolbar.css', plugins_url('css/toolbar.css', __FILE__) );
-	  wp_enqueue_style( 'toolbar.css' );
+      wp_register_style( 'toolbar.css', plugins_url('css/toolbar.css', __FILE__) );
+      wp_enqueue_style( 'toolbar.css' );
     }
 		
-	wp_enqueue_script( 'jquery-ui.js', plugins_url('js/jquery-ui.js',__FILE__), array('jquery'));
-	wp_enqueue_script( 'jquery-ui-sortable.js', plugins_url('js/jquery-ui-sortable.js',__FILE__), array('jquery'));
-	wp_enqueue_script( 'jquery-ui-widget.js', plugins_url('js/jquery-ui-widget.js',__FILE__), array('jquery'));
-	wp_enqueue_script( 'jquery-ui-mouse.js', plugins_url('js/jquery-ui-mouse.js',__FILE__), array('jquery'));
-	wp_enqueue_script( 'load_sortable_flags', plugins_url('js/load-sortable-flags.js',__FILE__), array('jquery'));
-	wp_register_style( 'jquery-ui.css', plugins_url('css/jquery-ui.css',__FILE__) );
+    wp_enqueue_script( 'jquery-ui.js', plugins_url('js/jquery-ui.js',__FILE__), array('jquery'));
+    wp_enqueue_script( 'jquery-ui-sortable.js', plugins_url('js/jquery-ui-sortable.js',__FILE__), array('jquery'));
+    wp_enqueue_script( 'jquery-ui-widget.js', plugins_url('js/jquery-ui-widget.js',__FILE__), array('jquery'));
+    wp_enqueue_script( 'jquery-ui-mouse.js', plugins_url('js/jquery-ui-mouse.js',__FILE__), array('jquery'));
+    wp_enqueue_script( 'load_sortable_flags', plugins_url('js/load-sortable-flags.js',__FILE__), array('jquery'));
+    wp_register_style( 'jquery-ui.css', plugins_url('css/jquery-ui.css',__FILE__) );
     wp_register_style( 'style.css', plugins_url('css/style.css', __FILE__) );
     wp_enqueue_style( 'style.css' );
     wp_enqueue_style( 'jquery-ui.css' );
@@ -186,35 +121,33 @@ class google_language_translator {
   public function flags() {
     wp_enqueue_script( 'flags', plugins_url('js/flags.js',__FILE__), array('jquery'));
 	 
-	  if (get_option ('googlelanguagetranslator_floating_widget') == 'yes') {
-        wp_enqueue_script( 'my-toolbar-script', plugins_url('js/toolbar.js',__FILE__), array('jquery'));
-	    wp_enqueue_script( 'my-load-toolbar-script', plugins_url('js/load-toolbar.js',__FILE__), array('jquery'));
-	    wp_register_style( 'toolbar.css', plugins_url('css/toolbar.css', __FILE__) );
-		wp_enqueue_style( 'toolbar.css' );
-	  }
+    if (get_option ('googlelanguagetranslator_floating_widget') == 'yes') {
+      wp_enqueue_script( 'my-toolbar-script', plugins_url('js/toolbar.js',__FILE__), array('jquery'));
+      wp_enqueue_script( 'my-load-toolbar-script', plugins_url('js/load-toolbar.js',__FILE__), array('jquery'));
+      wp_register_style( 'toolbar.css', plugins_url('css/toolbar.css', __FILE__) );
+      wp_enqueue_style( 'toolbar.css' );
+    }
 	 
     wp_register_style( 'style.css', plugins_url('css/style.css', __FILE__) );
     wp_enqueue_style( 'style.css' );	
   }
   
   public function load_css() {
-	include( plugin_dir_path( __FILE__ ) . '/css/style.php');
+    include( plugin_dir_path( __FILE__ ) . '/css/style.php');
   }
 
   public function google_translator_shortcode() {
     if (get_option('googlelanguagetranslator_display')=='Vertical'){
-      return $this->googlelanguagetranslator_vertical();
+        return $this->googlelanguagetranslator_vertical();
     }
-
     elseif(get_option('googlelanguagetranslator_display')=='Horizontal'){
-      return $this->googlelanguagetranslator_horizontal();
+        return $this->googlelanguagetranslator_horizontal();
     }
   }
 
   public function googlelanguagetranslator_included_languages() {
     if ( get_option('googlelanguagetranslator_language_option')=='specific') { 
-	  $get_language_choices = get_option ('language_display_settings');
-	  
+      $get_language_choices = get_option ('language_display_settings');
 	  foreach ($get_language_choices as $key=>$value) {
 	    if($value == 1) {
 		  $items[] = $key;
@@ -229,7 +162,7 @@ class google_language_translator {
 	  } elseif ( get_option('googlelanguagetranslator_display') == 'Horizontal') {
 	     $lang = ', includedLanguages:\''.$comma_separated.'\'';
 	       return $lang;
-      } 
+          } 
     }
   }
 
@@ -239,6 +172,52 @@ class google_language_translator {
 	  $analytics = 'gaTrack: true, gaId: \''.$analytics_id.'\'';
 	    return ', '.$analytics;
     }
+  }
+
+  public function menu_shortcodes( $item_output,$item ) { 
+    if ( !empty($item->description)) {
+      $output = do_shortcode($item->description);
+  
+      if ( $output != $item->description )
+        $item_output = $output;     
+      }
+    return $item_output;
+  } 
+
+  public function google_translator_menu_language($atts, $content = '') {
+    extract(shortcode_atts(array(
+      "language" => 'Spanish',
+	  "translate" => 'yes'
+    ), $atts));
+
+	$default_language = get_option('googlelanguagetranslator_language'); 
+	$language_code = array_search($language,$this->languages_array);
+	
+	return '<a '.($translate=='no' ? 'class="notranslate"' : '').' onclick="doGoogleLanguageTranslator(\''.$default_language.'|'.$language_code.'\'); return false;" title="'.$language.'">'.$language.'</a>';
+  }
+
+  public function footer_script() {
+	    $language_choices = $this->googlelanguagetranslator_included_languages();
+        $layout = get_option('googlelanguagetranslator_display');
+        $is_multilanguage = get_option('googlelanguagetranslator_multilanguage');
+        $horizontal_layout = ', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL';
+        $auto_display = ', autoDisplay: false';
+	    $str = '';
+
+        if ($is_multilanguage == 1) {
+          $multilanguagePage = ', multilanguagePage:true';
+		  $str.='<div id="glt-footer"><div id="google_language_translator"></div></div><script type="text/javascript">     
+            function GoogleLanguageTranslatorInit() { new google.translate.TranslateElement({pageLanguage: \''.get_option('googlelanguagetranslator_language').'\''.$language_choices . ($layout=='Horizontal' ? $horizontal_layout : '') .  $auto_display . $multilanguagePage . $this->analytics().'}, \'google_language_translator\');}</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=GoogleLanguageTranslatorInit"></script>';
+		  $str.='';
+        echo $str;
+
+	} elseif ($is_multilanguage == 0) {		  
+		
+		  $str.='<div id="glt-footer"><div id="google_language_translator"></div></div><script type="text/javascript">     
+          function GoogleLanguageTranslatorInit() { new google.translate.TranslateElement({pageLanguage: \''.get_option('googlelanguagetranslator_language').'\''.$language_choices . ($layout=='Horizontal' ? $horizontal_layout : '') . $auto_display . $this->analytics().'}, \'google_language_translator\');}</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=GoogleLanguageTranslatorInit"></script>';
+		$str.='';
+	echo $str;
+	} 
   }
   
   public function googlelanguagetranslator_vertical(){   
@@ -250,21 +229,20 @@ class google_language_translator {
 	$get_flag_choices_count = count($get_flag_choices);
 	$get_language_choices = get_option ('language_display_settings');
 	$flag_width = get_option('googlelanguagetranslator_flag_size');
-	$default_language_code = get_option('googlelanguagetranslator_language');	
-    $is_active = get_option ( 'googlelanguagetranslator_active' );
+	$default_language_code = get_option('googlelanguagetranslator_language');
+	$is_active = get_option ( 'googlelanguagetranslator_active' );
 	$get_language_option = get_option('googlelanguagetranslator_language_option');
-    $language_choices = $this->googlelanguagetranslator_included_languages();
-    $floating_widget = get_option ('googlelanguagetranslator_floating_widget');
+	$language_choices = $this->googlelanguagetranslator_included_languages();
+	$floating_widget = get_option ('googlelanguagetranslator_floating_widget');
 	$str = '';
 
-  
 	if( $is_active == 1){
 	  
 	  foreach ($get_flag_choices as $flag_choice_key) {}
 	  
 	  if ($floating_widget=='yes' && $get_language_option != 'specific') {
 		$str.='<div id="glt-translate-trigger"><span class="notranslate">Translate &raquo;</span></div>';
-        $str.='<div id="glt-toolbar"></div>';
+          $str.='<div id="glt-toolbar"></div>';
 	  } //endif $floating_widget
 	  
 	  $str.='<div id="flags">';
@@ -275,201 +253,114 @@ class google_language_translator {
 		      $language_code = $key;
 		      $language_name = $value;
 		      $language_name_flag = $language_name;
-			  
-			  if ($flag_choice_key == '1') {
-                if ( isset ( $get_flag_choices['flag-'.$language_code.''] ) ) {				  
-				  $str.='<li id="'.$language_name.'"><a onclick="doGoogleLanguageTranslator(\''.$default_language_code.'|'.$language_code.'\'); return false;" title="'.$language_name.'" class="notranslate flag '.$language_code.'"><img class="flagimg" src="'.plugins_url().'/google-language-translator/images/flags24/'.$language_name_flag.'.png" height="'.$flag_width.'" width="'.$flag_width.'" alt="'.$language_name.'"/></a></li>';
-			    }
-		      } //$key
-			}//foreach
+	                if ($flag_choice_key == '1') {
+                          if ( isset ( $get_flag_choices['flag-'.$language_code.''] ) ) {				  
+			    $str.='<li id="'.$language_name.'"><a onclick="doGoogleLanguageTranslator(\''.$default_language_code.'|'.$language_code.'\'); return false;" title="'.$language_name.'" class="notranslate flag '.$language_code.'"><img class="flagimg" src="'.plugins_url().'/google-language-translator/images/flags24/'.$language_name_flag.'.png" height="'.$flag_width.'" width="'.$flag_width.'" alt="'.$language_name.'"/></a></li>';
+		           }
+	                 } //$key
+	             }//foreach
 	    } else {
-			foreach ($new_languages_array_codes as $value) {
-
-		      $language_name = $value;
-			  $language_code = array_search ($language_name,$this->languages_array);
-			  $language_name_flag = $language_name;
-			  
+		     foreach ($new_languages_array_codes as $value) {
+		       $language_name = $value;
+		       $language_code = array_search ($language_name,$this->languages_array);
+		       $language_name_flag = $language_name;
 			  if ($flag_choice_key == '1') {
 			    if (in_array($language_name,$this->languages_array)) {
-                  if ( isset ( $get_flag_choices['flag-'.$language_code.''] ) ) {
-					$str.='<li id="'.$language_name.'"><a onclick="doGoogleLanguageTranslator(\''.$default_language_code.'|'.$language_code.'\'); return false;" title="'.$language_name.'" class="notranslate flag '.$language_code.'"><img class="flagimg" src="'.plugins_url().'/google-language-translator/images/flags24/'.$language_name_flag.'.png" height="'.$flag_width.'" width="'.$flag_width.'" alt="'.$flag_width.'"/></a></li>';
-		          } //isset
+                              if ( isset ( $get_flag_choices['flag-'.$language_code.''] ) ) {
+			        $str.='<li id="'.$language_name.'"><a onclick="doGoogleLanguageTranslator(\''.$default_language_code.'|'.$language_code.'\'); return false;" title="'.$language_name.'" class="notranslate flag '.$language_code.'"><img class="flagimg" src="'.plugins_url().'/google-language-translator/images/flags24/'.$language_name_flag.'.png" height="'.$flag_width.'" width="'.$flag_width.'" alt="'.$flag_width.'"/></a></li>';
+		              } //isset
 			    } //in_array
-		      }//flag_choice_key
-	        }//foreach
-		}//else
-	  
+		          }//flag_choice_key
+	             }//foreach
+	   }//endif
       $str.='</ul>';
-	  $str.='</div>';
-
-		$is_multilanguage = get_option('googlelanguagetranslator_multilanguage');
-		$auto_display = ', autoDisplay: false';
-
-        if ($is_multilanguage == 1) {
-          $multilanguagePage = ', multilanguagePage:true';
-		  
-		  $str.='<script type="text/javascript">     
-         function GoogleLanguageTranslatorInit() { 
-         new google.translate.TranslateElement({pageLanguage: \''.get_option('googlelanguagetranslator_language').'\''.$language_choices . $auto_display . $multilanguagePage . $this->analytics().'}, \'google_language_translator\');}
-              </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=GoogleLanguageTranslatorInit"></script>
-<div id="google_language_translator"></div>';
-		  return $str;
-		} elseif ($is_multilanguage == 0) {		  
-		
-        $str.='<script type="text/javascript">     
-         function GoogleLanguageTranslatorInit() { 
-         new google.translate.TranslateElement({pageLanguage: \''.get_option('googlelanguagetranslator_language').'\''.$language_choices . $auto_display . $this->analytics().'}, \'google_language_translator\');}
-              </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=GoogleLanguageTranslatorInit"></script>
-<div id="google_language_translator"></div>';
-		  return $str;
-		}
-	} //End is_active
+      $str.='</div>';
+      $str.='<div id="google_language_translator"></div>';
+        return $str;		
+      } //End is_active
   } // End glt_vertical
   
   public function googlelanguagetranslator_horizontal(){
     $get_flag_choices = get_option ('flag_display_settings');
-	$new_languages_array_string = get_option('googlelanguagetranslator_flags_order');
-	$new_languages_array = explode(",",$new_languages_array_string);
-	$new_languages_array_codes = array_values($new_languages_array);
-	$new_languages_array_count = count($new_languages_array);
-	$get_flag_choices_count = count($get_flag_choices);
-	$get_language_choices = get_option ('language_display_settings');
-	$flag_width = get_option('googlelanguagetranslator_flag_size');
-	$default_language_code = get_option('googlelanguagetranslator_language');	
+    $new_languages_array_string = get_option('googlelanguagetranslator_flags_order');
+    $new_languages_array = explode(",",$new_languages_array_string);
+    $new_languages_array_codes = array_values($new_languages_array);
+    $new_languages_array_count = count($new_languages_array);
+    $get_flag_choices_count = count($get_flag_choices);
+    $get_language_choices = get_option ('language_display_settings');
+    $flag_width = get_option('googlelanguagetranslator_flag_size');
+    $default_language_code = get_option('googlelanguagetranslator_language');	
     $is_active = get_option ( 'googlelanguagetranslator_active' );
-	$get_language_option = get_option('googlelanguagetranslator_language_option');
+    $get_language_option = get_option('googlelanguagetranslator_language_option');
     $language_choices = $this->googlelanguagetranslator_included_languages();
     $floating_widget = get_option ('googlelanguagetranslator_floating_widget');
-	$str = '';
+    $str = '';
   
     if( $is_active == 1) {
 	  foreach ($get_flag_choices as $flag_choice_key) {}
 	  
 	  if ($floating_widget=='yes' && $get_language_option != 'specific') {
-		$str.='<div id="glt-translate-trigger"><span class="notranslate">Translate &raquo;</span></div>';
-        $str.='<div id="glt-toolbar"></div>';
+	    $str.='<div id="glt-translate-trigger"><span class="notranslate">Translate &raquo;</span></div>';
+            $str.='<div id="glt-toolbar"></div>';
 	  } //endif $floating_widget
 
 	  $str.='<div id="flags">';
 	  $str.='<ul id="sortable" class="ui-sortable" style="float:left">';
 	  
 	    if ((empty($new_languages_array_string)) || ($new_languages_array_count != $get_flag_choices_count)) {
-		    foreach ($this->languages_array as $key=>$value) {
-		      $language_code = $key;
-		      $language_name = $value;
-		      $language_name_flag = $language_name;
+	      foreach ($this->languages_array as $key=>$value) {
+		$language_code = $key;
+		$language_name = $value;
+		$language_name_flag = $language_name;
 			  
-			  if ($flag_choice_key == '1') {
-                if ( isset ( $get_flag_choices['flag-'.$language_code.''] ) ) {				  
-				  $str.='<li id="'.$language_name.'"><a onclick="doGoogleLanguageTranslator(\''.$default_language_code.'|'.$language_code.'\'); return false;" title="'.$language_name.'" class="notranslate flag '.$language_code.'"><img class="flagimg" src="'.plugins_url().'/google-language-translator/images/flags24/'.$language_name_flag.'.png" height="'.$flag_width.'" width="'.$flag_width.'" alt="'.$language_name.'"/></a></li>';
-			    }
-		      } //$key
-			}//foreach
+	        if ($flag_choice_key == '1') {
+                  if ( isset ( $get_flag_choices['flag-'.$language_code.''] ) ) {				  
+		    $str.='<li id="'.$language_name.'"><a onclick="doGoogleLanguageTranslator(\''.$default_language_code.'|'.$language_code.'\'); return false;" title="'.$language_name.'" class="notranslate flag '.$language_code.'"><img class="flagimg" src="'.plugins_url().'/google-language-translator/images/flags24/'.$language_name_flag.'.png" height="'.$flag_width.'" width="'.$flag_width.'" alt="'.$language_name.'"/></a></li>';
+	           }
+		} //$key
+	      }//foreach
+
 	    } else {
-			foreach ($new_languages_array_codes as $value) {
 
-		      $language_name = $value;
-			  $language_code = array_search ($language_name,$this->languages_array);
-			  $language_name_flag = $language_name;
-			  
-			  if ($flag_choice_key == '1') {
-			    if (in_array($language_name,$this->languages_array)) {
-                  if ( isset ( $get_flag_choices['flag-'.$language_code.''] ) ) {
-					$str.='<li id="'.$language_name.'"><a onclick="doGoogleLanguageTranslator(\''.$default_language_code.'|'.$language_code.'\'); return false;" title="'.$language_name.'" class="notranslate flag '.$language_code.'"><img class="flagimg" src="'.plugins_url().'/google-language-translator/images/flags24/'.$language_name_flag.'.png" height="'.$flag_width.'" width="'.$flag_width.'" alt="'.$flag_width.'"/></a></li>';
-		          } //isset
-			    } //in_array
-		      }//flag_choice_key
-	        }//foreach
-		}//else
-	  
+	      foreach ($new_languages_array_codes as $value) {
+		$language_name = $value;
+	        $language_code = array_search ($language_name,$this->languages_array);
+	        $language_name_flag = $language_name;
+	          if ($flag_choice_key == '1') {
+		    if (in_array($language_name,$this->languages_array)) {
+                      if ( isset ( $get_flag_choices['flag-'.$language_code.''] ) ) {
+			$str.='<li id="'.$language_name.'"><a onclick="doGoogleLanguageTranslator(\''.$default_language_code.'|'.$language_code.'\'); return false;" title="'.$language_name.'" class="notranslate flag '.$language_code.'"><img class="flagimg" src="'.plugins_url().'/google-language-translator/images/flags24/'.$language_name_flag.'.png" height="'.$flag_width.'" width="'.$flag_width.'" alt="'.$flag_width.'"/></a></li>';
+		      } //isset
+		    } //in_array
+		  }//flag_choice_key
+	       }//foreach
+	    }//endif
       $str.='</ul>';
-	  $str.='</div>';
-		
-		$is_multilanguage = get_option('googlelanguagetranslator_multilanguage');
-		$horizontal_layout = ', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL';
-		$auto_display = ', autoDisplay: false';
-
-        if ($is_multilanguage == 1) {
-          $multilanguagePage = ', multilanguagePage:true';
-		  
-		  $str.='<script type="text/javascript">     
-         function GoogleLanguageTranslatorInit() { 
-         new google.translate.TranslateElement({pageLanguage: \''.get_option('googlelanguagetranslator_language').'\''. $language_choices . $horizontal_layout . $auto_display . $multilanguagePage . $this->analytics().'}, \'google_language_translator\');}
-              </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=GoogleLanguageTranslatorInit"></script>
-<div id="google_language_translator"></div>';
-		return $str;
-		} elseif ($is_multilanguage == 0) {		  
-		
-        $str.='<script type="text/javascript">     
-         function GoogleLanguageTranslatorInit() { 
-         new google.translate.TranslateElement({pageLanguage: \''.get_option('googlelanguagetranslator_language').'\''. $language_choices . $horizontal_layout . $auto_display . $this->analytics().'}, \'google_language_translator\');}
-              </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=GoogleLanguageTranslatorInit"></script>
-<div id="google_language_translator"></div>';
-		return $str;
-		}
+      $str.='</div>';
+      $str.='<div id="google_language_translator"></div>';
+        return $str;	
     }
   } // End glt_horizontal
  
-  public function initialize_settings() {  
+  public function initialize_settings() {    
+    add_settings_section('glt_settings','Settings','','google_language_translator'); 
   
-    // First, we register a section. This is necessary since all future options must belong to one.  
-    add_settings_section(  
-        'glt_settings',         // ID used to identify this section and with which to register options  
-        'Settings',                  // Title to be displayed on the administration page  
-        '', // Callback used to render the description of the section  
-        'google_language_translator'                           // Page on which to add this section of options  
-    ); 
-  
-    //Fieldset 1
-    add_settings_field( 'googlelanguagetranslator_active','Plugin status:','googlelanguagetranslator_active_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_language','Choose the original language of your website','','googlelanguagetranslator_language_cb','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_language_option','What translation languages will you display to website visitors?','googlelanguagetranslator_language_option_cb','google_language_translator','glt_settings');	
-	add_settings_field( 'language_display_settings','Your language choices','language_display_settings_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_flags','Show Flag Images?','googlelanguagetranslator_flags_cb','google_language_translator','glt_settings');
-    add_settings_field( 'flag_display_settings','Flag Options','flag_display_settings_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_translatebox','Show Translate Box?','googlelanguagetranslator_translatebox_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_display', 'Layout Options','googlelanguagetranslator_display_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_toolbar', 'Show Toolbar','googlelanguagetranslator_toolbar_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_showbranding', 'Show Google Branding','googlelanguagetranslator_showbranding_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_flags_alignment', 'Align Flags Right or Left', 'googlelanguagetranslator_flags_alignment_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_analytics','Activate Google Analytics tracking?','googlelanguagetranslator_analytics_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_analytics_id','Enter your Google Analytics ID','googlelanguagetranslator_analytics_id_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_css','Custom CSS Overrides','googlelanguagetranslator_css_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_manage_translations','Turn on translation management?','googlelanguagetranslator_manage_translations_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_multilanguage','Multilanguage webpages?','googlelanguagetranslator_multilanguage_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_floating_widget','Show floating translation widget?','googlelanguagetranslator_floating_widget_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_flag_size','Flag sizes:','googlelanguagetranslator_flag_size_cb','google_language_translator','glt_settings');
-    add_settings_field( 'googlelanguagetranslator_flags_order','The order of flag positions','googlelanguagetranslator_flags_order_cb','google_language_translator','glt_settings');
-  
-    //Register Fieldset 1
-    register_setting( 'google_language_translator','googlelanguagetranslator_active'); 
-    register_setting( 'google_language_translator','googlelanguagetranslator_language');
-    register_setting( 'google_language_translator','googlelanguagetranslator_language_option');
-    register_setting( 'google_language_translator','language_display_settings');
-    register_setting( 'google_language_translator','googlelanguagetranslator_flags');
-    register_setting( 'google_language_translator','flag_display_settings');
-    register_setting( 'google_language_translator','googlelanguagetranslator_translatebox');
-    register_setting( 'google_language_translator','googlelanguagetranslator_display');
-    register_setting( 'google_language_translator','googlelanguagetranslator_toolbar');
-    register_setting( 'google_language_translator','googlelanguagetranslator_showbranding');
-    register_setting( 'google_language_translator','googlelanguagetranslator_flags_alignment');
-    register_setting( 'google_language_translator','googlelanguagetranslator_disable_mootools');
-    register_setting( 'google_language_translator','googlelanguagetranslator_disable_modal');
-    register_setting( 'google_language_translator','googlelanguagetranslator_analytics');
-    register_setting( 'google_language_translator','googlelanguagetranslator_analytics_id');
-    register_setting( 'google_language_translator','googlelanguagetranslator_css');
-    register_setting( 'google_language_translator','googlelanguagetranslator_manage_translations');
-    register_setting( 'google_language_translator','googlelanguagetranslator_multilanguage');
-    register_setting( 'google_language_translator','googlelanguagetranslator_floating_widget');
-	register_setting( 'google_language_translator','googlelanguagetranslator_flag_size');
-	register_setting( 'google_language_translator','googlelanguagetranslator_flags_order');
+    $settings_name_array = array (
+'googlelanguagetranslator_active','googlelanguagetranslator_language','googlelanguagetranslator_language_option','language_display_settings','googlelanguagetranslator_flags','flag_display_settings','googlelanguagetranslator_translatebox','googlelanguagetranslator_display','googlelanguagetranslator_toolbar','googlelanguagetranslator_showbranding','googlelanguagetranslator_flags_alignment','googlelanguagetranslator_analytics','googlelanguagetranslator_analytics_id','googlelanguagetranslator_css','googlelanguagetranslator_manage_translations','googlelanguagetranslator_multilanguage','googlelanguagetranslator_floating_widget','googlelanguagetranslator_flag_size','googlelanguagetranslator_flags_order'
+    );
+	
+    $settings_callback_array = array (  'googlelanguagetranslator_active_cb','googlelanguagetranslator_language_cb','googlelanguagetranslator_language_option_cb','language_display_settings_cb','googlelanguagetranslator_flags_cb','flag_display_settings_cb','googlelanguagetranslator_translatebox_cb','googlelanguagetranslator_display_cb','googlelanguagetranslator_toolbar_cb','googlelanguagetranslator_showbranding_cb','googlelanguagetranslator_flags_alignment_cb','googlelanguagetranslator_analytics_cb','googlelanguagetranslator_analytics_id_cb','googlelanguagetranslator_css_cb','googlelanguagetranslator_manage_translations_cb','googlelanguagetranslator_multilanguage_cb','googlelanguagetranslator_floating_widget_cb','googlelanguagetranslator_flag_size_cb','googlelanguagetranslator_flags_order_cb'
+    );
+	
+    foreach ($settings_name_array as $setting) {
+      add_settings_field( $setting,'',$setting.'_cb','google_language_translator','glt_settings');
+      register_setting( 'google_language_translator',$setting); 
+    }
   }
   
-  public function googlelanguagetranslator_active_cb() {
-	  
-	$option_name = 'googlelanguagetranslator_active' ;
+  public function googlelanguagetranslator_active_cb() {  
+    $option_name = 'googlelanguagetranslator_active' ;
     $new_value = 1;
-
       if ( get_option( $option_name ) === false ) {
 
       // The option does not exist, so we update it.
@@ -494,90 +385,17 @@ class google_language_translator {
 	  } 
 	  
 	  $options = get_option (''.$option_name.''); ?>
-	   <select name="googlelanguagetranslator_language" id="googlelanguagetranslator_language">
-				  <option value="af" <?php if($options=='af'){echo "selected";}?>>Afrikaans</option>
-				  <option value="sq" <?php if($options=='sq'){echo "selected";}?>>Albanian</option>
-				  <option value="ar" <?php if($options=='ar'){echo "selected";}?>>Arabic</option>
-				  <option value="hy" <?php if($options=='hy'){echo "selected";}?>>Armenian</option>
-				  <option value="az" <?php if($options=='az'){echo "selected";}?>>Azerbaijani</option>
-				  <option value="eu" <?php if($options=='eu'){echo "selected";}?>>Basque</option>
-				  <option value="be" <?php if($options=='be'){echo "selected";}?>>Belarusian</option>
-				  <option value="bn" <?php if($options=='bn'){echo "selected";}?>>Bengali</option>
-				  <option value="bs" <?php if($options=='bs'){echo "selected";}?>>Bosnian</option>
-				  <option value="bg" <?php if($options=='bg'){echo "selected";}?>>Bulgarian</option>
-				  <option value="ca" <?php if($options=='ca'){echo "selected";}?>>Catalan</option>
-				  <option value="ceb" <?php if($options=='ceb'){echo "selected";}?>>Cebuano</option>
-				  <option value="zh-CN" <?php if($options=='zh-CN'){echo "selected";}?>>Chinese</option>
-				  <option value="zh-TW" <?php if($options=='zh-TW'){echo "selected";}?>>Chinese (Han)</option>
-				  <option value="hr" <?php if($options=='hr'){echo "selected";}?>>Croatian</option>
-				  <option value="cs" <?php if($options=='cs'){echo "selected";}?>>Czech</option>
-				  <option value="da" <?php if($options=='da'){echo "selected";}?>>Danish</option>
-				  <option value="nl" <?php if($options=='nl'){echo "selected";}?>>Dutch</option>
-				  <option value="en" <?php if($options=='en'){echo "selected";}?>>English</option>
-				  <option value="eo" <?php if($options=='eo'){echo "selected";}?>>Esperanto</option>
-				  <option value="et" <?php if($options=='et'){echo "selected";}?>>Estonian</option>
-				  <option value="tl" <?php if($options=='tl'){echo "selected";}?>>Filipino</option>
-				  <option value="fi" <?php if($options=='fi'){echo "selected";}?>>Finnish</option>
-				  <option value="fr" <?php if($options=='fr'){echo "selected";}?>>French</option>
-				  <option value="gl" <?php if($options=='gl'){echo "selected";}?>>Galician</option>
-				  <option value="ka" <?php if($options=='ka'){echo "selected";}?>>Georgian</option>
-				  <option value="de" <?php if($options=='de'){echo "selected";}?>>German</option>
-				  <option value="el" <?php if($options=='el'){echo "selected";}?>>Greek</option>
-				  <option value="gu" <?php if($options=='gu'){echo "selected";}?>>Gujarati</option>
-				  <option value="ht" <?php if($options=='ht'){echo "selected";}?>>Haitian Creole</option>
-		          <option value="ha" <?php if($options=='ha'){echo "selected";}?>>Hausa</option>
-				  <option value="iw" <?php if($options=='iw'){echo "selected";}?>>Hebrew</option>
-				  <option value="hi" <?php if($options=='hi'){echo "selected";}?>>Hindi</option>
-				  <option value="hmn" <?php if($options=='hmn'){echo "selected";}?>>Hmong</option>
-				  <option value="hu" <?php if($options=='hu'){echo "selected";}?>>Hungarian</option>
-				  <option value="is" <?php if($options=='is'){echo "selected";}?>>Icelandic</option>
-		          <option value="ig" <?php if($options=='ig'){echo "selected";}?>>Igbo</option>
-				  <option value="id" <?php if($options=='id'){echo "selected";}?>>Indonesian</option>
-				  <option value="ga" <?php if($options=='ga'){echo "selected";}?>>Irish</option>
-				  <option value="it" <?php if($options=='it'){echo "selected";}?>>Italian</option>
-				  <option value="ja" <?php if($options=='ja'){echo "selected";}?>>Japanese</option>
-				  <option value="jw" <?php if($options=='jw'){echo "selected";}?>>Javanese</option>
-				  <option value="kn" <?php if($options=='kn'){echo "selected";}?>>Kannada</option>
-				  <option value="km" <?php if($options=='km'){echo "selected";}?>>Khmer</option>
-				  <option value="ko" <?php if($options=='ko'){echo "selected";}?>>Korean</option>
-				  <option value="lo" <?php if($options=='lo'){echo "selected";}?>>Lao</option>
-				  <option value="la" <?php if($options=='la'){echo "selected";}?>>Latin</option>
-				  <option value="lv" <?php if($options=='lv'){echo "selected";}?>>Latvian</option>
-				  <option value="lt" <?php if($options=='lt'){echo "selected";}?>>Lithuanian</option>
-				  <option value="mk" <?php if($options=='mk'){echo "selected";}?>>Macedonian</option>
-				  <option value="ms" <?php if($options=='ms'){echo "selected";}?>>Malay</option>
-				  <option value="mt" <?php if($options=='mt'){echo "selected";}?>>Maltese</option>
-		          <option value="mi" <?php if($options=='mi'){echo "selected";}?>>Maori</option>
-				  <option value="mr" <?php if($options=='mr'){echo "selected";}?>>Marathi</option>
-		          <option value="mn" <?php if($options=='mn'){echo "selected";}?>>Mongolian</option>
-		          <option value="ne" <?php if($options=='ne'){echo "selected";}?>>Nepali</option>
-				  <option value="no" <?php if($options=='no'){echo "selected";}?>>Norwegian</option>
-				  <option value="fa" <?php if($options=='fa'){echo "selected";}?>>Persian</option>
-				  <option value="pl" <?php if($options=='pl'){echo "selected";}?>>Polish</option>
-				  <option value="pt" <?php if($options=='pt'){echo "selected";}?>>Portuguese</option>
-		          <option value="pa" <?php if($options=='pa'){echo "selected";}?>>Punjabi</option>
-				  <option value="ro" <?php if($options=='ro'){echo "selected";}?>>Romanian</option>
-				  <option value="ru" <?php if($options=='ru'){echo "selected";}?>>Russian</option>
-				  <option value="sr" <?php if($options=='sr'){echo "selected";}?>>Serbian</option>
-				  <option value="sk" <?php if($options=='sk'){echo "selected";}?>>Slovak</option>
-				  <option value="sl" <?php if($options=='sl'){echo "selected";}?>>Slovenian</option>
-		          <option value="so" <?php if($options=='so'){echo "selected";}?>>Somali</option>
-				  <option value="es" <?php if($options=='es'){echo "selected";}?>>Spanish</option>
-				  <option value="sw" <?php if($options=='sw'){echo "selected";}?>>Swahili</option>
-				  <option value="sv" <?php if($options=='sv'){echo "selected";}?>>Swedish</option>
-				  <option value="ta" <?php if($options=='ta'){echo "selected";}?>>Tamil</option>
-				  <option value="te" <?php if($options=='te'){echo "selected";}?>>Telugu</option>
-				  <option value="th" <?php if($options=='th'){echo "selected";}?>>Thai</option>
-				  <option value="tr" <?php if($options=='tr'){echo "selected";}?>>Turkish</option>
-				  <option value="uk" <?php if($options=='uk'){echo "selected";}?>>Ukranian</option>
-				  <option value="ur" <?php if($options=='ur'){echo "selected";}?>>Urdu</option>
-				  <option value="vi" <?php if($options=='vi'){echo "selected";}?>>Vietnamese</option>
-				  <option value="cy" <?php if($options=='cy'){echo "selected";}?>>Welsh</option>
-				  <option value="yi" <?php if($options=='yi'){echo "selected";}?>>Yiddish</option>
-		          <option value="cy" <?php if($options=='cy'){echo "selected";}?>>Yoruba</option>
-				  <option value="yi" <?php if($options=='yi'){echo "selected";}?>>Zulu</option>		
-         
-         </select>
+
+      <select name="googlelanguagetranslator_language" id="googlelanguagetranslator_language">
+
+	  <?php
+	
+        foreach ($this->languages_array as $key => $value) {
+		  $language_code = $key;
+		  $language_name = $value; ?>
+		    <option value="<?php echo $language_code; ?>" <?php if($options==''.$language_code.''){echo "selected";}?>><?php echo $language_name; ?></option>
+	      <?php } ?>
+      </select>
     <?php     
     } 
   
@@ -600,441 +418,42 @@ class google_language_translator {
 	}
   
     public function language_display_settings_cb() {
-	$defaults = array (
-	  'en' => 1
-	);
-	
-	$option_name = 'language_display_settings' ;
-    $new_value = $defaults;
-
-      if ( get_option( $option_name ) === false ) {
-
-      // The option does not exist, so we update it.
-      update_option( $option_name, $new_value );
+	  $default_language_code = get_option('googlelanguagetranslator_language');
+	  $option_name = 'language_display_settings';
+      $new_value = array(''.$default_language_code.'' => 1);
+	  
+	  if ( get_option( $option_name ) == false ) {
+        // The option does not exist, so we update it.
+        update_option( $option_name, $new_value );
 	  } 
 	  
-	  $get_language_choices = get_option (''.$option_name.''); 
+	  $get_language_choices = get_option (''.$option_name.'');
+	  
+	  foreach ($this->languages_array as $key => $value) {
+		$language_code = $key;
+		$language_name = $value;
+		$language_code_array[] = $key;
+		
+		if (!isset($get_language_choices[''.$language_code.''])) {
+		  $get_language_choices[''.$language_code.''] = 0;
+		}
+		
+		$items[] = $get_language_choices[''.$language_code.''];
+		$language_codes = $language_code_array;
+		$item_count = count($items); 
 
-      if (!isset ( $get_language_choices ['af'] ) ) {
-	    $get_language_choices['af'] = 0;
-	  }
-	  
-	   if (!isset ( $get_language_choices ['sq'] ) ) {
-	    $get_language_choices['sq'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ar'] ) ) {
-	    $get_language_choices['ar'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['hy'] ) ) {
-	    $get_language_choices['hy'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['az'] ) ) {
-	    $get_language_choices['az'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['eu'] ) ) {	
-	    $get_language_choices['eu'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['be'] ) ) {
-	    $get_language_choices['be'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['bn'] ) ) {
-		$get_language_choices['bn'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['bs'] ) ) {
-		 $get_language_choices['bs'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['bg'] ) ) { 
-		 $get_language_choices['bg'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ca'] ) ) { 
-	     $get_language_choices['ca'] = 0;	 
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ceb'] ) ) {
-		 $get_language_choices['ceb'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['zh-CN'] ) ) {
-		 $get_language_choices['zh-CN'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['zh-TW'] ) ) {
-	     $get_language_choices['zh-TW'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['hr'] ) ) {
-	     $get_language_choices['hr'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['cs'] ) ) {
-	     $get_language_choices['cs'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['da'] ) ) {
-	     $get_language_choices['da'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['nl'] ) ) {
-	     $get_language_choices['nl'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['en'] ) ) {
-	   $get_language_choices['en'] = 1; 
-	   }
-	  
-	   if (!isset ( $get_language_choices ['eo'] ) ) {
-	     $get_language_choices['eo'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['et'] ) ) {
-	     $get_language_choices['et'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['tl'] ) ) {
-	     $get_language_choices['tl'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['fi'] ) ) {
-	     $get_language_choices['fi'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['fr'] ) ) {
-	     $get_language_choices['fr'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['gl'] ) ) {
-	     $get_language_choices['gl'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ka'] ) ) {
-	     $get_language_choices['ka'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['de'] ) ) {
-	     $get_language_choices['de'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['el'] ) ) {
-	     $get_language_choices['el'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['gu'] ) ) {
-	     $get_language_choices['gu'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ht'] ) ) {
-	     $get_language_choices['ht'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ha'] ) ) {
-	     $get_language_choices['ha'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['iw'] ) ) {
-	     $get_language_choices['iw'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['hi'] ) ) {
-	     $get_language_choices['hi'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['hmn'] ) ) {
-	     $get_language_choices['hmn'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['hu'] ) ) {
-	     $get_language_choices['hu'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['is'] ) ) {
-	     $get_language_choices['is'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ig'] ) ) {
-	     $get_language_choices['ig'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['id'] ) ) {
-	     $get_language_choices['id'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ga'] ) ) {
-	     $get_language_choices['ga'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['it'] ) ) {
-	     $get_language_choices['it'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ja'] ) ) {
-	     $get_language_choices['ja'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['jw'] ) ) {
-	     $get_language_choices['jw'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['kn'] ) ) {
-	     $get_language_choices['kn'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['km'] ) ) {
-	     $get_language_choices['km'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ko'] ) ) {
-	     $get_language_choices['ko'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['lo'] ) ) {
-	     $get_language_choices['lo'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['la'] ) ) {
-	     $get_language_choices['la'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['lv'] ) ) {
-	     $get_language_choices['lv'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['lt'] ) ) {
-	     $get_language_choices['lt'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['mk'] ) ) {
-	     $get_language_choices['mk'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ms'] ) ) {
-	     $get_language_choices['ms'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['mt'] ) ) {
-	     $get_language_choices['mt'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['mi'] ) ) {
-	     $get_language_choices['mi'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['mr'] ) ) {
-	     $get_language_choices['mr'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['mn'] ) ) {
-	     $get_language_choices['mn'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ne'] ) ) {
-	     $get_language_choices['ne'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['no'] ) ) {
-	     $get_language_choices['no'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['fa'] ) ) {
-	     $get_language_choices['fa'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['pl'] ) ) {
-	     $get_language_choices['pl'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['pt'] ) ) {
-	     $get_language_choices['pt'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['pa'] ) ) {
-	     $get_language_choices['pa'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ro'] ) ) {
-	     $get_language_choices['ro'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ru'] ) ) {
-	     $get_language_choices['ru'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['sr'] ) ) {
-	     $get_language_choices['sr'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['sk'] ) ) {
-	     $get_language_choices['sk'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['sl'] ) ) {
-	     $get_language_choices['sl'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['so'] ) ) {
-	     $get_language_choices['so'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['es'] ) ) {
-	     $get_language_choices['es'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['sw'] ) ) {
-	     $get_language_choices['sw'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['sv'] ) ) {
-	     $get_language_choices['sv'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ta'] ) ) {
-	     $get_language_choices['ta'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['te'] ) ) {
-	     $get_language_choices['te'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['th'] ) ) {
-	     $get_language_choices['th'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['tr'] ) ) {
-	     $get_language_choices['tr'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['uk'] ) ) {
-	     $get_language_choices['uk'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['ur'] ) ) {
-	     $get_language_choices['ur'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['vi'] ) ) {
-	     $get_language_choices['vi'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['cy'] ) ) {
-	     $get_language_choices['cy'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['yi'] ) ) {
-	     $get_language_choices['yi'] = 0;
-	   } 
-
-       if (!isset ( $get_language_choices ['yo'] ) ) {
-	     $get_language_choices['yo'] = 0;
-	   }
-	  
-	   if (!isset ( $get_language_choices ['zu'] ) ) {
-	     $get_language_choices['zu'] = 0;
-	   } ?>
-	
-	            <div class="languages" style="width:25%; float:left">
-					<div><input type="checkbox" name="language_display_settings[af]" value="1" <?php if ( 1 == $get_language_choices['af'] ) echo 'checked="checked"'; ?>/> Afrikaans</div>
-				    <div><input type="checkbox" name="language_display_settings[sq]" value="1" <?php if ( 1 == $get_language_choices['sq'] ) echo 'checked="checked"'; ?>/> Albanian</div>
-					<div><input type="checkbox" name="language_display_settings[ar]" value="1" <?php if ( 1 == $get_language_choices['ar'] ) echo 'checked="checked"'; ?>/> Arabic</div>
-                    <div><input type="checkbox" name="language_display_settings[hy]" value="1" <?php if ( 1 == $get_language_choices['hy'] ) echo 'checked="checked"'; ?>/> Armenian</div>
-                    <div><input type="checkbox" name="language_display_settings[az]" value="1" <?php if ( 1 == $get_language_choices['az'] ) echo 'checked="checked"'; ?>/> Azerbaijani</div>                  
-                    <div><input type="checkbox" name="language_display_settings[eu]" value="1" <?php if ( 1 == $get_language_choices['eu'] ) echo 'checked="checked"'; ?>/> Basque</div>                    
-                    <div><input type="checkbox" name="language_display_settings[be]" value="1" <?php if ( 1 == $get_language_choices['be'] ) echo 'checked="checked"'; ?>/> Belarusian</div>                    
-                    <div><input type="checkbox" name="language_display_settings[bn]" value="1" <?php if ( 1 == $get_language_choices['bn'] ) echo 'checked="checked"'; ?>/> Bengali</div> 
-					<div><input type="checkbox" name="language_display_settings[bs]" value="1" <?php if ( 1 == $get_language_choices['bs'] ) echo 'checked="checked"'; ?>/> Bosnian</div> 
-                    <div><input type="checkbox" name="language_display_settings[bg]" value="1" <?php if ( 1 == $get_language_choices['bg'] ) echo 'checked="checked"'; ?>/> Bulgarian</div>                    
-                    <div><input type="checkbox" name="language_display_settings[ca]" value="1" <?php if ( 1 == $get_language_choices['ca'] ) echo 'checked="checked"'; ?>/> Catalan</div> 
-					<div><input type="checkbox" name="language_display_settings[ceb]" value="1" <?php if ( 1 == $get_language_choices['ceb'] ) echo 'checked="checked"'; ?>/> Cebuano</div>
-                    <div><input type="checkbox" name="language_display_settings[zh-CN]" value="1" <?php if ( 1 == $get_language_choices['zh-CN'] ) echo 'checked="checked"'; ?>/> Chinese</div>                    
-                    <div><input type="checkbox" name="language_display_settings[zh-TW]" value="1" <?php if ( 1 == $get_language_choices['zh-TW'] ) echo 'checked="checked"'; ?>/> Chinese (Han)</div>                    
-                    <div><input type="checkbox" name="language_display_settings[hr]" value="1" <?php if ( 1 == $get_language_choices['hr'] ) echo 'checked="checked"'; ?>/> Croatian</div>                    
-                    <div><input type="checkbox" name="language_display_settings[cs]" value="1" <?php if ( 1 == $get_language_choices['cs'] ) echo 'checked="checked"'; ?>/> Czech</div>                    			
-                    <div><input type="checkbox" name="language_display_settings[da]" value="1" <?php if ( 1 == $get_language_choices['da'] ) echo 'checked="checked"'; ?>/> Danish</div>                    
-                    <div><input type="checkbox" name="language_display_settings[nl]" value="1" <?php if ( 1 == $get_language_choices['nl'] ) echo 'checked="checked"'; ?>/> Dutch</div>                    				
-                    <div><input type="checkbox" name="language_display_settings[en]" value="1" <?php if ( 1 == $get_language_choices['en'] ) echo 'checked="checked"'; ?>/> English</div>
-				    <div><input type="checkbox" name="language_display_settings[eo]" value="1" <?php if ( 1 == $get_language_choices['eo'] ) echo 'checked="checked"'; ?>/> Esperanto</div>
-				    <div><input type="checkbox" name="language_display_settings[et]" value="1" <?php if ( 1 == $get_language_choices['et'] ) echo 'checked="checked"'; ?>/> Estonian</div>                   
-				</div>
-				  
-				  <div class="languages" style="width:25%; float:left">
-                    <div><input type="checkbox" name="language_display_settings[tl]" value="1" <?php if ( 1 == $get_language_choices['tl'] ) echo 'checked="checked"'; ?>/> Filipino</div>                     
-                    <div><input type="checkbox" name="language_display_settings[fi]" value="1" <?php if ( 1 == $get_language_choices['fi'] ) echo 'checked="checked"'; ?>/> Finnish</div>                    
-                    <div><input type="checkbox" name="language_display_settings[fr]" value="1" <?php if ( 1 == $get_language_choices['fr'] ) echo 'checked="checked"'; ?>/> French</div>                     
-                    <div><input type="checkbox" name="language_display_settings[gl]" value="1" <?php if ( 1 == $get_language_choices['gl'] ) echo 'checked="checked"'; ?>/> Galician</div>                    
-                    <div><input type="checkbox" name="language_display_settings[ka]" value="1" <?php if ( 1 == $get_language_choices['ka'] ) echo 'checked="checked"'; ?>/> Georgian</div>                    
-                    <div><input type="checkbox" name="language_display_settings[de]" value="1" <?php if ( 1 == $get_language_choices['de'] ) echo 'checked="checked"'; ?>/> German</div>                  
-                    <div><input type="checkbox" name="language_display_settings[el]" value="1" <?php if ( 1 == $get_language_choices['el'] ) echo 'checked="checked"'; ?>/> Greek</div>                    
-                    <div><input type="checkbox" name="language_display_settings[gu]" value="1" <?php if ( 1 == $get_language_choices['gu'] ) echo 'checked="checked"'; ?>/> Gujarati</div>       
-                    <div><input type="checkbox" name="language_display_settings[ht]" value="1" <?php if ( 1 == $get_language_choices['ht'] ) echo 'checked="checked"'; ?>/> Haitian Creole</div>                     			
-                    <div><input type="checkbox" name="language_display_settings[ha]" value="1" <?php if ( 1 == $get_language_choices['ha'] ) echo 'checked="checked"'; ?>/> Hausa</div>                     			
-					<div><input type="checkbox" name="language_display_settings[iw]" value="1" <?php if ( 1 == $get_language_choices['iw'] ) echo 'checked="checked"'; ?>/> Hebrew</div>                  
-                    <div><input type="checkbox" name="language_display_settings[hi]" value="1" <?php if ( 1 == $get_language_choices['hi'] ) echo 'checked="checked"'; ?>/> Hindi</div>    
-					<div><input type="checkbox" name="language_display_settings[hmn]" value="1" <?php if ( 1 == $get_language_choices['hmn'] ) echo 'checked="checked"'; ?>/> Hmong</div>
-                    <div><input type="checkbox" name="language_display_settings[hu]" value="1" <?php if ( 1 == $get_language_choices['hu'] ) echo 'checked="checked"'; ?>/> Hungarian</div>               
-                    <div><input type="checkbox" name="language_display_settings[is]" value="1" <?php if ( 1 == $get_language_choices['is'] ) echo 'checked="checked"'; ?>/> Icelandic</div>
-					<div><input type="checkbox" name="language_display_settings[ig]" value="1" <?php if ( 1 == $get_language_choices['ig'] ) echo 'checked="checked"'; ?>/> Igbo</div>                 
-                    <div><input type="checkbox" name="language_display_settings[id]" value="1" <?php if ( 1 == $get_language_choices['id'] ) echo 'checked="checked"'; ?>/> Indonesian</div>                   
-                    <div><input type="checkbox" name="language_display_settings[ga]" value="1" <?php if ( 1 == $get_language_choices['ga'] ) echo 'checked="checked"'; ?>/> Irish</div>  
-					<div><input type="checkbox" name="language_display_settings[it]" value="1" <?php if ( 1 == $get_language_choices['it'] ) echo 'checked="checked"'; ?>/> Italian</div>
-					<div><input type="checkbox" name="language_display_settings[ja]" value="1" <?php if ( 1 == $get_language_choices['ja'] ) echo 'checked="checked"'; ?>/> Japanese</div>
-					<div><input type="checkbox" name="language_display_settings[jw]" value="1" <?php if ( 1 == $get_language_choices['jw'] ) echo 'checked="checked"'; ?>/> Javanese</div>
-				</div>
-				  
-				  <div class="languages" style="width:25%; float:left">   
-                    <div><input type="checkbox" name="language_display_settings[kn]" value="1" <?php if ( 1 == $get_language_choices['kn'] ) echo 'checked="checked"'; ?>/> Kannada</div> 
-					<div><input type="checkbox" name="language_display_settings[km]" value="1" <?php if ( 1 == $get_language_choices['km'] ) echo 'checked="checked"'; ?>/> Khmer</div>
-                    <div><input type="checkbox" name="language_display_settings[ko]" value="1" <?php if ( 1 == $get_language_choices['ko'] ) echo 'checked="checked"'; ?>/> Korean</div>                    
-                    <div><input type="checkbox" name="language_display_settings[lo]" value="1" <?php if ( 1 == $get_language_choices['lo'] ) echo 'checked="checked"'; ?>/> Lao</div>                     
-                    <div><input type="checkbox" name="language_display_settings[la]" value="1" <?php if ( 1 == $get_language_choices['la'] ) echo 'checked="checked"'; ?>/> Latin</div>                    
-                    <div><input type="checkbox" name="language_display_settings[lv]" value="1" <?php if ( 1 == $get_language_choices['lv'] ) echo 'checked="checked"'; ?>/> Latvian</div>                    
-                    <div><input type="checkbox" name="language_display_settings[lt]" value="1" <?php if ( 1 == $get_language_choices['lt'] ) echo 'checked="checked"'; ?>/> Lithuanian</div>                  
-                    <div><input type="checkbox" name="language_display_settings[mk]" value="1" <?php if ( 1 == $get_language_choices['mk'] ) echo 'checked="checked"'; ?>/> Macedonian</div>                    
-                    <div><input type="checkbox" name="language_display_settings[ms]" value="1" <?php if ( 1 == $get_language_choices['ms'] ) echo 'checked="checked"'; ?>/> Malay</div>       
-                    <div><input type="checkbox" name="language_display_settings[mt]" value="1" <?php if ( 1 == $get_language_choices['mt'] ) echo 'checked="checked"'; ?>/> Maltese</div>
-					<div><input type="checkbox" name="language_display_settings[mi]" value="1" <?php if ( 1 == $get_language_choices['mi'] ) echo 'checked="checked"'; ?>/> Maori</div>
-					<div><input type="checkbox" name="language_display_settings[mr]" value="1" <?php if ( 1 == $get_language_choices['mr'] ) echo 'checked="checked"'; ?>/> Marathi</div>
-					<div><input type="checkbox" name="language_display_settings[mn]" value="1" <?php if ( 1 == $get_language_choices['mn'] ) echo 'checked="checked"'; ?>/> Mongolian</div>
-					<div><input type="checkbox" name="language_display_settings[ne]" value="1" <?php if ( 1 == $get_language_choices['ne'] ) echo 'checked="checked"'; ?>/> Nepali</div>   
-                    <div><input type="checkbox" name="language_display_settings[no]" value="1" <?php if ( 1 == $get_language_choices['no'] ) echo 'checked="checked"'; ?>/> Norwegian</div>                  
-                    <div><input type="checkbox" name="language_display_settings[fa]" value="1" <?php if ( 1 == $get_language_choices['fa'] ) echo 'checked="checked"'; ?>/> Persian</div>          
-                    <div><input type="checkbox" name="language_display_settings[pl]" value="1" <?php if ( 1 == $get_language_choices['pl'] ) echo 'checked="checked"'; ?>/> Polish</div>               
-                    <div><input type="checkbox" name="language_display_settings[pt]" value="1" <?php if ( 1 == $get_language_choices['pt'] ) echo 'checked="checked"'; ?>/> Portuguese</div> 
-					<div><input type="checkbox" name="language_display_settings[pa]" value="1" <?php if ( 1 == $get_language_choices['pa'] ) echo 'checked="checked"'; ?>/> Punjabi</div>                  
-                    <div><input type="checkbox" name="language_display_settings[ro]" value="1" <?php if ( 1 == $get_language_choices['ro'] ) echo 'checked="checked"'; ?>/> Romanian</div>                   
-                    <div><input type="checkbox" name="language_display_settings[ru]" value="1" <?php if ( 1 == $get_language_choices['ru'] ) echo 'checked="checked"'; ?>/> Russian</div>  
-				</div>
-				  
-				  <div class="languages" style="width:25%; float:left">
- 					<div><input type="checkbox" name="language_display_settings[sr]" value="1" <?php if ( 1 == $get_language_choices['sr'] ) echo 'checked="checked"'; ?>/> Serbian</div>                      
-                    <div><input type="checkbox" name="language_display_settings[sk]" value="1" <?php if ( 1 == $get_language_choices['sk'] ) echo 'checked="checked"'; ?>/> Slovak</div>                   
-                    <div><input type="checkbox" name="language_display_settings[sl]" value="1" <?php if ( 1 == $get_language_choices['sl'] ) echo 'checked="checked"'; ?>/> Slovenian</div> 
-					<div><input type="checkbox" name="language_display_settings[so]" value="1" <?php if ( 1 == $get_language_choices['so'] ) echo 'checked="checked"'; ?>/> Somali</div>                     
-                    <div><input type="checkbox" name="language_display_settings[es]" value="1" <?php if ( 1 == $get_language_choices['es'] ) echo 'checked="checked"'; ?>/> Spanish</div>                    
-                    <div><input type="checkbox" name="language_display_settings[sw]" value="1" <?php if ( 1 == $get_language_choices['sw'] ) echo 'checked="checked"'; ?>/> Swahili</div>                     
-                    <div><input type="checkbox" name="language_display_settings[sv]" value="1" <?php if ( 1 == $get_language_choices['sv'] ) echo 'checked="checked"'; ?>/> Swedish</div>                    
-                    <div><input type="checkbox" name="language_display_settings[ta]" value="1" <?php if ( 1 == $get_language_choices['ta'] ) echo 'checked="checked"'; ?>/> Tamil</div>                    
-                    <div><input type="checkbox" name="language_display_settings[te]" value="1" <?php if ( 1 == $get_language_choices['te'] ) echo 'checked="checked"'; ?>/> Telugu</div>                  
-                    <div><input type="checkbox" name="language_display_settings[th]" value="1" <?php if ( 1 == $get_language_choices['th'] ) echo 'checked="checked"'; ?>/> Thai</div>                    
-                    <div><input type="checkbox" name="language_display_settings[tr]" value="1" <?php if ( 1 == $get_language_choices['tr'] ) echo 'checked="checked"'; ?>/> Turkish</div>       
-                    <div><input type="checkbox" name="language_display_settings[uk]" value="1" <?php if ( 1 == $get_language_choices['uk'] ) echo 'checked="checked"'; ?>/> Ukranian</div>                     			
-                    <div><input type="checkbox" name="language_display_settings[ur]" value="1" <?php if ( 1 == $get_language_choices['ur'] ) echo 'checked="checked"'; ?>/> Urdu</div>                  
-                    <div><input type="checkbox" name="language_display_settings[vi]" value="1" <?php if ( 1 == $get_language_choices['vi'] ) echo 'checked="checked"'; ?>/> Vietnamese</div>          
-                    <div><input type="checkbox" name="language_display_settings[cy]" value="1" <?php if ( 1 == $get_language_choices['cy'] ) echo 'checked="checked"'; ?>/> Welsh</div>               
-                    <div><input type="checkbox" name="language_display_settings[yi]" value="1" <?php if ( 1 == $get_language_choices['yi'] ) echo 'checked="checked"'; ?>/> Yiddish</div> 
-					<div><input type="checkbox" name="language_display_settings[yo]" value="1" <?php if ( 1 == $get_language_choices['yo'] ) echo 'checked="checked"'; ?>/> Yoruba</div>               
-                    <div><input type="checkbox" name="language_display_settings[zu]" value="1" <?php if ( 1 == $get_language_choices['zu'] ) echo 'checked="checked"'; ?>/> Zulu</div>                 
-				  
-				  </div>
-			
-			<div style="clear:both"></div>
-    <?php } 
+		if ($item_count == 1 || $item_count == 22 || $item_count == 43 || $item_count == 64) { ?>
+          <div class="languages" style="width:25%; float:left">
+	    <?php } ?>
+		  <div><input type="checkbox" name="language_display_settings[<?php echo $language_code; ?>]" value="1"<?php checked( 1,$get_language_choices[''.$language_code.'']); ?>/><?php echo $language_name; ?></div>
+        <?php 
+		if ($item_count == 21 || $item_count == 42 || $item_count == 63 || $item_count == 81) { ?>
+          </div>
+        <?php } 
+	  } ?>
+     <div class="clear"></div>
+    <?php
+	}
   
     public function googlelanguagetranslator_flags_cb() { 
 	
@@ -1055,124 +474,44 @@ class google_language_translator {
 	}  
 
     public function flag_display_settings_cb() {
-	  $get_flag_choices = get_option ('flag_display_settings');
-	  $default_language_code = get_option ('googlelanguagetranslator_language');
-	  $option_name = 'flag_display_settings' ;
+	  $default_language_code = get_option('googlelanguagetranslator_language');
+	  $option_name = 'flag_display_settings';
       $new_value = array('flag-'.$default_language_code.'' => 1);
-      
-	  foreach ($this->languages_array as $key => $value) {
-		$language_code = $key;
-		
-		if (!isset ( $get_flag_choices ['flag'-$language_code] ) ) {
-	      $get_flag_choices ['flag'-$language_code] == 0;
-		}
-	  }
 	  
-      if ( get_option( $option_name ) == false ) {
+	  if ( get_option( $option_name ) == false ) {
         // The option does not exist, so we update it.
         update_option( $option_name, $new_value );
 	  } 
 	  
-	  $get_flag_choices = get_option (''.$option_name.'');	
+	  $get_flag_choices = get_option (''.$option_name.'');
 	  
-	 ?>
-                  <div class="flagdisplay" style="width:25%; float:left">
-					<div><input type="checkbox" name="flag_display_settings[flag-af]" value="1" <?php checked( 1,$get_flag_choices['flag-af']); ?>/> Afrikaans</div>
-					<div><input type="checkbox" name="flag_display_settings[flag-sq]" value="1" <?php checked( 1,$get_flag_choices['flag-sq']); ?>/> Albanian</div>
-					<div><input type="checkbox" name="flag_display_settings[flag-ar]" value="1" <?php checked( 1,$get_flag_choices['flag-ar']); ?>/> Arabic</div>
-                    <div><input type="checkbox" name="flag_display_settings[flag-hy]" value="1" <?php checked( 1,$get_flag_choices['flag-hy']); ?>/> Armenian</div>
-                    <div><input type="checkbox" name="flag_display_settings[flag-az]" value="1" <?php checked( 1,$get_flag_choices['flag-az']); ?>/> Azerbaijani</div>                  
-                    <div><input type="checkbox" name="flag_display_settings[flag-eu]" value="1" <?php checked( 1,$get_flag_choices['flag-eu']); ?>/> Basque</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-be]" value="1" <?php checked( 1,$get_flag_choices['flag-be']); ?>/> Belarusian</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-bn]" value="1" <?php checked( 1,$get_flag_choices['flag-bn']); ?>/> Bengali</div> 
-					<div><input type="checkbox" name="flag_display_settings[flag-bs]" value="1" <?php checked( 1,$get_flag_choices['flag-bs']); ?>/> Bosnian</div> 
-                    <div><input type="checkbox" name="flag_display_settings[flag-bg]" value="1" <?php checked( 1,$get_flag_choices['flag-bg']); ?>/> Bulgarian</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-ca]" value="1" <?php checked( 1,$get_flag_choices['flag-ca']); ?>/> Catalan</div> 
-					<div><input type="checkbox" name="flag_display_settings[flag-ceb]" value="1" <?php checked( 1,$get_flag_choices['flag-ceb']); ?>/> Cebuano</div>
-                    <div><input type="checkbox" name="flag_display_settings[flag-zh-CN]" value="1" <?php checked( 1,$get_flag_choices['flag-zh-CN']); ?>/> Chinese</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-zh-TW]" value="1" <?php checked( 1,$get_flag_choices['flag-zh-TW']); ?>/> Chinese (Han)</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-hr]" value="1" <?php checked( 1,$get_flag_choices['flag-hr']); ?>/> Croatian</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-cs]" value="1" <?php checked( 1,$get_flag_choices['flag-cs']); ?>/> Czech</div>                    			
-                    <div><input type="checkbox" name="flag_display_settings[flag-da]" value="1" <?php checked( 1,$get_flag_choices['flag-da']); ?>/> Danish</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-nl]" value="1" <?php checked( 1,$get_flag_choices['flag-nl']); ?>/> Dutch</div>                    				
-                    <div><input type="checkbox" name="flag_display_settings[flag-en]" value="1" <?php checked(1,$get_flag_choices['flag-en']); ?>/> English</div>
-					<div><input type="checkbox" name="flag_display_settings[flag-eo]" value="1" <?php checked( 1,$get_flag_choices['flag-eo']); ?>/> Esperanto</div>                      
-                    <div><input type="checkbox" name="flag_display_settings[flag-et]" value="1" <?php checked( 1,$get_flag_choices['flag-et']); ?>/> Estonian</div>                   
-				</div>
-				  
-				  <div class="flagdisplay" style="width:25%; float:left">
-                    <div><input type="checkbox" name="flag_display_settings[flag-tl]" value="1" <?php checked( 1,$get_flag_choices['flag-tl']); ?>/> Filipino</div>                     
-                    <div><input type="checkbox" name="flag_display_settings[flag-fi]" value="1" <?php checked( 1,$get_flag_choices['flag-fi']); ?>/> Finnish</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-fr]" value="1" <?php checked( 1,$get_flag_choices['flag-fr']); ?>/> French</div>                     
-                    <div><input type="checkbox" name="flag_display_settings[flag-gl]" value="1" <?php checked( 1,$get_flag_choices['flag-gl']); ?>/> Galician</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-ka]" value="1" <?php checked( 1,$get_flag_choices['flag-ka']); ?>/> Georgian</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-de]" value="1" <?php checked( 1,$get_flag_choices['flag-de']); ?>/> German</div>                  
-                    <div><input type="checkbox" name="flag_display_settings[flag-el]" value="1" <?php checked( 1,$get_flag_choices['flag-el']); ?>/> Greek</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-gu]" value="1" <?php checked( 1,$get_flag_choices['flag-gu']); ?>/> Gujarati</div>       
-                    <div><input type="checkbox" name="flag_display_settings[flag-ht]" value="1" <?php checked( 1,$get_flag_choices['flag-ht']); ?>/> Haitian Creole</div>
-					<div><input type="checkbox" name="flag_display_settings[flag-ha]" value="1" <?php checked( 1,$get_flag_choices['flag-ha']); ?>/> Hausa</div>
-                    <div><input type="checkbox" name="flag_display_settings[flag-iw]" value="1" <?php checked( 1,$get_flag_choices['flag-iw']); ?>/> Hebrew</div>                  
-                    <div><input type="checkbox" name="flag_display_settings[flag-hi]" value="1" <?php checked( 1,$get_flag_choices['flag-hi']); ?>/> Hindi</div>    
-					<div><input type="checkbox" name="flag_display_settings[flag-hmn]" value="1" <?php checked( 1,$get_flag_choices['flag-hmn']); ?>/> Hmong</div>
-                    <div><input type="checkbox" name="flag_display_settings[flag-hu]" value="1" <?php checked( 1,$get_flag_choices['flag-hu']); ?>/> Hungarian</div>               
-                    <div><input type="checkbox" name="flag_display_settings[flag-is]" value="1" <?php checked( 1,$get_flag_choices['flag-is']); ?>/> Icelandic</div> 
-					<div><input type="checkbox" name="flag_display_settings[flag-ig]" value="1" <?php checked( 1,$get_flag_choices['flag-ig']); ?>/> Igbo</div>                 
-                    <div><input type="checkbox" name="flag_display_settings[flag-id]" value="1" <?php checked( 1,$get_flag_choices['flag-id']); ?>/> Indonesian</div>                   
-                    <div><input type="checkbox" name="flag_display_settings[flag-ga]" value="1" <?php checked( 1,$get_flag_choices['flag-ga']); ?>/> Irish</div>  
-					<div><input type="checkbox" name="flag_display_settings[flag-it]" value="1" <?php checked( 1,$get_flag_choices['flag-it']); ?>/> Italian</div>
-					<div><input type="checkbox" name="flag_display_settings[flag-ja]" value="1" <?php checked( 1,$get_flag_choices['flag-ja']); ?>/> Japanese</div>   
-					<div><input type="checkbox" name="flag_display_settings[flag-jw]" value="1" <?php checked( 1,$get_flag_choices['flag-jw']); ?>/> Javanese</div>
-				</div>
-				  
-				  <div class="flagdisplay" style="width:25%; float:left">   
-                    <div><input type="checkbox" name="flag_display_settings[flag-kn]" value="1" <?php checked( 1,$get_flag_choices['flag-kn']); ?>/> Kannada</div> 
-					<div><input type="checkbox" name="flag_display_settings[flag-km]" value="1" <?php checked( 1,$get_flag_choices['flag-km']); ?>/> Khmer</div>
-                    <div><input type="checkbox" name="flag_display_settings[flag-ko]" value="1" <?php checked( 1,$get_flag_choices['flag-ko']); ?>/> Korean</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-lo]" value="1" <?php checked( 1,$get_flag_choices['flag-lo']); ?>/> Lao</div>                     
-                    <div><input type="checkbox" name="flag_display_settings[flag-la]" value="1" <?php checked( 1,$get_flag_choices['flag-la']); ?>/> Latin</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-lv]" value="1" <?php checked( 1,$get_flag_choices['flag-lv']); ?>/> Latvian</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-lt]" value="1" <?php checked( 1,$get_flag_choices['flag-lt']); ?>/> Lithuanian</div>                  
-                    <div><input type="checkbox" name="flag_display_settings[flag-mk]" value="1" <?php checked( 1,$get_flag_choices['flag-mk']); ?>/> Macedonian</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-ms]" value="1" <?php checked( 1,$get_flag_choices['flag-ms']); ?>/> Malay</div>       
-                    <div><input type="checkbox" name="flag_display_settings[flag-mt]" value="1" <?php checked( 1,$get_flag_choices['flag-mt']); ?>/> Maltese</div>
-					<div><input type="checkbox" name="flag_display_settings[flag-mi]" value="1" <?php checked( 1,$get_flag_choices['flag-mi']); ?>/> Maori</div>
-					<div><input type="checkbox" name="flag_display_settings[flag-mr]" value="1" <?php checked( 1,$get_flag_choices['flag-mr']); ?>/> Marathi</div>
-					<div><input type="checkbox" name="flag_display_settings[flag-mn]" value="1" <?php checked( 1,$get_flag_choices['flag-mn']); ?>/> Mongolian</div>   
-                    <div><input type="checkbox" name="flag_display_settings[flag-ne]" value="1" <?php checked( 1,$get_flag_choices['flag-ne']); ?>/> Nepali</div>                  
-                    <div><input type="checkbox" name="flag_display_settings[flag-no]" value="1" <?php checked( 1,$get_flag_choices['flag-no']); ?>/> Norwegian</div>                  
-                    <div><input type="checkbox" name="flag_display_settings[flag-fa]" value="1" <?php checked( 1,$get_flag_choices['flag-fa']); ?>/> Persian</div>          
-                    <div><input type="checkbox" name="flag_display_settings[flag-pl]" value="1" <?php checked( 1,$get_flag_choices['flag-pl']); ?>/> Polish</div>               
-                    <div><input type="checkbox" name="flag_display_settings[flag-pt]" value="1" <?php checked( 1,$get_flag_choices['flag-pt']); ?>/> Portuguese</div>
-					<div><input type="checkbox" name="flag_display_settings[flag-pa]" value="1" <?php checked( 1,$get_flag_choices['flag-pa']); ?>/> Punjabi</div> 
-                    <div><input type="checkbox" name="flag_display_settings[flag-ro]" value="1" <?php checked( 1,$get_flag_choices['flag-ro']); ?>/> Romanian</div>                   
-                    <div><input type="checkbox" name="flag_display_settings[flag-ru]" value="1" <?php checked( 1,$get_flag_choices['flag-ru']); ?>/> Russian</div>  
-				</div>
-				  
-				  <div class="flagdisplay" style="width:25%; float:left">
- 					<div><input type="checkbox" name="flag_display_settings[flag-sr]" value="1" <?php checked( 1,$get_flag_choices['flag-sr']); ?>/> Serbian</div>                      
-                    <div><input type="checkbox" name="flag_display_settings[flag-sk]" value="1" <?php checked( 1,$get_flag_choices['flag-sk']); ?>/> Slovak</div>                   
-                    <div><input type="checkbox" name="flag_display_settings[flag-sl]" value="1" <?php checked( 1,$get_flag_choices['flag-sl']); ?>/> Slovenian</div>
-					<div><input type="checkbox" name="flag_display_settings[flag-so]" value="1" <?php checked( 1,$get_flag_choices['flag-so']); ?>/> Somali</div>                     
-                    <div><input type="checkbox" name="flag_display_settings[flag-es]" value="1" <?php checked( 1,$get_flag_choices['flag-es']); ?>/> Spanish</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-sw]" value="1" <?php checked( 1,$get_flag_choices['flag-sw']); ?>/> Swahili</div>                     
-                    <div><input type="checkbox" name="flag_display_settings[flag-sv]" value="1" <?php checked( 1,$get_flag_choices['flag-sv']); ?>/> Swedish</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-ta]" value="1" <?php checked( 1,$get_flag_choices['flag-ta']); ?>/> Tamil</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-te]" value="1" <?php checked( 1,$get_flag_choices['flag-te']); ?>/> Telugu</div>                  
-                    <div><input type="checkbox" name="flag_display_settings[flag-th]" value="1" <?php checked( 1,$get_flag_choices['flag-th']); ?>/> Thai</div>                    
-                    <div><input type="checkbox" name="flag_display_settings[flag-tr]" value="1" <?php checked( 1,$get_flag_choices['flag-tr']); ?>/> Turkish</div>       
-                    <div><input type="checkbox" name="flag_display_settings[flag-uk]" value="1" <?php checked( 1,$get_flag_choices['flag-uk']); ?>/> Ukranian</div>                     			
-                    <div><input type="checkbox" name="flag_display_settings[flag-ur]" value="1" <?php checked( 1,$get_flag_choices['flag-ur']); ?>/> Urdu</div>                  
-                    <div><input type="checkbox" name="flag_display_settings[flag-vi]" value="1" <?php checked( 1,$get_flag_choices['flag-vi']); ?>/> Vietnamese</div>          
-                    <div><input type="checkbox" name="flag_display_settings[flag-cy]" value="1" <?php checked( 1,$get_flag_choices['flag-cy']); ?>/> Welsh</div>               
-                    <div><input type="checkbox" name="flag_display_settings[flag-yi]" value="1" <?php checked( 1,$get_flag_choices['flag-yi']); ?>/> Yiddish</div> 
-					<div><input type="checkbox" name="flag_display_settings[flag-yo]" value="1" <?php checked( 1,$get_flag_choices['flag-yo']); ?>/> Yoruba</div>               
-                    <div><input type="checkbox" name="flag_display_settings[flag-zu]" value="1" <?php checked( 1,$get_flag_choices['flag-zu']); ?>/> Zulu</div>                 
-                 
-                 </div>
-			<div style="clear:both"></div>
-  <?php }
+	  foreach ($this->languages_array as $key => $value) {
+		$language_code = $key;
+		$language_name = $value;
+		$language_code_array[] = $key;
+		
+		if (!isset($get_flag_choices['flag-'.$language_code.''])) {
+		  $get_flag_choices['flag-'.$language_code.''] = 0;
+		}
+		
+		$items[] = $get_flag_choices['flag-'.$language_code.''];
+		$language_codes = $language_code_array;
+		$item_count = count($items); 
+
+		if ($item_count == 1 || $item_count == 22 || $item_count == 43 || $item_count == 64) { ?>
+          <div class="flagdisplay" style="width:25%; float:left">
+	    <?php } ?>
+		  <div><input type="checkbox" name="flag_display_settings[flag-<?php echo $language_code; ?>]" value="1"<?php checked( 1,$get_flag_choices['flag-'.$language_code.'']); ?>/><?php echo $language_name; ?></div>
+        <?php 
+		if ($item_count == 21 || $item_count == 42 || $item_count == 63 || $item_count == 81) { ?>
+          </div>
+        <?php } 
+	  } ?>
+     <div class="clear"></div>
+    <?php
+	}
   
-  public function googlelanguagetranslator_floating_widget_cb() {
+    public function googlelanguagetranslator_floating_widget_cb() {
 	
 	$option_name = 'googlelanguagetranslator_floating_widget' ;
     $new_value = 'yes';
@@ -1405,7 +744,7 @@ class google_language_translator {
       $html = '<input type="checkbox" name="googlelanguagetranslator_multilanguage" id="googlelanguagetranslator_multilanguage" value="1" '.checked(1,$options,false).'/> &nbsp; Turn on multilanguage mode?';
       echo $html; 
   }
-
+   
   public function page_layout_cb() { 
     include( plugin_dir_path( __FILE__ ) . '/css/style.php'); ?>
         <div class="wrap">
@@ -1506,16 +845,25 @@ class google_language_translator {
 					  </tr>
 					  
 					  <tr class="notranslate">
-						<td>Copy/Paste this shortcode if adding to pages/posts:</td>
+						<td>Full widget usage in pages/posts/sidebar:</td>
 						<td><code>[google-translator]</code></td>
-                      </tr>
+                                          </tr>
 				  </table>
 					  
 				  <table style="border-collapse:separate" width="100%" border="0" cellspacing="8" cellpadding="0" class="form-table">
 					  <tr class="notranslate">
-						<td style="width:40%">For usage in header/footer:</td>
+						<td style="width:40%">Full widget usage in header/footer or page template:</td>
 						<td style="width:60%"><code>&lt;?php echo do_shortcode('[google-translator]'); ?&gt;</code></td>
 					  </tr>
+
+                      <tr class="notranslate">
+						<td>Single language usage in<br/>nav menu/pages/posts</td>
+						<td><code>[glt language="Spanish" translate="yes"]</code></td>
+                      </tr>
+
+                      <tr class="notranslate">
+						<td colspan="2"><em>For menu usage, use a custom link as your menu item. Enable "descriptions" located in the upper-right corner of "Appearance > Menus".  Place shortcode into the "description" field, use <code style="border:none">#</code> for the URL, and create menu title of your choice. </em></td>
+                      </tr>
 					  
 					  <tr class="notranslate">
 						<td><?php submit_button(); ?></td>
@@ -1576,13 +924,15 @@ class google_language_translator {
 			<div class="inside"><a href="http://www.wp-studio.net/" target="_blank"><img style="background:#444; border-radius:3px; -webkit-border-radius:3px; -moz-border-radius:3px" src="<?php echo plugins_url('google-language-translator/images/logo.png'); ?>"></a><br />
               <ul id="features">
 				<li>81 Languages</li>
-				<li>"Elegant" language switcher theme</li>
-				<li>Loads inline with page content</li>
+				<li>Robust design</li>
+				<li>Add single languages to your navigation menu/pages/posts via shortcode</li>
+				<li>Show/hide images or text for each language</li>
+				<li>Language switcher loads inline with page content</li>
 				<li>Custom flag choices for English, Spanish and Portuguese</li>
-				<li>User-friendly URLs, reloads with <code>lang</code> attribute</li>
+				<li>User-friendly URLs, hide or show <code>lang</code> attribute</li>
 				<li>Drag/drop flags to re-arrange their order</li>
 	            <li>Full access to our support forum</li>
-	            <li>Full access to all future updates</li>
+	            <li>FREE access to all future updates</li>
 	          </ul>
              </div>
           </div>
@@ -1612,5 +962,4 @@ class google_language_translator {
 <?php 
   }
 }
-
 $google_language_translator = new google_language_translator();
