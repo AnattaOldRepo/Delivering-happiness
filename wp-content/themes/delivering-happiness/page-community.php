@@ -63,8 +63,8 @@ get_header();
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
-					<p>Everyone has a story to tell. What’s yours? Inspire! is a community-based speaker series, designed to facilitate thought-provoking, purpose-driven, and inspirational story sharing. Check out previous speakers.</p>
-					<a href="https://www.youtube.com/user/DeliveringHappiness/videos" target="_blank" class="button blue">Watch Inspire! talks</a>
+					<p>Inspire! is a thought-provoking, purpose-driven, and community-based speaker series.</p>
+					<a href="https://www.youtube.com/user/DeliveringHappiness/videos" target="_blank" class="button blue">Watch Videos</a>
 				</div>
 			</div>
 		</div>
@@ -79,8 +79,8 @@ get_header();
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
-					<p>Inspire! is a community-based speaker series currently based in downtown Las Vegas where we celebrate local changemakers and community leaders. Join us for our next Inspire! event.</p>
-					<a href="https://www.facebook.com/deliveringhappiness/events" class="button blue">Join us for Inspire! </a>
+					<p>Inspire! is currently based in downtown Las Vegas and expanding to other cities in 2015.</p>
+					<a href="https://www.facebook.com/deliveringhappiness/events" class="button blue">Find an Inspire!</a>
 				</div>
 			</div>
 		</div>
@@ -90,13 +90,13 @@ get_header();
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/img_3947.png" alt="" />
 				</div>
 				<div class="content small">
-					<div class="v-aling"><h3>Share your Inspire! Story!</h3></div>
+					<div class="v-aling"><h3>Share your Inspire! Story</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Everyone has a story to tell. What’s yours?</p>
-					<a href="<?php echo home_url(); ?>/community/inspire/" class="button blue">Share your Inspire! story</a>
+					<a href="<?php echo home_url(); ?>/community/inspire/" class="button blue">Speak at Inspire!</a>
 				</div>
 			</div>
 		</div>
