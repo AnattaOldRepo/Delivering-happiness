@@ -35,7 +35,7 @@
             @extend %pull-left;
             @include transition(all 0.5s ease);
             border-bottom: 6px solid $White;
-            //margin-left: 84px;
+            margin-right: 82px;
             .message {
                 @extend %text-center;
                 @include transition(all 0.5s ease);
@@ -74,7 +74,7 @@
                 }
             }
             &.nav-shop {
-                 margin-left: 40px;
+                 //margin-left: 40px;
                 .message {
                     background: $Green;
                 }
@@ -87,7 +87,7 @@
                 }
             }
             &.nav-community {
-                margin-left: 43px;
+                //margin-left: 43px;
                 .message {
                     background: $Orange;
                 }
@@ -101,7 +101,7 @@
                 }
             }
             &.nav-happiness {
-                margin-left: 48px;
+                //margin-left: 48px;
                 .message {
                     background: $Yellow;
                 }
@@ -121,7 +121,7 @@
     //Search section
     .searchfrm {
         width: 180px;
-        margin: 14px 0 0 55px;
+        margin: 14px 0 0 0;
         @extend %pull-right;
         .search-form {
                 border: 2px solid $bdr-color1;
