@@ -10,8 +10,8 @@
 
 	<footer class="site-footer">
 		<div class="bar">
-			<div class="wrapper">
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/coupon.png" alt="" /><span>save 20% off our merchandise</span><a href="<?php echo home_url(); ?>/community/share-your-story" class="button transparent">share your story</a>
+			<div class="wrapper" align="center">
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/coupon.png" alt="" /><span><a href="<?php echo home_url(); ?>/work">Learn how to Make Happy Work!</a></span>
 			</div>
 		</div>
 		<div class="all-links">
@@ -34,8 +34,6 @@
 						<li><a href="<?php echo home_url(); ?>/work/request-presentation">Request Presentation</a></li>
 						<li><a href="<?php echo home_url(); ?>/resources/books">Book Recommendations</a></li>
 						<li><a href="<?php echo home_url(); ?>/work/culture-call">Free Consultation</a></li>
-						<li><a href="<?php echo home_url(); ?>/resources/media-kit">Media Kit</a></li>
-						<li><a href="<?php echo home_url(); ?>/resources/online-training">Online Training</a></li>
 					</ul>
 				</div>
 				<div class="block the-book">

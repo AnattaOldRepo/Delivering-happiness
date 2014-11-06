@@ -58,7 +58,7 @@ get_header();
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/img_4002.png" alt="" />
 				</div>
 				<div class="content small">
-					<div class="v-aling"><h3>Past Inspire!<br/> Events</h3></div>
+					<div class="v-aling"><h3>Past Events</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
@@ -74,7 +74,7 @@ get_header();
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/img_4036.png" alt="" />
 				</div>
 				<div class="content small">
-					<div class="v-aling"><h3>Upcoming Inspire! Events</h3></div>
+					<div class="v-aling"><h3>Upcoming Events</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
@@ -90,7 +90,7 @@ get_header();
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/img_3947.png" alt="" />
 				</div>
 				<div class="content small">
-					<div class="v-aling"><h3>Share your Inspire! Story</h3></div>
+					<div class="v-aling"><h3>Share your Story</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
