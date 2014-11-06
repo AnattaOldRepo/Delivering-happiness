@@ -9,7 +9,6 @@
 		<h2 class="entry-title"><?php the_title(); ?></h2>
 		<!--Share This Code-->
 		<div class="no-break">
-			<span class='st_fblike_vcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
 			<span class='st_email_vcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
 			<span st_username='dhmovement' class='st_twitter_vcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
 			<span class='st_facebook_vcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
