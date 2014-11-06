@@ -34,8 +34,6 @@
 						<li><a href="<?php echo home_url(); ?>/work/request-presentation">Request Presentation</a></li>
 						<li><a href="<?php echo home_url(); ?>/resources/books">Book Recommendations</a></li>
 						<li><a href="<?php echo home_url(); ?>/work/culture-call">Free Consultation</a></li>
-						<li><a href="<?php echo home_url(); ?>/resources/media-kit">Media Kit</a></li>
-						<li><a href="<?php echo home_url(); ?>/resources/online-training">Online Training</a></li>
 					</ul>
 				</div>
 				<div class="block the-book">
