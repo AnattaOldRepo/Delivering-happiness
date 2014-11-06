@@ -51,7 +51,7 @@ get_header();
 	<!-- Get involved section-->
 <section class="three-column blue get-involved cross-fade">
 	<div class="wrapper">
-		<h2>Get involved:</h2>
+		<h2>Get inspired:</h2>
 		<div class="col left-col">
 			<div class="work-survey">
 				<div class="media">
@@ -69,12 +69,12 @@ get_header();
 			</div>
 		</div>
 		<div class="col middle-col">
-			<div class="shop">
+			<div class="work-survey">
 				<div class="media">
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/img_4036.png" alt="" />
 				</div>
 				<div class="content small">
-					<div class="v-aling"><h3>Upcoming Events</h3></div>
+					<div class="v-aling"><h3>Future Events</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
@@ -85,12 +85,12 @@ get_header();
 			</div>
 		</div>
 		<div class="col right-col">
-			<div class="schedule-call">
+			<div class="work-survey">
 				<div class="media">
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/img_3947.png" alt="" />
 				</div>
 				<div class="content small">
-					<div class="v-aling"><h3>Share your Story</h3></div>
+					<div class="v-aling"><h3>Share Your Story</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
