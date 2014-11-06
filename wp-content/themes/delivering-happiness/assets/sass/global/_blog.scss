@@ -340,24 +340,14 @@
         color: $Blue;
     }
 }
-.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices
-{
-    height: 22px !important;
-}
-
-.no-break span 
-{
-    box-sizing: unset;
-    box-sizing: initial;
-}
 
 .stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices {
     height: 22px !important;
 }
 
-.no-break span {
+.no-break .stButton div {
     box-sizing: unset;
-    box-sizing: initial;
+    box-sizing: initial; 
 }
 
 .search-no-results {
