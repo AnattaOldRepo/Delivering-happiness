@@ -16,8 +16,6 @@
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 <link rel="shortcut icon" href="<?php bloginfo('template_url'); ?>/favicon.ico" />
 
-
-
 <?php wp_head(); ?>
 </head>
 
@@ -61,4 +59,3 @@
 	</header>
 	<!-- Header -->
 	<div id="content">
-
