@@ -10,7 +10,7 @@
 
 	<footer class="site-footer">
 		<div class="bar">
-			<div class="wrapper">
+			<div class="wrapper" align="center">
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/coupon.png" alt="" /><span><a href="<?php echo home_url(); ?>/work">Learn how to Make Happy Work!</a></span>
 			</div>
 		</div>
