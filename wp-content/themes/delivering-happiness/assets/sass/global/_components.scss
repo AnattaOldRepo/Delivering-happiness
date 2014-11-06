@@ -780,7 +780,10 @@ td{
     z-index: 999999;
     padding: 30px;
     text-align: center;
+      overflow-x: hidden;
+    overflow-y: scroll;
     .gform_wrapper {
+        clear: both;
         .gfield_label {
             display: none;
         }
@@ -798,8 +801,9 @@ td{
             background-color: rgba($ModerateViolet, 0.3) !important;
             border-color: $ModerateViolet !important;
             color: $ModerateViolet !important;
-            margin-top: 15px;
+            margin-top: 15px !important;
             margin-bottom: 20px;
+            float: none;
             &:hover {
                 background-color: rgba($ModerateViolet, 0.5) !important;
             }
@@ -809,6 +813,13 @@ td{
             margin-top: -5px;
             margin-bottom: 10px;
         }
+        .gform_footer {
+            &:before, &:after{
+                border: 1px solid red;
+                clear: both;
+
+            }
+        }
     }
     a{
         color: $Blue;
@@ -817,6 +828,8 @@ td{
         color: $Blue;
         text-decoration: underline;
         cursor: pointer;
+          float: right;
+           margin-top: 6px;
     }
 }
 
