@@ -272,15 +272,15 @@ get_header();
 					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/15-annual-call.gif" alt="" /></div>
 					<div class="content small medium">
 						<div class="v-aling">
-							<span class="date">15th Annual Call Center Week</span>
-							<span class="location">JUNE 9 - 13, 2014, Las Vegas, Nevada</span>
+							<span class="date">2014 MCAWW Conference Leadership</span>
+							<span class="location">September 24, 2014, Seattle, Washington</span>
 						</div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>This event joins call center leaders and gurus for a week of unforgettable knowledge-sharing and networking, including 10+ chief officers sharing how customer service is driving their business forward.</p>
-						<a href="http://www.callcenterweek.com/" target="_blank" class="button moderateviolet">learn more</a>
+						<p>The 2014 MCAWW Conference is designed to help your firm capitalize on the knowledge of your experienced leaders and to cultivate your emerging leaders.</p>
+						<a href="http://www.mcaww.net/calendar/events/912/" target="_blank" class="button moderateviolet">learn more</a>
 					</div>
 				</div>
 			</div>
@@ -289,15 +289,15 @@ get_header();
 					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/world_global_submit.gif" alt="" /></div>
 					<div class="content small medium">
 						<div class="v-aling">
-							<span class="date">Leadership for a Better World Global Summit</span>
-							<span class="location">June 17-18, 2014 in Madison, Wisconsin</span>
+							<span class="date">Everyone Happy: The Power of Delivering Happiness</span>
+							<span class="location">October 3rd, 2014 in Amsterdam, Holland</span>
 						</div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Join other innovators and catalysts to help shape the next evolution in leadership at this two-day summit.</p>
-						<a target="_blank" href="http://inclusiveleadership.wisconsin.edu/global-summit/" class="button moderateviolet">learn more</a>
+						<p>Two leading speakers will explain the road to happiness in their companies and countries. An inspiration bomb!</p>
+						<a target="_blank" href="http://debaak.com/programs/events/everyone-happy/" class="button moderateviolet">learn more</a>
 					</div>
 				</div>
 			</div>

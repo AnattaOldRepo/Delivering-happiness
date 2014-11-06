@@ -72,7 +72,7 @@
 		<div class="end-bar">
 			<div class="wrapper">
 				<p>&copy; 2014 Delivering Happiness&nbsp;&nbsp;|&nbsp;&nbsp;<a href="<?php echo home_url(); ?>/privacy/">Privacy Policy</a>&nbsp;&nbsp;|&nbsp;<a href="<?php echo home_url(); ?>/terms/">Terms of Use</a></p>
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/impress-logo.png" alt="impress" />
+				<a href="http://doyouimpress.com/" target="_blank"><img src="<?php bloginfo('template_url') ?>/assets/images/global/impress-logo.png" alt="impress" /></a>
 			</div>
 		</div>
 	</footer>
@@ -81,7 +81,7 @@
 	<div class="">
 		<div class="modal-box" id="signup_form" style="display:none;">
 			<p>Great! Your inbox is about to get a whole lot happier. Please enter your details, and find out how Delivering Happiness helps organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success. </p>
-			
+
 			<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
 			<span class="close">close</span>
 		</div>
@@ -94,7 +94,6 @@
 
 	</div>
 </section>
-
 <?php wp_footer(); ?>
 <div class="faded"></div>
 </body>

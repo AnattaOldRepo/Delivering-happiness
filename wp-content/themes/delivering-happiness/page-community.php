@@ -39,7 +39,7 @@ get_header();
 						<h2>The Change Starts Here.<span>At work, in our communities, and in our every-<br/>day lives.</span></h2>
 						<p>Backed by science, business sense, and common sense, we know that living a purposeful life is what really matters. So come along and join the movement. As our CEO says, it all begins with you.</p>
 						<p>It can be as simple as passing out balloons to strangers, or breaking out your best dance moves at the next company party. Or, make a bigger impact by hosting an Inspire! event in your company or community. How will you pay happiness forward? How will you change the world?</p>
-						<a href="/change-your-world/" class="button orange">Tell me more</a>
+ 						<a href="/change-your-world/" class="button orange">Tell me more</a>
 					</article>
 				</div>
 				<div class="right-col">

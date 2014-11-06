@@ -130,6 +130,7 @@
                                 color: #0099cc;
                                 text-decoration: none;
                                 &:hover {
+
                                     text-decoration: underline;
                                 }
                             }
@@ -338,6 +339,16 @@
     h2 {
         color: $Blue;
     }
+}
+.stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices
+{
+    height: 22px !important;
+}
+
+.no-break span 
+{
+    box-sizing: unset;
+    box-sizing: initial;
 }
 
 .stButton .stFb, .stButton .stTwbutton, .stButton .stMainServices {

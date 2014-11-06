@@ -14,7 +14,6 @@
 			<span class='st_linkedin_hcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
 			<p></p>
 		</div>
-
 		<div class="entry-meta">
 			<?php the_category(', '); ?> | <?php delivering_happiness_posted_on(); ?> | <?php the_author_posts_link(); ?>
 		</div><!-- .entry-meta -->
@@ -22,6 +21,7 @@
 
 	<div class="entry-content">
 		<?php the_content(); ?>
+
 		<!--Share This Code-->
 		<div class="no-break">
 			<span class='st_facebook_hcount' st_title='<?php the_title(); ?>' st_url='<?php the_permalink(); ?>'></span>
@@ -37,7 +37,7 @@
 		  		echo "<div class='leadbox'>" . $post_lead_box . "</div>" ;
 		  	}
 		?>
-		
+
 		<?php
 			wp_link_pages( array(
 				'before' => '<div class="page-links">' . __( 'Pages:', 'delivering-happiness' ),
