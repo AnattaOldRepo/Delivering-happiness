@@ -80,7 +80,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Inspire! is currently based in downtown Las Vegas and expanding to other cities in 2015.</p>
-					<a href="https://www.facebook.com/deliveringhappiness/events" class="button blue">Find an Inspire!</a>
+					<a href="https://www.facebook.com/deliveringhappiness/events" target="_blank" class="button blue">Find an Inspire!</a>
 				</div>
 			</div>
 		</div>
@@ -96,7 +96,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Everyone has a story to tell. What’s yours?</p>
-					<a href="<?php echo home_url(); ?>/community/inspire/" class="button blue">Speak at Inspire!</a>
+					<a href="<?php echo home_url(); ?>/community/inspire/" target="_blank" class="button blue">Speak at Inspire!</a>
 				</div>
 			</div>
 		</div>
