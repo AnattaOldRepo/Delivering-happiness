@@ -25,9 +25,17 @@
 
 		<?php //displaying lead box code
 			$include_lead_box = get_field('include_lead_box'); //getting radiobox value 
-		  	$post_lead_box = get_field('post_lead_box'); //getting post lead box
+		  	$post_lead_box = get_field('post_lead_box_options'); //getting post lead box text
+		  	$post_lead_box_linktext = get_field('lead_gen_boiler_plate_link_text'); //getting post lead box link text
+		  	$post_lead_box_link = get_field('lead_gen_boiler_plate_link'); //getting post lead box link
 		  	if( $include_lead_box == 'Yes' ) {
-		  		echo "<div class='leadbox'>" . $post_lead_box . "</div>" ;
+		  		echo "<div class='leadbox'><h2>" . $post_lead_box ."</h2>";
+		  		if( !empty( $post_lead_box_link ) ) { 
+		  			echo "<p><a href='". $post_lead_box_link ."'>". $post_lead_box_linktext . "</a></p>"; 
+		  		} else {
+		  			echo "<p>". $post_lead_box_linktext ."</p>";
+		  		}
+		  		echo "</div>" ;
 		  	}
 		?>
 		<?php
