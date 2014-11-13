@@ -309,7 +309,7 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>If you’re a company or self-employed coach who shares our vision of impacting workplace cultures around the world, let’s talk! Our Global Partner Program may be just the thing for you.</p>
+						<p>If you’re a company or self-employed coach who shares our vision of impacting workplace cultures around the world, let’s talk! We're always looking for opportunities to collaborate.</p>
 						<a href="/work/become-a-partner" class="button moderateviolet">Find Out More</a>
 					</div>
 				</div>
