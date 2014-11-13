@@ -252,7 +252,7 @@ get_header();
 				</div>
 				<article class="content">
 					<p>We help organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success.</p>
-					<a href="#" class="button yellow modal-box-handler" onclick="jQuery('#download_roadmap_form').show();return false;">Download Roadmap</a>
+					<a href="#" class="button yellow modal-box-handler" onclick="jQuery('#download_roadmap_form').show();return false;">DOWNLOAD HELLO DOC.</a>
 				</article>
 			</div>
 			<div class="right-col offwhite-area">
@@ -309,7 +309,7 @@ get_header();
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>If you’re a company or self-employed coach who shares our vision of impacting workplace cultures around the world, let’s talk! Our Global Partner Program may be just the thing for you.</p>
+						<p>If you’re a company or self-employed coach who shares our vision of impacting workplace cultures around the world, let’s talk! We're always looking for opportunities to collaborate.</p>
 						<a href="/work/become-a-partner" class="button moderateviolet">Find Out More</a>
 					</div>
 				</div>
