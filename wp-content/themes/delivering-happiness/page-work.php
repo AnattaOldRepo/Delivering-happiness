@@ -304,7 +304,7 @@ get_header();
 			<div class="col right-col">
 				<div class="become-partner">
 					<div class="content">
-						<div class="v-aling"><h3>Work<br/>with<br/>us</h3></div>
+						<div class="v-aling"><h3>Let's Make<br/> Happy Work<sup>&trade;</sup>,<br/> Together!</h3></div>
 					</div>
 				</div>
 				<div class="hover-content">
