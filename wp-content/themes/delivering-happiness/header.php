@@ -29,8 +29,8 @@
 		<div class="wrapper">
 			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a></h1>
 			<menu class="site-navigation">
-				<li class="nav-work <?php if(is_page('work')) { ?>active <?php } ?>">
-					<a href="<?php echo home_url(); ?>/work">WORK</a>
+				<li class="nav-work <?php if(is_page('services')) { ?>active <?php } ?>">
+					<a href="<?php echo home_url(); ?>/services">SERVICES</a>
 					<div class="message">Coaching and speaking to Make Happy Work™.</div>
 				</li>
 				<li class="nav-shop <?php if(is_page('shop')) { ?>active <?php } ?>">

@@ -14,7 +14,7 @@ get_header();
 				<article class="content">
 					<blockquote>“Get the culture right,<br/>&nbsp;and everything<br/>&nbsp;else just falls into place.” </blockquote>
 					<span>~ Tony Hsieh</span>
-					<a href="/work/culture-call/" class="button">SCHEDULE A Free Culture Call</a>
+					<a href="/services/culture-call/" class="button">SCHEDULE A Free Culture Call</a>
 				</article>
 			</div>
 			<div class="right-col">
@@ -69,7 +69,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Start the conversation, and find inspiration for free. Schedule a free 30-minute culture call (or discovery call) with us.</p>
-						<a href="/work/culture-call/" class="button moderateviolet">LET’S TALK!</a>
+						<a href="/services/culture-call/" class="button moderateviolet">LET’S TALK!</a>
 					</div>
 				</div>
 			</div>
@@ -82,7 +82,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Unhappy employees cost the U.S. $550 billion a year (Gallup). How much could happiness save you?</p>
-						<a href="/work/roi-calculator" class="button moderateviolet">LET’S CALCULATE!</a>
+						<a href="/services/roi-calculator" class="button moderateviolet">LET’S CALCULATE!</a>
 					</div>
 				</div>
 			</div>
@@ -239,7 +239,7 @@ get_header();
 					</article>
 					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/callon.png" alt="" /></div>
 				</div>
-				<div class="cta"><a href="/work/culture-call/ " class="button moderateviolet">SCHEDULE A Free Culture Call</a></div>
+				<div class="cta"><a href="/services/culture-call/ " class="button moderateviolet">SCHEDULE A Free Culture Call</a></div>
 			</div>
 		</div>
 	</section>
@@ -310,7 +310,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>If you’re a company or self-employed coach who shares our vision of impacting workplace cultures around the world, let’s talk! We're always looking for opportunities to collaborate.</p>
-						<a href="/work/become-a-partner" class="button moderateviolet">Find Out More</a>
+						<a href="/services/become-a-partner" class="button moderateviolet">Find Out More</a>
 					</div>
 				</div>
 			</div>
@@ -331,7 +331,7 @@ get_header();
 						<img src="<?php bloginfo('template_url') ?>/assets/images/global/chart.png" alt="placeholder" />
 					</div>
 				</div>
-				<a href="/work/roi-calculator" class="button blue">Calculate your happiness ROI</a>
+				<a href="/services/roi-calculator" class="button blue">Calculate your happiness ROI</a>
 			</div>
 			
 		</div>

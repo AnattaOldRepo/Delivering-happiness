@@ -118,7 +118,7 @@ get_header();
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/chart.png" alt="placeholder" />
 				</div>
 			</div>
-			<a href="/work/roi-calculator" class="button blue">Calculate your happiness ROI</a>
+			<a href="/services/roi-calculator" class="button blue">Calculate your happiness ROI</a>
 		</div>
 	</div>
 </section>
@@ -167,7 +167,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Start the conversation, and find inspiration for free. Schedule a free 30-minute culture call (or discovery call) with us.</p>
-					<a href="/work/culture-call/" class="button blue">Let's Talk!</a>
+					<a href="/services/culture-call/" class="button blue">Let's Talk!</a>
 				</div>
 			</div>
 		</div>
@@ -190,7 +190,7 @@ get_header();
 			</div>
 			<article class="content">
 				<p>We help organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success.</p>
-				<a href="/work" class="button yellow">Learn more</a>
+				<a href="/services" class="button yellow">Learn more</a>
 			</article>
 		</div>
 	</div>
