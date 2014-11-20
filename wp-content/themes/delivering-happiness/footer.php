@@ -58,7 +58,7 @@
 					</div>
 					<div class="gtranslate">
 						<?php 
-						if(function_exists('register_foo_widget')) {
+						if(function_exists('register_glt_widget')) {
 							echo do_shortcode('[google-translator]'); //code for including google language translator
 						}
 						?>
