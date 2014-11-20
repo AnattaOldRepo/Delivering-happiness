@@ -169,8 +169,8 @@ add_action('wp_footer', 'hellobar_scrpt' );
 * Function used for getting featured thumbnails on blogs, search page, category page, etc
 * this function is added because updating 'get the image' plugin stop fetching thumbnails, so created a copy of existing function
 */
-if ( ! function_exists( 'get_the_image_by_scan' ) ) :
-function get_the_image_by_scan( $args = array() ) {
+if ( ! function_exists( 'get_the_image_by_scans' ) ) :
+function get_the_image_by_scans( $args = array() ) {
 
 	/* Search the post's content for the <img /> tag and get its URL. */
 	preg_match_all( '|<img.*?src=[\'"](.*?)[\'"].*?>|i', get_post_field( 'post_content', $args['post_id'] ), $matches );
