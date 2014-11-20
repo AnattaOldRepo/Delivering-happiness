@@ -11,7 +11,7 @@
 	<footer class="site-footer">
 		<div class="bar">
 			<div class="wrapper" align="center">
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/coupon.png" alt="" /><span><a href="<?php echo home_url(); ?>/work">Learn how to Make Happy Work!</a></span>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/coupon.png" alt="" /><span><a href="<?php echo home_url(); ?>/services">Learn how to Make Happy Work!</a></span>
 			</div>
 		</div>
 		<div class="all-links">
@@ -28,11 +28,11 @@
 				<div class="block resources">
 					<h4><a href="<?php echo home_url(); ?>/resources">Resources</a></h4>
 					<ul>
-						<li><a href="<?php echo home_url(); ?>/work/roi-calculator">ROI Calculator</a></li>
+						<li><a href="<?php echo home_url(); ?>/services/roi-calculator">ROI Calculator</a></li>
 						<li><a href="https://dh.happinessatworksurvey.com/try" target="_blank">Happiness at Work Survey</a></li>
-						<li><a href="<?php echo home_url(); ?>/work/request-presentation">Request Presentation</a></li>
+						<li><a href="<?php echo home_url(); ?>/services/request-presentation">Request Presentation</a></li>
 						<li><a href="<?php echo home_url(); ?>/resources/books">Book Recommendations</a></li>
-						<li><a href="<?php echo home_url(); ?>/work/culture-call">Free Consultation</a></li>
+						<li><a href="<?php echo home_url(); ?>/services/culture-call">Free Consultation</a></li>
 					</ul>
 				</div>
 				<div class="block the-book">

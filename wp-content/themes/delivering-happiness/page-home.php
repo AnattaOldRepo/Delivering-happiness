@@ -118,7 +118,7 @@ get_header();
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/chart.png" alt="placeholder" />
 				</div>
 			</div>
-			<a href="/work/roi-calculator" class="button blue">Calculate your happiness ROI</a>
+			<a href="/services/roi-calculator" class="button blue">Calculate your happiness ROI</a>
 		</div>
 	</div>
 </section>
@@ -167,7 +167,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Start the conversation, and find inspiration for free. Schedule a free 30-minute culture call (or discovery call) with us.</p>
-					<a href="/work/culture-call/" class="button blue">Let's Talk!</a>
+					<a href="/services/culture-call/" class="button blue">Let's Talk!</a>
 				</div>
 			</div>
 		</div>
@@ -190,7 +190,7 @@ get_header();
 			</div>
 			<article class="content">
 				<p>We help organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success.</p>
-				<a href="/work" class="button yellow">Learn more</a>
+				<a href="/services" class="button yellow">Learn more</a>
 			</article>
 		</div>
 	</div>
@@ -220,8 +220,8 @@ get_header();
 				<div class="media">
 					<?php if ( has_post_thumbnail( $blog_posts[0]->ID ) ) { ?>
 						<?php echo get_the_post_thumbnail( $blog_posts[0]->ID ); ?>
-					<?php } else if ( function_exists( 'get_the_image_by_scan' ) ) { ?>
-						<?php $image = get_the_image_by_scan( array( 'post_id' => $blog_posts[0]->ID ) ); ?>
+					<?php } else if ( function_exists( 'get_the_image_by_scans' ) ) { ?>
+						<?php $image = get_the_image_by_scans( array( 'post_id' => $blog_posts[0]->ID ) ); ?>
 						<img src="<?php echo $image['src']; ?>" alt="featured-thumbnail" />
 					<?php } ?>
 				</div>
@@ -245,8 +245,8 @@ get_header();
 				<div class="media">
 					<?php if ( has_post_thumbnail( $blog_posts[1]->ID ) ) { ?>
 						<?php echo get_the_post_thumbnail( $blog_posts[1]->ID ); ?>
-					<?php } else if ( function_exists( 'get_the_image_by_scan' ) ) { ?>
-						<?php $image = get_the_image_by_scan( array( 'post_id' => $blog_posts[1]->ID ) ); ?>
+					<?php } else if ( function_exists( 'get_the_image_by_scans' ) ) { ?>
+						<?php $image = get_the_image_by_scans( array( 'post_id' => $blog_posts[1]->ID ) ); ?>
 						<img src="<?php echo $image['src']; ?>" alt="featured-thumbnail" />
 					<?php } ?>
 				</div>
@@ -270,8 +270,8 @@ get_header();
 				<div class="media">
 					<?php if ( has_post_thumbnail( $blog_posts[2]->ID ) ) { ?>
 						<?php echo get_the_post_thumbnail( $blog_posts[2]->ID ); ?>
-					<?php } else if ( function_exists( 'get_the_image_by_scan' ) ) { ?>
-						<?php $image = get_the_image_by_scan( array( 'post_id' => $blog_posts[2]->ID ) ); ?>
+					<?php } else if ( function_exists( 'get_the_image_by_scans' ) ) { ?>
+						<?php $image = get_the_image_by_scans( array( 'post_id' => $blog_posts[2]->ID ) ); ?>
 						<img src="<?php echo $image['src']; ?>" alt="featured-thumbnail" />
 					<?php } ?>
 				</div>
