@@ -135,3 +135,36 @@
     margin-left: -($width / 2);
     margin-top: -($height / 2);
 }
+
+// Position mixin
+
+@mixin position-tl($top,$left) {
+  top: $top;
+  left: $left;
+}
+@mixin position-tr($top,$right) {
+  top: $top;
+  right: $right;
+}
+@mixin position-bl($bottom,$left) {
+  bottom: $bottom;
+  left: $left;
+}
+@mixin position-br($bottom,$right) {
+  bottom: $bottom;
+  right: $right;
+}
+%container {
+  @include container-fixed;
+
+  @media (min-width: $screen-sm-min) {
+      width: $screen-xs-max;
+
+  }
+  @media (min-width: $screen-md-min) {
+     width: $screen-sm-max;
+  }
+  @media (min-width: $screen-lg-min) {
+     width: $screen-md-max;
+  }
+}

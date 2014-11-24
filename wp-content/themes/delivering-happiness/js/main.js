@@ -46,6 +46,19 @@
     $('.video-container .button').click(function() {
         $(this).parents('.video-container').find('.video').show();
     });
+    //Mobile nav toggle
+    $("#page").css("width", "100%");
+    $('.mobile-toggle').click(function() {
+        $("#page").toggleClass("animate-me");
+        $(".mobile-nav-menu").toggleClass("animate-me");
+        $("#page").addClass("trans");
+        return false;
+    });
+    $('.course-bottom-bar .top-btn').click(function() {
+        $(".course-bottom-bar").toggleClass("animate-me");
+        $(this).toggleClass("active");
+        return false;
+    });
 	});
 })(jQuery);
 

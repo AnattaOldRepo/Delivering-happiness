@@ -17,14 +17,27 @@
             padding-top: 8px;
             height: 95px;
             background: $Blue;
+            @media (max-width: $screen-sm-max) {
+                padding: 10px;
+                min-height: 95px;
+                height: auto;
+            }
         }
         img {
             vertical-align: top;
+            @media (max-width: $screen-sm-max) {
+                display: block;
+                height: auto;
+                width: 32px;
+            }
         }
         span {
             display: inline-block;
-            padding: 31px 1px 0 36px; 
+            padding: 31px 1px 0 36px;
             letter-spacing: 1px;
+            @media (max-width: $screen-sm-max) {
+                padding: 10px 0 0;
+            }
         }
         a {
             color: $White;
@@ -37,6 +50,9 @@
         .wrapper {
             padding: 59px 0 0 80px;
             @include clearfix;
+            @media (max-width: $screen-sm-max) {
+                padding: 20px;
+            }
         }
         a {
             color: #999999;
@@ -89,6 +105,19 @@
                     padding-bottom: 11px;
                     margin-bottom: 7px;
                 }
+                @media (max-width: $screen-sm-max) {
+                    clear: both;
+                    a {
+                        margin: 10px;
+                        min-width: 25%;
+                        text-align: left;
+                        width: auto;
+                    }
+                }
+            }
+            @media (max-width: $screen-sm-max) {
+                width: 100% !important;
+                text-align: center;
             }
         }
         ul {
@@ -121,6 +150,10 @@
                 right: -20px;
                 top: 5px;
             }
+            @media (max-width: $screen-sm-max) {
+                width: 100%;
+                margin: 0 0 30px;
+            }
         }
         .gform_body {
             margin-top: 16px;
@@ -137,6 +170,17 @@
                     color: $Blue;
                     font-style: italic;
                     font-size: 12px;
+                }
+
+                @media (max-width: $screen-sm-max) {
+                    width: 92%;
+                }
+            }
+            @media (max-width: $screen-sm-max) {
+                width: 100%;
+                margin: 10px 0;
+                .gfield_label {
+                    display: none;
                 }
             }
         }
@@ -156,6 +200,29 @@
         img {
             @extend %pull-right;
             margin-top: -18px;
+        }
+        @media (max-width: $screen-sm-max) {
+            .wrapper {
+                text-align: center;
+                padding: 20px;
+                p {
+                    clear: both;
+                    width: 100%;
+                    line-height: 22px;
+                    a {
+                        width: auto;
+                    }
+                }
+                a {
+                    clear: both;
+                    width: 100%;
+                    img {
+                        float: none;
+                        margin: 20px auto 0;
+                        max-width: 100%;
+                    }
+                }
+            }
         }
     }
 }

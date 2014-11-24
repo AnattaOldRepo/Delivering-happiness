@@ -82,9 +82,23 @@
             display: table-cell;
             vertical-align: middle;
             padding: 0px 40px;
+
         }
         p {
             @extend %text-left;
+        }
+        @media (max-width: $screen-sm-max) {
+            display: table;
+            @include size(100%, 336px);
+            text-align: center;
+            .v-aling{
+                @media (max-width: $screen-sm-max) {
+            @include size(100%, 336px);
+            p {
+                text-align: center;
+            }
+        }
+            }
         }
     }
     &.four-column {
