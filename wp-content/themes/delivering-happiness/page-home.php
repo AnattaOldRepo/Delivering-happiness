@@ -13,11 +13,13 @@ get_header();
 			<h2 style="display:none;">We’re changing the<br/>world with happiness.<br/><span>Sound fluffy? Not anymore.<span></h2>
 			<a style="display:none;" href="#" class="button arrow">GET ON BOARD</a>
 			<a href="/work" class="cta"></a>
-		</div>
+		<div class="clearfix"></div></div>
 		<div class="video">
 			<iframe width="1170" height="546" src="//www.youtube.com/embed/4teXtmYyzxA?rel=0&showinfo=0" frameborder="0" allowfullscreen></iframe>
 		</div>
 	</div>
+
+	<div class="clearfix"></div>
 </section>
 <!-- /Hero section-->
 
@@ -25,6 +27,9 @@ get_header();
 <section class="happier-world rounded-block">
 	<div class="wrapper">
 		<div class="container">
+			<div class="right-col">
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/placeholder-h-g.png" alt="placeholder" />
+			</div>
 			<div class="left-col">
 				<article class="content">
 					<h2>Creating a happier world.<span>One person, community and company at a time.</span></h2>
@@ -35,9 +40,7 @@ get_header();
 					<a href="/community" class="button blue">Tell me more</a>
 				</article>
 			</div>
-			<div class="right-col">
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/placeholder-h-g.png" alt="placeholder" />
-			</div>
+			
 		</div>
 	</div>
 </section>
@@ -292,5 +295,6 @@ get_header();
 		</div>
 	</div>
 </section>
+
 <!-- /Blog section-->
 <?php get_footer(); ?>

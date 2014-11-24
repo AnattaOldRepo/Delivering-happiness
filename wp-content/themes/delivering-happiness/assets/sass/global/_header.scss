@@ -113,6 +113,27 @@
                 }
             }
         }
+        @media (max-width: $screen-md-max) {
+            li {
+                border-bottom: 6px solid #ffffff;
+                margin-right: 3em;
+                transition: all 0.5s ease 0s;
+                &.nav-work {
+                    margin-left: 4em;
+                }
+            }
+        }
+        @media (max-width: $screen-sm-max) {}
+        @media (max-width: $screen-xs-max) {}
+    }
+    .hero-icon {
+        @include bg-img(hero-icon, png, no-repeat, 0, 0);
+        @include square(31px);
+        @include position-tr(18px, 0px);
+        @extend %relative;
+        @extend %pull-right;
+        margin: 0 10px;
+        @extend %hide;
     }
     .gtranslate {
         float: right;
@@ -123,46 +144,180 @@
         margin: 14px 0 0 0;
         @extend %pull-right;
         .search-form {
-                border: 2px solid $bdr-color1;
-                margin: 0px 0 0 0;
-                @include size(180px, 38px);
-                span {
-                    display: none;
-                }
-                label {
-                    @extend %pull-left;
-                    margin-left: 5px;
-                }
-                .search-field {
+            border: 2px solid $bdr-color1;
+            margin: 0px 0 0 0;
+            @include size(180px, 38px);
+            span {
+                display: none;
+            }
+            label {
+                @extend %pull-left;
+                margin-left: 5px;
+            }
+            .search-field {
+                border: 0 none;
+                //font-weight: bold;
+                color: $text-color2;
+                font-size: 12px;
+                line-height: 12px;
+                font-style: italic;
+                padding-top: 3px;
+                @extend %museo_slab;
+                @include size(125px, 32px);
+                &:focus {
                     border: 0 none;
-                    //font-weight: bold;
-                    color: $text-color2;
-                    
-                    font-size: 12px; 
-                    line-height: 12px;
-                    font-style: italic;
-                     padding-top: 3px;
-                    @extend %museo_slab;
-                    @include size(125px, 32px);
+                    outline: 0 none;
+                }
+            }
+            .search-submit {
+                text-indent: -9999px;
+                border: 0 none;
+                background-color: transparent;
+                cursor: pointer;
+                padding: 0;
+                border: 0 none !important;
+                outline: 0 none !important;
+                @extend %pull-left;
+                @include bg-img-only(nerdywinkey, png, no-repeat, center, center);
+                @include size(44px, 38px);
+            }
+        }
+    }
+     
+    @media (max-width: $screen-sm-max) {
+         padding: 10px 0;
+       
+        &.sticky {
+        position: static;
+         
+    }
+        .wrapper {
+            padding: 0;
+            
+           
+        }
+        .logo {
+            a {
+                margin-left: 5px;
+                @include size(105px, 61px);
+            }
+        }
+        .site-navigation {
+            display: none;
+        }
+        .hero-icon {
+            display: block;
+        }
+    }
+    @media (max-width: 361px) {
+        .searchfrm {
+            width: 135px;
+            .search-form {
+                border: 1px solid $bdr-color1;
+                @include size(135px, 38px);
+                .search-field {
+                    @include size(80px, 32px);
                     &:focus {
                         border: 0 none;
                         outline: 0 none;
                     }
                 }
                 .search-submit {
-                    text-indent: 9999px;
-                    border: 0 none;
-                    background-color: transparent;
-                    cursor: pointer;
-                    padding: 0;
-                    border: 0 none !important;
-                    outline: 0 none !important;
-                    @extend %pull-left;
-                    @include bg-img-only(nerdywinkey, png, no-repeat, center, center);
-                    @include size(44px, 38px);
+                    @include size(35px, 38px);
                 }
             }
-
+        }
     }
-     
+}
+
+    @media (max-width: $screen-sm-max) {#hellobar-wrapper {display: none !important;}}
+
+
+.mobile-nav-menu {
+    width: 0px;
+    background: $Gray;
+    z-index: 999;
+    @include position-tr(0, 0);
+    @include transition(0.5s);
+    @extend %absolute;
+    @extend %ohide;
+    &.animate-me {
+        width: 248px;
+        padding-left: 1px;
+        height: 100%;
+    }
+    .logo {
+        background-color: $White;
+        padding: 10px;
+        a {
+            @include size(128px, 61px);
+            @include bg-img(logo, png);
+            @extend %block-center;
+            display: block;
+            background-size: 100%;
+        }
+    }
+    .message {
+        display: none;
+    }
+    .mob-nav {
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0px;
+            li {
+                @extend %pull-left;
+                @include transition(all 0.5s ease);
+                //border-bottom: 2px solid $White;
+                width: 100%;
+                padding: 10px 10px 2px;
+                margin-bottom: 1px;
+                background-color: #494a41;
+                .message {
+                    display: none;
+                }
+                a {
+                    color: $White;
+                    font-size: 12px;
+                    letter-spacing: 1px;
+                    padding: 6px 0 13px 40px;
+                    display: block;
+                    &:hover {
+                        color: lighten($Black, 50%);
+                    }
+                }
+                &:hover {
+                    background-color: #2c2d28;
+                    cursor: pointer;
+                    a {
+                        color: lighten($Black, 50%);
+                    }
+                }
+                /*  &.nav-work {
+                      &.active,
+                      &:hover {
+                          border-bottom-color: $Purple;
+                      }
+                  }
+                  &.nav-shop {
+                      &.active,
+                      &:hover {
+                          border-bottom-color: $Green;
+                      }
+                  }
+                  &.nav-community {
+                      &.active,
+                      &:hover {
+                          border-bottom-color: $Orange;
+                      }
+                  }
+                  &.nav-happiness {
+                      &.active,
+                      &:hover {
+                          border-bottom-color: $Yellow;
+                      }
+                  }*/
+            }
+        }
+    }
 }

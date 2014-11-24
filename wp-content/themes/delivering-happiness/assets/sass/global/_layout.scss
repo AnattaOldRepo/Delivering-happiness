@@ -27,6 +27,24 @@ body{
 
 #content{
 	padding-top:81px;
+     @media (max-width: $screen-sm-max) {
+        padding: 0;
+     }
 }
 
+#page{
+    //@extend %ohide;
+    @extend %relative;
+    left:0px;
+    &.animate-me{
+        @include transition(0.5s);
+        left:-248px;
+        @extend %fixed;
+    }   
+    @media (max-width: $screen-sm-max) {
+        .wrapper {
+            width: auto;
+        }
+    }
+}
 

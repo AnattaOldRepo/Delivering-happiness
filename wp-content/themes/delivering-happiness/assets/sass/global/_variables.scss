@@ -72,6 +72,13 @@ $imagedir: "../images/global";
 
 // Generator Sprites for main navigation
 
+@import "mob-nav/*.png";
+
+// Sprites image for main mob-navigation
+@include all-mob-nav-sprites;
+
+// Generator Sprites for main mob-navigation
+
 @import "happiness/*.png";
 
 // Sprites image for happiness section

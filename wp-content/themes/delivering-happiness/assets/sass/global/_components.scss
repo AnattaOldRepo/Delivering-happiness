@@ -30,6 +30,51 @@
     margin: 0px auto;
 }
 
+%block-level {
+    display: block;
+}
+
+%block-inline-level {
+    display: inline-block;
+}
+
+%hide {
+    display: none;
+}
+
+%show {
+    display: block;
+}
+
+%relative {
+    position: relative;
+}
+
+%absolute {
+    position: absolute;
+}
+
+%fixed {
+    position: fixed;
+}
+
+%ohide {
+    overflow: hidden;
+}
+
+.clearfix {
+    @include clearfix;
+}
+
+.clear {
+    clear: both;
+    @extend %ohide;
+}
+
+.trans {
+    @include transition(0.5s);
+}
+
 .blue-area {
     background: $Blue;
 }
@@ -61,10 +106,12 @@
 a {
     text-decoration: none;
 }
-td{
+
+td {
     vertical-align: top;
     padding: 0px 20px;
 }
+
 .arrow-right {
     width: 0;
     height: 0;
@@ -157,6 +204,9 @@ td{
     .wrapper {
         background-color: $LightGray;
         padding: 59px 59px 63px 59px;
+        @media (max-width: $screen-sm-max) {
+            padding: 15px;
+        }
         .container {
             @include clearfix;
             @include border_radius(20px);
@@ -164,6 +214,25 @@ td{
             // #dfdfdf
             background-color: $White;
             padding: 41px 36px;
+            @media (max-width: $screen-sm-max) {
+                padding: 15px !important;
+                .left-col, .right-col {
+                    @include size(100%, auto);
+                    margin: 15px 0;
+                    text-align: center;
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+                .content {
+                    img {
+                        max-width: 100%;
+                        height: auto;
+                        margin: 0;
+                    }
+                }
+            }
         }
     }
     h2 {
@@ -175,10 +244,16 @@ td{
             font-style: italic;
             display: block;
         }
+        @media (max-width: $screen-sm-max) {
+            line-height: inherit;
+            span {
+                margin-top: 8px;
+            }
+        }
     }
     p {
         line-height: 28px;
-        padding-bottom: 17px; 
+        padding-bottom: 17px;
         //width: 74%;
         @extend %pull-left;
         &:last-child {
@@ -191,6 +266,7 @@ td{
     .right-col {
         @extend %pull-right;
     }
+    @media (max-width: $screen-sm-max) {}
 }
 
 .two-column {
@@ -211,8 +287,42 @@ td{
         @include size(585px, 545px);
     }
     .right-col {
-        @extend %pull-left;
+        @extend %pull-right;
         @include size(585px, 545px);
+    }
+    @media (max-width: $screen-sm-max) {
+        .left-col, .right-col {
+            @include size(100%, auto);
+            margin: 0;
+            text-align: center;
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+    }
+    &.coin-animation {
+        .left-col {
+            .media {
+                padding: 20px !important;
+                h2 {
+                    margin: 0 0 20px;
+                }
+            }
+            .all-coins {
+                .coin {
+                    text-align: center;
+                    perspective: 600px;
+                    width: 50%;
+                    margin: 0 0 24px;
+                    .front, .back {
+                        left: 50%;
+                        margin: auto auto auto -65px;
+                        width: 130px;
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -280,6 +390,9 @@ td{
     .wrapper {
         @include clearfix;
         padding: 68px 61px 124px 61px;
+        @media (max-width: $screen-sm-max) {
+            padding: 20px;
+        }
     }
     h2 {
         @extend %heading-level-7;
@@ -290,6 +403,9 @@ td{
         @include square(336px);
         position: relative;
         overflow: hidden;
+        @media (max-width: $screen-sm-max) {
+            @include size(100%, 336px);
+        }
     }
     .left-col {
         @extend %pull-left;
@@ -297,15 +413,23 @@ td{
     .middle-col {
         @extend %pull-left;
         margin-left: 20px;
+        @media (max-width: $screen-sm-max) {
+            margin: 10px 0;
+        }
     }
     .right-col {
         @extend %pull-right;
     }
     .content {
+        display: table;
+        text-align: center;
         @include square(336px);
         position: absolute;
         bottom: 0px;
         background-color: $Blue;
+        @media (max-width: $screen-sm-max) {
+            @include size(100%, 336px);
+        }
         h3 {
             @extend %heading-level-4;
             color: $White;
@@ -315,6 +439,9 @@ td{
             @include square(336px);
             vertical-align: middle;
             display: table-cell;
+            @media (max-width: $screen-sm-max) {
+                @include size(100%, 336px);
+            }
         }
         &.small {
             height: 85px;
@@ -344,8 +471,8 @@ td{
     &.blue {
         .content {
             background-color: $Blue;
-            &.small{
-                .v-aling{
+            &.small {
+                .v-aling {
                     padding: 0 20px;
                 }
             }
@@ -353,6 +480,9 @@ td{
         .hover-content {
             background-color: lighten($Blue, 35%);
             color: $White;
+            @media (max-width: $screen-sm-max) {
+                @include size(100%, 336px);
+            }
             .button {
                 background: rgba(255, 255, 255, 0.5);
                 padding: 10px 45px;
@@ -413,6 +543,9 @@ td{
             img {
                 max-width: 336px;
                 height: auto;
+                @media (max-width: $screen-sm-max) {
+                    max-width: 100%;
+                }
             }
         }
     }
@@ -424,6 +557,9 @@ td{
         @include clearfix;
         background-color: $LightGray;
         padding: 50px 61px 78px 82px;
+        @media (max-width: $screen-sm-max) {
+            padding: 20px;
+        }
     }
     h2 {
         @extend %heading-level-7;
@@ -553,6 +689,30 @@ td{
             }
         }
     }
+    @media (max-width: $screen-sm-max) {
+        .offwhite-area {
+            .content {
+                padding: 20px;
+                img {
+                    margin: 10px 0;
+                }
+            }
+        }
+        .yellow-area {
+            .media {
+                padding: 20px;
+            }
+            .content {
+                padding: 20px;
+                p {
+                    padding-bottom: 20px;
+                }
+                .button {
+                    padding: 19px 48px;
+                }
+            }
+        }
+    }
 }
 
 .inspiration {
@@ -580,10 +740,9 @@ td{
     .left-col {
         background: $StrongYellow;
     }
-
-    &.rtt{
-        h3{
-            span{
+    &.rtt {
+        h3 {
+            span {
                 color: white;
             }
         }
@@ -591,17 +750,16 @@ td{
             min-width: 235px;
         }
     }
-    &.updated{
-        h3{
-            span{
+    &.updated {
+        h3 {
+            span {
                 font-size: 25px;
-                margin-top: 7px
+                margin-top: 7px;
             }
-            margin-bottom: 15px!important;
+            margin-bottom: 15px !important;
         }
-
-        .content{
-            p{
+        .content {
+            p {
                 line-height: 29px;
             }
         }
@@ -637,6 +795,11 @@ td{
             margin: 0 35px 30px 0;
             .left-pull {
                 margin-left: 0px;
+            }
+        }
+        @media (max-width: $screen-sm-max) {
+            .all-coins {
+                padding-left: 0;
             }
         }
     }
@@ -708,6 +871,14 @@ td{
             z-index: 10;
         }
     }
+    @media (max-width: $screen-sm-max) {
+        .onload-container {
+            @include size(auto, auto);
+        }
+        .video {
+            @include size(auto, auto);
+        }
+    }
 }
 
 .post-navigation,
@@ -741,9 +912,9 @@ td{
         @extend %pull-left;
     }
 }
-.paging-navigation a{
-    margin: 0;
 
+.paging-navigation a {
+    margin: 0;
 }
 
 .post-navigation {
@@ -781,7 +952,7 @@ td{
     z-index: 999999;
     padding: 30px;
     text-align: center;
-      overflow-x: hidden;
+    overflow-x: hidden;
     overflow-y: scroll;
     .gform_wrapper {
         clear: both;
@@ -809,28 +980,26 @@ td{
                 background-color: rgba($ModerateViolet, 0.5) !important;
             }
         }
-        .validation_error{
+        .validation_error {
             padding: 0;
             margin-top: -5px;
             margin-bottom: 10px;
         }
         .gform_footer {
-            &:before, &:after{
-                border: 1px solid red;
+            &:before, &:after {
                 clear: both;
-
             }
         }
     }
-    a{
+    a {
         color: $Blue;
     }
     .close {
         color: $Blue;
         text-decoration: underline;
         cursor: pointer;
-          float: right;
-           margin-top: 6px;
+        float: right;
+        margin-top: 6px;
     }
 }
 
@@ -843,6 +1012,7 @@ td{
     width: 100%;
     z-index: 99999;
 }
+
 sup {
     font-size: 16px;
     position: relative;

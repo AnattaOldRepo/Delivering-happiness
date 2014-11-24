@@ -10,6 +10,11 @@ get_header();
 <div class="work">
 	<section class="two-column hero">
 		<div class="wrapper">
+			<div class="right-col">
+				<div class="media">
+					<img src="<?php bloginfo('template_url')?>/assets/images/global/work_hero.jpg" alt="" />
+				</div>
+			</div>
 			<div class="left-col oderate-violet-area">
 				<article class="content">
 					<blockquote>“Get the culture right,<br/>&nbsp;and everything<br/>&nbsp;else just falls into place.” </blockquote>
@@ -17,11 +22,7 @@ get_header();
 					<a href="/services/culture-call/" class="button">SCHEDULE A Free Culture Call</a>
 				</article>
 			</div>
-			<div class="right-col">
-				<div class="media">
-					<img src="<?php bloginfo('template_url')?>/assets/images/global/work_hero.jpg" alt="" />
-				</div>
-			</div>
+			
 		</div>
 	</section>
 
@@ -106,7 +107,7 @@ get_header();
 		</div>
 	</section>
 
-	<section class="four-column cross-fade">
+	<section class="coaches-speakers four-column cross-fade">
 		<div class="wrapper">
 			<h2>Coaches and speakers:</h2>
 			<?php
