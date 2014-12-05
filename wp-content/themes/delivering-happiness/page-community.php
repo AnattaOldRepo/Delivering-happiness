@@ -180,7 +180,7 @@ get_header();
 
 	<section class="instagram">
 		<div class="wrapper">
-			<h2>Share a smile at #DHsmile</h2>
+			<h2>We're Spreading Happiness on Instagram</h2>
 			<?php //$instagram_pics = AnattaDesign_Storify::getInstagram( get_field( 'instagram_storify_json_url', 'option' ) ); ?>
 			<?php /*foreach ( $instagram_pics as $instagram_pic ) { ?>
 				<img src="<?php echo $instagram_pic['src']; ?>" alt="instagram pic" onerror="this.style.display='none';" />
