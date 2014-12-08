@@ -136,6 +136,8 @@
             margin-top: 16px;
             margin-bottom: 25px;
             position: relative;
+            padding: 0;
+             clear: none;
             .button {
                 padding: 6px 16px;
                 margin-left: 6px;
@@ -143,6 +145,7 @@
                 cursor: pointer;
                 border: 1px solid #0198cf;
                 color: #0198cf;
+                font-size: 13px;
                 outline: none;
             }
             img {

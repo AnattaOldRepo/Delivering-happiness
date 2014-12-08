@@ -59,6 +59,16 @@
         $(this).toggleClass("active");
         return false;
     });
+    //Circle 
+    $( document ).ready(function() {
+        $('#myStat2').circliful();
+        $('#myStat3').circliful();
+        $('#myStat4').circliful();
+        $('#myStat5').circliful();
+        $('#myStat6').circliful();
+        $('#myStat7').circliful();
+
+    });
 	});
 })(jQuery);
 
