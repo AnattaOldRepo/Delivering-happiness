@@ -1,0 +1,149 @@
+//
+// Survey page 
+// --------------------------------------------------
+.survey {
+    background-color: $LightGray;
+    padding: 45px 0;
+    .wrapper {
+        @include clearfix;
+        padding: 44px;
+        border: 5px solid darken($LightGray, 6.2%);
+        background: $White;
+         
+    }
+    h1 {
+        color: $text-color4;
+        @extend %heading-level-1;
+        span {
+            color: $text-color5;
+            display: block;
+            font-style: italic;
+            @extend %heading-level-12;
+        }
+    }
+    h2 {
+        color: $text-color4;
+        @extend %heading-level-12;
+    }
+    p, ul {
+        color: $text-color5;
+        margin-bottom: 25px;
+        @extend %pharagraph-level-5;
+    }
+    li {
+        list-style-type: disc;
+        margin-left: 14px;
+    }
+    figure {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    .hero_banner {
+        margin: 30px 0;
+    }
+    .left-col {
+        @extend %pull-left;
+        //width: 864px;
+        width: 685px;
+        height: auto;
+        h2 {
+            @extend %text-left;
+        }
+        .behind-survey {
+            p {margin-bottom: 0;}
+        }
+        .blue {
+            @extend %pharagraph-level-5;
+            @extend %pull-right;
+
+        }
+    }
+    .right-col {
+        @extend %pull-right;
+        width: 315px;
+        height: auto;
+        margin-right: 26px;
+        .quote-msg {
+            background-color: $bg-color2;
+            padding: 25px;
+            font-style: italic;
+            color: $text-color4;
+            margin-bottom: 25px;
+            @extend %pharagraph-level-5;
+            span {
+                display: block;
+                font-style: normal;
+                margin: 10px 0 0;
+                @extend %text-right;
+                @extend %pharagraph-level-7;
+            }
+        }
+        .learn-more {
+            background-color: $bg-color3;
+            color: $White;
+            padding: 25px;
+            text-transform: uppercase;
+            @extend %text-center;
+            @extend %pharagraph-level-5;
+            a {
+               
+                background-color: $bg-color4;
+                   border: 0 none;
+                color: $bg-color3;
+                display: table;
+                margin: 15px auto 0;
+                 padding: 10px 20px;
+                @extend %pharagraph-level-7;
+                &:hover {
+            background-color: rgba($White, 0.7);
+        }
+            }
+        }
+    }
+    .circle {
+        margin-left: 70px;
+        .circle-graph {
+            width: 165px;
+            display: inline-block;
+            margin-left: 20px;
+              vertical-align: top;
+            @extend %text-center;
+            p {
+                text-transform: uppercase;
+                color: #99989A;
+                .percentage {
+                    color: #0098CE;
+                }
+                .group-name {
+                    font-size: 10px;
+                    color: #99989A;
+                    display: block;
+                }
+            }
+        }
+    }
+}
+
+.circliful {
+    position: relative;
+}
+
+.circle-text, .circle-info, .circle-text-half, .circle-info-half {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    display: inline-block;
+    color: #0098CE;
+}
+
+.circle-info, .circle-info-half {
+    color: #999;
+}
+
+.circliful .fa {
+    margin: -10px 3px 0 3px;
+    position: relative;
+    bottom: 4px;
+}
