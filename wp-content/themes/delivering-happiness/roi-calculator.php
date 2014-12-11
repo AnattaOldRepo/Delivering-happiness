@@ -35,37 +35,66 @@ get_header();
 <!-- /Work page-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script><script type="text/javascript">
 $(function() {
-	var inp = $("input#number-of-org").val();
-	if (inp.length > 0) {
-	//$("input#number-of-org").keypress(function() {
-		var input = this;
-		setTimeout(function() {
-			var value = input.value;
-			if(value == '' || value == 0) {
-				$("#would-benefit-1").html('$0');
-				$("#would-benefit-2").html('$0');
-				$("#would-benefit-3").html('$0');
-				$("#would-benefit-4").html('$0');
-				$("#would-benefit-5").html('$0');
-			}
-			var benefit1 	= value*40000*0.01;
-			var benefited1 = formatNumbers(benefit1);
-			var benefit2 	= 1*(value*40000)/240;
-			var benefited2 = formatNumbers(benefit2);
-			var benefit3 	= (value*0.16)*0.40*40000*0.10;
-			var benefited3 = formatNumbers(benefit3);
-			var benefit4 	= (benefit1)+(benefit2)+(benefit3);
-			var benefited4 = formatNumbers(benefit4);
-			var benefit5		= value*10.00;
-			var benefited5 = formatNumbers(benefit5);
-			$("#would-benefit-1").html('$'+benefited1);
-			$("#would-benefit-2").html('$'+benefited2);
-			$("#would-benefit-3").html('$'+benefited3);
-			$("#would-benefit-4").html('$'+benefited4);
-			$("#would-benefit-5").html('$'+benefited5);
-		}, 300);
-	//});
-	}
+
+	$(document).ready(function () {
+		var value = $("#number-of-org").val();
+		if (value.length > 0) {
+			setTimeout(function() {
+				if(value == '' || value == 0) {
+					$("#would-benefit-1").html('$0');
+					$("#would-benefit-2").html('$0');
+					$("#would-benefit-3").html('$0');
+					$("#would-benefit-4").html('$0');
+					$("#would-benefit-5").html('$0');
+				}
+				var benefit1 	= value*40000*0.01;
+				var benefited1 = formatNumbers(benefit1);
+				var benefit2 	= 1*(value*40000)/240;
+				var benefited2 = formatNumbers(benefit2);
+				var benefit3 	= (value*0.16)*0.40*40000*0.10;
+				var benefited3 = formatNumbers(benefit3);
+				var benefit4 	= (benefit1)+(benefit2)+(benefit3);
+				var benefited4 = formatNumbers(benefit4);
+				var benefit5		= value*10.00;
+				var benefited5 = formatNumbers(benefit5);
+				$("#would-benefit-1").html('$'+benefited1);
+				$("#would-benefit-2").html('$'+benefited2);
+				$("#would-benefit-3").html('$'+benefited3);
+				$("#would-benefit-4").html('$'+benefited4);
+				$("#would-benefit-5").html('$'+benefited5);
+			}, 300);
+		}
+	});
+
+	$("input#number-of-org").keypress(function() {
+			var value = $("#number-of-org").val();
+			setTimeout(function() {
+				if(value == '' || value == 0) {
+					$("#would-benefit-1").html('$0');
+					$("#would-benefit-2").html('$0');
+					$("#would-benefit-3").html('$0');
+					$("#would-benefit-4").html('$0');
+					$("#would-benefit-5").html('$0');
+				}
+				var benefit1 	= value*40000*0.01;
+				var benefited1 = formatNumbers(benefit1);
+				var benefit2 	= 1*(value*40000)/240;
+				var benefited2 = formatNumbers(benefit2);
+				var benefit3 	= (value*0.16)*0.40*40000*0.10;
+				var benefited3 = formatNumbers(benefit3);
+				var benefit4 	= (benefit1)+(benefit2)+(benefit3);
+				var benefited4 = formatNumbers(benefit4);
+				var benefit5		= value*10.00;
+				var benefited5 = formatNumbers(benefit5);
+				$("#would-benefit-1").html('$'+benefited1);
+				$("#would-benefit-2").html('$'+benefited2);
+				$("#would-benefit-3").html('$'+benefited3);
+				$("#would-benefit-4").html('$'+benefited4);
+				$("#would-benefit-5").html('$'+benefited5);
+			}, 300);
+	});
+
+
 	
 $("input#number-of-org").keydown(function(event) {
 			// Allow: backspace, delete, tab and escape
