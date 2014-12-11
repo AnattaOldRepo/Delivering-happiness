@@ -35,7 +35,9 @@ get_header();
 <!-- /Work page-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script><script type="text/javascript">
 $(function() {
-	$("input#number-of-org").keypress(function() {
+	var inp = $("input#number-of-org").val();
+	if (inp.length > 0) {
+	//$("input#number-of-org").keypress(function() {
 		var input = this;
 		setTimeout(function() {
 			var value = input.value;
@@ -62,7 +64,9 @@ $(function() {
 			$("#would-benefit-4").html('$'+benefited4);
 			$("#would-benefit-5").html('$'+benefited5);
 		}, 300);
-	});
+	//});
+	}
+	
 $("input#number-of-org").keydown(function(event) {
 			// Allow: backspace, delete, tab and escape
 			if ( event.keyCode == 46 || event.keyCode == 8 || event.keyCode == 9 || event.keyCode == 27) {
