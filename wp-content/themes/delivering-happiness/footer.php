@@ -28,7 +28,7 @@
 				<div class="block resources">
 					<h4><a href="<?php echo home_url(); ?>/resources">Resources</a></h4>
 					<ul>
-						<li><a href="<?php echo home_url(); ?>/services/roi-calculator">ROI Calculator</a></li>
+						<li><a href="#" onclick="jQuery('#calculate_roi_form').show();return false;">ROI Calculator</a></li>
 						<li><a href="https://dh.happinessatworksurvey.com/try" target="_blank">Happiness at Work Survey</a></li>
 						<li><a href="<?php echo home_url(); ?>/services/request-presentation">Request Presentation</a></li>
 						<li><a href="<?php echo home_url(); ?>/resources/books">Book Recommendations</a></li>
@@ -86,6 +86,12 @@
 			<span class="close">close</span>
 		</div>
 
+		<div class="modal-box" id="calculate_roi_form" style="display:none;">
+			<p>Please enter your information below to find out how much happiness could save you!</p>
+			<?php gravity_form(20, true, true, false, null, true); ?>
+			<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
+			<span class="close">close</span>
+		</div>
 	</div>
 </section>
 <?php wp_footer(); ?>
