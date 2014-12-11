@@ -227,3 +227,44 @@
         display: none;
     }
 }
+.happy-work {
+    .modal-box {
+        width: 830px;
+        margin-left: -415px;
+        overflow: inherit;
+        height: auto;
+        .gform_wrapper {
+            margin: 10px auto;
+            .top_label .gfield_label, .top_label .ginput_container {
+                display: inline-block;
+                width: 50%;
+                float: left;
+                &.ginput_complex {
+                    .ginput_left, .ginput_right {
+                        // float: none;
+                        // width: 100%;
+                        input {
+                            margin: 0;
+                            width: 98% !important;
+                        }
+                    }
+                }
+                input.medium, select.medium {
+                    width: 98%;
+                }
+            }
+            .gform_body {
+                .gform_fields {
+                    li.gfield {
+                        float: left;
+                        margin-bottom: 7px;
+                        width: 100%;
+                    }
+                }
+            }
+            .gform_footer {
+                text-align: center;
+            }
+        }
+    }
+}
