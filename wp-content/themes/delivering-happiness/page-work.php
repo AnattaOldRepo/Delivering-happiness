@@ -311,7 +311,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>If you’re a company or self-employed coach who shares our vision of impacting workplace cultures around the world, let’s talk! We're always looking for opportunities to collaborate.</p>
-						<a href="/services/become-a-partner" class="button moderateviolet">Find Out More</a>
+						<a href="/services/lets-make-happy-work-together" class="button moderateviolet">Find Out More</a>
 					</div>
 				</div>
 			</div>
