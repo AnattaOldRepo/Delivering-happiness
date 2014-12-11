@@ -56,7 +56,8 @@
         }
         .blue {
             @extend %pharagraph-level-5;
-            @extend %pull-right;
+            margin: 0 auto;
+            display: table;
 
         }
     }
