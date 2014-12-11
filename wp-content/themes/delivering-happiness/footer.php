@@ -91,7 +91,7 @@
 
 		<div class="modal-box" id="calculate_roi_form" style="display:none;">
 			<p>Please enter your information below to find out how much happiness could save you!</p>
-			<?php gravity_form(20, true, true, false, null, true); ?>
+			<?php gravity_form(19, true, true, false, null, true); ?>
 			<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
 			<span class="close">close</span>
 		</div>
