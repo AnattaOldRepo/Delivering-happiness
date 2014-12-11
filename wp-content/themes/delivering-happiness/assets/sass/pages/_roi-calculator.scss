@@ -32,3 +32,38 @@
         }
     }
 }
+
+.roi-Calculator { margin-top: -15px; }
+.one-column-template .page-content .roi-Calculator .investing-happiness { font-size: 20px; font-style: italic; color: #666666; }
+.form-wrapper { width: 985px; margin-left: 40px; }
+.form-wrapper .row { width: 100%; clear: both; padding:20px 0 ; display: table; }
+.form-wrapper .label, .field, .pricing, .equals-sign { display: inline-block; height: 100%; float: left; }
+.form-wrapper .layer1 { background-color: #E9F4F9; color: #231F20; font-size: 26px; }
+.form-wrapper .layer2 { background-color: #D0EAF4; color: #666666; padding: 40px 0 30px; }
+.form-wrapper .layer3 { background-color: #ABDAED; color: #666666; padding: 36px 0 37px;}
+.form-wrapper .layer4 { background-color: #4DBBDE; color: #fff; padding: 35px 0 30px;}
+.form-wrapper .layer5 { background-color: #0097CD; color: #fff; padding: 40px 0;}
+.form-wrapper .layer6 { background-color: #E6E6E6; color: #231F20; margin: 10px 0 0; padding: 28px 0; }
+.form-wrapper .label { padding-left: 40px; width: 405px; font-size: 16px; line-height: 19px; }
+.form-wrapper .layer1 .question_text { padding-left: 30px; margin-top: 10px;}
+.form-wrapper .layer1 .field { float: right; }
+.form-wrapper .layer1 input.text { font-family: "Museo Slab"; border: 2px solid #808184; height: 40px; padding: 3px 3px; width: 182px; font-style: normal; font-size: 28px; text-align: right; color: #808184; line-height: 28px;}
+.form-wrapper .layer1 .text::-moz-placeholder{ font-size: 14px; font-style: italic; text-align: center; padding: 3px 3px; text-align: center; color: #808184;}
+.form-wrapper .layer1 .text::-ms-input-placeholder  { font-size: 14px; font-style: italic; text-align: center; padding: 3px 3px; text-align: center; color: #808184;} 
+.form-wrapper .layer1 .text::-webkit-input-placeholder { font-size: 14px; font-style: italic; text-align: center; padding: 3px 3px; text-align: center; color: #808184;}
+.form-wrapper .layer1 input.text:focus {outline: none;}
+.form-wrapper .layer4 .label { padding-top: 18px;}
+.form-wrapper .layer6 .label { width: auto;}
+.form-wrapper .layer5 .label, .layer6 .label { font-size: 22px; line-height: 26px; }
+.form-wrapper .equals-sign { width: 70px; font-size: 40px; text-align: center; display: none;}
+.one-column-template .page-content .pricing { width: 265px; font-size: 28px; text-align: right; padding:0 20px; }
+.one-column-template .page-content .pricing p, .layer6 .label .result-text, .one-column-template .page-content .layer5 .field { padding: 0; margin: 0; font-size: 28px; }
+.one-column-template .page-content .field {  padding-right: 20px; line-height: 16px;font-size: 12px;width: 250px;float: right; }
+.one-column-template .page-content .layer5 .field {padding-top: 18px !important;}
+.form-wrapper .layer6 .label .result-text, .layer6 .label a { color: #0097CD; }
+.one-column-template .page-content .legend-wrapper { margin-top: 10px; margin-left: -12px;}
+.one-column-template .page-content .legend-wrapper h3 { font-size: 20px; font-style: italic; }
+.one-column-template .page-content .legend-wrapper ul li { font-size: 14px; line-height: 25px;  margin-bottom: 5px; color: #666666; }
+.one-column-template .page-content .legend-wrapper ul li:before { color: #666666; }
+.one-column-template .page-content .form-wrapper  .developed_by { font-size: 12px; padding-bottom: 40px; }
+.one-column-template .page-content .form-wrapper  .developed_by a { text-decoration: none; }
