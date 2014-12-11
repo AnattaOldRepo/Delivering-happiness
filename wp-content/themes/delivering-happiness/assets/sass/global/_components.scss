@@ -284,11 +284,11 @@ td {
     }
     .left-col {
         @extend %pull-left;
-        @include size(585px, 545px);
+        @include size(583px, 545px);
     }
     .right-col {
         @extend %pull-right;
-        @include size(585px, 545px);
+        @include size(587px, 545px);
     }
     @media (max-width: $screen-sm-max) {
         .left-col, .right-col {
@@ -301,7 +301,8 @@ td {
             }
         }
     }
-    &.coin-animation {
+    @media (max-width: $screen-sm-max) {
+    &.coin-animation { 
         .left-col {
             .media {
                 padding: 20px !important;
@@ -324,6 +325,7 @@ td {
             }
         }
     }
+}
 }
 
 .coin-animation {

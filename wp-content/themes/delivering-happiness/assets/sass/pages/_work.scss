@@ -215,6 +215,13 @@
         .media > h2 {
             font-style: normal;
         }
+        &.clients {
+            margin:63px auto;
+            @media (max-width: $screen-sm-max) {
+                margin:20px auto;
+            }
+             
+        }
     }
     .coaches-speakers {
         display: none;
