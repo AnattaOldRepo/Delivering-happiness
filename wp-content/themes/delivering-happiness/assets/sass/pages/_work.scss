@@ -233,9 +233,6 @@
         margin-left: -415px;
         overflow: inherit;
         height: auto;
-        #calculate_roi_form > p {
-            font-size: 18px;
-        }
         .gform_wrapper {
             margin: 10px auto;
             .top_label .gfield_label, .top_label .ginput_container {
@@ -268,6 +265,12 @@
             .gform_footer {
                 text-align: center;
             }
+            .gfield_required {
+                color: #0198cf;
+            }
+        }
+        p {
+            font-size: 18px;
         }
     }
 }
