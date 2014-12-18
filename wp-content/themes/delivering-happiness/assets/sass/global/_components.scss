@@ -958,6 +958,7 @@ td {
     overflow-y: scroll;
     .gform_wrapper {
         clear: both;
+        max-width: 100%;
         .gfield_label {
             display: none;
         }
@@ -968,18 +969,19 @@ td {
             margin: 0px auto;
             margin-bottom: 10px;
         }
+
         .button {
             padding: 9px 29px !important;
             position: static !important;
             cursor: pointer;
-            background-color: rgba($ModerateViolet, 0.3) !important;
-            border-color: $ModerateViolet !important;
-            color: $ModerateViolet !important;
+            border: 1px solid $Blue;
+            background-color: rgba($Blue, 0.1);
+            color: $Blue;
             margin-top: 15px !important;
             margin-bottom: 20px;
             float: none;
             &:hover {
-                background-color: rgba($ModerateViolet, 0.5) !important;
+                background-color: rgba($Blue, 0.2) !important;
             }
         }
         .validation_error {
@@ -1002,6 +1004,9 @@ td {
         cursor: pointer;
         float: right;
         margin-top: 6px;
+        top: 0;
+        right: 12px;
+        position: absolute;
     }
 }
 
