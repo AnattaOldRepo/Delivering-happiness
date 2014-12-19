@@ -1,0 +1,156 @@
+.press-kit {
+  background-color: $LightGray;
+  padding: 45px 0;
+  .wrapper {
+    @include clearfix;
+    padding: 46px 48px 46px 44px;
+    border: 5px solid darken($LightGray, 6.2%);
+    background: $White;
+    max-width: 1098px;
+  }
+  h1 {
+    color: $text-color4;
+    @extend %heading-level-1;
+    margin-bottom: 18px;
+    span {
+      color: $text-color5;
+      display: block;
+      font-style: italic;
+      @extend %heading-level-12;
+    }
+  }
+  h2{
+    @extend %heading-level-12;
+    color: $bg-color3;
+    line-height: 24px;
+    margin-bottom: 7px;
+  }
+  h4{
+    @extend %pharagraph-level-1;
+  }
+  p{
+    @extend %pharagraph-level-5;
+    line-height: 18px;
+    margin-bottom: 17px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+  .pull-left{
+    @extend %pull-left;
+  }
+  .row{
+    @extend .clearfix;
+    margin: 0 -15px;
+  }
+  .col-lg-6{
+    @extend %pull-left;
+    width: 50%;
+    padding: 0 15px;
+  }
+  .hero-banner{
+    @include size(100%, 392px);
+    @extend %relative;
+    margin-bottom: 37px;
+    img{
+      @include size(100%, 392px);
+      @extend %absolute;
+    }
+    aside{
+      @extend %relative;
+      @include size(353px, 392px);
+      background-color: rgba(0,0,0,.8);
+      color: $White;
+      padding: 32px 25px 32px 34px;
+      p{
+        @extend %pharagraph-level-4;
+        margin-bottom: 19px;
+        line-height: 22px;
+      }
+    }
+    .text-heighlited{
+      font-size: 23px;
+      line-height: 22px;
+      color: $bg-color3;
+    }
+    .banner-text{
+      @extend %absolute;
+      color: $White;
+      font-size: 48px;
+      top: 45px;
+      right: 24px;
+    }
+  }
+  .speaking-point{
+    margin-bottom: 50px;
+  }
+  .media{
+    @extend .clearfix;
+    margin-bottom: 51px;
+    >.pull-left{
+      width: 192px;
+      margin-right: 19px;
+    }
+    img{
+      @extend %block-level;
+      @include border-radius(20px);
+      margin-bottom: 12px;
+    }
+    .button{
+      @extend %block-level;
+      padding: 15px 5px;
+      width: 100%;
+    }
+    p{
+      @extend %pharagraph-level-3;
+      margin-bottom: 25px;
+      line-height: 20px;
+      &:last-child{
+        margin-bottom: 0;
+      }
+    }
+  }
+  .short-bio{
+    margin-bottom: 49px;
+    .row{
+      h2{
+        margin-bottom: 14px;
+      }
+    }
+  }
+  .quotes{
+    blockquote{
+      background-color: rgba(1,152,207,0.1);
+      padding: 25px;
+      p{
+        @extend %pharagraph-level-5;
+        font-style: italic;
+        color: $bg-color3;
+        line-height: 21px;
+        margin-bottom: 25px;
+      }
+      .quote-by{
+        @extend %pharagraph-level-7;
+        font-weight: 500;
+        text-align: right;
+      }
+    }
+  }
+  ul{
+    margin-left: 17px;
+    li{
+      list-style: disc;
+      @extend %pharagraph-level-3;
+      line-height: 21px;
+    }
+  }
+  .btn-block{
+    padding-top: 25px;
+    @extend %block-level;
+    @extend %text-center;
+    .button{
+      @extend %heading-level-12;
+      padding: 16px;
+    }
+  }
+}
