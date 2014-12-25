@@ -36,7 +36,15 @@ get_header();
 $(function() {
 	$(document).ready(function () {
 
-		$('#calculate_roi_form').show();
+		var getvar = "<?php  echo $_GET['people'];  ?>";
+
+		//function for displaying roi form
+		if( getvar !== null && getvar !== undefined &&  getvar !==  '' ) {
+			$('#calculate_roi_form').hide();
+		} else {
+			$('#calculate_roi_form').show();
+		}
+		
 
 		var value = $("#number-of-org").val();
 		if (value.length > 0) {
