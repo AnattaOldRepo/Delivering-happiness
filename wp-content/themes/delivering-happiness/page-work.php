@@ -57,7 +57,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-						<a href="https://dh.happinessatworksurvey.com/try" target="_blank" class="button moderateviolet">LET’S GO!</a>
+						<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="button moderateviolet">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
@@ -311,7 +311,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>If you’re a company or self-employed coach who shares our vision of impacting workplace cultures around the world, let’s talk! We're always looking for opportunities to collaborate.</p>
-						<a href="/services/become-a-partner" class="button moderateviolet">Find Out More</a>
+						<a href="/services/lets-make-happy-work-together" class="button moderateviolet">Find Out More</a>
 					</div>
 				</div>
 			</div>

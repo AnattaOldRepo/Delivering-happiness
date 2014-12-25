@@ -11,7 +11,7 @@ get_header();
 			<span>Not just another employee engagement survey</span></h1>
 		<section class="hero_banner ">
 			<figure>
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/hero-survey-img.jpg" alt="" />
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/hero-survey-img.png" alt="" />
 			</figure>
 			<div class="clearfix"></div>
 		</section>
@@ -67,14 +67,15 @@ get_header();
 				<h2>The survey itself</h2>
 				<p>The flow of the 40-question, 10-minute survey is simple and engaging. Each question is benchmarked to the appropriate national average so participants can explore their results, put them into context, and take direct action to increase their happiness at work.</p>
 				<p>Individual results are shown immediately with colorful visuals. Results identify highlights and lowlights in a dynamic and interactive model that encourages discovery. Key benefits include: individual anonymity, aggregated organization and team results, and filtering for specific dimensions and demographics.</p>
-				<a href="" class="button blue">LEARN MORE, OR GET THE SURVEY<br> FOR YOUR ORGANIZATION</a>
+
+				<a href="<?php echo home_url(); ?>/services/happiness-at-work-survey-inquiry/" class="button blue">LEARN MORE, OR GET THE SURVEY<br> FOR YOUR ORGANIZATION</a>
 			</div>
 			<div  class="sidebar right-col" >
 				<div class="quote-msg">“Happier employees lead to strong, nurturing relationships – and a more profitable 
 					business – all of which we are continuously working hard to grow at Zappos.”
-<span class="quote-writer">–Tony Hsieh, CEO, Zappos.com</span></div>
-<div class="learn-more">LEARN MORE, OR GET THE SURVEY FOR YOUR ORGANIZATION
-<a href="" class="button blue">Click Here</a></div>
+				<span class="quote-writer">–Tony Hsieh, CEO, Zappos.com</span></div>
+				<div class="learn-more">LEARN MORE, OR GET THE SURVEY FOR YOUR ORGANIZATION
+				<a href="<?php echo home_url(); ?>/services/happiness-at-work-survey-inquiry/" class="button blue">Click Here</a></div>
 
 			</div>
 			<div class="clearfix"></div>

@@ -35,7 +35,6 @@ get_header();
 <!-- /Work page-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script><script type="text/javascript">
 $(function() {
-
 	$(document).ready(function () {
 		var value = $("#number-of-org").val();
 		if (value.length > 0) {
@@ -93,8 +92,6 @@ $(function() {
 				$("#would-benefit-5").html('$'+benefited5);
 			}, 300);
 	});
-
-
 	
 $("input#number-of-org").keydown(function(event) {
 			// Allow: backspace, delete, tab and escape
