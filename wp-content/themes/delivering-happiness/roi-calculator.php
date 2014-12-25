@@ -36,7 +36,7 @@ get_header();
 $(function() {
 	$(document).ready(function () {
 
-		$('#calculate_roi_form').show();return false;
+		$('#calculate_roi_form').show();
 
 		var value = $("#number-of-org").val();
 		if (value.length > 0) {
@@ -119,6 +119,12 @@ $("input#number-of-org").keydown(function(event) {
 				}
 			}
 		});
+
+	$('#calculate_roi_form').find('.close').click(function(){
+      	$('#calculate_roi_form').hide();
+      	$(this).parent().hide();
+    });
+
 });
 function formatNumbers(nStr) {
 	nStr = Math.round(nStr).toFixed(2);
@@ -132,5 +138,6 @@ function formatNumbers(nStr) {
 	}
 	return x1 + x2;
 }
+
 </script>
 <?php get_footer(); ?>

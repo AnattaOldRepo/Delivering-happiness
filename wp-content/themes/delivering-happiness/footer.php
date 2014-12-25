@@ -95,7 +95,7 @@
 			<p>Please enter your information below to find out how much happiness could save you!</p>
 			<?php gravity_form(20, true, true, false, null, true); ?>
 			<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
-			<span class="close">close</span>
+			<span class="close" id="close1">close</span>
 		</div>
 	</div>
 </section>
