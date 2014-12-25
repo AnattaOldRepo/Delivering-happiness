@@ -16,9 +16,9 @@ function add_conversion_tracking_code_roi($button, $form) {
 	$dom->loadHTML($button);
 	$input = $dom->getElementsByTagName('input')->item(0);
 	if ($input->hasAttribute('onclick')) {
-		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms', eventAction: 'Calculate your Happiness ROI', eventLabel: 'ROI Calculator Form/Services page'});".$input->getAttribute("onclick"));
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms', eventAction: 'Calculate your Happiness ROI', eventLabel: 'ROI Calculator Form'});".$input->getAttribute("onclick"));
 	} else {
-		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms', eventAction: 'Calculate your Happiness ROI', eventLabel: 'ROI Calculator Form/Services page'});");
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms', eventAction: 'Calculate your Happiness ROI', eventLabel: 'ROI Calculator Form'});");
 	}
 	return $dom->saveHtml();
 }
