@@ -11,7 +11,12 @@
 	<footer class="site-footer">
 		<div class="bar">
 			<div class="wrapper" align="center">
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/coupon.png" alt="" /><span><a href="<?php echo home_url(); ?>/services">Learn how to Make Happy Work!</a></span>
+				<?php if(is_page('services')): 
+					$url = home_url().'/services/culture-call/';
+				else:
+					$url = home_url().'/services/';
+				endif; ?>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/coupon.png" alt="" /><span><a href="<?php echo $url; ?>">Learn how to Make Happy Work!</a></span>
 			</div>
 		</div>
 		<div class="all-links">
