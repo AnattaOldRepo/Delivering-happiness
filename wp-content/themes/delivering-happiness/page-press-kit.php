@@ -47,7 +47,7 @@ get_header();
       <div class="media">
         <div class="pull-left">
           <img src="<?php bloginfo('template_url') ?>/assets/images/press/jenn-lim-headshot.jpg" alt="Jenn Lim" />
-          <a href="#" class="button blue">Invite Jenn to speak</a>
+          <a href="<?php echo home_url(); ?>/services/speaking/" class="button blue">Invite Jenn to speak</a>
         </div>
         <div class="media-copy">
           <p>
@@ -111,7 +111,7 @@ get_header();
         </div>
       </div>
       <div class="btn-block">
-        <a href="#" class="button blue">INVITE JENN TO SPEAK</a>
+        <a href="<?php echo home_url(); ?>/services/speaking/" class="button blue">INVITE JENN TO SPEAK</a>
       </div>
     </section><!-- /.quotes -->
   </div>
