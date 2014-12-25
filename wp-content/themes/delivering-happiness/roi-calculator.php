@@ -3,8 +3,14 @@
 Template Name: Roi-Calculator
 */
 get_header();
-
 ?>
+<script type="text/javascript">
+(function($){
+	$( document ).ready(function() {
+		$('#calculate_roi_form').show();return false;
+	});
+})(jQuery);
+</script>
 <!-- Roi Calculator page-->
 <div class="one-column-template">
 	<div class="roi-calculator-page">

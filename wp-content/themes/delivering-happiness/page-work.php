@@ -83,7 +83,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Unhappy employees cost the U.S. $550 billion a year (Gallup). How much could happiness save you?</p>
-						<a href="#" class="button moderateviolet" onclick="jQuery('#calculate_roi_form').show();return false;">LET’S CALCULATE!</a>
+						<a href="<?php echo home_url(); ?>/services/roi-calculator/" class="button moderateviolet">LET’S CALCULATE!</a>
 					</div>
 				</div>
 			</div>
@@ -332,7 +332,7 @@ get_header();
 						<img src="<?php bloginfo('template_url') ?>/assets/images/global/chart.png" alt="placeholder" />
 					</div>
 				</div>
-				<a href="#" class="button blue" onclick="jQuery('#calculate_roi_form').show();return false;">Calculate your happiness ROI</a>
+				<a href="<?php echo home_url(); ?>/services/roi-calculator/" class="button blue">Calculate your happiness ROI</a>
 			</div>
 			
 		</div>

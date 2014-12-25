@@ -33,7 +33,7 @@
 				<div class="block resources">
 					<h4><a href="<?php echo home_url(); ?>/resources">Resources</a></h4>
 					<ul>
-						<li><a href="#" onclick="jQuery('#calculate_roi_form').show();return false;">ROI Calculator</a></li>
+						<li><a href="<?php echo home_url(); ?>/services/roi-calculator/">ROI Calculator</a></li>
 						<li><a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/">Happiness at Work Survey</a></li>
 						<li><a href="<?php echo home_url(); ?>/services/request-presentation">Request Presentation</a></li>
 						<li><a href="<?php echo home_url(); ?>/resources/books">Book Recommendations</a></li>
