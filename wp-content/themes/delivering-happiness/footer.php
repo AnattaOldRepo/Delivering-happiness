@@ -11,7 +11,12 @@
 	<footer class="site-footer">
 		<div class="bar">
 			<div class="wrapper" align="center">
-				<img src="<?php bloginfo('template_url') ?>/assets/images/global/coupon.png" alt="" /><span><a href="<?php echo home_url(); ?>/services">Learn how to Make Happy Work!</a></span>
+				<?php if(is_page('services')): 
+					$url = home_url().'/services/culture-call/';
+				else:
+					$url = home_url().'/services/';
+				endif; ?>
+				<img src="<?php bloginfo('template_url') ?>/assets/images/global/coupon.png" alt="" /><span><a href="<?php echo $url; ?>">Learn how to Make Happy Work!</a></span>
 			</div>
 		</div>
 		<div class="all-links">
@@ -28,7 +33,7 @@
 				<div class="block resources">
 					<h4><a href="<?php echo home_url(); ?>/resources">Resources</a></h4>
 					<ul>
-						<li><a href="#" onclick="jQuery('#calculate_roi_form').show();return false;">ROI Calculator</a></li>
+						<li><a href="<?php echo home_url(); ?>/services/roi-calculator/">ROI Calculator</a></li>
 						<li><a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/">Happiness at Work Survey</a></li>
 						<li><a href="<?php echo home_url(); ?>/services/request-presentation">Request Presentation</a></li>
 						<li><a href="<?php echo home_url(); ?>/resources/books">Book Recommendations</a></li>
@@ -93,7 +98,7 @@
 			<p>Please enter your information below to find out how much happiness could save you!</p>
 			<?php gravity_form(7, true, true, false, null, true); ?>
 			<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
-			<span class="close">close</span>
+			<span class="close" id="close1">close</span>
 		</div>
 	</div>
 </section>

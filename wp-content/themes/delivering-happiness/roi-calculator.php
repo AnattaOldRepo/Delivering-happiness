@@ -3,7 +3,6 @@
 Template Name: Roi-Calculator
 */
 get_header();
-
 ?>
 <!-- Roi Calculator page-->
 <div class="one-column-template">
@@ -36,6 +35,17 @@ get_header();
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script><script type="text/javascript">
 $(function() {
 	$(document).ready(function () {
+
+		var getvar = "<?php  echo $_GET['people'];  ?>";
+
+		//function for displaying roi form
+		if( getvar !== null && getvar !== undefined &&  getvar !==  '' ) {
+			$('#calculate_roi_form').hide();
+		} else {
+			$('#calculate_roi_form').show();
+		}
+		
+
 		var value = $("#number-of-org").val();
 		if (value.length > 0) {
 			setTimeout(function() {
@@ -118,6 +128,12 @@ $("input#number-of-org").keydown(function(event) {
 				}
 			}
 		});
+
+	$('#calculate_roi_form').find('.close').click(function(){
+      	$('#calculate_roi_form').hide();
+      	$(this).parent().hide();
+    });
+
 });
 function formatNumbers(nStr) {
 	nStr = Math.round(nStr).toFixed(2);
@@ -131,5 +147,6 @@ function formatNumbers(nStr) {
 	}
 	return x1 + x2;
 }
+
 </script>
 <?php get_footer(); ?>
