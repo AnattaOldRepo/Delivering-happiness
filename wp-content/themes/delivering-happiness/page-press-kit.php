@@ -63,7 +63,7 @@ get_header();
       </div><!-- /.media -->
       <div class="row">
         <article class="col-lg-6">
-          <h2>INTERNATIONAL SPEAKING INCLUDE:</h2>
+          <h2>INTERNATIONAL SPEAKING INCLUDES:</h2>
           <ul>
             <li>Aetna, Inc.</li>
             <li>Audi of America</li>
@@ -79,7 +79,7 @@ get_header();
           </ul>
         </article>
         <article class="col-lg-6">
-          <h2>INTERNATIONAL SPEAKING INCLUDE:</h2>
+          <h2>FEATURED IN:</h2>
           <ul>
             <li>ABC News</li>
             <li>CNBC</li>
