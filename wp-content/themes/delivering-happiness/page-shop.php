@@ -15,7 +15,7 @@ get_header();
 				<article class="content">
 					<blockquote>Too much of this is a<br/>good thing.</blockquote>
 					<span>Created with love, made with care,<br/>infused with joy.</span>
-					<a href="http://shop.deliveringhappiness.com" target="_blank" class="button" onclick="ga('send', 'event', { eventCategory: 'Shop Redirect', eventAction: 'Clicks to shop.deliveringhappiness.com', eventLabel: 'Clicks to shop.deliveringhappiness.com'});">SHOP THE COLLECTION</a>
+					<a href="http://shop.deliveringhappiness.com" target="_blank" class="button" onClick="ga('send', 'event', { eventCategory: 'Shop Redirect', eventAction: 'Clicks to shop.deliveringhappiness.com', eventLabel: 'Clicks to shop.deliveringhappiness.com'});">SHOP THE COLLECTION</a>
 				</article>
 			</div>
 			<div class="right-col">
