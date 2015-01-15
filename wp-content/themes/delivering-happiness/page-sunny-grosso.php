@@ -5,11 +5,11 @@ Template Name: Sunny Grosso Page
 get_header();
 ?>
 
-<div class="press-kit">
+<div class="press-kit sunny-grosso">
   <div class="wrapper">
     <h1>Sunny Grosso</h1>
     <section class="hero-banner">
-      <img src="<?php bloginfo('template_url') ?>/assets/images/press/hero-banner.jpg" alt="Let's make happy work!" class="banner-img" />
+      <img src="<?php bloginfo('template_url') ?>/assets/images/press/hero-banner-sunny.jpg" alt="Let's make happy work!" class="banner-img" />
       <div class="banner-text">
         Let's make<br/>
         happy work<sup>TM</sup>!
@@ -39,7 +39,7 @@ get_header();
         <article class="col-lg-6">
           <h4>Happiness is a Choice</h4>
           <p>Sunny’s personal journey to happiness at work from the failure of ‘the formula’ to ﬁnding passion and purpose building Delivering Happiness from the ground up as the second member of the coaching team.</p>
-          <div class="pull-left button blue">
+          <div class="box-blue">
             <h2>BREAKOUT TOPICS</h2>
             <ul>
               <li>
@@ -68,15 +68,15 @@ get_header();
     <section class="short-bio">
       <h2>SHORT BIO</h2>
       <div class="media">
-        <div>
-          “Life shrinks or expands in proportion to one’s courage.”  
-            – Anais Nin
-        </div>
         <div class="pull-left">
-          <img src="<?php bloginfo('template_url') ?>/assets/images/press/jenn-lim-headshot.jpg" alt="Jenn Lim" />
+          <img src="<?php bloginfo('template_url') ?>/assets/images/press/sunny-grosso-headshot.jpg" alt="Jenn Lim" class="headshots" />
           <a href="<?php echo home_url(); ?>/services/speaking/" class="button blue">Invite Sunny to speak</a>
         </div>
         <div class="media-copy">
+          <div class="blockquote">
+            “Life shrinks or expands in proportion to one’s courage.”  
+              <span class="signature">– Anais Nin</span>
+          </div>
           <p>Fueled by these words, Sunny strives to inspire others to live big, by being true to themselves and courageously following their passion. </p>
           <p>Sunny travels around the world speaking, coaching and training companies from Russia to Venezuela in happiness and culture building. An ORSC (Organization and Relationship Systems Coaching) trained coach and one of the ﬁrst members to join Delivering Happiness, Sunny – the “Culture Godmother“ – guides the team in ensuring their values are aligned and they walk their talk. </p>
           <p>Sunny’s passion for living big goes beyond the workplace. Sunny’s favorite hobby is ultra running. She has competed in 50-mile trail races and loves helping others do the same as the captain for the inaugural Team-in-Training Ultra Team.</p> 
