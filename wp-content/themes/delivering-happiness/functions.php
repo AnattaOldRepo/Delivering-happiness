@@ -88,6 +88,20 @@ function delivering_happiness_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'delivering_happiness_scripts' );
 
+// track conversions in Gravity Forms for Calculate your Happiness ROI form
+function add_conversion_tracking_code_roi($button, $form) {
+	$dom = new DOMDocument();
+	$dom->loadHTML($button);
+	$input = $dom->getElementsByTagName('input')->item(0);
+	if ($input->hasAttribute('onclick')) {
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms', eventAction: 'Calculate your Happiness ROI', eventLabel: 'ROI Calculator Form'});".$input->getAttribute("onclick"));
+	} else {
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms', eventAction: 'Calculate your Happiness ROI', eventLabel: 'ROI Calculator Form'});");
+	}
+	return $dom->saveHtml();
+}
+add_filter( 'gform_submit_button_20', 'add_conversion_tracking_code_roi', 10, 2);
+
 // track conversions in Gravity Forms for Speaking page( http://deliveringhappiness.com/services/speaking/ )
 function add_conversion_tracking_code_speaking($button, $form) {
 	$dom = new DOMDocument();
