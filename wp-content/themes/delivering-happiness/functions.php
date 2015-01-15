@@ -88,21 +88,65 @@ function delivering_happiness_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'delivering_happiness_scripts' );
 
-// track conversions in Gravity Forms for Calculate your Happiness ROI form
-
-function add_conversion_tracking_code_roi($button, $form) {
+// track conversions in Gravity Forms for Speaking page( http://deliveringhappiness.com/services/speaking/ )
+function add_conversion_tracking_code_speaking($button, $form) {
 	$dom = new DOMDocument();
 	$dom->loadHTML($button);
 	$input = $dom->getElementsByTagName('input')->item(0);
 	if ($input->hasAttribute('onclick')) {
-		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms', eventAction: 'Calculate your Happiness ROI', eventLabel: 'ROI Calculator Form'});".$input->getAttribute("onclick"));
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms Submissions', eventAction: 'Speaking Info Requests', eventLabel: 'Speaking Engagements Form'});".$input->getAttribute("onclick"));
 	} else {
-		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms', eventAction: 'Calculate your Happiness ROI', eventLabel: 'ROI Calculator Form'});");
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms Submissions', eventAction: 'Speaking Info Requests', eventLabel: 'Speaking Engagements Form'});");
 	}
 	return $dom->saveHtml();
 }
 
-add_filter( 'gform_submit_button_20', 'add_conversion_tracking_code_roi', 10, 2);
+add_filter( 'gform_submit_button_11', 'add_conversion_tracking_code_speaking', 10, 2);
+
+// track conversions in Gravity Forms for Survey Page (http://deliveringhappiness.com/services/happiness-at-work-survey-inquiry/)
+function add_conversion_tracking_code_survey($button, $form) {
+	$dom = new DOMDocument();
+	$dom->loadHTML($button);
+	$input = $dom->getElementsByTagName('input')->item(0);
+	if ($input->hasAttribute('onclick')) {
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms Submissions', eventAction: 'Survey Info Requests', eventLabel: 'Happiness at Work Survey Inquiry'});".$input->getAttribute("onclick"));
+	} else {
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms Submissions', eventAction: 'Survey Info Requests', eventLabel: 'Happiness at Work Survey Inquiry'});");
+	}
+	return $dom->saveHtml();
+}
+
+add_filter( 'gform_submit_button_21', 'add_conversion_tracking_code_survey', 10, 2);
+
+// track conversions in Gravity Forms for Culture Call Page (http://deliveringhappiness.com/services/culture-call/)
+function add_conversion_tracking_code_culture($button, $form) {
+	$dom = new DOMDocument();
+	$dom->loadHTML($button);
+	$input = $dom->getElementsByTagName('input')->item(0);
+	if ($input->hasAttribute('onclick')) {
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms Submissions', eventAction: 'Culture Call Requests', eventLabel: 'Schedule a Free Culture Call'});".$input->getAttribute("onclick"));
+	} else {
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms Submissions', eventAction: 'Culture Call Requests', eventLabel: 'Schedule a Free Culture Call'});");
+	}
+	return $dom->saveHtml();
+}
+
+add_filter( 'gform_submit_button_4', 'add_conversion_tracking_code_culture', 10, 2);
+
+// track conversions in Gravity Forms for Download Hello Doc, Services Page (http://deliveringhappiness.com/services/)
+function add_conversion_tracking_code_hellodoc($button, $form) {
+	$dom = new DOMDocument();
+	$dom->loadHTML($button);
+	$input = $dom->getElementsByTagName('input')->item(0);
+	if ($input->hasAttribute('onclick')) {
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms Submissions', eventAction: 'Downloads of Hello doc', eventLabel: 'Downloads of Hello doc'});".$input->getAttribute("onclick"));
+	} else {
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms Submissions', eventAction: 'Downloads of Hello doc', eventLabel: 'Downloads of Hello doc'});");
+	}
+	return $dom->saveHtml();
+}
+
+add_filter( 'gform_submit_button_6', 'add_conversion_tracking_code_hellodoc', 10, 2);
 
 /**
  * Storify Class
