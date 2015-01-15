@@ -153,4 +153,55 @@
       padding: 16px;
     }
   }
+  .headshots{
+    width: 190px;
+  }
+  .blockquote{
+    border: 1px solid $Black;
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    float: right;
+    width: 785px;
+    padding: 20px 10px;
+    margin-bottom: 15px;
+    .signature{
+      font-size: 14px;
+      display: block;
+      margin-top: 10px;
+    }
+  }
+  .box-blue{
+    border: 1px solid #0198cf;
+    background-color: rgba(1,152,207,0.1);
+    padding: 17px 41px;
+    h4{
+      font-style: italic;
+      font-size: 18px;
+    }
+    p{
+      font-size: 14px;
+    }
+    li{
+      margin-bottom: 5px;
+    }
+  }
+  sup{
+    font-size: 10px;
+  }
+  &.sunny-grosso{
+    .hero-banner aside{
+      padding-right: 10px;
+    }
+    h4{
+      font-style: italic;
+    }
+    .quotes{
+      blockquote{
+        p{
+          font-size: 12px;
+        }
+      }
+    }
+  }
 }
