@@ -47,6 +47,9 @@
     @extend %pull-left;
     width: 50%;
     padding: 0 15px;
+    h4{
+      i{ font-style: italic; }
+    }
   }
   .hero-banner{
     @include size(100%, 392px);
@@ -79,6 +82,9 @@
       font-size: 48px;
       top: 45px;
       right: 24px;
+      i{
+        font-style: italic;
+      }
     }
   }
   .speaking-point{
@@ -193,6 +199,7 @@
   }
   sup{
     font-size: 10px;
+    padding-left: 3px;
   }
   &.sunny-grosso{
     .hero-banner aside{
