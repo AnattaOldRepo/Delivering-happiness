@@ -11,12 +11,12 @@ get_header();
     <section class="hero-banner">
       <img src="<?php bloginfo('template_url') ?>/assets/images/press/hero-banner-sunny.jpg" alt="Let's make happy work!" class="banner-img" />
       <div class="banner-text">
-        Let's make<br/>
-        happy work<sup>TM</sup>!
+        Let's <i>make<br/>
+        happy work<sup>TM</sup>!</i>
       </div>
       <aside>
         <p>
-          <span class="text-heighlited">Sunny Grosso</span> learned early in life that happiness isn’t about ‘the formula’ and launched a colorful career path from sake trainings in california to coaching teams around the world on happiness. 
+          <span class="text-heighlited">Sunny Grosso</span> learned early in life that happiness isn’t about ‘the formula’ and launched a colorful career path from sake trainings in California to coaching teams around the world on happiness. 
         </p>
         <p>
           A trained coach with a background in psychology, she was one of the ﬁrst members of the Delivering Happiness team and now holds the role of Coaching and Culture Chief, guiding their culture internally and leading the team to create more suscessful companies through culture change and the science of happiness.
@@ -57,7 +57,7 @@ get_header();
                 <p></p>
               </li>
               <li>
-                <h4>Make Happy Work™ for YOU</h4>
+                <h4>Make Happy Work<sup>TM</sup> for YOU</h4>
                 <p>Activating the Science of Happiness at Work</p>
               </li>
             <ul>
@@ -70,7 +70,7 @@ get_header();
       <div class="media">
         <div class="pull-left">
           <img src="<?php bloginfo('template_url') ?>/assets/images/press/sunny-grosso-headshot.jpg" alt="Jenn Lim" class="headshots" />
-          <a href="<?php echo home_url(); ?>/services/speaking/" class="button blue">Invite Sunny to speak</a>
+          <a href="<?php echo home_url(); ?>/services/speaking/" class="button blue">Invite Sunny <br/>to speak</a>
         </div>
         <div class="media-copy">
           <div class="blockquote">

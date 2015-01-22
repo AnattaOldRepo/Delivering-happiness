@@ -174,10 +174,15 @@
   .box-blue{
     border: 1px solid #0198cf;
     background-color: rgba(1,152,207,0.1);
-    padding: 17px 41px;
+    padding: 17px 10px;
     h4{
       font-style: italic;
       font-size: 18px;
+      sup{
+        font-size: 10px;
+        position: relative;
+        top: -8px;
+      }
     }
     p{
       font-size: 14px;
@@ -199,7 +204,7 @@
     .quotes{
       blockquote{
         p{
-          font-size: 12px;
+          font-size: 14px;
         }
       }
     }
