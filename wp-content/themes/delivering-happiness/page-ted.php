@@ -17,6 +17,9 @@ get_header();
 				achieve success by applying the frameworks of happiness to their internal culture. <br/>
 				We're changing the world, by making happy work.
 			</p>
+			<article class="content">
+				<?php gravity_form(2, true, true, false, null, true); ?>
+			</article>
 		</section>
 	</div>	
 	<section class="ted-three-colum">
