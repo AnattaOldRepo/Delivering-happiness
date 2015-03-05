@@ -89,14 +89,6 @@ get_header();
 				<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
 				<span class="close">close</span>
 			</div>
-			<div class="container">
-				<article class="content">
-					<h2>Let’s Make Happy Work<sup>TM</sup>. <span>Ready to plan your journey?</span></h2>
-					<p><a href="#" class="button moderateviolet modal-box-handler" onclick="jQuery('#download_roadmap_form').show();return false;">DOWNLOAD HELLO DOC.</a>
-					We believe happiness at work is a journey. We’ve created a roadmap with five simple steps, combining the science of happiness and the experience of Zappos and other leading companies to help your organization create its own unique work culture, increase happiness and build success. Learn more by downloading our Hello Doc.</p>
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/work-animation-demo.png" alt="" />
-				</article>
-			</div>
 		</div>
 	</section>
 <!-- /Get involved section-->
