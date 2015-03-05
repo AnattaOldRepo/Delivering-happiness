@@ -51,7 +51,7 @@
     }
     article.content{
         width:315px;
-        margin:0px auto;
+        margin:0px auto 10px auto;
         background:#0092c6;
         border:1px solid $White;
         border-radius:4px;
@@ -79,7 +79,7 @@
             div.validation_error{
                 font-size: 10px;
                 font-weight: normal;
-                padding: 0;
+                padding:5px 0;
                 margin:0px;
             }
             li.gfield.gfield_error.gfield_contains_required{
@@ -88,12 +88,17 @@
                 background:none;
                 border:none;
             }
-            .ginput_container , .gfield_description.validation_message , .ginput_container{
+            .ginput_container , .ginput_container{
                 margin:0px !important;
+                padding:0px !important;
+            }
+            .gfield_description.validation_message{
+                margin:5px 0px !important;
                 padding:0px !important;
             }
         }
         .gform_footer{
+            padding-top:5px;
             @extend %text-center;
             .button{
                 background:none;
@@ -103,6 +108,7 @@
                 text-transform:uppercase;
                 color:$White;
                 font-family:Arial;
+                cursor: pointer;
                 @include font-shorthand(20px, normal, normal);
             }
         }
