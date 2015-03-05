@@ -20,7 +20,7 @@ get_header();
 			</div>
 			<div class="right-col">
 				<div class="media">
-					<img src="<?php bloginfo('template_url')?>/assets/images/global/shop-hero.jpg" alt="" />
+					<img src="<?php bloginfo('template_url')?>/assets/images/global/shop-heronew.jpg" alt="" />
 				</div>
 			</div>
 		</div>
