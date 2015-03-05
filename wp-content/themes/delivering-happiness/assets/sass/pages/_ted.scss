@@ -1,0 +1,71 @@
+//
+// Ted
+// --------------------------------------------------
+.ted-landing-page{
+    .ted-hero-banner{
+        @include size(100% , 504px);
+        @include bg-img(ted_hero_banner, jpg, no-repeat, center, top);
+        @extend %text-center;
+        .cl{
+            color:$text-color6;
+        }
+        .cl1{
+            color:$text-color4;
+        }
+        h6{
+            color:$White;
+            margin-bottom:20px;
+            @extend %pharagraph-level-1;
+            @extend %museo_slab;
+            font-weight:500;
+            small{
+                @extend %pharagraph-level-5;
+            }
+        }
+        h1{
+            margin-bottom:15px;
+        }
+        h5{
+            word-spacing:5px;
+            @extend %heading-level-12;
+            @extend .cl1;
+            .tx{
+                top:-5px;
+                @extend %relative;
+                @extend %heading-level-2;
+            }
+        }
+        p{
+            color:$White;
+            @extend %heading-level-12
+        }
+    }
+    .ted-three-colum{
+        padding:90px 0;
+        .ted-three-row{
+            display:table;
+            @extend %ohide;
+        }
+        a{
+            display: table-cell;
+            vertical-align: middle;
+            @include square(310px);
+            @extend %pull-left;
+            &.col1{
+                background:$bg-color5 url('#{$imagedir}/global/hellobgicon.png') no-repeat center center;
+            }
+            &.col2{
+                margin-left:20px;
+                background:$bg-color5 url('#{$imagedir}/global/calculateicon.png') no-repeat center cent;
+            }
+            &.col3{
+                margin-left:20px;
+                background:$bg-color5 url('#{$imagedir}/global/happinessicon.png') no-repeat center cent;
+            }
+            span{
+                color:$White;
+                @extend %heading-level-7;
+            }
+        }
+    }
+}
