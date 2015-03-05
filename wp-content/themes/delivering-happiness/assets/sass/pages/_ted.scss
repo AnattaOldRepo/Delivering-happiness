@@ -3,6 +3,7 @@
 // --------------------------------------------------
 .ted-landing-page{
     .ted-hero-banner{
+        padding:45px 0 0 0;
         @include size(100% , 504px);
         @include bg-img(ted_hero_banner, jpg, no-repeat, center, top);
         @extend %text-center;
@@ -23,10 +24,10 @@
             }
         }
         h1{
-            margin-bottom:15px;
+            margin-bottom:0px;
         }
         h5{
-            word-spacing:5px;
+            word-spacing:8px;
             @extend %heading-level-12;
             @extend .cl1;
             .tx{
@@ -37,34 +38,38 @@
         }
         p{
             color:$White;
-            @extend %heading-level-12
+            font-family:Arial;
+            @extend %heading-level-12;
         }
     }
     .ted-three-colum{
         padding:90px 0;
         .ted-three-row{
             display:table;
+            margin:0px auto;
             @extend %ohide;
         }
         a{
             display: table-cell;
             vertical-align: middle;
             @include square(310px);
-            @extend %pull-left;
+            @extend text-center;
+            @extend %museo_slab;
             &.col1{
-                background:$bg-color5 url('#{$imagedir}/global/hellobgicon.png') no-repeat center center;
+                background:$bg-color5 url('#{$imagedir}/hellobgicon.png') no-repeat center center;
             }
             &.col2{
                 margin-left:20px;
-                background:$bg-color5 url('#{$imagedir}/global/calculateicon.png') no-repeat center cent;
+                background:$bg-color5 url('#{$imagedir}/calculateicon.png') no-repeat center;
             }
             &.col3{
                 margin-left:20px;
-                background:$bg-color5 url('#{$imagedir}/global/happinessicon.png') no-repeat center cent;
+                background:$bg-color5 url('#{$imagedir}/happinessicon.png') no-repeat center;
             }
             span{
                 color:$White;
-                @extend %heading-level-7;
+                @include font-shorthand(30px, normal, normal);
+                @extend %block-level;
             }
         }
     }
