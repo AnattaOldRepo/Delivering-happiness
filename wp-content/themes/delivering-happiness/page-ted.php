@@ -22,7 +22,7 @@ get_header();
 			</article>
 		</section>
 	</div>	
-	<section class="ted-three-colum">
+	<!--section class="ted-three-colum">
 		<div class="wrapper">
 			<div class="ted-three-row">
 				<a href="#" class="col1">
@@ -35,6 +35,49 @@ get_header();
 					<span>Take the<br/> Happiness at Work<br/> Survey</span>
 				</a>
 			</div>	
+		</div>
+	</section-->
+	<section class="three-column blue get-involved cross-fade">
+		<div class="wrapper">
+			<div class="col left-col">
+				<div class="download-product">
+					<div class="content">
+						<div class="v-aling"><h3>Download our <br/>Hello doc</h3></div>
+					</div>
+				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p></p>
+						<a href="#" class="button moderateviolet">Download</a>
+					</div>
+				</div>
+			</div>
+			<div class="col middle-col">
+				<div class="calculate">
+					<div class="content">
+						<div class="v-aling"><h3>Calculate<br/>your<br/>happiness</h3></div>
+					</div>
+				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Unhappy employees cost the U.S. $550 billion a year (Gallup). How much could happiness save you?</p>
+						<a href="<?php echo home_url(); ?>/services/roi-calculator/" class="button moderateviolet">LET’S CALCULATE!</a>
+					</div>
+				</div>
+			</div>
+			<div class="col right-col">
+				<div class="work-survey">
+					<div class="content">
+						<div class="v-aling"><h3>Take the<br/>happiness at<br/>work survey</h3></div>
+					</div>
+				</div>
+				<div class="hover-content">
+					<div class="v-aling">
+						<p>Are you happy at work? The results will show what you like and what needs to change.</p>
+						<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="button moderateviolet">LET’S GO!</a>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 <!-- /Get involved section-->

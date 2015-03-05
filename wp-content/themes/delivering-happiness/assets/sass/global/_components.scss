@@ -652,6 +652,11 @@ td {
             @include bg-img-only(product-graphic, png, no-repeat, center, center);
         }
     }
+    .download-product {
+        .content {
+            @include bg-img-only(hellobgicon, png, no-repeat, center, center);
+        }
+    }
 }
 
 .over-the-globe {
