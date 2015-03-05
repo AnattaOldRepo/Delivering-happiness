@@ -48,7 +48,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p></p>
-						<a href="#" class="button moderateviolet">Download</a>
+						<a href="#" class="button blue">Download</a>
 					</div>
 				</div>
 			</div>
@@ -61,7 +61,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Unhappy employees cost the U.S. $550 billion a year (Gallup). How much could happiness save you?</p>
-						<a href="<?php echo home_url(); ?>/services/roi-calculator/" class="button moderateviolet">LET’S CALCULATE!</a>
+						<a href="<?php echo home_url(); ?>/services/roi-calculator/" class="button blue">LET’S CALCULATE!</a>
 					</div>
 				</div>
 			</div>
@@ -74,7 +74,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-						<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="button moderateviolet">LET’S GO!</a>
+						<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
