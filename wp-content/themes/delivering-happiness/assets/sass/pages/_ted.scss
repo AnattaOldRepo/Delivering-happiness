@@ -2,6 +2,7 @@
 // Ted
 // --------------------------------------------------
 .ted-landing-page{
+    padding-top:30px;
     .ted-hero-banner{
         padding:45px 0 0 0;
         @include size(100% , 504px);
@@ -16,7 +17,7 @@
         
         h6{
             color:$White;
-            margin-bottom:20px;
+            margin-bottom:25px;
             @extend %pharagraph-level-1;
             @extend %museo_slab;
             font-weight:500;
@@ -25,14 +26,15 @@
             }
         }
         h1{
-            margin-bottom:0px;
+            margin-bottom:5px;
         }
         h5{
             word-spacing:8px;
+            margin-bottom:25px;
             @extend %heading-level-12;
             @extend .cl1;
             .tx{
-                top:-5px;
+                top:0px;
                 @extend %relative;
                 @extend %heading-level-2;
             }
@@ -60,17 +62,19 @@
                 background:$bg-color5 url('#{$imagedir}/hellobgicon.png') no-repeat center center;
             }
             &.col2{
-                margin-left:20px;
+                width:350px;
+                border-left: 20px solid $White;
+                border-right: 20px solid $White;
                 background:$bg-color5 url('#{$imagedir}/calculateicon.png') no-repeat center;
             }
             &.col3{
-                margin-left:20px;
                 background:$bg-color5 url('#{$imagedir}/happinessicon.png') no-repeat center;
             }
             span{
                 color:$White;
                 @include font-shorthand(30px, normal, normal);
                 @extend %block-level;
+                @extend %text-center;
             }
         }
     }
