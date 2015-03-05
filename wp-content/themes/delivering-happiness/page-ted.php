@@ -48,7 +48,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p></p>
-						<a href="#" class="button blue">Download</a>
+						<a href="#" class="button blue" onclick="jQuery('#download_roadmap_form').show();return false;">Download</a>
 					</div>
 				</div>
 			</div>
@@ -74,9 +74,28 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-						<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="button blue">LET’S GO!</a>
+						<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey-old/" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="rounded-block happy-work">
+		<div class="wrapper">
+			<div class="modal-box" id="download_roadmap_form" style="display:none;">
+				<p>Please enter your information below to download our free Hello Doc. and find out how Delivering Happiness helps organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success. </p>
+				<?php gravity_form(6, true, true, false, null, true); ?>
+				<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
+				<span class="close">close</span>
+			</div>
+			<div class="container">
+				<article class="content">
+					<h2>Let’s Make Happy Work<sup>TM</sup>. <span>Ready to plan your journey?</span></h2>
+					<p><a href="#" class="button moderateviolet modal-box-handler" onclick="jQuery('#download_roadmap_form').show();return false;">DOWNLOAD HELLO DOC.</a>
+					We believe happiness at work is a journey. We’ve created a roadmap with five simple steps, combining the science of happiness and the experience of Zappos and other leading companies to help your organization create its own unique work culture, increase happiness and build success. Learn more by downloading our Hello Doc.</p>
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/work-animation-demo.png" alt="" />
+				</article>
 			</div>
 		</div>
 	</section>
