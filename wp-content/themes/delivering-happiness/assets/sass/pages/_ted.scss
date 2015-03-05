@@ -5,8 +5,10 @@
     padding-top:30px;
     .ted-hero-banner{
         padding:40px 0 0 0;
-        @include size(100% , 504px);
+        width:100%;
+        min-height:504px;
         @include bg-img(ted_hero_banner, jpg, no-repeat, center, top);
+        background-color:$Black;
         @extend %text-center;
         .cl{
             color:$text-color6;
@@ -27,10 +29,11 @@
         }
         h1{
             margin-bottom:0px;
+            line-height:0px;
         }
         h5{
             word-spacing:8px;
-            margin-bottom:20px;
+            margin-bottom:15px;
             @extend %heading-level-12;
             @extend .cl1;
             .tx{
@@ -43,7 +46,7 @@
             color:$White;
             font-family:Arial;
             @extend %heading-level-12;
-            padding:0 0 15px 0;
+            padding:0 0 18px 0;
         }
     }
     article.content{
@@ -69,12 +72,29 @@
         .gform_wrapper{
             padding:0px;
             margin:0px;
-        }
-        .gform_wrapper .gform_footer{
-            margin:0px;
-            padding:0px;
+            .gform_footer{
+                margin:0px;
+                padding:0px;
+            }
+            div.validation_error{
+                font-size: 10px;
+                font-weight: normal;
+                padding: 0;
+                margin:0px;
+            }
+            li.gfield.gfield_error.gfield_contains_required{
+                margin:0px !important; 
+                padding:0px !important;
+                background:none;
+                border:none;
+            }
+            .ginput_container , .gfield_description.validation_message , .ginput_container{
+                margin:0px !important;
+                padding:0px !important;
+            }
         }
         .gform_footer{
+            @extend %text-center;
             .button{
                 background:none;
                 border:none;
