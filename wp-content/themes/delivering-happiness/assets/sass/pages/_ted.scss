@@ -32,20 +32,22 @@
             line-height:0px;
         }
         .heading{
-            margin-bottom:15px;
+            padding-bottom:10px;
             display:table;
             margin:0px auto;
             @extend %ohide;
         }
         h5{
-            margin:0 10px;
+            margin:15px 10px;
             word-spacing:6px;
             @extend %heading-level-12;
             @extend .cl1;
             @extend %pull-left;
+            @extend %relative;
             .tx{
-                top:0px;
-                @extend %relative;
+                top:-21px;
+                left:0px;
+                @extend %absolute;
                 @extend %heading-level-2;
             }
         }
@@ -122,5 +124,25 @@
         .wrapper{
             padding:90px 61px 90px;
         }
+    }
+    .happy-work{
+        .modal-box .gform_wrapper .top_label .ginput_container{
+            display: table;
+            float: none;
+            margin: 0 auto;
+            width: 50%;
+        }
+        .modal-box .gform_wrapper .top_label .ginput_container input{
+            padding:10px;
+            @extend %text-center;
+            margin:0px;
+        }
+       .modal-box p{
+        float:none;
+       }
+       .gform_wrapper .gform_footer{
+        margin:0px;
+        padding:0px;
+       }
     }
 }

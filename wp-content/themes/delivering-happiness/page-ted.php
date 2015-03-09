@@ -12,7 +12,7 @@ get_header();
 			<h6>"There is a difference between <span class="cl1">knowing</span> the path and <span class="cl">walking</span> the path."<br/> <smal><i>Morpheus</i>, The Matrix</smal></h6>
 			<h1><img src="<?php bloginfo('template_url') ?>/assets/images/global/ted_logo.jpg"></h1>
 			<div class="heading">
-				<h5><span class="tx">87%</span>&nbsp; of the world’s <br/> <span class="cl">work.... with happiness</span> </h5>
+				<h5><span class="tx">87%</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of the world’s <br/> <span class="cl">work.... with happiness</span> </h5>
 				<h5><span class="cl">to change the way we</span><br/>work.... with happiness</span></h5>
 			</div>
 			
@@ -26,21 +26,6 @@ get_header();
 			</article>
 		</section>
 	</div>	
-	<!--section class="ted-three-colum">
-		<div class="wrapper">
-			<div class="ted-three-row">
-				<a href="#" class="col1">
-					<span>Download our <br/>Hello doc</span>
-				</a>
-				<a href="#" class="col2">
-					<span>Calculate<br>your ROI<br/>in happiness</span>
-				</a>
-				<a href="#" class="col3">
-					<span>Take the<br/> Happiness at Work<br/> Survey</span>
-				</a>
-			</div>	
-		</div>
-	</section-->
 	<section class="three-column blue get-involved cross-fade">
 		<div class="wrapper">
 			<div class="col left-col">
@@ -86,13 +71,11 @@ get_header();
 	</section>
 
 	<section class="rounded-block happy-work">
-		<div class="wrapper">
-			<div class="modal-box" id="download_roadmap_form" style="display:none;">
-				<p>Please enter your information below to download our free Hello Doc. and find out how Delivering Happiness helps organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success. </p>
-				<?php gravity_form(6, true, true, false, null, true); ?>
-				<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
-				<span class="close">close</span>
-			</div>
+		<div class="modal-box" id="download_roadmap_form" style="display:none;">
+			<p>Please enter your information below to download our free Hello Doc. and find out how Delivering Happiness helps organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success. </p>
+			<?php gravity_form(6, true, true, false, null, true); ?>
+			<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
+			<span class="close">close</span>
 		</div>
 	</section>
 <!-- /Get involved section-->
