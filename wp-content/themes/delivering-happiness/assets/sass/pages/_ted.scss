@@ -31,11 +31,18 @@
             margin-bottom:0px;
             line-height:0px;
         }
-        h5{
-            word-spacing:8px;
+        .heading{
             margin-bottom:15px;
+            display:table;
+            margin:0px auto;
+            @extend %ohide;
+        }
+        h5{
+            margin:0 10px;
+            word-spacing:6px;
             @extend %heading-level-12;
             @extend .cl1;
+            @extend %pull-left;
             .tx{
                 top:0px;
                 @extend %relative;
@@ -46,7 +53,7 @@
             color:$White;
             font-family:Arial;
             @extend %heading-level-12;
-            padding:0 0 18px 0;
+            padding:0 0 22px 0;
         }
     }
     article.content{
@@ -54,7 +61,7 @@
         margin:0px auto 10px auto;
         background:#0092c6;
         border:1px solid $White;
-        border-radius:4px;
+        border-radius:10px;
         padding:12px;
         .ginput_container{
             margin-bottom:10px;
@@ -62,7 +69,7 @@
                 width:100%;
                 color:#99999a;
                 border:1px solid #bfbebf;
-                border-radius:4px;
+                border-radius:5px;
                 padding:0px;
                 @include font-shorthand(12px, normal, 28px);
                 @extend %museo_slab;
@@ -73,8 +80,20 @@
             padding:0px;
             margin:0px;
             .gform_footer{
+                padding:10px 0 0 0;
                 margin:0px;
-                padding:0px;
+                @extend %text-center;
+                .button{
+                    @include bg-img(join-btn-txt, png, no-repeat, center, center);
+                    border:none;
+                    padding:0px;
+                    width:240px;
+                    height:24px;
+                    font-size:0px;
+                    text-transform:uppercase;
+                    color:$White;
+                    cursor: pointer;
+                }
             }
             div.validation_error{
                 font-size: 10px;
@@ -97,53 +116,11 @@
                 padding:0px !important;
             }
         }
-        .gform_footer{
-            padding-top:5px;
-            @extend %text-center;
-            .button{
-                background:none;
-                border:none;
-                padding:0px;
-                height:24px;
-                text-transform:uppercase;
-                color:$White;
-                font-family:Arial;
-                cursor: pointer;
-                @include font-shorthand(20px, normal, normal);
-            }
-        }
+        
     }
-    .ted-three-colum{
-        padding:90px 0;
-        .ted-three-row{
-            display:table;
-            margin:0px auto;
-            @extend %ohide;
-        }
-        a{
-            display: table-cell;
-            vertical-align: middle;
-            @include square(310px);
-            @extend text-center;
-            @extend %museo_slab;
-            &.col1{
-                background:$bg-color5 url('#{$imagedir}/hellobgicon.png') no-repeat center center;
-            }
-            &.col2{
-                width:350px;
-                border-left: 20px solid $White;
-                border-right: 20px solid $White;
-                background:$bg-color5 url('#{$imagedir}/calculateicon.png') no-repeat center;
-            }
-            &.col3{
-                background:$bg-color5 url('#{$imagedir}/happinessicon.png') no-repeat center;
-            }
-            span{
-                color:$White;
-                @include font-shorthand(30px, normal, normal);
-                @extend %block-level;
-                @extend %text-center;
-            }
+    .three-column{
+        .wrapper{
+            padding:90px 61px 90px;
         }
     }
 }
