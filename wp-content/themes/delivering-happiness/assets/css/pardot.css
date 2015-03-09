@@ -1,0 +1,110 @@
+body{
+    padding: :0px;
+    margin:0px;
+}
+@font-face{font-family:"Museo Slab";src:url("../fonts/Museo_Slab_500.eot?") format("eot"),url("../fonts/Museo_Slab_500.ttf") format("woff"),url("../fonts/Museo_Slab_500.woff") format("woff"),url("../fonts/Museo_Slab_500.ttf") format("truetype")}
+.form-wrapper{
+    font-family:"Museo Slab" , Arial;
+    background:#fff;
+    color:#666;
+    margin:0px auto;
+    max-width:0px;
+}
+.form-content{
+    border: 0px solid #dfdfdf;
+    padding: 0;
+    font-family:"Museo Slab" , Arial;
+}
+.form-content p.form-field{
+    padding:0 0 25px 0;
+    margin:0px;
+}
+.form-content form.form span.value{
+    display: block;
+    margin-top: 15px;
+}
+.form-content .form p label.field-label{
+    clear: both;
+    display: block;
+    font-weight: bold;
+    line-height: 1.3em;
+    margin: 0px 0 6px 0;
+    padding:0 !important;
+    color:#666;
+    font-size:14px;
+    font-family:"Museo Slab" , Arial;
+}
+.form-content .form p .value span{
+    line-height: 1.3em;
+    font-size:14px;
+    color:#666 !important;
+    display:inline-block;
+    margin:0 16px 7px 0;
+}
+.form-content .form p .value span label{
+    line-height: 1.3em;
+    font-size:13px;
+    color:#666 !important;
+    font-weight: semibold;
+    font-family:"Museo Slab" , Arial;
+    padding:0px;
+   
+}
+.form-content .form p .value input{
+    margin-left:0px;
+    padding-left:0px;
+    margin-right:10px;
+    padding-left:5px;
+}
+.form-content input.text , .form-content textarea , .form-content select {
+    border: 2px solid #cbcbcb;
+    outline:none;
+    padding:9px;
+    width:450px;
+    font-size:13px;
+}
+form.form input.date {
+    background: url("http://go.deliveringhappiness.com/images/calendar.png") no-repeat scroll 4px center rgba(0, 0, 0, 0);
+    border: 2px solid #cbcbcb;
+    outline:none;
+    padding:9px 9px 9px 25px;
+    font-size:13px;
+    font-family:"Museo Slab" , Arial;
+}
+.form-content .centerform{
+    display: table;
+    margin:0px auto;
+}
+.form-content p.submit{text-align:left;}
+.form-content p.submit input{
+    background-color: rgba(1, 152, 207, 0.2);
+    border: 1px solid #0198cf;
+    color: #0198cf;
+    font-size:14px;
+    font-family:"Museo Slab" , Arial;
+    cursor: pointer;
+    border-radius: 13px;
+    letter-spacing: 1px;
+    padding: 17px 35px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.form-content p.errors{
+    background-color: #ffdfe0;
+    border-bottom: 1px solid #c89797;
+    border-top: 1px solid #c89797;
+    margin-bottom: 20px;
+    padding:10px;
+    color:#ff0000;
+    font-size:14px;
+    font-family:"Museo Slab" , Arial;
+}
+.form-content p.error.no-label{
+    color:#ff0000;
+    margin:-15px 0 20px 0;
+    padding:5px 0px;
+    font-size:13px;
+    font-family:"Museo Slab" , Arial;
+}
