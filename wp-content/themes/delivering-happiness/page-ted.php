@@ -12,8 +12,8 @@ get_header();
 			<h6>"There is a difference between <span class="cl1">knowing</span> the path and <span class="cl">walking</span> the path."<br/> <smal><i>Morpheus</i>, The Matrix</smal></h6>
 			<h1><img src="<?php bloginfo('template_url') ?>/assets/images/global/ted_logo.jpg"></h1>
 			<div class="heading">
-				<h5 align="right"><span class="tx">87%</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; of the world’s <br/> workforce is unhappy </h5>
-				<h5><span class="cl">to change the way we <br/>work.... with happiness</span></h5>
+				<h5 align="right"><span class="tx">87%</span>of the world’s<br/>workforce is unhappy </h5>
+				<h5 align="left"><span class="cl">to change the way we <br/>work.... with happiness</span></h5>
 			</div>
 			<p>
 				At Delivering Happiness we provide coaching and consulting services to help organizations <br/>
@@ -62,7 +62,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-						<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey-old/" class="button blue">LET’S GO!</a>
+						<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
