@@ -87,10 +87,10 @@
                 @extend %text-center;
                 .button{
                     @include bg-img(join-btn-txt, png, no-repeat, center, center);
-                    background-size:157px 14px;
+                    background-size:180px 14px;
                     border:none;
                     padding:0px;
-                    width:157px;
+                    width:200px;
                     height:14px;
                     font-size:0px;
                     text-transform:uppercase;
