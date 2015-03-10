@@ -86,7 +86,7 @@
                 margin:0px;
                 @extend %text-center;
                 .button{
-                    @include bg-img(join-btn-txt, png, no-repeat, center, center);
+                    //@include bg-img(join-btn-txt, png, no-repeat, center, center);
                     border:none;
                     padding:0px;
                     width:240px;
@@ -95,6 +95,18 @@
                     text-transform:uppercase;
                     color:$White;
                     cursor: pointer;
+                    &:before{
+                        content:'DARE TO JOIN US';
+                        text-transform:uppercase;
+                        color:$White;
+                        cursor: pointer;
+                        margin:0px;
+                        top:0px;
+                        left:0px;
+                        @include font-shorthand(20px, normal, normal);
+                        @extend %museo_slab;
+                        @extend %relative;
+                    }
                 }
             }
             div.validation_error{
