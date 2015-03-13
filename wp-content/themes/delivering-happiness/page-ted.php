@@ -13,7 +13,7 @@ get_header();
 			<h1><img src="<?php bloginfo('template_url') ?>/assets/images/global/ted_logo.jpg"></h1>
 			<div class="heading">
 				<h5 align="right"><span class="tx">87%</span>of the world’s<br/>workforce is unhappy </h5>
-				<h5 align="left"><span class="cl">to change the way we <br/>work.... with happiness</span></h5>
+				<h5 align="left"><span class="cl">to change the way we <br/>work... with happiness</span></h5>
 			</div>
 			<p>
 				At Delivering Happiness we provide coaching and consulting services to help organizations <br/>
