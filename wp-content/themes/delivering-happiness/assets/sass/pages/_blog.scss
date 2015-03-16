@@ -10,6 +10,8 @@
         @extend %pull-left;
         width: 864px;
     }
+
+    
     .right-col {
         @extend %pull-right;
         width: 256px;
@@ -120,18 +122,17 @@
                     margin-bottom: 10px;
                     @extend %text-center;
                     @include bg-img-only(leadbox_bg1, png, no-repeat, right, bottom);
-                    padding:30px 58px 25px 58px;
+                    padding: 30px 58px 25px 58px;
                     p {
                         padding: 0;
                         span {
-                            font-size: 16px;
-                            line-height: 18px;
                             @include font-shorthand(15.4px, 500, 20px);
-                            color: #777 !important ;
+                            color: #777 !important;
                             a {
                                 color: #0099cc;
                                 text-decoration: none;
-                                &:hover{
+                                &:hover {
+
                                     text-decoration: underline;
                                 }
                             }
@@ -283,7 +284,7 @@
                 @extend %heading-level-10;
                 line-height: 3em;
             }
-            a{
+            a {
                 color: white;
             }
         }
@@ -333,7 +334,9 @@
             }
         }
     }
+   
 }
+
 .status-publish {
     h2 {
         color: $Blue;

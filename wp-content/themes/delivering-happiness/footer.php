@@ -51,7 +51,10 @@
 					</ul>
 				</div>
 				<div class="block keep-in-touch">
-					<?php gravity_form(2, true, true, false, null, true); ?>
+					<article class="content">
+						<?php gravity_form(2, true, true, false, null, true); ?>
+					</article>
+					<br/>
 					<div class="social">
 						<a href="https://www.facebook.com/deliveringhappiness" target="_blank" class="social-facebook">Facebook</a>
 						<a href="https://twitter.com/dhmovement" target="_blank" class="social-twitter">Twitter</a>
@@ -60,7 +63,7 @@
 					</div>
 					<div class="gtranslate">
 						<?php 
-						if(function_exists('register_foo_widget')) {
+						if(function_exists('register_glt_widget')) {
 							echo do_shortcode('[google-translator]'); //code for including google language translator
 						}
 						?>
@@ -93,7 +96,7 @@
 
 		<div class="modal-box" id="calculate_roi_form" style="display:none;">
 			<p>Please enter your information below to find out how much happiness could save you!</p>
-			<?php gravity_form(20, true, true, false, null, true); ?>
+			<?php gravity_form(7, true, true, false, null, true); ?>
 			<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
 			<span class="close" id="close1">close</span>
 		</div>

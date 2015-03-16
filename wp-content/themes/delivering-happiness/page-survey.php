@@ -67,6 +67,7 @@ get_header();
 				<h2>The survey itself</h2>
 				<p>The flow of the 40-question, 10-minute survey is simple and engaging. Each question is benchmarked to the appropriate national average so participants can explore their results, put them into context, and take direct action to increase their happiness at work.</p>
 				<p>Individual results are shown immediately with colorful visuals. Results identify highlights and lowlights in a dynamic and interactive model that encourages discovery. Key benefits include: individual anonymity, aggregated organization and team results, and filtering for specific dimensions and demographics.</p>
+
 				<a href="<?php echo home_url(); ?>/services/happiness-at-work-survey-inquiry/" class="button blue">LEARN MORE, OR GET THE SURVEY<br> FOR YOUR ORGANIZATION</a>
 			</div>
 			<div  class="sidebar right-col" >
