@@ -3,7 +3,7 @@
 // --------------------------------------------------
 .ted-landing-page{
     padding-top:30px;
-    @media (max-width: $screen-sm-max) {
+    @media (max-width: 767px) {
         padding-top:20px;
     }
     .ted-hero-banner{
@@ -13,7 +13,7 @@
         @include bg-img(ted_hero_banner, jpg, no-repeat, center, top);
         background-color:$Black;
         @extend %text-center;
-        @media (max-width: $screen-sm-max) {
+        @media (max-width: 767px) {
             padding:20px 10px;
         }
         .cl{
@@ -33,7 +33,7 @@
                 @extend %pharagraph-level-5;
             }
             br{
-                @media (max-width: $screen-sm-max) {
+                @media (max-width: 767px) {
                     display:none;
                 }
             }
@@ -58,7 +58,7 @@
             @extend .cl1;
             @extend %pull-left;
             @extend %relative;
-            @media (max-width: $screen-sm-max) {
+            @media (max-width: 767px) {
                 font-size:13px;
                 margin:15px 2px;
             }
@@ -67,7 +67,7 @@
                 left:0px;
                 @extend %absolute;
                 @extend %heading-level-2;
-                 @media (max-width: $screen-sm-max) {
+                 @media (max-width: 767px) {
                     font-size:25px;
                     top:-25px;
                  }
@@ -78,11 +78,11 @@
             font-family:Arial;
             @extend %heading-level-12;
             padding:0 0 22px 0;
-            @media (max-width: $screen-sm-max) {
+            @media (max-width: 767px) {
                 font-size:13px;
             }
             br{
-                @media (max-width: $screen-sm-max) {
+                @media (max-width: 767px) {
                     display:none;
                 }
             }
@@ -95,7 +95,7 @@
         border:1px solid $White;
         border-radius:10px;
         padding:12px;
-        @media (max-width: $screen-sm-max) {
+        @media (max-width: 767px) {
             width:100%;
         }
         .ginput_container{
@@ -158,7 +158,7 @@
     .three-column{
         .wrapper{
             padding:90px 61px 90px;
-            @media (max-width: $screen-sm-max) {
+            @media (max-width: 767px) {
                 padding:40px 10px 40px;
             }
         }

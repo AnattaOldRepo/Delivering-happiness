@@ -21,7 +21,7 @@ get_header();
 				We're changing the world, by making happy work.
 			</p>
 			<article class="content">
-				<iframe src="http://go.deliveringhappiness.com/l/66522/2015-03-16/9cpy" width="100%" height="auto" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+				<iframe src="http://go.deliveringhappiness.com/l/66522/2015-03-16/9cpy" width="100%" height="67" type="text/html" frameborder="0" allowTransparency="true" style="border: 0" scrolling="no"></iframe>
 			</article>
 		</section>
 	</div>	
