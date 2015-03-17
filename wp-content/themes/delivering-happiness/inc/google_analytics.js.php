@@ -11,6 +11,7 @@
 
 
 <?php
+if(!function_exists('add_conversion_tracking_code_roi')) {
 function add_conversion_tracking_code_roi($button, $form) {
 	$dom = new DOMDocument();
 	$dom->loadHTML($button);
@@ -24,4 +25,4 @@ function add_conversion_tracking_code_roi($button, $form) {
 }
 
 add_filter( 'gform_submit_button_20', 'add_conversion_tracking_code_roi', 10, 2);
-
+}
