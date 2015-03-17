@@ -10,3 +10,19 @@
 </script>
 
 
+<?php
+if(!function_exists('add_conversion_tracking_code_roi')) {
+function add_conversion_tracking_code_roi($button, $form) {
+	$dom = new DOMDocument();
+	$dom->loadHTML($button);
+	$input = $dom->getElementsByTagName('input')->item(0);
+	if ($input->hasAttribute('onclick')) {
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms', eventAction: 'Calculate your Happiness ROI', eventLabel: 'ROI Calculator Form'});".$input->getAttribute("onclick"));
+	} else {
+		$input->setAttribute("onclick","ga('send', 'event', { eventCategory: 'Forms', eventAction: 'Calculate your Happiness ROI', eventLabel: 'ROI Calculator Form'});");
+	}
+	return $dom->saveHtml();
+}
+
+add_filter( 'gform_submit_button_20', 'add_conversion_tracking_code_roi', 10, 2);
+}

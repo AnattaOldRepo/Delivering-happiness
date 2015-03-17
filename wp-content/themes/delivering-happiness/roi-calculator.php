@@ -74,6 +74,7 @@ $(function() {
 			}, 300);
 		}
 	});
+
 	$("input#number-of-org").keypress(function() {
 			var value = $("#number-of-org").val();
 			setTimeout(function() {

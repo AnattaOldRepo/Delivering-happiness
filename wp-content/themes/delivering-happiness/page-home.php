@@ -295,6 +295,4 @@ get_header();
 		</div>
 	</div>
 </section>
-
-<!-- /Blog section-->
 <?php get_footer(); ?>
