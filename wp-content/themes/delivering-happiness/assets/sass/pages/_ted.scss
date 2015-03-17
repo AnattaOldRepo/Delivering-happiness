@@ -1,0 +1,187 @@
+//
+// Ted
+// --------------------------------------------------
+.ted-landing-page{
+    padding-top:30px;
+    @media (max-width: 767px) {
+        padding-top:20px;
+    }
+    .ted-hero-banner{
+        padding:40px 0 20px 0;
+        width:100%;
+        min-height:504px;
+        @include bg-img(ted_hero_banner, jpg, no-repeat, center, top);
+        background-color:$Black;
+        @extend %text-center;
+        @media (max-width: 767px) {
+            padding:20px 10px;
+        }
+        .cl{
+            color:$text-color6;
+        }
+        .cl1{
+            color:$text-color4;
+        }
+        
+        h6{
+            color:$White;
+            margin-bottom:20px;
+            @extend %pharagraph-level-1;
+            @extend %museo_slab;
+            font-weight:500;
+            small{
+                @extend %pharagraph-level-5;
+            }
+            br{
+                @media (max-width: 767px) {
+                    display:none;
+                }
+            }
+        }
+        h1{
+            margin-bottom:0px;
+            line-height:0px;
+            img{
+                max-width:100%;
+            }
+        }
+        .heading{
+            padding-bottom:15px;
+            display:table;
+            margin:0px auto;
+            @extend %ohide;
+        }
+        h5{
+            margin:15px 18px;
+            word-spacing:2px;
+            @extend %heading-level-12;
+            @extend .cl1;
+            @extend %pull-left;
+            @extend %relative;
+            @media (max-width: 767px) {
+                font-size:12px;
+                margin:15px 2px;
+            }
+            .tx{
+                top:-24px;
+                left:0px;
+                @extend %absolute;
+                @extend %heading-level-2;
+                 @media (max-width: 767px) {
+                    font-size:25px;
+                    top:-25px;
+                 }
+            }
+        }
+        p{
+            color:$White;
+            font-family:Arial;
+            @extend %heading-level-12;
+            padding:0 0 22px 0;
+            @media (max-width: 767px) {
+                font-size:13px;
+            }
+            br{
+                @media (max-width: 767px) {
+                    display:none;
+                }
+            }
+        }
+    }
+    article.content{
+        width:315px;
+        margin:0px auto 10px auto;
+        background:#0092c6;
+        border:1px solid $White;
+        border-radius:10px;
+        padding:12px;
+        @media (max-width: 767px) {
+            width:100%;
+        }
+        .ginput_container{
+            margin-bottom:10px;
+            input{
+                width:100%;
+                color:#99999a;
+                border:1px solid #bfbebf;
+                border-radius:5px;
+                padding:0px;
+                @include font-shorthand(12px, normal, 28px);
+                @extend %museo_slab;
+                @extend %text-center;
+            }
+        }
+        .gform_wrapper{
+            padding:0px;
+            margin:0px;
+            max-width: 100%;
+            .gform_footer{
+                padding:10px 0 0 0;
+                margin:0px;
+                @extend %text-center;
+                .button{
+                    @include bg-img(join-btn-txt, png, no-repeat, center, center);
+                    background-size:180px 14px;
+                    border:none;
+                    padding:0px;
+                    width:200px;
+                    height:14px;
+                    font-size:0px;
+                    text-transform:uppercase;
+                    color:$White;
+                    cursor: pointer;
+                }
+            }
+            div.validation_error{
+                font-size: 10px;
+                font-weight: normal;
+                padding:5px 0;
+                margin:0px;
+            }
+            li.gfield.gfield_error.gfield_contains_required{
+                margin:0px !important; 
+                padding:0px !important;
+                background:none;
+                border:none;
+            }
+            .ginput_container , .ginput_container{
+                margin:0px !important;
+                padding:0px !important;
+            }
+            .gfield_description.validation_message{
+                margin:5px 0px !important;
+                padding:0px !important;
+            }
+        }
+        
+    }
+    
+    .three-column{
+        .wrapper{
+            padding:90px 61px 90px;
+            @media (max-width: 767px) {
+                padding:40px 10px 40px;
+            }
+        }
+    }
+    .happy-work{
+        .modal-box .gform_wrapper .top_label .ginput_container{
+            display: table;
+            float: none;
+            margin: 0 auto;
+            width: 50%;
+        }
+        .modal-box .gform_wrapper .top_label .ginput_container input{
+            padding:10px;
+            @extend %text-center;
+            margin:0px;
+        }
+       .modal-box p{
+        float:none;
+       }
+       .gform_wrapper .gform_footer{
+        margin:0px;
+        padding:0px;
+       }
+    }
+}
