@@ -89,7 +89,7 @@
 		</div>
 		<div class="modal-box" id="vhp_form" style="display:none;">
 			<p>Great! Your inbox is about to get a whole lot happier. Please enter your details, and find out how Delivering Happiness helps organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success. </p>
-			<iframe src="http://go.deliveringhappiness.com/l/66522/2015-03-25/blwc" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+			<iframe src="http://go.deliveringhappiness.com/l/66522/2015-03-25/blwc" width="100%" height="500" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
 			<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
 			<span class="close">close</span>
 		</div>
