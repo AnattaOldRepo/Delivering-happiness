@@ -22,12 +22,11 @@ get_header(); ?>
 						<p class="designation"><?php the_field( 'designation' ); ?><br/><?php the_field( 'role' ); ?></p>
 						<div class="media">
 							<img src="<?php $image = get_field( 'image' ); echo $image['url']; ?>" alt="<?php the_title(); ?>" />
-						</div>
-						<p class="designation">
 							<?php if( !empty($headshot) ) { ?>
-								<a href="<?php echo $headshot['url']; ?>" target="_blank">Download Headshot</a>
+								<p class="designation"><a href="<?php echo $headshot['url']; ?>" target="_blank">Download Headshot</a></p>
 							<?php } ?>
-						</p>
+						</div>
+						
 						<div class="content">
 							<?php the_field( 'facebook' ); ?>
 							<?php the_field( 'twitter' ); ?>
