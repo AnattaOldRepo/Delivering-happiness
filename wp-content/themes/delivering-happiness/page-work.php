@@ -8,24 +8,16 @@ get_header();
 
 <!-- Work page-->
 <div class="work">
-	<section class="two-column hero">
+    <section class="one-column hero">
 		<div class="wrapper">
-			<div class="right-col">
-				<div class="media">
-					<img src="<?php bloginfo('template_url')?>/assets/images/global/work_hero.jpg" alt="" />
-				</div>
-			</div>
-			<div class="left-col oderate-violet-area">
-				<article class="content">
-					<blockquote>“Get the culture right,<br/>&nbsp;and everything<br/>&nbsp;else just falls into place.” </blockquote>
-					<span>~ Tony Hsieh</span>
-					<a href="/services/culture-call/" class="button">SCHEDULE A Free Culture Call</a>
-				</article>
-			</div>
-			
+			<h2>
+				Is your company<br/>
+				ready to <em>Make</em><br/>
+				<em>Happy</em> Work<sup>™</sup>?
+			</h2>
+			<a href="/services/culture-call/" class="button">LET’S GET STARTED!</a>
 		</div>
 	</section>
-
 	<section class="rounded-block happy-work">
 		<div class="wrapper">
 			<div class="modal-box" id="download_roadmap_form" style="display:none;">

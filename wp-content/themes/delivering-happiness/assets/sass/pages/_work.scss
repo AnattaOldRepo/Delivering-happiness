@@ -7,6 +7,36 @@
     @media (max-width: $screen-sm-max) {
         margin-top: 0;
     }
+     .one-column{
+    	&.hero{
+    		.wrapper{
+    			@include bg-img(service-horo, jpg, no-repeat, center, top);
+    			height: 544px;
+    			position: relative;
+    			background-size: cover;
+    			padding-top: 82px;
+    			padding-left: 65px;
+    		}
+    		h2 {
+    		    @include text-shadow(rgba(black, 0.3) 1px 1px 0);
+    		    @include font-shorthand(51px, normal, 61px);
+    		    color: $White;
+    		    letter-spacing: 0.01em;
+    		    margin-bottom: 45px;
+    		}
+    		em{
+    			font-style: italic;
+    		}
+    		.button{
+    			@include font-shorthand(16px, 600, 60px);
+    			background-color: $bg-color5;
+    			color: $White;
+    			width: 243px;
+    			padding: 0;
+    			margin-left: 0;
+    		}
+    	}
+    }
     .hero {
         .content {
             padding: 107px 0px 105px 59px;
