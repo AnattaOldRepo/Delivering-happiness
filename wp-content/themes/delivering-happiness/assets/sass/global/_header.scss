@@ -49,6 +49,11 @@
                 overflow: hidden;
                 line-height: 1.9;
                 z-index: 999;
+                sup{
+                    font-size: 10px;
+                    position: relative;
+                    top: -8px;
+                  }
             }
             &:hover {
                 .message {

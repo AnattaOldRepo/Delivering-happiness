@@ -11,8 +11,8 @@ get_header();
     <section class="hero-banner">
       <img src="<?php bloginfo('template_url') ?>/assets/images/press/hero-banner.jpg" alt="Let's make happy work!" class="banner-img" />
       <div class="banner-text">
-        Let's make<br/>
-        happy work<sup>TM</sup>!
+        Let's <i>make<br/>
+        happy work<sup>TM</sup>!</i>
       </div>
       <aside>
         <p>
@@ -27,17 +27,17 @@ get_header();
       <h2>SPEAKING POINTS</h2>
       <div class="row">
         <article class="col-lg-6">
-          <h4>Happiness as a Business Model</h4>
+          <h4><i>Happiness as a Business Model</i></h4>
           <p>Making dollars and sense of why an investment in happiness will increase your productivity, profitability and sustainability as a company.</p>
-          <h4>Living with Passion and Purpose</h4>
+          <h4><i>Living with Passion and Purpose</i></h4>
           <p>Jenn’s personal life lessons and discoveries through her own journey with Delivering Happiness, Zappos and her passion and purpose to inspire happier companies and communities, that together, create a happier world for all.</p>
-          <h4>Starting, Scaling and Sustaining Culture </h4>
+          <h4><i>Starting, Scaling and Sustaining Culture</i> </h4>
           <p>Key learnings and insights from working with over 250 companies in various stages of culture evolution, all towards creating a distinct culture of values that can be scaled and sustained for long-term growth.</p>
         </article>
         <article class="col-lg-6">
-          <h4>Culture as a Competitive Advantage</h4>
+          <h4><i>Culture as a Competitive Advantage</i></h4>
           <p>Over a decade of research shows that a culture of happiness is    becoming one of the biggest competitive advantages in today’s economy. Happy employees who work with passion and purpose perform at consistently high levels, multiplying their effectiveness and raising business outcomes.</p>
-          <h4>The Story of CEO Tony Hsieh and Zappos </h4>
+          <h4><i>The Story of CEO Tony Hsieh and Zappos </i></h4>
           <p>Building an enduring brand through WOW customer service and a values-based company culture – from selling shoes to delivering happiness!</p>
         </article>
       </div>
@@ -54,7 +54,7 @@ get_header();
             Along with her responsibilities as CHO (Chief Happiness Officer), Jenn Lim travels around the world to deliver a message of passion, purpose, culture, and happiness.
           </p>
           <p>
-            Jenn has been a consultant with Zappos from its start-up days in 2003 to the $2B business it is today. She created the Zappos Culture Book, an embodiment of how companies can use happiness as a business model to increase productivity and profitability. Jenn’s experience with Zappos, combined with her development of scientific frameworks for workplace happiness, created the evidence that happier employees = happier customers = successful companies (and meaningful lives). What’s more, she discovered that every organization can have similar results. 
+            Jenn has been a consultant with Zappos from its start-up days in 2003 to the $2B business it is today. She created the Zappos Culture Book, an embodiment of how companies can use happiness as a business model to increase productivity and profitability. Jenn’s experience with Zappos, combined with her development of scientific frameworks for workplace happiness, created the evidence that <i>happier employees = happier customers = successful companies (and meaningful lives).</i> What’s more, she discovered that every organization can have similar results. 
           </p>
           <p>
             Today, Jenn is dedicated to growing DH to inspire happiness in people, companies and communities so that together, we can create a happier world.

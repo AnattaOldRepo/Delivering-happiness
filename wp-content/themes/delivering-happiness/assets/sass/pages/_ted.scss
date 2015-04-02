@@ -52,7 +52,7 @@
             @extend %ohide;
         }
         h5{
-            margin:15px 18px;
+            margin:15px 21px;
             word-spacing:2px;
             @extend %heading-level-12;
             @extend .cl1;
@@ -73,6 +73,7 @@
                  }
             }
         }
+        
         p{
             color:$White;
             font-family:Arial;
