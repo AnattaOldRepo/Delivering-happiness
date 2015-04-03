@@ -66,7 +66,7 @@
 	}
 
 	.service-form{
-		@include size(469px, 569px);
+		@include size(469px, auto);
 		background-color: $Blue;
 		color: $White;
 		display: block;
@@ -77,9 +77,71 @@
 			background-size: cover;
 			display: block;
 			margin: 5px auto 0;
+			font-size: 25px;
 		}
 		label{
 			color: $White;
+		}
+	}
+	&.post-event{
+		.hero{
+			.wrapper{
+				@include bg-img(post-event-hero, jpg, no-repeat, center, top);
+			}
+			h2 {
+			    @include font-shorthand(64px, normal, 77px);
+			}
+			.copy{
+				padding-top: 124px;
+				padding-right: 83px;
+			}
+		}
+		.grab-btn-icon{
+			@include size(38px, 38px);
+			@include bg-img(grab-btn-icon, jpg, no-repeat, center, top);
+			background-size: cover;
+			display: inline-block;
+			margin-top: -10px;
+			vertical-align: middle;
+			margin-left: 21px;
+		}
+
+		.two-column{
+			.left-col{
+				padding-top: 50px;
+				height: 659px;
+				p{
+					@include font-shorthand(17px, normal, 19px);
+					margin-bottom: 22px;
+					&.inspired-text{
+						text-align: center;
+						margin-top: -6px;
+						margin-bottom: 14px;
+					}
+				}
+				a{
+					color: $Blue;
+				}
+				.button{
+					@include size(530px, 73px);
+					padding: 0;
+					background-color: $Black;
+					color: $White;
+					@include font-shorthand(19px, 600, 73px);
+					margin-top: 19px;
+					visibility: middle;
+				}
+			}
+			.right-col{
+				.service-form{
+					h3{
+						@include size(auto, auto);
+						background: none;
+						text-align: center;
+					}
+				}	
+			}
+			
 		}
 	}
 }
