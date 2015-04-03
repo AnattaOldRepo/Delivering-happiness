@@ -14,12 +14,17 @@ get_header(); ?>
 		</div>
 		<div id="primary" class="page-content">
 			<main id="main" class="site-main" role="main">
-				<?php if ( have_posts() ) : ?>
+				<?php if ( have_posts() ) : 
+					$headshot = get_field( 'full_color_headshot_image' );
+				?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
 						<p class="designation"><?php the_field( 'designation' ); ?><br/><?php the_field( 'role' ); ?></p>
 						<div class="media">
 							<img src="<?php $image = get_field( 'image' ); echo $image['url']; ?>" alt="<?php the_title(); ?>" />
+							<?php if( !empty($headshot) ) { ?>
+								<p class="designation"><a href="<?php echo $headshot['url']; ?>" target="_blank">Download Headshot</a></p>
+							<?php } ?>
 						</div>
 						<div class="content">
 							<?php the_field( 'facebook' ); ?>
