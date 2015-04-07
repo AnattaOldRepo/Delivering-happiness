@@ -151,6 +151,9 @@ form.form input.date {
 	float: left;
 	width: 50%;
 }
+.service-request-page-form .email{
+	clear: both;
+}
 .service-request-page-form .city, .service-request-page-form .state, .service-request-page-form .country{
 	float: left;
 	width: 33.33%;
