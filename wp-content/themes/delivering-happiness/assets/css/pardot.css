@@ -108,3 +108,78 @@ form.form input.date {
     font-size:13px;
     font-family:"Museo Slab" , Arial;
 }
+
+.service-request-page-form *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+.service-request-page-form .form p label.field-label{
+	color: #fff;
+	font-size: 11px;
+	display: table-cell;
+	width: 1%;
+	white-space: nowrap;
+	vertical-align: middle;
+	min-width: 68px;
+}
+.service-request-page-form input.text, .service-request-page-form textarea, .service-request-page-form select{
+	border: 0;
+	height: 24px;
+	position: relative;
+	z-index: 2;
+	float: left;
+	width: 100%;
+	margin-bottom: 0;
+	display: table-cell;
+}
+.service-request-page-form .first_name, .service-request-page-form .last_name{
+	float: left;
+	width: 50%;
+}
+.service-request-page-form .city, .service-request-page-form .state, .service-request-page-form .country{
+	float: left;
+	width: 33.33%;
+}
+
+.service-request-page-form .employees{
+	clear: both;
+}
+.service-request-page-form .employees select{
+	width: 118px;
+	margin-left: 10px;
+}
+.service-request-page-form p.form-field{
+	position: relative;
+	display: table;
+	border-collapse: separate;
+	padding-bottom: 13px;
+	padding-left: 6px;
+}
+
+.service-request-page-form .form .Importance_of_Employee_Happiness label.field-label{
+	display: block;
+	padding-top: 10px;
+	width: 100%;
+}
+.service-request-page-form form.form span.value span{
+	text-align: center;
+}
+.service-request-page-form form.form span.value input{
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+}
+.service-request-page-form form.form span.value span label{
+	color: #fff !important;
+}
+.service-request-page-form form.form p.submit input{
+	background-color: #000000;
+	color: #ffffff;
+	padding: 0;
+	width: 90px;
+	height: 35px;
+	margin: 0 auto;
+	display: block;
+}
