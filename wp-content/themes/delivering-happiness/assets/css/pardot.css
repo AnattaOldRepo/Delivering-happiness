@@ -123,6 +123,19 @@ form.form input.date {
 	white-space: nowrap;
 	vertical-align: middle;
 	min-width: 68px;
+	padding: 5px 2px 0 0 !important;
+}
+.service-request-page-form p.errors{
+	margin-top: 0;
+}
+.service-request-page-form .form p span.error.no-label{
+	position: absolute;
+	right: 0;
+	font-size: 11px;
+	color: red;
+	bottom: 0;
+	width: 100%;
+	text-align: right;
 }
 .service-request-page-form input.text, .service-request-page-form textarea, .service-request-page-form select{
 	border: 0;
@@ -143,8 +156,10 @@ form.form input.date {
 	width: 33.33%;
 }
 
-.service-request-page-form .employees{
+.service-request-page-form p.form-field.employees{
 	clear: both;
+	padding-top: 18px;
+	padding-bottom: 25px;
 }
 .service-request-page-form .employees select{
 	width: 118px;
@@ -162,6 +177,7 @@ form.form input.date {
 	display: block;
 	padding-top: 10px;
 	width: 100%;
+	white-space: inherit;
 }
 .service-request-page-form form.form span.value span{
 	text-align: center;
