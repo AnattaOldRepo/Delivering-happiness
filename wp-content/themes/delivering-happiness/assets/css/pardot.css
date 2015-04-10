@@ -167,6 +167,23 @@ form.form input.date {
 .service-request-form .form-field{
 	margin-bottom: 11px;
 	clear: both;
+	position: relative;
+}
+.service-request-form p.errors{
+	font-size: 11px;
+	color: white;
+	background-color: rgb(203, 31, 42);
+	padding: 4px 5px;
+	border: 1px solid #fff;
+}
+.service-request-form span.error{
+	position: absolute;
+	font-size: 10px;
+	width: 100%;
+	bottom: -10px;
+	right: 0;
+	text-align: right;
+	color: red;
 }
 .service-request-form .form-field.first_name, .service-request-form .form-field.last_name, .service-request-form .form-field.email, .service-request-form .form-field.phone{
 	float: left;
