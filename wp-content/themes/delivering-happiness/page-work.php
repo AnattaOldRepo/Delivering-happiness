@@ -15,7 +15,7 @@ get_header();
 				ready to <em>Make</em><br/>
 				<em>Happy</em> Work<sup>™</sup>?
 			</h2>
-			<a href="/services/culture-call/" class="button">LET’S GET STARTED!</a>
+			<a href="/service-request/" class="button">LET’S GET STARTED!</a>
 		</div>
 	</section>
 	<section class="rounded-block happy-work">
