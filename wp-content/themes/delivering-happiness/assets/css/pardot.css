@@ -169,6 +169,7 @@ form.form input.date {
 	margin-bottom: 11px;
 	clear: both;
 	position: relative;
+	min-height: 25px;
 }
 .service-request-form .errors{
 	font-size: 11px;
@@ -186,30 +187,36 @@ form.form input.date {
 	text-align: right;
 	color: red;
 }
-.service-request-form .form-field.first_name, .service-request-form .form-field.last_name, .service-request-form .form-field.email, .service-request-form .form-field.phone{
+.service-request-form .form-field.first_name, .service-request-form .form-field.last_name, .service-request-form .form-field.email, .service-request-form .form-field.phone, .service-request-form.post-engagement-form .form-field.job_title{
 	float: left;
 	width: 50%;
 	clear: none;
 }
-.service-request-form .form-field.last_name{
+.service-request-form .form-field.company, .service-request-form .form-field.phone, .service-request-form .form-field.last_name, .service-request-form.post-engagement-form .form-field.job_title{
 	text-align: right;
 }
-.service-request-form .form-field.phone{
-	text-align: right;
-}
-.service-request-form .form-field.first_name .text, .service-request-form .form-field.last_name .text, .service-request-form .form-field.email .text, .service-request-form .form-field.phone .text, .service-request-form .form-field.pd-number .text{
+
+.service-request-form .form-field.first_name .text, .service-request-form .form-field.last_name .text, .service-request-form .form-field.email .text, .service-request-form .form-field.phone .text, .service-request-form .form-field.pd-number .text, .service-request-form.post-engagement-form .form-field.job_title .text{
 	width: 142px;
 }
 .service-request-form .form-field.city, .service-request-form .form-field.state, .service-request-form .form-field.country{
 	float: left;
 	clear: none;
 }
-.service-request-form .form-field.job_title .text{
+.service-request-form .form-field.job_title .text, .service-request-form.service-request-form .form-field.company .text{
 	width: 357px;
 	float: right;
 }
-.service-request-form .form-field.company{
-	text-align: right;
+.service-request-form.service-request-form .form-field.Event_Attended .select{
+	width: 264px;
+	float: right;
+}
+.service-request-form.service-request-form .form-field.Other_Source .text{
+	width: 213px;
+	float: right;
+}
+.service-request-form.service-request-form .form-field.company{
+	text-align: left;
 }
 .service-request-form .form-field.company .field-label{
 	letter-spacing: -0.05em;
