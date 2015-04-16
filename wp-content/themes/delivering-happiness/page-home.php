@@ -121,7 +121,7 @@ get_header();
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/chart.png" alt="placeholder" />
 				</div>
 			</div>
-			<a href="/services/roi-calculator" class="button blue">Calculate your happiness ROI</a>
+			<a href="/services/calculate-your-roi" class="button blue">Calculate your happiness ROI</a>
 		</div>
 	</div>
 </section>
