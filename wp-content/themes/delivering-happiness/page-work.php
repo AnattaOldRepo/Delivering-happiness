@@ -56,13 +56,13 @@ get_header();
 			<div class="col middle-col">
 				<div class="schedule-call">
 					<div class="content">
-						<div class="v-aling"><h3>Schedule<br/>a free<br/>culture call</h3></div>
+						<div class="v-aling"><h3>Join<br/>a <br/>culture call</h3></div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Start the conversation, and find inspiration for free. Schedule a free 30-minute culture call (or discovery call) with us.</p>
-						<a href="/services/culture-call/" class="button moderateviolet">LET’S TALK!</a>
+						<p>Join the culture conversation, discuss challenges, and discover opportunities for your organization’s growth.</p>
+						<a href="/services/culture-call/" class="button moderateviolet">Let's Talk Culture!</a>
 					</div>
 				</div>
 			</div>
@@ -226,13 +226,13 @@ get_header();
 			<div class="container">
 				<div class="clear">
 					<article class="content">
-						<h2>Talk to us. It’s free.<span>What’s the state of your culture?</span></h2>
-						<p>Whether it’s a phone call, email or hi-five, we’re here to help. A free 30-minute discovery call to look at the challenges and opportunities of your culture in light of your goals, identify what’s next for your journey, and consider how happiness and the DH model can help bring your dream culture to life. </p>
+						<h2>​Join the Culture conversation!<span>What’s the state of your culture?</span></h2>
+						<p>Culture calls are our way of starting the conversation around culture and happiness in the workplace. We're offering free sessions to discuss the challenges and opportunities of your company's unique culture and to connect you with a global community of culture-minded leaders. During these sessions, we provide insights and solutions based on cutting-edge research, best practice, and global consulting experience. Join us for a session and discover how happiness and the DH model can help bring your ideal culture to life. </p>
 						
 					</article>
 					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/callon.png" alt="" /></div>
 				</div>
-				<div class="cta"><a href="/services/culture-call/ " class="button moderateviolet">SCHEDULE A Free Culture Call</a></div>
+				<div class="cta"><a href="/services/culture-call/ " class="button moderateviolet">​​​Join a Culture Call</a></div>
 			</div>
 		</div>
 	</section>
