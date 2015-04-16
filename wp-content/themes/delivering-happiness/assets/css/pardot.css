@@ -137,7 +137,7 @@ form.form input.date {
 .service-request-form label{
 	color: #ffffff;
 	font-size: 11px;
-	font-weight: normal;
+	font-weight: 600;
 	display: inline-block;
 }
 .service-request-form .field-label{
@@ -163,20 +163,21 @@ form.form input.date {
 	height: 25px;
 	border: 0;
 	background-color: #fff;
+	padding-left: 5px;
 }
 .service-request-form .form-field{
 	margin-bottom: 11px;
 	clear: both;
 	position: relative;
 }
-.service-request-form p.errors{
+.service-request-form .errors{
 	font-size: 11px;
 	color: white;
 	background-color: rgb(203, 31, 42);
 	padding: 4px 5px;
 	border: 1px solid #fff;
 }
-.service-request-form span.error{
+.service-request-form .error{
 	position: absolute;
 	font-size: 10px;
 	width: 100%;
@@ -196,7 +197,7 @@ form.form input.date {
 .service-request-form .form-field.phone{
 	text-align: right;
 }
-.service-request-form .form-field.first_name .text, .service-request-form .form-field.last_name .text, .service-request-form .form-field.email .text, .service-request-form .form-field.phone .text{
+.service-request-form .form-field.first_name .text, .service-request-form .form-field.last_name .text, .service-request-form .form-field.email .text, .service-request-form .form-field.phone .text, .service-request-form .form-field.pd-number .text{
 	width: 142px;
 }
 .service-request-form .form-field.city, .service-request-form .form-field.state, .service-request-form .form-field.country{
@@ -285,4 +286,5 @@ form.form input.date {
 	-webkit-border-radius: 13px;
 	border-radius: 13px;
 	cursor: pointer;
+	font-weight: 600;
 }
