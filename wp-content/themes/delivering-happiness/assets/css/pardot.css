@@ -154,7 +154,7 @@ form.form input.date {
 .service-request-form span.value span{
 	display: inline-block;
 	text-align: center;
-	padding: 0 13px;
+	padding: 0 12px;
 }
 .service-request-form span.value label{
 	display: block;
