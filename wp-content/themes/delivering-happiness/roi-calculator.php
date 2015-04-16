@@ -40,7 +40,7 @@ $(function() {
 
 		//function for displaying roi form
 		if( getvar !== null && getvar !== undefined &&  getvar !==  '' ) {
-			$('#calculate_roi_form').hide();
+			//$('#calculate_roi_form').hide();
 		} else {
 			$('#calculate_roi_form').show();
 		}
