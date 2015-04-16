@@ -144,7 +144,7 @@ form.form input.date {
 	line-height: 25px;
 	letter-spacing: -0.02em;
 	padding-right: 3px;
-	min-width: 58px;
+	min-width: 63px;
 }
 .service-request-form span.value{
 	display: block;
@@ -209,11 +209,11 @@ form.form input.date {
 	float: right;
 }
 .service-request-form .form-field.post-engagement-event-attend .select{
-	width: 264px;
+	width: 255px;
 	float: right;
 }
 .service-request-form .form-field.post-engagement-other-source .text{
-	width: 213px;
+	width: 205px;
 	float: right;
 }
 .service-request-form .form-field.company.post-engagement-company-field{
