@@ -11,7 +11,16 @@
  */
 
 get_header(); ?>
-
+<?php if( is_page('calculate-your-roi') ) { ?>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript">
+	$(function() {
+		$(document).ready(function () {
+	      	$('#calculate_roi_form').show();
+		});
+	});
+</script>
+<?php } ?>
 
 <div class="one-column-template">
 	<div class="wrapper">
