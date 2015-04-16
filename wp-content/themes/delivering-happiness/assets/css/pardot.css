@@ -203,19 +203,19 @@ form.form input.date {
 	float: left;
 	clear: none;
 }
-.service-request-form .form-field.job_title .text, .service-request-form.service-request-form .form-field.company .text{
+.service-request-form .form-field.job_title .text, .service-request-form.post-engagement-form .form-field.company .text{
 	width: 357px;
 	float: right;
 }
-.service-request-form.service-request-form .form-field.Event_Attended .select{
+.service-request-form.post-engagement-form .form-field.Event_Attended .select{
 	width: 264px;
 	float: right;
 }
-.service-request-form.service-request-form .form-field.Other_Source .text{
+.service-request-form.post-engagement-form .form-field.Other_Source .text{
 	width: 213px;
 	float: right;
 }
-.service-request-form.service-request-form .form-field.company{
+.service-request-form.post-engagement-form .form-field.company{
 	text-align: left;
 }
 .service-request-form .form-field.company .field-label{
