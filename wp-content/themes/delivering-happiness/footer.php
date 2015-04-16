@@ -33,7 +33,7 @@
 				<div class="block resources">
 					<h4><a href="<?php echo home_url(); ?>/resources">Resources</a></h4>
 					<ul>
-						<li><a href="<?php echo home_url(); ?>/services/calculate-your-roi/">ROI Calculator</a></li>
+						<li><a href="<?php echo home_url(); ?>/services/roi-calculator/">ROI Calculator</a></li>
 						<li><a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/">Happiness at Work Survey</a></li>
 						<li><a href="<?php echo home_url(); ?>/services/request-presentation">Request Presentation</a></li>
 						<li><a href="<?php echo home_url(); ?>/resources/books">Book Recommendations</a></li>
@@ -96,7 +96,8 @@
 
 		<div class="modal-box" id="calculate_roi_form" style="display:none;">
 			<p>Please enter your information below to find out how much happiness could save you!</p>
-			<iframe src="http://go.deliveringhappiness.com/l/66522/2015-03-31/cgg1" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+			<!--iframe src="http://go.deliveringhappiness.com/l/66522/2015-03-31/cgg1" width="100%" height="500" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe-->
+			<?php gravity_form(7, true, true, false, null, true); ?>
 			<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
 			<span class="close" id="close1">close</span>
 		</div>
