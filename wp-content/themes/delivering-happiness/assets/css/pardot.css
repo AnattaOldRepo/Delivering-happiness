@@ -142,9 +142,9 @@ form.form input.date {
 }
 .service-request-form .field-label{
 	line-height: 25px;
-	letter-spacing: -0.02em;
+	letter-spacing: -0.02em;	
 	padding-right: 3px;
-	min-width: 63px;
+	min-width: 60px;
 }
 .service-request-form span.value{
 	display: block;
@@ -256,7 +256,8 @@ form.form input.date {
 	letter-spacing: 0;
 }
 .service-request-form .form-field.employees .select{
-	width: 117px;
+	width: 142px;
+	float: right;
 }
 .service-request-form .form-field.Importance_of_Employee_Happiness{
 	padding-top: 7px;
@@ -265,8 +266,11 @@ form.form input.date {
 .service-request-form .form-field.Importance_of_Employee_Happiness .field-label, .service-request-form .form-field.Company_Culture_Pain_Point .field-label{
 	letter-spacing: -0.01em;
 }
-.service-request-form .form-field.Company_Culture_Pain_Point .standard, .service-request-form .form-field.Company_Culture_Pain_Point .text, .service-request-form .form-field.Company_Culture_Pain_Point .select{
+.service-request-form .form-field.Company_Culture_Pain_Point .standard, .service-request-form .form-field.Company_Culture_Pain_Point .text{
 	width: 143px;
+}
+.service-request-form .form-field.Company_Culture_Pain_Point .select{
+	width: 206px;
 }
 .service-request-form .form-field.Newsletter_Opt_in{
 	padding-top: 10px;

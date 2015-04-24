@@ -24,6 +24,14 @@
 		    @include font-shorthand(54px, normal, 63px);
 		    color: $White;
 		    letter-spacing: 0;
+		    sup{
+		    	font-size: 21px;
+		    	position: relative;
+		    	top: -20px;
+		    	line-height: 0;
+		    	font-style: normal;
+		    	left: 4px;
+		    }
 		}
 	}
 	.two-column{
