@@ -310,3 +310,39 @@ form.form input.date {
 	cursor: pointer;
 	font-weight: 600;
 }
+
+.service-request-form.roi-calculator{
+	max-width: 740px;
+	margin: 0 auto;
+	width: 100%;
+	background-color: #fff;
+}
+.service-request-form.roi-calculator .text, .service-request-form.roi-calculator .select, .service-request-form.roi-calculator .standard{
+	border: 1px solid #cbcbcb;
+}
+.service-request-form.roi-calculator .form-field.email .text, .service-request-form.roi-calculator .form-field.company .text, .service-request-form.roi-calculator .form-field.first_name .text, .service-request-form.roi-calculator .form-field.last_name .text, .service-request-form.roi-calculator .form-field.email .text{
+	width: 80%;
+}
+.service-request-form.roi-calculator .form-field.employees .select{
+	float: left;
+	width: 33.3%;
+}
+.service-request-form.roi-calculator .form-field.company{
+	float: left;
+	width: 50%;
+	clear: none;
+}
+.service-request-form.roi-calculator label, .service-request-form.roi-calculator .field-label{
+	font-weight: normal;
+	color: #000;
+}
+
+.service-request-form.roi-calculator .submit input[type="submit"]{
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgba(1,152,207,0.2);
+	border: 1px solid #0198cf;
+	color: #0198cf;
+	font-weight: normal;
+}
