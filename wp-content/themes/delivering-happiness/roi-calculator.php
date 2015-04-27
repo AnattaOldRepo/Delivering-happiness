@@ -119,11 +119,6 @@ $("input#number-of-org").keydown(function(event) {
 			}
 		});
 
-	$('#calculate_roi_form').find('.close').click(function(){
-      	$('#calculate_roi_form').hide();
-      	$(this).parent().hide();
-    });
-
 });
 function formatNumbers(nStr) {
 	nStr = Math.round(nStr).toFixed(2);
