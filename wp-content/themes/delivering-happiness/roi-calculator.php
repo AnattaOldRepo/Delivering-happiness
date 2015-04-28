@@ -31,10 +31,22 @@ get_header();
 	</div>
 </div>
 </div>
+<section class="rounded-block happy-work">
+	<div class="">
+		<div class="modal-box" id="calculate_roi_form" style="display:none;">
+			<p>Please enter your information below to find out how much happiness could save you!</p>
+			<iframe src="http://go.deliveringhappiness.com/l/66522/2015-03-31/cgg1" width="100%" height="300" type="text/html" frameborder="0" allowTransparency="true" style="border: 0"></iframe>
+			<p>We value your privacy. Read our <a href="/privacy/">Privacy Policy</a>.</p>
+			<span class="close" id="close1">close</span>
+		</div>
+	</div>
+</section>
 <!-- /Work page-->
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script><script type="text/javascript">
 $(function() {
 	$(document).ready(function () {
+
+		$('#calculate_roi_form').show();
 		
 		var value = $("#number-of-org").val();
 		if (value.length > 0) {
