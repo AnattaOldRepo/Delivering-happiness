@@ -227,7 +227,7 @@ get_header();
 				<div class="clear">
 					<article class="content">
 						<h2>​Join the Culture conversation!<span>What’s the state of your culture?</span></h2>
-						<p>Culture calls are our way of starting the conversation around culture and happiness in the workplace. We're offering free sessions to discuss the challenges and opportunities of your company's unique culture and to connect you with a global community of culture-minded leaders. During these sessions, we provide insights and solutions based on cutting-edge research, best practice, and global consulting experience. Join us for a session and discover how happiness and the DH model can help bring your ideal culture to life. </p>
+						<p>Culture calls are our way of starting the conversation around culture and happiness in the workplace. We're offering free sessions to discuss the challenges and opportunities of your company's unique culture and to connect you. During these sessions, we provide insights and solutions based on cutting-edge research, best practice, and global consulting experience. Join us for a session and discover how happiness and the DH model can help bring your ideal culture to life. </p>
 						
 					</article>
 					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/callon.png" alt="" /></div>
