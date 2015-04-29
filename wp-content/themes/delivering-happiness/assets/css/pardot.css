@@ -137,7 +137,7 @@ form.form input.date {
 .service-request-form label{
 	color: #ffffff;
 	font-size: 11px;
-	font-weight: 600;
+	font-weight: 400;
 	display: inline-block;
 }
 .service-request-form .field-label{
@@ -161,6 +161,7 @@ form.form input.date {
 	display: block;
 }
 .service-request-form .text, .service-request-form .select, .service-request-form .standard{
+	border-radius: 0;
 	height: 25px;
 	border: 0;
 	background-color: #fff;
@@ -219,7 +220,7 @@ form.form input.date {
 	float: right;
 }
 .service-request-form .form-field.post-engagement-event-attend .select{
-	width: 255px;
+	width: 235px;
 	float: right;
 }
 .service-request-form .form-field.post-engagement-other-source .text{
@@ -287,8 +288,12 @@ form.form input.date {
 	text-align: center;
 	margin-bottom: 8px;
 }
+.service-request-form .form-field.Newsletter_Opt_in span.value input[type="checkbox"]{
+	vertical-align: bottom;
+}
 .service-request-form .form-field.Newsletter_Opt_in span.value label{
 	display: inline-block;
+	vertical-align: middle;
 }
 .service-request-form .submit{
 	margin: 0;

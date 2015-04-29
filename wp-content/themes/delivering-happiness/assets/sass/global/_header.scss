@@ -160,14 +160,15 @@
                 margin-left: 5px;
             }
             .search-field {
-                border: 0 none;
-                //font-weight: bold;
+                border: 0;
+            	background-color: $White;
                 color: $text-color2;
                 font-size: 12px;
                 line-height: 12px;
                 font-style: italic;
                 padding-top: 3px;
                 @extend %museo_slab;
+                -webkit-appearance: none;
                 @include size(125px, 32px);
                 &:focus {
                     border: 0 none;
