@@ -131,7 +131,7 @@ get_header();
 <!-- Get involved section-->
 <section class="three-column blue get-involved cross-fade">
 	<div class="wrapper">
-		<h2>Get involved:</h2>
+		<h2>Take the first step:</h2>
 		<div class="col left-col">
 			<div class="work-survey">
 				<div class="content">
@@ -151,26 +151,26 @@ get_header();
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/shop-graphic.jpg" alt="" />
 				</div>
 				<div class="content small">
-					<div class="v-aling"><h3>Shop</h3></div>
+					<div class="v-aling"><h3>Live Happy</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Inspire. Connect. Educate and Experience. Products that remind us of why happiness isn’t a fleeting thought, it’s a way to live.</p>
-					<a href="/shop" class="button blue">Let's Shop!</a>
+					<a href="/shop" class="button blue">Let's Live Happy!</a>
 				</div>
 			</div>
 		</div>
 		<div class="col right-col">
 			<div class="schedule-call">
 				<div class="content">
-					<div class="v-aling"><h3>Schedule<br/>a free<br/>culture call</h3></div>
+					<div class="v-aling"><h3> Join a <br/>culture call</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
-					<p>Start the conversation, and find inspiration for free. Schedule a free 30-minute culture call (or discovery call) with us.</p>
-					<a href="/services/culture-call/" class="button blue">Let's Talk!</a>
+					<p>Join the culture conversation, discuss challenges, and discover opportunities for your organization’s growth.</p>
+					<a href="/services/culture-call/" class="button blue">Let's Talk Culture!</a>
 				</div>
 			</div>
 		</div>
