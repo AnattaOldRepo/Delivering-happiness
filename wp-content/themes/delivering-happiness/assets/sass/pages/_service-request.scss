@@ -136,9 +136,9 @@
 					padding: 0;
 					background-color: $Black;
 					color: $White;
-					@include font-shorthand(18px, 600, 73px);
+					@include font-shorthand(18px, normal, 73px);
 					margin-top: 19px;
-					visibility: middle;
+					vertical-align: middle;
 				}
 			}
 			.right-col{
