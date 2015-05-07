@@ -257,7 +257,7 @@ get_header();
 		</div>
 	</section>
 
-	<section class="three-column oderate-violet get-involved cross-fade">
+	<!--section class="three-column oderate-violet get-involved cross-fade">
 		<div class="wrapper">
 			<h2>Get involved:</h2>
 			<div class="col left-col">
@@ -308,7 +308,7 @@ get_header();
 				</div>
 			</div>
 		</div>
-	</section>
+	</section-->
 
 	<!-- Calculation graph section-->
 	<section class="rounded-block calculation">
