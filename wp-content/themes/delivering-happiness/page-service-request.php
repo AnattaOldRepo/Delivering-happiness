@@ -22,28 +22,47 @@ get_header();
     <section class="two-column">
 		<div class="wrapper">
 			<div class="col left-col">
-				<h3>Kickstart your culture [or keep it growing] with a <em>Delivering Happiness Workshop Experience</em></h3>
+				<h3>EXPERIENCE | Let’s do a workshop together</h3>
 				<p>
-					Each Delivering Happiness Workshop Experience is designed to educate your team on the role of culture, higher purpose, and happiness in the workplace, and to aid you as you work to grow your own sustainable company culture.
+					Delivering Happiness Workshop Experiences are designed to equip your team with the knowledge and tools to enable you to create sustainable culture and happiness in your workplace. 
 				</p>
 				<p>
-					Our workshop offerings include: 
+					We apply key elements from the science of happiness to optimize your team’s daily performance and increase your organization’s success. 
+				</p>
+				<p>
+					Areas of expertise:
 				</p>
 				<ul>
-				    <li><em>Make Happy Work<sup>™</sup></em></li>
-				    <li>Happy Science</li>
-				    <li>Happy Me/Happy We</li>
+				    <li><em>Core Values</em></li>
+				    <li><em>Sustainable Culture</em></li>
+				   	<li><em>Engagement</em></li>
+				   	<li><em>Happiness</em></li>
+				   	<li><em>Higher Purpose</em></li>
 				</ul>
 
-				<h3>DH CEO and Chief Happiness Officer Jenn Lim is ready to inspire with her <em>Keynote Presentation</em> for your community or organization.</h3>
+				<h3>COACH-SULTING | Let’s leverage culture as your competitive advantage</h3>
 				<p>
-					From Mount Kilimanjaro to Zappos.com and beyond, hear the story of Delivering Happiness straight from someone who lived it. Jenn will talk about how we're superbad at making decisions to increase our own happiness, how to define and live your own passion and purpose, and <br/>how higher purpose, combined with culture and happiness can lead your organization down the path to greater success.
+					Through a hybrid coaching + consulting approach, our team offers a best in class approach to business, culture, and strategy. We utilize a strong and simple roadmap to help guide you through the culture journey towards a more engaged, productive, and profitable workplace.
 				</p>
 				<h3>
-					Embed your culture [and showcase how your employees are living it] with your very own<br/><em>Culture Book.</em>
+					SPEAKING | Inspire your audience with happiness
 				</h3>
 				<p>
-					The Culture Book is a uniquely customized visual aid for your culture. <br/>It's a touchstone to where you are, and what you've already created, and a stepping stone to what you will be. Our Design Team is eager to work with your organization to deliver your Culture Book, in whatever format suits your team best: from a wholly digital experience to a fully customized hardcover yearbook-style volume.
+					Delivering Happiness speakers have inspired many individuals and organizations around the world to achieve their passion and purpose in work and life. Combining cutting-edge research, with unique experience and global insight, our speakers share the business case for happiness and how culture will be your competitive advantage.
+				</p>
+				<p>
+					Check out Delivering Happiness’ Co-Founder and Chief Happiness Officer [CHO], Jenn Lim: 
+				</p>
+				<ul>
+				    <li><a href="<?php echo home_url('/services/speaking/jenn-lim/'); ?>" target="_blank">Keynote Experience</a></li>
+				    <li><a href="https://www.youtube.com/watch?v=aAulKCXs64k" target="_blank">TEDxMidwest</a></li>
+				   	<li><a href="<?php echo home_url('/services/speaking/'); ?>" target="_blank">Request a speaker for your organization</a></li>
+				</ul>
+				<h3>
+					DESIGN | Let’s showcase your culture
+				</h3>
+				<p>
+					Your Culture Book is a uniquely designed tool that supports your efforts to sustain and scale your organizational culture in a WOW way.  Our Design Team will highlight how your culture connects, inspires, and lives through a beautifully designed company yearbook.
 				</p>
 			</div>
 			<div class="col right-col">
