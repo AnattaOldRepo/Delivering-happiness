@@ -45,6 +45,12 @@
 				font-style: normal;
 				margin-bottom: 12px;
 			}
+			a{
+				color: $Blue;
+				&:hover{
+					text-decoration: underline;
+				}
+			}
 			ul{
 				margin-left: 17px;
 				margin-bottom: 14px;
