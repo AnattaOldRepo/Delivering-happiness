@@ -13,7 +13,7 @@ get_header();
 			<h2>
 				Is your company<br/>
 				ready to <em>Make</em><br/>
-				<em>Happy</em> Work<sup>™</sup>?
+				<em>Happy Work</em><sup>™</sup>?
 			</h2>
 			<a href="/service-request/" class="button">LET’S GET STARTED!</a>
 		</div>
