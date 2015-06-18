@@ -1,8 +1,15 @@
+@font-face{font-family:"Museo Slab";src:url("../fonts/Museo_Slab_500.eot?") format("eot"),url("../fonts/Museo_Slab_500.ttf") format("woff"),url("../fonts/Museo_Slab_500.woff") format("woff"),url("../fonts/Museo_Slab_500.ttf") format("truetype")}
+
 body{
     padding: :0px;
     margin:0px;
+    font-family:"Museo Slab" , Arial;
+    -webkit-font-smoothing: antialiased;
 }
-@font-face{font-family:"Museo Slab";src:url("../fonts/Museo_Slab_500.eot?") format("eot"),url("../fonts/Museo_Slab_500.ttf") format("woff"),url("../fonts/Museo_Slab_500.woff") format("woff"),url("../fonts/Museo_Slab_500.ttf") format("truetype")}
+*{
+	-webkit-font-smoothing: antialiased;	
+}
+
 .form-wrapper{
     font-family:"Museo Slab" , Arial;
     background:#fff;
@@ -63,6 +70,10 @@ body{
     width:450px;
     font-size:13px;
 }
+.form-content input.text:focus , .form-content textarea:focus, .form-content select:focus{
+	outline: none;
+	box-shadow: none;
+}
 form.form input.date {
     background: url("http://go.deliveringhappiness.com/images/calendar.png") no-repeat scroll 4px center rgba(0, 0, 0, 0);
     border: 2px solid #cbcbcb;
@@ -109,78 +120,245 @@ form.form input.date {
     font-family:"Museo Slab" , Arial;
 }
 
-
-.service-request-page-form *{
+.service-request-form *{
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
 	box-sizing: border-box;
 	-webkit-font-smoothing: antialiased;
 }
-.service-request-page-form .form p label.field-label{
-	color: #fff;
+
+.service-request-form{
+	width: 421px;
+	overflow: hidden;
+	background-color: #0098cf;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+.service-request-form label{
+	color: #ffffff;
 	font-size: 11px;
-	display: table-cell;
-	width: 1%;
-	white-space: nowrap;
-	vertical-align: middle;
-	min-width: 68px;
+	font-weight: 400;
+	display: inline-block;
 }
-.service-request-page-form input.text, .service-request-page-form textarea, .service-request-page-form select{
-	border: 0;
-	height: 24px;
-	position: relative;
-	z-index: 2;
+.service-request-form .field-label{
+	line-height: 25px;
+	letter-spacing: -0.02em;	
+	padding-right: 3px;
+	min-width: 71px;
 	float: left;
-	width: 100%;
-	margin-bottom: 0;
-	display: table-cell;
 }
-.service-request-page-form .first_name, .service-request-page-form .last_name{
+.service-request-form span.value{
+	display: block;
+	clear: both;
+	margin: 0 -2px;
+}
+.service-request-form span.value span{
+	display: inline-block;
+	text-align: center;
+	padding: 0 12px;
+}
+.service-request-form span.value label{
+	display: block;
+}
+.service-request-form .text, .service-request-form .select, .service-request-form .standard{
+	border-radius: 0;
+	height: 25px;
+	border: 0;
+	background-color: #fff;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.service-request-form .form-field{
+	margin-bottom: 11px;
+	clear: both;
+	position: relative;
+	min-height: 25px;
+}
+.service-request-form .errors{
+	font-size: 11px;
+	color: white;
+	background-color: rgb(203, 31, 42);
+	padding: 4px 5px;
+	border: 1px solid #fff;
+}
+.service-request-form .error{
+	position: absolute;
+	font-size: 10px;
+	width: 100%;
+	bottom: -10px;
+	right: 0;
+	text-align: right;
+	color: red;
+}
+.service-request-form .form-field.first_name, .service-request-form .form-field.last_name, .service-request-form .form-field.email, .service-request-form .form-field.phone, .service-request-form .form-field.job_title.post-form-title{
 	float: left;
 	width: 50%;
+	clear: none;
 }
-.service-request-page-form .city, .service-request-page-form .state, .service-request-page-form .country{
+.service-request-form .form-field.phone, .service-request-form .form-field.last_name, .service-request-form .form-field.job_title.post-form-title{
+	text-align: right;
+}
+
+.service-request-form .form-field.company{
+	padding-left: 0;
+	text-align: right;
+}
+
+.service-request-form .form-field.first_name .text, .service-request-form .form-field.last_name .text, .service-request-form .form-field.email .text, .service-request-form .form-field.phone .text, .service-request-form .form-field.pd-number .text, .service-request-form .form-field.job_title.post-form-title .text{
+	width: 135px;
 	float: left;
-	width: 33.33%;
+}
+.service-request-form .form-field.job_title.post-form-title .text, .service-request-form .form-field.phone .text, .service-request-form .form-field.last_name .text{
+	float: right;
+}
+.service-request-form .form-field.city, .service-request-form .form-field.state, .service-request-form .form-field.country{
+	float: left;
+	clear: none;
+}
+.service-request-form .form-field.job_title .text, .service-request-form .form-field.company.post-engagement-company-field .text{
+	width: 350px;
+	float: right;
+}
+.service-request-form .form-field.post-engagement-event-attend .select{
+	width: 255px;
+	float: right;
+}
+.service-request-form .form-field.post-engagement-other-source .text{
+	width: 205px;
+	float: right;
+}
+.service-request-form .form-field.company.post-engagement-company-field{
+	text-align: left;
+}
+.service-request-form .form-field.company .field-label{
+	letter-spacing: -0.05em;
+	float: left;
+}
+.service-request-form .form-field.company .text{
+	width: 286px;
+}
+.service-request-form .form-field.city{
+	width: 156px;
+}
+.service-request-form .form-field.country{
+	padding-left: 8px;
+	float: right;
+}
+.service-request-form .form-field.city .text{
+	width: 79px;
+}
+.service-request-form .form-field.state .text{
+	width: 74px;
+}
+.service-request-form .form-field.country .text{
+	width: 95px;
+}
+.service-request-form .form-field.state, .service-request-form .form-field.country{
+	text-align: right;
 }
 
-.service-request-page-form .employees{
-	clear: both;
+.service-request-form .form-field.state .field-label, .service-request-form .form-field.country .field-label{
+	min-width: inherit;
 }
-.service-request-page-form .employees select{
-	width: 118px;
-	margin-left: 10px;
+.service-request-form .form-field.employees{
+	padding-top: 17px;
 }
-.service-request-page-form p.form-field{
-	position: relative;
-	display: table;
-	border-collapse: separate;
-	padding-bottom: 13px;
-	padding-left: 6px;
+.service-request-form .form-field.employees .field-label{
+	letter-spacing: 0;
 }
-
-.service-request-page-form .form .Importance_of_Employee_Happiness label.field-label{
-	display: block;
+.service-request-form .form-field.employees .select{
+	width: 135px;
+	float: right;
+}
+.service-request-form .form-field.Importance_of_Employee_Happiness{
+	padding-top: 7px;
+	margin-bottom: 13px;
+}
+.service-request-form .form-field.Importance_of_Employee_Happiness .field-label, .service-request-form .form-field.Company_Culture_Pain_Point .field-label{
+	letter-spacing: -0.01em;
+}
+.service-request-form .form-field.Company_Culture_Pain_Point .standard, .service-request-form .form-field.Company_Culture_Pain_Point .text{
+	width: 143px;
+}
+.service-request-form .form-field.Company_Culture_Pain_Point .select{
+	width: 206px;
+}
+.service-request-form .form-field.Newsletter_Opt_in{
 	padding-top: 10px;
-	width: 100%;
+	text-align: center;
+	margin-bottom: 8px;
 }
-.service-request-page-form form.form span.value span{
+.service-request-form .form-field.Newsletter_Opt_in span.value input[type="checkbox"]{
+	vertical-align: bottom;
+}
+.service-request-form .form-field.Newsletter_Opt_in span.value label{
+	display: inline-block;
+	vertical-align: middle;
+}
+.service-request-form .submit{
+	margin: 0;
+	padding: 0;
 	text-align: center;
 }
-.service-request-page-form form.form span.value input{
-	display: block;
-	margin: 0 auto;
-	padding: 0;
-}
-.service-request-page-form form.form span.value span label{
-	color: #fff !important;
-}
-.service-request-page-form form.form p.submit input{
-	background-color: #000000;
-	color: #ffffff;
-	padding: 0;
+.service-request-form .submit input[type="submit"]{
 	width: 90px;
 	height: 35px;
+	background-color: #000000;
+	border: 0;
+	color: #ffffff;
+	font-size: 14px;
+	font-family:"Museo Slab" , Arial;
+	text-transform: uppercase;
+	-moz-border-radius: 13px;
+	-webkit-border-radius: 13px;
+	border-radius: 13px;
+	cursor: pointer;
+	font-weight: 600;
+}
+.service-request-form .form-field.error{
+	position: relative;
+	bottom: 0;
+}
+.service-request-form.roi-calculator{
+	max-width: 740px;
 	margin: 0 auto;
-	display: block;
+	width: 100%;
+	background-color: #fff;
+}
+.service-request-form.roi-calculator .text, .service-request-form.roi-calculator .select, .service-request-form.roi-calculator .standard{
+	border: 1px solid #cbcbcb;
+	height: 34px;
+}
+.service-request-form.roi-calculator .form-field.email .text, .service-request-form.roi-calculator .form-field.company .text, .service-request-form.roi-calculator .form-field.first_name .text, .service-request-form.roi-calculator .form-field.last_name .text, .service-request-form.roi-calculator .form-field.email .text{
+	width: 70%;
+}
+.service-request-form.roi-calculator .form-field.employees .select{
+	float: left;
+	width: 24.6%;
+}
+.service-request-form.roi-calculator .form-field.company{
+	float: left;
+	width: 50%;
+	clear: none;
+}
+.service-request-form.roi-calculator label, .service-request-form.roi-calculator .field-label{
+	font-weight: normal;
+	color: #6A6A6A;
+}
+.service-request-form.roi-calculator label{
+	font-size: 16px;
+}
+.service-request-form.roi-calculator .field-label{
+	  min-width: 100px;
+	  line-height: 34px;
+}
+.service-request-form.roi-calculator .submit input[type="submit"]{
+	width: auto;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: rgba(1,152,207,0.2);
+	border: 1px solid #0198cf;
+	color: #0198cf;
+	font-weight: normal;
 }

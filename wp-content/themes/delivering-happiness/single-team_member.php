@@ -15,7 +15,7 @@ get_header(); ?>
 		<div id="primary" class="page-content">
 			<main id="main" class="site-main" role="main">
 				<?php if ( have_posts() ) : 
-				$headshot = get_field( 'full_color_headshot_image' );
+					$headshot = get_field( 'full_color_headshot_image' );
 				?>
 
 					<?php while ( have_posts() ) : the_post(); ?>
