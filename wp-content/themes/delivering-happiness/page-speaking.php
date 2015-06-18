@@ -7,7 +7,7 @@ get_header();
 ?>
 
 <!-- Work page-->
-<div class="service-request post-event">
+<div class="service-request">
     <section class="one-column hero">
 		<div class="wrapper">
 			<?php if ( have_posts() ) : ?>
@@ -26,43 +26,43 @@ get_header();
 			<?php endif; ?>
 		</div>
 	</section>
-    <section class="two-column">
+	<div class="one-column-template">
 		<div class="wrapper">
-		<?php
-		// check if the flexible content field has rows of data
-		if( have_rows('module') ):
+			<div class="page-header">
+				<h1><?php the_title() ?></h1>
+			</div>
+			<div id="primary" class="page-content">
+				<main id="main" class="site-main" role="main">
 
-		 	// loop through the rows of data
-		    while ( have_rows('module') ) : the_row();
+				<?php
+				// check if the flexible content field has rows of data
+				if( have_rows('module') ):
 
-				// check current row layout
-		        if( get_row_layout() == 'add_content' ):
+				 	// loop through the rows of data
+				    while ( have_rows('module') ) : the_row();
 
-		        	echo "<div>".the_sub_field('module_title')."</div>";
+						// check current row layout
+				        if( get_row_layout() == 'add_content' ):
+				        	echo "<div><h3>".get_sub_field('module_title')."</h3></div>";
+				        	echo "<div>".get_sub_field('module_content')."</div>";
+				        endif;
 
-		        	echo "<div>".the_sub_field('module_content')."</div>";
+				        if( get_row_layout() == 'add_blockquote' ): 
+				        	echo "<div><h3>Quote 1: </h3><blockquote>".get_sub_field('quote_1')."</blockquote></div>";
+				        	echo "<div><h3>Quote 2: </h3><blockquote>".get_sub_field('quote_2')."</blockquote></div>";
+				        endif;
 
-		        endif;
+				    endwhile;
+				else :
+				    // no layouts found
+				endif;
 
-		        if( get_row_layout() == 'add_blockquote' ): 
-
-		        	echo "<div><h3>Quote 1: </h3><blockquote>".the_sub_field('quote_1')."</blockquote></div>";
-
-		        	echo "<div><h3>Quote 2: </h3><blockquote>".the_sub_field('quote_2')."</blockquote></div>";
-
-		        endif;
-
-		    endwhile;
-
-		else :
-
-		    // no layouts found
-
-		endif;
-
-		?>
+				?>
+				</main><!-- #main -->
+			</div><!-- #primary -->
 		</div>
-	</section>
+	</div>
+
 </div>
 <!-- /Work page-->
 <?php get_footer(); ?>
