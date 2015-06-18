@@ -19,7 +19,7 @@ get_header();
 			</div>
 		</div>
 	</section>
-    <section class="two-column">
+    <section class="one-column-template">
 		<div class="wrapper">
 			<div class="col left-col">
 				<h3>EXPERIENCE | Let’s do a workshop together</h3>
