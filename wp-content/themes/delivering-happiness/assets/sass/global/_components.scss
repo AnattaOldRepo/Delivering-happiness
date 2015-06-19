@@ -1038,3 +1038,126 @@ sup {
     cursor: pointer;
 }
 
+
+// 
+//	New Style Guide Left Column Navigation
+//	===========================
+.left-nav{
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li{
+			@include font-shorthand(21px, normal, normal);
+			list-style: none;
+			color: $dh-gray;
+			@extend %museo_slab;
+			a{
+				@include font-shorthand(21px, normal, normal);
+				color: $dh-gray;
+				@extend %museo_slab;
+				&:hover, &:focus, &:visited, &:active, &.active{
+					color: $dh-blue;
+				}
+			}
+			&.active{
+				a{
+					color: $dh-blue;
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+// 
+//	New Style Guide Sign Up Box
+//	===========================
+.signup-box{
+	border: 1px solid $dh-gray;
+	padding: 5px;
+	h6{
+		@include font-shorthand(18px, normal, normal);
+		font-style: italic;
+		color: $dh-gray;
+	}
+	input[type="text"], input[type="password"], input[type="email"]{
+		@include font-shorthand(12px, normal, normal);
+		@include placeholder($dh-gray);
+		font-style: italic;
+		color: $dh-black;
+		border: 1px solid $dh-gray;
+		background-color: $dh-white;
+	}
+	label{
+		@include font-shorthand(12px, normal, normal);
+		@extend %helvetica-light;
+		color: $dh-gray;
+	}
+	input[type="submit"], input[type="button"]{
+		@extend .primary;
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+
+// 
+//	New Style Guide Quick Links
+//	===========================
+.quick-links{
+	h5{
+		@include font-shorthand(21px, normal, normal);
+		font-style: italic;
+		text-transform: uppercase;
+		border-bottom: 2px solid $dh-blue;
+	}
+	ul{
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		li{
+			@include font-shorthand(16px, normal, normal);
+			@extend %helvetica-light;
+			list-style: none;
+			color: $dh-gray;
+			border-bottom: 1px solid $dh-gray;
+			a{
+				@include font-shorthand(16px, normal, normal);
+				color: $dh-black;
+				&:hover, &:focus, &:visited, &:active, &.active{
+					color: $dh-blue;
+				}
+			}
+			&.active{
+				a{
+					color: $dh-blue;
+				}
+			}
+		}
+	}
+}
+
+// 
+//	New Style Guide Testimonials Blockquote
+//	===========================
+.testimonials{
+	blockquote{
+		@include font-shorthand(18px, normal, normal);
+		background-color: rgba($dh-blue, 0.1);
+		padding: 20px;
+		text-align: center;
+		border: 1px solid $dh-blue;
+		font-style: italic;
+		p{
+			@include font-shorthand(18px, normal, normal);
+			@extend %museo_slab;
+		}
+		cite{
+			@include font-shorthand(14px, normal, normal);
+		}
+	}
+}

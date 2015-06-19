@@ -270,3 +270,68 @@
         }
     }
 }
+
+// 
+//	New Style Guide Typography
+//	===========================
+
+h1, h2{
+	@extend %museo_slab;
+}
+h1{
+	font-size: 42px;
+	font-style: italic;
+	font-weight: normal;
+}
+h2{
+	@include font-shorthand(28px, normal, 48px);
+	font-style: italic;
+}
+h3, p, ul, li, ol{
+	@extend %helvetica-light;
+	@include font-shorthand(16px, normal, normal);	
+}
+em{
+	font-style: italic;
+}
+strong{
+	font-weight: 700;
+}
+ul{
+	li{
+		list-style-type: disc;
+	}
+}
+ol{
+	li{
+		list-style-type: decimal;
+	}
+}
+blockquote{
+	@include font-shorthand(20px, normal, normal);
+	@extend %museo_slab;
+	@include box-shadow(none);
+	margin: 0;
+	color: $dh-blue;
+	text-align: center;
+	background-color: transparent;
+	border: none;
+	font-style: italic;
+	p{
+		@extend %museo_slab;
+		@include font-shorthand(20px, normal, normal);
+		color: $dh-blue;
+	}
+	cite{
+		@include font-shorthand(16px, normal, normal);
+		color: $dh-blue;
+	}
+}
+p, li, h2, h3, h4, h5,h6{
+	a{
+		color: $dh-blue;
+		&:hover{
+			text-decoration: underline;
+		}
+	}
+}

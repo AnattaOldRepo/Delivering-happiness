@@ -11,6 +11,14 @@
 @font-face {
   @include font-face-src('Museo Slab', 'Museo_Slab_500');
 }
+@font-face {
+  @include font-face-src('Helvetica Light', 'Helvetica-Light');
+}
+
 %museo_slab{
 	font-family:"Museo Slab";
+}
+
+%helvetica-light{
+	font-family:"Helvetica Light";
 }

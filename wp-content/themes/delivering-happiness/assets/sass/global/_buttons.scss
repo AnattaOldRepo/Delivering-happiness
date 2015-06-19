@@ -1,0 +1,54 @@
+// 
+//	New Style Guide Buttons
+//	===========================
+.button, %button{
+	@include transition(border-color .3s ease-in-out, background-color .3s ease-in-out);
+	@extend %museo_slab;
+	@extend %text-center;
+	@include box-shadow(none);
+	@include font-shorthand(14px, normal, 10px);
+	@include size(178px, 46px);
+	@include border-radius(13px);
+	display: inline-block;
+	position: relative;
+	white-space: nowrap;
+	outline: none;
+	margin: 0;
+	padding: 18px 0;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	-webkit-appearance: none;
+	&.primary{
+		border-color: $dh-blue;
+		color: $dh-blue;
+		background-color: rgba($dh-blue, 0.1);
+		&:hover{
+			border-color: $dh-white;
+			color: $dh-white;
+			background-color: $dh-blue;
+		}
+	}
+	&.secondary{
+		border-color: $dh-green;
+		color: $dh-green;
+		background-color: rgba($dh-green, 0.1);
+		&:hover{
+			border-color: $dh-white;
+			color: $dh-white;
+			background-color: $dh-green;
+		}
+	}
+	&.tertiary{
+		border-color: $dh-yellow;
+		color: $dh-yellow;
+		background-color: rgba($dh-yellow, 0.1);
+		&:hover{
+			border-color: $dh-white;
+			color: $dh-white;
+			background-color: $dh-yellow;
+		}
+	}
+}
+button, input[type="submit"], input[type="button"]{
+	@extend %button;
+}
