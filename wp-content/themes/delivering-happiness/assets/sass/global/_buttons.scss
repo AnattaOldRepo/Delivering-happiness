@@ -7,8 +7,9 @@
 	@extend %text-center;
 	@include box-shadow(none);
 	@include font-shorthand(14px, normal, 10px);
-	@include size(178px, 46px);
+	@include size(auto, 46px);
 	@include border-radius(13px);
+	min-width: 178px;
 	display: inline-block;
 	position: relative;
 	white-space: nowrap;
