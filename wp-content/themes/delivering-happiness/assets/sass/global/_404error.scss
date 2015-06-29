@@ -61,6 +61,7 @@
                     @extend %pull-left;
                     @include bg-img-only(nerdywinkey, png, no-repeat, center, center);
                     @include size(44px, 38px);
+                    min-width: inherit;
                 }
             }
         }

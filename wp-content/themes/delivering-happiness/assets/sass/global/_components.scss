@@ -436,6 +436,7 @@ td {
             @extend %heading-level-4;
             color: $White;
             line-height: 43px;
+            @extend %museo_slab;
         }
         .v-aling {
             @include square(336px);
@@ -487,7 +488,7 @@ td {
             }
             .button {
                 background: rgba(255, 255, 255, 0.5);
-                padding: 10px 45px;
+                padding: 18px 45px;
                 margin-top: 20px;
                 &:hover {
                     background: rgba(255, 255, 255, 0.8);
@@ -513,7 +514,7 @@ td {
             .button {
                 background: rgba(255, 255, 255, 0.4);
                 border-width: 1px;
-                padding: 10px 45px;
+                padding: 18px 45px;
                 margin-top: 20px;
                 &:hover {
                     background: rgba(255, 255, 255, 0.9);
@@ -824,6 +825,7 @@ td {
             font-style: italic;
             position: relative;
             line-height: 30px;
+            color: $White;
             &:before,
             &:after {
                 @include size(47px, 37px);

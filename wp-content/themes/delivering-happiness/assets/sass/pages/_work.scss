@@ -28,12 +28,13 @@
     			font-style: italic;
     		}
     		.button{
-    			@include font-shorthand(16px, 600, 60px);
+    			@include font-shorthand(16px, 600, 46px);
     			background-color: $bg-color5;
     			color: $White;
     			width: 243px;
     			padding: 0;
     			margin-left: 0;
+    			min-width: inherit;
     		}
     	}
     }
@@ -67,6 +68,8 @@
             color: $ModerateViolet;
             padding: 19px;
             margin-left: 84px;
+            line-height: normal;
+            height: auto;
             &:hover {
                 background-color: rgba($White, 0.8);
             }
@@ -90,6 +93,8 @@
             @extend %pull-right;
             margin: 0 18px 10px 10px;
             padding: 10px 16px;
+            line-height: normal;
+            height: auto;
         }
         .content {
             h2 {
@@ -110,6 +115,8 @@
                     position: absolute;
                     bottom: 0px;
                     margin: 0 auto;
+                    line-height: normal;
+                    height: auto;
                 }
             }
         }
@@ -154,6 +161,8 @@
             text-align: center;
             padding-top: 28px;
             .button {
+            	height: auto;
+            	line-height: normal;
                 padding: 19px 20px;
             }
         }
@@ -179,6 +188,8 @@
                 padding: 19px 18px;
                 margin-left: 111px;
                 margin-top: 37px;
+                height: auto;
+                line-height: normal;
             }
         }
         h3 {
@@ -190,6 +201,8 @@
                 .button {
                     padding: 19px 18px;
                     margin: 20px 0 0;
+                    height: auto;
+                    line-height: normal;
                 }
             }
         }
@@ -221,6 +234,8 @@
         .button {
             margin: 0px auto;
             padding: 18px 28px;
+            height: auto;
+            line-height: normal;
         }
         @media (max-width: $screen-sm-max) {
             .wrapper {
@@ -236,6 +251,8 @@
                 .button {
                     line-height: 20px;
                     padding: 10px 28px;
+                    height: auto;
+                    line-height: normal;
                 }
             }
         }

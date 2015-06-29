@@ -117,6 +117,8 @@
                     margin: 0 auto;
                     color: $ModerateViolet;
                     display: block;
+                    line-height: 21px;
+                    min-width: inherit;
                     &:hover {
                         background-color: lighten($ModerateViolet, 55%);
                     }

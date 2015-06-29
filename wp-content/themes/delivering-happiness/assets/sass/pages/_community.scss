@@ -12,6 +12,7 @@
         blockquote {
             @extend %heading-level-1;
             color: $White;
+            text-align: left;
         }
         span {
             color: $LightOrange;
@@ -107,7 +108,9 @@
                 padding-right: 80px;
                 text-align: center;
                 h3 {
-                    font-size: 50px;
+                    @include font-shorthand(28px, normal, 48px);
+					font-style: italic;
+					@extend %museo_slab;
                     color: $White;
                     margin-bottom: 47px;
                 }

@@ -143,6 +143,12 @@
         }
     }
     .sidebar {
+    	ul, ol{
+    		list-style: none;
+    		li{
+    			list-style: none;
+    		}
+    	}
         .twitter,
         .widget_polls-widget {
             background-color: $White;
@@ -155,6 +161,7 @@
             @extend %text-left;
             .widget-title {
                 @extend %text-center;
+                font-size: 14px;
                 text-transform: uppercase;
                 padding: 18px 0;
             }
@@ -186,6 +193,8 @@
                 width: 82px;
                 margin: 0px auto;
                 letter-spacing: 1px;
+                min-width: inherit;
+                height: auto;
                 &:hover {
                     background-color: rgba($Blue, 0.2);
                 }
@@ -319,6 +328,7 @@
             margin-top: 40px;
             padding-top: 15px;
             h1 {
+            	font-size: 14px;
                 color: $Gray;
                 letter-spacing: 1px;
                 margin: 20px 0 33px 0;

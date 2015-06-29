@@ -31,6 +31,10 @@
         @extend %pull-left;
         list-style-type: none;
         padding: 20px 0 0 0;
+        @extend %museo_slab;
+        a{
+        	@extend %museo_slab;
+        }
         li {
             @extend %pull-left;
             @include transition(all 0.5s ease);
@@ -40,6 +44,7 @@
                 @extend %text-center;
                 @include transition(all 0.5s ease);
                 @include size(100%, 35px);
+                @extend %museo_slab;
                 color: $White;
                 position: absolute;
                 left: 0px;
@@ -186,6 +191,7 @@
                 @extend %pull-left;
                 @include bg-img-only(nerdywinkey, png, no-repeat, center, center);
                 @include size(44px, 38px);
+                min-width: inherit;
             }
         }
     }

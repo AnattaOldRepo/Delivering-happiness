@@ -78,27 +78,27 @@ get_header();
 		</div>
 		<div class="right-col">
 			<article class="content sandels active">
-				<h3>Lowers Stress</h3>
+				<h2>Lowers Stress</h2>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/sandels-l.png" alt="" />
 				<p>Working overtime? Got cut off on the freeway? Things happen out of our control all the time but what we CAN control is what makes us happy.<span>~ The Happiness Advantage, Shawn Achor</span></p>
 			</article>
 			<article class="content heart">
-				<h3>Improves Health</h3>
+				<h2>Improves Health</h2>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/heart-l.png" alt="" />
 				<p>Exercise helps, but did you know? Happy people have more energy and activity, a bolstered immune system, and even longevity.<span>~ Pursuing Happiness, Lyubomirsky, Sheldon and Schkade</span></p>
 			</article>
 			<article class="content mountain">
-				<h3>Redefines Success</h3>
+				<h2>Redefines Success</h2>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/mountain-l.png" alt="" />
 				<p>It’s easy to see that success can lead to happiness, but studies also show the opposite. Happy individuals are more likely to be successful across multiple life domains than their less happy peers. </p>
 			</article>
 			<article class="content lilly">
-				<h3>Brings Meaning</h3>
+				<h2>Brings Meaning</h2>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/lilly-l.png" alt="" />
 				<p>Research shows that having a higher purpose — being a part of something bigger than yourself — will not only bring you the longest lasting happiness, but meaningful happiness to boot.<span>~ Authentic Happiness, Martin E. P. Seligman</span></p>
 			</article>
 			<article class="content winky">
-				<h3>Changes Lives</h3>
+				<h2>Changes Lives</h2>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winkey-l.png" alt="" />
 				<p>Deciding to be happier will change your life for the better. Working toward a happiness goal generates its own payoff as you tip the scales toward a happier life. And when you’re being true to your (weird) self, you’ll inspire others toward their own personal happiness. </p>
 			</article>

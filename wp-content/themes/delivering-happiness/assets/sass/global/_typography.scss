@@ -258,10 +258,10 @@
         color: lighten($Gray, 20%);
     }
     blockquote {
-        @extend %pharagraph-level-1;
-        text-transform: uppercase;
-        color: lighten($Gray, 20%);
-        border-left: 2px solid lighten($Gray, 20%);
+        // @extend %pharagraph-level-1;
+        // text-transform: uppercase;
+        // color: lighten($Gray, 20%);
+        // border-left: 2px solid lighten($Gray, 20%);
         padding-left:15px;
         margin-left: 15px;
         margin-bottom: 20px;
