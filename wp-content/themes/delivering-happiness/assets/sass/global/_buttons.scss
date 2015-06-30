@@ -6,7 +6,7 @@
 	@extend %museo_slab;
 	@extend %text-center;
 	@include box-shadow(none);
-	@include font-shorthand(8px, normal, normal);
+	@include font-shorthand(8pt, normal, normal);
 	@include size(auto, auto);
 	@include border-radius(13px);
 	display: inline-block;

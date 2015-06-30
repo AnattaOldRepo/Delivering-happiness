@@ -32,8 +32,9 @@ get_header();
 			</div>
 			<div class="left-col">
 				<article class="content">
-					<h1>Creating a happier world.<span>One person, community and company at a time.</span></h1>
-					<h2>Science tells us that people are bad at predicting what keeps us happy. It also says that focusing on our passions and purpose can create sustainable happiness. Yet, here we are, a global society of people that are unhappy (or think they could be happier) in life.</h2>
+					<h1>Creating a happier world.</h1>
+					<h2>One person, community and company at a time.</h2>
+					<p>Science tells us that people are bad at predicting what keeps us happy. It also says that focusing on our passions and purpose can create sustainable happiness. Yet, here we are, a global society of people that are unhappy (or think they could be happier) in life.</p>
 					<p>Simply put, everyone wants to be a part of something bigger than ourselves. To have a higher purpose. That’s where we come in. 
 					We believe by prioritizing happiness in work and life, together we 
 					can create change in the world more than we ever thought possible.</p>
