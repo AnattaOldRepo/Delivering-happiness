@@ -6,16 +6,15 @@
 	@extend %museo_slab;
 	@extend %text-center;
 	@include box-shadow(none);
-	@include font-shorthand(14px, normal, 10px);
-	@include size(auto, 46px);
+	@include font-shorthand(8px, normal, normal);
+	@include size(auto, auto);
 	@include border-radius(13px);
-	min-width: 178px;
 	display: inline-block;
 	position: relative;
 	white-space: nowrap;
 	outline: none;
 	margin: 0;
-	padding: 18px 0;
+	padding: 16px 30px;
 	text-transform: uppercase;
 	border: 1px solid transparent;
 	-webkit-appearance: none;
@@ -42,7 +41,7 @@
 	&.tertiary{
 		border-color: $dh-yellow;
 		color: $dh-yellow;
-		background-color: rgba($dh-yellow, 0.1);
+		background-color: lighten($dh-yellow, 30%);
 		&:hover{
 			border-color: $dh-white;
 			color: $dh-white;

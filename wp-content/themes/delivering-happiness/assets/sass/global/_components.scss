@@ -235,15 +235,11 @@ td {
             }
         }
     }
+    h1{
+    	margin-bottom: 15px;
+    }
     h2 {
-        @extend %heading-level-4;
-        line-height: 57px;
-        span {
-            @extend %heading-level-12;
-            color: $LightBlue;
-            font-style: italic;
-            display: block;
-        }
+    	color: $dh-purple;
         @media (max-width: $screen-sm-max) {
             line-height: inherit;
             span {
@@ -252,7 +248,6 @@ td {
         }
     }
     p {
-        line-height: 28px;
         padding-bottom: 17px;
         //width: 74%;
         @extend %pull-left;
@@ -271,16 +266,19 @@ td {
 
 .two-column {
     @include clearfix;
-    h2 {
-        @extend %heading-level-7;
+    h1 {
         text-align: center;
-        font-style: italic;
         margin-bottom: 54px;
     }
     p {
         color: $White;
-        line-height: 28px;
         font-style: italic;
+    }
+    blockquote{
+    	color: $White;
+    	cite{
+    		color: $White;
+    	}
     }
     .left-col {
         @extend %pull-left;
@@ -487,12 +485,7 @@ td {
                 @include size(100%, 336px);
             }
             .button {
-                background: rgba(255, 255, 255, 0.5);
-                padding: 18px 45px;
                 margin-top: 20px;
-                &:hover {
-                    background: rgba(255, 255, 255, 0.8);
-                }
             }
         }
     }
@@ -512,13 +505,7 @@ td {
                 }
             }
             .button {
-                background: rgba(255, 255, 255, 0.4);
-                border-width: 1px;
-                padding: 18px 45px;
                 margin-top: 20px;
-                &:hover {
-                    background: rgba(255, 255, 255, 0.9);
-                }
             }
         }
     }
@@ -531,13 +518,7 @@ td {
             // need to set variable
             color: $White;
             .button {
-                background: rgba(255, 255, 255, 0.6);
-                border-width: 1px;
-                padding: 10px 45px;
                 margin-top: 20px;
-                &:hover {
-                    background: rgba(255, 255, 255, 0.9);
-                }
             }
         }
     }
@@ -692,9 +673,6 @@ td {
             p {
                 padding-bottom: 34px;
             }
-            .button {
-                padding: 19px 48px;
-            }
         }
     }
     @media (max-width: $screen-sm-max) {
@@ -714,9 +692,6 @@ td {
                 padding: 20px;
                 p {
                     padding-bottom: 20px;
-                }
-                .button {
-                    padding: 19px 48px;
                 }
             }
         }
@@ -741,7 +716,6 @@ td {
             }
         }
         .button {
-            padding: 19px 34px;
             margin-left: 115px;
         }
     }

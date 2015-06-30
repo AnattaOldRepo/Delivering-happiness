@@ -73,9 +73,8 @@
     }
     .happiness {
         &.two-column {
-            h2 {
+            h1 {
                 margin-left: -40px;
-                font-style: normal;
             }
             .left-col {
                 .media {
@@ -98,8 +97,7 @@
                 font-style: normal;
                 padding-top: 5px;
             }
-            h2 {
-                font-size: 40px;
+            h1 {
                 color: $White;
                 margin: 0;
             }

@@ -279,17 +279,17 @@ h1, h2{
 	@extend %museo_slab;
 }
 h1{
-	font-size: 42px;
+	font-size: 20px;
 	font-style: italic;
 	font-weight: normal;
 }
 h2{
-	@include font-shorthand(28px, normal, 48px);
+	@include font-shorthand(12px, normal, 17px);
 	font-style: italic;
 }
 h3, p, ul, li, ol{
 	@extend %helvetica-light;
-	@include font-shorthand(16px, normal, normal);	
+	@include font-shorthand(9px, normal, normal);	
 }
 em{
 	font-style: italic;
@@ -308,7 +308,7 @@ ol{
 	}
 }
 blockquote{
-	@include font-shorthand(20px, normal, normal);
+	@include font-shorthand(12px, normal, normal);
 	@extend %museo_slab;
 	@include box-shadow(none);
 	margin: 0;
@@ -319,11 +319,11 @@ blockquote{
 	font-style: italic;
 	p{
 		@extend %museo_slab;
-		@include font-shorthand(20px, normal, normal);
+		@include font-shorthand(12px, normal, normal);
 		color: $dh-blue;
 	}
 	cite{
-		@include font-shorthand(16px, normal, normal);
+		@include font-shorthand(9px, normal, normal);
 		color: $dh-blue;
 	}
 }
