@@ -36,25 +36,94 @@ get_header();
 
 				<?php
 				// check if the flexible content field has rows of data
-				if( have_rows('module') ):
+				if( get_field('module_1') ):
 
 				 	// loop through the rows of data
-				    while ( have_rows('module') ) : the_row();
-
+				    while ( has_sub_field('module_1') ) :
 						// check current row layout
-				        if( get_row_layout() == 'add_content' ):
-				        	echo "<div><h3>".get_sub_field('module_title')."</h3></div>";
-				        	echo "<div>".get_sub_field('module_content')."</div>";
-				        endif;
+				        if( get_row_layout() == 'module_1_content' ):
+				        	$title = get_sub_field('title');
+				        	$image = get_sub_field('image');
+				        	$content = get_sub_field('content');
 
-				        if( get_row_layout() == 'add_blockquote' ): 
-				        	echo "<div><h3>Quote 1: </h3><blockquote>".get_sub_field('quote_1')."</blockquote></div>";
-				        	echo "<div><h3>Quote 2: </h3><blockquote>".get_sub_field('quote_2')."</blockquote></div>";
-				        endif;
+				        	echo "<div><h3>".$title."</h3></div>";
 
+				        	echo "<img src='".$image['url']."' alt='' />";
+
+				       		// check if the nested repeater field has rows of data
+				        	if( have_rows('quick_links') ):
+
+				        		echo '<h2>Quick Links</h2>';
+							 	echo '<ul>';
+
+							 	// loop through the rows of data
+							    while ( have_rows('quick_links') ) : the_row();
+
+									$linktitle = get_sub_field('link_title');
+									$link = get_sub_field('link');
+
+									echo '<li><a href="'.$link.'" target="_blank">'.$linktitle.'</a></li>';
+
+								endwhile;
+
+								echo '</ul>';
+
+							endif;
+				        	
+				        	echo "<div>".$content."</div>";
+				        endif;
 				    endwhile;
-				else :
-				    // no layouts found
+				endif;
+
+				// check if the flexible content field has rows of data
+				if( get_field('module_2') ):
+
+				 	// loop through the rows of data
+				    while ( has_sub_field('module_2') ) :
+				        // check current row layout
+				        if( get_row_layout() == 'module_2_content' ):
+
+				        	$rows =  get_sub_field('quote' ) ; // get all the rows
+				        	if( $rows ):
+								
+								while(the_sub_field('quote' )):
+
+									echo "<div>".$rows."</div>";
+									
+								endwhile; 
+					
+							endif; 
+				        	
+				        endif;
+				    endwhile;
+				endif;
+
+				// check if the flexible content field has rows of data
+				if( get_field('module_3') ):
+
+				 	// loop through the rows of data
+				    while ( has_sub_field('module_3') ) :
+				        // check current row layout
+				        if( get_row_layout() == 'module_3_content' ):
+				        	$title = get_sub_field('title');
+				        	$content = get_sub_field('content');
+				        	echo "<div><h3>".$title."</h3></div>";
+				        	echo "<div>".$content."</div>";
+				        endif;
+				    endwhile;
+				endif;
+
+				// check if the flexible content field has rows of data
+				if( get_field('module_4') ):
+
+				 	// loop through the rows of data
+				    while ( has_sub_field('module_4') ) :
+				        // check current row layout
+				        if( get_row_layout() == 'module_4_content' ):
+				        	$content = get_sub_field('content');
+				        	echo "<div>".$content."</div>";
+				        endif;
+				    endwhile;
 				endif;
 
 				?>
