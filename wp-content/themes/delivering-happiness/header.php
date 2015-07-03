@@ -51,6 +51,14 @@
 		<div class="wrapper">
 			<h1 class="logo"><a href="<?php echo esc_url( home_url( '/' ) ); ?>"></a></h1>
 			<a class="hero-icon mobile-toggle" href="#"></a>
+			<div class="searchfrm">
+				<form role="search" method="get" class="search-form" action="<?php echo home_url();?>">
+					<label>
+						<input type="search" class="search-field" placeholder="Search our site..." value="" name="s" />
+					</label>
+					<input type="submit" value="Search" class="search-submit">
+				</form>
+			</div>
 			<menu class="site-navigation mob-nav">
 				<li class="nav-work <?php if(is_page('services')) { ?>active <?php } ?>">
 					<a href="<?php echo home_url(); ?>/services">SERVICES</a>
@@ -69,14 +77,7 @@
 					<div class="message">How you can make the world a happier place.</div>
 				</li>
 			</menu>
-			<div class="searchfrm">
-				<form role="search" method="get" class="search-form" action="<?php echo home_url();?>">
-					<label>
-						<input type="search" class="search-field" placeholder="Search our site..." value="" name="s" />
-					</label>
-					<input type="submit" value="Search" class="search-submit">
-				</form>
-			</div>
+			
 		</div>
 
 	</header>
