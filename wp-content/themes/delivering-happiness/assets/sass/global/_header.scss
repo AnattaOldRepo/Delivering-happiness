@@ -31,7 +31,7 @@
     .site-navigation {
         @extend %pull-right;
         list-style-type: none;
-        padding: 20px 0 0 0;
+        padding: 17px 0 0 0;
         li {
             @extend %pull-left;
             @include transition(all 0.5s ease);
@@ -67,7 +67,7 @@
                 font-size: 13px;
                 border-bottom: 3px solid $White;
                 letter-spacing: 1px;
-                padding: 5px 0 6px 34px;
+                padding: 9px 0 6px 34px;
                 display: block;
             }
             &.nav-work {
@@ -78,7 +78,7 @@
                 }
             }
             &.nav-shop {
-            	background-position: 0 -57px;
+            	background-position: 0 -54px;
                 a {
                     padding-left: 28px;
                 }
@@ -88,7 +88,6 @@
                 }
             }
             &.nav-community {
-        	    background-position: 0 -1px;
                 a {
                     padding-left: 21px;
                 }
@@ -98,7 +97,7 @@
                 }
             }
             &.nav-happiness {
-            	background-position: 0 -31px;
+            	background-position: 0 -29px;
                 a {
                     padding-left: 31px;
                 }
