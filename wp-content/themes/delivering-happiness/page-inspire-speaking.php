@@ -8,30 +8,24 @@ get_header();
 
 <!-- Work page-->
 <div class="service-request">
-    <section class="one-column hero">
-		<div class="wrapper">
-			<?php if ( have_posts() ) : ?>
-
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<h2><?php the_title(); ?></h2>
-
-				<?php endwhile; ?>
-
-			<?php else : ?>
-
-				<?php get_template_part( 'content', 'none' ); ?>
-
-			<?php endif; ?>
-		</div>
-	</section>
 	<div class="one-column-template">
 		<div class="wrapper">
 			<div class="page-header">
 				<h1><?php the_title() ?></h1>
 			</div>
 			<div id="primary" class="page-content">
+				<?php
+				/* if the current pages has a parent, i.e. we are on a subpage */
+				if( $post->post_parent ){
+				    $parent_title = get_the_title($post->post_parent);
+				    $children = wp_list_pages("title_li=&include=".$post->post_parent."&echo=0"); // list the parent page
+				    $children .= wp_list_pages("depth=1&title_li=&child_of=".$post->post_parent."&echo=0"); // append the list of children pages to the same $children variable
+				}
+				if ($children) { ?>
+				    <ul class="submenu">
+				        <?php echo $children; /*print list of pages*/ ?>
+				    </ul>
+				<?php } ?>
 				<main id="main" class="site-main" role="main">
 
 				<?php
