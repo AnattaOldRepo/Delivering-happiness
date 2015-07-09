@@ -7,139 +7,108 @@ get_header();
 ?>
 
 <!-- Work page-->
-<div class="service-request">
+<div class="work">
     <section class="one-column hero">
 		<div class="wrapper">
-			<?php if ( have_posts() ) : ?>
-
-				<?php /* Start the Loop */ ?>
-				<?php while ( have_posts() ) : the_post(); ?>
-
-					<h2><?php the_title(); ?></h2>
-
-				<?php endwhile; ?>
-
-			<?php else : ?>
-
-				<?php get_template_part( 'content', 'none' ); ?>
-
-			<?php endif; ?>
+			<h2>
+				Is your company<br/>
+				ready to <em>Make</em><br/>
+				<em>Happy Work</em><sup>&nbsp;&nbsp;™</sup>?
+			</h2>
+			<a href="/service-request/" class="button">LET’S GET STARTED!</a>
 		</div>
 	</section>
-	<div class="one-column-template">
+
+	<section class="two-column inspiration rtt updated">
 		<div class="wrapper">
-			<div class="page-header">
-				<h1><?php the_title() ?></h1>
+			<div class="left-col">
+				<div class="media">
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/rtt.jpg" alt="" />
+				</div>
 			</div>
-			<div id="primary" class="page-content">
-				<main id="main" class="site-main" role="main">
-
-				<?php
-				// check if the flexible content field has rows of data
-				if( get_field('module_1') ):
-
-				 	// loop through the rows of data
-				    while ( has_sub_field('module_1') ) :
-						// check current row layout
-				        if( get_row_layout() == 'module_1_content' ):
-				        	$title = get_sub_field('title');
-				        	$image = get_sub_field('image');
-				        	$content = get_sub_field('content');
-
-				        	echo "<div><h3>".$title."</h3></div>";
-
-				        	echo "<img src='".$image['url']."' alt='' />";
-
-				       		// check if the nested repeater field has rows of data
-				        	if( have_rows('quick_links') ):
-
-				        		echo '<h2>Quick Links</h2>';
-							 	echo '<ul>';
-
-							 	// loop through the rows of data
-							    while ( have_rows('quick_links') ) : the_row();
-
-									$linktitle = get_sub_field('link_title');
-									$link = get_sub_field('link');
-
-									echo '<li><a href="'.$link.'" target="_blank">'.$linktitle.'</a></li>';
-
-								endwhile;
-
-								echo '</ul>';
-
-							endif;
-				        	
-				        	echo "<div>".$content."</div>";
-				        endif;
-				    endwhile;
-				endif;
-
-				// check if the flexible content field has rows of data
-				if( get_field('module_2') ):
-
-					$i = 1;
-				 	// loop through the rows of data
-				    while ( has_sub_field('module_2') ) :
-				    	$i++; 
-									
-						if( $i > 2 ) {
-							break;
-						}
-
-				        // check current row layout
-				        if( get_row_layout() == 'module_2_content' ):
-
-				        	$rows = get_field('module_2' ); // get all the rows
-
-				        	$rand_row = $rows[ array_rand( $rows ) ]; // get a random row
-				        
-							$rand_row_quote = array( $rand_row['quote' ] ); // get the sub field value 
-							
-							if($rand_row_quote):
-								foreach( $rand_row_quote as $row ):
-									echo "<div>". $row ."</div>";
-								endforeach;
-							endif;
-				        	
-				        endif;
-
-				    endwhile;
-				endif;
-
-				// check if the flexible content field has rows of data
-				if( get_field('module_3') ):
-
-				 	// loop through the rows of data
-				    while ( has_sub_field('module_3') ) :
-				        // check current row layout
-				        if( get_row_layout() == 'module_3_content' ):
-				        	$title = get_sub_field('title');
-				        	$content = get_sub_field('content');
-				        	echo "<div><h3>".$title."</h3></div>";
-				        	echo "<div>".$content."</div>";
-				        endif;
-				    endwhile;
-				endif;
-
-				// check if the flexible content field has rows of data
-				if( get_field('module_4') ):
-
-				 	// loop through the rows of data
-				    while ( has_sub_field('module_4') ) :
-				        // check current row layout
-				        if( get_row_layout() == 'module_4_content' ):
-				        	$content = get_sub_field('content');
-				        	echo "<div>".$content."</div>";
-				        endif;
-				    endwhile;
-				endif;
-
-				?>
-				</main><!-- #main -->
-			</div><!-- #primary -->
+			<div class="right-col strongyellow-area">
+				<div class="content">
+					<h3>Request a talk.<span>Make your next event memorable<br/>*and* inspirational.</span></h3>
+					<p>Our experienced keynote speakers have inspired countless<br/>companies around the world. Their talk will show your<br/>audience how a very different kind of corporate culture is<br/>a powerful model for achieving success — and how by<br/>concentrating on the happiness of those around you,<br/>you can dramatically increase your own.</p>
+					<a href="/work/speaking/" class="button softyellow">Get Inspired</a>
+				</div>
+			</div>
 		</div>
-	</div>
+	</section>
+
+		<section class="two-column over-the-globe">
+		<div class="wrapper">
+			<div class="left-col yellow-area">
+				<div class="media">
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/companies.jpg" alt="" />
+				</div>
+				<article class="content">
+					<p>We help organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success.</p>
+					<a href="#" class="button yellow modal-box-handler" onclick="jQuery('#download_roadmap_form').show();return false;">DOWNLOAD HELLO DOC.</a>
+				</article>
+			</div>
+			<div class="right-col offwhite-area">
+				<div class="content">
+					<h2>We’ve inspired businesses<br/>all over the globe.</h2>
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/global.png" alt="" />
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="two-column coin-animation clients flip">
+		<div class="wrapper">
+			<div class="left-col">
+				<div class="media">
+					<h2>Kudos from our clients:</h2>
+					<div class="all-coins">
+						<div class="coin active">
+							<div class="coin-side front clients-hp"></div>
+							<div class="coin-side back clients-hp-selected"></div>
+						</div>
+						<div class="coin">
+							<div class="coin-side front clients-aetna"></div>
+							<div class="coin-side back clients-aetna-selected"></div>
+						</div>
+						<div class="coin">
+							<div class="coin-side front clients-r"></div>
+							<div class="coin-side back clients-r-selected"></div>
+						</div>
+						<div class="coin left-pull">
+							<div class="coin-side front clients-lost"></div>
+							<div class="coin-side back clients-lost-selected"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="right-col blue-area">
+				<article class="content active">
+					<div class="v-aling">
+						<blockquote>This was insightful, inspiring, and applicable in real ways.  Sharing ideas and practices with other organizations was invaluable.  They understand how to use happiness to improve culture and productivity.</blockquote>
+						<span>~ MARTIN TRACEY, VP OF HR, HP</span>
+					</div>
+				</article>
+				<article class="content">
+					<div class="v-aling">
+						<blockquote>This was an awesome experience! The best part for me was seeing the correlation between happiness at work and increased production/profit. I think it drove home how important happiness is and how easily happiness can be accomplished.</blockquote>
+						<span>~ Danielle Crescentini, Project Manager, Aetna </span>
+					</div>
+				</article>
+				<article class="content">
+					<div class="v-aling">
+						<blockquote>Delivering Happiness has had a great impact directly and indirectly on virtually all aspects of our business from how to interact with customers, our partners and each other.  Focusing on our culture has increased sales, increased the bottom line and most importantly allowed us to better serve our mission.</blockquote>
+						<span>~ Scotty Bintz, CEO, RealTruck</span>
+					</div>
+				</article>
+				<article class="content">
+					<div class="v-aling">
+						<blockquote>DH changed the way I think about successfully managing a business. It helped catapult me out of an old fashion top down style, to an inclusive, engaged process that is ultimately more rewarding to everyone at our company. If you are interested in the same old, same old, DON'T go to DH. You won't be able to leave unchanged. </blockquote>
+						<span>~ Ra'uf Glasgow, Producer, West Wind Media, former producer of LOST (TV Show)</span>
+					</div>
+				</article>
+			</div>
+		</div>
+	</section>
 
 </div>
 <!-- /Work page-->
