@@ -78,23 +78,32 @@ get_header();
 				// check if the flexible content field has rows of data
 				if( get_field('module_2') ):
 
+					$i = 1;
 				 	// loop through the rows of data
 				    while ( has_sub_field('module_2') ) :
+				    	$i++; 
+									
+						if( $i > 2 ) {
+							break;
+						}
+
 				        // check current row layout
 				        if( get_row_layout() == 'module_2_content' ):
 
-				        	$rows =  get_sub_field('quote' ) ; // get all the rows
-				        	if( $rows ):
-								
-								while(the_sub_field('quote' )):
+				        	$rows = get_field('module_2' ); // get all the rows
 
-									echo "<div>".$rows."</div>";
-									
-								endwhile; 
-					
-							endif; 
+				        	$rand_row = $rows[ array_rand( $rows ) ]; // get a random row
+				        
+							$rand_row_quote = array( $rand_row['quote' ] ); // get the sub field value 
+							
+							if($rand_row_quote):
+								foreach( $rand_row_quote as $row ):
+									echo "<div>". $row ."</div>";
+								endforeach;
+							endif;
 				        	
 				        endif;
+
 				    endwhile;
 				endif;
 
