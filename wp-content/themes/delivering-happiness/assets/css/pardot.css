@@ -361,3 +361,22 @@ form.form input.date {
 	color: #0198cf;
 	font-weight: normal;
 }
+.roi-calculator.hello-doc .form-field.job_title{
+	width: 362px;
+	float: left;
+}
+.roi-calculator.hello-doc .job_title .text{
+	width: 260px;
+}
+.roi-calculator.hello-doc .form-field.company{
+	width: 367px;
+	margin-left: 10px;
+}
+.roi-calculator.hello-doc .form-field.company .field-label{
+	text-align: left;
+}
+.roi-calculator.hello-doc .form-field.company .text{
+	width: 257px;
+	float: right;
+	
+}
