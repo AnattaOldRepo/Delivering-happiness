@@ -1,0 +1,78 @@
+.button, %button{
+	@include transition(border-color .3s ease-in-out, background-color .3s ease-in-out);
+	@extend %text-center;
+	@include box-shadow(none);
+	@include font-shorthand(17px, normal, normal);
+	@include size(auto, auto);
+	@include border-radius(13px);
+	font-family: $heading-font-family;
+	display: inline-block;
+	position: relative;
+	white-space: nowrap;
+	outline: none;
+	margin: 0;
+	padding: 16px 30px;
+	text-transform: uppercase;
+	border: 1px solid transparent;
+	text-decoration: none;
+	-webkit-appearance: none;
+	&:hover{
+		text-decoration: none;
+	}
+	&.primary{
+		color: $dh-white;
+		&.purple{
+			background-color: $dh-purple;
+			border-color: $dh-purple;
+			&:hover{
+				background-color: rgba($dh-purple, .1);
+				color: $dh-purple;
+			}
+		}
+		&.violet{
+			background-color: $dh-violet;
+			border-color: $dh-violet;
+			&:hover{
+				background-color: rgba($dh-violet, .1);
+				color: $dh-violet;
+			}
+		}
+		&.yellow{
+			background-color: $dh-yellow;
+			border-color: $dh-yellow;
+			&:hover{
+				background-color: rgba($dh-yellow, .1);
+				color: $dh-yellow;
+			}
+		}
+	}
+	&.secondary{
+		&.purple{
+			background-color: rgba($dh-purple, .1);
+			border-color: $dh-purple;
+			color: $dh-purple;
+			&:hover{
+				background-color: $dh-purple;
+				color: $dh-white;
+			}
+		}
+		&.violet{
+			background-color: rgba($dh-violet, .1);
+			border-color: $dh-violet;
+			color: $dh-violet;
+			&:hover{
+				background-color: $dh-violet;
+				color: $dh-white;
+			}
+		}
+		&.yellow{
+			background-color: rgba($dh-yellow, .1);
+			border-color: $dh-yellow;
+			color: $dh-yellow;
+			&:hover{
+				background-color: $dh-yellow;
+				color: $dh-white;
+			}
+		}
+	}
+}

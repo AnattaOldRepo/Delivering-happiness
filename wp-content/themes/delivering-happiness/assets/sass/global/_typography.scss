@@ -270,3 +270,90 @@
         }
     }
 }
+
+
+//	
+//	New Style Guide Typography
+//	-----------------------------------
+
+p, h1, h2, h3, h4, h5, h6{
+	margin: 0;
+	padding: 0;
+}
+ul, ol{
+	padding: 0;
+}
+h1{
+	@include font-shorthand(40px, normal, normal);
+	font-family: $heading-font-family;
+	margin-bottom: 15px;
+}
+h2{
+	@include font-shorthand(28px, normal, 48px);
+	font-family: $heading-font-family;
+	font-style: italic;
+	margin-bottom: 15px;
+}
+h3{
+	@include font-shorthand(22px, normal, 30px);
+	font-family: $base-font-family;
+	margin-bottom: 15px;
+}
+strong{
+	font-weight: 700;
+}
+em{
+	font-style: italic;
+}
+ul{
+	margin-left: 20px;
+	margin-bottom: 15px;
+	li{
+		@include font-shorthand(18px, normal, 22px);
+		list-style-type: disc;
+		font-family: $base-font-family;
+	}
+}
+ol{
+	margin-left: 20px;
+	margin-bottom: 15px;
+	li{
+		@include font-shorthand(18px, normal, 22px);
+		list-style-type: decimal;
+		font-family: $base-font-family;
+	}
+}
+p{
+	@include font-shorthand(18px, normal, 22px);
+	font-family: $base-font-family;
+	margin-bottom: 15px;
+}
+a{
+	color: $dh-blue;
+	&:hover{
+		text-decoration: underline;
+	}
+}
+
+blockquote{
+	@include font-shorthand(28px, normal, normal);
+	@include box-shadow(none);
+	font-family: $heading-font-family;
+	margin: 0;
+	padding: 30px;
+	color: $dh-purple;
+	text-align: left;
+	background-color: #f6f6f6;
+	border: none;
+	font-style: italic;
+	p{
+		font-family: $heading-font-family;
+		@include font-shorthand(28px, normal, normal);
+		color: $dh-purple;
+	}
+	cite{
+		@include font-shorthand(20px, normal, normal);
+		color: $dh-purple;
+		text-align: right;
+	}
+}

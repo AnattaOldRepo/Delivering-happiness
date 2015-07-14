@@ -1038,3 +1038,146 @@ sup {
     cursor: pointer;
 }
 
+
+//	
+//	New Style Guide Box Styling
+//	-----------------------------------
+
+.light-gray-box{
+	@include clearfix();
+	background-color: #f7f7f7;
+	@include size(100%, 494px);
+	padding: 50px;
+}
+
+.left-navigation{
+	text-align: left;
+	h5{
+		@include font-shorthand(28px, normal, normal);
+		font-family: $heading-font-family;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+	}
+	ul{
+		padding: 0;
+		margin: 0 0 20px;
+		li{
+			@include font-shorthand(20px, normal, normal);
+			list-style: none;
+			font-family: $heading-font-family;
+			padding-bottom: 8px;
+			a{
+				color: #a4a4a4;
+				&:hover{
+					color: $dh-black;
+					text-decoration: none;
+				}
+				&.active{
+					color: $dh-purple;
+				}
+			}
+			&.active{
+				a{
+					color: $dh-purple;
+				}
+			}
+		}
+	}
+	&.is-sticky{
+		position: fixed;
+		top: 0;
+		width: 250px;
+	}
+}
+
+.quick-links{
+	text-align: left;
+	h5{
+		@include font-shorthand(20px, normal, 35px);	
+		font-family: $heading-font-family;
+		text-transform: uppercase;
+		color: #7e7e7e;
+		background-color: #ebebeb;
+		display: block;
+		padding: 0 5px;
+	}
+	ul{
+		margin: 0;
+		li{
+			@include font-shorthand(18px, normal, 35px);	
+			border-bottom: 1px solid #7e7e7e;
+			font-family: $base-font-family;
+			list-style: none;
+			position: relative;
+			&:after{
+				content: '';
+				@include size(0, 0);
+				border-top: 12px solid transparent;
+				border-left: 12px solid $dh-purple;
+				border-bottom: 12px solid transparent;
+				display: block;
+				position: absolute;
+				right: 2px;
+				top: 4px;
+			}
+			a{
+				color: #7e7e7e;
+				display: block;
+				&:hover{
+					color: $dh-black;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+.sign-up-ribbon{
+	border-top: 1px solid $dh-black;
+	padding: 28px 0;
+	background-color: $dh-white;
+	text-align: center;
+	max-width: 1170px;
+	margin: 0 auto;
+	font-size: 0;
+	label{
+		@include font-shorthand(15px, normal, 30px);
+		font-family: $heading-font-family;
+		color: $dh-black;
+		display: inline-block;
+		vertical-align: top;
+		padding-right: 10px;
+	}
+	input[type="email"]{
+		@include font-shorthand(12px, normal, 28px);
+		@include size(150px, 30px);
+		border: 1px solid $dh-black;
+		font-family: $base-font-family;
+		color: $dh-black;
+		display: inline-block;
+		padding: 0 10px;
+		vertical-align: top;
+		margin-right: 10px;
+		@include input-placeholder {
+		    color: #a4a4a4;
+		    font-style: italic;
+		    font-size: 12px;
+		}
+	}
+	input[type="button"], input[type="submit"]{
+		@include font-shorthand(12px, normal, 24px);
+		@include size(75px, 30px);
+		background-color: $dh-black;
+		font-family: $base-font-family;
+		color: $dh-white;
+		text-transform: uppercase;
+		border: 1px solid $dh-black;
+		box-shadow: none;
+		display: inline-block;
+		vertical-align: top;
+		&:hover{
+			background-color: rgba($dh-black, .1);
+			color: $dh-black;
+		}
+	}
+}
