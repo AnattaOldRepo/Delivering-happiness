@@ -236,8 +236,8 @@ td {
         }
     }
     h2 {
-        @extend %heading-level-4;
-        line-height: 57px;
+        // @extend %heading-level-4;
+        // line-height: 57px;
         span {
             @extend %heading-level-12;
             color: $LightBlue;
