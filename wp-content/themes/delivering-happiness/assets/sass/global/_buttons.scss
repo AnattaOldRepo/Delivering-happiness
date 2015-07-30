@@ -21,11 +21,19 @@
 	}
 	&.primary{
 		color: $dh-white;
+		&.blue{
+			background-color: $dh-blue;
+			border-color: $dh-blue;
+			&:hover{
+				background-color: $dh-blue-light;
+				color: $dh-blue;
+			}
+		}
 		&.purple{
 			background-color: $dh-purple;
 			border-color: $dh-purple;
 			&:hover{
-				background-color: rgba($dh-purple, .1);
+				background-color: $dh-purple-light;
 				color: $dh-purple;
 			}
 		}
@@ -33,7 +41,7 @@
 			background-color: $dh-violet;
 			border-color: $dh-violet;
 			&:hover{
-				background-color: rgba($dh-violet, .1);
+				background-color: $dh-violet-light;
 				color: $dh-violet;
 			}
 		}
@@ -41,14 +49,23 @@
 			background-color: $dh-yellow;
 			border-color: $dh-yellow;
 			&:hover{
-				background-color: rgba($dh-yellow, .1);
+				background-color: $dh-yellow-light;
 				color: $dh-yellow;
 			}
 		}
 	}
 	&.secondary{
+		&.blue{
+			background-color: $dh-blue-light;
+			border-color: $dh-blue;
+			color: $dh-blue;
+			&:hover{
+				background-color: $dh-blue;
+				color: $dh-white;
+			}
+		}
 		&.purple{
-			background-color: rgba($dh-purple, .1);
+			background-color: $dh-purple-light;
 			border-color: $dh-purple;
 			color: $dh-purple;
 			&:hover{
@@ -57,7 +74,7 @@
 			}
 		}
 		&.violet{
-			background-color: rgba($dh-violet, .1);
+			background-color: $dh-violet-light;
 			border-color: $dh-violet;
 			color: $dh-violet;
 			&:hover{
@@ -66,7 +83,7 @@
 			}
 		}
 		&.yellow{
-			background-color: rgba($dh-yellow, .1);
+			background-color: $dh-yellow-light;
 			border-color: $dh-yellow;
 			color: $dh-yellow;
 			&:hover{

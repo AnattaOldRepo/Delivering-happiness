@@ -351,7 +351,8 @@ blockquote{
 		@include font-shorthand(28px, normal, normal);
 		color: $dh-purple;
 	}
-	cite{
+	cite, .author{
+		display: block;
 		@include font-shorthand(20px, normal, normal);
 		color: $dh-purple;
 		text-align: right;
