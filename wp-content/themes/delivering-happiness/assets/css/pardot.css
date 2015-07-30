@@ -381,3 +381,144 @@ form.form input.date {
 	float: right;
 	
 }
+
+/*
+	=================
+	.form-redesign
+	=================
+*/
+
+.form-redesign *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+}
+.form-redesign input[type="color"],
+.form-redesign input[type="date"],
+.form-redesign input[type="datetime"],
+.form-redesign input[type="datetime-local"],
+.form-redesign input[type="email"],
+.form-redesign input[type="month"],
+.form-redesign input[type="number"],
+.form-redesign input[type="password"],
+.form-redesign input[type="search"],
+.form-redesign input[type="tel"],
+.form-redesign input[type="text"],
+.form-redesign input[type="time"],
+.form-redesign input[type="url"],
+.form-redesign input[type="week"],
+.form-redesign textarea, .form-redesign select, .form-redesign .text, .form-redesign .select, .form-redesign .date{
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 28px;
+	height: 30px;
+	width: 100%;
+	border: 1px solid #ffffff;
+	font-family: "Helvetica Light";
+	color: #000000;
+	display: inline-block;
+	padding: 0 10px;
+	vertical-align: top;
+}
+.form-redesign textarea{
+	height: 80px;
+}
+.form-redesign .form-field{
+	margin: 0 0 15px;
+	padding: 0;
+}
+.form-redesign label, .form-redesign .field-label{
+	font-size: 15px;
+	line-height: normal;
+	font-weight: normal;
+	font-family: "Museo Slab", arial;
+	color: #ffffff;
+	display: block;
+	vertical-align: top;
+	margin-bottom: 5px;
+}
+.form-redesign .inline{
+	display: inline-block;
+	line-height: normal;
+	margin: 0;
+}
+.form-redesign .value:after{
+	display: table;
+	clear: both;
+	content: '';
+}
+.form-redesign .pd-radio .value span{
+	padding-right: 5px
+}
+.form-redesign .pd-checkbox .value input[type="checkbox"]{
+	float: left;
+}
+.form-redesign .pd-checkbox .value .inline{
+	display: table-cell;
+	padding-left: 5px;
+}
+.form-redesign .submit{
+	padding: 0;
+	margin: 0;
+	text-align: center;
+}
+.form-redesign button,
+.form-redesign input[type="button"],
+.form-redesign input[type="reset"],
+.form-redesign input[type="submit"]{
+	font-size: 12px;
+	line-height: 24px;
+	font-weight: normal;
+	min-width: 75px;
+	height: 30px;
+	background-color: #000;
+	font-family: "Helvetica Light";
+	color: #ffffff;
+	text-transform: uppercase;
+	border: 1px solid #000000;
+	box-shadow: none;
+	display: inline-block;
+	vertical-align: top;
+	border-radius: 0;
+	text-shadow: none;
+	cursor: pointer;
+}
+.form-redesign button:hover,
+.form-redesign input[type="button"]:hover,
+.form-redesign input[type="reset"]:hover,
+.form-redesign input[type="submit"]:hover{
+	background-color: rgba(0, 0, 0, 0.1);
+	color: #000000;
+}
+
+.form-redesign .errors{
+	background-color: #BD0034;
+	border: 1px solid #ffffff;
+	color: #fff;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: normal;
+	font-family: "Museo Slab", arial;
+	padding: 0;
+	margin: 0 0 15px;
+	text-align: center;
+}
+.form-redesign .error {
+	margin: 0 0 5px;
+	color: #BD0034;
+	font-size: 12px;
+	font-weight: normal;
+}
+.form-redesign .error .text{
+	border-color: #BD0034;
+	color: #BD0034;
+}
+.form-redesign .error.no-label{
+	margin-bottom: 10px;
+}
+.form-redesign .required .field-label:after{
+	display: inline-block;
+	content: '*';
+	color: #BD0034;
+}
