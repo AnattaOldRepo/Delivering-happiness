@@ -289,7 +289,7 @@ h1{
 	margin-bottom: 15px;
 }
 h2{
-	@include font-shorthand(28px, normal, 48px);
+	@include font-shorthand(28px, normal, normal);
 	font-family: $heading-font-family;
 	font-style: italic;
 	margin-bottom: 15px;
