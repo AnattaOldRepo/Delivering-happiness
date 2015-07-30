@@ -25,7 +25,7 @@
 		<ul>
 				<li  <?php if(is_page('services')) { ?>active <?php } ?>>
 					<a class="mob-nav-work" href="<?php echo home_url(); ?>/services">SERVICES</a>
-					<div class="message">Coaching and speaking to Make Happy Work<sup>TM</sup>.</div>
+					<div class="message">Coaching and speaking to <em>Make Happy Work</em><sup>TM</sup>.</div>
 				</li>
 				<li  <?php if(is_page('shop')) { ?>active <?php } ?>>
 					<a class="mob-nav-shop" href="<?php echo home_url(); ?>/shop">SHOP</a>
@@ -62,7 +62,7 @@
 			<menu class="site-navigation mob-nav">
 				<li class="nav-work <?php if(is_page('services')) { ?>active <?php } ?>">
 					<a href="<?php echo home_url(); ?>/services">SERVICES</a>
-					<div class="message">Coaching and speaking to Make Happy Work<sup>TM</sup>.</div>
+					<div class="message">Coaching and speaking to <em>Make Happy Work</em><sup>TM</sup>.</div>
 				</li>
 				<li class="nav-shop <?php if(is_page('shop')) { ?>active <?php } ?>">
 					<a href="<?php echo home_url(); ?>/shop">SHOP</a>
