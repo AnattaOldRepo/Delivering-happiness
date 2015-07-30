@@ -5,7 +5,7 @@
 .global-header {
     @include clearfix;
     font-size: 13px;
-    padding-bottom: 35px;
+    padding-bottom: 29px;
     &.sticky {
         width: 100%;
         position: fixed;
@@ -48,13 +48,13 @@
                 font-size: 16px;
                 height: 0px;
                 overflow: hidden;
-                line-height: 1.9;
+                line-height: 35px;
                 z-index: 999;
                 background: $bg-color5;
                 sup{
-                    font-size: 10px;
+                    font-size: 9px;
                     position: relative;
-                    top: -8px;
+                    top: -6px;
                   }
             }
             &:hover {
@@ -69,6 +69,7 @@
                 letter-spacing: 1px;
                 padding: 9px 0 6px 34px;
                 display: block;
+                text-decoration: none;
             }
             &.nav-work {
             	background-position: 0 -82px;
@@ -288,30 +289,6 @@
                         color: lighten($Black, 50%);
                     }
                 }
-                /*  &.nav-work {
-                      &.active,
-                      &:hover {
-                          border-bottom-color: $Purple;
-                      }
-                  }
-                  &.nav-shop {
-                      &.active,
-                      &:hover {
-                          border-bottom-color: $Green;
-                      }
-                  }
-                  &.nav-community {
-                      &.active,
-                      &:hover {
-                          border-bottom-color: $Orange;
-                      }
-                  }
-                  &.nav-happiness {
-                      &.active,
-                      &:hover {
-                          border-bottom-color: $Yellow;
-                      }
-                  }*/
             }
         }
     }
