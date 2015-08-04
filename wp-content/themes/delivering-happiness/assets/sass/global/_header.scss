@@ -51,6 +51,9 @@
                 line-height: 35px;
                 z-index: 999;
                 background: $bg-color5;
+                em{
+                	font-style: italic;
+                }
                 sup{
                     font-size: 9px;
                     position: relative;
