@@ -546,6 +546,8 @@ form.form input.date {
 	display: inline-block;
 	line-height: normal;
 	margin: 0;
+	vertical-align: middle;
+	padding-left: 2px;
 }
 .form-redesign .value:after{
 	display: table;
@@ -577,14 +579,14 @@ form.form input.date {
 	min-width: 75px;
 	height: 30px;
 	background-color: #000;
-	font-family: "Helvetica Light";
+	font-family: "Museo Slab", arial;
 	color: #ffffff;
 	text-transform: uppercase;
 	border: 1px solid #000000;
 	box-shadow: none;
 	display: inline-block;
 	vertical-align: top;
-	border-radius: 0;
+	border-radius: 10px;
 	text-shadow: none;
 	cursor: pointer;
 }
