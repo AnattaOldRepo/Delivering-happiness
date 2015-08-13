@@ -280,30 +280,30 @@
 // Page Heading
 // --------------
 
-@include class(heaing-h1) {
+@include class(heading-h1) {
 	@include font-shorthand(40px, normal, normal);
 	font-family: $heading-font-family;
 }
 
-@include class(heaing-h2) {
+@include class(heading-h2) {
 	@include font-shorthand(28px, normal, 48px);
 	font-family: $heading-font-family;
 	font-style: italic;
 }
-@include class(heaing-h3) {
+@include class(heading-h3) {
 	@include font-shorthand(22px, normal, 30px);
 	font-family: $base-font-family;
 }
-@include class(heaing-h4) {
+@include class(heading-h4) {
 	@include font-shorthand(28px, normal, 48px);
 	font-family: $heading-font-family;
 }
-@include class(heaing-h5) {
+@include class(heading-h5) {
 	@include font-shorthand(28px, normal, normal);
 	font-family: $heading-font-family;
 	text-transform: uppercase;
 }
-@include class(heaing-h6) {
+@include class(heading-h6) {
 	@include font-shorthand(20px, normal, normal);
 	font-family: $heading-font-family;
 }
