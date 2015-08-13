@@ -25,6 +25,8 @@ get_header();
 				<div class="box bg-white image-with-text">
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/work-inspire-bg.jpg" alt="" class="image-bg" />
 					<div class="copy">
+						<h1 class="heading-h1 purple">The Keynote: Be Inspired</h1>
+						<h2 class="heading-h2">Explore. Educate. Excite.</h2>
 						<p class="copy-large">
 							Our speakers [including CEO and Co-Founder<br/>
 							Jenn Lim] will captivate your audience by<br/>
