@@ -304,3 +304,31 @@
         }
     }
 }
+
+
+.work-inspired-box{
+	.image-with-text{
+		.image-bg{
+			right: 0;
+			left: inherit;
+		}
+	}
+	h1{
+		margin-bottom: 28px;
+	}
+	h2{
+		@include font-shorthand(24px, normal, normal);
+		font-family: $heading-font-family;
+		font-style: italic;
+		margin-bottom: 13px;
+	}
+	p{
+		margin-bottom: 50px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.box-bottom-cta{
+		text-align: center;
+	}
+}
