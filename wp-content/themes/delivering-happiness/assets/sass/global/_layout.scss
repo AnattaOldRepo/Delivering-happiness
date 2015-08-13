@@ -4,10 +4,10 @@
 
 body{
 	@extend %museo_slab;
+	line-height: 1;
 	-webkit-font-smoothing: antialiased;
-	@include font-shorthand($font-size-base, normal, 1);
-	color: $dh-black;
-	font-family: $base-font-family;
+	font-size: $font-size-base;
+	color: $text-color;
     //&.ugly-os{
       //  -webkit-text-stroke: 0.3px;
     // }
