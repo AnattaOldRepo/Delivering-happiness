@@ -1084,6 +1084,25 @@ sup {
 	padding: 50px;
 }
 
+.box{
+	color: inherit;
+	&.bg-white{
+		background-color: $dh-white;
+	}
+}
+.image-with-text{
+	overflow: hidden;
+	position: relative;
+	.copy{
+		position: relative;
+		z-index: 1;
+	}
+	.image-bg{
+		@include position-tl(0, 0);
+		position: absolute;
+	}
+}
+
 @include class(nav-left-sidebar) {
 	text-align: left;
 	h5{
