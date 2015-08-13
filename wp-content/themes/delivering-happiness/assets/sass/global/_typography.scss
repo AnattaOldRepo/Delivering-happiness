@@ -270,3 +270,182 @@
         }
     }
 }
+
+
+//	
+//	New Style Guide Typography
+//	-----------------------------------
+
+
+// Page Heading
+// --------------
+
+@include class(heading-h1) {
+	@include font-shorthand(40px, normal, normal);
+	font-family: $heading-font-family;
+}
+
+@include class(heading-h2) {
+	@include font-shorthand(28px, normal, 48px);
+	font-family: $heading-font-family;
+	font-style: italic;
+}
+@include class(heading-h3) {
+	@include font-shorthand(22px, normal, 30px);
+	font-family: $base-font-family;
+}
+@include class(heading-h4) {
+	@include font-shorthand(28px, normal, 48px);
+	font-family: $heading-font-family;
+}
+@include class(heading-h5) {
+	@include font-shorthand(28px, normal, normal);
+	font-family: $heading-font-family;
+	text-transform: uppercase;
+}
+@include class(heading-h6) {
+	@include font-shorthand(20px, normal, normal);
+	font-family: $heading-font-family;
+}
+
+// Standard Paragraph
+// --------------
+
+@include class(copy-default) {
+	@include font-shorthand(18px, normal, 22px);
+	font-family: $base-font-family;
+	font-style: normal;
+	p{
+		font-style: normal;
+		@extend %copy-default;
+	}
+}
+
+@include class(copy-large) {
+	@include font-shorthand(22px, normal, 30px);
+	font-family: $base-font-family;
+	p{
+		@extend %copy-large;
+	}
+}
+
+@include class(copy-blockquote) {
+	@include font-shorthand(28px, normal, normal);
+	font-family: $heading-font-family;
+	font-style: italic;
+	text-align: left;
+	color: $dh-purple;
+	letter-spacing: -0.047em;
+	p{
+		@extend %copy-blockquote;
+	}
+}
+@include class(copy-cite) {
+	@extend %heading-h6;
+	text-align: right;
+	color: $dh-purple;
+	font-style: normal;
+	letter-spacing: -0.045em;
+}
+@include class(copy-label) {
+	@include font-shorthand(15px, normal, 30px);
+	font-family: $heading-font-family;
+	color: $dh-black;
+}
+
+
+// default Un-order and order Listing
+// --------------
+
+@include class(ul-default) {
+	margin-left: 42px;
+	li{
+		@include font-shorthand(18px, normal, 22px);
+		list-style-type: disc;
+		font-family: $base-font-family;
+	}
+}
+@include class(ol-default) {
+	@extend %ul-default;
+	li{
+		list-style-type: decimal;
+	}
+}
+@include class(list-none) {
+	list-style: none;
+	margin:0;
+	padding: 0;
+	li{
+		list-style: none;
+	}
+}
+
+// default typography
+// --------------
+
+strong{
+	font-weight: 700;
+}
+em{
+	font-style: italic;
+}
+
+// Default anchor link
+// --------------
+
+@include class(links-default) {
+	color: $dh-blue;
+	&:hover{
+		color: $dh-blue;
+		text-decoration: underline;
+	}
+}
+@include class(links-active) {
+	color: $dh-purple;
+}
+@include class(links-left-sidebar) { 
+	@extend %heading-h6;
+	color: #a4a4a4;
+	&.active{
+		color: $dh-purple;
+	}
+	&:hover{
+		color: $dh-black;
+	}
+}
+@include class(links-right-sidebar) {
+	@include font-shorthand(18px, normal, normal);
+	font-family: $base-font-family;
+	color: $dh-gray-text;
+	&:hover{
+		color: $dh-black;
+	}
+}
+
+// Default Button copy
+// --------------
+@include class(copy-button) {
+	@include font-shorthand(17px, normal, normal);
+	font-family: $heading-font-family;
+	text-transform: uppercase;
+}
+@include class(copy-button-small) {
+	@include font-shorthand(13px, normal, 24px);
+	font-family: $base-font-family;
+	text-transform: uppercase;
+}
+
+@include class(blockquote-default) {
+	margin: 0;
+	padding: 25px 30px 28px 26px;
+	background-color: #f6f6f6;
+	border: none;
+	p{
+		@extend %copy-blockquote;
+		margin-bottom: 10px;
+	}
+	cite, .author{
+		@extend %copy-cite;
+		display: block;
+	}
+}

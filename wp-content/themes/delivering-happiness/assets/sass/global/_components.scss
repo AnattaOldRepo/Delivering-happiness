@@ -486,12 +486,13 @@ td {
                 @include size(100%, 336px);
             }
             .button {
-                background: rgba(255, 255, 255, 0.5);
-                padding: 10px 45px;
+            	background: rgba(255, 255, 255, 0.5);
+            	padding: 10px 45px;
                 margin-top: 20px;
-                &:hover {
-                    background: rgba(255, 255, 255, 0.8);
+                &:hover{
+                	background: rgba(255, 255, 255, 0.8);
                 }
+                
             }
         }
     }
@@ -511,12 +512,12 @@ td {
                 }
             }
             .button {
-                background: rgba(255, 255, 255, 0.4);
-                border-width: 1px;
-                padding: 10px 45px;
+            	background: rgba(255, 255, 255, 0.4);
+            	border-width: 1px;
+            	padding: 10px 45px;
                 margin-top: 20px;
-                &:hover {
-                    background: rgba(255, 255, 255, 0.9);
+                &:hover{
+                	background: rgba(255, 255, 255, 0.9);
                 }
             }
         }
@@ -530,12 +531,12 @@ td {
             // need to set variable
             color: $White;
             .button {
-                background: rgba(255, 255, 255, 0.6);
-                border-width: 1px;
-                padding: 10px 45px;
+            	background: rgba(255, 255, 255, 0.4);
+            	border-width: 1px;
+            	padding: 10px 45px;
                 margin-top: 20px;
-                &:hover {
-                    background: rgba(255, 255, 255, 0.9);
+                &:hover{
+                	background: rgba(255, 255, 255, 0.9);
                 }
             }
         }
@@ -692,7 +693,7 @@ td {
                 padding-bottom: 34px;
             }
             .button {
-                padding: 19px 48px;
+            	padding: 19px 48px;
             }
         }
     }
@@ -715,7 +716,7 @@ td {
                     padding-bottom: 20px;
                 }
                 .button {
-                    padding: 19px 48px;
+                	padding: 19px 48px;
                 }
             }
         }
@@ -740,7 +741,7 @@ td {
             }
         }
         .button {
-            padding: 19px 34px;
+        	padding: 19px 34px;
             margin-left: 115px;
         }
     }
@@ -754,7 +755,7 @@ td {
             }
         }
         .button {
-            min-width: 235px;
+        	min-width: 235px;
         }
     }
     &.updated {
@@ -1038,3 +1039,183 @@ sup {
     cursor: pointer;
 }
 
+
+//	
+//	New Style Guide Box Styling
+//	-----------------------------------
+.white{
+	color: $dh-white;
+}
+.blue{
+	color: $dh-blue;
+}
+.gray{
+	color: $dh-gray;
+}
+.yellow{
+	color: $dh-yellow;
+}
+.orange{
+	color: $dh-orange;
+}
+.red{
+	color: $dh-red;
+}
+.berry{
+	color: $dh-berry;
+}
+.violet{
+	color: $dh-violet;
+}
+.purple{
+	color: $dh-purple;
+}
+.green{
+	color: $dh-green;
+}
+.lime{
+	color: $dh-lime;
+}
+
+@include class(light-gray-box) {
+	@include clearfix();
+	@include size(100%, 494px);
+	background-color: #f7f7f7;
+	padding: 50px;
+}
+
+.box{
+	padding: 27px 36px;
+	color: inherit;
+	&.bg-white{
+		background-color: $dh-white;
+	}
+}
+.image-with-text{
+	overflow: hidden;
+	position: relative;
+	.copy{
+		position: relative;
+		z-index: 1;
+	}
+	.image-bg{
+		@include position-tl(0, 0);
+		position: absolute;
+	}
+}
+
+@include class(nav-left-sidebar) {
+	text-align: left;
+	h5{
+		@extend %heading-h5;
+		margin-bottom: 17px;
+	}
+	ul{
+		@extend %list-none;
+		margin-bottom: 32px;
+		li{
+			margin-bottom: 14px;
+			a{
+				@extend %links-left-sidebar;
+			}
+		}
+	}
+	&.is-sticky{
+		position: fixed;
+		top: 0;
+		width: 312px;
+		background-color: $dh-white;
+	}
+}
+
+@include class(nav-right-sidebar) {
+	text-align: left;
+	h5{
+		@extend %heading-h6;
+		text-transform: uppercase;
+		color: $dh-gray-text;
+		background-color: $dh-gray-dark;
+		display: block;
+		padding: 5px 10px 6px;
+	}
+	ul{
+		@extend %list-none;
+		li{
+			border-bottom: 1px solid $dh-gray-text;
+			position: relative;
+			&:after{
+				content: '';
+				@include size(0, 0);
+				border-top: 8px solid transparent;
+				border-left: 8px solid $dh-purple;
+				border-bottom: 8px solid transparent;
+				display: block;
+				position: absolute;
+				@include position-tr(8px, 0px);
+			}
+			a{
+				@extend %links-right-sidebar;
+				padding: 6px 3px;
+				display: block;
+				&:hover{
+					text-decoration: none;
+				}
+			}
+		}
+	}
+}
+
+
+.sign-up-ribbon{
+	border-top: 1px solid $dh-black;
+	padding: 27px 0 31px;
+	background-color: $dh-white;
+	text-align: center;
+	max-width: 1170px;
+	margin: 0 auto;
+	font-size: 0;
+	label{
+		@extend %copy-label;
+		display: inline-block;
+		vertical-align: top;
+		padding-right: 16px;
+	}
+	input{
+		&:focus{
+			outline: none;
+			box-shadow: none;
+		}
+	}
+	input[type="email"]{
+		@include font-shorthand(12px, normal, 28px);
+		@include size(150px, 30px);
+		border: 1px solid $dh-black;
+		font-family: $base-font-family;
+		color: $dh-black;
+		display: inline-block;
+		padding: 0 10px;
+		vertical-align: top;
+		margin-right: 10px;
+		@include input-placeholder {
+		    color: #a4a4a4;
+		    font-style: italic;
+		    font-size: 12px;
+		}
+	}
+	input[type="button"], input[type="submit"]{
+		@extend %copy-button-small;
+		@include size(75px, 30px);
+		background-color: $dh-black;
+		color: $dh-white;
+		border: 1px solid $dh-black;
+		box-shadow: none;
+		display: inline-block;
+		vertical-align: top;
+		cursor: pointer;
+		font-weight: 700;
+		&:hover{
+			background-color: rgba($dh-black, .1);
+			color: $dh-black;
+		}
+	}
+}

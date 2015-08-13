@@ -304,3 +304,28 @@
         }
     }
 }
+
+
+.work-inspired-box{
+	.image-with-text{
+		.image-bg{
+			right: 0;
+			left: inherit;
+		}
+	}
+	h1{
+		margin-bottom: 28px;
+	}
+	h2{
+		margin-bottom: 13px;
+	}
+	p{
+		margin-bottom: 48px;
+		&:last-child{
+			margin-bottom: 0;
+		}
+	}
+	.box-bottom-cta{
+		text-align: center;
+	}
+}

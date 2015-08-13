@@ -109,16 +109,16 @@
             .v-aling {
                 @include square(226px);
                 .button {
-                    background-color: lighten($ModerateViolet, 35%);
-                    border-width: 1px;
-                    border-color: $ModerateViolet;
-                    padding: 12px 0;
-                    width: 160px;
+                	background-color: lighten($ModerateViolet, 35%);
+                	border-width: 1px;
+                	border-color: $ModerateViolet;
+                	padding: 12px 0;
+                	width: 160px;
                     margin: 0 auto;
                     color: $ModerateViolet;
                     display: block;
                     &:hover {
-                        background-color: lighten($ModerateViolet, 55%);
+                    	background-color: lighten($ModerateViolet, 55%);
                     }
                 }
             }

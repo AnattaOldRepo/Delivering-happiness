@@ -1,0 +1,108 @@
+@include class(btn) {
+	@extend %copy-button;
+	@extend %text-center;
+
+	@include box-shadow(none);
+	@include size(auto, auto);
+	@include border-radius(8px);
+	@include transition(border-color .3s ease-in-out, background-color .3s ease-in-out);
+
+	display: inline-block;
+	position: relative;
+	white-space: nowrap;
+	outline: none;
+	margin: 0;
+	padding: 10px 30px;
+	border: 1px solid transparent;
+	text-decoration: none;
+	-webkit-appearance: none;
+
+	&:hover{
+		text-decoration: none;
+	}
+	
+	//  Primary Button Styling
+
+	&.primary{
+		color: $dh-white;
+		&.blue{
+			background-color: $dh-blue;
+			border-color: $dh-blue;
+			&:hover{
+				background-color: $dh-blue-light;
+				color: $dh-blue;
+			}
+		}
+		&.purple{
+			background-color: $dh-purple;
+			border-color: $dh-purple;
+			&:hover{
+				background-color: $dh-purple-light;
+				color: $dh-purple;
+			}
+		}
+		&.violet{
+			background-color: $dh-violet;
+			border-color: $dh-violet;
+			&:hover{
+				background-color: $dh-violet-light;
+				color: $dh-violet;
+			}
+		}
+		&.yellow{
+			background-color: $dh-yellow;
+			border-color: $dh-yellow;
+			&:hover{
+				background-color: $dh-yellow-light;
+				color: $dh-yellow;
+			}
+		}
+	}
+	
+	//  Secondary Button Styling
+
+	&.secondary{
+		&.blue{
+			background-color: $dh-blue-light;
+			border-color: $dh-blue;
+			color: $dh-blue;
+			&:hover{
+				background-color: $dh-blue;
+				color: $dh-white;
+			}
+		}
+		&.purple{
+			background-color: $dh-purple-light;
+			border-color: $dh-purple;
+			color: $dh-purple;
+			&:hover{
+				background-color: $dh-purple;
+				color: $dh-white;
+			}
+		}
+		&.violet{
+			background-color: $dh-violet-light;
+			border-color: $dh-violet;
+			color: $dh-violet;
+			&:hover{
+				background-color: $dh-violet;
+				color: $dh-white;
+			}
+		}
+		&.yellow{
+			background-color: $dh-yellow-light;
+			border-color: $dh-yellow;
+			color: $dh-yellow;
+			&:hover{
+				background-color: $dh-yellow;
+				color: $dh-white;
+			}
+		}
+	}
+}
+
+a.button{
+	&:hover{
+		text-decoration: none;
+	}
+}

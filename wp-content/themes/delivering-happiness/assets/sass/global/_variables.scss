@@ -1,3 +1,56 @@
+//	
+//	Variables new Style Guide
+//	-----------------------------------
+
+
+//	Brand Color
+//	------------
+
+$dh-black:				#000000 !default;
+$dh-black-ligh:			#e5e5e5 !default;
+
+$dh-white:				#ffffff !default;
+
+$dh-blue:				#0099CC !default;
+$dh-blue-light: 		#e5f5fa !default;
+
+$dh-gray:				#9A9B9C !default;
+$dh-gray-text:			#7e7e7e !default;
+$dh-gray-dark:			#ebebeb !default;
+
+$dh-yellow:				#FEC83B !default;
+$dh-yellow-light:		#fff9eb !default;
+
+$dh-orange:				#F9622A !default;
+$dh-orange-light:		#feefe9 !default;
+
+$dh-red:				#BD0034 !default;
+$dh-red-light:			#f8e5ea !default;
+
+$dh-berry:				#D00069 !default;
+$dh-berry-light:		#fae5f0 !default;
+
+$dh-violet:				#B000AB !default;
+$dh-violet-light:		#f7e5f6 !default;
+
+$dh-purple:				#7A2DBC !default;
+$dh-purple-light:		#f1eaf8 !default;
+
+$dh-green:				#00B346 !default;
+$dh-green-light:		#e5f7ec !default;
+
+$dh-lime:				#B2C100 !default;
+$dh-lime-light:			#f7f9e5 !default;
+
+
+//	Typography
+//	---------------
+
+$base-font-family:		"Helvetica Light" !default;
+$heading-font-family: 	"Museo Slab", arial !default;
+
+
+
 //
 // Variables for Delivering Happiness
 // --------------------------------------------------
@@ -5,12 +58,12 @@
 // Brand colors
 // -------------------------
 
-$Black: black !default;
+$Black: $dh-black !default;
 $Gray: lighten($Black, 40%);
 
 // #666666
 $LightGray: #efefef;
-$White: white !default;
+$White: $dh-white !default;
 $OffWhite: #fbf9fa !default;
 $Purple: #793cbd !default;
 $Green: #00af42 !default;
@@ -39,7 +92,7 @@ $text-color6: #ee3338;
 
 
 $bdr-color1: #dfdfdf;
-$bg-color1:		#0099cc;
+$bg-color1:		$dh-blue;
 $bg-color2:		#E9F2F8;
 $bg-color3:		#0097CD;
 $bg-color4:		#E8F4F9;
@@ -60,9 +113,9 @@ $link-color: red;
 // Typography
 // -------------------------
 
-$font-family-sans-serif: "Museo Slab", arial !default;
+$font-family-sans-serif: $heading-font-family !default;
 $font-family-base: $font-family-sans-serif !default;
-$font-size-base: 16px !default;
+$font-size-base: 18px !default;
 
 // Image directory
 // -------------------------
