@@ -21,7 +21,7 @@ get_header();
 	</section>
     <section class="two-column">
 		<div class="wrapper">
-			<div class="col left-col">
+			<div class="col left-col updated-typography">
 				<h3>EXPERIENCE | Let’s do a workshop together</h3>
 				<p>
 					Delivering Happiness Workshop Experiences are designed to equip your team with the knowledge and tools to enable you to create sustainable culture and happiness in your workplace. 
