@@ -32,12 +32,12 @@ get_header();
 			</div>
 			<div class="left-col">
 				<article class="content">
-					<h2>Creating a happier world.<span>One person, community and company at a time.</span></h2>
+					<h2 class="heading-h1">Creating a happier world.<span>One person, community and company at a time.</span></h2>
 					<p>Science tells us that people are bad at predicting what keeps us happy. It also says that focusing on our passions and purpose can create sustainable happiness. Yet, here we are, a global society of people that are unhappy (or think they could be happier) in life.</p>
 					<p>Simply put, everyone wants to be a part of something bigger than ourselves. To have a higher purpose. That’s where we come in. 
 					We believe by prioritizing happiness in work and life, together we 
 					can create change in the world more than we ever thought possible.</p>
-					<a href="/community" class="button blue">Tell me more</a>
+					<a href="/community" class="btn primary blue">Tell me more</a>
 				</article>
 			</div>
 			
@@ -141,7 +141,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-					<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="button blue">Read On</a>
+					<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="btn secondary blue">Read On</a>
 				</div>
 			</div>
 		</div>
@@ -157,7 +157,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Inspire. Connect. Educate and Experience. Products that remind us of why happiness isn’t a fleeting thought, it’s a way to live.</p>
-					<a href="/shop" class="button blue">Let's Live Happy!</a>
+					<a href="/shop" class="btn secondary blue">Let's Live Happy!</a>
 				</div>
 			</div>
 		</div>
@@ -170,7 +170,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Join the culture conversation, discuss challenges, and discover opportunities for your organization’s growth.</p>
-					<a href="/services/culture-call/" class="button blue">Let's Talk Culture!</a>
+					<a href="/services/culture-call/" class="btn secondary blue">Let's Talk Culture!</a>
 				</div>
 			</div>
 		</div>
@@ -193,7 +193,7 @@ get_header();
 			</div>
 			<article class="content">
 				<p>We help organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success.</p>
-				<a href="/services" class="button yellow">Learn more</a>
+				<a href="/services" class="btn secondary yellow">Learn more</a>
 			</article>
 		</div>
 	</div>
@@ -238,7 +238,7 @@ get_header();
 						<?php else : ?>
 							<p><?php echo substr( strip_tags( $blog_posts[0]->post_content ), 0, 80 ); ?></p>
 						<?php endif; ?>
-						<a href="<?php echo get_permalink( $blog_posts[0]->ID ); ?>" class="button blue">LET’S GO!</a>
+						<a href="<?php echo get_permalink( $blog_posts[0]->ID ); ?>" class="btn secondary blue">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
@@ -263,7 +263,7 @@ get_header();
 						<?php else : ?>
 							<p><?php echo substr( strip_tags( $blog_posts[1]->post_content ), 0, 80 ); ?></p>
 						<?php endif; ?>
-						<a href="<?php echo get_permalink( $blog_posts[1]->ID ); ?>" class="button blue">LET’S GO!</a>
+						<a href="<?php echo get_permalink( $blog_posts[1]->ID ); ?>" class="btn secondary blue">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
@@ -288,7 +288,7 @@ get_header();
 						<?php else : ?>
 							<p><?php echo substr( strip_tags( $blog_posts[2]->post_content ), 0, 80 ); ?></p>
 						<?php endif; ?>
-						<a href="<?php echo get_permalink( $blog_posts[2]->ID ); ?>" class="button blue">LET’S GO!</a>
+						<a href="<?php echo get_permalink( $blog_posts[2]->ID ); ?>" class="btn secondary blue">LET’S GO!</a>
 					</div>
 				</div>
 			</div>

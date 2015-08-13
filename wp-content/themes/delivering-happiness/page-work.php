@@ -15,7 +15,7 @@ get_header();
 				ready to <em>Make</em><br/>
 				<em>Happy Work</em><sup>&nbsp;&nbsp;™</sup>?
 			</h2>
-			<a href="/service-request/" class="button">LET’S GET STARTED!</a>
+			<a href="/service-request/" class="btn primary blue">LET’S GET STARTED!</a>
 		</div>
 	</section>
 
@@ -53,8 +53,8 @@ get_header();
 			</div>
 			<div class="container">
 				<article class="content">
-					<h2>Let’s Make Happy Work<sup>TM</sup>. <span>Ready to plan your journey?</span></h2>
-					<p><a href="#" class="button moderateviolet modal-box-handler" onclick="jQuery('#download_roadmap_form').show();return false;">DOWNLOAD HELLO DOC.</a>
+					<h2 class="heading-h1">Let’s Make Happy Work<sup>TM</sup>. <span class="heading-h2">Ready to plan your journey?</span></h2>
+					<p class="copy-default"><a href="#" class="btn secondary purple modal-box-handler" onclick="jQuery('#download_roadmap_form').show();return false;">DOWNLOAD HELLO DOC.</a>
 					We believe happiness at work is a journey. We’ve created a roadmap with five simple steps, combining the science of happiness and the experience of Zappos and other leading companies to help your organization create its own unique work culture, increase happiness and build success. Learn more by downloading our Hello Doc.</p>
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/work-animation-demo.png" alt="" />
 				</article>
@@ -74,7 +74,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-						<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="button moderateviolet">LET’S GO!</a>
+						<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="btn secondary purple">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
@@ -87,7 +87,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Join the culture conversation, discuss challenges, and discover opportunities for your organization’s growth.</p>
-						<a href="/services/culture-call/" class="button moderateviolet">Let's Talk Culture!</a>
+						<a href="/services/culture-call/" class="btn secondary purple">Let's Talk Culture!</a>
 					</div>
 				</div>
 			</div>
@@ -100,7 +100,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Unhappy employees cost the U.S. $550 billion a year (Gallup). How much could happiness save you?</p>
-						<a href="<?php echo home_url(); ?>/services/calculate-your-roi/" class="button moderateviolet">LET’S CALCULATE!</a>
+						<a href="<?php echo home_url(); ?>/services/calculate-your-roi/" class="btn secondary purple">LET’S CALCULATE!</a>
 					</div>
 				</div>
 			</div>
@@ -116,8 +116,8 @@ get_header();
 			</div>
 			<div class="right-col strongyellow-area">
 				<div class="content">
-					<h3>Request a talk.<span>Make your next event memorable<br/>*and* inspirational.</span></h3>
-					<p>Our experienced keynote speakers have inspired countless<br/>companies around the world. Their talk will show your<br/>audience how a very different kind of corporate culture is<br/>a powerful model for achieving success — and how by<br/>concentrating on the happiness of those around you,<br/>you can dramatically increase your own.</p>
+					<h3 class="heading-h1">Request a talk.<span class="heading-h2">Make your next event memorable<br/>*and* inspirational.</span></h3>
+					<p class="copy-default">Our experienced keynote speakers have inspired countless<br/>companies around the world. Their talk will show your<br/>audience how a very different kind of corporate culture is<br/>a powerful model for achieving success — and how by<br/>concentrating on the happiness of those around you,<br/>you can dramatically increase your own.</p>
 					<a href="/work/speaking/" class="button softyellow">Get Inspired</a>
 				</div>
 			</div>
@@ -251,13 +251,13 @@ get_header();
 			<div class="container">
 				<div class="clear">
 					<article class="content">
-						<h2>​Join the Culture conversation!<span>What’s the state of your culture?</span></h2>
-						<p>Culture calls are our way of starting the conversation around culture and happiness in the workplace. We're offering free sessions to discuss the challenges and opportunities of your company's unique culture and to connect you. During these sessions, we provide insights and solutions based on cutting-edge research, best practice, and global consulting experience. Join us for a session and discover how happiness and the DH model can help bring your ideal culture to life. </p>
+						<h2 class="heading-h1">​Join the Culture conversation!<span class="heading-h2">What’s the state of your culture?</span></h2>
+						<p class="copy-default">Culture calls are our way of starting the conversation around culture and happiness in the workplace. We're offering free sessions to discuss the challenges and opportunities of your company's unique culture and to connect you. During these sessions, we provide insights and solutions based on cutting-edge research, best practice, and global consulting experience. Join us for a session and discover how happiness and the DH model can help bring your ideal culture to life. </p>
 						
 					</article>
 					<div class="media"><img src="<?php bloginfo('template_url') ?>/assets/images/global/callon.png" alt="" /></div>
 				</div>
-				<div class="cta"><a href="/services/culture-call/ " class="button moderateviolet">​​​Join a Culture Call</a></div>
+				<div class="cta"><a href="/services/culture-call/ " class="btn secondary purple">​​​Join a Culture Call</a></div>
 			</div>
 		</div>
 	</section>
@@ -342,7 +342,7 @@ get_header();
 				<div class="floated-holder">
 					<div class="left-col">
 						<article class="content">
-							<h2><span>How much could happiness save you?</span>Companies with a<br/>higher sense of purpose<br/>outperformed those<br/>without by 400%.</h2>
+							<h2  class="heading-h1"><span class="heading-h2">How much could happiness save you?</span>Companies with a<br/>higher sense of purpose<br/>outperformed those<br/>without by 400%.</h2>
 						</article>
 					</div>
 					<div class="right-col">

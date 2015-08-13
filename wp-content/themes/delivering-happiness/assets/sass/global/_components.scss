@@ -236,7 +236,6 @@ td {
         }
     }
     h2 {
-        @extend %heading-level-4;
         line-height: 57px;
         span {
             @extend %heading-level-12;
@@ -252,7 +251,8 @@ td {
         }
     }
     p {
-        line-height: 28px;
+
+        @extend %copy-default;
         padding-bottom: 17px;
         //width: 74%;
         @extend %pull-left;
@@ -280,7 +280,6 @@ td {
     p {
         color: $White;
         line-height: 28px;
-        font-style: italic;
     }
     .left-col {
         @extend %pull-left;
@@ -470,6 +469,11 @@ td {
             }
         }
     }
+    .hover-content {
+        p{
+            margin-bottom: 10px;
+        }
+    }
     &.blue {
         .content {
             background-color: $Blue;
@@ -493,6 +497,10 @@ td {
                 	background: rgba(255, 255, 255, 0.8);
                 }
                 
+            }
+
+            p{
+                margin-bottom: 15px;
             }
         }
     }
@@ -692,9 +700,6 @@ td {
             p {
                 padding-bottom: 34px;
             }
-            .button {
-            	padding: 19px 48px;
-            }
         }
     }
     @media (max-width: $screen-sm-max) {
@@ -728,11 +733,9 @@ td {
         padding: 118px 43px 46px 66px;
         letter-spacing: -1px;
         h3 {
-            @extend %heading-level-1;
             color: $White;
             margin-bottom: 75px;
             span {
-                @extend %heading-level-7;
                 color: $SoftYellow;
                 font-style: italic;
                 display: block;
@@ -761,15 +764,9 @@ td {
     &.updated {
         h3 {
             span {
-                font-size: 25px;
                 margin-top: 7px;
             }
             margin-bottom: 15px !important;
-        }
-        .content {
-            p {
-                line-height: 29px;
-            }
         }
     }
 }
