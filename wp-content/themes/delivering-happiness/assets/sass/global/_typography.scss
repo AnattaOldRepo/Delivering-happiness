@@ -322,12 +322,12 @@
 }
 
 @include class(copy-blockquote) {
-	@extend %heaing-h2;
+	@extend %heading-h2;
 	text-align: left;
 	color: $dh-purple;
 }
 @include class(copy-cite) {
-	@extend %heaing-h6;
+	@extend %heading-h6;
 	text-align: right;
 	color: $dh-purple;
 	font-style: normal;
@@ -388,7 +388,7 @@ em{
 	color: $dh-purple;
 }
 @include class(links-left-sidebar) { 
-	@extend %heaing-h6;
+	@extend %heading-h6;
 	color: #a4a4a4;
 	&.active{
 		color: $dh-purple;

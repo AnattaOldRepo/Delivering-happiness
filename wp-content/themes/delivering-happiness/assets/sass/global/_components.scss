@@ -1106,7 +1106,7 @@ sup {
 @include class(nav-left-sidebar) {
 	text-align: left;
 	h5{
-		@extend %heaing-h5;
+		@extend %heading-h5;
 	}
 	ul{
 		@extend %list-none;
@@ -1126,7 +1126,7 @@ sup {
 @include class(nav-right-sidebar) {
 	text-align: left;
 	h5{
-		@extend %heaing-h6;
+		@extend %heading-h6;
 		text-transform: uppercase;
 		color: $dh-gray-text;
 		background-color: $dh-gray-dark;
