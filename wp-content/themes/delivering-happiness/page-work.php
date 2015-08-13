@@ -18,28 +18,6 @@ get_header();
 			<a href="/service-request/" class="button">LET’S GET STARTED!</a>
 		</div>
 	</section>
-
-	<section>
-		<div class="wrapper">
-			<div class="light-gray-box">
-				<div class="box white image-with-text">
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/work-inspire-bg.jpg" alt="" class="image-bg" />
-					<div class="copy">
-						<h1 class="heading-h1 purple">The Keynote: Be Inspired</h1>
-						<h2>Explore. Educate. Excite.</h2>
-						<p>
-							Our speakers [including CEO and Co-Founder
-							Jenn Lim] will captivate your audience by
-							demonstrating how a unique corporate
-							culture is a competitive advantage
-						</p>
-						<a href="#" class="btn primary purple">Learn More</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
 	<section class="rounded-block happy-work">
 		<div class="wrapper">
 			<div class="modal-box" id="download_roadmap_form" style="display:none;">
