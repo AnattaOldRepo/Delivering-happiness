@@ -83,18 +83,19 @@
             padding: 33px 79px;
             position: relative;
         }
-        .button {
+        .btn {
             //position: absolute;
             //top: 143px;
             //right: 98px;
             @extend %pull-right;
-            margin: 0 18px 10px 10px;
+            margin: 0 18px 35px 10px;
             padding: 10px 16px;
         }
         .content {
             h2 {
                 line-height: 57px;
                 margin-bottom: 21px;
+                color: #9A9B9C;
                 span {
                     color: $ModerateViolet;
                 }
@@ -123,6 +124,7 @@
         }
         h2 {
             margin-bottom: 20px;
+            color: #9A9B9C;
             span {
                 color: $LightModerateViolet;
             }
@@ -165,6 +167,16 @@
         .right-col {
             background: $OffWhite;
         }
+
+        .button{
+            padding: 10px 30px;
+            border-radius: 8px;
+            font-size: 17px;
+            font-weight: normal;
+            line-height: normal;
+            font-family: "Museo Slab",arial;
+            text-transform: uppercase;
+        }
     }
     .inspiration {
         .right-col {
@@ -176,9 +188,15 @@
                 letter-spacing: 0;
             }
             .button {
-                padding: 19px 18px;
+                padding: 10px 30px;
                 margin-left: 111px;
                 margin-top: 37px;
+                border-radius: 8px;
+                font-size: 17px;
+                font-weight: normal;
+                line-height: normal;
+                font-family: "Museo Slab",arial;
+                text-transform: uppercase;
             }
         }
         h3 {
@@ -213,6 +231,7 @@
             padding-top: 56px;
             h2 {
                 line-height: 44px;
+                color: #9A9B9C;
                 span {
                     padding-bottom: 13px;
                 }

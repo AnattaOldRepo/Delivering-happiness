@@ -16,6 +16,7 @@
 	border: 1px solid transparent;
 	text-decoration: none;
 	-webkit-appearance: none;
+	font-style: normal;
 
 	&:hover{
 		text-decoration: none;
@@ -95,6 +96,15 @@
 			color: $dh-yellow;
 			&:hover{
 				background-color: $dh-yellow;
+				color: $dh-white;
+			}
+		}
+		&.lime{
+			background-color: rgba(178, 193, 0, 0.1);
+			border-color: rgb(178, 193, 0);
+			color: rgb(178, 193, 0);
+			&:hover{
+				background-color: rgb(178, 193, 0);
 				color: $dh-white;
 			}
 		}
