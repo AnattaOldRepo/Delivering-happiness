@@ -4,6 +4,13 @@
 
 // Sizing shortcuts
 
+@mixin class($name) {
+	.#{$name},
+	%#{$name} {
+		@content;
+    }
+}
+
 @mixin clearfix {
     &:before,
     &:after {

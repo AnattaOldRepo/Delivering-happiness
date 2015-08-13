@@ -1050,43 +1050,23 @@ sup {
 	color: $dh-lime;
 }
 
-.light-gray-box{
+@include class(light-gray-box) {
 	@include clearfix();
-	background-color: #f7f7f7;
 	@include size(100%, 494px);
+	background-color: #f7f7f7;
 	padding: 50px;
 }
 
-.left-navigation{
+@include class(nav-left-sidebar) {
 	text-align: left;
 	h5{
-		@include font-shorthand(28px, normal, normal);
-		font-family: $heading-font-family;
-		text-transform: uppercase;
-		margin-bottom: 15px;
+		@extend %heaing-h5;
 	}
 	ul{
-		padding: 0;
-		margin: 0 0 20px;
+		@extend %list-none;
 		li{
-			@include font-shorthand(20px, normal, normal);
-			list-style: none;
-			font-family: $heading-font-family;
-			padding-bottom: 8px;
 			a{
-				color: #a4a4a4;
-				&:hover{
-					color: $dh-black;
-					text-decoration: none;
-				}
-				&.active{
-					color: $dh-purple;
-				}
-			}
-			&.active{
-				a{
-					color: $dh-purple;
-				}
+				@extend %links-left-sidebar;
 			}
 		}
 	}
@@ -1097,24 +1077,20 @@ sup {
 	}
 }
 
-.quick-links{
+@include class(nav-right-sidebar) {
 	text-align: left;
 	h5{
-		@include font-shorthand(20px, normal, 35px);	
-		font-family: $heading-font-family;
+		@extend %heaing-h6;
 		text-transform: uppercase;
-		color: #7e7e7e;
-		background-color: #ebebeb;
+		color: $dh-gray-text;
+		background-color: $dh-gray-dark;
 		display: block;
 		padding: 0 5px;
 	}
 	ul{
-		margin: 0;
+		@extend %list-none;
 		li{
-			@include font-shorthand(18px, normal, 35px);	
-			border-bottom: 1px solid #7e7e7e;
-			font-family: $base-font-family;
-			list-style: none;
+			border-bottom: 1px solid $dh-gray-text;
 			position: relative;
 			&:after{
 				content: '';
@@ -1124,14 +1100,12 @@ sup {
 				border-bottom: 12px solid transparent;
 				display: block;
 				position: absolute;
-				right: 2px;
-				top: 4px;
+				@include position-tr(4px, 2px);
 			}
 			a{
-				color: #7e7e7e;
+				@extend %links-right-sidebar;
 				display: block;
 				&:hover{
-					color: $dh-black;
 					text-decoration: none;
 				}
 			}
@@ -1148,9 +1122,7 @@ sup {
 	margin: 0 auto;
 	font-size: 0;
 	label{
-		@include font-shorthand(15px, normal, 30px);
-		font-family: $heading-font-family;
-		color: $dh-black;
+		@extend %copy-label;
 		display: inline-block;
 		vertical-align: top;
 		padding-right: 10px;
@@ -1172,12 +1144,10 @@ sup {
 		}
 	}
 	input[type="button"], input[type="submit"]{
-		@include font-shorthand(12px, normal, 24px);
+		@extend %copy-button-small;
 		@include size(75px, 30px);
 		background-color: $dh-black;
-		font-family: $base-font-family;
 		color: $dh-white;
-		text-transform: uppercase;
 		border: 1px solid $dh-black;
 		box-shadow: none;
 		display: inline-block;
