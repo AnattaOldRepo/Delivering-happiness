@@ -236,8 +236,8 @@ td {
         }
     }
     h2 {
-        // @extend %heading-level-4;
-        // line-height: 57px;
+        @extend %heading-level-4;
+        line-height: 57px;
         span {
             @extend %heading-level-12;
             color: $LightBlue;
@@ -486,7 +486,12 @@ td {
                 @include size(100%, 336px);
             }
             .button {
+            	background: rgba(255, 255, 255, 0.5);
+            	padding: 10px 45px;
                 margin-top: 20px;
+                &:hover{
+                	background: rgba(255, 255, 255, 0.8);
+                }
                 
             }
         }
@@ -507,7 +512,13 @@ td {
                 }
             }
             .button {
+            	background: rgba(255, 255, 255, 0.4);
+            	border-width: 1px;
+            	padding: 10px 45px;
                 margin-top: 20px;
+                &:hover{
+                	background: rgba(255, 255, 255, 0.9);
+                }
             }
         }
     }
@@ -520,7 +531,13 @@ td {
             // need to set variable
             color: $White;
             .button {
+            	background: rgba(255, 255, 255, 0.4);
+            	border-width: 1px;
+            	padding: 10px 45px;
                 margin-top: 20px;
+                &:hover{
+                	background: rgba(255, 255, 255, 0.9);
+                }
             }
         }
     }
@@ -675,6 +692,9 @@ td {
             p {
                 padding-bottom: 34px;
             }
+            .button {
+            	padding: 19px 48px;
+            }
         }
     }
     @media (max-width: $screen-sm-max) {
@@ -694,6 +714,9 @@ td {
                 padding: 20px;
                 p {
                     padding-bottom: 20px;
+                }
+                .button {
+                	padding: 19px 48px;
                 }
             }
         }
@@ -718,6 +741,7 @@ td {
             }
         }
         .button {
+        	padding: 19px 34px;
             margin-left: 115px;
         }
     }
@@ -729,6 +753,9 @@ td {
             span {
                 color: white;
             }
+        }
+        .button {
+        	min-width: 235px;
         }
     }
     &.updated {

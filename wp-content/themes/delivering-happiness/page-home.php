@@ -32,13 +32,12 @@ get_header();
 			</div>
 			<div class="left-col">
 				<article class="content">
-					<h1 class="gray">Creating a happier world.</h1>
-					<h2 class="blue">One person, community and company at a time.</h2>
+					<h2>Creating a happier world.<span>One person, community and company at a time.</span></h2>
 					<p>Science tells us that people are bad at predicting what keeps us happy. It also says that focusing on our passions and purpose can create sustainable happiness. Yet, here we are, a global society of people that are unhappy (or think they could be happier) in life.</p>
 					<p>Simply put, everyone wants to be a part of something bigger than ourselves. To have a higher purpose. That’s where we come in. 
 					We believe by prioritizing happiness in work and life, together we 
 					can create change in the world more than we ever thought possible.</p>
-					<a href="/community" class="button primary purple">Tell me more</a>
+					<a href="/community" class="button blue">Tell me more</a>
 				</article>
 			</div>
 			
@@ -79,48 +78,29 @@ get_header();
 		</div>
 		<div class="right-col">
 			<article class="content sandels active">
-				<h1 class="white">Lowers Stress</h1>
+				<h3>Lowers Stress</h3>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/sandels-l.png" alt="" />
-				<blockquote>
-					<p>Working overtime? Got cut off on the freeway? Things happen out of our control all the time but what we CAN control is what makes us happy.</p>
-					<footer class="meta">
-						<cite class="author">~ The Happiness Advantage, Shawn Achor</cite>
-			        </footer>
-				</blockquote>
+				<p>Working overtime? Got cut off on the freeway? Things happen out of our control all the time but what we CAN control is what makes us happy.<span>~ The Happiness Advantage, Shawn Achor</span></p>
 			</article>
 			<article class="content heart">
-				<h1 class="white">Improves Health</h1>
+				<h3>Improves Health</h3>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/heart-l.png" alt="" />
-				<blockquote>
-					<p>Exercise helps, but did you know? Happy people have more energy and activity, a bolstered immune system, and even longevity.</p>
-					<footer class="meta">
-						<cite class="author">~ Pursuing Happiness, Lyubomirsky, Sheldon and Schkade</cite>
-					</footer>
-				</blockquote>
+				<p>Exercise helps, but did you know? Happy people have more energy and activity, a bolstered immune system, and even longevity.<span>~ Pursuing Happiness, Lyubomirsky, Sheldon and Schkade</span></p>
 			</article>
 			<article class="content mountain">
-				<h1 class="white">Redefines Success</h1>
+				<h3>Redefines Success</h3>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/mountain-l.png" alt="" />
-				<blockquote>
-					<p>It’s easy to see that success can lead to happiness, but studies also show the opposite. Happy individuals are more likely to be successful across multiple life domains than their less happy peers. </p>
-				</blockquote>
+				<p>It’s easy to see that success can lead to happiness, but studies also show the opposite. Happy individuals are more likely to be successful across multiple life domains than their less happy peers. </p>
 			</article>
 			<article class="content lilly">
-				<h1 class="white">Brings Meaning</h1>
+				<h3>Brings Meaning</h3>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/lilly-l.png" alt="" />
-				<blockquote>
-					<p>Research shows that having a higher purpose — being a part of something bigger than yourself — will not only bring you the longest lasting happiness, but meaningful happiness to boot.</p>
-					<footer class="meta">
-						<cite class="author">~ Authentic Happiness, Martin E. P. Seligman</cite>
-					</footer>
-				</blockquote>
+				<p>Research shows that having a higher purpose — being a part of something bigger than yourself — will not only bring you the longest lasting happiness, but meaningful happiness to boot.<span>~ Authentic Happiness, Martin E. P. Seligman</span></p>
 			</article>
 			<article class="content winky">
-				<h1 class="white">Changes Lives</h1>
+				<h3>Changes Lives</h3>
 				<img src="<?php bloginfo('template_url') ?>/assets/images/global/winkey-l.png" alt="" />
-				<blockquote>
-					<p>Deciding to be happier will change your life for the better. Working toward a happiness goal generates its own payoff as you tip the scales toward a happier life. And when you’re being true to your (weird) self, you’ll inspire others toward their own personal happiness. </p>
-				</blockquote>
+				<p>Deciding to be happier will change your life for the better. Working toward a happiness goal generates its own payoff as you tip the scales toward a happier life. And when you’re being true to your (weird) self, you’ll inspire others toward their own personal happiness. </p>
 			</article>
 		</div>
 	</div>
@@ -141,7 +121,7 @@ get_header();
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/chart.png" alt="placeholder" />
 				</div>
 			</div>
-			<a href="/services/calculate-your-roi" class="button primary blue">Calculate your happiness ROI</a>
+			<a href="/services/calculate-your-roi" class="button blue">Calculate your happiness ROI</a>
 		</div>
 	</div>
 </section>
@@ -155,13 +135,13 @@ get_header();
 		<div class="col left-col">
 			<div class="work-survey">
 				<div class="content">
-					<div class="v-aling"><h2>Take the<br/>happiness at<br/>work survey</h2></div>
+					<div class="v-aling"><h3>Take the<br/>happiness at<br/>work survey</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-					<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="button secondary blue">Read On</a>
+					<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="button blue">Read On</a>
 				</div>
 			</div>
 		</div>
@@ -171,26 +151,26 @@ get_header();
 					<img src="<?php bloginfo('template_url') ?>/assets/images/global/shop-graphic.jpg" alt="" />
 				</div>
 				<div class="content small">
-					<div class="v-aling"><h2>Live Happy</h2></div>
+					<div class="v-aling"><h3>Live Happy</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Inspire. Connect. Educate and Experience. Products that remind us of why happiness isn’t a fleeting thought, it’s a way to live.</p>
-					<a href="/shop" class="button secondary blue">Let's Live Happy!</a>
+					<a href="/shop" class="button blue">Let's Live Happy!</a>
 				</div>
 			</div>
 		</div>
 		<div class="col right-col">
 			<div class="schedule-call">
 				<div class="content">
-					<div class="v-aling"><h2> Join a <br/>culture call</h2></div>
+					<div class="v-aling"><h3> Join a <br/>culture call</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Join the culture conversation, discuss challenges, and discover opportunities for your organization’s growth.</p>
-					<a href="/services/culture-call/" class="button secondary blue">Let's Talk Culture!</a>
+					<a href="/services/culture-call/" class="button blue">Let's Talk Culture!</a>
 				</div>
 			</div>
 		</div>
@@ -213,7 +193,7 @@ get_header();
 			</div>
 			<article class="content">
 				<p>We help organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success.</p>
-				<a href="/services" class="button secondary yellow">Learn more</a>
+				<a href="/services" class="button yellow">Learn more</a>
 			</article>
 		</div>
 	</div>
@@ -258,7 +238,7 @@ get_header();
 						<?php else : ?>
 							<p><?php echo substr( strip_tags( $blog_posts[0]->post_content ), 0, 80 ); ?></p>
 						<?php endif; ?>
-						<a href="<?php echo get_permalink( $blog_posts[0]->ID ); ?>" class="button secondary blue">LET’S GO!</a>
+						<a href="<?php echo get_permalink( $blog_posts[0]->ID ); ?>" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
@@ -283,7 +263,7 @@ get_header();
 						<?php else : ?>
 							<p><?php echo substr( strip_tags( $blog_posts[1]->post_content ), 0, 80 ); ?></p>
 						<?php endif; ?>
-						<a href="<?php echo get_permalink( $blog_posts[1]->ID ); ?>" class="button secondary  blue">LET’S GO!</a>
+						<a href="<?php echo get_permalink( $blog_posts[1]->ID ); ?>" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
@@ -308,7 +288,7 @@ get_header();
 						<?php else : ?>
 							<p><?php echo substr( strip_tags( $blog_posts[2]->post_content ), 0, 80 ); ?></p>
 						<?php endif; ?>
-						<a href="<?php echo get_permalink( $blog_posts[2]->ID ); ?>" class="button secondary blue">LET’S GO!</a>
+						<a href="<?php echo get_permalink( $blog_posts[2]->ID ); ?>" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
 			</div>

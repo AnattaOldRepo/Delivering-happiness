@@ -3,22 +3,11 @@
 // --------------------------------------------------
 
 .site-footer {
-	font-family: $heading-font-family;
     a {
-        color: $dh-gray;
-        font-family: $heading-font-family;
-        font-size: 14px;
+        color: $text-color;
         &:hover {
             text-decoration: underline;
         }
-    }
-    ul{
-    	margin: 0;
-    }
-    li{
-    	list-style: none;
-    	font-size: 14px;
-    	line-height: normal;
     }
     .bar {
         color: $White;
@@ -66,17 +55,16 @@
             }
         }
         a {
-            color: $dh-gray;
+            color: #999999;
         }
         h3,
         h4 {
-            color: $dh-gray;
+            color: $Gray;
             text-transform: uppercase;
             margin-bottom: 33px;
             letter-spacing: 1px;
-            font-family: $heading-font-family;
             a {
-                color: $dh-gray;
+                color: $Gray;
                 &:hover {
                     text-decoration: none;
                 }
@@ -111,7 +99,7 @@
                     padding-left: 0px !important;
                 }
                 .gform_wrapper li.gfield.gfield_error, .gform_wrapper li.gfield.gfield_error.gfield_contains_required.gfield_creditcard_warning {
-                    background-color: $dh-white;
+                    background-color: #ffffff;
                     border: 0 none;
                     margin: 0 !important;
                     padding: 0 !important;
@@ -229,9 +217,6 @@
         }
         p {
             @extend %pull-left;
-            font-family: $heading-font-family;
-            font-size: 14px;
-            margin: 0;
         }
         img {
             @extend %pull-right;
