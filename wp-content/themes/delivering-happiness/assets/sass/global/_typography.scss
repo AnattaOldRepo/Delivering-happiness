@@ -314,7 +314,9 @@
 @include class(copy-default) {
 	@include font-shorthand(18px, normal, 22px);
 	font-family: $base-font-family;
+	font-style: normal;
 	p{
+		font-style: normal;
 		@extend %copy-default;
 	}
 }

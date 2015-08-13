@@ -1,0 +1,119 @@
+.two-col-layout-with-hero-banner{
+	padding-top: 34px;
+	p{
+		color: $dh-black;
+	}
+	h1{
+		@extend %heading-h1;
+	}
+	em, i{
+		font-style: italic;
+	}
+	.hero{
+		margin-bottom: 35px;
+		h2 {
+		    @include text-shadow(rgba(black, 0.3) 1px 1px 0);
+		    @include font-shorthand(54px, normal, 63px);
+		    color: $White;
+		    letter-spacing: 0;
+		    @extend %museo_slab;
+		    sup{
+		    	font-size: 21px;
+		    	position: relative;
+		    	top: -20px;
+		    	line-height: 0;
+		    	font-style: normal;
+		    	left: 4px;
+		    }
+		}
+		.wrapper{
+			position: relative;
+			overflow: hidden;
+			height: 434px;
+		}
+		img{
+			max-width: 100%;
+			position: absolute;
+		}
+		.copy{
+			position: relative;
+			top: 50%;
+			transform: translateY(-50%);
+			width: 570px;
+			float: right;
+			padding-right: 60px;
+		}
+	}
+	.two-column{
+		padding-bottom: 50px;
+		.wrapper{
+			@include clearfix;
+			.col{
+				float: left;
+				padding-left: 55px;
+				width: 50%;
+			}
+			.right-col{
+				height: auto;
+				padding-top: 27px;
+			}
+		}
+		.copy{
+			@extend %copy-default;
+			font-style: normal;
+			margin-bottom: 12px;
+			p{
+				@extend %copy-default;
+				margin-bottom: 12px;
+				&:last-child{
+					margin-bottom: 0;
+				}
+			}
+			a{
+				@extend %links-default;
+			}
+			ul{
+				@extend %ul-default;
+				margin-bottom: 20px;
+				li{
+					sup{
+						top: -3px;
+					}
+				}
+			}
+			h2{
+				@extend %heading-h2;
+				margin-bottom: 11px;
+				color: $dh-blue;
+				text-align: left;
+			}
+			h3{
+				text-align: left;
+				@extend %heading-h3;
+				color: $dh-blue;
+				margin-bottom: 11px;
+			}
+			h5{
+				@extend %heading-h5;
+			}
+		}
+	}
+	.service-form{
+		@include size(469px, auto);
+		background-color: $Blue;
+		color: $White;
+		display: block;
+		padding: 24px;
+		h3{
+			@include size(291px, 24px);
+			background-size: cover;
+			display: block;
+			margin: 5px auto 0;
+			font-size: 25px;
+			margin-bottom: 27px;
+		}
+		label{
+			color: $White;
+		}
+	}
+}
