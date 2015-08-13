@@ -276,85 +276,155 @@
 //	New Style Guide Typography
 //	-----------------------------------
 
-p, h1, h2, h3, h4, h5, h6{
-	margin: 0;
-	padding: 0;
-}
-ul, ol{
-	padding: 0;
-}
-h1{
+
+// Page Heading
+// --------------
+
+@include class(heaing-h1) {
 	@include font-shorthand(40px, normal, normal);
 	font-family: $heading-font-family;
-	margin-bottom: 15px;
 }
-h2{
-	@include font-shorthand(28px, normal, normal);
+
+@include class(heaing-h2) {
+	@include font-shorthand(28px, normal, 48px);
 	font-family: $heading-font-family;
 	font-style: italic;
-	margin-bottom: 15px;
 }
-h3{
+@include class(heaing-h3) {
 	@include font-shorthand(22px, normal, 30px);
 	font-family: $base-font-family;
-	margin-bottom: 15px;
 }
-strong{
-	font-weight: 700;
+@include class(heaing-h4) {
+	@include font-shorthand(28px, normal, 48px);
+	font-family: $heading-font-family;
 }
-em{
-	font-style: italic;
+@include class(heaing-h5) {
+	@include font-shorthand(28px, normal, normal);
+	font-family: $heading-font-family;
+	text-transform: uppercase;
 }
-ul{
-	margin-left: 20px;
-	margin-bottom: 15px;
+@include class(heaing-h6) {
+	@include font-shorthand(20px, normal, normal);
+	font-family: $heading-font-family;
+}
+
+// Standard Paragraph
+// --------------
+
+@include class(copy-standard) {
+	@include font-shorthand(18px, normal, 22px);
+	font-family: $base-font-family;
+}
+
+@include class(copy-blockquote) {
+	@extend %heaing-h2;
+	text-align: left;
+	color: $dh-purple;
+}
+@include class(copy-cite) {
+	@extend %heaing-h6;
+	text-align: right;
+	color: $dh-purple;
+	font-style: normal;
+}
+@include class(copy-label) {
+	@include font-shorthand(15px, normal, 30px);
+	font-family: $heading-font-family;
+	color: $dh-black;
+}
+
+
+// default Un-order and order Listing
+// --------------
+
+@include class(ul-default) {
 	li{
 		@include font-shorthand(18px, normal, 22px);
 		list-style-type: disc;
 		font-family: $base-font-family;
 	}
 }
-ol{
-	margin-left: 20px;
-	margin-bottom: 15px;
+@include class(ol-default) {
+	@extend %ul-default;
 	li{
-		@include font-shorthand(18px, normal, 22px);
 		list-style-type: decimal;
-		font-family: $base-font-family;
 	}
 }
-p{
-	@include font-shorthand(18px, normal, 22px);
-	font-family: $base-font-family;
-	margin-bottom: 15px;
-}
-a{
-	color: $dh-blue;
-	&:hover{
-		text-decoration: underline;
+@include class(list-none) {
+	list-style: none;
+	margin:0;
+	padding: 0;
+	li{
+		list-style: none;
 	}
 }
 
-blockquote{
-	@include font-shorthand(28px, normal, normal);
-	@include box-shadow(none);
-	font-family: $heading-font-family;
-	margin: 0;
-	padding: 30px;
-	color: $dh-purple;
-	text-align: left;
-	background-color: #f6f6f6;
-	border: none;
+// default typography
+// --------------
+
+strong{
+	font-weight: 700;
+}
+em{
 	font-style: italic;
-	p{
-		font-family: $heading-font-family;
-		@include font-shorthand(28px, normal, normal);
+}
+
+// Default anchor link
+// --------------
+
+@include class(links-default) {
+	color: $dh-blue;
+	&:hover{
+		color: $dh-blue;
+		text-decoration: underline;
+	}
+}
+@include class(links-active) {
+	color: $dh-purple;
+}
+@include class(links-left-sidebar) { 
+	@extend %heaing-h6;
+	color: #a4a4a4;
+	&.active{
 		color: $dh-purple;
 	}
+	&:hover{
+		color: $dh-black;
+	}
+}
+@include class(links-right-sidebar) {
+	@include font-shorthand(18px, normal, normal);
+	font-family: $base-font-family;
+	color: $dh-gray-text;
+	&:hover{
+		color: $dh-black;
+	}
+}
+
+// Default Button copy
+// --------------
+@include class(copy-button) {
+	@include font-shorthand(17px, normal, normal);
+	font-family: $heading-font-family;
+	text-transform: uppercase;
+}
+@include class(copy-button-small) {
+	@include font-shorthand(13px, normal, 24px);
+	font-family: $base-font-family;
+	text-transform: uppercase;
+}
+
+@include class(blockquote-default) {
+	@extend %copy-blockquote;
+	margin: 0;
+	padding: 30px;
+	background-color: #f6f6f6;
+	border: none;
+	p{
+		@extend %copy-blockquote;
+	}
 	cite, .author{
+		@extend %copy-cite;
 		display: block;
-		@include font-shorthand(20px, normal, normal);
-		color: $dh-purple;
-		text-align: right;
 	}
 }
