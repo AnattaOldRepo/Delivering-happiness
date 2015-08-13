@@ -70,5 +70,30 @@
 
     });
 	});
+	
+	var $sidebar   = $(".nav-left-sidebar"), 
+		$sidebarW  =  $sidebar.width();
+		$headerH = $('.global-header').outerHeight();
+	        $window    = $(window),
+	        offset     = $sidebar.offset(),
+	        topPadding = 15;
+
+	    $window.scroll(function() {
+	        if ($window.scrollTop() > offset.top - $headerH) {
+	        	$sidebar.addClass('is-sticky');
+	        	$sidebar.css('top', $headerH);
+	        	$('.has-left-sticky').css('margin-left', $sidebarW);
+	            // $sidebar.stop().animate({
+	            //     marginTop: $window.scrollTop() - offset.top + topPadding + $headerHeight
+	            // });
+	        } else {
+	        	$('.has-left-sticky').removeAttr('style');
+	        	$sidebar.removeClass('is-sticky');
+	            // $sidebar.stop().animate({
+	            //     marginTop: 0
+	            // });
+	        }
+	    });
+
 })(jQuery);
 

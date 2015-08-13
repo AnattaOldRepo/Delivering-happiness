@@ -1108,10 +1108,13 @@ sup {
 	text-align: left;
 	h5{
 		@extend %heading-h5;
+		margin-bottom: 17px;
 	}
 	ul{
 		@extend %list-none;
+		margin-bottom: 32px;
 		li{
+			margin-bottom: 14px;
 			a{
 				@extend %links-left-sidebar;
 			}
@@ -1120,7 +1123,8 @@ sup {
 	&.is-sticky{
 		position: fixed;
 		top: 0;
-		width: 250px;
+		width: 312px;
+		background-color: $dh-white;
 	}
 }
 
@@ -1132,7 +1136,7 @@ sup {
 		color: $dh-gray-text;
 		background-color: $dh-gray-dark;
 		display: block;
-		padding: 0 5px;
+		padding: 5px 10px 6px;
 	}
 	ul{
 		@extend %list-none;
@@ -1142,15 +1146,16 @@ sup {
 			&:after{
 				content: '';
 				@include size(0, 0);
-				border-top: 12px solid transparent;
-				border-left: 12px solid $dh-purple;
-				border-bottom: 12px solid transparent;
+				border-top: 8px solid transparent;
+				border-left: 8px solid $dh-purple;
+				border-bottom: 8px solid transparent;
 				display: block;
 				position: absolute;
-				@include position-tr(4px, 2px);
+				@include position-tr(8px, 0px);
 			}
 			a{
 				@extend %links-right-sidebar;
+				padding: 6px 3px;
 				display: block;
 				&:hover{
 					text-decoration: none;
@@ -1160,9 +1165,10 @@ sup {
 	}
 }
 
+
 .sign-up-ribbon{
 	border-top: 1px solid $dh-black;
-	padding: 28px 0;
+	padding: 27px 0 31px;
 	background-color: $dh-white;
 	text-align: center;
 	max-width: 1170px;
@@ -1172,7 +1178,13 @@ sup {
 		@extend %copy-label;
 		display: inline-block;
 		vertical-align: top;
-		padding-right: 10px;
+		padding-right: 16px;
+	}
+	input{
+		&:focus{
+			outline: none;
+			box-shadow: none;
+		}
 	}
 	input[type="email"]{
 		@include font-shorthand(12px, normal, 28px);
@@ -1199,6 +1211,8 @@ sup {
 		box-shadow: none;
 		display: inline-block;
 		vertical-align: top;
+		cursor: pointer;
+		font-weight: 700;
 		&:hover{
 			background-color: rgba($dh-black, .1);
 			color: $dh-black;

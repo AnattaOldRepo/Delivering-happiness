@@ -6,110 +6,80 @@ get_header();
 
 ?>
 
-<!-- Work page-->
-<div class="work">
-    <section class="one-column hero">
-		<div class="wrapper">
-			<h2>
-				Is your company<br/>
-				ready to <em>Make</em><br/>
-				<em>Happy Work</em><sup>&nbsp;&nbsp;™</sup>?
-			</h2>
-			<a href="/service-request/" class="button">LET’S GET STARTED!</a>
-		</div>
-	</section>
-
-	<section class="two-column inspiration rtt updated">
-		<div class="wrapper">
-			<div class="left-col">
-				<div class="media">
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/rtt.jpg" alt="" />
-				</div>
-			</div>
-			<div class="right-col strongyellow-area">
-				<div class="content">
-					<h3>Request a talk.<span>Make your next event memorable<br/>*and* inspirational.</span></h3>
-					<p>Our experienced keynote speakers have inspired countless<br/>companies around the world. Their talk will show your<br/>audience how a very different kind of corporate culture is<br/>a powerful model for achieving success — and how by<br/>concentrating on the happiness of those around you,<br/>you can dramatically increase your own.</p>
-					<a href="/work/speaking/" class="button softyellow">Get Inspired</a>
-				</div>
-			</div>
-		</div>
-	</section>
-
-		<section class="two-column over-the-globe">
-		<div class="wrapper">
-			<div class="left-col yellow-area">
-				<div class="media">
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/companies.jpg" alt="" />
-				</div>
-				<article class="content">
-					<p>We help organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success.</p>
-					<a href="#" class="button yellow modal-box-handler" onclick="jQuery('#download_roadmap_form').show();return false;">DOWNLOAD HELLO DOC.</a>
-				</article>
-			</div>
-			<div class="right-col offwhite-area">
-				<div class="content">
-					<h2>We’ve inspired businesses<br/>all over the globe.</h2>
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/global.png" alt="" />
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="two-column coin-animation clients flip">
-		<div class="wrapper">
-			<div class="left-col">
-				<div class="media">
-					<h2>Kudos from our clients:</h2>
-					<div class="all-coins">
-						<div class="coin active">
-							<div class="coin-side front clients-hp"></div>
-							<div class="coin-side back clients-hp-selected"></div>
+<div class="speaking-page">
+	<div class="wrapper">
+		<section class="hero-banner">
+			<img src="<?php bloginfo('template_url') ?>/assets/images/speaking/speaking-hero.jpg" alt="" />
+		</section>
+		
+		<section class="row two-col-layout">
+			<aside class="nav-left-sidebar">
+				<h5>What we do</h5>
+				<ul>
+					<li><a class="active" href="#">Speaking</a></li>
+					<li><a href="#">Culture Assessment</a></li>
+					<li><a href="#">Workshops</a></li>
+					<li><a href="#">Consulting</a></li>
+					<li><a href="#">Creative Services</a></li>
+				</ul>
+				<a href="#" class="btn primary purple">Click Me</a>
+			</aside>
+			<div class="col-right has-left-sticky">
+				<h1>Inspire Culture Change - 40px</h1>
+				<article class="modules">
+					<h2>Euclid paroxysm of global death - 28px</h2>
+					<div class="article-banner has-quick-links">
+						<div class="banner">
+							<img src="<?php bloginfo('template_url') ?>/assets/images/speaking/speaking-article-banner" alt="" />
 						</div>
-						<div class="coin">
-							<div class="coin-side front clients-aetna"></div>
-							<div class="coin-side back clients-aetna-selected"></div>
-						</div>
-						<div class="coin">
-							<div class="coin-side front clients-r"></div>
-							<div class="coin-side back clients-r-selected"></div>
-						</div>
-						<div class="coin left-pull">
-							<div class="coin-side front clients-lost"></div>
-							<div class="coin-side back clients-lost-selected"></div>
-						</div>
+						<aside class="nav-right-sidebar">
+							<h5>QUICK LINKS</h5>
+							<ul>
+								<li><a href="#">Speakers</a></li>
+								<li><a href="">Topics</a></li>
+								<li><a href="">Past Engagements</a></li>
+								<li><a href="">Download Our Hello</a></li>
+								<li><a href="">Lorem Ipsum</a></li>
+							</ul>
+						</aside>
 					</div>
-				</div>
-			</div>
-			<div class="right-col blue-area">
-				<article class="content active">
-					<div class="v-aling">
-						<blockquote>This was insightful, inspiring, and applicable in real ways.  Sharing ideas and practices with other organizations was invaluable.  They understand how to use happiness to improve culture and productivity.</blockquote>
-						<span>~ MARTIN TRACEY, VP OF HR, HP</span>
-					</div>
+					<p>
+						Helvetica Light - 18px.<br/>
+						Our experienced keynote speakers and breakout facilitators have inspired companies across size and industry, and around the world. We ignite the energy and excitement that are nascent in your organization by instilling a deep understanding of the importance of creating a sustainable culture using happiness as a business model.
+					</p>
+					<p>
+						Along the way, we’ll equip your audience with the data-driven, science-backed information necessary to make a compelling case to reexamine your organization’s culture. 
+					</p>
 				</article>
-				<article class="content">
-					<div class="v-aling">
-						<blockquote>This was an awesome experience! The best part for me was seeing the correlation between happiness at work and increased production/profit. I think it drove home how important happiness is and how easily happiness can be accomplished.</blockquote>
-						<span>~ Danielle Crescentini, Project Manager, Aetna </span>
-					</div>
+				<article class="modules">
+					<blockquote>
+						<p>
+							This is a blockquote for testimonials. It should only ever be used for quotes, and emphasis should be in non-italic. This is Museo Slab 500 Italic in 28px.
+						</p>
+						<cite>– Quote Owner’s name in 20px Museo Slab 500</cite>
+					</blockquote>
 				</article>
-				<article class="content">
-					<div class="v-aling">
-						<blockquote>Delivering Happiness has had a great impact directly and indirectly on virtually all aspects of our business from how to interact with customers, our partners and each other.  Focusing on our culture has increased sales, increased the bottom line and most importantly allowed us to better serve our mission.</blockquote>
-						<span>~ Scotty Bintz, CEO, RealTruck</span>
-					</div>
-				</article>
-				<article class="content">
-					<div class="v-aling">
-						<blockquote>DH changed the way I think about successfully managing a business. It helped catapult me out of an old fashion top down style, to an inclusive, engaged process that is ultimately more rewarding to everyone at our company. If you are interested in the same old, same old, DON'T go to DH. You won't be able to leave unchanged. </blockquote>
-						<span>~ Ra'uf Glasgow, Producer, West Wind Media, former producer of LOST (TV Show)</span>
-					</div>
+				<article class="modules">
+					<h2>Outcomes - 28px</h2>
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+					<ul class="ul-default">
+						<li>A solid understanding and foundation around culture, happiness and the spark necessary to invigorate your organization</li>
+						<li>Practical examples of how happiness can be applied to the workplace to increase retention, productivity and engagement</li>
+						<li>Data and case studies to bring back to your organization as to why it makes sense to commit to culture as a competitive advantage</li>
+					</ul>
 				</article>
 			</div>
-		</div>
-	</section>
+		</section>
 
+		<div class="sign-up-ribbon">
+			<form>
+				<label for="">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</label>
+				<input type="email" placeholder="your email address" />
+				<input type="submit" value="Submit" />
+			</form>
+		</div>
+
+	</div>
 </div>
-<!-- /Work page-->
+
 <?php get_footer(); ?>

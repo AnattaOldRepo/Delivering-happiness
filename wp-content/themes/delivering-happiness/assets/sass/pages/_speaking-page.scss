@@ -1,0 +1,61 @@
+.speaking-page{
+	img{
+		vertical-align: top;
+	}
+	h1{
+		margin-bottom: 16px;
+		@extend %heading-h1;
+		color: $dh-purple;
+	}
+	h2{
+		@extend %heading-h4;
+		margin-bottom: 13px;
+	}
+
+	.hero-banner{
+		margin-bottom: 35px;
+	}
+	.row, .modules, .article-banner{
+		@include clearfix;
+	}	
+	.two-col-layout{
+		padding: 0 52px;
+		margin-bottom: 17px;
+		.nav-left-sidebar, .col-right{
+			float: left;
+		}
+		.nav-left-sidebar{
+			padding-top: 8px;
+			width: 312px;
+		}
+		.col-right{
+			width: 754px;
+		}
+	}
+	.modules{
+		margin-bottom: 40px;
+		@extend %copy-default;
+		p{
+			margin-bottom: 23px;
+			&:last-child{
+				margin-bottom: 0;
+			}
+		}
+		blockquote{
+			@extend %blockquote-default;
+		}
+	}
+	.article-banner{
+		margin-bottom: 21px;
+		.banner,.nav-right-sidebar{
+			float: left;
+		}
+		.banner{
+			width: 475px;
+			margin-right: 24px;
+		}
+		.nav-right-sidebar{
+			width: 250px;
+		}
+	}
+}
