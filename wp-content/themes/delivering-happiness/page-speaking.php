@@ -30,7 +30,7 @@ get_header();
 					<h2>Euclid paroxysm of global death - 28px</h2>
 					<div class="article-banner has-quick-links">
 						<div class="banner">
-							<img src="<?php bloginfo('template_url') ?>/assets/images/speaking/speaking-article-banner" alt="" />
+							<img src="<?php bloginfo('template_url') ?>/assets/images/speaking/speaking-article-banner.jpg" alt="" />
 						</div>
 						<aside class="nav-right-sidebar">
 							<h5>QUICK LINKS</h5>
