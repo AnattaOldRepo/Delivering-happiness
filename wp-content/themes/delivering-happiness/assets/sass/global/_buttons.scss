@@ -4,7 +4,7 @@
 
 	@include box-shadow(none);
 	@include size(auto, auto);
-	@include border-radius(13px);
+	@include border-radius(8px);
 	@include transition(border-color .3s ease-in-out, background-color .3s ease-in-out);
 
 	display: inline-block;
@@ -12,7 +12,7 @@
 	white-space: nowrap;
 	outline: none;
 	margin: 0;
-	padding: 16px 30px;
+	padding: 10px 30px;
 	border: 1px solid transparent;
 	text-decoration: none;
 	-webkit-appearance: none;
