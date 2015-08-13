@@ -18,6 +18,7 @@ get_header();
 			<a href="/service-request/" class="button">LET’S GET STARTED!</a>
 		</div>
 	</section>
+	
 	<section>
 		<div class="wrapper">
 			<div class="light-gray-box">
@@ -38,7 +39,6 @@ get_header();
 			</div>
 		</div>
 	</section>
-
 	<section class="rounded-block happy-work">
 		<div class="wrapper">
 			<div class="modal-box" id="download_roadmap_form" style="display:none;">
