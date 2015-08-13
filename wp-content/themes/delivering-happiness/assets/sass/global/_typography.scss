@@ -316,6 +316,11 @@
 	font-family: $base-font-family;
 }
 
+@include class(copy-large) {
+	@include font-shorthand(22px, normal, 30px);
+	font-family: $base-font-family;
+}
+
 @include class(copy-blockquote) {
 	@extend %heaing-h2;
 	text-align: left;
