@@ -18,21 +18,23 @@ get_header();
 			<a href="/service-request/" class="button">LET’S GET STARTED!</a>
 		</div>
 	</section>
-	<section class="two-column inspiration rtt updated">
+	<section>
 		<div class="wrapper">
-			<div class="left-col">
-				<div class="content">
-					<h2>The Keynote: Be Inspired</h2>
-					<h4>Explore. Educate. Excite</h4>
-					<p>Our Speakers [including CEO and Co-Founder Jenn Lim] will captivate your audience by demonstrating how a unique corporate culture is a competetive advantage.</p>
-					<a href="<?php echo home_url('/speaking/inspire');?>" class="button softyellow">Learn More</a>
+			<div class="light-gray-box">
+				<div class="box white image-with-text">
+					<img src="<?php bloginfo('template_url') ?>/assets/images/global/work-inspire-bg.jpg" alt="" class="image-bg" />
+					<div class="copy">
+						<h1 class="heading-h1 purple">The Keynote: Be Inspired</h1>
+						<h2>Explore. Educate. Excite.</h2>
+						<p>
+							Our speakers [including CEO and Co-Founder
+							Jenn Lim] will captivate your audience by
+							demonstrating how a unique corporate
+							culture is a competitive advantage
+						</p>
+						<a href="#" class="btn primary purple">Learn More</a>
+					</div>
 				</div>
-			</div>
-			<div class="right-col strongyellow-area">
-				<div class="media">
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/rtt.jpg" alt="" />
-				</div>
-				
 			</div>
 		</div>
 	</section>

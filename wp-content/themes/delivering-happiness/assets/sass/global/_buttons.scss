@@ -1,7 +1,7 @@
-@include class(button) {
+@include class(btn) {
 	@extend %copy-button;
 	@extend %text-center;
-	
+
 	@include box-shadow(none);
 	@include size(auto, auto);
 	@include border-radius(13px);
