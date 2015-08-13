@@ -1108,10 +1108,12 @@ sup {
 	text-align: left;
 	h5{
 		@extend %heading-h5;
+		margin-bottom: 17px;
 	}
 	ul{
 		@extend %list-none;
 		li{
+			margin-bottom: 14px;
 			a{
 				@extend %links-left-sidebar;
 			}
@@ -1132,7 +1134,7 @@ sup {
 		color: $dh-gray-text;
 		background-color: $dh-gray-dark;
 		display: block;
-		padding: 0 5px;
+		padding: 5px 10px 6px;
 	}
 	ul{
 		@extend %list-none;
@@ -1142,15 +1144,16 @@ sup {
 			&:after{
 				content: '';
 				@include size(0, 0);
-				border-top: 12px solid transparent;
-				border-left: 12px solid $dh-purple;
-				border-bottom: 12px solid transparent;
+				border-top: 8px solid transparent;
+				border-left: 8px solid $dh-purple;
+				border-bottom: 8px solid transparent;
 				display: block;
 				position: absolute;
-				@include position-tr(4px, 2px);
+				@include position-tr(8px, 0px);
 			}
 			a{
 				@extend %links-right-sidebar;
+				padding: 6px 3px;
 				display: block;
 				&:hover{
 					text-decoration: none;

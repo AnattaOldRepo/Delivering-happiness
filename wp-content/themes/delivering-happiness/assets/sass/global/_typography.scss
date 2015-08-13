@@ -311,26 +311,39 @@
 // Standard Paragraph
 // --------------
 
-@include class(copy-standard) {
+@include class(copy-default) {
 	@include font-shorthand(18px, normal, 22px);
 	font-family: $base-font-family;
+	p{
+		@extend %copy-default;
+	}
 }
 
 @include class(copy-large) {
 	@include font-shorthand(22px, normal, 30px);
 	font-family: $base-font-family;
+	p{
+		@extend %copy-large;
+	}
 }
 
 @include class(copy-blockquote) {
-	@extend %heading-h2;
+	@include font-shorthand(28px, normal, normal);
+	font-family: $heading-font-family;
+	font-style: italic;
 	text-align: left;
 	color: $dh-purple;
+	letter-spacing: -0.047em;
+	p{
+		@extend %copy-blockquote;
+	}
 }
 @include class(copy-cite) {
 	@extend %heading-h6;
 	text-align: right;
 	color: $dh-purple;
 	font-style: normal;
+	letter-spacing: -0.045em;
 }
 @include class(copy-label) {
 	@include font-shorthand(15px, normal, 30px);
@@ -343,6 +356,7 @@
 // --------------
 
 @include class(ul-default) {
+	margin-left: 42px;
 	li{
 		@include font-shorthand(18px, normal, 22px);
 		list-style-type: disc;
@@ -420,13 +434,13 @@ em{
 }
 
 @include class(blockquote-default) {
-	@extend %copy-blockquote;
 	margin: 0;
-	padding: 30px;
+	padding: 25px 30px 28px 26px;
 	background-color: #f6f6f6;
 	border: none;
 	p{
 		@extend %copy-blockquote;
+		margin-bottom: 10px;
 	}
 	cite, .author{
 		@extend %copy-cite;
