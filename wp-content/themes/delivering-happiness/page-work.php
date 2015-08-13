@@ -34,7 +34,7 @@ get_header();
 							culture is a competitive advantage
 						</p>
 						<div class="box-bottom-cta">
-							<a href="#" class="btn primary purple">Learn More</a>
+							<a href="<?php echo home_url('/speaking/inspire');?>" class="btn primary purple">Learn More</a>
 						</div>
 					</div>
 				</div>
