@@ -44,6 +44,27 @@
 		blockquote{
 			@extend %blockquote-default;
 		}
+		h3{
+			@extend %heading-h3;
+		}
+		h4{
+			@extend %heading-h4;
+		}
+		h5{
+			@extend %heading-h5;
+		}
+		h6{
+			@extend %heading-h6;
+		}
+		ul{
+			@extend %ul-default;
+		}
+		ol{
+			@extend %ol-default;
+		}
+		.nav-right-sidebar{
+			@extend %nav-right-sidebar;
+		}
 	}
 	.article-banner{
 		margin-bottom: 21px;
@@ -53,6 +74,9 @@
 		.banner{
 			width: 475px;
 			margin-right: 24px;
+			img{
+				max-width: 100%;
+			}
 		}
 		.nav-right-sidebar{
 			width: 250px;

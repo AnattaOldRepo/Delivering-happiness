@@ -72,7 +72,7 @@ get_header();
 										?>
 									</aside>
 								</div>
-								<p><?php echo $content;?></p>
+								<div class="default-copy"><?php echo $content;?></div>
 							</article>
 							<?php
 				        endif;
@@ -102,7 +102,6 @@ get_header();
 
 							if($rand_row_quote):
 								foreach( $rand_row_quote as $row ):
-									
 									echo '<article class="modules">'. $row .'</article>';
 								endforeach;
 							endif;
@@ -124,7 +123,7 @@ get_header();
 
 				        	<article class="modules">
 								<h2 style="color:<?php echo the_field('page_color');?>"><?php echo $title;?></h2>
-								<p><?php echo $content; ?></p>
+								<div class="default-copy"><?php echo $content; ?></div>
 							</article>
 				        <?php endif;
 				    endwhile;

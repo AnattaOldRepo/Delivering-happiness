@@ -1171,48 +1171,102 @@ sup {
 	max-width: 1170px;
 	margin: 0 auto;
 	font-size: 0;
-	label{
-		@extend %copy-label;
+	.gform_body{
 		display: inline-block;
 		vertical-align: top;
-		padding-right: 16px;
 	}
-	input{
-		&:focus{
-			outline: none;
-			box-shadow: none;
+	.gform_wrapper{
+		padding: 0;
+		margin: 0;
+		width: 100%;
+		form{
+			text-align: center;
 		}
-	}
-	input[type="email"]{
-		@include font-shorthand(12px, normal, 28px);
-		@include size(150px, 30px);
-		border: 1px solid $dh-black;
-		font-family: $base-font-family;
-		color: $dh-black;
-		display: inline-block;
-		padding: 0 10px;
-		vertical-align: top;
-		margin-right: 10px;
-		@include input-placeholder {
-		    color: #a4a4a4;
-		    font-style: italic;
-		    font-size: 12px;
+		label{
+			@extend %copy-label;
+			display: inline-block;
+			vertical-align: top;
+			padding-right: 16px;
 		}
-	}
-	input[type="button"], input[type="submit"]{
-		@extend %copy-button-small;
-		@include size(75px, 30px);
-		background-color: $dh-black;
-		color: $dh-white;
-		border: 1px solid $dh-black;
-		box-shadow: none;
-		display: inline-block;
-		vertical-align: top;
-		cursor: pointer;
-		font-weight: 700;
-		&:hover{
-			background-color: rgba($dh-black, .1);
+		input{
+			&:focus{
+				outline: none;
+				box-shadow: none;
+			}
+		}
+		.top_label{
+			input.medium{
+				@include size(150px, 30px);
+				padding: 0 10px;
+			}
+			label{
+				@extend %copy-label;
+				display: inline-block;
+				vertical-align: top;
+				padding-right: 16px;
+			}
+		}
+		.ginput_container{
+			display: inline-block;
+			margin-right: 10px;
+			vertical-align: top;
+		}
+		input[type="email"], input[type="email"].medium{
+			@include font-shorthand(12px, normal, 28px);
+			@include size(150px, 30px);
+			border: 1px solid $dh-black;
+			font-family: $base-font-family;
 			color: $dh-black;
+			display: inline-block;
+			padding: 0 10px;
+			vertical-align: top;
+			@include input-placeholder {
+			    color: #a4a4a4;
+			    font-style: italic;
+			    font-size: 12px;
+			}
+		}
+		.gform_footer{
+			display: inline-block;
+			padding: 0;
+			margin: 0;
+			vertical-align: top;
+			input[type="button"], input[type="submit"]{
+				@extend %copy-button-small;
+				@include size(75px, 30px);
+				background-color: $dh-black;
+				color: $dh-white;
+				border: 1px solid $dh-black;
+				box-shadow: none;
+				display: inline-block;
+				vertical-align: top;
+				cursor: pointer;
+				font-weight: 700;
+				padding: 0;
+				@include border-radius(0);
+				&:hover{
+					background-color: rgba($dh-black, .1);
+					color: $dh-black;
+				}
+			}
+		}
+		input[type="button"], input[type="submit"]{
+			@extend %copy-button-small;
+			@include size(75px, 30px);
+			background-color: $dh-black;
+			color: $dh-white;
+			border: 1px solid $dh-black;
+			box-shadow: none;
+			display: inline-block;
+			vertical-align: top;
+			cursor: pointer;
+			font-weight: 700;
+			padding: 0;
+			@include border-radius(0);
+			&:hover{
+				background-color: rgba($dh-black, .1);
+				color: $dh-black;
+			}
 		}
 	}
 }
