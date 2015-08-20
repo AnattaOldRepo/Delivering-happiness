@@ -3,17 +3,16 @@
 Template Name: Inspire Speaking Page
 */
 get_header();
-
 ?>
-
-<!-- Work page-->
-<div class="service-request">
-	<div class="one-column-template">
-		<div class="wrapper">
-			<div class="page-header">
-				<h1><?php the_title() ?></h1>
-			</div>
-			<div id="primary" class="page-content">
+<div class="speaking-page">
+	<div class="wrapper">
+		<section class="hero-banner">
+			<img src="<?php bloginfo('template_url') ?>/assets/images/speaking/speaking-hero.jpg" alt="" />
+		</section>
+		
+		<section class="row two-col-layout sticky-container">
+			<aside class="nav-left-sidebar">
+				<h5 style="color:<?php the_field('page_color'); ?>">What we do</h5>
 				<?php
 				/* if the current pages has a parent, i.e. we are on a subpage */
 				if( $post->post_parent ){
@@ -22,12 +21,15 @@ get_header();
 				    $children .= wp_list_pages("depth=1&title_li=&child_of=".$post->post_parent."&echo=0"); // append the list of children pages to the same $children variable
 				}
 				if ($children) { ?>
-				    <ul class="submenu">
+				    <ul>
 				        <?php echo $children; /*print list of pages*/ ?>
 				    </ul>
 				<?php } ?>
-				<main id="main" class="site-main" role="main">
-
+				<?php $button_option = the_field('button_options'); ?>
+				<a href="#" class="btn primary <?php echo $button_option;?>">Click Me</a>
+			</aside>
+			<div class="col-right has-left-sticky">
+				<h1 style="color:<?php the_field('page_color'); ?>"><?php the_title(); ?></h1>
 				<?php
 				// check if the flexible content field has rows of data
 				if( get_field('module_1') ):
@@ -38,33 +40,40 @@ get_header();
 				        if( get_row_layout() == 'module_1_content' ):
 				        	$title = get_sub_field('title');
 				        	$image = get_sub_field('image');
-				        	$content = get_sub_field('content');
+				        	$content = get_sub_field('content'); ?>
+				        	<article class="modules">
+								<h2 style="color:<?php the_field('page_color'); ?>"><?php echo $title;?></h2>
+								<div class="article-banner has-quick-links">
+									<div class="banner">
+										<img src="<?php echo $image['url'];?>" alt="" />
+									</div>
+									<aside class="nav-right-sidebar">
+										<?php
+							       		// check if the nested repeater field has rows of data
+							        	if( have_rows('quick_links') ):
 
-				        	echo "<div><h3>".$title."</h3></div>";
+							        		echo '<h5>Quick Links</h5>';
+										 	echo '<ul>';
 
-				        	echo "<img src='".$image['url']."' alt='' />";
+										 	// loop through the rows of data
+										    while ( have_rows('quick_links') ) : the_row();
 
-				       		// check if the nested repeater field has rows of data
-				        	if( have_rows('quick_links') ):
+												$linktitle = get_sub_field('link_title');
+												$link = get_sub_field('link');
 
-				        		echo '<h2>Quick Links</h2>';
-							 	echo '<ul>';
+												echo '<li><a href="'.$link.'" target="_blank">'.$linktitle.'</a></li>';
 
-							 	// loop through the rows of data
-							    while ( have_rows('quick_links') ) : the_row();
+											endwhile;
 
-									$linktitle = get_sub_field('link_title');
-									$link = get_sub_field('link');
+											echo '</ul>';
 
-									echo '<li><a href="'.$link.'" target="_blank">'.$linktitle.'</a></li>';
-
-								endwhile;
-
-								echo '</ul>';
-
-							endif;
-				        	
-				        	echo "<div>".$content."</div>";
+										endif;
+										?>
+									</aside>
+								</div>
+								<p><?php echo $content;?></p>
+							</article>
+							<?php
 				        endif;
 				    endwhile;
 				endif;
@@ -85,14 +94,19 @@ get_header();
 				        if( get_row_layout() == 'module_2_content' ):
 
 				        	$rows = get_field('module_2' ); // get all the rows
-
+				       		
 				        	$rand_row = $rows[ array_rand( $rows ) ]; // get a random row
 				        
 							$rand_row_quote = array( $rand_row['quote' ] ); // get the sub field value 
-							
+
 							if($rand_row_quote):
 								foreach( $rand_row_quote as $row ):
-									echo "<div>". $row ."</div>";
+									
+									echo '<article class="modules">
+											<blockquote>
+												<p>'. $row .'</p>
+											</blockquote>
+										</article>';
 								endforeach;
 							endif;
 				        	
@@ -109,32 +123,37 @@ get_header();
 				        // check current row layout
 				        if( get_row_layout() == 'module_3_content' ):
 				        	$title = get_sub_field('title');
-				        	$content = get_sub_field('content');
-				        	echo "<div><h3>".$title."</h3></div>";
-				        	echo "<div>".$content."</div>";
-				        endif;
+				        	$content = get_sub_field('content');?>
+
+				        	<article class="modules">
+								<h2 style="color:<?php echo the_field('page_color');?>"><?php echo $title;?></h2>
+								<p><?php echo $content; ?></p>
+							</article>
+				        <?php endif;
 				    endwhile;
 				endif;
-
-				// check if the flexible content field has rows of data
-				if( get_field('module_4') ):
-
-				 	// loop through the rows of data
-				    while ( has_sub_field('module_4') ) :
-				        // check current row layout
-				        if( get_row_layout() == 'module_4_content' ):
-				        	$content = get_sub_field('content');
-				        	echo "<div>".$content."</div>";
-				        endif;
-				    endwhile;
-				endif;
-
 				?>
-				</main><!-- #main -->
-			</div><!-- #primary -->
-		</div>
+				
+			</div>
+		</section>
 	</div>
-
 </div>
-<!-- /Work page-->
+<div class="wrapper">
+	<div class="sign-up-ribbon">
+		<?php
+		// check if the flexible content field has rows of data
+		if( get_field('module_4') ):
+		 	// loop through the rows of data
+		    while ( has_sub_field('module_4') ) :
+		        // check current row layout
+		        if( get_row_layout() == 'module_4_content' ):
+		        	$content = get_sub_field('content');
+		        	echo $content;
+		        endif;
+		    endwhile;
+		endif;
+		?>
+	</div>
+</div>
+
 <?php get_footer(); ?>
