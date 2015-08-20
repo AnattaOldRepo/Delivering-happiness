@@ -25,8 +25,9 @@ get_header();
 				        <?php echo $children; /*print list of pages*/ ?>
 				    </ul>
 				<?php } ?>
-				<?php $button_option = the_field('button_options'); ?>
-				<a href="#" class="btn primary <?php echo $button_option;?>">Click Me</a>
+				<?php $button_option = get_field('button_options'); 
+				$class = $button_option; ?>
+				<a href="#" class="btn primary <?php echo $class;?>">Click Me</a>
 			</aside>
 			<div class="col-right has-left-sticky">
 				<h1 style="color:<?php the_field('page_color'); ?>"><?php the_title(); ?></h1>
@@ -102,11 +103,7 @@ get_header();
 							if($rand_row_quote):
 								foreach( $rand_row_quote as $row ):
 									
-									echo '<article class="modules">
-											<blockquote>
-												<p>'. $row .'</p>
-											</blockquote>
-										</article>';
+									echo '<article class="modules">'. $row .'</article>';
 								endforeach;
 							endif;
 				        	
