@@ -1211,7 +1211,7 @@ sup {
 			margin-right: 10px;
 			vertical-align: top;
 		}
-		input[type="email"], input[type="email"].medium{
+		input[type="email"], input[type="email"].medium, input[type="text"], input[type="text"].medium{
 			@include font-shorthand(12px, normal, 28px);
 			@include size(150px, 30px);
 			border: 1px solid $dh-black;
