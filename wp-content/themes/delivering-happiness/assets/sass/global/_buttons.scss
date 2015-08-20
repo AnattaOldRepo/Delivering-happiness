@@ -58,6 +58,54 @@
 				color: $dh-yellow;
 			}
 		}
+		&.orange{
+			background-color: $dh-orange;
+			border-color: $dh-orange;
+			&:hover{
+				background-color: $dh-orange-light;
+				color: $dh-orange;
+			}
+		}
+		&.gray{
+			background-color: $dh-gray;
+			border-color: $dh-gray;
+			&:hover{
+				background-color: $dh-gray-light;
+				color: $dh-gray;
+			}
+		}
+		&.red{
+			background-color: $dh-red;
+			border-color: $dh-red;
+			&:hover{
+				background-color: $dh-red-light;
+				color: $dh-red;
+			}
+		}
+		&.berry{
+			background-color: $dh-berry;
+			border-color: $dh-berry;
+			&:hover{
+				background-color: $dh-berry-light;
+				color: $dh-berry;
+			}
+		}
+		&.green{
+			background-color: $dh-green;
+			border-color: $dh-green;
+			&:hover{
+				background-color: $dh-green-light;
+				color: $dh-green;
+			}
+		}
+		&.lime{
+			background-color: $dh-lime;
+			border-color: $dh-lime;
+			&:hover{
+				background-color: $dh-lime-light;
+				color: $dh-lime;
+			}
+		}
 	}
 	
 	//  Secondary Button Styling
@@ -105,6 +153,51 @@
 			color: rgb(178, 193, 0);
 			&:hover{
 				background-color: rgb(178, 193, 0);
+				color: $dh-white;
+			}
+		}
+		&.orange{
+			background-color: $dh-orange-light;
+			border-color: $dh-orange;
+			color: $dh-orange;
+			&:hover{
+				background-color: $dh-orange;
+				color: $dh-white;
+			}
+		}
+		&.gray{
+			background-color: $dh-gray-light;
+			border-color: $dh-gray;
+			color: $dh-gray;
+			&:hover{
+				background-color: $dh-gray;
+				color: $dh-white;
+			}
+		}
+		&.red{
+			background-color: $dh-red-light;
+			border-color: $dh-red;
+			color: $dh-red;
+			&:hover{
+				background-color: $dh-red;
+				color: $dh-white;
+			}
+		}
+		&.berry{
+			background-color: $dh-berry-light;
+			border-color: $dh-berry;
+			color: $dh-berry;
+			&:hover{
+				background-color: $dh-berry;
+				color: $dh-white;
+			}
+		}
+		&.green{
+			background-color: $dh-green-light;
+			border-color: $dh-green;
+			color: $dh-green;
+			&:hover{
+				background-color: $dh-green;
 				color: $dh-white;
 			}
 		}
