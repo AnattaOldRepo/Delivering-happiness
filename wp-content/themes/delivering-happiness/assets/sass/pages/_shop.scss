@@ -19,7 +19,8 @@
             @extend %heading-level-7;
             display: block;
             margin-bottom: 130px;
-            font-style: italic;
+            font-family: $museo_slab_italic;
+            font-weight: 500;
             line-height: 40px;
             margin-top: 11px;
         }

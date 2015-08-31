@@ -156,11 +156,11 @@
         color: $Blue;
     }
     strong{
-        font-weight: bold;
+    	font-weight: 700;
     }
     i,
     em{
-        font-style: italic;
+    	font-style: italic;
     }
     p {
         @extend %pharagraph-level-5;
@@ -254,7 +254,8 @@
 
     }
     .wp-caption {
-        font-style: italic;
+        font-family: $museo_slab_italic;
+        font-weight: 500;
         color: lighten($Gray, 20%);
     }
     blockquote {
@@ -282,13 +283,12 @@
 
 @include class(heading-h1) {
 	@include font-shorthand(40px, normal, normal);
-	font-family: $heading-font-family;
+	@extend %museo_slab;
 }
 
 @include class(heading-h2) {
-	@include font-shorthand(28px, normal, 48px);
-	font-family: $heading-font-family;
-	font-style: italic;
+	@include font-shorthand(28px, 500, 48px);
+	font-family: $museo_slab_italic;
 }
 @include class(heading-h3) {
 	@include font-shorthand(22px, normal, 30px);
@@ -296,16 +296,16 @@
 }
 @include class(heading-h4) {
 	@include font-shorthand(28px, normal, 48px);
-	font-family: $heading-font-family;
+	@extend %museo_slab;
 }
 @include class(heading-h5) {
 	@include font-shorthand(28px, normal, normal);
-	font-family: $heading-font-family;
+	@extend %museo_slab;
 	text-transform: uppercase;
 }
 @include class(heading-h6) {
 	@include font-shorthand(20px, normal, normal);
-	font-family: $heading-font-family;
+	@extend %museo_slab;
 }
 
 // Standard Paragraph
@@ -330,9 +330,8 @@
 }
 
 @include class(copy-blockquote) {
-	@include font-shorthand(28px, normal, normal);
-	font-family: $heading-font-family;
-	font-style: italic;
+	@include font-shorthand(28px, 500, normal);
+	font-family: $museo_slab_italic;
 	text-align: left;
 	color: $dh-purple;
 	letter-spacing: -0.047em;
@@ -349,7 +348,7 @@
 }
 @include class(copy-label) {
 	@include font-shorthand(15px, normal, 30px);
-	font-family: $heading-font-family;
+	@extend %museo_slab;
 	color: $dh-black;
 }
 
@@ -384,7 +383,7 @@
 // --------------
 
 strong{
-	font-weight: 700;
+	@extend %museo_slab_bold;
 }
 em{
 	font-style: italic;

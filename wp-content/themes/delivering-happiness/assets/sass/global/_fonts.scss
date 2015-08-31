@@ -9,7 +9,18 @@
 
 
 @font-face {
-  @include font-face-src('Museo Slab', 'Museo_Slab_500');
+  @include font-face-src('Museo Slab', 'Museo_Slab_500_2-webfont');
+}
+@font-face {
+  @include font-face-src('Museo Slab Italic', 'Museo_Slab_500italic-webfont');
+}
+
+@font-face {
+  @include font-face-src('Museo Slab Bold', 'Museo_Slab_900-webfont');
+}
+
+@font-face {
+  @include font-face-src('Museo Slab Bold Italic', 'Museo_Slab_900italic-webfont');
 }
 
 @font-face {
@@ -18,9 +29,22 @@
 
 %museo_slab{
 	font-family: $heading-font-family;
+	font-weight: 500;
 }
 
+%museo_slab_bold{
+	font-family: "Museo Slab Bold", arial ;
+	font-weight: 900;
+}
+%museo_slab_bold_italic{
+	font-family: "Museo Slab Bold Italic", arial;
+	font-weight: 900;
+}
 
 %helvetica-light{
 	font-family: $base-font-family;
+}
+%museo_slab_italic{
+	font-family: "Museo Slab Italic", arial;
+	font-weight: 500;
 }

@@ -75,7 +75,8 @@
         position: absolute;
         top: -370px;
         left: 0px;
-        font-style: italic;
+        font-family: $museo_slab_italic;
+        font-weight: 500;
         line-height: 1.8em;
         .v-aling {
             @include square(336px);

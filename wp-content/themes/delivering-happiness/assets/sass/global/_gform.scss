@@ -12,7 +12,7 @@
 
 .gfield_label{
     font-style: normal!important;
-    font-weight: bold;
+    @extend %museo_slab_bold;
 }
 
 .ginput_container{

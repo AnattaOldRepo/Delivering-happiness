@@ -57,7 +57,7 @@
         top: 780px;
         right: 0px;
         z-index: 999;
-          @extend %text-center;
+        @extend %text-center;
         @extend %museo_slab;
         h6 {
             color: $White;
@@ -73,14 +73,13 @@
         input.medium {
             color: $text-color3;
             padding: 5px 2px;
-            font-style: italic;
             border: 0 none;
             margin-bottom: 15px;
             height: 30px;
             padding: 5px 2px;
             width: 100%;
-            @extend %museo_slab;
-            @include font-shorthand(12px, normal, normal);
+            font-family: $museo_slab_italic;
+            @include font-shorthand(12px, 500, normal);
         }
         .form_submit_button {
             padding: 10px 17px;

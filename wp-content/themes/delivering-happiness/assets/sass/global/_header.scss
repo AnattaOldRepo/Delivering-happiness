@@ -52,6 +52,10 @@
                 line-height: 35px;
                 z-index: 999;
                 background: $bg-color5;
+                em{
+                	font-family: $museo_slab_italic;
+                	font-weight: 500;
+                }
                 sup{
                     font-size: 9px;
                     position: relative;
@@ -156,10 +160,11 @@
                 color: $text-color2;
                 font-size: 12px;
                 line-height: 12px;
-                font-style: italic;
+                
                 padding-top: 3px;
-                @extend %museo_slab;
                 -webkit-appearance: none;
+                font-family: "Museo Slab Italic", arial ;
+                font-weight: 500;
                 @include size(111px, 30px);
                 &:focus {
                     border: 0 none;

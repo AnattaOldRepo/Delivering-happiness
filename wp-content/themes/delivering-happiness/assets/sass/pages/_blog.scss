@@ -28,7 +28,8 @@
             color: $Blue;
             @extend %heading-level-12;
             @extend %pull-left;
-            font-style: italic;
+            font-family: $museo_slab_italic;
+            font-weight: 500;
         }
         a {
             color: $Blue;
@@ -101,7 +102,8 @@
             }
             .cta {
                 color: $Blue;
-                font-style: italic;
+                font-family: $museo_slab_italic;
+                font-weight: 500;
                 &:hover {
                     text-decoration: underline;
                 }
@@ -110,7 +112,7 @@
         &.detail {
             @extend %typography;
             strong, b {
-                font-weight: bold;
+                @extend %museo_slab_bold;
             }
             img {
                 max-width: 618px;
@@ -240,12 +242,14 @@
                 background-color: rgba($White, 0.8);
                 border: none;
                 color: $Blue;
-                font-style: italic;
+                font-family: $museo_slab_italic;
+                font-weight: 500;
                 border: 2px solid $White;
                 margin-bottom: 11px;
                 @include input-placeholder {
                     color: $Blue;
-                    font-style: italic;
+                    font-family: $museo_slab_italic;
+                    font-weight: 500;
                     font-size: 12px;
                 }
             }
@@ -386,9 +390,9 @@
                     color: $text-color2;
                     font-size: 12px;
                     line-height: 12px;
-                    font-style: italic;
+                    font-family: $museo_slab_italic;
+                    font-weight: 500;
                     padding-top: 3px;
-                    @extend %museo_slab;
                     @include size(125px, 32px);
                     &:focus {
                         border: 0 none;

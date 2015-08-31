@@ -75,7 +75,8 @@
             .gform_description,
             p {
                 font-size: 14px;
-                font-style: italic;
+                font-family: $museo_slab_italic;
+                font-weight: 500;
             }
             &.company {
                 width: 203px;
@@ -186,7 +187,8 @@
                 background-color: rgba($Blue, 0.2);
                 border: none;
                 color: $Blue;
-                font-style: italic;
+                font-family: $museo_slab_italic;
+                font-weight: 500;
                 @include input-placeholder {
                     color: $Blue;
                     font-style: italic;

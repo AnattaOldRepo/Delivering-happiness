@@ -15,7 +15,8 @@
     span {
       color: $text-color5;
       display: block;
-      font-style: italic;
+      font-family: $museo_slab_italic;
+      font-weight: 500;
       @extend %heading-level-12;
     }
   }
@@ -48,7 +49,10 @@
     width: 50%;
     padding: 0 15px;
     h4{
-      i{ font-style: italic; }
+      i{ 
+      	font-family: $museo_slab_italic;
+      	font-weight: 500;
+      }
     }
   }
   .hero-banner{
@@ -83,7 +87,8 @@
       top: 45px;
       right: 24px;
       i{
-        font-style: italic;
+        font-family: $museo_slab_italic;
+        font-weight: 500;
       }
     }
   }
@@ -125,7 +130,8 @@
     }
     .media{
       i{
-        font-style: italic;
+        font-family: $museo_slab_italic;
+        font-weight: 500;
       }
     }
   }
@@ -135,7 +141,8 @@
       padding: 25px;
       p{
         @extend %pharagraph-level-5;
-        font-style: italic;
+        font-family: $museo_slab_italic;
+        font-weight: 500;
         color: $bg-color3;
         line-height: 21px;
         margin-bottom: 25px;
@@ -171,7 +178,8 @@
   .blockquote{
     border: 1px solid $Black;
     text-align: center;
-    font-style: italic;
+    font-family: $museo_slab_italic;
+    font-weight: 500;
     font-size: 18px;
     float: right;
     width: 785px;
@@ -188,7 +196,8 @@
     background-color: rgba(1,152,207,0.1);
     padding: 17px 10px;
     h4{
-      font-style: italic;
+      font-family: $museo_slab_italic;
+      font-weight: 500;
       font-size: 18px;
       sup{
         font-size: 10px;
@@ -212,7 +221,8 @@
       padding-right: 10px;
     }
     h4{
-      font-style: italic;
+      font-family: $museo_slab_italic;
+      font-weight: 500;
     }
     .quotes{
       blockquote{

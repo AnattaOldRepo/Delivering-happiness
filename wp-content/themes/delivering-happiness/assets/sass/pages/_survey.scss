@@ -17,7 +17,8 @@
         span {
             color: $text-color5;
             display: block;
-            font-style: italic;
+            font-family: $museo_slab_italic;
+            font-weight: 500;
             @extend %heading-level-12;
         }
     }
@@ -68,7 +69,8 @@
         .quote-msg {
             background-color: $bg-color2;
             padding: 25px;
-            font-style: italic;
+            font-family: $museo_slab_italic;
+            font-weight: 500;
             color: $text-color4;
             margin-bottom: 25px;
             @extend %pharagraph-level-5;
