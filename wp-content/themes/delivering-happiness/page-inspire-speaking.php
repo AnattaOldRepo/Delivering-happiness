@@ -3,8 +3,9 @@
 Template Name: Inspire Speaking Page
 */
 get_header();
+$theme_options = get_field('theme_options'); //getting theme option acf value
 ?>
-<div class="speaking-page">
+<div class="speaking-page <?php echo $theme_options;?>">
 	<div class="wrapper">
 		<section class="hero-banner">
 			<img src="<?php bloginfo('template_url') ?>/assets/images/speaking/speaking-hero.jpg" alt="" />
@@ -12,7 +13,7 @@ get_header();
 		
 		<section class="row two-col-layout sticky-container">
 			<aside class="nav-left-sidebar">
-				<h5 style="color:<?php the_field('page_color'); ?>">What we do</h5>
+				<h5>What we do</h5>
 				<?php
 				/* if the current pages has a parent, i.e. we are on a subpage */
 				if( $post->post_parent ){
@@ -25,12 +26,10 @@ get_header();
 				        <?php echo $children; /*print list of pages*/ ?>
 				    </ul>
 				<?php } ?>
-				<?php $button_option = get_field('button_options'); 
-				$class = $button_option; ?>
-				<a href="#" class="btn primary <?php echo $class;?>">Click Me</a>
+				<a href="#" class="btn primary">Click Me</a>
 			</aside>
 			<div class="col-right has-left-sticky">
-				<h1 style="color:<?php the_field('page_color'); ?>"><?php the_title(); ?></h1>
+				<h1><?php the_title(); ?></h1>
 				<?php
 				// check if the flexible content field has rows of data
 				if( get_field('module_1') ):
@@ -122,7 +121,7 @@ get_header();
 				        	$content = get_sub_field('content');?>
 
 				        	<article class="modules">
-								<h2 style="color:<?php echo the_field('page_color');?>"><?php echo $title;?></h2>
+								<h2><?php echo $title;?></h2>
 								<div class="default-copy"><?php echo $content; ?></div>
 							</article>
 				        <?php endif;
