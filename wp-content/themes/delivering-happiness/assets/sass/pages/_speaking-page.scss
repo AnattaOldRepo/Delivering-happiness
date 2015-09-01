@@ -5,7 +5,6 @@
 	h1{
 		margin-bottom: 16px;
 		@extend %heading-h1;
-		color: $dh-purple;
 	}
 	h2{
 		@extend %heading-h4;

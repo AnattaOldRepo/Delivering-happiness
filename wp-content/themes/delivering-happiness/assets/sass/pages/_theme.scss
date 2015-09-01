@@ -1,0 +1,352 @@
+.theme_purple{
+	h1, .modules blockquote p, .modules blockquote cite{
+		color: $dh-purple;
+	}
+	.btn{
+		&.primary{
+			background-color: $dh-purple;
+			border-color: $dh-purple;
+			&:hover{
+				background-color: $dh-purple-light;
+				color: $dh-purple;
+			}
+		}
+		&.secondary{
+			background-color: $dh-purple-light;
+			border-color: $dh-purple;
+			color: $dh-purple;
+			&:hover{
+				background-color: $dh-purple;
+				color: $dh-white;
+			}
+		}
+	}
+	.modules{
+		.nav-right-sidebar ul li:after{
+			border-left-color: $dh-purple;
+		}
+	}
+	.nav-left-sidebar ul li.current_page_item  a{
+		color: $dh-purple;
+	}
+}
+.theme_yellow{
+	h1, .modules blockquote p, .modules blockquote cite{
+		color: $dh-yellow;
+	}
+	.btn{
+		&.primary{
+			background-color: $dh-yellow;
+			border-color: $dh-yellow;
+			&:hover{
+				background-color: $dh-yellow-light;
+				color: $dh-yellow;
+			}
+		}
+		&.secondary{
+			background-color: $dh-yellow-light;
+			border-color: $dh-yellow;
+			color: $dh-yellow;
+			&:hover{
+				background-color: $dh-yellow;
+				color: $dh-white;
+			}
+		}
+	}
+	.modules{
+		.nav-right-sidebar ul li:after{
+			border-left-color: $dh-yellow;
+		}
+	}
+	.nav-left-sidebar ul li.current_page_item a{
+		color: $dh-yellow;
+	}
+}
+.theme_orange{
+	h1, .modules blockquote p, .modules blockquote cite{
+		color: $dh-orange;
+	}
+	.btn{
+		&.primary{
+			background-color: $dh-orange;
+			border-color: $dh-orange;
+			&:hover{
+				background-color: $dh-orange-light;
+				color: $dh-orange;
+			}
+		}
+		&.secondary{
+			background-color: $dh-orange-light;
+			border-color: $dh-orange;
+			color: $dh-orange;
+			&:hover{
+				background-color: $dh-orange;
+				color: $dh-white;
+			}
+		}
+	}
+	.modules{
+		.nav-right-sidebar ul li:after{
+			border-left-color: $dh-orange;
+		}
+	}
+	.nav-left-sidebar ul li.current_page_item a{
+		color: $dh-orange;
+	}
+}
+.theme_red{
+	h1, .modules blockquote p, .modules blockquote cite{
+		color: $dh-red;
+	}
+	.btn{
+		&.primary{
+			background-color: $dh-red;
+			border-color: $dh-red;
+			&:hover{
+				background-color: $dh-red-light;
+				color: $dh-red;
+			}
+		}
+		&.secondary{
+			background-color: $dh-red-light;
+			border-color: $dh-red;
+			color: $dh-red;
+			&:hover{
+				background-color: $dh-red;
+				color: $dh-white;
+			}
+		}
+	}
+	.modules{
+		.nav-right-sidebar ul li:after{
+			border-left-color: $dh-red;
+		}
+	}
+	.nav-left-sidebar ul li.current_page_item a{
+		color: $dh-red;
+	}
+}
+.theme_berry{
+	h1, .modules blockquote p, .modules blockquote cite{
+		color: $dh-berry;
+	}
+	.btn{
+		&.primary{
+			background-color: $dh-berry;
+			border-color: $dh-berry;
+			&:hover{
+				background-color: $dh-berry-light;
+				color: $dh-berry;
+			}
+		}
+		&.secondary{
+			background-color: $dh-berry-light;
+			border-color: $dh-berry;
+			color: $dh-berry;
+			&:hover{
+				background-color: $dh-berry;
+				color: $dh-white;
+			}
+		}
+	}
+	.modules{
+		.nav-right-sidebar ul li:after{
+			border-left-color: $dh-berry;
+		}
+	}
+	.nav-left-sidebar ul li.current_page_item a{
+		color: $dh-berry;
+	}
+}
+.theme_violet{
+	h1, .modules blockquote p, .modules blockquote cite{
+		color: $dh-violet;
+	}
+	.btn{
+		&.primary{
+			background-color: $dh-violet;
+			border-color: $dh-violet;
+			&:hover{
+				background-color: $dh-violet-light;
+				color: $dh-violet;
+			}
+		}
+		&.secondary{
+			background-color: $dh-violet-light;
+			border-color: $dh-violet;
+			color: $dh-violet;
+			&:hover{
+				background-color: $dh-violet;
+				color: $dh-white;
+			}
+		}
+	}
+	.modules{
+		.nav-right-sidebar ul li:after{
+			border-left-color: $dh-violet;
+		}
+	}
+	.nav-left-sidebar ul li.current_page_item a{
+		color: $dh-violet;
+	}
+}
+.theme_blue{
+	h1, .modules blockquote p, .modules blockquote cite{
+		color: $dh-blue;
+	}
+	.btn{
+		&.primary{
+			background-color: $dh-blue;
+			border-color: $dh-blue;
+			&:hover{
+				background-color: $dh-blue-light;
+				color: $dh-blue;
+			}
+		}
+		&.secondary{
+			background-color: $dh-blue-light;
+			border-color: $dh-blue;
+			color: $dh-blue;
+			&:hover{
+				background-color: $dh-blue;
+				color: $dh-white;
+			}
+		}
+	}
+	.modules{
+		.nav-right-sidebar ul li:after{
+			border-left-color: $dh-blue;
+		}
+	}
+	.nav-left-sidebar ul li.current_page_item a{
+		color: $dh-blue;
+	}
+}
+.theme_green{
+	h1, .modules blockquote p, .modules blockquote cite{
+		color: $dh-green;
+	}
+	.btn{
+		&.primary{
+			background-color: $dh-green;
+			border-color: $dh-green;
+			&:hover{
+				background-color: $dh-green-light;
+				color: $dh-green;
+			}
+		}
+		&.secondary{
+			background-color: $dh-green-light;
+			border-color: $dh-green;
+			color: $dh-green;
+			&:hover{
+				background-color: $dh-green;
+				color: $dh-white;
+			}
+		}
+	}
+	.modules{
+		.nav-right-sidebar ul li:after{
+			border-left-color: $dh-green;
+		}
+	}
+	.nav-left-sidebar ul li.current_page_item a{
+		color: $dh-green;
+	}
+}
+.theme_gray{
+	h1, .modules blockquote p, .modules blockquote cite{
+		color: $dh-gray;
+	}
+	.btn{
+		&.primary{
+			background-color: $dh-gray;
+			border-color: $dh-gray;
+			&:hover{
+				background-color: $dh-gray-light;
+				color: $dh-gray-dark;
+			}
+		}
+		&.secondary{
+			background-color: $dh-gray-light;
+			border-color: $dh-gray-dark;
+			color: $dh-white;
+			&:hover{
+				background-color: $dh-gray;
+				color: $dh-white;
+			}
+		}
+	}
+	.modules{
+		.nav-right-sidebar ul li:after{
+			border-left-color: $dh-gray;
+		}
+	}
+	.nav-left-sidebar ul li.current_page_item a{
+		color: $dh-black;
+	}
+}
+.theme_lime{
+	h1, .modules blockquote p, .modules blockquote cite{
+		color: $dh-lime;
+	}
+	.btn{
+		&.primary{
+			background-color: $dh-lime;
+			border-color: $dh-lime;
+			&:hover{
+				background-color: $dh-lime-light;
+				color: $dh-lime;
+			}
+		}
+		&.secondary{
+			background-color: $dh-lime-light;
+			border-color: $dh-lime;
+			color: $dh-lime;
+			&:hover{
+				background-color: $dh-lime;
+				color: $dh-white;
+			}
+		}
+	}
+	.modules{
+		.nav-right-sidebar ul li:after{
+			border-left-color: $dh-lime;
+		}
+	}
+	.nav-left-sidebar ul li.current_page_item a{
+		color: $dh-lime;
+	}
+}
+.theme_black{
+	h1, .modules blockquote p, .modules blockquote cite{
+		color: $dh-black;
+	}
+	.btn{
+		&.primary{
+			background-color: $dh-black;
+			border-color: $dh-black;
+			&:hover{
+				background-color: $dh-black-light;
+				color: $dh-black;
+			}
+		}
+		&.secondary{
+			background-color: $dh-black-light;
+			border-color: $dh-black;
+			color: $dh-black;
+			&:hover{
+				background-color: $dh-black;
+				color: $dh-white;
+			}
+		}
+	}
+	.modules{
+		.nav-right-sidebar ul li:after{
+			border-left-color: $dh-black;
+		}
+	}
+	.nav-left-sidebar ul li.current_page_item a{
+		color: $dh-black;
+	}
+}

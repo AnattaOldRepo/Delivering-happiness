@@ -1146,7 +1146,7 @@ sup {
 				content: '';
 				@include size(0, 0);
 				border-top: 8px solid transparent;
-				border-left: 8px solid $dh-purple;
+				border-left: 8px solid transparent;
 				border-bottom: 8px solid transparent;
 				display: block;
 				position: absolute;
