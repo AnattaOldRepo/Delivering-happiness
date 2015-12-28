@@ -1157,14 +1157,6 @@ Class GFNotification {
 class GFNotificationTable extends WP_List_Table {
 
 	public $form;
-	
-	function get_columns() {
-	  	$columns = array(
-            'name' => 'Name',
-             'subject' => 'Subject'
-        );
-        return $columns;
-    }
 
 	function __construct( $form ) {
 
@@ -1187,6 +1179,14 @@ class GFNotificationTable extends WP_List_Table {
 	function prepare_items() {
 		$this->items = $this->form['notifications'];
 	}
+	
+	function get_columns() {
+	  	$columns = array(
+            'name' => 'Name',
+             'subject' => 'Subject'
+        );
+        return $columns;
+    }
 
 	function display() {
 		$singular = rgar( $this->_args, 'singular' );
