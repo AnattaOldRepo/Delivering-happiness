@@ -34,7 +34,7 @@ get_header();
 					As we strive to live our values every day we want to make sure we share some extra resources to keep that inspiration flowing, and to thank you for constantly inspiring us.
 				</p>
 				<p>
-					Grab a copy of <a href="#">Jenn's presentation</a> [via the form on this page], <a href="#">download the Zappos Culture Book</a>, and then check <a href="http://www.deliveringhappiness.com">deliveringhappiness.com</a> for some great DH resources.
+					Grab a copy of <a href="#">Jenn's presentation</a> [via the form on this page], <a href="#">download the Zappos Culture Book</a>, and then check <a href="<?php echo home_url(); ?>">deliveringhappiness.com</a> for some great DH resources.
 				</p>
 				<p>
 					We are here to help you continue the conversation around creating, growing, and sustaining culture and happiness in your workplace. 

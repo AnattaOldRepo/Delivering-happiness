@@ -219,22 +219,22 @@ get_header();
 				<article class="content chat active">
 					<h3>Happiness 101</h3>
 					<p>Loved the book? Come love the blog! Discover a wealth of resources to continue your happiness education.</p>
-					<a href="/blog/" class="button">Read and Enjoy</a>
+					<a href="<?php echo home_url('/blog/'); ?>" class="button">Read and Enjoy</a>
 				</article>
 				<article class="content inspire">
 					<h3>Inspire! and Be Inspired</h3>
 					<p>Take the stage to share your inspiration at Inspire!, a story-worthy event series featuring speakers from your local community.</p>
-					<a href="http://deliveringhappiness.com/community/inspire/" class="button">Get Inspired</a>
+					<a href="<?php echo home_url('/community/inspire/'); ?>" class="button">Get Inspired</a>
 				</article>
 				<article class="content write">
 					<h3>Share Your Story</h3>
 					<p>What's your story? Share how you're spreading happiness at home, at work or in your community. We'll not only hook you up with a whopping 20% off shop coupon for it, we may also publish it for others who might be inspired to take your lead.</p>
-					<a href="/community/share-your-story" class="button">Share Your Story</a>
+					<a href="<?php echo home_url('/community/share-your-story');?>" class="button">Share Your Story</a>
 				</article>
 				<article class="content cal">
 					<h3>Be a VHP (Very *Happy* Person)</h3>
 					<p>Join our community of movers and shakers collaborating, encouraging and sharing how they're growing happiness in their lives and communities. </p>
-					<a href="/community/become-a-vhp/" class="button">Become a VHP</a>
+					<a href="<?php echo home_url('/community/become-a-vhp/'); ?>" class="button">Become a VHP</a>
 				</article>
 			</div>
 		</div>

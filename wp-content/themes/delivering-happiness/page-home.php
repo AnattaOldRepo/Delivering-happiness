@@ -157,7 +157,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Inspire. Connect. Educate and Experience. Products that remind us of why happiness isn’t a fleeting thought, it’s a way to live.</p>
-					<a href="/shop" class="button blue">Let's Live Happy!</a>
+					<a href="<?php echo home_url('/shop'); ?>" class="button blue">Let's Live Happy!</a>
 				</div>
 			</div>
 		</div>
@@ -170,7 +170,7 @@ get_header();
 			<div class="hover-content">
 				<div class="v-aling">
 					<p>Join the culture conversation, discuss challenges, and discover opportunities for your organization’s growth.</p>
-					<a href="/services/culture-call/" class="button blue">Let's Talk Culture!</a>
+					<a href="<?php echo home_url('/services/culture-call/'); ?>" class="button blue">Let's Talk Culture!</a>
 				</div>
 			</div>
 		</div>
@@ -193,7 +193,7 @@ get_header();
 			</div>
 			<article class="content">
 				<p>We help organizations create their own unique and sustainable work cultures to unleash happiness, human potential and business success.</p>
-				<a href="/services" class="button yellow">Learn more</a>
+				<a href="<?php echo home_url('/services');?>" class="button yellow">Learn more</a>
 			</article>
 		</div>
 	</div>

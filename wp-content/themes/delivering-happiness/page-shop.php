@@ -86,7 +86,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Our design team can work with you to create custom, private label and/or co-branded products that'll impress the socks off of your employees, colleagues and customers.</p>
-						<a href="/shop/custom" class="button green">Find Out More</a>
+						<a href="<?php echo home_url('/shop/custom'); ?>" class="button green">Find Out More</a>
 					</div>
 				</div>
 			</div>
@@ -99,7 +99,7 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Want to make your shop a happier place? We’re looking for qualified retailers to help spread happiness.</p>
-						<a href="http://deliveringhappiness.com/shop/wholesale/" class="button green">Apply Now</a>
+						<a href="<?php echo home_url('/shop/wholesale/'); ?>" class="button green">Apply Now</a>
 					</div>
 				</div>
 			</div>
