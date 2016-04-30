@@ -140,37 +140,34 @@ get_header();
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
-					<p>Are you happy at work? The results will show what you like and what needs to change.</p>
+					<p>Are you happy at work? The results will show what's working and what needs to change.</p>
 					<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="button blue">Read On</a>
 				</div>
 			</div>
 		</div>
 		<div class="col middle-col">
-			<div class="shop">
-				<div class="media">
-					<img src="<?php bloginfo('template_url') ?>/assets/images/global/shop-graphic.jpg" alt="" />
-				</div>
-				<div class="content small">
-					<div class="v-aling"><h3>Live Happy</h3></div>
+			<div class="schedule-call">
+				<div class="content">
+					<div class="v-aling"><h3> Schedule a <br/>culture call</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
-					<p>Inspire. Connect. Educate and Experience. Products that remind us of why happiness isn’t a fleeting thought, it’s a way to live.</p>
-					<a href="<?php echo home_url('/shop'); ?>" class="button blue">Let's Live Happy!</a>
+					<p>Schedule a Culture Call to discuss DH solutions for your organization's culture goals and challenges.</p>
+					<a href="<?php echo home_url('/services/culture-call/'); ?>" class="button blue">Let's Talk Culture!</a>
 				</div>
 			</div>
 		</div>
 		<div class="col right-col">
-			<div class="schedule-call">
+			<div class="calculate">
 				<div class="content">
-					<div class="v-aling"><h3> Join a <br/>culture call</h3></div>
+					<div class="v-aling"><h3> Download a <br/>Case Study</h3></div>
 				</div>
 			</div>
 			<div class="hover-content">
 				<div class="v-aling">
-					<p>Join the culture conversation, discuss challenges, and discover opportunities for your organization’s growth.</p>
-					<a href="<?php echo home_url('/services/culture-call/'); ?>" class="button blue">Let's Talk Culture!</a>
+					<p>We're changing the way the world works one person, community, and company at a time. Check out our most recent Case Study.</p>
+					<a href="http://go.deliveringhappiness.com/alamocasestudy_wip" class="button blue">Check It Out!</a>
 				</div>
 			</div>
 		</div>

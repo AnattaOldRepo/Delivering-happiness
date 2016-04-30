@@ -27,10 +27,10 @@
 					<a class="mob-nav-work" href="<?php echo home_url(); ?>/services">SERVICES</a>
 					<div class="message">Coaching and speaking to <em>Make Happy Work</em><sup>TM</sup>.</div>
 				</li>
-				<li  <?php if(is_page('shop')) { ?>active <?php } ?>>
+				<!--li  <?php if(is_page('shop')) { ?>active <?php } ?>>
 					<a class="mob-nav-shop" href="<?php echo home_url(); ?>/shop">SHOP</a>
 					<div class="message">Goods and gear to inspire, connect and educate.</div>
-				</li>
+				</li-->
 				<li  <?php if(is_page('community')) { ?>active <?php } ?>>
 					<a class="mob-nav-community" href="<?php echo home_url(); ?>/community">COMMUNITY</a>
 					<div class="message">Discover the movement, join our community.</div>
@@ -64,10 +64,10 @@
 					<a href="<?php echo home_url(); ?>/services">SERVICES</a>
 					<div class="message">Coaching and speaking to <em>Make Happy Work</em><sup>TM</sup>.</div>
 				</li>
-				<li class="nav-shop <?php if(is_page('shop')) { ?>active <?php } ?>">
+				<!--li class="nav-shop <?php if(is_page('shop')) { ?>active <?php } ?>">
 					<a href="<?php echo home_url(); ?>/shop">SHOP</a>
 					<div class="message">Goods and gear to inspire, connect and educate.</div>
-				</li>
+				</li-->
 				<li class="nav-community <?php if(is_page('community')) { ?>active <?php } ?>">
 					<a href="<?php echo home_url(); ?>/community">COMMUNITY</a>
 					<div class="message">Discover the movement, join our community.</div>
