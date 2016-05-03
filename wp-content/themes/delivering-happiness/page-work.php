@@ -38,7 +38,7 @@ get_header();
 		</div>
 	</section>
 
-	<section class="three-column oderate-violet get-involved cross-fade">
+	<section class="three-column blue get-involved cross-fade">
 		<div class="wrapper">
 			<h2>Take the first step:</h2>
 			<div class="col left-col">
@@ -50,33 +50,34 @@ get_header();
 				<div class="hover-content">
 					<div class="v-aling">
 						<p>Are you happy at work? The results will show what you like and what needs to change.</p>
-						<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="button moderateviolet">LET’S GO!</a>
+						<a href="<?php echo home_url(); ?>/services/the-happiness-at-work-survey/" class="button blue">LET’S GO!</a>
 					</div>
 				</div>
 			</div>
 			<div class="col middle-col">
 				<div class="schedule-call">
 					<div class="content">
-						<div class="v-aling"><h3>Join<br/>a <br/>culture call</h3></div>
+						<div class="v-aling"><h3> Schedule a <br/>culture call</h3></div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Join the culture conversation, discuss challenges, and discover opportunities for your organization’s growth.</p>
-						<a href="/services/culture-call/" class="button moderateviolet">Let's Talk Culture!</a>
+						<p>Schedule a Culture Call to discuss DH solutions for your organization's culture goals and challenges.</p>
+						<a href="/services/culture-call/" class="button blue">Let's Talk Culture!</a>
 					</div>
 				</div>
 			</div>
 			<div class="col right-col">
 				<div class="calculate">
 					<div class="content">
-						<div class="v-aling"><h3>Calculate<br/>your<br/>happiness</h3></div>
+						<div class="v-aling">
+							<h3> Download a <br/>Case Study</h3></div>
 					</div>
 				</div>
 				<div class="hover-content">
 					<div class="v-aling">
-						<p>Unhappy employees cost the U.S. $550 billion a year (Gallup). How much could happiness save you?</p>
-						<a href="<?php echo home_url(); ?>/services/calculate-your-roi/" class="button moderateviolet">LET’S CALCULATE!</a>
+						<p>We're changing the way the world works one person, community, and company at a time. Check out our most recent Case Study.</p>
+						<a href="http://go.deliveringhappiness.com/alamocasestudy_wip" class="button blue">Check it out!</a>
 					</div>
 				</div>
 			</div>
@@ -258,7 +259,7 @@ get_header();
 		</div>
 	</section>
 
-	<!--section class="three-column oderate-violet get-involved cross-fade">
+	<!--section class="three-column moderateviolet get-involved cross-fade">
 		<div class="wrapper">
 			<h2>Get involved:</h2>
 			<div class="col left-col">
